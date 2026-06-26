@@ -26,3 +26,6 @@ __pycache__/
 *.pyc
 *.pyo
 .ipynb_checkpoints/
+
+# Reports folder excluded from git (kept on disk; lives with bulk artifacts)
+reports/
