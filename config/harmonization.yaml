@@ -1,0 +1,57 @@
+# Co-located AUV/Ship multibeam — harmonization config
+# All §7 fields populated with the directive's proposed defaults, confirmed by user.
+# Do not edit without an explicit human decision.
+
+# Bulk-data root: MUST be on Sherlock scratch (never $HOME).
+# The pipeline refuses to run if this resolves under /home/.
+data_root: /scratch/groups/hilley/auv_ship_colocated_bathy
+
+# Per-pair local UTM (metric, low distortion). Each pair's target EPSG is
+# declared in src/pairs.py; this flag just selects the policy.
+target_crs: per_pair_utm
+
+# Real ship grid stays real: keep HR at native GSD and LR at native GSD.
+# Reproject + clip only. NEVER downsample HR to fabricate LR.
+target_grid:
+  policy: native_per_side
+  hr_resolution_m: native
+  lr_resolution_m: native
+
+# Bilinear for any reprojection of continuous bathymetry.
+# Never nearest-neighbour for elevation.
+resample_kernel: bilinear
+
+vertical_datum_handling:
+  target: msl
+  sign_convention: negative_down
+  on_mismatch: flag        # do not silently shift; surface to operator
+
+coregistration:
+  method: rigid_xyz_offset
+  required_for:
+    - cal_dig_morro_bay    # DISCOL HR is already corrected against ship EM122
+  acceptance_threshold_m: 5.0
+  robust_estimator: median
+  outlier_reject_mad_k: 3.0
+  # ---- v1.1 addendum (gradient-NCC peak QA) ----
+  usbl_bound_m: 30.0           # documented Cal DIG AUV USBL absolute accuracy
+  peak_metric: ncc_gradient    # NCC of gradient-magnitude fields
+  # The two thresholds below are deliberately UNSET. They must be calibrated
+  # against the M1 labeled set per v1.1 §D.2; do not invent. With either
+  # value unset, every sub-pair stays `needs_review` (never `auto_pass`).
+  min_peak_sharpness: null     # PSR threshold (set after calibration)
+  peak_anisotropy_max: null    # Hessian eigenvalue ratio cap (set after calibration)
+  qc:
+    hillshade_overlay: true    # required artifact per sub-pair, incl. DISCOL
+
+nodata_policy:
+  fill_value: -9999.0
+  emit_mask: true
+
+pair_qa:
+  max_misregistration_m: 5.0
+  min_overlap_area_km2: 1.0
+
+storage:
+  retain_raw: true
+  note_scratch_purge: true   # scratch is not permanent archival

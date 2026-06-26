@@ -1,0 +1,380 @@
+[
+  {
+    "pair": "discol_so242_1",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/discol_so242_1/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -4147.35,
+    "min": -4190.01,
+    "max": -4068.99,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "ccz_so268_1",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/ccz_so268_1/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -4097.73,
+    "min": -4130.67,
+    "max": -4068.73,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "tag_m127",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/tag_m127/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -3462.45,
+    "min": -4033.01,
+    "max": -2682.54,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/20180426m2_Channel1000",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180426m2_Channel1000/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -990.36,
+    "min": -1107.57,
+    "max": -949.79,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/20180427m1_Channel700",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180427m1_Channel700/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -813.36,
+    "min": -878.81,
+    "max": -771.45,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/20180427m3_PockmarkNorth",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180427m3_PockmarkNorth/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -938.25,
+    "min": -972.94,
+    "max": -908.85,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/20180428m1_Cable",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180428m1_Cable/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -694.57,
+    "min": -880.34,
+    "max": -465.77,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/201804_LuciaChica2m",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/201804_LuciaChica2m/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -975.77,
+    "min": -1016.02,
+    "max": -935.0,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/20190314m4_LuciaChica970m",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190314m4_LuciaChica970m/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -980.64,
+    "min": -1002.53,
+    "max": -941.96,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/20190315m1_HeadlessCanyon",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190315m1_HeadlessCanyon/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -727.78,
+    "min": -973.12,
+    "max": -479.93,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/20190316m1_BankTop",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190316m1_BankTop/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -450.46,
+    "min": -491.58,
+    "max": -413.19,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/20190317m1_1000mGully",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190317m1_1000mGully/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -938.92,
+    "min": -990.49,
+    "max": -864.66,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/20190317m2_600mGully",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190317m2_600mGully/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -819.39,
+    "min": -933.0,
+    "max": -624.02,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/20190318m2_Transect601060m",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190318m2_Transect601060m/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -898.09,
+    "min": -1065.07,
+    "max": -615.58,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/20190510m1_BankFlankHoles",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190510m1_BankFlankHoles/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -814.76,
+    "min": -904.84,
+    "max": -750.71,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/20190510m2_BankFlankIncipCh",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190510m2_BankFlankIncipCh/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -675.39,
+    "min": -761.16,
+    "max": -567.0,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/20190511m1_6thHeadlessCany",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190511m1_6thHeadlessCany/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -747.97,
+    "min": -991.02,
+    "max": -493.39,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/20190511m2_BankTopEofCanyon3",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190511m2_BankTopEofCanyon3/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -443.1,
+    "min": -559.59,
+    "max": -409.93,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/basin_flank",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/basin_flank/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -896.38,
+    "min": -939.1,
+    "max": -847.53,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/luciachica_2007",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/luciachica_2007/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -983.95,
+    "min": -1007.49,
+    "max": -966.14,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  },
+  {
+    "pair": "cal_dig_morro_bay/pockmark_south",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/pockmark_south/hr.tif",
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "colorinterp": [
+      "gray"
+    ],
+    "nodata": -9999.0,
+    "is_multiband_rgb": false,
+    "p50": -949.77,
+    "min": -998.04,
+    "max": -912.29,
+    "n_positive": 0,
+    "n_lt_-8000": 0
+  }
+]

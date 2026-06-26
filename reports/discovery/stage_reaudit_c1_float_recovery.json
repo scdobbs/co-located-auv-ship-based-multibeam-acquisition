@@ -1,0 +1,106 @@
+[
+  {
+    "rgb_pair": "EW0207__MGDS_32558",
+    "site": "Axial S Rift (vent/volcanic)",
+    "diversity": "HIGH (MOR volcanic)",
+    "float_grid_uids": [
+      "32556(netCDF)",
+      "32557(ASCII)"
+    ],
+    "doi": "10.60521/332556",
+    "note": "NEW recoverable"
+  },
+  {
+    "rgb_pair": "EW9904__MGDS_30217",
+    "site": "Axial summit (vent)",
+    "diversity": "HIGH (MOR volcanic)",
+    "float_grid_uids": [
+      "32556(netCDF)",
+      "32557(ASCII)",
+      "30218"
+    ],
+    "doi": "10.60521/332556",
+    "note": "NEW recoverable"
+  },
+  {
+    "rgb_pair": "TN383__MGDS_29694",
+    "site": "Axial (LeSaout)",
+    "diversity": "HIGH (MOR volcanic)",
+    "float_grid_uids": [
+      "32556(netCDF)",
+      "32557(ASCII)"
+    ],
+    "doi": "10.60521/332556",
+    "note": "NEW recoverable"
+  },
+  {
+    "rgb_pair": "2009_Amundsen__MGDS_30045",
+    "site": "Beaufort Sea (Arctic shelf)",
+    "diversity": "HIGHEST (only Arctic)",
+    "float_grid_uids": [
+      "31753(netCDF)",
+      "31754(ASCII)",
+      "30046",
+      "30047"
+    ],
+    "doi": "10.60521/331753",
+    "note": "NEW recoverable - top priority"
+  },
+  {
+    "rgb_pair": "NA076__MGDS_32321",
+    "site": "Santa Monica Mound",
+    "diversity": "margin (common)",
+    "float_grid_uids": [
+      "32319",
+      "32317"
+    ],
+    "doi": "10.60521/332319",
+    "note": "NEW recoverable"
+  },
+  {
+    "rgb_pair": "FK181031__MGDS_24620",
+    "site": "Pescadero Basin",
+    "diversity": "abyssal/basin",
+    "float_grid_uids": [
+      "24618(netCDF)",
+      "24619(ASCII)"
+    ],
+    "doi": "10.1594/IEDA/324618",
+    "note": "NEW recoverable"
+  },
+  {
+    "rgb_pair": "FK171110__MGDS_24485",
+    "site": "Tonga (Sentry)",
+    "diversity": "margin",
+    "float_grid_uids": [
+      "24499",
+      "24489",
+      "24424"
+    ],
+    "doi": "10.1594/IEDA/324499",
+    "note": "float 24499 ALREADY in corpus (as KIWI10RR_24499)"
+  },
+  {
+    "rgb_pair": "RC2511__MGDS_32241",
+    "site": "MAR (EMARK massif)",
+    "diversity": "MAR",
+    "float_grid_uids": [
+      "32240",
+      "32239"
+    ],
+    "doi": null,
+    "note": "float 32240 ALREADY in corpus (RC2511_32240, 0 tiles)"
+  },
+  {
+    "rgb_pair": "TN299__MGDS_31256",
+    "site": "Cascadia Pythia seep (CONFIRMED FIGURE)",
+    "diversity": "margin",
+    "float_grid_uids": [
+      "31253(netCDF)",
+      "31254",
+      "31255"
+    ],
+    "doi": "10.26022/IEDA/331253",
+    "note": "floats 31254/31255 ALREADY in corpus (as SKQ); 31253 netCDF new"
+  }
+]

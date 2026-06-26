@@ -1,0 +1,10 @@
+rgb_pair,site,diversity,float_grid_uids,doi,note
+EW0207__MGDS_32558,Axial S Rift (vent/volcanic),HIGH (MOR volcanic),32556(netCDF);32557(ASCII),10.60521/332556,NEW recoverable
+EW9904__MGDS_30217,Axial summit (vent),HIGH (MOR volcanic),32556(netCDF);32557(ASCII);30218,10.60521/332556,NEW recoverable
+TN383__MGDS_29694,Axial (LeSaout),HIGH (MOR volcanic),32556(netCDF);32557(ASCII),10.60521/332556,NEW recoverable
+2009_Amundsen__MGDS_30045,Beaufort Sea (Arctic shelf),HIGHEST (only Arctic),31753(netCDF);31754(ASCII);30046;30047,10.60521/331753,NEW recoverable - top priority
+NA076__MGDS_32321,Santa Monica Mound,margin (common),32319;32317,10.60521/332319,NEW recoverable
+FK181031__MGDS_24620,Pescadero Basin,abyssal/basin,24618(netCDF);24619(ASCII),10.1594/IEDA/324618,NEW recoverable
+FK171110__MGDS_24485,Tonga (Sentry),margin,24499;24489;24424,10.1594/IEDA/324499,float 24499 ALREADY in corpus (as KIWI10RR_24499)
+RC2511__MGDS_32241,MAR (EMARK massif),MAR,32240;32239,,"float 32240 ALREADY in corpus (RC2511_32240, 0 tiles)"
+TN299__MGDS_31256,Cascadia Pythia seep (CONFIRMED FIGURE),margin,31253(netCDF);31254;31255,10.26022/IEDA/331253,floats 31254/31255 ALREADY in corpus (as SKQ); 31253 netCDF new

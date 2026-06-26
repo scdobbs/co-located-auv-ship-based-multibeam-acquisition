@@ -1,0 +1,3532 @@
+[
+  {
+    "pair_id": "AT37-13__MGDS_31199",
+    "hr_id": "MGDS:31199",
+    "n_tiles": 21,
+    "selected_source": "sentry441_20170608_1318_tide_equal_1.00x1.00_BV01.grd",
+    "selected_type": "gmt_grd_float",
+    "tile_types": [
+      "gmt_grd_float"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -1793.7,
+    "expected_depth_m": 1176.0,
+    "f5_bucket": "clean",
+    "inventory": [
+      {
+        "file": "sentry441_20170608_1318_tide_equal_1.00x1.00_BV01.grd",
+        "size_mb": 57.9,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -2034.13,
+        "p1": -1948.82,
+        "p50": -1645.52,
+        "p99": -1490.95,
+        "max": -1464.69
+      },
+      {
+        "file": "sentry435_20170530_1306_tide_1.00x1.00_BV09_nocross.grd",
+        "size_mb": 41.9,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1930.59,
+        "p1": -1886.07,
+        "p50": -1742.54,
+        "p99": -1542.33,
+        "max": -1524.48
+      },
+      {
+        "file": "sentry435_20170530_1306_tide_equal_1.00x1.00_BV09.grd",
+        "size_mb": 41.7,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1961.37,
+        "p1": -1920.79,
+        "p50": -1744.89,
+        "p99": -1539.45,
+        "max": -1514.2
+      },
+      {
+        "file": "sentry435_20170530_1306_tide_equal_1.00x1.00_BV09_nocross.grd",
+        "size_mb": 41.7,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1961.37,
+        "p1": -1920.79,
+        "p50": -1744.89,
+        "p99": -1539.45,
+        "max": -1514.2
+      },
+      {
+        "file": "sentry439_20170605_1222_tide_equal_1.00x1.00_BV04.grd",
+        "size_mb": 40.4,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1158.66,
+        "p1": -1130.76,
+        "p50": -1079.01,
+        "p99": -1027.32,
+        "max": -1017.3
+      },
+      {
+        "file": "sentry440_20170607_1128_tide_equal_1.00x1.00_BV03.grd",
+        "size_mb": 36.1,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1969.11,
+        "p1": -1908.47,
+        "p50": -1704.11,
+        "p99": -1588.23,
+        "max": -1561.43
+      },
+      {
+        "file": "sentry433_20170527_1317_tide_equal_1.00x1.00_BV05.grd",
+        "size_mb": 34.5,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -2036.38,
+        "p1": -1991.43,
+        "p50": -1806.29,
+        "p99": -1571.94,
+        "max": -1516.69
+      },
+      {
+        "file": "sentry433_20170527_1317_tide_1.00x1.00_BV05_nocross.grd",
+        "size_mb": 33.3,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1960.88,
+        "p1": -1942.27,
+        "p50": -1805.33,
+        "p99": -1571.02,
+        "max": -1516.6
+      },
+      {
+        "file": "sentry433_20170527_1317_tide_equal_1.00x1.00_BV05_nocross.grd",
+        "size_mb": 33.1,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1960.75,
+        "p1": -1942.26,
+        "p50": -1805.32,
+        "p99": -1570.97,
+        "max": -1516.22
+      },
+      {
+        "file": "sentry431_20170524_1448_tide_1.00x1.00_BV23_nocross.grd",
+        "size_mb": 33.1,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1046.77,
+        "p1": -1042.86,
+        "p50": -1004.46,
+        "p99": -974.98,
+        "max": -963.42
+      },
+      {
+        "file": "sentry431_20170524_1448_tide_equal_1.00x1.00_BV23_nocross.grd",
+        "size_mb": 32.9,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1046.77,
+        "p1": -1042.86,
+        "p50": -1004.46,
+        "p99": -974.98,
+        "max": -963.42
+      },
+      {
+        "file": "sentry431_20170524_1448_tide_equal_1.00x1.00_BV23.grd",
+        "size_mb": 32.9,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1046.77,
+        "p1": -1042.84,
+        "p50": -1004.29,
+        "p99": -975.09,
+        "max": -963.42
+      },
+      {
+        "file": "sentry434_20170529_1301_tide_equal_1.00x1.00_BV03.grd",
+        "size_mb": 24.6,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -2141.49,
+        "p1": -2124.26,
+        "p50": -1936.63,
+        "p99": -1649.79,
+        "max": -1591.51
+      },
+      {
+        "file": "sentry437_20170602_1257_tide_equal_1.00x1.00_BV20.grd",
+        "size_mb": 22.1,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -440.25,
+        "p1": -416.23,
+        "p50": -387.67,
+        "p99": -227.61,
+        "max": -210.8
+      },
+      {
+        "file": "sentry437_20170602_1257_tide_1.00x1.00_BV20_nocross.grd",
+        "size_mb": 21.6,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -420.28,
+        "p1": -415.83,
+        "p50": -382.68,
+        "p99": -225.48,
+        "max": -210.97
+      },
+      {
+        "file": "sentry437_20170602_1257_tide_equal_1.00x1.00_BV20_nocross.grd",
+        "size_mb": 21.4,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -420.26,
+        "p1": -415.83,
+        "p50": -382.67,
+        "p99": -225.5,
+        "max": -210.93
+      },
+      {
+        "file": "sentry434_20170529_1301_tide_1.00x1.00_BV03_nocross.grd",
+        "size_mb": 21.0,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -2141.48,
+        "p1": -2124.41,
+        "p50": -1935.28,
+        "p99": -1663.7,
+        "max": -1628.01
+      },
+      {
+        "file": "sentry438_20170603_1257_tide_1.00x1.00_BV03_nocross.grd",
+        "size_mb": 21.0,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -442.98,
+        "p1": -438.08,
+        "p50": -409.23,
+        "p99": -363.23,
+        "max": -330.43
+      },
+      {
+        "file": "sentry434_20170529_1301_tide_equal_1.00x1.00_BV03_nocross.grd",
+        "size_mb": 20.9,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -2141.5,
+        "p1": -2124.41,
+        "p50": -1935.19,
+        "p99": -1663.71,
+        "max": -1628.08
+      },
+      {
+        "file": "sentry438_20170603_1257_tide_equal_1.00x1.00_BV03_nocross.grd",
+        "size_mb": 20.9,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -443.03,
+        "p1": -438.07,
+        "p50": -409.23,
+        "p99": -363.22,
+        "max": -330.1
+      },
+      {
+        "file": "sentry438_20170603_1257_tide_equal_1.00x1.00_BV03.grd",
+        "size_mb": 20.9,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -443.03,
+        "p1": -438.01,
+        "p50": -409.49,
+        "p99": -363.94,
+        "max": -330.53
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -2034.13,
+      "p1": -1948.82,
+      "p50": -1645.52,
+      "p99": -1490.95,
+      "max": -1464.69
+    },
+    "corrected_source_file": "sentry441_20170608_1318_tide_equal_1.00x1.00_BV01.grd",
+    "png": "/scratch/groups/hilley/auv_ship_colocated_bathy/qc_plots/r0_evidence/AT37-13__MGDS_31199.png"
+  },
+  {
+    "pair_id": "AT42-03__MGDS_32007",
+    "hr_id": "MGDS:32007",
+    "n_tiles": 10,
+    "selected_source": "sentry505_20181027_1140_rnv_tide_1.00x1.00_BV01.grd",
+    "selected_type": "gmt_grd_float",
+    "tile_types": [
+      "float_tif",
+      "gmt_grd_float"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -1460.0,
+    "expected_depth_m": 948.0,
+    "f5_bucket": "clean",
+    "inventory": [
+      {
+        "file": "sentry505_20181027_1140_rnv_tide_1.00x1.00_BV01.grd",
+        "size_mb": 91.8,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1514.71,
+        "p1": -1506.74,
+        "p50": -1445.82,
+        "p99": -1140.98,
+        "max": -1120.61
+      },
+      {
+        "file": "sentry506_20181028_1131_rnv_tide_1.00x1.00_BV02.grd",
+        "size_mb": 71.0,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1741.78,
+        "p1": -1704.28,
+        "p50": -1338.19,
+        "p99": -1122.09,
+        "max": 1.11
+      },
+      {
+        "file": "sentry508_20181102_1223_rnv_tide_1.00x1.00_BV01.grd",
+        "size_mb": 27.9,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -431.2,
+        "p1": -424.89,
+        "p50": -378.01,
+        "p99": -172.57,
+        "max": -167.48
+      },
+      {
+        "file": "sentry509_20181104_1045_rnv_tide_1.00x1.00_BV01.grd",
+        "size_mb": 24.8,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1452.13,
+        "p1": -1447.48,
+        "p50": -1422.82,
+        "p99": -1370.45,
+        "max": -1364.74
+      },
+      {
+        "file": "sentry504_20181025_1532_rnv_tide_1.00x1.00_BV01.grd",
+        "size_mb": 10.0,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1066.83,
+        "p1": -1063.22,
+        "p50": -1030.63,
+        "p99": -1004.99,
+        "max": -1.81
+      },
+      {
+        "file": "sentry503_20181023_1306_rnv_tide_1.00x1.00_BV01.grd",
+        "size_mb": 4.1,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1894.6,
+        "p1": -1881.03,
+        "p50": -1836.88,
+        "p99": -1724.62,
+        "max": -1713.13
+      },
+      {
+        "file": "sentry502_20181021_1256_rnv_tide_1.00x1.00_BV01.grd",
+        "size_mb": 4.0,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1014.5,
+        "p1": -1011.86,
+        "p50": -997.57,
+        "p99": -968.29,
+        "max": -963.98
+      },
+      {
+        "file": "sentry504_20181025_1532_rnv_tide_1.00x1.00_BV01_thresholded.grd",
+        "size_mb": 1.4,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1066.83,
+        "p1": -1063.22,
+        "p50": -1030.63,
+        "p99": -1005.0,
+        "max": -925.51,
+        "type": "float_tif"
+      },
+      {
+        "file": "sentry507_20181031_1308_rnv_tide_1.00x1.00_BV01.grd",
+        "size_mb": 1.2,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1027.49,
+        "p1": -1026.08,
+        "p50": -1014.76,
+        "p99": -1011.07,
+        "max": -1010.52
+      },
+      {
+        "file": "sentry500_20181017_0803_rnv_tide_1.00x1.00_BV01.grd",
+        "size_mb": 1.1,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1857.05,
+        "p1": -1850.85,
+        "p50": -1815.68,
+        "p99": -1786.03,
+        "max": -1784.45
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -1514.69,
+      "p1": -1506.75,
+      "p50": -1445.84,
+      "p99": -1141.02,
+      "max": -1120.61
+    },
+    "corrected_source_file": "sentry505_20181027_1140_rnv_tide_1.00x1.00_BV01.grd",
+    "png": "/scratch/groups/hilley/auv_ship_colocated_bathy/qc_plots/r0_evidence/AT42-03__MGDS_32007.png"
+  },
+  {
+    "pair_id": "EW0207__MGDS_32558",
+    "hr_id": "MGDS:32558",
+    "n_tiles": 10,
+    "selected_source": "AxialSRift_MAUV_ver2025_Topo1m_slope2575-1875.tif",
+    "selected_type": "rgb_uint8",
+    "tile_types": [
+      "rgb_uint8"
+    ],
+    "has_float_elevation_source": false,
+    "rgb_visualization_only": true,
+    "lr_median_m": -2313.5,
+    "expected_depth_m": 2234.0,
+    "f5_bucket": "inflated_exclude_candidate",
+    "inventory": [
+      {
+        "file": "AxialSRift_MAUV_ver2025_Topo1m_slope2575-1875.tif",
+        "size_mb": 2116.5,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 12.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "AxialSRift_MAUV_ver2025_Topo1m_slope2750-1500.tif",
+        "size_mb": 2116.5,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 10.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "AxialNRift_MAUV_ver2025_Topo1m_slope2275-1400.tif",
+        "size_mb": 657.0,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 9.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "AxialSRift_MAUV_ver2025_SE_Topo1m_slope2520-2180.tif",
+        "size_mb": 385.2,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 9.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "AxialSRift_MAUV_ver2025_SR3AB_Topo1m_slope2400-2150.tif",
+        "size_mb": 164.2,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 0.0,
+        "p50": 113.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "AxialSRift_MAUV_ver2025_SWclose_Topo1m_slope2600-2350.tif",
+        "size_mb": 84.6,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 7.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "AxialSRift_MAUV_ver2025_SR5_Topo1m_slope2285-2185.tif",
+        "size_mb": 76.6,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 0.0,
+        "p50": 216.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "AxialSRift_MAUV_ver2025_SR4_Topo1m_slope2300-2170.tif",
+        "size_mb": 33.4,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 0.0,
+        "p50": 154.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "AxialNRift_MAUV_ver2025_pits_Topo1m_slope_histEq2272-2055.tif",
+        "size_mb": 15.9,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 0.0,
+        "p50": 242.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "AxialSRift_MAUV_ver2025_SR2_SR1_contact_slope2420-2350.tif",
+        "size_mb": 8.4,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 14.0,
+        "p50": 196.0,
+        "p99": 249.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      }
+    ],
+    "terrain_rgb_test": {
+      "terrarium_p50": 1667721.5,
+      "mapbox_p50": 1667721.5,
+      "lr_med": -2313.5,
+      "plausible": false
+    },
+    "png": "/scratch/groups/hilley/auv_ship_colocated_bathy/qc_plots/r0_evidence/EW0207__MGDS_32558.png"
+  },
+  {
+    "pair_id": "EW9801__MGDS_31425",
+    "hr_id": "MGDS:31425",
+    "n_tiles": 2,
+    "selected_source": "LoihiSummit_sentry2013_Topo5m.grd",
+    "selected_type": "float_tif",
+    "tile_types": [
+      "float_tif"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -1200.0,
+    "expected_depth_m": 1255.0,
+    "f5_bucket": "clean",
+    "inventory": [
+      {
+        "file": "LoihiSummit_sentry2013_Topo5m.grd",
+        "size_mb": 1.0,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1556.1,
+        "p1": -1477.16,
+        "p50": -1170.32,
+        "p99": -1003.27,
+        "max": -953.9,
+        "type": "float_tif"
+      },
+      {
+        "file": "PelesPit_sentry2013_all_Topo2m.grd",
+        "size_mb": 0.6,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1337.04,
+        "p1": -1315.86,
+        "p50": -1180.29,
+        "p99": -1040.07,
+        "max": -1017.57,
+        "type": "float_tif"
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -1556.1,
+      "p1": -1477.16,
+      "p50": -1170.32,
+      "p99": -1003.27,
+      "max": -953.9
+    },
+    "corrected_source_file": "LoihiSummit_sentry2013_Topo5m.grd"
+  },
+  {
+    "pair_id": "EW9904__MGDS_30217",
+    "hr_id": "MGDS:30217",
+    "n_tiles": 4,
+    "selected_source": "AxialSummit_MAUV_10Mar2021_All_OverEM302_Topo1m_slope.tif",
+    "selected_type": "rgb_uint8",
+    "tile_types": [
+      "rgb_uint8"
+    ],
+    "has_float_elevation_source": false,
+    "rgb_visualization_only": true,
+    "lr_median_m": -1798.1,
+    "expected_depth_m": 1793.0,
+    "f5_bucket": "inflated_exclude_candidate",
+    "inventory": [
+      {
+        "file": "AxialSummit_MAUV_10Mar2021_All_OverEM302_Topo1m_slope.tif",
+        "size_mb": 1094.0,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 11.0,
+        "p50": 180.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "AxialSummit_MAUV_10Mar2021_All_Topo1m_slope.tif",
+        "size_mb": 1094.0,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 32.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "AxialSummit_MAUV_10Mar2021_All_OverEM302_Topo1m_histEq11.tif",
+        "size_mb": 1094.0,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 1.0,
+        "p50": 30.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "AxialSummit_MAUV_10Mar2021_All_Topo1m_slope_histEq2011.tif",
+        "size_mb": 1094.0,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 25.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      }
+    ],
+    "terrain_rgb_test": {
+      "terrarium_p50": 1174827.8,
+      "mapbox_p50": 1174827.8,
+      "lr_med": -1798.1,
+      "plausible": false
+    }
+  },
+  {
+    "pair_id": "FK006B__MGDS_20811",
+    "hr_id": "MGDS:20811",
+    "n_tiles": 17,
+    "selected_source": "sentry083_p5xp5_equal.grd",
+    "selected_type": "gmt_grd_float",
+    "tile_types": [
+      "gmt_grd_float"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -1440.8,
+    "expected_depth_m": 1636.0,
+    "f5_bucket": "genuine_coreg_fail",
+    "inventory": [
+      {
+        "file": "sentry083_p5xp5_equal.grd",
+        "size_mb": 118.1,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1521.31,
+        "p1": -1513.63,
+        "p50": -1432.1,
+        "p99": -1363.81,
+        "max": -1350.4
+      },
+      {
+        "file": "sentry084_p5xp5.grd",
+        "size_mb": 105.9,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1410.25,
+        "p1": -1404.39,
+        "p50": -1369.44,
+        "p99": -1346.66,
+        "max": -1341.41
+      },
+      {
+        "file": "sentry084_p5xp5_equal.grd",
+        "size_mb": 93.4,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1410.18,
+        "p1": -1404.39,
+        "p50": -1369.44,
+        "p99": -1346.66,
+        "max": -1341.41
+      },
+      {
+        "file": "sentry084_p5xp5_part2.grd",
+        "size_mb": 84.0,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1379.92,
+        "p1": -1379.31,
+        "p50": -1360.35,
+        "p99": -1345.23,
+        "max": -1341.41
+      },
+      {
+        "file": "sentry084_p5xp5_part1.grd",
+        "size_mb": 45.5,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1410.25,
+        "p1": -1406.25,
+        "p50": -1376.38,
+        "p99": -1353.27,
+        "max": -1349.41
+      },
+      {
+        "file": "sentry082_p5xp5_gvxdvz.grd",
+        "size_mb": 37.5,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1912.11,
+        "p1": -1901.06,
+        "p50": -1889.79,
+        "p99": -1853.3,
+        "max": -1847.09
+      },
+      {
+        "file": "sentry083_1x1_gvxdvz.grd",
+        "size_mb": 33.5,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1521.37,
+        "p1": -1513.68,
+        "p50": -1432.22,
+        "p99": -1363.53,
+        "max": -1350.4
+      },
+      {
+        "file": "sentry083_1x1_equal.grd",
+        "size_mb": 29.5,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1521.33,
+        "p1": -1513.68,
+        "p50": -1432.32,
+        "p99": -1363.56,
+        "max": -1350.4
+      },
+      {
+        "file": "sentry084_1x1.grd",
+        "size_mb": 26.5,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1410.16,
+        "p1": -1404.58,
+        "p50": -1369.46,
+        "p99": -1346.71,
+        "max": -1341.41
+      },
+      {
+        "file": "sentry080_1x1_gvxdvz.grd",
+        "size_mb": 24.8,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1416.34,
+        "p1": -1413.3,
+        "p50": -1369.71,
+        "p99": -1346.85,
+        "max": -1333.91
+      },
+      {
+        "file": "sentry084_1x1_equal.grd",
+        "size_mb": 23.4,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1410.16,
+        "p1": -1404.56,
+        "p50": -1369.46,
+        "p99": -1346.74,
+        "max": -1341.41
+      },
+      {
+        "file": "sentry080_MC338_1x1_equal.grd",
+        "size_mb": 21.9,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1416.34,
+        "p1": -1413.3,
+        "p50": -1369.71,
+        "p99": -1346.84,
+        "max": -1333.88
+      },
+      {
+        "file": "sentry084_1x1_part2.grd",
+        "size_mb": 21.0,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1379.92,
+        "p1": -1379.36,
+        "p50": -1360.41,
+        "p99": -1345.32,
+        "max": -1341.41
+      },
+      {
+        "file": "sentry084_1x1_part1.grd",
+        "size_mb": 11.4,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1410.16,
+        "p1": -1406.44,
+        "p50": -1376.38,
+        "p99": -1353.23,
+        "max": -1349.41
+      },
+      {
+        "file": "sentry082_1x1_gvxdvz.grd",
+        "size_mb": 9.4,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1937.32,
+        "p1": -1934.69,
+        "p50": -1897.22,
+        "p99": -1856.42,
+        "max": -1847.83
+      },
+      {
+        "file": "sentry080_2x2_gvxdvz.grd",
+        "size_mb": 6.2,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1416.25,
+        "p1": -1413.21,
+        "p50": -1369.68,
+        "p99": -1346.84,
+        "max": -1333.97
+      },
+      {
+        "file": "sentry082_2x2_gvxdvz.grd",
+        "size_mb": 2.3,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1937.39,
+        "p1": -1934.53,
+        "p50": -1897.98,
+        "p99": -1856.9,
+        "max": -1847.95
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -1521.16,
+      "p1": -1513.63,
+      "p50": -1432.09,
+      "p99": -1363.8,
+      "max": -1351.95
+    },
+    "corrected_source_file": "sentry083_p5xp5_equal.grd"
+  },
+  {
+    "pair_id": "FK160407__MGDS_7832",
+    "hr_id": "MGDS:7832",
+    "n_tiles": 7,
+    "selected_source": "lau3_bathy.abe136.1x1.grd",
+    "selected_type": "gmt_grd_float",
+    "tile_types": [
+      "gmt_grd_float"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -2316.0,
+    "expected_depth_m": 2326.0,
+    "f5_bucket": "weak_exclude_candidate",
+    "inventory": [
+      {
+        "file": "lau3_bathy.abe136.1x1.grd",
+        "size_mb": 11.7,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": 2070.5,
+        "p1": 2092.12,
+        "p50": 2137.09,
+        "p99": 2164.76,
+        "max": 2177.12
+      },
+      {
+        "file": "lau2_bathy.abe135.1x1.grd",
+        "size_mb": 6.1,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": 2667.91,
+        "p1": 2670.24,
+        "p50": 2707.39,
+        "p99": 2739.75,
+        "max": 2755.7
+      },
+      {
+        "file": "lau5_bathy.abe133.1p5x1p5.grd",
+        "size_mb": 5.7,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": 1899.46,
+        "p1": 1942.33,
+        "p50": 2035.43,
+        "p99": 2164.97,
+        "max": 2181.75
+      },
+      {
+        "file": "lau3_bathy.abe128_136.2x2.grd",
+        "size_mb": 5.0,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": 2049.71,
+        "p1": 2089.49,
+        "p50": 2141.37,
+        "p99": 2176.97,
+        "max": 2196.99
+      },
+      {
+        "file": "lau1_bathy.abe137.1x1.grd",
+        "size_mb": 4.2,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": 2594.43,
+        "p1": 2614.2,
+        "p50": 2637.16,
+        "p99": 2654.31,
+        "max": 2674.66
+      },
+      {
+        "file": "lau5_bathy.abe133_134.3x3.grd",
+        "size_mb": 1.6,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": 1895.66,
+        "p1": 1915.64,
+        "p50": 2027.28,
+        "p99": 2164.5,
+        "max": 2179.09
+      },
+      {
+        "file": "lau4_bathy.abe129.2x2.grd",
+        "size_mb": 0.9,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": 2250.57,
+        "p1": 2258.18,
+        "p50": 2276.55,
+        "p99": 2294.82,
+        "max": 2298.55
+      }
+    ],
+    "corrected_source_stats": {
+      "min": 2070.5,
+      "p1": 2092.12,
+      "p50": 2137.09,
+      "p99": 2164.76,
+      "max": 2177.12
+    },
+    "corrected_source_file": "lau3_bathy.abe136.1x1.grd"
+  },
+  {
+    "pair_id": "FK171110__MGDS_24485",
+    "hr_id": "MGDS:24485",
+    "n_tiles": 4,
+    "selected_source": "Sentry458-FK171110-1m.tif",
+    "selected_type": "rgb_uint8",
+    "tile_types": [
+      "rgb_uint8"
+    ],
+    "has_float_elevation_source": false,
+    "rgb_visualization_only": true,
+    "lr_median_m": -2779.6,
+    "expected_depth_m": 2520.0,
+    "f5_bucket": "genuine_coreg_fail",
+    "inventory": [
+      {
+        "file": "Sentry458-FK171110-1m.tif",
+        "size_mb": 23.5,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 20.0,
+        "p1": 71.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "Sentry457-FK171110-1m.tif",
+        "size_mb": 23.5,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 20.0,
+        "p1": 94.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "Sentry461-FK171110-1m.tif",
+        "size_mb": 23.5,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 19.0,
+        "p1": 80.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "Sentry460-FK171110-1m.tif",
+        "size_mb": 23.5,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 19.0,
+        "p1": 95.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      }
+    ],
+    "terrain_rgb_test": {
+      "terrarium_p50": 1667721.5,
+      "mapbox_p50": 1667721.5,
+      "lr_med": -2779.6,
+      "plausible": false
+    },
+    "png": "/scratch/groups/hilley/auv_ship_colocated_bathy/qc_plots/r0_evidence/FK171110__MGDS_24485.png"
+  },
+  {
+    "pair_id": "KIWI10RR__MGDS_24499",
+    "hr_id": "MGDS:24499",
+    "n_tiles": 4,
+    "selected_source": "Sentry-457shft-1mgrid-g.grd",
+    "selected_type": "float_tif",
+    "tile_types": [
+      "float_tif"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -2758.5,
+    "expected_depth_m": 2068.0,
+    "f5_bucket": "weak_exclude_candidate",
+    "inventory": [
+      {
+        "file": "Sentry-457shft-1mgrid-g.grd",
+        "size_mb": 14.7,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2351.03,
+        "p1": -2233.35,
+        "p50": -1756.5,
+        "p99": -1266.99,
+        "max": -1173.88,
+        "type": "float_tif"
+      },
+      {
+        "file": "Sentry-458-1mgrd-g.grd",
+        "size_mb": 11.4,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2735.33,
+        "p1": -2700.91,
+        "p50": -2600.33,
+        "p99": -2103.27,
+        "max": -2048.45,
+        "type": "float_tif"
+      },
+      {
+        "file": "Sentry-460shft-1mgrd-g.grd",
+        "size_mb": 7.9,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2696.21,
+        "p1": -2667.64,
+        "p50": -2386.23,
+        "p99": -1584.01,
+        "max": -1475.25,
+        "type": "float_tif"
+      },
+      {
+        "file": "Sentry-461-1mgrd-g.grd",
+        "size_mb": 3.4,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2966.91,
+        "p1": -2960.03,
+        "p50": -2738.35,
+        "p99": -2472.64,
+        "max": -2453.1,
+        "type": "float_tif"
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -2351.03,
+      "p1": -2233.35,
+      "p50": -1756.5,
+      "p99": -1266.99,
+      "max": -1173.88
+    },
+    "corrected_source_file": "Sentry-457shft-1mgrid-g.grd"
+  },
+  {
+    "pair_id": "KN204-01__MGDS_31675",
+    "hr_id": "MGDS:31675",
+    "n_tiles": 25,
+    "selected_source": "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV03.grd",
+    "selected_type": "gmt_grd_float",
+    "tile_types": [
+      "gmt_grd_float"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -1617.8,
+    "expected_depth_m": 893.0,
+    "f5_bucket": "genuine_coreg_fail",
+    "inventory": [
+      {
+        "file": "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV03.grd",
+        "size_mb": 92.3,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1785.12,
+        "p1": -1744.05,
+        "p50": -1584.5,
+        "p99": -1503.9,
+        "max": -1475.2
+      },
+      {
+        "file": "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV01.grd",
+        "size_mb": 92.3,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1785.45,
+        "p1": -1744.38,
+        "p50": -1584.46,
+        "p99": -1504.11,
+        "max": -1475.27
+      },
+      {
+        "file": "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV02.grd",
+        "size_mb": 90.2,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1776.69,
+        "p1": -1739.59,
+        "p50": -1583.94,
+        "p99": -1479.94,
+        "max": 0.0
+      },
+      {
+        "file": "sentry490_20180823_1510_rnv_tide_equal_1.00x1.00_BV03.grd",
+        "size_mb": 78.0,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1785.31,
+        "p1": -1744.1,
+        "p50": -1584.51,
+        "p99": -1503.89,
+        "max": -1475.21
+      },
+      {
+        "file": "sentry490_20180823_1510_rnv_tide_equal_1.00x1.00_BV01.grd",
+        "size_mb": 78.0,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1785.64,
+        "p1": -1744.43,
+        "p50": -1584.44,
+        "p99": -1504.1,
+        "max": -1475.29
+      },
+      {
+        "file": "sentry494_20180827_1003_rnv_tide_1.00x1.00_BV01.grd",
+        "size_mb": 47.9,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1681.44,
+        "p1": -1643.47,
+        "p50": -1514.52,
+        "p99": -1382.7,
+        "max": -1360.8
+      },
+      {
+        "file": "sentry494_20180827_1003_rnv_tide_equal_1.00x1.00_BV01.grd",
+        "size_mb": 40.5,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1681.46,
+        "p1": -1643.56,
+        "p50": -1514.48,
+        "p99": -1382.69,
+        "max": -1360.75
+      },
+      {
+        "file": "sentry491_20180824_1250_rnv_tide_1.00x1.00_BV01.grd",
+        "size_mb": 23.8,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1630.85,
+        "p1": -1615.34,
+        "p50": -1581.72,
+        "p99": -1558.78,
+        "max": -1551.99
+      },
+      {
+        "file": "sentry491_20180824_1250_rnv_tide_1.00x1.00_BV02.grd",
+        "size_mb": 23.8,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1630.91,
+        "p1": -1615.39,
+        "p50": -1581.77,
+        "p99": -1558.83,
+        "max": -1552.04
+      },
+      {
+        "file": "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV02.grd",
+        "size_mb": 22.6,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1686.57,
+        "p1": -1666.7,
+        "p50": -1520.43,
+        "p99": -1383.67,
+        "max": -1353.18
+      },
+      {
+        "file": "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV01.grd",
+        "size_mb": 22.6,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1686.65,
+        "p1": -1666.85,
+        "p50": -1520.43,
+        "p99": -1383.43,
+        "max": -1353.48
+      },
+      {
+        "file": "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV03.grd",
+        "size_mb": 22.6,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1686.47,
+        "p1": -1666.69,
+        "p50": -1520.44,
+        "p99": -1383.86,
+        "max": -1353.25
+      },
+      {
+        "file": "sentry491_20180824_1250_rnv_tide_equal_1.00x1.00_BV02.grd",
+        "size_mb": 20.1,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1630.4,
+        "p1": -1615.38,
+        "p50": -1581.76,
+        "p99": -1558.81,
+        "max": -1551.98
+      },
+      {
+        "file": "sentry491_20180824_1250_rnv_tide_equal_1.00x1.00_BV01.grd",
+        "size_mb": 20.1,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1630.35,
+        "p1": -1615.33,
+        "p50": -1581.71,
+        "p99": -1558.76,
+        "max": -1551.93
+      },
+      {
+        "file": "sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV02.grd",
+        "size_mb": 19.1,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1686.58,
+        "p1": -1666.81,
+        "p50": -1520.47,
+        "p99": -1383.68,
+        "max": -1353.16
+      },
+      {
+        "file": "sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV03.grd",
+        "size_mb": 19.1,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1686.46,
+        "p1": -1666.76,
+        "p50": -1520.49,
+        "p99": -1383.88,
+        "max": -1353.3
+      },
+      {
+        "file": "sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV01.grd",
+        "size_mb": 19.1,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1686.66,
+        "p1": -1666.91,
+        "p50": -1520.46,
+        "p99": -1383.68,
+        "max": -1353.79
+      },
+      {
+        "file": "sentry493_20180826_1037_rnv_tide_1.00x1.00_BV02.grd",
+        "size_mb": 18.4,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1565.62,
+        "p1": -1550.49,
+        "p50": -1518.98,
+        "p99": -1388.56,
+        "max": -1373.66
+      },
+      {
+        "file": "sentry493_20180826_1037_rnv_tide_1.00x1.00_BV01.grd",
+        "size_mb": 18.4,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1565.35,
+        "p1": -1550.5,
+        "p50": -1518.84,
+        "p99": -1388.48,
+        "max": -1374.23
+      },
+      {
+        "file": "sentry493_20180826_1037_rnv_tide_equal_1.00x1.00_BV02.grd",
+        "size_mb": 15.6,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1565.31,
+        "p1": -1550.49,
+        "p50": -1519.0,
+        "p99": -1388.52,
+        "max": -1373.09
+      },
+      {
+        "file": "sentry493_20180826_1037_rnv_tide_equal_1.00x1.00_BV01.grd",
+        "size_mb": 15.6,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1565.28,
+        "p1": -1550.51,
+        "p50": -1518.88,
+        "p99": -1388.46,
+        "max": -1373.12
+      },
+      {
+        "file": "sentry498_20180831_1202_rnv_tide_1.00x1.00_BV01.grd",
+        "size_mb": 6.4,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1546.89,
+        "p1": -1542.5,
+        "p50": -1529.87,
+        "p99": -1505.81,
+        "max": -1502.54
+      },
+      {
+        "file": "sentry498_20180831_1202_rnv_tide_equal_1.00x1.00_BV01.grd",
+        "size_mb": 5.5,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1546.91,
+        "p1": -1542.51,
+        "p50": -1529.88,
+        "p99": -1505.8,
+        "max": -1502.58
+      },
+      {
+        "file": "sentry497_20180830_1148_rnv_tide_1.00x1.00_BV01.grd",
+        "size_mb": 4.7,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1549.23,
+        "p1": -1547.3,
+        "p50": -1537.49,
+        "p99": -1515.03,
+        "max": -1502.82
+      },
+      {
+        "file": "sentry497_20180830_1148_rnv_tide_equal_1.00x1.00_BV01.grd",
+        "size_mb": 4.0,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1549.24,
+        "p1": -1547.3,
+        "p50": -1537.48,
+        "p99": -1515.0,
+        "max": -1506.77
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -1785.08,
+      "p1": -1744.05,
+      "p50": -1584.5,
+      "p99": -1503.89,
+      "max": -1475.2
+    },
+    "corrected_source_file": "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV03.grd"
+  },
+  {
+    "pair_id": "MGLN06MV__MGDS_17700",
+    "hr_id": "MGDS:17700",
+    "n_tiles": 16,
+    "selected_source": "abe190_LL.grd",
+    "selected_type": "gmt_grd_float",
+    "tile_types": [
+      "gmt_grd_float"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -2614.9,
+    "expected_depth_m": 1930.0,
+    "f5_bucket": "genuine_coreg_fail",
+    "inventory": [
+      {
+        "file": "abe190_LL.grd",
+        "size_mb": 8.6,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1773.49,
+        "p1": -1758.5,
+        "p50": -1677.26,
+        "p99": -1638.83,
+        "max": -1626.96
+      },
+      {
+        "file": "abe191_LL.grd",
+        "size_mb": 5.9,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1736.66,
+        "p1": -1721.12,
+        "p50": -1672.15,
+        "p99": -1655.33,
+        "max": -1647.82
+      },
+      {
+        "file": "abe192_LL.grd",
+        "size_mb": 4.0,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1934.07,
+        "p1": -1922.09,
+        "p50": -1882.99,
+        "p99": -1852.61,
+        "max": -1840.76
+      },
+      {
+        "file": "abe188_LL.grd",
+        "size_mb": 3.8,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1748.81,
+        "p1": -1733.92,
+        "p50": -1677.12,
+        "p99": -1636.51,
+        "max": -1625.85
+      },
+      {
+        "file": "abe182_LL.grd",
+        "size_mb": 3.7,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -2516.93,
+        "p1": -2508.92,
+        "p50": -2481.65,
+        "p99": -2451.22,
+        "max": -2444.18
+      },
+      {
+        "file": "abe183a_LL.grd",
+        "size_mb": 3.3,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -2517.0,
+        "p1": -2508.36,
+        "p50": -2485.13,
+        "p99": -2458.5,
+        "max": -2444.83
+      },
+      {
+        "file": "abe185_LL.grd",
+        "size_mb": 3.1,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -2608.3,
+        "p1": -2598.87,
+        "p50": -2575.46,
+        "p99": -2518.36,
+        "max": -2491.76
+      },
+      {
+        "file": "abe198_LL.grd",
+        "size_mb": 2.7,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1699.53,
+        "p1": -1615.54,
+        "p50": -1490.74,
+        "p99": -1394.75,
+        "max": -1375.08
+      },
+      {
+        "file": "abe195_LL.grd",
+        "size_mb": 2.7,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1687.52,
+        "p1": -1671.52,
+        "p50": -1601.44,
+        "p99": -1497.23,
+        "max": -1484.74
+      },
+      {
+        "file": "abe189_LL.grd",
+        "size_mb": 2.4,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1674.25,
+        "p1": -1653.61,
+        "p50": -1578.16,
+        "p99": -1501.55,
+        "max": -1483.97
+      },
+      {
+        "file": "abe193_LL.grd",
+        "size_mb": 2.4,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1940.35,
+        "p1": -1934.75,
+        "p50": -1908.77,
+        "p99": -1884.46,
+        "max": -1881.18
+      },
+      {
+        "file": "abe187_LL.grd",
+        "size_mb": 1.7,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -2684.18,
+        "p1": -2679.45,
+        "p50": -2608.12,
+        "p99": -2507.28,
+        "max": -2479.52
+      },
+      {
+        "file": "abe186_LL.grd",
+        "size_mb": 1.6,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -2706.4,
+        "p1": -2668.76,
+        "p50": -2615.41,
+        "p99": -2562.1,
+        "max": -2528.08
+      },
+      {
+        "file": "abe194_LL.grd",
+        "size_mb": 1.6,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1539.06,
+        "p1": -1513.4,
+        "p50": -1389.55,
+        "p99": -1185.57,
+        "max": -1154.04
+      },
+      {
+        "file": "abe183b_LL.grd",
+        "size_mb": 1.6,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -2517.0,
+        "p1": -2515.39,
+        "p50": -2477.93,
+        "p99": -2435.38,
+        "max": -2400.27
+      },
+      {
+        "file": "abe199_LL.grd",
+        "size_mb": 1.2,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -2131.54,
+        "p1": -2123.41,
+        "p50": -2020.72,
+        "p99": -1919.04,
+        "max": -1903.25
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -1773.49,
+      "p1": -1758.5,
+      "p50": -1677.26,
+      "p99": -1638.83,
+      "max": -1626.96
+    },
+    "corrected_source_file": "abe190_LL.grd"
+  },
+  {
+    "pair_id": "NA076__MGDS_32321",
+    "hr_id": "MGDS:32321",
+    "n_tiles": 1,
+    "selected_source": "SantaMonica_800mMound_MAUV_Topo1m_slope880-760.tif",
+    "selected_type": "rgb_uint8",
+    "tile_types": [
+      "rgb_uint8"
+    ],
+    "has_float_elevation_source": false,
+    "rgb_visualization_only": true,
+    "lr_median_m": -866.6,
+    "expected_depth_m": 866.0,
+    "f5_bucket": "genuine_coreg_fail",
+    "inventory": [
+      {
+        "file": "SantaMonica_800mMound_MAUV_Topo1m_slope880-760.tif",
+        "size_mb": 27.4,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 36.0,
+        "p50": 107.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      }
+    ],
+    "terrain_rgb_test": {
+      "terrarium_p50": 696989.9,
+      "mapbox_p50": 696989.9,
+      "lr_med": -866.6,
+      "plausible": false
+    },
+    "png": "/scratch/groups/hilley/auv_ship_colocated_bathy/qc_plots/r0_evidence/NA076__MGDS_32321.png"
+  },
+  {
+    "pair_id": "NA080__MGDS_31290",
+    "hr_id": "MGDS:31290",
+    "n_tiles": 1,
+    "selected_source": "OctopusGarden_MAUV2022_Topo1m_utm.asc",
+    "selected_type": "float_tif",
+    "tile_types": [
+      "float_tif"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -3315.9,
+    "expected_depth_m": 3221.0,
+    "f5_bucket": "clean",
+    "inventory": [
+      {
+        "file": "OctopusGarden_MAUV2022_Topo1m_utm.asc",
+        "size_mb": 1804.6,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -3486.22,
+        "p1": -3464.83,
+        "p50": -3308.94,
+        "p99": -3081.55,
+        "max": -2956.18,
+        "type": "float_tif"
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -3486.22,
+      "p1": -3464.83,
+      "p50": -3308.94,
+      "p99": -3081.55,
+      "max": -2956.18
+    },
+    "corrected_source_file": "OctopusGarden_MAUV2022_Topo1m_utm.asc",
+    "png": "/scratch/groups/hilley/auv_ship_colocated_bathy/qc_plots/r0_evidence/NA080__MGDS_31290.png"
+  },
+  {
+    "pair_id": "NA090__MGDS_31212",
+    "hr_id": "MGDS:31212",
+    "n_tiles": 4,
+    "selected_source": "sentry607_20211118_1847_rnv_tide_equal_1.00x1.00_BV01.grd",
+    "selected_type": "gmt_grd_float",
+    "tile_types": [
+      "gmt_grd_float"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -1855.0,
+    "expected_depth_m": 1832.0,
+    "f5_bucket": "clean",
+    "inventory": [
+      {
+        "file": "sentry607_20211118_1847_rnv_tide_equal_1.00x1.00_BV01.grd",
+        "size_mb": 45.6,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1896.59,
+        "p1": -1871.14,
+        "p50": -1849.86,
+        "p99": -1812.48,
+        "max": -1767.65
+      },
+      {
+        "file": "sentry607_20211118_1847_rnv_tide_equal_1.00x1.00_BV02.grd",
+        "size_mb": 45.6,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1896.59,
+        "p1": -1871.14,
+        "p50": -1849.83,
+        "p99": -1812.15,
+        "max": -1767.65
+      },
+      {
+        "file": "sentry607_20211118_1847_rnv_tide_1.00x1.00_BV01_fledermaus.grd",
+        "size_mb": 25.5,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1896.59,
+        "p1": -1871.14,
+        "p50": -1849.86,
+        "p99": -1812.51,
+        "max": -1767.79
+      },
+      {
+        "file": "sentry607_20211118_1847_rnv_tide_1.00x1.00_BV02_fledermaus.grd",
+        "size_mb": 25.5,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1896.59,
+        "p1": -1871.14,
+        "p50": -1849.83,
+        "p99": -1812.15,
+        "max": -1767.79
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -1896.59,
+      "p1": -1871.14,
+      "p50": -1849.86,
+      "p99": -1812.48,
+      "max": -1767.65
+    },
+    "corrected_source_file": "sentry607_20211118_1847_rnv_tide_equal_1.00x1.00_BV01.grd"
+  },
+  {
+    "pair_id": "RC2511__MGDS_32241",
+    "hr_id": "MGDS:32241",
+    "n_tiles": 9,
+    "selected_source": "EMARK_massif_MAUV_Topo1m_slope.tif",
+    "selected_type": "rgb_uint8",
+    "tile_types": [
+      "rgb_uint8"
+    ],
+    "has_float_elevation_source": false,
+    "rgb_visualization_only": true,
+    "lr_median_m": -2340.9,
+    "expected_depth_m": 2548.0,
+    "f5_bucket": "genuine_coreg_fail",
+    "inventory": [
+      {
+        "file": "EMARK_massif_MAUV_Topo1m_slope.tif",
+        "size_mb": 511.2,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 28.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "Hydra_MAUV_Topo1m_slope.tif",
+        "size_mb": 159.4,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 18.0,
+        "p50": 218.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "PuyDesFolles_MAUV_Topo1m_slope.tif",
+        "size_mb": 101.8,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 3.0,
+        "p50": 215.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "PuyDesFolles_MAUV_Topo1m_slope2045-1895.tif",
+        "size_mb": 101.8,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 1.0,
+        "p50": 180.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "PuyDesFolles_MAUV_Topo1m_slopeHistEq.tif",
+        "size_mb": 101.8,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 0.0,
+        "p50": 176.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "EMARK_vents_MAUV_Topo1m_slope.tif",
+        "size_mb": 75.8,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 9.0,
+        "p50": 203.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "PuyDesFolles_Schimneys_MAUV_Topo50cm_slope1956-1896.tif",
+        "size_mb": 6.2,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 0.0,
+        "p50": 210.0,
+        "p99": 252.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "PuyDesFolles_Birthday_MAUV_Topo50cm_slope1979-1909.tif",
+        "size_mb": 5.5,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 0.0,
+        "p50": 143.0,
+        "p99": 247.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "PuyDesFolles_NNWchimneys_MAUV_Topo50cm_slope1980-1946.tif",
+        "size_mb": 4.2,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 0.0,
+        "p50": 61.0,
+        "p99": 228.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      }
+    ],
+    "terrain_rgb_test": {
+      "terrarium_p50": 1667721.5,
+      "mapbox_p50": 1667721.5,
+      "lr_med": -2340.9,
+      "plausible": false
+    },
+    "png": "/scratch/groups/hilley/auv_ship_colocated_bathy/qc_plots/r0_evidence/RC2511__MGDS_32241.png"
+  },
+  {
+    "pair_id": "RC2511__MGDS_32240",
+    "hr_id": "MGDS:32240",
+    "n_tiles": 7,
+    "selected_source": "EMARK_massif_MAUV_Topo1m.asc",
+    "selected_type": "float_tif",
+    "tile_types": [
+      "float_tif"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -3273.1,
+    "expected_depth_m": 2732.0,
+    "f5_bucket": "weak_exclude_candidate",
+    "inventory": [
+      {
+        "file": "EMARK_massif_MAUV_Topo1m.asc",
+        "size_mb": 1848.2,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -3955.43,
+        "p1": -3818.63,
+        "p50": -2244.8,
+        "p99": -1159.02,
+        "max": -999.71,
+        "type": "float_tif"
+      },
+      {
+        "file": "Hydra_MAUV_Topo1m.asc",
+        "size_mb": 643.0,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -4254.14,
+        "p1": -4162.88,
+        "p50": -3372.4,
+        "p99": -2883.51,
+        "max": -2744.71,
+        "type": "float_tif"
+      },
+      {
+        "file": "PuyDesFolles_MAUV_Topo1m.asc",
+        "size_mb": 441.5,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2356.51,
+        "p1": -2310.86,
+        "p50": -1975.53,
+        "p99": -1904.32,
+        "max": -1893.42,
+        "type": "float_tif"
+      },
+      {
+        "file": "EMARK_vents_MAUV_Topo1m.asc",
+        "size_mb": 285.8,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -4464.07,
+        "p1": -4397.33,
+        "p50": -4043.26,
+        "p99": -3247.0,
+        "max": -3214.38,
+        "type": "float_tif"
+      },
+      {
+        "file": "PuyDesFolles_Schimneys_MAUV_Topo50cm.asc",
+        "size_mb": 30.8,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1956.66,
+        "p1": -1951.0,
+        "p50": -1917.28,
+        "p99": -1903.1,
+        "max": -1896.37,
+        "type": "float_tif"
+      },
+      {
+        "file": "PuyDesFolles_Birthday_MAUV_Topo50cm.asc",
+        "size_mb": 27.3,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1973.22,
+        "p1": -1964.83,
+        "p50": -1942.07,
+        "p99": -1922.42,
+        "max": -1910.5,
+        "type": "float_tif"
+      },
+      {
+        "file": "PuyDesFolles_NNWchimneys_MAUV_Topo50cm.asc",
+        "size_mb": 20.8,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1984.59,
+        "p1": -1979.36,
+        "p50": -1968.63,
+        "p99": -1956.72,
+        "max": -1946.15,
+        "type": "float_tif"
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -3955.43,
+      "p1": -3818.63,
+      "p50": -2244.8,
+      "p99": -1159.02,
+      "max": -999.71
+    },
+    "corrected_source_file": "EMARK_massif_MAUV_Topo1m.asc"
+  },
+  {
+    "pair_id": "RR1506__MGDS_29779",
+    "hr_id": "MGDS:29779",
+    "n_tiles": 11,
+    "selected_source": "sentryall.grd",
+    "selected_type": "float_tif",
+    "tile_types": [
+      "float_tif",
+      "gmt_grd_float"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -1107.3,
+    "expected_depth_m": 1063.0,
+    "f5_bucket": "clean",
+    "inventory": [
+      {
+        "file": "sentryall.grd",
+        "size_mb": 355.4,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1519.4,
+        "p1": -1515.15,
+        "p50": -1009.05,
+        "p99": -754.96,
+        "max": -630.28,
+        "type": "float_tif"
+      },
+      {
+        "file": "sentry314_20150412_0941.grd",
+        "size_mb": 184.9,
+        "count": 1,
+        "dtype": "float64",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1492.86,
+        "p1": -1441.61,
+        "p50": -994.09,
+        "p99": -870.53,
+        "max": -850.49,
+        "type": "float_tif"
+      },
+      {
+        "file": "sentry313_20150410_2307.grd",
+        "size_mb": 149.3,
+        "count": 1,
+        "dtype": "float64",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1436.25,
+        "p1": -1316.93,
+        "p50": -934.72,
+        "p99": -855.55,
+        "max": -800.07,
+        "type": "float_tif"
+      },
+      {
+        "file": "sentry311_20150408_0400.grd",
+        "size_mb": 134.5,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1514.89,
+        "p1": -1507.83,
+        "p50": -1077.62,
+        "p99": -905.85,
+        "max": -568.2
+      },
+      {
+        "file": "sentry304_20150331_1514.grd",
+        "size_mb": 130.6,
+        "count": 1,
+        "dtype": "float64",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1100.85,
+        "p1": -1085.67,
+        "p50": -955.05,
+        "p99": -865.72,
+        "max": -842.96,
+        "type": "float_tif"
+      },
+      {
+        "file": "sentry310_20150406_2203.grd",
+        "size_mb": 125.6,
+        "count": 1,
+        "dtype": "float64",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1519.03,
+        "p1": -1516.73,
+        "p50": -1173.43,
+        "p99": -907.86,
+        "max": -757.05,
+        "type": "float_tif"
+      },
+      {
+        "file": "sentry308_20150405_0542.grd",
+        "size_mb": 114.2,
+        "count": 1,
+        "dtype": "float64",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1516.24,
+        "p1": -1512.3,
+        "p50": -1032.53,
+        "p99": -817.59,
+        "max": -729.65,
+        "type": "float_tif"
+      },
+      {
+        "file": "sentry307_20150403_2056.grd",
+        "size_mb": 107.8,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1572.57,
+        "p1": -1518.36,
+        "p50": -1493.79,
+        "p99": -912.95,
+        "max": -856.69
+      },
+      {
+        "file": "sentry312_20150409_1751.grd",
+        "size_mb": 83.9,
+        "count": 1,
+        "dtype": "float64",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1520.21,
+        "p1": -1517.8,
+        "p50": -990.42,
+        "p99": -821.77,
+        "max": -750.11,
+        "type": "float_tif"
+      },
+      {
+        "file": "sentry305_20150401_1107.grd",
+        "size_mb": 77.7,
+        "count": 1,
+        "dtype": "float64",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1517.54,
+        "p1": -1514.63,
+        "p50": -1425.92,
+        "p99": -943.6,
+        "max": -854.47,
+        "type": "float_tif"
+      },
+      {
+        "file": "sentry303_20150330_0717.grd",
+        "size_mb": 63.3,
+        "count": 1,
+        "dtype": "float64",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1137.46,
+        "p1": -1109.71,
+        "p50": -911.07,
+        "p99": -676.56,
+        "max": -554.38,
+        "type": "float_tif"
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -1519.4,
+      "p1": -1515.15,
+      "p50": -1009.05,
+      "p99": -754.96,
+      "max": -630.28
+    },
+    "corrected_source_file": "sentryall.grd"
+  },
+  {
+    "pair_id": "SKQ201705S__MGDS_31255",
+    "hr_id": "MGDS:31255",
+    "n_tiles": 2,
+    "selected_source": "pythia_auv_s19b_elv_gcs_0.25m.tif",
+    "selected_type": "float_tif",
+    "tile_types": [
+      "float_tif"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -1080.6,
+    "expected_depth_m": 937.0,
+    "f5_bucket": "genuine_coreg_fail",
+    "inventory": [
+      {
+        "file": "pythia_auv_s19b_elv_gcs_0.25m.tif",
+        "size_mb": 70.9,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "gray"
+        ],
+        "min": -1091.42,
+        "p1": -1070.92,
+        "p50": -1038.5,
+        "p99": -1013.3,
+        "max": -1009.18,
+        "type": "float_tif"
+      },
+      {
+        "file": "pythia_auv_s19a_elv_gcs_1m.tif",
+        "size_mb": 22.4,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "gray"
+        ],
+        "min": -1213.5,
+        "p1": -1195.03,
+        "p50": -1053.88,
+        "p99": -999.19,
+        "max": -790.22,
+        "type": "float_tif"
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -1091.42,
+      "p1": -1070.92,
+      "p50": -1038.5,
+      "p99": -1013.3,
+      "max": -1009.18
+    },
+    "corrected_source_file": "pythia_auv_s19b_elv_gcs_0.25m.tif",
+    "png": "/scratch/groups/hilley/auv_ship_colocated_bathy/qc_plots/r0_evidence/SKQ201705S__MGDS_31255.png"
+  },
+  {
+    "pair_id": "SKQ201705S__MGDS_31254",
+    "hr_id": "MGDS:31254",
+    "n_tiles": 2,
+    "selected_source": "po_a_s19bgcs.asc",
+    "selected_type": "float_tif",
+    "tile_types": [
+      "float_tif"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -1080.6,
+    "expected_depth_m": 771.0,
+    "f5_bucket": "genuine_coreg_fail",
+    "inventory": [
+      {
+        "file": "po_a_s19bgcs.asc",
+        "size_mb": 402.2,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1090.15,
+        "p1": -1070.93,
+        "p50": -1038.5,
+        "p99": -1013.29,
+        "max": -996.75,
+        "type": "float_tif"
+      },
+      {
+        "file": "po_a_s19agcs.asc",
+        "size_mb": 101.5,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -1213.49,
+        "p1": -1195.03,
+        "p50": -1053.88,
+        "p99": -999.18,
+        "max": -733.96,
+        "type": "float_tif"
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -1090.15,
+      "p1": -1070.93,
+      "p50": -1038.5,
+      "p99": -1013.29,
+      "max": -996.75
+    },
+    "corrected_source_file": "po_a_s19bgcs.asc"
+  },
+  {
+    "pair_id": "TN159__MGDS_21981",
+    "hr_id": "MGDS:21981",
+    "n_tiles": 3,
+    "selected_source": "ZTopo-org.grd",
+    "selected_type": "float_tif",
+    "tile_types": [
+      "float_tif"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -2183.4,
+    "expected_depth_m": 2179.0,
+    "f5_bucket": "genuine_coreg_fail",
+    "inventory": [
+      {
+        "file": "ZTopo-org.grd",
+        "size_mb": 191.5,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2364.46,
+        "p1": -2336.95,
+        "p50": -2116.43,
+        "p99": -2010.62,
+        "max": -1948.21,
+        "type": "float_tif"
+      },
+      {
+        "file": "ZTopo1mInt.grd",
+        "size_mb": 133.5,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2262.45,
+        "p1": -2230.31,
+        "p50": -2128.16,
+        "p99": -2087.79,
+        "max": -2065.11,
+        "type": "float_tif"
+      },
+      {
+        "file": "ZTopo.grd",
+        "size_mb": 132.2,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2263.07,
+        "p1": -2239.36,
+        "p50": -2147.4,
+        "p99": -2079.53,
+        "max": -2062.14,
+        "type": "float_tif"
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -2364.46,
+      "p1": -2336.95,
+      "p50": -2116.43,
+      "p99": -2010.62,
+      "max": -1948.21
+    },
+    "corrected_source_file": "ZTopo-org.grd"
+  },
+  {
+    "pair_id": "TN268__MGDS_30219",
+    "hr_id": "MGDS:30219",
+    "n_tiles": 2,
+    "selected_source": "AxialSummit_MAUV_10Mar2021_All_OverEM302_Topo1mSq.asc",
+    "selected_type": "float_tif",
+    "tile_types": [
+      "float_tif"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -1711.6,
+    "expected_depth_m": 1845.0,
+    "f5_bucket": "inflated_exclude_candidate",
+    "inventory": [
+      {
+        "file": "AxialSummit_MAUV_10Mar2021_All_OverEM302_Topo1mSq.asc",
+        "size_mb": 5392.3,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2342.88,
+        "p1": -2301.93,
+        "p50": -1757.51,
+        "p99": -1439.08,
+        "max": -1391.13,
+        "type": "float_tif"
+      },
+      {
+        "file": "AxialSummit_MAUV_10Mar2021_All_Topo1mSq.asc",
+        "size_mb": 3508.0,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2007.0,
+        "p1": -1896.33,
+        "p50": -1576.09,
+        "p99": -1411.57,
+        "max": -1391.13,
+        "type": "float_tif"
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -2342.88,
+      "p1": -2301.93,
+      "p50": -1757.51,
+      "p99": -1439.08,
+      "max": -1391.13
+    },
+    "corrected_source_file": "AxialSummit_MAUV_10Mar2021_All_OverEM302_Topo1mSq.asc"
+  },
+  {
+    "pair_id": "TN268__MGDS_30466",
+    "hr_id": "MGDS:30466",
+    "n_tiles": 1,
+    "selected_source": "axsrift_auv1m_Figure1.asc",
+    "selected_type": "float_tif",
+    "tile_types": [
+      "float_tif"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -2227.2,
+    "expected_depth_m": 2160.0,
+    "f5_bucket": "clean",
+    "inventory": [
+      {
+        "file": "axsrift_auv1m_Figure1.asc",
+        "size_mb": 2408.8,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2543.59,
+        "p1": -2489.66,
+        "p50": -2294.86,
+        "p99": -2004.54,
+        "max": -1778.96,
+        "type": "float_tif"
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -2543.59,
+      "p1": -2489.66,
+      "p50": -2294.86,
+      "p99": -2004.54,
+      "max": -1778.96
+    },
+    "corrected_source_file": "axsrift_auv1m_Figure1.asc"
+  },
+  {
+    "pair_id": "TN268__MGDS_24470",
+    "hr_id": "MGDS:24470",
+    "n_tiles": 4,
+    "selected_source": "sentry272_20140719_1815_tide_equal_1.000000e-01x1.000000e-01.asc",
+    "selected_type": "float_tif",
+    "tile_types": [
+      "float_tif",
+      "single_band_nonneg"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -1657.9,
+    "expected_depth_m": 1994.0,
+    "f5_bucket": "weak_exclude_candidate",
+    "inventory": [
+      {
+        "file": "sentry272_20140719_1815_tide_equal_1.000000e-01x1.000000e-01.asc",
+        "size_mb": 1052.1,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2792.46,
+        "p1": -1543.67,
+        "p50": -1540.45,
+        "p99": -1537.67,
+        "max": -1520.53,
+        "type": "float_tif"
+      },
+      {
+        "file": "sentry278_20140731_0852_tide_equal_5.000000e-01x5.000000e-01.asc",
+        "size_mb": 9.0,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2443.18,
+        "p1": -2442.39,
+        "p50": -2436.84,
+        "p99": -2433.88,
+        "max": -2433.48,
+        "type": "float_tif"
+      },
+      {
+        "file": "sentry271_20140718_2036_tide_equal_1x1.asc",
+        "size_mb": 5.4,
+        "count": 1,
+        "dtype": "int32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "type": "single_band_nonneg"
+      },
+      {
+        "file": "sentry276_20140725_2004_tide_equal_5.000000e-01x5.000000e-01.asc",
+        "size_mb": 4.1,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2229.12,
+        "p1": -2227.55,
+        "p50": -2208.48,
+        "p99": -2174.44,
+        "max": -2165.19,
+        "type": "float_tif"
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -2792.46,
+      "p1": -1543.67,
+      "p50": -1540.45,
+      "p99": -1537.67,
+      "max": -1520.53
+    },
+    "corrected_source_file": "sentry272_20140719_1815_tide_equal_1.000000e-01x1.000000e-01.asc"
+  },
+  {
+    "pair_id": "TN383__MGDS_29694",
+    "hr_id": "MGDS:29694",
+    "n_tiles": 5,
+    "selected_source": "AxialSeamountMAUV1m_LeSaout_slope1870-1760.tif",
+    "selected_type": "rgb_uint8",
+    "tile_types": [
+      "rgb_uint8"
+    ],
+    "has_float_elevation_source": false,
+    "rgb_visualization_only": true,
+    "lr_median_m": -1780.8,
+    "expected_depth_m": 1781.0,
+    "f5_bucket": "genuine_coreg_fail",
+    "inventory": [
+      {
+        "file": "AxialSeamountMAUV1m_LeSaout_slope1870-1760.tif",
+        "size_mb": 45.1,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 18.0,
+        "p50": 225.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "AxialSeamountMAUV1m_LeSaout_slope1875-1675.tif",
+        "size_mb": 45.1,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 6.0,
+        "p50": 198.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "AxialSeamountMAUV1m_LeSaout_slope1735-1715.tif",
+        "size_mb": 45.1,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 2.0,
+        "p50": 31.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "AxialSeamountMAUV1m_LeSaout_slope1795-1775.tif",
+        "size_mb": 45.1,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 3.0,
+        "p50": 222.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "AxialSeamountMAUV1m_LeSaout_slope1750-1700.tif",
+        "size_mb": 45.1,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 2.0,
+        "p50": 37.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      }
+    ],
+    "terrain_rgb_test": {
+      "terrarium_p50": 1470342.5,
+      "mapbox_p50": 1470342.5,
+      "lr_med": -1780.8,
+      "plausible": false
+    }
+  },
+  {
+    "pair_id": "TN399__MGDS_30373",
+    "hr_id": "MGDS:30373",
+    "n_tiles": 1,
+    "selected_source": "sentry_epr_1m_20210618_cd.grd",
+    "selected_type": "gmt_grd_float",
+    "tile_types": [
+      "gmt_grd_float"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -2587.8,
+    "expected_depth_m": 2625.0,
+    "f5_bucket": "clean",
+    "inventory": [
+      {
+        "file": "sentry_epr_1m_20210618_cd.grd",
+        "size_mb": 1718.8,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -2769.42,
+        "p1": -2730.41,
+        "p50": -2562.33,
+        "p99": -2506.84,
+        "max": -2480.08
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -2768.99,
+      "p1": -2730.42,
+      "p50": -2562.34,
+      "p99": -2506.84,
+      "max": -2480.18
+    },
+    "corrected_source_file": "sentry_epr_1m_20210618_cd.grd",
+    "png": "/scratch/groups/hilley/auv_ship_colocated_bathy/qc_plots/r0_evidence/TN399__MGDS_30373.png"
+  },
+  {
+    "pair_id": "AR26__MGDS_31838",
+    "hr_id": "MGDS:31838",
+    "n_tiles": 2,
+    "selected_source": "sentry447_20170901_1517_rnv_tide_1.00x1.00_BV01.grd",
+    "selected_type": "gmt_grd_float",
+    "tile_types": [
+      "gmt_grd_float"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -1782.5,
+    "expected_depth_m": 1684.0,
+    "f5_bucket": "genuine_coreg_fail",
+    "inventory": [
+      {
+        "file": "sentry447_20170901_1517_rnv_tide_1.00x1.00_BV01.grd",
+        "size_mb": 105.3,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1937.66,
+        "p1": -1931.46,
+        "p50": -1671.04,
+        "p99": -1488.82,
+        "max": -1429.44
+      },
+      {
+        "file": "sentry447_20170901_1517_rnv_tide_1.00x1.00_BV02.grd",
+        "size_mb": 105.3,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -1937.66,
+        "p1": -1931.46,
+        "p50": -1671.04,
+        "p99": -1488.82,
+        "max": -1429.44
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -1937.64,
+      "p1": -1931.46,
+      "p50": -1671.02,
+      "p99": -1488.82,
+      "max": -1430.89
+    },
+    "corrected_source_file": "sentry447_20170901_1517_rnv_tide_1.00x1.00_BV01.grd"
+  },
+  {
+    "pair_id": "TN299__MGDS_27339",
+    "hr_id": "MGDS:27339",
+    "n_tiles": 1,
+    "selected_source": "auvngorda1m_u.asc",
+    "selected_type": "float_tif",
+    "tile_types": [
+      "float_tif"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -3034.2,
+    "expected_depth_m": 2938.0,
+    "f5_bucket": "weak_exclude_candidate",
+    "inventory": [
+      {
+        "file": "auvngorda1m_u.asc",
+        "size_mb": 1309.5,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -3320.23,
+        "p1": -3249.09,
+        "p50": -3068.1,
+        "p99": -2660.18,
+        "max": -2554.95,
+        "type": "float_tif"
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -3320.23,
+      "p1": -3249.09,
+      "p50": -3068.1,
+      "p99": -2660.18,
+      "max": -2554.95
+    },
+    "corrected_source_file": "auvngorda1m_u.asc"
+  },
+  {
+    "pair_id": "TN299__MGDS_31256",
+    "hr_id": "MGDS:31256",
+    "n_tiles": 2,
+    "selected_source": "pythia_auv_s19b_gcs_0.25m.tif",
+    "selected_type": "rgb_uint8",
+    "tile_types": [
+      "rgb_uint8"
+    ],
+    "has_float_elevation_source": false,
+    "rgb_visualization_only": true,
+    "lr_median_m": -1087.0,
+    "expected_depth_m": 1084.0,
+    "f5_bucket": "genuine_coreg_fail",
+    "inventory": [
+      {
+        "file": "pythia_auv_s19b_gcs_0.25m.tif",
+        "size_mb": 163.7,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 60.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "pythia_auv_s19a_gcs_1m.tif",
+        "size_mb": 40.1,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 4.0,
+        "p50": 198.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      }
+    ],
+    "terrain_rgb_test": {
+      "terrarium_p50": 1667721.5,
+      "mapbox_p50": 1667721.5,
+      "lr_med": -1087.0,
+      "plausible": false
+    },
+    "png": "/scratch/groups/hilley/auv_ship_colocated_bathy/qc_plots/r0_evidence/TN299__MGDS_31256.png"
+  },
+  {
+    "pair_id": "FK181031__MGDS_24367",
+    "hr_id": "MGDS:24367",
+    "n_tiles": 8,
+    "selected_source": "gocauv_ar2_2m.asc",
+    "selected_type": "float_tif",
+    "tile_types": [
+      "float_tif"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -2508.9,
+    "expected_depth_m": 2471.0,
+    "f5_bucket": "clean",
+    "inventory": [
+      {
+        "file": "gocauv_ar2_2m.asc",
+        "size_mb": 195.3,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2530.01,
+        "p1": -2515.12,
+        "p50": -2323.41,
+        "p99": -2226.35,
+        "max": -2191.98,
+        "type": "float_tif"
+      },
+      {
+        "file": "gocauv_ar6_2m.asc",
+        "size_mb": 186.9,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2702.93,
+        "p1": -2659.41,
+        "p50": -2459.01,
+        "p99": -2347.42,
+        "max": -2304.37,
+        "type": "float_tif"
+      },
+      {
+        "file": "gocauv_ar3_2m.asc",
+        "size_mb": 140.6,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2536.77,
+        "p1": -2522.97,
+        "p50": -2381.6,
+        "p99": -2263.83,
+        "max": -2251.63,
+        "type": "float_tif"
+      },
+      {
+        "file": "gocauv_ar5_2m.asc",
+        "size_mb": 130.1,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2541.85,
+        "p1": -2495.27,
+        "p50": -2406.02,
+        "p99": -2333.0,
+        "max": -2317.63,
+        "type": "float_tif"
+      },
+      {
+        "file": "gocauv_pt_2m.asc",
+        "size_mb": 112.8,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2806.72,
+        "p1": -2768.38,
+        "p50": -2486.73,
+        "p99": -2373.3,
+        "max": -2347.4,
+        "type": "float_tif"
+      },
+      {
+        "file": "gocauv_ar4_2m.asc",
+        "size_mb": 97.6,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2631.95,
+        "p1": -2625.99,
+        "p50": -2423.74,
+        "p99": -2297.59,
+        "max": -2275.18,
+        "type": "float_tif"
+      },
+      {
+        "file": "gocauv_ar1_2m.asc",
+        "size_mb": 72.5,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2415.29,
+        "p1": -2396.82,
+        "p50": -2351.26,
+        "p99": -2303.3,
+        "max": -2279.16,
+        "type": "float_tif"
+      },
+      {
+        "file": "gocauv_tt_2m.asc",
+        "size_mb": 54.6,
+        "count": 1,
+        "dtype": "float32",
+        "colorinterp": [
+          "undefined"
+        ],
+        "min": -2639.87,
+        "p1": -2575.65,
+        "p50": -2377.61,
+        "p99": -2311.47,
+        "max": -2286.27,
+        "type": "float_tif"
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -2530.01,
+      "p1": -2515.12,
+      "p50": -2323.41,
+      "p99": -2226.35,
+      "max": -2191.98
+    },
+    "corrected_source_file": "gocauv_ar2_2m.asc"
+  },
+  {
+    "pair_id": "FK181031__MGDS_24620",
+    "hr_id": "MGDS:24620",
+    "n_tiles": 2,
+    "selected_source": "GOCPescaderoBasin_Topo1m_Geo_slope3800-3600.tif",
+    "selected_type": "rgb_uint8",
+    "tile_types": [
+      "rgb_uint8"
+    ],
+    "has_float_elevation_source": false,
+    "rgb_visualization_only": true,
+    "lr_median_m": -3787.0,
+    "expected_depth_m": 3788.0,
+    "f5_bucket": "genuine_coreg_fail",
+    "inventory": [
+      {
+        "file": "GOCPescaderoBasin_Topo1m_Geo_slope3800-3600.tif",
+        "size_mb": 96.4,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 33.0,
+        "p50": 70.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "GOCPescaderoBasin_Topo1m_Geo_slope3700-3635.tif",
+        "size_mb": 96.4,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 0.0,
+        "p50": 4.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      }
+    ],
+    "terrain_rgb_test": {
+      "terrarium_p50": 454025.1,
+      "mapbox_p50": 454025.1,
+      "lr_med": -3787.0,
+      "plausible": false
+    }
+  },
+  {
+    "pair_id": "KN210-05__MGDS_22436",
+    "hr_id": "MGDS:22436",
+    "n_tiles": 6,
+    "selected_source": "sentry_area1_v4.grd",
+    "selected_type": "gmt_grd_float",
+    "tile_types": [
+      "gmt_grd_float"
+    ],
+    "has_float_elevation_source": true,
+    "rgb_visualization_only": false,
+    "lr_median_m": -3357.6,
+    "expected_depth_m": 3341.0,
+    "f5_bucket": "weak_exclude_candidate",
+    "inventory": [
+      {
+        "file": "sentry_area1_v4.grd",
+        "size_mb": 183.3,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -3625.63,
+        "p1": -3581.27,
+        "p50": -3287.73,
+        "p99": -2141.86,
+        "max": -2089.45
+      },
+      {
+        "file": "sentry_area2_v2.grd",
+        "size_mb": 110.3,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -4592.7,
+        "p1": -4553.38,
+        "p50": -3525.88,
+        "p99": -2512.65,
+        "max": -2441.61
+      },
+      {
+        "file": "sentry179_renav_tide.grd",
+        "size_mb": 54.3,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -4079.65,
+        "p1": -4065.69,
+        "p50": -3686.0,
+        "p99": -3233.25,
+        "max": -3160.08
+      },
+      {
+        "file": "sentry182_adjusted2.grd",
+        "size_mb": 25.3,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -2787.38,
+        "p1": -2743.87,
+        "p50": -2559.24,
+        "p99": -2389.25,
+        "max": -2357.03
+      },
+      {
+        "file": "sentry183_adjusted2.grd",
+        "size_mb": 18.8,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -3665.55,
+        "p1": -3602.8,
+        "p50": -2881.26,
+        "p99": -2210.82,
+        "max": -2110.85
+      },
+      {
+        "file": "sentry184_adjusted2.grd",
+        "size_mb": 16.8,
+        "type": "gmt_grd_float",
+        "count": 1,
+        "dtype": "float32",
+        "min": -3992.82,
+        "p1": -3981.99,
+        "p50": -3726.87,
+        "p99": -3469.46,
+        "max": -3444.34
+      }
+    ],
+    "corrected_source_stats": {
+      "min": -3625.57,
+      "p1": -3581.26,
+      "p50": -3287.59,
+      "p99": -2141.87,
+      "max": -2089.45
+    },
+    "corrected_source_file": "sentry_area1_v4.grd"
+  },
+  {
+    "pair_id": "2009_Amundsen__MGDS_30045",
+    "hr_id": "MGDS:30045",
+    "n_tiles": 5,
+    "selected_source": "Scar_w_Headwall_715.tif",
+    "selected_type": "rgb_uint8",
+    "tile_types": [
+      "rgb_uint8"
+    ],
+    "has_float_elevation_source": false,
+    "rgb_visualization_only": true,
+    "lr_median_m": -551.0,
+    "expected_depth_m": 586.0,
+    "f5_bucket": "genuine_coreg_fail",
+    "inventory": [
+      {
+        "file": "Scar_w_Headwall_715.tif",
+        "size_mb": 777.4,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 40.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "Gentle_Shelf_Slope.tif",
+        "size_mb": 118.7,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 5.0,
+        "p1": 38.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "Shelf_Edge_Scar_w_Adj_Remnant.tif",
+        "size_mb": 97.9,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 36.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "Shelf_Edge_Scar_w_Stair_Terraces.tif",
+        "size_mb": 62.6,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 36.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      },
+      {
+        "file": "Scar_w_Headwall_519.tif",
+        "size_mb": 53.2,
+        "count": 3,
+        "dtype": "uint8",
+        "colorinterp": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "min": 0.0,
+        "p1": 39.0,
+        "p50": 255.0,
+        "p99": 255.0,
+        "max": 255.0,
+        "type": "rgb_uint8"
+      }
+    ],
+    "terrain_rgb_test": {
+      "terrarium_p50": 1667721.5,
+      "mapbox_p50": 1667721.5,
+      "lr_med": -551.0,
+      "plausible": false
+    },
+    "png": "/scratch/groups/hilley/auv_ship_colocated_bathy/qc_plots/r0_evidence/2009_Amundsen__MGDS_30045.png"
+  }
+]

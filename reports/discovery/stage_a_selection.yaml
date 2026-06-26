@@ -1,0 +1,33 @@
+ratio_train_max: 25.0
+ratio_eval_max: 40.0
+ratio_min_useful: 5.0
+lr_processed_grid_required: false
+raw_lr_routed_to_stage_c: true
+selection_counts:
+  training: 31
+  eval_only: 19
+  raw_lr_to_grid: 35
+  excluded: 25
+pilot_ids:
+- PANGAEA:tag_m127
+- MGDS:31188
+- MGDS:31425
+- MGDS:31600
+- MGDS:17700
+- MGDS:30466
+- MGDS:24756
+- MGDS:21415
+- MGDS:32556
+storage_estimate_bytes:
+  hr_bytes_total: 31291298513
+  hr_bytes_training: 5314210555
+  hr_bytes_eval_only: 3263698039
+  lr_bytes_per_grid_est: 157286400
+  lr_bytes_training: 4875878400
+  lr_bytes_eval_only: 2988441600
+  projected_total_bytes_processed_only: 16442228594
+  raw_lr_cruises_in_selection: 35
+  raw_lr_per_cruise_typical_gb_low: 1
+  raw_lr_per_cruise_typical_gb_high: 10
+selection_gpkg: /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports/discovery/stage_a_selection.gpkg
+generated_at_utc: '2026-06-05T16:59:45.321518+00:00'

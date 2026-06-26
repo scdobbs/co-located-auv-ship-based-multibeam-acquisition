@@ -1,0 +1,25 @@
+[
+  {
+    "cruise": "EW0207",
+    "hr_id": "MGDS:32558",
+    "sonar": "Atlas Hydrosweep DS-2",
+    "beamwidth_deg": 2.3,
+    "footprint_depth_m": 1977.8,
+    "achieved_cell_m": 79.4,
+    "fill_fraction": 0.817,
+    "footprint_pct_of_grid": 45.3,
+    "lr_native_res_m": 87.85,
+    "native_method": "cell/sqrt(fill)",
+    "hr_res_m": 0.990168176860051,
+    "hr_bucket": "ok",
+    "provisional_ratio": 88.72,
+    "ratio_provisional_ok_finer": false,
+    "grid_depth_median": -2234.2,
+    "coverage_verdict": "near_nadir",
+    "process_mode": "raw",
+    "qc": "pass",
+    "overlay": "/scratch/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/overlay_EW0207__MGDS_32558.png",
+    "grd_path": "/scratch/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/EW0207__union.grd",
+    "status": "gridded"
+  }
+]

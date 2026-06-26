@@ -1,0 +1,174 @@
+{
+  "pair_id": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "site_name": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "region": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "cruise_id": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "vessel": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "hr_platform": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "hr_sonar": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "hr_doi": {
+    "canonical_21": "3/21",
+    "new_16": "16/16"
+  },
+  "hr_native_res_m": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "lr_platform": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "lr_sonar": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "lr_doi": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "lr_native_res_m": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "res_ratio": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "depth_min_m": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "depth_max_m": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "terrain_class": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "native_crs_hr": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "native_crs_lr": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "target_crs": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "vertical_datum": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "footprint_wkt": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "license": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "acquisition_date": {
+    "canonical_21": "18/21",
+    "new_16": "16/16"
+  },
+  "verification_status": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "raw_path_hr": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "raw_path_lr": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "harmonized_path_hr": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "harmonized_path_lr": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "checksum_hr": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "checksum_lr": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "notes": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "horiz_offset_m": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "vert_offset_m": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "coreg_peak_psr": {
+    "canonical_21": "21/21",
+    "new_16": "13/16"
+  },
+  "coreg_peak_eig_ratio": {
+    "canonical_21": "21/21",
+    "new_16": "15/16"
+  },
+  "coreg_peak_agrees": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "coreg_status": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "qc_artifact_path": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "hr_source_type": {
+    "canonical_21": "21/21",
+    "new_16": "16/16"
+  },
+  "hr_local_path": {
+    "canonical_21": "0/21",
+    "new_16": "0/16"
+  },
+  "hr_superseded_doi": {
+    "canonical_21": "0/21",
+    "new_16": "0/16"
+  },
+  "hr_superseded_reason": {
+    "canonical_21": "0/21",
+    "new_16": "0/16"
+  }
+}

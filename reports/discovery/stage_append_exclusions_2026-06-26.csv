@@ -1,0 +1,4 @@
+pair_id,reason_detail,exclusion_reason,data_quality_exclusion,date
+KN210-05__MGDS_22436,"151 m offset, no interior NCC peak",unconfirmed_coregistration_eligible_for_manual_recoreg,False,2026-06-26
+FK006B__MGDS_20811,"PSR=-8.97, degenerate peak",unconfirmed_coregistration_eligible_for_manual_recoreg,False,2026-06-26
+KN204-01__MGDS_31675,"51 m offset, no interior NCC peak",unconfirmed_coregistration_eligible_for_manual_recoreg,False,2026-06-26

@@ -1,0 +1,31 @@
+{
+  "generated": "2026-06-22",
+  "n_clean_hr": 81,
+  "n_duplicates_total": 10,
+  "n_dup_seed": 10,
+  "n_dup_spatial": 0,
+  "n_new_hr_after_dedup": 71,
+  "baseline_a5_gb": 146.75,
+  "revised_fetch_gb": 130.91,
+  "n_cruises_kept": 45,
+  "n_cruises_dropped": 10,
+  "dropped_cruises": [
+    "DRFT01RR",
+    "EW0407",
+    "EX1101",
+    "KIWI01RR",
+    "KN180L02",
+    "MV1405",
+    "NA073",
+    "RNDB18WT",
+    "RR0916",
+    "SR1903"
+  ],
+  "bbox_footprints_all": [],
+  "bbox_in_cleaned_fetch": [],
+  "thin_overlap_tags": [
+    "NA080",
+    "TN299",
+    "TN399"
+  ]
+}

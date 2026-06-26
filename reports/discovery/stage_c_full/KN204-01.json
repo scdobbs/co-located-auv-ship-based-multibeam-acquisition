@@ -1,0 +1,25 @@
+[
+  {
+    "cruise": "KN204-01",
+    "hr_id": "MGDS:31675",
+    "sonar": "SeaBeam 3012",
+    "beamwidth_deg": 1.5,
+    "footprint_depth_m": 1819.2,
+    "achieved_cell_m": 47.63,
+    "fill_fraction": 0.2058,
+    "footprint_pct_of_grid": 15.6,
+    "lr_native_res_m": 104.99,
+    "native_method": "cell/sqrt(fill)",
+    "hr_res_m": 0.9911464836298362,
+    "hr_bucket": "ok",
+    "provisional_ratio": 105.93,
+    "ratio_provisional_ok_finer": false,
+    "grid_depth_median": -1596.8,
+    "coverage_verdict": "near_nadir",
+    "process_mode": "raw",
+    "qc": "reject",
+    "overlay": "/scratch/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/overlay_KN204-01__MGDS_31675.png",
+    "grd_path": "/scratch/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/KN204-01__union.grd",
+    "status": "gridded"
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "cruise": "TN365",
+    "hr_id": "MGDS:31193",
+    "sonar": "Kongsberg EM302",
+    "beamwidth_deg": 1.0,
+    "footprint_depth_m": 3100.3,
+    "achieved_cell_m": 54.11,
+    "fill_fraction": 0.3275,
+    "footprint_pct_of_grid": 0.3,
+    "lr_native_res_m": 94.56,
+    "native_method": "cell/sqrt(fill)",
+    "hr_res_m": 0.991235525347414,
+    "hr_bucket": "ok",
+    "provisional_ratio": 95.4,
+    "ratio_provisional_ok_finer": false,
+    "grid_depth_median": -3354.6,
+    "coverage_verdict": "near_nadir",
+    "process_mode": "raw",
+    "qc": "pass",
+    "overlay": "/scratch/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/overlay_TN365__MGDS_31193.png",
+    "grd_path": "/scratch/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/TN365__union.grd",
+    "status": "gridded"
+  }
+]

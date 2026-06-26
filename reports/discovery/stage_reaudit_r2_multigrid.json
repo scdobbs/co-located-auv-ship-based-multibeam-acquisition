@@ -1,0 +1,69 @@
+{
+  "multi_grid_sites": {
+    "SKQ201705S": {
+      "n_subgrids": 2,
+      "subgrids": [
+        {
+          "pair_id": "SKQ201705S__MGDS_31255",
+          "hr_id": "MGDS:31255",
+          "leakage_unit": 27,
+          "n_tiles": 46,
+          "has_own_joint_mask": true,
+          "disposition": "real_nonadvancing_qgis"
+        },
+        {
+          "pair_id": "SKQ201705S__MGDS_31254",
+          "hr_id": "MGDS:31254",
+          "leakage_unit": 27,
+          "n_tiles": 46,
+          "has_own_joint_mask": true,
+          "disposition": "real_nonadvancing_qgis"
+        }
+      ],
+      "shared_single_leakage_unit": true,
+      "leakage_units": [
+        27
+      ]
+    },
+    "TN268": {
+      "n_subgrids": 3,
+      "subgrids": [
+        {
+          "pair_id": "TN268__MGDS_30219",
+          "hr_id": "MGDS:30219",
+          "leakage_unit": 22,
+          "n_tiles": 84,
+          "has_own_joint_mask": true,
+          "disposition": "real_nonadvancing_qgis"
+        },
+        {
+          "pair_id": "TN268__MGDS_30466",
+          "hr_id": "MGDS:30466",
+          "leakage_unit": 22,
+          "n_tiles": 825,
+          "has_own_joint_mask": true,
+          "disposition": "advancing"
+        },
+        {
+          "pair_id": "TN268__MGDS_24470",
+          "hr_id": "MGDS:24470",
+          "leakage_unit": 22,
+          "n_tiles": 0,
+          "has_own_joint_mask": true,
+          "disposition": "real_nonadvancing_qgis"
+        }
+      ],
+      "shared_single_leakage_unit": true,
+      "leakage_units": [
+        22
+      ]
+    }
+  },
+  "checks": {
+    "min_joint_fraction_over_all_tiles": 0.5,
+    "all_tiles_ge_0.50": true,
+    "each_subgrid_tiles_keyed_by_own_pair_id": true,
+    "note": "Each sub-grid is its own pair_id with its own hr.tif + joint_valid.tif + tile rows; tiles carry per-pair CRS coords, so no cross-sub-grid blending is possible. Zero-tile sub-grids (TN268x24470) are correctly absent \u2014 genuine no-overlap, not dropped in error."
+  },
+  "worked_example_png": "/scratch/groups/hilley/auv_ship_colocated_bathy/qc_plots/reaudit_real23/R2_worked_example_TN268_tiler.png"
+}

@@ -1,0 +1,1660 @@
+{
+  "summary": {
+    "n_new_pairs": 32,
+    "n_vertical_suspect": 15,
+    "n_fill_leaked": 22
+  },
+  "pairs": [
+    {
+      "pair_id": "AT37-13__MGDS_31199",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "clean",
+      "expected_depth_m": 1176.0,
+      "dz_stageF": 7930.22,
+      "f5_recoreg_dz": -7936.62,
+      "vertical_suspect": true,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 7323265,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 4300596,
+      "n_nan": 0,
+      "n_real": 3022669,
+      "leaked_fill_value_expected": -2068.78,
+      "current_real_stats": {
+        "p1": 5981.498,
+        "p50": 6284.697,
+        "p99": 6439.267
+      },
+      "hr_orig_stats": {
+        "p1": -1948.722,
+        "p50": -1645.523,
+        "p99": -1490.953
+      },
+      "n_joint": 2998460,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 2993127,
+      "lr_over_joint_stats": {
+        "p1": -1949.872,
+        "p50": -1648.365,
+        "p99": -1497.693
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 6.208,
+        "mad": 4.176
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 7936.428
+      },
+      "my_recoreg": {
+        "n_joint_real": 2998460,
+        "dx": -9.963,
+        "dy": 5.064,
+        "dz": -7936.623,
+        "offset_m": 11.176,
+        "post_mad_m": 3.122,
+        "pre_median_m": -7936.481,
+        "n_samples": 78553
+      }
+    },
+    {
+      "pair_id": "AT42-03__MGDS_32007",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "clean",
+      "expected_depth_m": 948.0,
+      "dz_stageF": 8493.15,
+      "f5_recoreg_dz": -8499.05,
+      "vertical_suspect": true,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 11609832,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 7875897,
+      "n_nan": 0,
+      "n_real": 3733935,
+      "leaked_fill_value_expected": -1505.85,
+      "current_real_stats": {
+        "p1": 6986.414,
+        "p50": 7047.33,
+        "p99": 7352.16
+      },
+      "hr_orig_stats": {
+        "p1": -1506.736,
+        "p50": -1445.82,
+        "p99": -1140.99
+      },
+      "n_joint": 3543309,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 3493871,
+      "lr_over_joint_stats": {
+        "p1": -1512.992,
+        "p50": -1448.141,
+        "p99": -1146.195
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 5.581,
+        "mad": 2.619
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 8498.732
+      },
+      "my_recoreg": {
+        "n_joint_real": 3543309,
+        "dx": -4.999,
+        "dy": -3.999,
+        "dz": -8499.048,
+        "offset_m": 6.402,
+        "post_mad_m": 2.407,
+        "pre_median_m": -8498.917,
+        "n_samples": 73428
+      }
+    },
+    {
+      "pair_id": "EW0207__MGDS_32558",
+      "role": "train_eligible",
+      "morphology": "hydrothermal_vent",
+      "f5_bucket": "inflated_exclude_candidate",
+      "expected_depth_m": 2234.0,
+      "dz_stageF": -2665.13,
+      "f5_recoreg_dz": 152.45,
+      "vertical_suspect": true,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 697324705,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 19174898,
+      "n_nan": 0,
+      "n_real": 678149807,
+      "leaked_fill_value_expected": -12664.13,
+      "current_real_stats": {
+        "p1": -2651.539,
+        "p50": -2410.135,
+        "p99": -2410.135
+      },
+      "hr_orig_stats": {
+        "p1": 13.591,
+        "p50": 254.995,
+        "p99": 254.995
+      },
+      "n_joint": 528556634,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 521480144,
+      "lr_over_joint_stats": {
+        "p1": -2671.999,
+        "p50": -2309.002,
+        "p99": -1853.549
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 2521.626,
+        "mad": 172.235
+      },
+      "datum_resid_current_minus_lr": {
+        "median": -143.504
+      },
+      "my_recoreg": {
+        "n_joint_real": 528556634,
+        "dx": 33.321,
+        "dy": -33.653,
+        "dz": 152.453,
+        "offset_m": 47.358,
+        "post_mad_m": 172.809,
+        "pre_median_m": 152.821,
+        "n_samples": 73347
+      }
+    },
+    {
+      "pair_id": "EW9801__MGDS_31425",
+      "role": "train_eligible",
+      "morphology": "hydrothermal_vent",
+      "f5_bucket": "clean",
+      "expected_depth_m": 1255.0,
+      "dz_stageF": -10.99,
+      "f5_recoreg_dz": -3.09,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 3657324,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 1127508,
+      "n_nan": 0,
+      "n_real": 2529816,
+      "leaked_fill_value_expected": -10009.99,
+      "current_real_stats": {
+        "p1": -1488.225,
+        "p50": -1181.318,
+        "p99": -1014.216
+      },
+      "hr_orig_stats": {
+        "p1": -1477.235,
+        "p50": -1170.328,
+        "p99": -1003.226
+      },
+      "n_joint": 2271865,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 2229206,
+      "lr_over_joint_stats": {
+        "p1": -1480.708,
+        "p50": -1181.432,
+        "p99": -1011.841
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 13.847,
+        "mad": 7.278
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 2.857
+      }
+    },
+    {
+      "pair_id": "EW9904__MGDS_30217",
+      "role": "train_eligible",
+      "morphology": "hydrothermal_vent",
+      "f5_bucket": "inflated_exclude_candidate",
+      "expected_depth_m": 1793.0,
+      "dz_stageF": -1973.66,
+      "f5_recoreg_dz": 8.42,
+      "vertical_suspect": true,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 7830914,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 188075,
+      "n_nan": 0,
+      "n_real": 7642839,
+      "leaked_fill_value_expected": -11972.66,
+      "current_real_stats": {
+        "p1": -1961.627,
+        "p50": -1793.142,
+        "p99": -1718.662
+      },
+      "hr_orig_stats": {
+        "p1": 12.033,
+        "p50": 180.518,
+        "p99": 254.998
+      },
+      "n_joint": 7228831,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 7210947,
+      "lr_over_joint_stats": {
+        "p1": -2328.008,
+        "p50": -1793.743,
+        "p99": -1460.17
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 1965.03,
+        "mad": 110.544
+      },
+      "datum_resid_current_minus_lr": {
+        "median": -8.63
+      },
+      "my_recoreg": {
+        "n_joint_real": 7228831,
+        "dx": 36.138,
+        "dy": -54.802,
+        "dz": 8.419,
+        "offset_m": 65.645,
+        "post_mad_m": 110.261,
+        "pre_median_m": 8.643,
+        "n_samples": 78610
+      }
+    },
+    {
+      "pair_id": "FK006B__MGDS_20811",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "genuine_coreg_fail",
+      "expected_depth_m": 1636.0,
+      "dz_stageF": 0.25,
+      "f5_recoreg_dz": -4.31,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 4287315,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 2227248,
+      "n_nan": 0,
+      "n_real": 2060067,
+      "leaked_fill_value_expected": -9998.75,
+      "current_real_stats": {
+        "p1": -1513.414,
+        "p50": -1431.985,
+        "p99": -1363.286
+      },
+      "hr_orig_stats": {
+        "p1": -1513.664,
+        "p50": -1432.235,
+        "p99": -1363.536
+      },
+      "n_joint": 2060067,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 2053934,
+      "lr_over_joint_stats": {
+        "p1": -1519.331,
+        "p50": -1436.104,
+        "p99": -1367.865
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 4.584,
+        "mad": 0.758
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 4.834
+      }
+    },
+    {
+      "pair_id": "FK160407__MGDS_7832",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "weak_exclude_candidate",
+      "expected_depth_m": 2326.0,
+      "dz_stageF": 0.0,
+      "f5_recoreg_dz": -4264.4,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 1966183,
+      "n_fill_9999": 1965152,
+      "n_fill_leaked": 0,
+      "n_nan": 0,
+      "n_real": 1031,
+      "leaked_fill_value_expected": null,
+      "current_real_stats": {
+        "p1": 1928.663,
+        "p50": 2136.272,
+        "p99": 2728.915
+      },
+      "hr_orig_stats": {
+        "p1": 1928.663,
+        "p50": 2136.272,
+        "p99": 2728.915
+      },
+      "n_joint": 1023,
+      "fill9999_in_joint": 0,
+      "n_joint_real_lr": 1022,
+      "lr_over_joint_stats": {
+        "p1": -2737.591,
+        "p50": -2140.05,
+        "p99": -1935.757
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 4275.045,
+        "mad": 195.618
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 4275.045
+      }
+    },
+    {
+      "pair_id": "FK171110__MGDS_24485",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "genuine_coreg_fail",
+      "expected_depth_m": 2520.0,
+      "dz_stageF": 6724.1,
+      "f5_recoreg_dz": -9468.63,
+      "vertical_suspect": true,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 4573745,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 3504608,
+      "n_nan": 0,
+      "n_real": 1069137,
+      "leaked_fill_value_expected": -3274.9,
+      "current_real_stats": {
+        "p1": 6809.247,
+        "p50": 6979.104,
+        "p99": 6979.104
+      },
+      "hr_orig_stats": {
+        "p1": 85.147,
+        "p50": 255.004,
+        "p99": 255.004
+      },
+      "n_joint": 1068863,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 1068840,
+      "lr_over_joint_stats": {
+        "p1": -3322.467,
+        "p50": -2519.523,
+        "p99": -1432.274
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 2743.081,
+        "mad": 184.656
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 9467.181
+      },
+      "my_recoreg": {
+        "n_joint_real": 1068863,
+        "dx": -61.808,
+        "dy": -30.0,
+        "dz": -9468.633,
+        "offset_m": 68.704,
+        "post_mad_m": 183.561,
+        "pre_median_m": -9465.494,
+        "n_samples": 79816
+      }
+    },
+    {
+      "pair_id": "KIWI10RR__MGDS_24499",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "weak_exclude_candidate",
+      "expected_depth_m": 2068.0,
+      "dz_stageF": 0.0,
+      "f5_recoreg_dz": -1.56,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 3937700,
+      "n_fill_9999": 3626761,
+      "n_fill_leaked": 0,
+      "n_nan": 0,
+      "n_real": 310939,
+      "leaked_fill_value_expected": null,
+      "current_real_stats": {
+        "p1": -2906.265,
+        "p50": -2273.282,
+        "p99": -1300.872
+      },
+      "hr_orig_stats": {
+        "p1": -2906.265,
+        "p50": -2273.282,
+        "p99": -1300.872
+      },
+      "n_joint": 233930,
+      "fill9999_in_joint": 0,
+      "n_joint_real_lr": 224768,
+      "lr_over_joint_stats": {
+        "p1": -2684.543,
+        "p50": -2016.953,
+        "p99": -1310.488
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 0.103,
+        "mad": 12.025
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 0.103
+      }
+    },
+    {
+      "pair_id": "KN204-01__MGDS_31675",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "genuine_coreg_fail",
+      "expected_depth_m": 893.0,
+      "dz_stageF": 0.0,
+      "f5_recoreg_dz": -11.25,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 11877376,
+      "n_fill_9999": 7596677,
+      "n_fill_leaked": 0,
+      "n_nan": 0,
+      "n_real": 4280699,
+      "leaked_fill_value_expected": null,
+      "current_real_stats": {
+        "p1": -1744.057,
+        "p50": -1584.499,
+        "p99": -1503.901
+      },
+      "hr_orig_stats": {
+        "p1": -1744.057,
+        "p50": -1584.499,
+        "p99": -1503.901
+      },
+      "n_joint": 1523457,
+      "fill9999_in_joint": 0,
+      "n_joint_real_lr": 1065994,
+      "lr_over_joint_stats": {
+        "p1": -1765.055,
+        "p50": -1598.519,
+        "p99": -1533.598
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 15.446,
+        "mad": 5.814
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 15.446
+      }
+    },
+    {
+      "pair_id": "MGLN06MV__MGDS_17700",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "genuine_coreg_fail",
+      "expected_depth_m": 1930.0,
+      "dz_stageF": -8.55,
+      "f5_recoreg_dz": -10.47,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 418132,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 184336,
+      "n_nan": 0,
+      "n_real": 233796,
+      "leaked_fill_value_expected": -10007.55,
+      "current_real_stats": {
+        "p1": -2687.963,
+        "p50": -2616.631,
+        "p99": -2515.928
+      },
+      "hr_orig_stats": {
+        "p1": -2679.413,
+        "p50": -2608.081,
+        "p99": -2507.378
+      },
+      "n_joint": 233784,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 233784,
+      "lr_over_joint_stats": {
+        "p1": -2698.874,
+        "p50": -2628.816,
+        "p99": -2534.174
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 18.552,
+        "mad": 6.967
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 10.002
+      }
+    },
+    {
+      "pair_id": "NA076__MGDS_32321",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "genuine_coreg_fail",
+      "expected_depth_m": 866.0,
+      "dz_stageF": -10047.23,
+      "f5_recoreg_dz": 9132.32,
+      "vertical_suspect": true,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 10125765,
+      "n_fill_9999": 10725,
+      "n_fill_leaked": 329722,
+      "n_nan": 0,
+      "n_real": 9785318,
+      "leaked_fill_value_expected": -20046.23,
+      "current_real_stats": {
+        "p1": -10010.894,
+        "p50": -9940.269,
+        "p99": -9792.234
+      },
+      "hr_orig_stats": {
+        "p1": 36.336,
+        "p50": 106.961,
+        "p99": 254.996
+      },
+      "n_joint": 4507561,
+      "leaked_in_joint": 0,
+      "fill9999_in_joint": 77,
+      "n_joint_real_lr": 4500064,
+      "lr_over_joint_stats": {
+        "p1": -879.399,
+        "p50": -865.676,
+        "p99": -823.407
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 916.836,
+        "mad": 8.947
+      },
+      "datum_resid_current_minus_lr": {
+        "median": -9130.394
+      },
+      "my_recoreg": {
+        "n_joint_real": 4507484,
+        "dx": 36.601,
+        "dy": 37.659,
+        "dz": 9132.329,
+        "offset_m": 52.515,
+        "post_mad_m": 8.033,
+        "pre_median_m": 9130.598,
+        "n_samples": 75746
+      }
+    },
+    {
+      "pair_id": "NA080__MGDS_31290",
+      "role": "train_eligible",
+      "morphology": "seamount",
+      "f5_bucket": "clean",
+      "expected_depth_m": 3221.0,
+      "dz_stageF": 0.0,
+      "f5_recoreg_dz": -8.88,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 191669880,
+      "n_fill_9999": 138098968,
+      "n_fill_leaked": 0,
+      "n_nan": 0,
+      "n_real": 53570912,
+      "leaked_fill_value_expected": null,
+      "current_real_stats": {
+        "p1": -3464.822,
+        "p50": -3308.938,
+        "p99": -3081.477
+      },
+      "hr_orig_stats": {
+        "p1": -3464.822,
+        "p50": -3308.938,
+        "p99": -3081.477
+      },
+      "n_joint": 53569166,
+      "fill9999_in_joint": 0,
+      "n_joint_real_lr": 52894825,
+      "lr_over_joint_stats": {
+        "p1": -3480.21,
+        "p50": -3315.918,
+        "p99": -3099.799
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 8.396,
+        "mad": 2.097
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 8.396
+      }
+    },
+    {
+      "pair_id": "NA090__MGDS_31212",
+      "role": "eval_only",
+      "morphology": "continental_margin",
+      "f5_bucket": "clean",
+      "expected_depth_m": 1832.0,
+      "dz_stageF": -1.89,
+      "f5_recoreg_dz": -3.13,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 5776770,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 2824089,
+      "n_nan": 0,
+      "n_real": 2952681,
+      "leaked_fill_value_expected": -10000.89,
+      "current_real_stats": {
+        "p1": -1873.03,
+        "p50": -1851.712,
+        "p99": -1814.011
+      },
+      "hr_orig_stats": {
+        "p1": -1871.14,
+        "p50": -1849.822,
+        "p99": -1812.121
+      },
+      "n_joint": 2952681,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 2952681,
+      "lr_over_joint_stats": {
+        "p1": -1876.695,
+        "p50": -1855.11,
+        "p99": -1816.076
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 5.044,
+        "mad": 0.543
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 3.154
+      }
+    },
+    {
+      "pair_id": "RC2511__MGDS_32241",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "genuine_coreg_fail",
+      "expected_depth_m": 2548.0,
+      "dz_stageF": -5462.93,
+      "f5_recoreg_dz": 3181.32,
+      "vertical_suspect": true,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 171977260,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 195225,
+      "n_nan": 0,
+      "n_real": 171782035,
+      "leaked_fill_value_expected": -15461.93,
+      "current_real_stats": {
+        "p1": -5435.008,
+        "p50": -5207.927,
+        "p99": -5207.927
+      },
+      "hr_orig_stats": {
+        "p1": 27.922,
+        "p50": 255.003,
+        "p99": 255.003
+      },
+      "n_joint": 95013017,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 86444967,
+      "lr_over_joint_stats": {
+        "p1": -4278.612,
+        "p50": -2279.235,
+        "p99": -1251.404
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 2494.352,
+        "mad": 438.445
+      },
+      "datum_resid_current_minus_lr": {
+        "median": -2968.579
+      },
+      "my_recoreg": {
+        "n_joint_real": 95013017,
+        "dx": -33.111,
+        "dy": -34.148,
+        "dz": 3181.32,
+        "offset_m": 47.565,
+        "post_mad_m": 287.675,
+        "pre_median_m": 3175.269,
+        "n_samples": 45766
+      }
+    },
+    {
+      "pair_id": "RC2511__MGDS_32240",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "weak_exclude_candidate",
+      "expected_depth_m": 2732.0,
+      "dz_stageF": 0.0,
+      "f5_recoreg_dz": 0.43,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 1316628,
+      "n_fill_9999": 1310441,
+      "n_fill_leaked": 0,
+      "n_nan": 0,
+      "n_real": 6187,
+      "leaked_fill_value_expected": null,
+      "current_real_stats": {
+        "p1": -4285.274,
+        "p50": -2621.217,
+        "p99": -1217.785
+      },
+      "hr_orig_stats": {
+        "p1": -4285.274,
+        "p50": -2621.217,
+        "p99": -1217.785
+      },
+      "n_joint": 2497,
+      "fill9999_in_joint": 0,
+      "n_joint_real_lr": 1892,
+      "lr_over_joint_stats": {
+        "p1": -4272.188,
+        "p50": -2525.574,
+        "p99": -1397.609
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 2.74,
+        "mad": 13.65
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 2.74
+      }
+    },
+    {
+      "pair_id": "RR1506__MGDS_29779",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "clean",
+      "expected_depth_m": 1063.0,
+      "dz_stageF": 2.13,
+      "f5_recoreg_dz": -6.92,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 92513876,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 49761287,
+      "n_nan": 0,
+      "n_real": 42752589,
+      "leaked_fill_value_expected": -9996.87,
+      "current_real_stats": {
+        "p1": -1512.999,
+        "p50": -1006.946,
+        "p99": -752.756
+      },
+      "hr_orig_stats": {
+        "p1": -1515.129,
+        "p50": -1009.076,
+        "p99": -754.886
+      },
+      "n_joint": 42341292,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 42288446,
+      "lr_over_joint_stats": {
+        "p1": -1522.118,
+        "p50": -1012.232,
+        "p99": -763.291
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 5.01,
+        "mad": 2.47
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 7.14
+      }
+    },
+    {
+      "pair_id": "SKQ201705S__MGDS_31255",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "genuine_coreg_fail",
+      "expected_depth_m": 937.0,
+      "dz_stageF": 66.59,
+      "f5_recoreg_dz": -70.19,
+      "vertical_suspect": true,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 7171648,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 3953442,
+      "n_nan": 0,
+      "n_real": 3218206,
+      "leaked_fill_value_expected": -9932.41,
+      "current_real_stats": {
+        "p1": -1128.44,
+        "p50": -987.335,
+        "p99": -932.588
+      },
+      "hr_orig_stats": {
+        "p1": -1195.03,
+        "p50": -1053.925,
+        "p99": -999.178
+      },
+      "n_joint": 3124950,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 3101623,
+      "lr_over_joint_stats": {
+        "p1": -1817.857,
+        "p50": -1054.888,
+        "p99": -912.35
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 3.038,
+        "mad": 3.848
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 69.628
+      },
+      "my_recoreg": {
+        "n_joint_real": 3124950,
+        "dx": -34.236,
+        "dy": -34.236,
+        "dz": -70.188,
+        "offset_m": 48.417,
+        "post_mad_m": 1.962,
+        "pre_median_m": -69.626,
+        "n_samples": 74815
+      }
+    },
+    {
+      "pair_id": "SKQ201705S__MGDS_31254",
+      "role": "train_eligible",
+      "morphology": "shelf_slope",
+      "f5_bucket": "genuine_coreg_fail",
+      "expected_depth_m": 771.0,
+      "dz_stageF": 80.11,
+      "f5_recoreg_dz": -83.52,
+      "vertical_suspect": true,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 7174320,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 3955320,
+      "n_nan": 0,
+      "n_real": 3219000,
+      "leaked_fill_value_expected": -9918.89,
+      "current_real_stats": {
+        "p1": -1114.93,
+        "p50": -973.773,
+        "p99": -919.067
+      },
+      "hr_orig_stats": {
+        "p1": -1195.04,
+        "p50": -1053.883,
+        "p99": -999.177
+      },
+      "n_joint": 3126487,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 3103526,
+      "lr_over_joint_stats": {
+        "p1": -1814.007,
+        "p50": -1054.744,
+        "p99": -912.355
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 2.862,
+        "mad": 4.043
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 82.972
+      },
+      "my_recoreg": {
+        "n_joint_real": 3126487,
+        "dx": -35.648,
+        "dy": -34.236,
+        "dz": -83.521,
+        "offset_m": 49.426,
+        "post_mad_m": 2.032,
+        "pre_median_m": -83.002,
+        "n_samples": 74939
+      }
+    },
+    {
+      "pair_id": "TN159__MGDS_21981",
+      "role": "eval_only",
+      "morphology": "hydrothermal_vent",
+      "f5_bucket": "genuine_coreg_fail",
+      "expected_depth_m": 2179.0,
+      "dz_stageF": 7654.44,
+      "f5_recoreg_dz": -7655.16,
+      "vertical_suspect": true,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 5900736,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 4011237,
+      "n_nan": 0,
+      "n_real": 1889499,
+      "leaked_fill_value_expected": -2344.56,
+      "current_real_stats": {
+        "p1": 5338.928,
+        "p50": 5517.36,
+        "p99": 5604.412
+      },
+      "hr_orig_stats": {
+        "p1": -2315.512,
+        "p50": -2137.08,
+        "p99": -2050.028
+      },
+      "n_joint": 1772324,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 1755388,
+      "lr_over_joint_stats": {
+        "p1": -2279.716,
+        "p50": -2135.962,
+        "p99": -2055.279
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": -0.054,
+        "mad": 5.73
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 7654.386
+      },
+      "my_recoreg": {
+        "n_joint_real": 1772324,
+        "dx": -17.013,
+        "dy": 41.428,
+        "dz": -7655.163,
+        "offset_m": 44.785,
+        "post_mad_m": 4.7,
+        "pre_median_m": -7654.711,
+        "n_samples": 67847
+      }
+    },
+    {
+      "pair_id": "TN268__MGDS_30219",
+      "role": "train_eligible",
+      "morphology": "hydrothermal_vent",
+      "f5_bucket": "inflated_exclude_candidate",
+      "expected_depth_m": 1845.0,
+      "dz_stageF": -1.31,
+      "f5_recoreg_dz": 1.28,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 7830914,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 270486,
+      "n_nan": 0,
+      "n_real": 7560428,
+      "leaked_fill_value_expected": -10000.31,
+      "current_real_stats": {
+        "p1": -2303.195,
+        "p50": -1758.873,
+        "p99": -1440.407
+      },
+      "hr_orig_stats": {
+        "p1": -2301.885,
+        "p50": -1757.563,
+        "p99": -1439.097
+      },
+      "n_joint": 5825046,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 5787549,
+      "lr_over_joint_stats": {
+        "p1": -2284.145,
+        "p50": -1702.314,
+        "p99": -1431.413
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": -0.038,
+        "mad": 2.465
+      },
+      "datum_resid_current_minus_lr": {
+        "median": -1.348
+      }
+    },
+    {
+      "pair_id": "TN268__MGDS_30466",
+      "role": "train_eligible",
+      "morphology": "hydrothermal_vent",
+      "f5_bucket": "clean",
+      "expected_depth_m": 2160.0,
+      "dz_stageF": 0.0,
+      "f5_recoreg_dz": -1.46,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 214728320,
+      "n_fill_9999": 138160920,
+      "n_fill_leaked": 0,
+      "n_nan": 0,
+      "n_real": 76567400,
+      "leaked_fill_value_expected": null,
+      "current_real_stats": {
+        "p1": -2489.686,
+        "p50": -2294.888,
+        "p99": -2004.661
+      },
+      "hr_orig_stats": {
+        "p1": -2489.686,
+        "p50": -2294.888,
+        "p99": -2004.661
+      },
+      "n_joint": 52964626,
+      "fill9999_in_joint": 0,
+      "n_joint_real_lr": 52673159,
+      "lr_over_joint_stats": {
+        "p1": -2393.003,
+        "p50": -2252.233,
+        "p99": -1985.218
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 1.458,
+        "mad": 2.713
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 1.458
+      }
+    },
+    {
+      "pair_id": "TN268__MGDS_24470",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "weak_exclude_candidate",
+      "expected_depth_m": 1994.0,
+      "dz_stageF": 0.0,
+      "f5_recoreg_dz": NaN,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 3705040,
+      "n_fill_9999": 3704978,
+      "n_fill_leaked": 0,
+      "n_nan": 0,
+      "n_real": 62,
+      "leaked_fill_value_expected": null,
+      "current_real_stats": {
+        "p1": -2441.436,
+        "p50": -1540.773,
+        "p99": -1539.042
+      },
+      "hr_orig_stats": {
+        "p1": -2441.436,
+        "p50": -1540.773,
+        "p99": -1539.042
+      },
+      "n_joint": 44,
+      "fill9999_in_joint": 0,
+      "n_joint_real_lr": 44,
+      "lr_over_joint_stats": {
+        "p1": -1540.294,
+        "p50": -1537.757,
+        "p99": -1530.068
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": -3.124,
+        "mad": 1.628
+      },
+      "datum_resid_current_minus_lr": {
+        "median": -3.124
+      }
+    },
+    {
+      "pair_id": "TN383__MGDS_29694",
+      "role": "train_eligible",
+      "morphology": "hydrothermal_vent",
+      "f5_bucket": "genuine_coreg_fail",
+      "expected_depth_m": 1781.0,
+      "dz_stageF": -1984.14,
+      "f5_recoreg_dz": 0.12,
+      "vertical_suspect": true,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 5448240,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 166491,
+      "n_nan": 0,
+      "n_real": 5281749,
+      "leaked_fill_value_expected": -11983.14,
+      "current_real_stats": {
+        "p1": -1964.873,
+        "p50": -1759.866,
+        "p99": -1729.138
+      },
+      "hr_orig_stats": {
+        "p1": 19.267,
+        "p50": 224.274,
+        "p99": 255.002
+      },
+      "n_joint": 5206245,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 5177323,
+      "lr_over_joint_stats": {
+        "p1": -1910.999,
+        "p50": -1781.053,
+        "p99": -1703.752
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 1984.296,
+        "mad": 33.97
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 0.156
+      },
+      "my_recoreg": {
+        "n_joint_real": 5206245,
+        "dx": -25.95,
+        "dy": 32.783,
+        "dz": 0.124,
+        "offset_m": 41.81,
+        "post_mad_m": 33.523,
+        "pre_median_m": 0.076,
+        "n_samples": 78737
+      }
+    },
+    {
+      "pair_id": "TN399__MGDS_30373",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "clean",
+      "expected_depth_m": 2625.0,
+      "dz_stageF": 1.76,
+      "f5_recoreg_dz": -0.77,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 216389300,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 104477126,
+      "n_nan": 0,
+      "n_real": 111912174,
+      "leaked_fill_value_expected": -9997.24,
+      "current_real_stats": {
+        "p1": -2728.656,
+        "p50": -2560.572,
+        "p99": -2505.079
+      },
+      "hr_orig_stats": {
+        "p1": -2730.416,
+        "p50": -2562.332,
+        "p99": -2506.839
+      },
+      "n_joint": 102910597,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 102143817,
+      "lr_over_joint_stats": {
+        "p1": -2725.21,
+        "p50": -2559.707,
+        "p99": -2505.559
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": -0.94,
+        "mad": 1.412
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 0.82
+      }
+    },
+    {
+      "pair_id": "AR26__MGDS_31838",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "genuine_coreg_fail",
+      "expected_depth_m": 1684.0,
+      "dz_stageF": 8055.46,
+      "f5_recoreg_dz": -8061.53,
+      "vertical_suspect": true,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 4254332,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 3040288,
+      "n_nan": 0,
+      "n_real": 1214044,
+      "leaked_fill_value_expected": -1943.54,
+      "current_real_stats": {
+        "p1": 6124.005,
+        "p50": 6384.358,
+        "p99": 6566.615
+      },
+      "hr_orig_stats": {
+        "p1": -1931.455,
+        "p50": -1671.102,
+        "p99": -1488.845
+      },
+      "n_joint": 983740,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 938659,
+      "lr_over_joint_stats": {
+        "p1": -1929.894,
+        "p50": -1659.204,
+        "p99": -1492.683
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 10.425,
+        "mad": 5.53
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 8065.885
+      },
+      "my_recoreg": {
+        "n_joint_real": 983740,
+        "dx": 21.213,
+        "dy": 24.745,
+        "dz": -8061.526,
+        "offset_m": 32.593,
+        "post_mad_m": 3.255,
+        "pre_median_m": -8065.586,
+        "n_samples": 63675
+      }
+    },
+    {
+      "pair_id": "TN299__MGDS_27339",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "weak_exclude_candidate",
+      "expected_depth_m": 2938.0,
+      "dz_stageF": 0.0,
+      "f5_recoreg_dz": -4.77,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 133706853,
+      "n_fill_9999": 98718196,
+      "n_fill_leaked": 0,
+      "n_nan": 0,
+      "n_real": 34988657,
+      "leaked_fill_value_expected": null,
+      "current_real_stats": {
+        "p1": -3249.055,
+        "p50": -3068.081,
+        "p99": -2660.257
+      },
+      "hr_orig_stats": {
+        "p1": -3249.055,
+        "p50": -3068.081,
+        "p99": -2660.257
+      },
+      "n_joint": 14359797,
+      "fill9999_in_joint": 0,
+      "n_joint_real_lr": 14043312,
+      "lr_over_joint_stats": {
+        "p1": -3121.951,
+        "p50": -3034.375,
+        "p99": -2620.14
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 4.596,
+        "mad": 5.013
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 4.596
+      }
+    },
+    {
+      "pair_id": "TN299__MGDS_31256",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "genuine_coreg_fail",
+      "expected_depth_m": 1084.0,
+      "dz_stageF": -1306.6,
+      "f5_recoreg_dz": 9.51,
+      "vertical_suspect": true,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 7174320,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 345831,
+      "n_nan": 0,
+      "n_real": 6828489,
+      "leaked_fill_value_expected": -11305.6,
+      "current_real_stats": {
+        "p1": -1280.346,
+        "p50": -1051.603,
+        "p99": -1051.603
+      },
+      "hr_orig_stats": {
+        "p1": 26.254,
+        "p50": 254.997,
+        "p99": 254.997
+      },
+      "n_joint": 6289570,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 6267477,
+      "lr_over_joint_stats": {
+        "p1": -1215.536,
+        "p50": -1086.865,
+        "p99": -1001.634
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 1298.547,
+        "mad": 75.529
+      },
+      "datum_resid_current_minus_lr": {
+        "median": -8.053
+      },
+      "my_recoreg": {
+        "n_joint_real": 6289570,
+        "dx": -35.371,
+        "dy": 39.819,
+        "dz": 9.51,
+        "offset_m": 53.26,
+        "post_mad_m": 74.152,
+        "pre_median_m": 8.415,
+        "n_samples": 78121
+      }
+    },
+    {
+      "pair_id": "FK181031__MGDS_24367",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "clean",
+      "expected_depth_m": 2471.0,
+      "dz_stageF": 0.0,
+      "f5_recoreg_dz": -7.01,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 5188970,
+      "n_fill_9999": 4604550,
+      "n_fill_leaked": 0,
+      "n_nan": 0,
+      "n_real": 584420,
+      "leaked_fill_value_expected": null,
+      "current_real_stats": {
+        "p1": -2671.639,
+        "p50": -2392.53,
+        "p99": -2261.136
+      },
+      "hr_orig_stats": {
+        "p1": -2671.639,
+        "p50": -2392.53,
+        "p99": -2261.136
+      },
+      "n_joint": 540156,
+      "fill9999_in_joint": 0,
+      "n_joint_real_lr": 539442,
+      "lr_over_joint_stats": {
+        "p1": -2684.589,
+        "p50": -2394.202,
+        "p99": -2266.705
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 7.114,
+        "mad": 2.094
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 7.114
+      }
+    },
+    {
+      "pair_id": "FK181031__MGDS_24620",
+      "role": "train_eligible",
+      "morphology": "abyssal_plain",
+      "f5_bucket": "genuine_coreg_fail",
+      "expected_depth_m": 3788.0,
+      "dz_stageF": -3842.11,
+      "f5_recoreg_dz": -0.38,
+      "vertical_suspect": true,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 7089768,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 219742,
+      "n_nan": 0,
+      "n_real": 6870026,
+      "leaked_fill_value_expected": -13841.11,
+      "current_real_stats": {
+        "p1": -3808.579,
+        "p50": -3771.578,
+        "p99": -3587.107
+      },
+      "hr_orig_stats": {
+        "p1": 33.531,
+        "p50": 70.532,
+        "p99": 255.003
+      },
+      "n_joint": 6869851,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 6847455,
+      "lr_over_joint_stats": {
+        "p1": -3833.763,
+        "p50": -3788.082,
+        "p99": -3563.923
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 3842.504,
+        "mad": 17.182
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 0.394
+      },
+      "my_recoreg": {
+        "n_joint_real": 6869851,
+        "dx": 42.194,
+        "dy": 42.194,
+        "dz": -0.38,
+        "offset_m": 59.672,
+        "post_mad_m": 15.979,
+        "pre_median_m": -0.2,
+        "n_samples": 78170
+      }
+    },
+    {
+      "pair_id": "KN210-05__MGDS_22436",
+      "role": "train_eligible",
+      "morphology": "continental_margin",
+      "f5_bucket": "weak_exclude_candidate",
+      "expected_depth_m": 3341.0,
+      "dz_stageF": 6530.11,
+      "f5_recoreg_dz": -6547.59,
+      "vertical_suspect": true,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 6899649,
+      "n_fill_9999": 0,
+      "n_fill_leaked": 6406729,
+      "n_nan": 0,
+      "n_real": 492920,
+      "leaked_fill_value_expected": -3468.89,
+      "current_real_stats": {
+        "p1": 2000.662,
+        "p50": 3107.137,
+        "p99": 4355.436
+      },
+      "hr_orig_stats": {
+        "p1": -4529.448,
+        "p50": -3422.973,
+        "p99": -2174.674
+      },
+      "n_joint": 492920,
+      "leaked_in_joint": 0,
+      "n_joint_real_lr": 492539,
+      "lr_over_joint_stats": {
+        "p1": -4516.735,
+        "p50": -3439.772,
+        "p99": -2220.105
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 29.041,
+        "mad": 36.048
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 6559.151
+      },
+      "my_recoreg": {
+        "n_joint_real": 492920,
+        "dx": -82.33,
+        "dy": 126.991,
+        "dz": -6547.591,
+        "offset_m": 151.344,
+        "post_mad_m": 20.896,
+        "pre_median_m": -6559.063,
+        "n_samples": 79972
+      }
+    },
+    {
+      "pair_id": "2009_Amundsen__MGDS_30045",
+      "role": "train_eligible",
+      "morphology": "shelf_slope",
+      "f5_bucket": "genuine_coreg_fail",
+      "expected_depth_m": 586.0,
+      "dz_stageF": 0.0,
+      "f5_recoreg_dz": -818.72,
+      "vertical_suspect": false,
+      "hr_nodata_tag": -9999.0,
+      "n_total": 5354438,
+      "n_fill_9999": 4131150,
+      "n_fill_leaked": 0,
+      "n_nan": 0,
+      "n_real": 1223288,
+      "leaked_fill_value_expected": null,
+      "current_real_stats": {
+        "p1": 38.483,
+        "p50": 255.0,
+        "p99": 255.0
+      },
+      "hr_orig_stats": {
+        "p1": 38.483,
+        "p50": 255.0,
+        "p99": 255.0
+      },
+      "n_joint": 818215,
+      "fill9999_in_joint": 0,
+      "n_joint_real_lr": 812713,
+      "lr_over_joint_stats": {
+        "p1": -878.523,
+        "p50": -582.159,
+        "p99": -87.344
+      },
+      "datum_resid_hrorig_minus_lr": {
+        "median": 819.331,
+        "mad": 225.551
+      },
+      "datum_resid_current_minus_lr": {
+        "median": 819.331
+      }
+    }
+  ],
+  "validated_21": [
+    {
+      "pair": "discol_so242_1",
+      "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/discol_so242_1/hr.tif",
+      "nodata_tag": -9999.0,
+      "real_stats": {
+        "p1": -4177.485,
+        "p50": -4147.353,
+        "p99": -4088.076
+      },
+      "n_real": 5408781,
+      "suspicious_lt_-8000": 0,
+      "suspicious_gt_1000": 0
+    },
+    {
+      "pair": "ccz_so268_1",
+      "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/ccz_so268_1/hr.tif",
+      "nodata_tag": -9999.0,
+      "real_stats": {
+        "p1": -4124.48,
+        "p50": -4097.726,
+        "p99": -4070.882
+      },
+      "n_real": 1206771,
+      "suspicious_lt_-8000": 0,
+      "suspicious_gt_1000": 0
+    },
+    {
+      "pair": "tag_m127",
+      "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/tag_m127/hr.tif",
+      "nodata_tag": -9999.0,
+      "real_stats": {
+        "p1": -3961.425,
+        "p50": -3462.524,
+        "p99": -2740.145
+      },
+      "n_real": 12827110,
+      "suspicious_lt_-8000": 0,
+      "suspicious_gt_1000": 0
+    },
+    {
+      "pair": "cal_dig/20180426m1_PockmarkNorthDet",
+      "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180426m1_PockmarkNorthDet/hr.tif",
+      "nodata_tag": -9999.0,
+      "real_stats": {
+        "p1": -950.426,
+        "p50": -938.303,
+        "p99": -927.235
+      },
+      "n_real": 717565,
+      "suspicious_lt_-8000": 0,
+      "suspicious_gt_1000": 0
+    },
+    {
+      "pair": "cal_dig/20180426m2_Channel1000",
+      "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180426m2_Channel1000/hr.tif",
+      "nodata_tag": -9999.0,
+      "real_stats": {
+        "p1": -1093.225,
+        "p50": -990.363,
+        "p99": -954.171
+      },
+      "n_real": 3233550,
+      "suspicious_lt_-8000": 0,
+      "suspicious_gt_1000": 0
+    },
+    {
+      "pair": "cal_dig/20180427m1_Channel700",
+      "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180427m1_Channel700/hr.tif",
+      "nodata_tag": -9999.0,
+      "real_stats": {
+        "p1": -865.357,
+        "p50": -813.358,
+        "p99": -776.274
+      },
+      "n_real": 2392152,
+      "suspicious_lt_-8000": 0,
+      "suspicious_gt_1000": 0
+    },
+    {
+      "pair": "cal_dig/20180427m2_PockmarkSouthBasinFlank",
+      "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180427m2_PockmarkSouthBasinFlank/hr.tif",
+      "nodata_tag": -9999.0,
+      "real_stats": {
+        "p1": -988.28,
+        "p50": -938.591,
+        "p99": -856.054
+      },
+      "n_real": 10770755,
+      "suspicious_lt_-8000": 0,
+      "suspicious_gt_1000": 0
+    }
+  ],
+  "tiles_sample": {
+    "n_tiles": 14795,
+    "n_pairs": 29,
+    "min_joint_fraction": 0.5,
+    "tile_samples": [
+      {
+        "pair_id": "AT37-13__MGDS_31199",
+        "row0": 0,
+        "col0": 512,
+        "recorded_frac": 0.5166,
+        "recomputed_frac": 0.5166
+      },
+      {
+        "pair_id": "AT37-13__MGDS_31199",
+        "row0": 0,
+        "col0": 768,
+        "recorded_frac": 0.5401,
+        "recomputed_frac": 0.5401
+      },
+      {
+        "pair_id": "AT42-03__MGDS_32007",
+        "row0": 0,
+        "col0": 1536,
+        "recorded_frac": 0.6554,
+        "recomputed_frac": 0.6554
+      },
+      {
+        "pair_id": "AT42-03__MGDS_32007",
+        "row0": 256,
+        "col0": 1536,
+        "recorded_frac": 0.7742,
+        "recomputed_frac": 0.7742
+      },
+      {
+        "pair_id": "EW0207__MGDS_32558",
+        "row0": 0,
+        "col0": 512,
+        "recorded_frac": 0.99,
+        "recomputed_frac": 0.99
+      },
+      {
+        "pair_id": "EW0207__MGDS_32558",
+        "row0": 0,
+        "col0": 768,
+        "recorded_frac": 0.9742,
+        "recomputed_frac": 0.9742
+      },
+      {
+        "pair_id": "EW9801__MGDS_31425",
+        "row0": 0,
+        "col0": 256,
+        "recorded_frac": 0.8256,
+        "recomputed_frac": 0.8256
+      },
+      {
+        "pair_id": "EW9801__MGDS_31425",
+        "row0": 0,
+        "col0": 512,
+        "recorded_frac": 0.8972,
+        "recomputed_frac": 0.8972
+      }
+    ]
+  }
+}

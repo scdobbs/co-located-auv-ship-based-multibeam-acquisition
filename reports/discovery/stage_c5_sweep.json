@@ -1,0 +1,1649 @@
+[
+  {
+    "cruise": "2010_Amundsen",
+    "hr_id": "MGDS:31753",
+    "status": "hr_unreadable",
+    "hr_raster": "/scratch/groups/hilley/auv_ship_colocated_bathy/staging_phase1/MGDS_31753/ShelfEdgeIntactTopoDiff2m_2022m2010_mgds.grd",
+    "prior_ratio": 0.97,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "2010_Amundsen",
+    "hr_id": "MGDS:31755",
+    "lr_native_m": 2.0,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.50505,
+        "sr_excess": null,
+        "slope": null,
+        "edge_coh": 0.0,
+        "sr_band_cells": 0,
+        "verdict": "no_spectrum",
+        "uq_above_target": 0.0
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.50505,
+        "sr_excess": null,
+        "slope": null,
+        "edge_coh": 0.0,
+        "sr_band_cells": 0,
+        "verdict": "no_spectrum",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.50505,
+        "sr_excess": null,
+        "slope": null,
+        "edge_coh": 0.0,
+        "sr_band_cells": 0,
+        "verdict": "no_spectrum",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": null,
+    "prior_ratio": 1.0,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "2010_Amundsen",
+    "hr_id": "MGDS:30270",
+    "lr_native_m": 2.0,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.5102,
+        "sr_excess": null,
+        "slope": null,
+        "edge_coh": 0.0,
+        "sr_band_cells": 0,
+        "verdict": "no_spectrum",
+        "uq_above_target": 0.0
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.5102,
+        "sr_excess": null,
+        "slope": null,
+        "edge_coh": 0.0,
+        "sr_band_cells": 0,
+        "verdict": "no_spectrum",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.5102,
+        "sr_excess": null,
+        "slope": null,
+        "edge_coh": 0.0,
+        "sr_band_cells": 0,
+        "verdict": "no_spectrum",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": null,
+    "prior_ratio": 0.49,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "AT37-13",
+    "hr_id": "MGDS:31199",
+    "lr_native_m": 46.4,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.02153,
+        "sr_excess": 0.18,
+        "slope": -2.78,
+        "edge_coh": 0.002,
+        "sr_band_cells": 7,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.02153,
+        "sr_excess": 0.22,
+        "slope": -2.5,
+        "edge_coh": 0.002,
+        "sr_band_cells": 22,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.02153,
+        "sr_excess": 0.24,
+        "slope": -2.14,
+        "edge_coh": 0.002,
+        "sr_band_cells": 52,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 46.8,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "AT42-03",
+    "hr_id": "MGDS:32007",
+    "lr_native_m": 28.9,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.03466,
+        "sr_excess": 152.12,
+        "slope": -2.7,
+        "edge_coh": 0.0,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0005
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.03466,
+        "sr_excess": 165.54,
+        "slope": -2.09,
+        "edge_coh": 0.0,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0003
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.03466,
+        "sr_excess": 198.92,
+        "slope": -1.39,
+        "edge_coh": 0.0,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 29.17,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "AT42-06",
+    "hr_id": "MGDS:5174",
+    "lr_native_m": 44.3,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.02258,
+        "sr_excess": 80.36,
+        "slope": -3.08,
+        "edge_coh": 0.004,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.02258,
+        "sr_excess": 83.12,
+        "slope": -3.0,
+        "edge_coh": 0.004,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.02258,
+        "sr_excess": 85.15,
+        "slope": -2.58,
+        "edge_coh": 0.004,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 8.94,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "Channel",
+    "hr_id": "MGDS:31949",
+    "status": "empty_overlap",
+    "prior_ratio": 50.39,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "EW0207",
+    "hr_id": "MGDS:32558",
+    "lr_native_m": 87.8,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.01138,
+        "sr_excess": 0.0,
+        "slope": -2.85,
+        "edge_coh": 0.0,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.01138,
+        "sr_excess": 0.0,
+        "slope": -2.86,
+        "edge_coh": 0.0,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.01138,
+        "sr_excess": 0.0,
+        "slope": -3.45,
+        "edge_coh": 0.0,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 88.72,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "EW9801",
+    "hr_id": "MGDS:31425",
+    "status": "hr_unreadable",
+    "hr_raster": "/scratch/groups/hilley/auv_ship_colocated_bathy/staging_phase1/MGDS_31425/LoihiSummit_sentry2013_Topo5m.grd",
+    "prior_ratio": 81.03,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "EW9904",
+    "hr_id": "MGDS:30217",
+    "lr_native_m": 71.3,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.01402,
+        "sr_excess": 496.53,
+        "slope": -1.82,
+        "edge_coh": 0.0,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0249
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.01402,
+        "sr_excess": 608.71,
+        "slope": -1.86,
+        "edge_coh": 0.0,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0068
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.01402,
+        "sr_excess": 645.26,
+        "slope": -2.33,
+        "edge_coh": 0.0,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 71.95,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "EX1103",
+    "hr_id": "MGDS:31811",
+    "status": "empty_overlap",
+    "prior_ratio": 30.31,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "EX1103",
+    "hr_id": "MGDS:18210",
+    "status": "empty_overlap",
+    "prior_ratio": 73.1,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "Escanaba",
+    "hr_id": "MGDS:30369",
+    "lr_native_m": 57.7,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.01733,
+        "sr_excess": 8.14,
+        "slope": -2.64,
+        "edge_coh": 0.0,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0005
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.01733,
+        "sr_excess": 8.55,
+        "slope": -2.75,
+        "edge_coh": 0.0,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0001
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.01733,
+        "sr_excess": 8.83,
+        "slope": -2.32,
+        "edge_coh": 0.0,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 58.17,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "FK006B",
+    "hr_id": "MGDS:20811",
+    "lr_native_m": 25.6,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.03914,
+        "sr_excess": 34.79,
+        "slope": -2.47,
+        "edge_coh": 0.001,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.03914,
+        "sr_excess": 46.14,
+        "slope": -1.9,
+        "edge_coh": 0.001,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.03914,
+        "sr_excess": 50.46,
+        "slope": -2.28,
+        "edge_coh": 0.001,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 51.5,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "FK160407",
+    "hr_id": "MGDS:7832",
+    "lr_native_m": 154.4,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.00648,
+        "sr_excess": 4.13,
+        "slope": -4.15,
+        "edge_coh": 0.653,
+        "sr_band_cells": 7,
+        "verdict": "circular_leak",
+        "uq_above_target": 0.0049
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.00648,
+        "sr_excess": 4.68,
+        "slope": -3.63,
+        "edge_coh": 0.653,
+        "sr_band_cells": 22,
+        "verdict": "circular_leak",
+        "uq_above_target": 0.0007
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.00648,
+        "sr_excess": 4.8,
+        "slope": -3.48,
+        "edge_coh": 0.653,
+        "sr_band_cells": 52,
+        "verdict": "circular_leak",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": null,
+    "prior_ratio": 155.59,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "FK171110",
+    "hr_id": "MGDS:24485",
+    "lr_native_m": 106.9,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.00935,
+        "sr_excess": 115.46,
+        "slope": -2.99,
+        "edge_coh": 0.002,
+        "sr_band_cells": 7,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0009
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.00935,
+        "sr_excess": 142.58,
+        "slope": -3.08,
+        "edge_coh": 0.002,
+        "sr_band_cells": 22,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0001
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.00935,
+        "sr_excess": 147.93,
+        "slope": -3.47,
+        "edge_coh": 0.002,
+        "sr_band_cells": 52,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 81.77,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "KIWI10RR",
+    "hr_id": "MGDS:24499",
+    "status": "hr_unreadable",
+    "hr_raster": "/scratch/groups/hilley/auv_ship_colocated_bathy/staging_phase1/MGDS_24499/Sentry-457shft-1mgrid-g.grd",
+    "prior_ratio": 106.12,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "KN204-01",
+    "hr_id": "MGDS:31675",
+    "lr_native_m": 105.0,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.00952,
+        "sr_excess": 0.06,
+        "slope": -2.06,
+        "edge_coh": 0.002,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0004
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.00952,
+        "sr_excess": 0.07,
+        "slope": -2.79,
+        "edge_coh": 0.002,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0001
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.00952,
+        "sr_excess": 0.07,
+        "slope": -2.33,
+        "edge_coh": 0.002,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 105.93,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "MGLN06MV",
+    "hr_id": "MGDS:17700",
+    "lr_native_m": 121.0,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.00826,
+        "sr_excess": 110.04,
+        "slope": -2.8,
+        "edge_coh": 0.0,
+        "sr_band_cells": 7,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0013
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.00826,
+        "sr_excess": 134.06,
+        "slope": -2.91,
+        "edge_coh": 0.0,
+        "sr_band_cells": 22,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0003
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.00826,
+        "sr_excess": 143.37,
+        "slope": -2.61,
+        "edge_coh": 0.0,
+        "sr_band_cells": 52,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 61.11,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "MV1209",
+    "hr_id": "MGDS:21415",
+    "lr_native_m": 9.6,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.10373,
+        "sr_excess": 0.0,
+        "slope": -3.23,
+        "edge_coh": 0.0,
+        "sr_band_cells": 13,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0008
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.10373,
+        "sr_excess": 0.0,
+        "slope": -2.83,
+        "edge_coh": 0.0,
+        "sr_band_cells": 38,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0001
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.10373,
+        "sr_excess": 0.0,
+        "slope": -2.61,
+        "edge_coh": 0.0,
+        "sr_band_cells": 48,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 9.72,
+    "hr_bucket": "ok_finer_verify"
+  },
+  {
+    "cruise": "NA076",
+    "hr_id": "MGDS:32321",
+    "lr_native_m": 221.0,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.00452,
+        "sr_excess": 23.07,
+        "slope": -2.82,
+        "edge_coh": 0.06,
+        "sr_band_cells": 7,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0013
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.00452,
+        "sr_excess": 23.55,
+        "slope": -3.3,
+        "edge_coh": 0.06,
+        "sr_band_cells": 22,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0002
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.00452,
+        "sr_excess": 22.69,
+        "slope": -3.48,
+        "edge_coh": 0.06,
+        "sr_band_cells": 52,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 222.75,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "NA080",
+    "hr_id": "MGDS:31290",
+    "lr_native_m": 57.5,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.01741,
+        "sr_excess": 6.45,
+        "slope": -2.88,
+        "edge_coh": 0.002,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0001
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.01741,
+        "sr_excess": 7.39,
+        "slope": -2.89,
+        "edge_coh": 0.002,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.01741,
+        "sr_excess": 7.83,
+        "slope": -2.51,
+        "edge_coh": 0.002,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 57.45,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "NA080",
+    "hr_id": "MGDS:31291",
+    "lr_native_m": 57.5,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.01741,
+        "sr_excess": 18.66,
+        "slope": -3.02,
+        "edge_coh": 0.0,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0002
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.01741,
+        "sr_excess": 20.98,
+        "slope": -3.0,
+        "edge_coh": 0.0,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.01741,
+        "sr_excess": 21.71,
+        "slope": -3.15,
+        "edge_coh": 0.0,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 57.45,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "NA090",
+    "hr_id": "MGDS:31212",
+    "lr_native_m": 112.3,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.0089,
+        "sr_excess": 16.59,
+        "slope": -2.19,
+        "edge_coh": 0.141,
+        "sr_band_cells": 7,
+        "verdict": "circular_leak",
+        "uq_above_target": 0.0002
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.0089,
+        "sr_excess": 21.1,
+        "slope": -2.46,
+        "edge_coh": 0.141,
+        "sr_band_cells": 22,
+        "verdict": "circular_leak",
+        "uq_above_target": 0.0001
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.0089,
+        "sr_excess": 24.01,
+        "slope": -2.06,
+        "edge_coh": 0.141,
+        "sr_band_cells": 52,
+        "verdict": "circular_leak",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": null,
+    "prior_ratio": 113.22,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "RB1604",
+    "hr_id": "MGDS:24756",
+    "status": "hr_unreadable",
+    "hr_raster": "/scratch/groups/hilley/auv_ship_colocated_bathy/staging_phase1/MGDS_24756/Topo1m_CCEDeep_20151105_1106_UTM.grd",
+    "prior_ratio": 100.97,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "RC2511",
+    "hr_id": "MGDS:32241",
+    "lr_native_m": 132.1,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.00757,
+        "sr_excess": 0.13,
+        "slope": -2.83,
+        "edge_coh": 0.001,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0007
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.00757,
+        "sr_excess": 0.13,
+        "slope": -2.69,
+        "edge_coh": 0.001,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0001
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.00757,
+        "sr_excess": 0.13,
+        "slope": -3.12,
+        "edge_coh": 0.001,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 266.05,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "RC2511",
+    "hr_id": "MGDS:32240",
+    "lr_native_m": 143.8,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.00695,
+        "sr_excess": 0.04,
+        "slope": -3.06,
+        "edge_coh": 0.001,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.00695,
+        "sr_excess": 0.05,
+        "slope": -2.75,
+        "edge_coh": 0.001,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.00695,
+        "sr_excess": 0.05,
+        "slope": -2.49,
+        "edge_coh": 0.001,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 289.7,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "RR1506",
+    "hr_id": "MGDS:29779",
+    "lr_native_m": 133.9,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.00747,
+        "sr_excess": 11.69,
+        "slope": -2.59,
+        "edge_coh": 0.01,
+        "sr_band_cells": 7,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.00747,
+        "sr_excess": 8.77,
+        "slope": -2.88,
+        "edge_coh": 0.01,
+        "sr_band_cells": 22,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.00747,
+        "sr_excess": 8.28,
+        "slope": -2.5,
+        "edge_coh": 0.01,
+        "sr_band_cells": 52,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 134.92,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "SKQ201705S",
+    "hr_id": "MGDS:31255",
+    "lr_native_m": 18.5,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.05402,
+        "sr_excess": 0.16,
+        "slope": -3.62,
+        "edge_coh": 0.0,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.05402,
+        "sr_excess": 0.19,
+        "slope": -2.35,
+        "edge_coh": 0.0,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.05402,
+        "sr_excess": 0.22,
+        "slope": -1.57,
+        "edge_coh": 0.0,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 87.45,
+    "hr_bucket": "ok_finer_verify"
+  },
+  {
+    "cruise": "SKQ201705S",
+    "hr_id": "MGDS:31254",
+    "lr_native_m": 18.5,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.05402,
+        "sr_excess": 0.16,
+        "slope": -3.64,
+        "edge_coh": 0.0,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.05402,
+        "sr_excess": 0.19,
+        "slope": -2.36,
+        "edge_coh": 0.0,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.05402,
+        "sr_excess": 0.22,
+        "slope": -1.62,
+        "edge_coh": 0.0,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 86.12,
+    "hr_bucket": "ok_finer_verify"
+  },
+  {
+    "cruise": "TN157",
+    "hr_id": "MGDS:21996",
+    "status": "empty_overlap",
+    "prior_ratio": 50.44,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "TN159",
+    "hr_id": "MGDS:21986",
+    "lr_native_m": 281.3,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.00356,
+        "sr_excess": 0.7,
+        "slope": -1.59,
+        "edge_coh": 0.006,
+        "sr_band_cells": 7,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0018
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.00356,
+        "sr_excess": 0.55,
+        "slope": -1.99,
+        "edge_coh": 0.006,
+        "sr_band_cells": 22,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0004
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.00356,
+        "sr_excess": 0.52,
+        "slope": -2.64,
+        "edge_coh": 0.006,
+        "sr_band_cells": 52,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 283.68,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "TN159",
+    "hr_id": "MGDS:21998",
+    "status": "no_data_overlap",
+    "prior_ratio": 283.61,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "TN159",
+    "hr_id": "MGDS:21981",
+    "lr_native_m": 317.5,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.00315,
+        "sr_excess": 0.28,
+        "slope": -3.42,
+        "edge_coh": 0.012,
+        "sr_band_cells": 7,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0008
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.00315,
+        "sr_excess": 0.18,
+        "slope": -2.89,
+        "edge_coh": 0.012,
+        "sr_band_cells": 22,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0003
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.00315,
+        "sr_excess": 0.16,
+        "slope": -2.06,
+        "edge_coh": 0.012,
+        "sr_band_cells": 52,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 320.26,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "TN268",
+    "hr_id": "MGDS:31188",
+    "lr_native_m": 66.1,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.01514,
+        "sr_excess": 0.01,
+        "slope": -2.25,
+        "edge_coh": 0.0,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0026
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.01514,
+        "sr_excess": 0.01,
+        "slope": -3.14,
+        "edge_coh": 0.0,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0005
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.01514,
+        "sr_excess": 0.01,
+        "slope": -3.04,
+        "edge_coh": 0.0,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 66.65,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "TN268",
+    "hr_id": "MGDS:30219",
+    "lr_native_m": 31.3,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.03194,
+        "sr_excess": 39.06,
+        "slope": -2.93,
+        "edge_coh": 0.002,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0001
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.03194,
+        "sr_excess": 44.99,
+        "slope": -3.17,
+        "edge_coh": 0.002,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.03194,
+        "sr_excess": 45.84,
+        "slope": -3.83,
+        "edge_coh": 0.002,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 31.58,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "TN268",
+    "hr_id": "MGDS:30466",
+    "lr_native_m": 247.2,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.00405,
+        "sr_excess": 1.88,
+        "slope": -3.55,
+        "edge_coh": 0.363,
+        "sr_band_cells": 7,
+        "verdict": "circular_leak",
+        "uq_above_target": 0.0003
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.00405,
+        "sr_excess": 1.73,
+        "slope": -3.54,
+        "edge_coh": 0.363,
+        "sr_band_cells": 22,
+        "verdict": "circular_leak",
+        "uq_above_target": 0.0001
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.00405,
+        "sr_excess": 1.59,
+        "slope": -3.06,
+        "edge_coh": 0.363,
+        "sr_band_cells": 52,
+        "verdict": "circular_leak",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": null,
+    "prior_ratio": 248.95,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "TN268",
+    "hr_id": "MGDS:32556",
+    "status": "hr_unreadable",
+    "hr_raster": "/scratch/groups/hilley/auv_ship_colocated_bathy/staging_phase1/MGDS_32556/AxialSRift_MAUV_ver2025_Topo1m.grd",
+    "prior_ratio": 278.94,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "TN268",
+    "hr_id": "MGDS:24470",
+    "lr_native_m": 34.2,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.02926,
+        "sr_excess": 3.46,
+        "slope": -2.46,
+        "edge_coh": 0.001,
+        "sr_band_cells": 7,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.008
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.02926,
+        "sr_excess": 4.91,
+        "slope": -1.91,
+        "edge_coh": 0.001,
+        "sr_band_cells": 22,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0027
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.02926,
+        "sr_excess": 5.79,
+        "slope": -2.05,
+        "edge_coh": 0.001,
+        "sr_band_cells": 52,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 344.7,
+    "hr_bucket": "ok_finer_verify"
+  },
+  {
+    "cruise": "TN365",
+    "hr_id": "MGDS:31193",
+    "status": "empty_overlap",
+    "prior_ratio": 95.4,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "TN383",
+    "hr_id": "MGDS:29694",
+    "lr_native_m": 31.2,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.03203,
+        "sr_excess": 17608.3,
+        "slope": -2.18,
+        "edge_coh": 0.002,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0049
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.03203,
+        "sr_excess": 23357.97,
+        "slope": -2.1,
+        "edge_coh": 0.002,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0013
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.03203,
+        "sr_excess": 25727.74,
+        "slope": -2.52,
+        "edge_coh": 0.002,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 31.46,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "TN399",
+    "hr_id": "MGDS:30373",
+    "lr_native_m": 246.4,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.00406,
+        "sr_excess": 0.33,
+        "slope": -3.5,
+        "edge_coh": 0.047,
+        "sr_band_cells": 7,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.00406,
+        "sr_excess": 0.27,
+        "slope": -3.18,
+        "edge_coh": 0.047,
+        "sr_band_cells": 22,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.00406,
+        "sr_excess": 0.27,
+        "slope": -2.82,
+        "edge_coh": 0.047,
+        "sr_band_cells": 52,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 248.08,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "TN399",
+    "hr_id": "MGDS:31181",
+    "lr_native_m": 49.9,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.02006,
+        "sr_excess": 3.86,
+        "slope": -3.05,
+        "edge_coh": 0.001,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0005
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.02006,
+        "sr_excess": 4.44,
+        "slope": -2.88,
+        "edge_coh": 0.001,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0001
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.02006,
+        "sr_excess": 4.72,
+        "slope": -2.5,
+        "edge_coh": 0.001,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 50.23,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "AR26",
+    "hr_id": "MGDS:31838",
+    "lr_native_m": 32.3,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.03097,
+        "sr_excess": 0.4,
+        "slope": -3.01,
+        "edge_coh": 0.001,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0002
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.03097,
+        "sr_excess": 0.39,
+        "slope": -2.87,
+        "edge_coh": 0.001,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.03097,
+        "sr_excess": 0.39,
+        "slope": -2.47,
+        "edge_coh": 0.001,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 32.32,
+    "hr_bucket": ""
+  },
+  {
+    "cruise": "TN299",
+    "hr_id": "MGDS:27339",
+    "lr_native_m": 80.0,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.01251,
+        "sr_excess": 0.34,
+        "slope": -3.63,
+        "edge_coh": 0.0,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0002
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.01251,
+        "sr_excess": 0.32,
+        "slope": -3.6,
+        "edge_coh": 0.0,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.01251,
+        "sr_excess": 0.31,
+        "slope": -2.88,
+        "edge_coh": 0.0,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 79.95,
+    "hr_bucket": ""
+  },
+  {
+    "cruise": "TN299",
+    "hr_id": "MGDS:31256",
+    "lr_native_m": 38.5,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.02597,
+        "sr_excess": 7305.38,
+        "slope": -2.48,
+        "edge_coh": 0.0,
+        "sr_band_cells": 7,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0004
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.02597,
+        "sr_excess": 9482.36,
+        "slope": -2.53,
+        "edge_coh": 0.0,
+        "sr_band_cells": 22,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0001
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.02597,
+        "sr_excess": 10308.65,
+        "slope": -2.68,
+        "edge_coh": 0.0,
+        "sr_band_cells": 52,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": null,
+    "hr_bucket": ""
+  },
+  {
+    "cruise": "FK181031",
+    "hr_id": "MGDS:24367",
+    "lr_native_m": 44.8,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.02233,
+        "sr_excess": 7.96,
+        "slope": -3.39,
+        "edge_coh": 0.001,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.02233,
+        "sr_excess": 7.51,
+        "slope": -3.23,
+        "edge_coh": 0.001,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.02233,
+        "sr_excess": 7.27,
+        "slope": -2.92,
+        "edge_coh": 0.001,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 22.41,
+    "hr_bucket": ""
+  },
+  {
+    "cruise": "FK181031",
+    "hr_id": "MGDS:24620",
+    "lr_native_m": 65.8,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.0152,
+        "sr_excess": 224.28,
+        "slope": -3.55,
+        "edge_coh": 0.0,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.0152,
+        "sr_excess": 236.65,
+        "slope": -3.6,
+        "edge_coh": 0.0,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.0152,
+        "sr_excess": 239.98,
+        "slope": -3.66,
+        "edge_coh": 0.0,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": null,
+    "hr_bucket": ""
+  },
+  {
+    "cruise": "2009_Amundsen",
+    "hr_id": "MGDS:30045",
+    "status": "empty_overlap",
+    "prior_ratio": null,
+    "hr_bucket": "ok"
+  },
+  {
+    "cruise": "KN210-05",
+    "hr_id": "MGDS:22436",
+    "lr_native_m": 87.5,
+    "status": "ok",
+    "per_k": {
+      "2": {
+        "k": 2,
+        "f_lr": 0.01143,
+        "sr_excess": 171.37,
+        "slope": -3.38,
+        "edge_coh": 0.001,
+        "sr_band_cells": 8,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0001
+      },
+      "4": {
+        "k": 4,
+        "f_lr": 0.01143,
+        "sr_excess": 189.69,
+        "slope": -3.21,
+        "edge_coh": 0.001,
+        "sr_band_cells": 23,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      },
+      "8": {
+        "k": 8,
+        "f_lr": 0.01143,
+        "sr_excess": 197.49,
+        "slope": -2.75,
+        "edge_coh": 0.001,
+        "sr_band_cells": 53,
+        "verdict": "recoverable_signal",
+        "uq_above_target": 0.0
+      }
+    },
+    "max_recoverable_k": 8,
+    "prior_ratio": 43.75,
+    "hr_bucket": "ok"
+  }
+]

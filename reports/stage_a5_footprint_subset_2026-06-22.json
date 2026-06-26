@@ -1,0 +1,253 @@
+{
+  "generated": "2026-06-22",
+  "threshold_gb": 10.0,
+  "n_targets": 14,
+  "baseline_fetch_gb": 865.15,
+  "small_cruises_whole_gb": 88.34,
+  "targets_kept_subset_gb": 58.41,
+  "revised_total_gb": 146.75,
+  "savings_gb": 718.4,
+  "excluded_cruises": [
+    "RR0916"
+  ],
+  "needs_manual_nav": [],
+  "per_cruise": [
+    {
+      "cruise": "2009_Amundsen",
+      "whole_gb": 253.683,
+      "subset_gb": 24.75062675960362,
+      "n_files_total": 3198,
+      "n_files_intersect": 377,
+      "n_nav_missing": 35,
+      "buffer_km": 1.0,
+      "hr_used": [
+        "MGDS:30045"
+      ],
+      "hr_dropped": [],
+      "footprint_bbox_flag": false,
+      "verdict": "keep_subset",
+      "note": ""
+    },
+    {
+      "cruise": "2010_Amundsen",
+      "whole_gb": 246.833,
+      "subset_gb": 20.14224519766867,
+      "n_files_total": 3022,
+      "n_files_intersect": 111,
+      "n_nav_missing": 16,
+      "buffer_km": 1.0,
+      "hr_used": [
+        "MGDS:30270",
+        "MGDS:31753",
+        "MGDS:31755"
+      ],
+      "hr_dropped": [
+        "MGDS:30272"
+      ],
+      "footprint_bbox_flag": false,
+      "verdict": "keep_subset",
+      "note": ""
+    },
+    {
+      "cruise": "TN313",
+      "whole_gb": 47.473,
+      "subset_gb": 2.2030853275209665,
+      "n_files_total": 407,
+      "n_files_intersect": 36,
+      "n_nav_missing": 7,
+      "buffer_km": 3.0821693725585937,
+      "hr_used": [
+        "MGDS:24467",
+        "MGDS:31253"
+      ],
+      "hr_dropped": [],
+      "footprint_bbox_flag": false,
+      "verdict": "keep_subset",
+      "note": "MGDS:24467: sentry271_20140718_2036_tide_1x1.grd:gmt convert: no valid pixels;sentry271_20140718_2036_tide_equal_1x1.grd:gmt convert; "
+    },
+    {
+      "cruise": "TN299",
+      "whole_gb": 38.175,
+      "subset_gb": 0.40906353015452623,
+      "n_files_total": 658,
+      "n_files_intersect": 12,
+      "n_nav_missing": 5,
+      "buffer_km": 6.1361220703125,
+      "hr_used": [
+        "MGDS:27339",
+        "MGDS:31256"
+      ],
+      "hr_dropped": [],
+      "footprint_bbox_flag": false,
+      "verdict": "keep_subset",
+      "note": ""
+    },
+    {
+      "cruise": "NA080",
+      "whole_gb": 35.381,
+      "subset_gb": 0.48945331387221813,
+      "n_files_total": 1033,
+      "n_files_intersect": 51,
+      "n_nav_missing": 1,
+      "buffer_km": 6.61780419921875,
+      "hr_used": [
+        "MGDS:31290",
+        "MGDS:31291"
+      ],
+      "hr_dropped": [],
+      "footprint_bbox_flag": false,
+      "verdict": "keep_subset",
+      "note": ""
+    },
+    {
+      "cruise": "MV1405",
+      "whole_gb": 35.087,
+      "subset_gb": 0.0322265625,
+      "n_files_total": 1090,
+      "n_files_intersect": 1,
+      "n_nav_missing": 0,
+      "buffer_km": 1.7,
+      "hr_used": [
+        "MANIFEST:cal_dig_morro_bay__20180427m3_PockmarkNorth"
+      ],
+      "hr_dropped": [],
+      "footprint_bbox_flag": true,
+      "verdict": "keep_subset",
+      "note": "MANIFEST:cal_dig_morro_bay__20180427m3_PockmarkNorth: no raster; catalog geom (bbox?) used; "
+    },
+    {
+      "cruise": "TN399",
+      "whole_gb": 20.627,
+      "subset_gb": 0.1611793516203761,
+      "n_files_total": 923,
+      "n_files_intersect": 10,
+      "n_nav_missing": 4,
+      "buffer_km": 5.157023193359375,
+      "hr_used": [
+        "MGDS:30373",
+        "MGDS:31181"
+      ],
+      "hr_dropped": [],
+      "footprint_bbox_flag": false,
+      "verdict": "keep_subset",
+      "note": ""
+    },
+    {
+      "cruise": "FK171110",
+      "whole_gb": 20.041,
+      "subset_gb": 2.2410829551517963,
+      "n_files_total": 324,
+      "n_files_intersect": 40,
+      "n_nav_missing": 2,
+      "buffer_km": 1.0,
+      "hr_used": [
+        "MGDS:24485"
+      ],
+      "hr_dropped": [],
+      "footprint_bbox_flag": false,
+      "verdict": "keep_subset",
+      "note": ""
+    },
+    {
+      "cruise": "RB1604",
+      "whole_gb": 19.151,
+      "subset_gb": 1.14807050768286,
+      "n_files_total": 75,
+      "n_files_intersect": 7,
+      "n_nav_missing": 4,
+      "buffer_km": 1.0,
+      "hr_used": [
+        "MGDS:24756"
+      ],
+      "hr_dropped": [],
+      "footprint_bbox_flag": false,
+      "verdict": "keep_subset",
+      "note": ""
+    },
+    {
+      "cruise": "TN365",
+      "whole_gb": 17.007,
+      "subset_gb": 1.339257812127471,
+      "n_files_total": 410,
+      "n_files_intersect": 34,
+      "n_nav_missing": 0,
+      "buffer_km": 6.702407470703125,
+      "hr_used": [
+        "MGDS:31193"
+      ],
+      "hr_dropped": [],
+      "footprint_bbox_flag": false,
+      "verdict": "keep_subset",
+      "note": ""
+    },
+    {
+      "cruise": "RR0916",
+      "whole_gb": 12.325,
+      "subset_gb": 0.0,
+      "n_files_total": 0,
+      "n_files_intersect": 0,
+      "n_nav_missing": 0,
+      "buffer_km": 0.0,
+      "hr_used": [],
+      "hr_dropped": [
+        "MGDS:24425"
+      ],
+      "footprint_bbox_flag": false,
+      "verdict": "exclude_no_valid_hr",
+      "note": "no valid HR footprint to test against; "
+    },
+    {
+      "cruise": "FK181031",
+      "whole_gb": 10.8,
+      "subset_gb": 2.84619140625,
+      "n_files_total": 176,
+      "n_files_intersect": 50,
+      "n_nav_missing": 0,
+      "buffer_km": 4.787600219726563,
+      "hr_used": [
+        "MGDS:24367",
+        "MGDS:24620"
+      ],
+      "hr_dropped": [],
+      "footprint_bbox_flag": false,
+      "verdict": "keep_subset",
+      "note": ""
+    },
+    {
+      "cruise": "TN268",
+      "whole_gb": 10.138,
+      "subset_gb": 1.6937910076230764,
+      "n_files_total": 229,
+      "n_files_intersect": 87,
+      "n_nav_missing": 1,
+      "buffer_km": 4.5895947265625,
+      "hr_used": [
+        "MGDS:24470",
+        "MGDS:30219",
+        "MGDS:30466",
+        "MGDS:31188",
+        "MGDS:32556"
+      ],
+      "hr_dropped": [],
+      "footprint_bbox_flag": false,
+      "verdict": "keep_subset",
+      "note": "MGDS:24470: sentry271_20140718_2036_tide_equal_1x1.asc:Cannot convert fill_value nan to dtype int32; "
+    },
+    {
+      "cruise": "TN383",
+      "whole_gb": 10.087,
+      "subset_gb": 0.9520534528419375,
+      "n_files_total": 237,
+      "n_files_intersect": 28,
+      "n_nav_missing": 2,
+      "buffer_km": 1.0,
+      "hr_used": [
+        "MGDS:29694"
+      ],
+      "hr_dropped": [],
+      "footprint_bbox_flag": false,
+      "verdict": "keep_subset",
+      "note": ""
+    }
+  ]
+}

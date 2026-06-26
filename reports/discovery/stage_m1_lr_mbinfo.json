@@ -1,0 +1,92 @@
+{
+  "AT37-13": {
+    "format": "58",
+    "filename": "9999.all.mb58.gz",
+    "fmt_sonar_family": "Kongsberg EM (.all)"
+  },
+  "AT42-03": {
+    "format": "58",
+    "filename": "9999.all.mb58.gz",
+    "fmt_sonar_family": "Kongsberg EM (.all)"
+  },
+  "EW9801": {
+    "format": "21",
+    "filename": "9801hs.d044.mb21.gz",
+    "fmt_sonar_family": "Atlas Hydrosweep DS"
+  },
+  "NA080": {
+    "format": "58",
+    "filename": "0028_20170512_231024_Nautilus.all.mb58.gz",
+    "fmt_sonar_family": "Kongsberg EM (.all)",
+    "vessel_token": "Nautilus"
+  },
+  "NA090": {
+    "format": "58",
+    "filename": "0003_20171021_144007_Nautilus.all.mb58.gz",
+    "fmt_sonar_family": "Kongsberg EM (.all)",
+    "vessel_token": "Nautilus"
+  },
+  "RR1506": {
+    "format": "58",
+    "filename": "0000_20150413_231614_revelle.all.mb58.gz",
+    "fmt_sonar_family": "Kongsberg EM (.all)",
+    "vessel_token": "revelle"
+  },
+  "TN268": {
+    "format": "58",
+    "filename": "0000_20110813_125153_TGT.all.mb58.gz",
+    "fmt_sonar_family": "Kongsberg EM (.all)",
+    "vessel_token": "TGT"
+  },
+  "TN399": {
+    "format": "58",
+    "filename": "0340_20220129_153014_TGT.all.mb58.gz",
+    "fmt_sonar_family": "Kongsberg EM (.all)",
+    "vessel_token": "TGT"
+  },
+  "FK181031": {
+    "format": "58",
+    "filename": "0169_20181122_015454_FK181031_EM302.all.mb58.gz",
+    "fmt_sonar_family": "Kongsberg EM (.all)",
+    "em_from_filename": "EM302",
+    "vessel_token": "FK181031_EM302"
+  },
+  "KN210-05": {
+    "format": "94",
+    "filename": "sb20130615183556.xse.mb94.gz",
+    "fmt_sonar_family": "L-3 ELAC/SeaBeam (XSE)"
+  },
+  "KN204-01": {
+    "format": "94",
+    "filename": "sb20111113064519.xse.mb94.gz",
+    "fmt_sonar_family": "L-3 ELAC/SeaBeam (XSE)"
+  },
+  "AR26": {
+    "format": "58",
+    "filename": "0002_20160207_162856_ShipName.all.mb58.gz",
+    "fmt_sonar_family": "Kongsberg EM (.all)"
+  },
+  "TN159": {
+    "format": "56",
+    "filename": "0007_20030729_110516_raw.all.mb56.gz",
+    "fmt_sonar_family": "Simrad EM (.all)"
+  },
+  "FK006B": {
+    "format": "58",
+    "filename": "0052_20121111_185647_FK_EM302.all.mb58.gz",
+    "fmt_sonar_family": "Kongsberg EM (.all)",
+    "em_from_filename": "EM302",
+    "vessel_token": "FK_EM302"
+  },
+  "TN299": {
+    "format": "58",
+    "filename": "0165_20130709_070745_TGT.all.mb58.gz",
+    "fmt_sonar_family": "Kongsberg EM (.all)",
+    "vessel_token": "TGT"
+  },
+  "KIWI10RR": {
+    "format": "41",
+    "filename": "sb2100_vf.19980412-0716p.mb41.gz",
+    "fmt_sonar_family": "SeaBeam 2100"
+  }
+}

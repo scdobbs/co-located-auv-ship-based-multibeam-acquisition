@@ -1,0 +1,212 @@
+{
+  "steps": [
+    {
+      "reclass_applied": {
+        "EW9801__MGDS_31425": "volcanic",
+        "RR1506__MGDS_29779": "seamount",
+        "TN268__MGDS_30466": "volcanic",
+        "TN399__MGDS_30373": "volcanic",
+        "FK181031__MGDS_24367": "volcanic",
+        "TN299__MGDS_27339": "volcanic"
+      }
+    },
+    {
+      "rows": {
+        "canonical": 21,
+        "new": 13,
+        "total": 34
+      },
+      "pair_id_unique": true,
+      "canon_verbatim": true
+    }
+  ],
+  "ok": true,
+  "checksum_verify": {
+    "checked": 26,
+    "mismatches": 0,
+    "bad": []
+  },
+  "oak_sync": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/manifest/pairs.parquet",
+    "byte_identical": true
+  },
+  "exclusions_logged": [
+    "KN210-05__MGDS_22436",
+    "FK006B__MGDS_20811",
+    "KN204-01__MGDS_31675"
+  ],
+  "completeness_final": {
+    "pair_id": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "site_name": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "region": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "cruise_id": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "vessel": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "hr_platform": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "hr_sonar": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "hr_doi": {
+      "all_34": "16/34",
+      "new_13": "13/13"
+    },
+    "hr_native_res_m": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "lr_platform": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "lr_sonar": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "lr_doi": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "lr_native_res_m": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "res_ratio": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "depth_min_m": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "depth_max_m": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "terrain_class": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "native_crs_hr": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "native_crs_lr": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "target_crs": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "vertical_datum": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "footprint_wkt": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "license": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "acquisition_date": {
+      "all_34": "31/34",
+      "new_13": "13/13"
+    },
+    "verification_status": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "raw_path_hr": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "raw_path_lr": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "harmonized_path_hr": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "harmonized_path_lr": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "checksum_hr": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "checksum_lr": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "notes": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "horiz_offset_m": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "vert_offset_m": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "coreg_peak_psr": {
+      "all_34": "33/34",
+      "new_13": "12/13"
+    },
+    "coreg_peak_eig_ratio": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "coreg_peak_agrees": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "coreg_status": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "qc_artifact_path": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "hr_source_type": {
+      "all_34": "34/34",
+      "new_13": "13/13"
+    },
+    "hr_local_path": {
+      "all_34": "0/34",
+      "new_13": "0/13"
+    },
+    "hr_superseded_doi": {
+      "all_34": "0/34",
+      "new_13": "0/13"
+    },
+    "hr_superseded_reason": {
+      "all_34": "0/34",
+      "new_13": "0/13"
+    }
+  }
+}

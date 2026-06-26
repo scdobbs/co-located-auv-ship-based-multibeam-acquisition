@@ -1,0 +1,28 @@
+# Bulk / binary data lives on $SCRATCH and $OAK, never in the repo
+# (CLAUDE.md: "Only small text artifacts (code, config, manifest, logs, reports)").
+# Rasters
+*.tif
+*.tiff
+*.grd
+*.nc
+*.asc
+# Spatial databases (286 MB of geopackages; regenerable from discovery code)
+*.gpkg
+# QC figures / contact sheets / overlays (regenerable; also on $DATA_ROOT/qc_plots)
+*.png
+*.pdf
+*.jpg
+*.jpeg
+
+# Transient Slurm job output
+logs/*
+!logs/.gitkeep
+
+# Manifest backups (the canonical pairs.parquet IS tracked; .bak copies are not)
+manifest/*.bak*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/

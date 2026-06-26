@@ -1,0 +1,25 @@
+[
+  {
+    "cruise": "NA076",
+    "hr_id": "MGDS:32321",
+    "sonar": "Kongsberg EM302",
+    "beamwidth_deg": 1.0,
+    "footprint_depth_m": 870.6,
+    "achieved_cell_m": 15.2,
+    "fill_fraction": 0.482,
+    "footprint_pct_of_grid": 38.6,
+    "lr_native_res_m": 221.03,
+    "native_method": "sounding_density(mblist)",
+    "hr_res_m": 0.9922739188752548,
+    "hr_bucket": "ok",
+    "provisional_ratio": 222.75,
+    "ratio_provisional_ok_finer": false,
+    "grid_depth_median": -866.2,
+    "coverage_verdict": "near_nadir",
+    "process_mode": "raw",
+    "qc": "pass",
+    "overlay": "/scratch/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/overlay_NA076__MGDS_32321.png",
+    "grd_path": "/scratch/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/NA076__union.grd",
+    "status": "gridded"
+  }
+]

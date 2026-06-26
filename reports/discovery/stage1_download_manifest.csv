@@ -1,0 +1,95 @@
+fetch_id,role,url,expected_bytes,paired_hr_id,tier,lr_status
+MGDS:31188,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31188,299303770,MGDS:31188,training,n/a
+PANGAEA:tag_m127,HR,https://doi.pangaea.de/10.1594/PANGAEA.899415,,PANGAEA:tag_m127,training,n/a
+MGDS:5174,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=5174,4031854,MGDS:5174,training,n/a
+MGDS:31199,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31199,150450952,MGDS:31199,training,n/a
+MGDS:30219,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=30219,2256719224,MGDS:30219,training,n/a
+MGDS:31425,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31425,1581985,MGDS:31425,training,n/a
+MGDS:21847,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=21847,490864,MGDS:21847,training,n/a
+MGDS:31600,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31600,3577152,MGDS:31600,training,n/a
+MGDS:30272,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=30272,4517897,MGDS:30272,training,n/a
+MGDS:17700,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=17700,13312256,MGDS:17700,training,n/a
+MGDS:31255,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31255,88613091,MGDS:31255,training,n/a
+MGDS:31254,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31254,68307337,MGDS:31254,training,n/a
+MGDS:31838,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31838,26894845,MGDS:31838,training,n/a
+MGDS:31253,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31253,90729185,MGDS:31253,training,n/a
+MGDS:20811,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=20811,54859904,MGDS:20811,training,n/a
+MGDS:20815,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=20815,23785268,MGDS:20815,training,n/a
+MGDS:30466,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=30466,349074606,MGDS:30466,training,n/a
+MGDS:24756,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=24756,444375550,MGDS:24756,training,n/a
+MGDS:21415,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=21415,436926206,MGDS:21415,training,n/a
+MGDS:31811,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31811,31025847,MGDS:31811,training,n/a
+MGDS:32556,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=32556,332244410,MGDS:32556,training,n/a
+MGDS:30373,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=30373,350278915,MGDS:30373,eval_only,n/a
+MGDS:24367,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=24367,183301345,MGDS:24367,eval_only,n/a
+MGDS:32321,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=32321,27426400,MGDS:32321,training,n/a
+MGDS:31290,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31290,245133204,MGDS:31290,eval_only,n/a
+MGDS:24002,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=24002,7962102,MGDS:24002,eval_only,n/a
+MGDS:29779,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=29779,290982852,MGDS:29779,eval_only,n/a
+MGDS:7832,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=7832,12180763,MGDS:7832,eval_only,n/a
+MGDS:30217,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=30217,4375945504,MGDS:30217,raw_lr_to_grid,n/a
+MGDS:30467,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=30467,199787815,MGDS:30467,raw_lr_to_grid,n/a
+MGDS:21986,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=21986,450617761,MGDS:21986,raw_lr_to_grid,n/a
+MGDS:31291,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31291,592624744,MGDS:31291,raw_lr_to_grid,n/a
+MGDS:27339,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=27339,177263236,MGDS:27339,training,n/a
+MGDS:18210,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=18210,232182945,MGDS:18210,training,n/a
+MGDS:32558,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=32558,5658278647,MGDS:32558,raw_lr_to_grid,n/a
+MGDS:21462,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=21462,18328808,MGDS:21462,training,n/a
+MGDS:24485,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=24485,93837184,MGDS:24485,raw_lr_to_grid,n/a
+MGDS:21998,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=21998,154328253,MGDS:21998,raw_lr_to_grid,n/a
+MGDS:21996,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=21996,362721721,MGDS:21996,raw_lr_to_grid,n/a
+MGDS:31430,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31430,100634564,MGDS:31430,raw_lr_to_grid,n/a
+MGDS:21981,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=21981,448918921,MGDS:21981,raw_lr_to_grid,n/a
+MGDS:31073,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31073,178186963,MGDS:31073,training,n/a
+MGDS:29694,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=29694,225731960,MGDS:29694,raw_lr_to_grid,n/a
+MGDS:31753,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31753,11585433,MGDS:31753,eval_only,n/a
+MGDS:24425,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=24425,1695543,MGDS:24425,raw_lr_to_grid,n/a
+MGDS:31427,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31427,6070469,MGDS:31427,raw_lr_to_grid,n/a
+MGDS:32007,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=32007,42010429,MGDS:32007,eval_only,n/a
+MGDS:7833,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=7833,106892093,MGDS:7833,raw_lr_to_grid,n/a
+MGDS:31059,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31059,124179580,MGDS:31059,raw_lr_to_grid,n/a
+MGDS:31212,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31212,36866023,MGDS:31212,eval_only,n/a
+MGDS:21454,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=21454,207669384,MGDS:21454,eval_only,n/a
+MGDS:27340,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=27340,1867705672,MGDS:27340,raw_lr_to_grid,n/a
+MGDS:31755,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31755,86544120,MGDS:31755,raw_lr_to_grid,n/a
+MGDS:31181,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31181,411484713,MGDS:31181,eval_only,n/a
+MGDS:22436,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=22436,83266373,MGDS:22436,raw_lr_to_grid,n/a
+MGDS:30369,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=30369,270078263,MGDS:30369,raw_lr_to_grid,n/a
+MGDS:30270,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=30270,13991308,MGDS:30270,raw_lr_to_grid,n/a
+MGDS:24620,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=24620,192725108,MGDS:24620,raw_lr_to_grid,n/a
+MGDS:31860,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31860,40410978,MGDS:31860,raw_lr_to_grid,n/a
+MGDS:31256,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31256,203832196,MGDS:31256,raw_lr_to_grid,n/a
+MGDS:24499,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=24499,36535884,MGDS:24499,raw_lr_to_grid,n/a
+MGDS:24470,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=24470,96414395,MGDS:24470,eval_only,n/a
+MGDS:24467,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=24467,167397518,MGDS:24467,eval_only,n/a
+MGDS:20836,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=20836,6198804,MGDS:20836,raw_lr_to_grid,n/a
+MGDS:31824,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31824,249932923,MGDS:31824,raw_lr_to_grid,n/a
+MGDS:24489,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=24489,74478251,MGDS:24489,raw_lr_to_grid,n/a
+MGDS:32241,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=32241,1067865111,MGDS:32241,raw_lr_to_grid,n/a
+MGDS:30045,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=30045,1109857472,MGDS:30045,raw_lr_to_grid,n/a
+MGDS:31675,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31675,133973980,MGDS:31675,raw_lr_to_grid,n/a
+MGDS:32240,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=32240,776731054,MGDS:32240,raw_lr_to_grid,n/a
+MGDS:31321,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31321,211669161,MGDS:31321,eval_only,n/a
+MGDS:31831,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31831,13149046,MGDS:31831,eval_only,n/a
+MGDS:31949,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31949,34287508,MGDS:31949,raw_lr_to_grid,n/a
+MGDS:31814,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31814,126994312,MGDS:31814,eval_only,n/a
+MGDS:31813,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31813,180031355,MGDS:31813,eval_only,n/a
+MGDS:31193,HR,http://www.marine-geo.org/tools/search/Files.php?data_set_uid=31193,668587089,MGDS:31193,eval_only,n/a
+MANIFEST:cal_dig_morro_bay__20190511m2_BankTopEofCanyon3,HR,local manifest seed: cal_dig_morro_bay__20190511m2_BankTopEofCanyon3,,MANIFEST:cal_dig_morro_bay__20190511m2_BankTopEofCanyon3,training,n/a
+MANIFEST:cal_dig_morro_bay__20190317m2_600mGully,HR,local manifest seed: cal_dig_morro_bay__20190317m2_600mGully,,MANIFEST:cal_dig_morro_bay__20190317m2_600mGully,eval_only,n/a
+MANIFEST:cal_dig_morro_bay__20190317m1_1000mGully,HR,local manifest seed: cal_dig_morro_bay__20190317m1_1000mGully,,MANIFEST:cal_dig_morro_bay__20190317m1_1000mGully,training,n/a
+MANIFEST:cal_dig_morro_bay__201804_LuciaChica2m,HR,local manifest seed: cal_dig_morro_bay__201804_LuciaChica2m,,MANIFEST:cal_dig_morro_bay__201804_LuciaChica2m,raw_lr_to_grid,n/a
+MANIFEST:cal_dig_morro_bay__20180427m1_Channel700,HR,local manifest seed: cal_dig_morro_bay__20180427m1_Channel700,,MANIFEST:cal_dig_morro_bay__20180427m1_Channel700,training,n/a
+MANIFEST:cal_dig_morro_bay__20180427m3_PockmarkNorth,HR,local manifest seed: cal_dig_morro_bay__20180427m3_PockmarkNorth,,MANIFEST:cal_dig_morro_bay__20180427m3_PockmarkNorth,training,n/a
+MANIFEST:cal_dig_morro_bay__20190511m1_6thHeadlessCany,HR,local manifest seed: cal_dig_morro_bay__20190511m1_6thHeadlessCany,,MANIFEST:cal_dig_morro_bay__20190511m1_6thHeadlessCany,raw_lr_to_grid,n/a
+MANIFEST:cal_dig_morro_bay__20190510m2_BankFlankIncipCh,HR,local manifest seed: cal_dig_morro_bay__20190510m2_BankFlankIncipCh,,MANIFEST:cal_dig_morro_bay__20190510m2_BankFlankIncipCh,training,n/a
+MANIFEST:cal_dig_morro_bay__20190314m4_LuciaChica970m,HR,local manifest seed: cal_dig_morro_bay__20190314m4_LuciaChica970m,,MANIFEST:cal_dig_morro_bay__20190314m4_LuciaChica970m,raw_lr_to_grid,n/a
+NCEI_MBBDB:EX2206,LR_processed,http://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX2206/multibeam/data/version1/products/EX2206_MB_FNL_All_WGS84_100m.tif.gz,19424611,PANGAEA:tag_m127,training,processed
+NCEI_MBBDB:lostcity2005,LR_processed,https://data.ngdc.noaa.gov/platforms/ocean/ships/ronald_h._brown/lostcity2005/multibeam/data/version1/products/western_massif_0p0005.asc.gz,566857,MGDS:21847,training,processed
+NCEI_MBBDB:EX1202L2,LR_processed,https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1202Leg2/multibeam/data/version1/products/EX1202L2_MB_FNL_WGS84_50m.tif.gz,5162073,MGDS:20815,training,processed
+NCEI_MBBDB:EX0909,LR_processed,http://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX0909/multibeam/data/version2/products/EX0909_Leg1_NeckerRidge_LongLat_100m.tif.gz,514870,MGDS:24002,eval_only,processed
+NCEI_MBBDB:EX1402L2,LR_processed,http://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1402L2/multibeam/data/version1/products/EX1402L2_MB_FNL_01_50m_WGS84.tif.gz,743463,MGDS:31073,training,processed
+NCEI_MBBDB:EX1202L3,LR_processed,https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1202Leg3/multibeam/data/version1/products/EX1202L3_MB_FNL_100m_WGS84.tif.gz,7882154,MGDS:31321,eval_only,processed
+NCEI_MBBDB:EX1206,LR_processed,https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1206/multibeam/data/version1/products/EX1206_MB_FNL_100m_WGS84.tif.gz,1084714,MGDS:31831,eval_only,processed
+NCEI_MBBDB:NR07-1,LR_processed,http://data.ngdc.noaa.gov/platforms/ocean/ships/northern_resolution/NR07-1/multibeam/data/version1/products/GulfofMexico_FloridaEscarpment_ASCII_bathy.xyz.gz,9660830,MGDS:31814,eval_only,processed
+NCEI_MBBDB:NR07-1,LR_processed,http://data.ngdc.noaa.gov/platforms/ocean/ships/northern_resolution/NR07-1/multibeam/data/version1/products/GulfofMexico_FloridaEscarpment_ASCII_bathy.xyz.gz,9660830,MGDS:31813,eval_only,processed

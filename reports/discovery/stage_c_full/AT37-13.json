@@ -1,0 +1,25 @@
+[
+  {
+    "cruise": "AT37-13",
+    "hr_id": "MGDS:31199",
+    "sonar": "Kongsberg EM122",
+    "beamwidth_deg": 1.0,
+    "footprint_depth_m": 1331.1,
+    "achieved_cell_m": 23.23,
+    "fill_fraction": 0.9907,
+    "footprint_pct_of_grid": 0.4,
+    "lr_native_res_m": 46.44,
+    "native_method": "sounding_density(mblist)",
+    "hr_res_m": 0.9923567966964572,
+    "hr_bucket": "ok",
+    "provisional_ratio": 46.8,
+    "ratio_provisional_ok_finer": false,
+    "grid_depth_median": -1645.3,
+    "coverage_verdict": "near_nadir",
+    "process_mode": "raw",
+    "qc": "pass",
+    "overlay": "/scratch/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/overlay_AT37-13__MGDS_31199.png",
+    "grd_path": "/scratch/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/AT37-13__union.grd",
+    "status": "gridded"
+  }
+]

@@ -1,0 +1,100 @@
+# user_hr_approved_mapping.yaml  (v1.2.1 — human-approved)
+# Cal DIG HR only. DISCOL and Cal DIG LR untouched. Tier 2 stays blocked.
+#
+# HR is standardized to 2 m. Reproject EPSG:32610 -> EPSG:26910 AND resample
+# to 2 m in a SINGLE warp (no double interpolation):
+#   - input finer than 2 m (1 m): -r average   (area-weighted downsample)
+#   - input already 2 m:          -r cubic      (reprojection only)
+#   - NEVER nearest neighbor.
+# See v1.2.1 addendum for full behavior.
+
+settings:
+  hr_target_gsd_m: 2.0
+  downsample_kernel: average        # input finer than target
+  reproject_kernel: cubic           # input already at target GSD
+  target_crs: EPSG:26910
+  base_dir: /scratch/groups/hilley/auv_ship_colocated_bathy/user-provided-cal-dig
+
+# ---- Existing CMGDS sub-pairs -> clean user HR ----
+# 'hr' is a list; >1 entry means mosaic before reproject/clip.
+pairs:
+  cal_dig_morro_bay__20180426m2_Channel1000:
+    hr: [ChannelSurvey_1000_Topo1m_UTM_utm.tif]
+  cal_dig_morro_bay__20180427m1_Channel700:
+    hr: [Channel700_2m.tif]
+  # NOTE (2026-06-03): the v1.2.1 mosaic spec for PockmarkSouthBasinFlank
+  # was abandoned after repeated rasterio write failures on the mosaic
+  # intermediate. Per Stephen, treat PockmarkSouth and BasinFlank as two
+  # independent pairs against the same LR (each gets its own HR∩LR overlap +
+  # coregistration). Definitions moved to `new_pairs` below; the original
+  # CMGDS sub-pair row is added to the drop list.
+  cal_dig_morro_bay__20180427m3_PockmarkNorth:
+    hr: [PockmarkNorth_MAUV_Topo1m_UTM_utm.tif]
+  cal_dig_morro_bay__20180428m1_Cable:
+    hr: [CableSurvey_MAUV_Topo1m_UTM_utm.tif]   # IoU 0.78 accepted: thin strip, area + name match strong
+  cal_dig_morro_bay__20190314m4_LuciaChica970m:
+    hr: [LuciaChica970_2m.tif]
+  cal_dig_morro_bay__20190315m1_HeadlessCanyon:
+    hr: [HeadlessCanyon_Topo1m_converted.tif]
+  cal_dig_morro_bay__20190316m1_BankTop:
+    hr: [banktop_2m.tif]    # user-added; confirm exact filename, inventory + attest before use
+  cal_dig_morro_bay__20190317m1_1000mGully:
+    hr: [1000mGully_Topo1m_UTMinterp_utm.tif]
+  cal_dig_morro_bay__20190317m2_600mGully:
+    hr: [600mGully_Topo1m_UTMinterp_utm.tif]
+  cal_dig_morro_bay__201804_LuciaChica2m:
+    hr: [LuciaChica_2008_Topo1m_UTM_utm.tif]
+  cal_dig_morro_bay__20190318m2_Transect601060m:
+    hr: [Transect_60_1060m_Topo1m_interp_converted.tif]
+  cal_dig_morro_bay__20190510m1_BankFlankHoles:
+    hr: [BankFlankHoles_MAUV_Topo1m_UTM_utm.tif]
+  cal_dig_morro_bay__20190510m2_BankFlankIncipCh:
+    hr: [BankFlankIncipCh_2m.tif]
+  cal_dig_morro_bay__20190511m1_6thHeadlessCany:
+    hr: [6thHeadlessCanyon_2m.tif]
+  cal_dig_morro_bay__20190511m2_BankTopEofCanyon3:
+    hr: [BankTopEofCanyon3_2m.tif]
+
+# ---- New pairs (no CMGDS ancestor) ----
+# Footprint = HR∩LR. MUST verify LR overlap >= pair_qa.min_overlap_area_km2;
+# both sit near the ~1100 m LR coverage hole — clip to LR-covered area or reject.
+new_pairs:
+  cal_dig_morro_bay__luciachica_2007:
+    hr: [LuciaChica_2007_Topo1m_UTM_utm.tif]
+    terrain_class: continental_margin
+  cal_dig_morro_bay__luciachica_2009:
+    hr: [LuciaChica_2009_Topo1m_UTM_utm.tif]
+    terrain_class: continental_margin
+  # Split from the abandoned PockmarkSouthBasinFlank mosaic — each piece
+  # gets its own HR∩LR overlap + coregistration.
+  cal_dig_morro_bay__pockmark_south:
+    hr: [PockmarkSouth_MAUV_Topo1m_UTM_utm.tif]
+    terrain_class: continental_margin
+  cal_dig_morro_bay__basin_flank:
+    hr: [BasinFlank_MAUV_Topo1m_UTM_utm.tif]
+    terrain_class: continental_margin
+
+# ---- Dropped (remove from manifest; do NOT fall back to CMGDS HR) ----
+dropped:
+  - cal_dig_morro_bay__20180426m1_PockmarkNorthDet   # detail subset of PockmarkNorth; redundant + leakage risk
+  - cal_dig_morro_bay__20180427m2_PockmarkSouthBasinFlank   # mosaic abandoned; split into pockmark_south + basin_flank
+
+# ---- Stay rejected (no LR coverage; clean HR does not create coverage) ----
+rejected:
+  - cal_dig_morro_bay__20190318m1_LuciaChica1100m
+  - cal_dig_morro_bay__20190319m1_8mPockmarkDetail
+
+# ---- Unused user files (informational) ----
+# 2 m duplicates of an accepted 1 m file, or alternate vintages not selected:
+unused:
+  - 600mGully_2m.tif
+  - BankFlankIncipientChannel_Topo1m_converted.tif
+  - BankTopEastofCanyon3_Topo1m_converted.tif
+  - ChannelSurvey_700_Topo1m_UTM_utm.tif
+  - HeadlessCanyon_2m.tif
+  - LuciaChica1100_2m.tif                          # 1100 m: no LR coverage
+  - LuciaChica2019_repeat_1100m_Topo1m_UTM_utm.tif # 1100 m: no LR coverage
+  - LuciaChica2019_repeat_970m_Topo1m_UTM_utm.tif  # 1 m dup of LuciaChica970_2m
+  - Transit_frmPocN_chan_cab_UTM_utm.tif           # transit line spanning multiple sites — exclude (leakage)
+  # removed by user (regional composite, not an AUV patch):
+  - MorroBay_all_2020_interp_32m_converted.tif

@@ -1,0 +1,25 @@
+[
+  {
+    "cruise": "KIWI10RR",
+    "hr_id": "MGDS:24499",
+    "sonar": "SeaBeam 2100",
+    "beamwidth_deg": 2.0,
+    "footprint_depth_m": 2647.0,
+    "achieved_cell_m": 92.41,
+    "fill_fraction": 0.7693,
+    "footprint_pct_of_grid": 6.2,
+    "lr_native_res_m": 105.35,
+    "native_method": "cell/sqrt(fill)",
+    "hr_res_m": 0.9927098059160064,
+    "hr_bucket": "ok",
+    "provisional_ratio": 106.12,
+    "ratio_provisional_ok_finer": false,
+    "grid_depth_median": -2039.9,
+    "coverage_verdict": "near_nadir",
+    "process_mode": "raw",
+    "qc": "pass",
+    "overlay": "/scratch/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/overlay_KIWI10RR__MGDS_24499.png",
+    "grd_path": "/scratch/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/KIWI10RR__union.grd",
+    "status": "gridded"
+  }
+]

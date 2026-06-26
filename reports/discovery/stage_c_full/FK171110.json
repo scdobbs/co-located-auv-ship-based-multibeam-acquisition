@@ -1,0 +1,25 @@
+[
+  {
+    "cruise": "FK171110",
+    "hr_id": "MGDS:24485",
+    "sonar": "Kongsberg EM302",
+    "beamwidth_deg": 1.0,
+    "footprint_depth_m": 2557.8,
+    "achieved_cell_m": 44.64,
+    "fill_fraction": 0.9999,
+    "footprint_pct_of_grid": 18.9,
+    "lr_native_res_m": 106.91,
+    "native_method": "sounding_density(mblist)",
+    "hr_res_m": 1.3074072316848546,
+    "hr_bucket": "ok",
+    "provisional_ratio": 81.77,
+    "ratio_provisional_ok_finer": false,
+    "grid_depth_median": -2519.9,
+    "coverage_verdict": "near_nadir",
+    "process_mode": "raw",
+    "qc": "pass",
+    "overlay": "/scratch/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/overlay_FK171110__MGDS_24485.png",
+    "grd_path": "/scratch/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/FK171110__union.grd",
+    "status": "gridded"
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "cruise": "MV1209",
+    "hr_id": "MGDS:21415",
+    "sonar": "Kongsberg EM122",
+    "beamwidth_deg": 1.0,
+    "footprint_depth_m": 271.3,
+    "achieved_cell_m": 4.74,
+    "fill_fraction": 0.2415,
+    "footprint_pct_of_grid": 88.7,
+    "lr_native_res_m": 9.64,
+    "native_method": "cell/sqrt(fill)",
+    "hr_res_m": 0.992224348501256,
+    "hr_bucket": "ok_finer_verify",
+    "provisional_ratio": 9.72,
+    "ratio_provisional_ok_finer": true,
+    "grid_depth_median": -512.4,
+    "coverage_verdict": "near_nadir",
+    "process_mode": "raw",
+    "qc": "reject",
+    "overlay": "/scratch/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/overlay_MV1209__MGDS_21415.png",
+    "grd_path": "/scratch/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/MV1209__union.grd",
+    "status": "gridded"
+  }
+]
