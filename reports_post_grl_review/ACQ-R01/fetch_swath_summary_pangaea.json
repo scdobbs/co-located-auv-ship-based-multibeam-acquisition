@@ -1,0 +1,32 @@
+{
+  "cruises": {
+    "M127_EM122": {
+      "n_planned": 294,
+      "n_ok": 1,
+      "n_failed": 293,
+      "gb": 0.025,
+      "complete": false
+    },
+    "SO242_1_EM122": {
+      "n_planned": 69,
+      "n_ok": 3,
+      "n_failed": 66,
+      "gb": 0.264,
+      "complete": false
+    },
+    "SO268_1_EM122": {
+      "n_planned": 37,
+      "n_ok": 1,
+      "n_failed": 36,
+      "gb": 0.045,
+      "complete": false
+    }
+  },
+  "total_gb": 0.333,
+  "wall_s": 288.9,
+  "status_counts": {
+    "failed_head": 395,
+    "fetched": 5
+  },
+  "generated": "2026-09-29T23:46:26.098571+00:00"
+}

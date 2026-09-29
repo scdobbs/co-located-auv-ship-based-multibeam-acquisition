@@ -11,5 +11,6 @@ module load python/3.12.1 openblas/0.3.28
 cd /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition
 PY=/home/users/scdobbs/bathy_diffusion_env/bin/python
 echo "host=$(hostname) job=$SLURM_JOB_ID"
-$PY -m src.acq_r01.fetch_swath --pangaea 859528,899408,919755 --workers 4
+# hs.pangaea.de rate-limits (HTTP 429/503 with 4 workers): single worker, 1.5 s throttle, backoff on 429
+$PY -m src.acq_r01.fetch_swath --pangaea 859528,899408,919755 --workers 1 --throttle 1.5
 echo "exit=$?"

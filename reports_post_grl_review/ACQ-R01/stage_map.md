@@ -1,0 +1,25 @@
+# §1.1 Stage map — the pipeline as this repo actually runs it (2026-09-29)
+
+Stage names below are the repo's own (Phase 2 lettering, `src/discovery/stage_*.py`); the directive's
+"discovery → gate → fetch → grid → harmonize → QA/co-registration → manifest" maps onto them as shown.
+"OAK" = `$OAK/auv_ship_colocated_bathy/`, "scratch" = `$GROUP_SCRATCH/auv_ship_colocated_bathy/` (purged 90 d).
+
+| directive stage | repo stage | entry script | inputs | outputs | where |
+|---|---|---|---|---|---|
+| discovery (HR) | v1.4 M3.0 `discover-hr` | `src/cli.py discover-hr` → `src/discovery/mgds.py harvest`, `seeds.py` | MGDS FileServer (`format=data_set`, `format=geoms`), manifest seeds | `reports/discovery/hr_catalog.gpkg` | repo (gitignored `reports/`); cache scratch `discovery_cache/mgds` |
+| discovery (LR) | v1.4 M3.1 `discover-lr` | `src/discovery/ncei.py harvest_for_hr_catalog` | NCEI ArcGIS `multibeam_footprints` layer per HR bbox | `reports/discovery/lr_candidates.gpkg` | repo; cache scratch `discovery_cache/ncei` |
+| discovery (pairs) | v1.4 M3.2 `discover-pairs` | `src/discovery/join.py build` (+ `rebuild.py` v1.4.1 fix pass: `platform_filter`, `dedupe`, `geoportal.enrich`) | HR + LR catalogs | `reports/discovery/candidate_pairs.gpkg` (layers `pairs`, `triage`) | repo |
+| gate | v1.5.x Stage A (Gate A) | `src/discovery/stage_a.py run` | candidate pairs, NCEI products layer, MGDS sizes | `reports/discovery/stage_a_selection.{gpkg,yaml}`, `stage_a_gate_<date>.md` | repo |
+| gate (HR staging / CRS) | v1.5.4 Phase 1 (+ `stage_b` footprints, `crs_recovery`) | `src/phase1.py`, `phase1_remediation.py`, `phase1_closeout.py`, `src/discovery/stage_b.py`, `crs_recovery.py` | selected HR grids (MGDS downloads) | scratch `staging_phase1/MGDS_<uid>/` (PURGED), `reports/discovery/staging_state_20260605.json`, `hr_resolution_sanity.csv` | scratch (gone) + repo |
+| fetch plan | Phase 2 Stage A.5/A.6 | `stage_a5_subset.py`, `stage_a6_footprints.py`, `stage_a6_hygiene.py` | nav `.fnv` tracks, HR valid-data footprints | `reports/stage_b_fetch_list_2026-06-22.csv`, `reports/discovery/stage_a6_hr_footprints_2026-06-22.gpkg` | repo |
+| fetch | Phase 2 Stage B | `stage_b_fetch.py` (+ `stage_b_recovery.py`) | fetch list → per-file plan `reports/discovery/stage_b_file_plan_2026-06-22.csv` | scratch `raw_lr/<cruise>/*.mbNN.gz` (PURGED), `stage_b_fetch_log.csv` | scratch (gone) + repo |
+| grid | Phase 2 Stage C (pilot + full) | `stage_c_pilot.py`, `stage_c_full.py` (MB-System 5.8.2beta06 in Apptainer sandbox; `mbgrid -A2 -G3 -F1 -C0 -M`, raw mode) | raw swath | scratch `raw_lr_gridded/<cruise>__union.grd` (+ `_num`/`_sd` never persisted) (PURGED), `reports/discovery/stage_c_full/<cruise>.json` | scratch (gone) + repo |
+| SR-signal gate | Phase 2 Stage C.5/C.5b/C.5c, C2/C2a/C2c | `stage_c5_spectral.py`, `stage_c5_sweep.py`, `stage_c5_calibrate.py`, `stage_c2a_documented_native.py`, `stage_c2c_recalibrate.py` | HR grids + gridded LR | `reports/discovery/stage_c5*_sweep.json`, `stage_c2c_sweep.json` (max_recoverable_k per pair) | repo (+ OAK `manifest/stage_c2c_*.json`) |
+| corpus / splits | Phase 2 Stage E | `stage_e_splits.py` | C.5c results, validated 21 | `reports/combined_corpus.csv`, `reports/discovery/leakage_units.csv`, `proposed_splits.json` | repo |
+| harmonize | Phase 2 Stage F (+ repair, C1 re-harvest, C1 phase 1) | `stage_f_harmonize.py` → `src/harmonize.py harmonize_pair` (rasterio/rioxarray warp to per-pair UTM, bilinear, clip to HR∩LR); `stage_f_repair.py`; `stage_c1_harmonize.py`, `stage_c1_phase1.py` | HR grid + gridded LR (`.grd` → GeoTIFF) | `harmonized/<pair_id>/{hr,lr}.tif`, `footprint.geojson` | OAK (canonical, 0444) + scratch copy (PURGED except 1) |
+| QA / co-registration | Phase 2 Stage F (NCC gradient peak, `src/coregister.py`, `src/qc.py`), F.5 masks, re-audit R0–R6 | `stage_f5_valid_masks.py`, `stage_unify_valid_masks.py`, `stage_reaudit_r0.py`…, `stage_p2_qc_backfill.py` | harmonized pairs | `hr_valid/lr_valid/joint_valid.tif`, `qc/*.png`, `manifest/valid_tiles.parquet` | OAK (canonical) |
+| manifest | Phase 2 M1/M2 + append + leakage | `stage_m1_manifest_complete.py`, `stage_manifest_append.py`, `stage_c1_append.py`, `stage_c1_phase1_execute.py`, `stage_c2a_apply.py`, `stage_p2_leakage.py` + `stage_p2_leakage_apply.py`, `validated_anchor.py` (guards) | staged rows, leakage tables | `manifest/pairs.parquet` (39 rows, 53 cols; repo == OAK byte-identical), `reports/discovery/leakage_assignment.csv`, `leakage_units_canonical.csv` | repo + OAK `manifest/` |
+| persistence | OAK persist / hardening | `stage_p2_phase2.py`, `stage_unify_valid_masks.py --persist-oak`, `stage_p2pre3_backups.py` | scratch products | OAK `harmonized/`, `manifest/`, `manifest_backups/`, `validated_anchor_backup_2026-06-26/` | OAK |
+
+Tier-1/2 validated pairs (DISCOL, Cal DIG ×18, CCZ, TAG) went through the original M1 path instead:
+`src/cli.py ingest` → `src/pipeline.py` (`pangaea.py` / `cmgds.py` download → `harmonize.py` → `coregister.py` → `qa.py` → `manifest.py`), raw grids under OAK `raw/<pair>/` with `metadata.json`.

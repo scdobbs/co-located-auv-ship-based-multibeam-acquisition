@@ -33,8 +33,18 @@ from src.acq_r01 import common as C
 log = logging.getLogger("acq_r01.fetch")
 _HEADERS = {"User-Agent": "auv-ship-acq/0.3 (Sherlock; ACQ-R01 raw swath re-fetch; "
                           "stephencoledobbs@gmail.com)"}
-_RETRIES = 4
-_THROTTLE = 0.1
+_RETRIES = 6
+_THROTTLE = 0.1          # overridden by --throttle (PANGAEA hs server rate-limits: use >= 1.5 s, 1 worker)
+
+
+def _backoff(r, attempt):
+    """Sleep politely on 429 / 5xx: honour Retry-After, else exponential (5 s .. 120 s)."""
+    ra = None
+    try:
+        ra = float(r.headers.get("Retry-After", "")) if r is not None else None
+    except ValueError:
+        ra = None
+    time.sleep(min(120.0, ra if ra else 5.0 * (2 ** attempt)))
 
 
 def _head_len(url, sess):
@@ -45,8 +55,8 @@ def _head_len(url, sess):
             status = str(r.status_code)
             if r.status_code == 200 and "Content-Length" in r.headers:
                 return int(r.headers["Content-Length"]), status
-            if r.status_code >= 500:
-                time.sleep(2 ** attempt); continue
+            if r.status_code == 429 or r.status_code >= 500:
+                _backoff(r, attempt); continue
             return None, status
         except requests.Timeout:
             status = "timeout"; time.sleep(2 ** attempt)
@@ -81,8 +91,8 @@ def fetch_one(rec: dict, sess: requests.Session) -> dict:
             try:
                 with sess.get(rec["url"], headers=_HEADERS, timeout=600, stream=True) as g:
                     r["http_status"] = str(g.status_code)
-                    if g.status_code >= 500:
-                        time.sleep(2 ** attempt); continue
+                    if g.status_code == 429 or g.status_code >= 500:
+                        _backoff(g, attempt); continue
                     if g.status_code != 200:
                         r["status"] = "failed_get"; return r
                     tmp = out.with_suffix(out.suffix + ".part")
@@ -149,9 +159,13 @@ def main(argv=None):
     ap.add_argument("--cruises", default=",".join(C.NCEI_CRUISES))
     ap.add_argument("--pangaea", default=None, help="comma list of PANGAEA dataset ids (859528,899408,919755)")
     ap.add_argument("--workers", type=int, default=6)
+    ap.add_argument("--throttle", type=float, default=None, help="seconds between requests per worker")
     ap.add_argument("--plan-only", action="store_true")
     a = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+    global _THROTTLE
+    if a.throttle is not None:
+        _THROTTLE = a.throttle
     if a.pangaea:
         plan = pd.concat([pangaea_plan(d) for d in a.pangaea.split(",")], ignore_index=True)
         cruises = sorted(plan.cruise.unique())
