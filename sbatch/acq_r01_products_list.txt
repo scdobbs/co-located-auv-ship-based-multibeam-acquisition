@@ -1,0 +1,15 @@
+--cruise TN399
+--cruise AR26
+--cruise EW9801
+--cruise NA090
+--cruise NA080
+--cruise TN299
+--cruise AT37-13
+--cruise NA076
+--cruise FK181031
+--cruise RR1506
+--cruise EW0207
+--cruise 2009_Amundsen
+--cruise SO242_1_EM122 --provider discol_so242_1
+--cruise M127_EM122 --provider tag_m127
+--cruise SO268_1_EM122 --provider ccz_so268_1

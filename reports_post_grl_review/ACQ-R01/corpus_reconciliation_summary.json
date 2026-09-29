@@ -1,0 +1,14 @@
+{
+  "gate_acquirable_hr": 85,
+  "gate_tier_counts": {
+    "raw_lr_to_grid": 35,
+    "training": 31,
+    "eval_only": 19
+  },
+  "in_corpus": 25,
+  "duplicate_of_validated": 0,
+  "reason_unrecorded": 11,
+  "gate_excluded_hr": 25,
+  "manifest_pairs": 39,
+  "leakage_units": 19
+}
