@@ -191,7 +191,9 @@ def download_hr(row) -> dict:
     d = RAW_HR / row.hr_id.replace(":", "_"); d.mkdir(parents=True, exist_ok=True)
     meta_p = d / "download_manifest.json"
     if meta_p.exists():
-        return json.loads(meta_p.read_text())
+        cached = json.loads(meta_p.read_text())
+        if cached.get("files"):
+            return cached                      # an empty manifest (earlier URL-discovery bug) is retried
     files = []
     if row.source == "MGDS":
         for uid in [u for u in str(row.file_ids).split(",") if u]:
@@ -217,7 +219,7 @@ def download_hr(row) -> dict:
 
 def hr_footprint(row, meta) -> dict:
     d = RAW_HR / row.hr_id.replace(":", "_"); fp = d / "footprint.geojson"
-    if fp.exists():
+    if fp.exists() and (d / "footprint_meta.json").exists():
         g = gpd.read_file(fp); info = json.loads((d / "footprint_meta.json").read_text())
         return {**info, "geom": g.geometry.union_all()}
     polys, per_file, tags_all = [], [], {}
