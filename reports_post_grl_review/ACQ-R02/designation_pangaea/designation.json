@@ -1,0 +1,20 @@
+{
+  "seed": 20260930,
+  "run_at": "2026-09-30T16:24:16.799585+00:00",
+  "input": "reports_post_grl_review/ACQ-R02/discovery_pangaea/new_units.json",
+  "input_sha256": "525229e261d1929f903ce5c5c52e3b5eda9df96283c05e72a06238888a2ac501",
+  "output_csv": "reports_post_grl_review/ACQ-R02/designation_pangaea/designation.csv",
+  "output_sha256": "0b7d86458237c2fcf2dd1e199607ab3a452fd91a0fd1f47c66d8cf7c7d56a835",
+  "n_units": 4,
+  "n_development": 2,
+  "n_confirmatory": 2,
+  "strata_merges": [
+    "singleton units ['pu01', 'pu02'] merged into one stratum (no basin partner)"
+  ],
+  "code_commit": "d7990f0c3a97db33509c678738f48d1b16b13faf",
+  "rules": [
+    "failed unit is dropped from its set, never reassigned",
+    "no model/baseline/target value on confirmatory units before Phase 4",
+    "later discovery runs re-run this script with a new recorded seed"
+  ]
+}

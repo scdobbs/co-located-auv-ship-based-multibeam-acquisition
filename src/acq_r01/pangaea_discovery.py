@@ -201,12 +201,14 @@ def main():
         # ship candidates: PANGAEA (bbox intersect) then NCEI (polygon intersect)
         sh = ship[(ship.west <= bb.bounds[2]) & (ship.east >= bb.bounds[0]) & (ship.south <= bb.bounds[3]) & (ship.north >= bb.bounds[1])].copy()
         sh["same_cruise"] = sh.campaigns.fillna("").apply(lambda s: bool(camp & {CAMPAIGN_NORM.get(c, c) for c in s.split(";") if c}))
+        # transit-scale raw datasets (bbox > 30 deg^2) are only a plausible LR when they are the AUV's own cruise
+        sh = sh[sh.same_cruise | (sh.bbox_deg2 <= 30.0)]
         sh = sh.sort_values(["same_cruise", "lr_kind", "bbox_deg2"], ascending=[False, False, True])
         nc = ncei[ncei.intersects(bb)]
         lr_opts = [f"PANGAEA:{r.id}|{r.lr_kind}|{r.sonar}|{'same_cruise' if r.same_cruise else 'other'}|{';'.join(str(r.campaigns).split(';')[:2])}" for _, r in sh.head(6).iterrows()]
         lr_opts += [f"NCEI:{r.SURVEY_ID}|ncei_raw|{r.INSTRUMENT}|{r.PLATFORM}" for _, r in nc.head(8).iterrows()]
         rec["lr_options"] = " || ".join(lr_opts); rec["n_lr_pangaea"] = int(len(sh)); rec["n_lr_ncei"] = int(len(nc))
-        lr_cruises = {CAMPAIGN_NORM.get(c, c) for _, r in sh.iterrows() for c in str(r.campaigns).split(";") if c} | set(nc.SURVEY_ID.astype(str))
+        lr_cruises = {CAMPAIGN_NORM.get(c, c) for _, r in sh[sh.same_cruise | (sh.bbox_deg2 <= 5.0)].iterrows() for c in str(r.campaigns).split(";") if c} | set(nc.SURVEY_ID.astype(str))
         rec["lr_cruises_all"] = ";".join(sorted(lr_cruises))
         if sh.empty and nc.empty:
             rec["status"] = "no_independent_ship_lr"
@@ -239,7 +241,7 @@ def main():
     for i, x in enumerate(recs):
         for y in recs[i + 1:]:
             cx = {c for c in str(x["campaigns"]).split(";") if c}; cy = {c for c in str(y["campaigns"]).split(";") if c}
-            lx = {c for c in str(x["lr_cruises_all"]).split(";") if c}; ly = {c for c in str(y["lr_cruises_all"]).split(";") if c}
+            lx = {x["best_lr"]} if x["best_lr"] else set(); ly = {y["best_lr"]} if y["best_lr"] else set()
             if (cx & cy) or (lx & ly) or hav_km((x["lon"], x["lat"]), (y["lon"], y["lat"])) <= R_KM:
                 uf.union(x["id"], y["id"])
     groups = {}

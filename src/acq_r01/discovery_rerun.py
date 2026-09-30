@@ -67,8 +67,14 @@ def basin(lon: float, lat: float) -> str:
         return "Southern"
     if -6 <= lon <= 37 and 30 <= lat <= 47:
         return "Mediterranean"
+    if lon <= -70 and lat <= 8.5:
+        return "Pacific"                       # Peru Basin, Galapagos, east Pacific south of Panama
+    if -100 <= lon <= -84 and lat <= 17:
+        return "Pacific"                       # Pacific side of Central America
+    if -100 <= lon <= -60 and 8.5 < lat <= 31:
+        return "Gulf of Mexico/Caribbean"
     if -100 <= lon <= 20:
-        return "Atlantic" if not (-100 <= lon <= -80 and 18 <= lat <= 31) else "Gulf of Mexico/Caribbean"
+        return "Atlantic"
     if (20 < lon <= 100 and lat < 30) or (100 < lon <= 147 and lat < -8):
         return "Indian"
     return "Pacific"

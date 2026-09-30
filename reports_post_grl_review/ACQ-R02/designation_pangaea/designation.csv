@@ -1,0 +1,5 @@
+unit_id,stratum,setting,basin,assignment,members,ship_cruises
+pu00,hydrothermal_vent,hydrothermal_vent,Mediterranean,development,PANGAEA:884112,PANGAEA:892317
+pu03,hydrothermal_vent,hydrothermal_vent,Mediterranean,confirmatory,PANGAEA:958275,PANGAEA:994139
+pu01,merged:all,volcanic_or_seamount,Gulf of Mexico/Caribbean,development,PANGAEA:889317,PANGAEA:864677
+pu02,merged:all,continental_margin,Mediterranean,confirmatory,PANGAEA:941403,PANGAEA:922750
