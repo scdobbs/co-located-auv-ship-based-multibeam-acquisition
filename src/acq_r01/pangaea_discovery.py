@@ -39,13 +39,14 @@ log = logging.getLogger("acq_r02.pangaea")
 ES = "https://ws.pangaea.de/es/pangaea/panmd/_search"
 H = {"User-Agent": "auv-ship-acq/0.4 (Sherlock; ACQ-R02 PANGAEA discovery; stephencoledobbs@gmail.com)"}
 OUT = C.REPO / "reports_post_grl_review" / "ACQ-R02" / "discovery_pangaea"
-CACHE = C.SCRATCH_DATA / "discovery_cache" / "acq_r02_pangaea"
+CACHE = C.SCRATCH_DATA / "discovery_cache" / "acq_r02_pangaea_v2"   # v1 cache held char-split campaign ids
 R01 = C.REPO / "reports_post_grl_review" / "ACQ-R01"
 R_KM = 50.0
 
 AUV_QUERIES = ['"AUV" bathymetry', '"AUV Abyss"', '"AUV ABYSS" bathymetry', '"MARUM-SEAL"', '"AUV SEAL"', '"REMUS" bathymetry',
                '"HUGIN" bathymetry', '"Sentry" bathymetry', '"AsterX" bathymetry', '"Girona 500"', '"autonomous underwater vehicle" bathymetry',
-               'AUV multibeam processed data', 'AUV "working area dataset"']
+               'AUV multibeam processed data', 'AUV "working area dataset"', '"near-bottom" bathymetry AUV', 'AUV "high resolution bathymetry"',
+               '"Kongsberg EM 2040" AUV', '"SeaBat" AUV bathymetry']
 SHIP_QUERIES = ['"with links to raw data files" multibeam', '"multibeam bathymetry raw data"', '"Raw multibeam" EM122', '"raw data" EM120',
                 '"raw data" EM710', '"raw data" EM302', '"raw data" EM304', '"raw data" EM124', '"raw data" Hydrosweep', '"swath sonar" bathymetry raw',
                 '"Multibeam bathymetry processed data" Kongsberg', '"working area dataset" EM122']
@@ -91,13 +92,22 @@ def _xml_field(xml: str, tag: str) -> str:
     return re.sub(r"\s+", " ", m.group(1)).strip() if m else ""
 
 
+def _agg(v):
+    """ES aggregate fields come back as a list OR a single string; never split a string into chars."""
+    if v is None:
+        return ""
+    if isinstance(v, str):
+        return v
+    return ";".join(str(x) for x in v)
+
+
 def parse_hit(h):
     s = h["_source"]; xml = s.get("xml", "")
     return {"id": str(h["_id"]), "doi": (s.get("URI") or "").replace("https://doi.org/", ""),
             "title": _xml_field(xml, "title"), "abstract": _xml_field(xml, "abstract")[:1500],
             "west": s.get("westBoundLongitude"), "east": s.get("eastBoundLongitude"), "south": s.get("southBoundLatitude"), "north": s.get("northBoundLatitude"),
-            "start": s.get("minDateTime"), "campaigns": ";".join(s.get("agg-campaign") or []), "basis": ";".join(s.get("agg-basis") or []),
-            "method": ";".join((s.get("agg-method") or [])[:6]), "n_points": s.get("nDataPoints")}
+            "start": s.get("minDateTime"), "campaigns": _agg(s.get("agg-campaign")), "basis": _agg(s.get("agg-basis")),
+            "method": _agg(s.get("agg-method"))[:200], "n_points": s.get("nDataPoints")}
 
 
 def harvest(queries, kind):
