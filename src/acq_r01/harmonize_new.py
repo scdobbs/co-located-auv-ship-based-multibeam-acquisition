@@ -304,6 +304,9 @@ def main(argv=None):
     clon = (max(lrb[0], hb[0]) + min(lrb[2], hb[2])) / 2; clat = (max(lrb[1], hb[1]) + min(lrb[3], hb[3])) / 2
     tcrs = _utm(clon, clat); rec["target_crs"] = tcrs
     out_dir.mkdir(parents=True, exist_ok=True)
+    for p_ in out_dir.rglob("*"):          # re-run of an ACQ-R02 pair: its own earlier (read-only) outputs are replaced
+        if p_.is_file():
+            p_.chmod(0o644)
     try:
         hp = H.harmonize_pair(pair_id=pid, hr_raw=hr_tif, lr_raw=lr_tif, target_crs=tcrs, resample_kernel="bilinear", nodata=FILL,
                               out_dir=out_dir, vertical_sign="negative_down", min_overlap_area_km2=1.0)
