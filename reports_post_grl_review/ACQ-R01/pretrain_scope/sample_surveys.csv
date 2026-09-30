@@ -1,0 +1,245 @@
+survey,status,bytes,n_swath,n_files,ext_top,griddable,depth_min,depth_max,family,SURVEY_YEAR,basin
+EW9703,ok,59935128.0,7,28,.mb21.gz,True,12.0,3853.0,Atlas Hydrosweep,1997.0,Atlantic
+EW9503,ok,68083193.0,6,37,.fbt,True,,,Atlas Hydrosweep,1995.0,Pacific
+EW9912,ok,805931728.0,33,132,.mb21.gz,True,0.1,3635.0,Atlas Hydrosweep,1999.0,Indian
+EW9202,ok,118916915.0,3,12,.mb21.gz,True,12.1,4926.0,Atlas Hydrosweep,1992.0,Pacific
+EW9011,ok,77325933.0,0,117,.fnv,False,4766.0,7685.0,Atlas Hydrosweep,1990.0,Atlantic
+EW9404,ok,52165836.0,6,24,.mb21.gz,True,65.0,9513.0,Atlas Hydrosweep,1994.0,Atlantic
+EW0103,ok,51461118.0,5,20,.mb21.gz,True,49.0,5625.0,Atlas Hydrosweep,2001.0,Atlantic
+EW0404,ok,3030439858.0,6187,6187,.mb183.gz,True,,,Atlas Hydrosweep,2004.0,Atlantic
+EW0105,ok,40568014.0,8,32,.mb21.gz,True,3936.0,4550.0,Atlas Hydrosweep,2001.0,Atlantic
+EW9508,ok,142599875.0,18,72,.mb21.gz,True,14.2,4660.0,Atlas Hydrosweep,1995.0,Indian
+M32L5,ok,58149062.0,62,248,.mb21.gz,True,3339.0,4583.0,Atlas Hydrosweep,1995.0,Indian
+GRA03_01,ok,516653442.0,49,196,.mb94.gz,True,14.8754,39.2488,ELAC,2003.0,Atlantic
+RUB320161220_area2,ok,1889346561.0,37,148,.mb94.gz,True,,,ELAC,2017.0,Southern
+RUB320161220_area8,ok,36313907.0,1,4,.mb94.gz,True,,,ELAC,2017.0,Atlantic
+KM1016,ok,11256433039.0,214,856,.mb58.gz,True,676.1191,2639.7048,Kongsberg EM12x (deep),2010.0,Pacific
+SR1918,ok,4242496789.0,251,1004,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2019.0,Pacific
+NBP1003,ok,5089261762.0,377,1508,.mb56.gz,True,,,Kongsberg EM12x (deep),2010.0,Southern
+MGL1506,ok,11629247673.0,956,956,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2015.0,Atlantic
+AT26-14,ok,1276889606.0,34,136,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2014.0,Gulf of Mexico/Caribbean
+RR1504,ok,6958333321.0,255,1020,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2015.0,Pacific
+PD20BH01,ok,1170946502.0,167,668,.gsf.mb121.gz,True,,,Kongsberg EM12x (deep),2020.0,Pacific
+PD19TT02,ok,744097125.0,182,728,.gsf.mb121.gz,True,,,Kongsberg EM12x (deep),2019.0,Pacific
+KM0507,ok,1098164145.0,283,1132,.mb56.gz,True,302.85,4274.94,Kongsberg EM12x (deep),2005.0,Pacific
+RR1317,ok,10658688655.0,588,2352,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2013.0,Indian
+MGL1407,ok,11501056825.0,1015,1015,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2014.0,Atlantic
+RR1308,ok,7840417695.0,562,2248,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2013.0,Pacific
+KM1010,ok,6890156367.0,145,580,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2010.0,Pacific
+PD20AL02,ok,3165560671.0,677,2708,.gsf.mb121.gz,True,,,Kongsberg EM12x (deep),2020.0,Atlantic
+SR1804,ok,878637306.0,51,204,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2018.0,Pacific
+KM1517,ok,36097846055.0,603,2412,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2015.0,Atlantic
+AR12,ok,1801820058.0,14,56,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2017.0,Atlantic
+RB1703,ok,36347276699.0,117,468,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2017.0,Atlantic
+MV1001,ok,8382446194.0,1326,1326,.all.mb58.gz,True,509.5661,5046.0269,Kongsberg EM12x (deep),2010.0,Pacific
+KM0710,ok,1180352277.0,221,884,.mb56.gz,True,374.46,5725.22,Kongsberg EM12x (deep),2007.0,Pacific
+RR1007,ok,3443954009.0,95,380,.all.mb58.gz,True,797.8676,3204.8628,Kongsberg EM12x (deep),2010.0,Pacific
+RB1704,ok,67714499984.0,67,268,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2017.0,Gulf of Mexico/Caribbean
+KM1225,ok,7177704380.0,149,596,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2012.0,Pacific
+KM1007,ok,6771573710.0,218,785,.mb58.gz,True,1294.3754,2203.3479,Kongsberg EM12x (deep),2010.0,Pacific
+KM0721,ok,5194393843.0,566,2264,.mb56.gz,True,47.67,564.55,Kongsberg EM12x (deep),2007.0,Pacific
+AT18-18,ok,6289681906.0,123,492,.all.mb58.gz,True,1908.6146,5241.3423,Kongsberg EM12x (deep),2012.0,Atlantic
+NBP0301,ok,2023977339.0,151,604,.all.gz,True,322.12,594.82,Kongsberg EM12x (deep),2003.0,Southern
+PD19T401,ok,732410708.0,154,616,.gsf.mb121.gz,True,,,Kongsberg EM12x (deep),2019.0,Atlantic
+PD19T401,ok,732410708.0,154,616,.gsf.mb121.gz,True,,,Kongsberg EM12x (deep),2019.0,Pacific
+KM1920,ok,2555344075.0,25,100,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2019.0,Pacific
+SR1810,ok,22717347376.0,486,1944,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2018.0,Pacific
+RR1505,ok,1721297000.0,12,48,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2015.0,Pacific
+AT18-16,ok,2155478325.0,93,372,.all.mb58.gz,True,2100.3538,5458.1948,Kongsberg EM12x (deep),2012.0,Gulf of Mexico/Caribbean
+PD19T401,ok,732410708.0,154,616,.gsf.mb121.gz,True,,,Kongsberg EM12x (deep),2019.0,Atlantic
+PD19T401,ok,732410708.0,154,616,.gsf.mb121.gz,True,,,Kongsberg EM12x (deep),2019.0,Pacific
+KRUS03RR,ok,2168133720.0,414,1656,.mb56.gz,True,125.03,5279.6,Kongsberg EM12x (deep),2004.0,Pacific
+KM0916,ok,284982146.0,80,321,.mb56.gz,True,81.34,781.38,Kongsberg EM12x (deep),2009.0,Pacific
+RR1813,ok,22041067520.0,1330,1330,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2018.0,Pacific
+AT37-09,ok,187483996.0,12,48,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2017.0,Atlantic
+KM1212,ok,3174642385.0,73,292,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2012.0,Pacific
+KM1021,ok,22377309387.0,444,1776,.mb58.gz,True,2131.2109,6001.6006,Kongsberg EM12x (deep),2010.0,Indian
+RB1601,ok,5556169592.0,167,334,.mb162,True,,,Kongsberg EM12x (deep),2016.0,Pacific
+RB-19-07,ok,19565903878.0,1742,1742,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2019.0,Atlantic
+RR1115,ok,2485359928.0,336,1344,.all.mb58.gz,True,2870.4736,4918.5884,Kongsberg EM12x (deep),2011.0,Indian
+NBP1305,ok,2899848191.0,563,563,.mb56.gz,True,,,Kongsberg EM12x (deep),2013.0,Atlantic
+MGL0804,ok,6941981538.0,236,944,.mb56.gz,True,392.67,1349.78,Kongsberg EM12x (deep),2008.0,Atlantic
+PD20AL01,ok,179574995.0,32,128,.gsf.mb121.gz,True,,,Kongsberg EM12x (deep),2020.0,Pacific
+KM0608,ok,389411624.0,87,348,.mb56.gz,True,,,Kongsberg EM12x (deep),2006.0,Pacific
+PD20RS06,ok,246082154.0,14,56,.gsf.mb121.gz,True,,,Kongsberg EM12x (deep),2020.0,Indian
+FG190004,ok,1429413379.0,21,84,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2019.0,Atlantic
+RR1110,ok,13338088653.0,463,463,.all.mb58.gz,True,1695.9839,3271.8591,Kongsberg EM12x (deep),2011.0,Pacific
+HLY10TD,ok,9488996064.0,101,404,.all.mb58.gz,True,8.3722,334.4823,Kongsberg EM12x (deep),2010.0,Pacific
+KM0407,ok,813283227.0,121,484,.mb56.gz,True,77.04,706.73,Kongsberg EM12x (deep),2004.0,Pacific
+SR1807,ok,3880069671.0,191,764,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2018.0,Pacific
+HLY17TD,ok,24907498500.0,111,444,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2017.0,Pacific
+MV1102,ok,37009413324.0,1049,1049,.all.mb58.gz,True,1532.4397,7736.8457,Kongsberg EM12x (deep),2011.0,Atlantic
+NBP0207,ok,3570493980.0,514,2056,.mb56.gz,True,78.82,5238.43,Kongsberg EM12x (deep),2002.0,Pacific
+HLY14TD,ok,17031948085.0,136,544,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2014.0,Pacific
+SR1718,ok,234634674.0,13,52,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2017.0,Pacific
+NBP0702,ok,9136350510.0,1054,1054,.mb57.gz,True,,,Kongsberg EM12x (deep),2007.0,Southern
+AR35-02,ok,10037708688.0,201,804,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2019.0,Atlantic
+PD20RS02,ok,432103945.0,54,216,.gsf.mb121.gz,True,,,Kongsberg EM12x (deep),2020.0,Indian
+NBP1210,ok,5270816545.0,640,640,.mb56.gz,True,,,Kongsberg EM12x (deep),2013.0,Southern
+RR1009,ok,2904878347.0,152,608,.all.mb58.gz,True,1916.1605,5811.439,Kongsberg EM12x (deep),2010.0,Pacific
+NBP1511,ok,4700183913.0,237,945,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2015.0,Atlantic
+RR1010,ok,2713327039.0,131,524,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2010.0,Pacific
+SR1919,ok,5084821277.0,138,552,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2019.0,Pacific
+MGL1307,ok,20569428361.0,1857,1857,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2013.0,Atlantic
+PD19ST01,ok,1749425359.0,322,322,.gsf.mb121.gz,True,,,Kongsberg EM12x (deep),2019.0,Atlantic
+FSPR190024,ok,1173425483.0,22,88,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2019.0,Atlantic
+KM0814,ok,812853555.0,1099,1099,.mb56.gz,True,,,Kongsberg EM12x (deep),2008.0,Pacific
+NBP0506,ok,3945332935.0,956,956,.mb57.gz,True,1821.53,4922.98,Kongsberg EM12x (deep),2005.0,Atlantic
+MGL0906,ok,5969065776.0,1045,1045,.all.mb58.gz,True,172.8574,1824.9835,Kongsberg EM12x (deep),2009.0,Pacific
+KM2005,ok,1691449549.0,7,28,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2020.0,Pacific
+NBP1408,ok,25365912580.0,516,2064,.all.mb58.gz,True,,,Kongsberg EM12x (deep),2014.0,Atlantic
+FS200120,ok,6678998528.0,103,412,.all.mb58.gz,True,,,Kongsberg EM30x,2020.0,Atlantic
+HA1501,no_data_dir,,0,0,,,,,Kongsberg EM30x,2015.0,Pacific
+TN334,ok,9991476390.0,124,496,.all.mb58.gz,True,,,Kongsberg EM30x,2015.0,Pacific
+VANC15MV,ok,8227309681.0,442,1768,.mb56.gz,True,28.83,91.29,Kongsberg EM30x,2003.0,Indian
+LH19_2011,ok,2386765598.0,132,529,.gsf.mb121.gz,True,60.422,1168.5,Kongsberg EM30x,2011.0,Atlantic
+CV11_MESH,no_data_dir,,0,0,,,,,Kongsberg EM30x,2011.0,Atlantic
+EX0902,ok,1122169636.0,43,172,.mb58.gz,True,4.3003,3906.1523,Kongsberg EM30x,2009.0,Pacific
+VANC16MV,ok,2369536561.0,117,468,.mb56.gz,True,41.59,88.65,Kongsberg EM30x,2003.0,Indian
+64PE401,ok,509825337.0,38,152,.all.mb58.gz,True,,,Kongsberg EM30x,2015.0,Mediterranean
+EX1601,ok,1001732241.0,230,920,.gsf.mb121.gz,True,,,Kongsberg EM30x,2016.0,Pacific
+FK150728,ok,4279907734.0,79,316,.all.mb58.gz,True,,,Kongsberg EM30x,2015.0,Pacific
+NA064,ok,3409969358.0,75,300,.all.mb58.gz,True,,,Kongsberg EM30x,2015.0,Atlantic
+IMAR06_01,ok,19886113487.0,118,472,.mb56.gz,True,12.12,25.87,Kongsberg EM30x,2006.0,Atlantic
+SKQ202208S,ok,5461432359.0,211,844,.all.mb58.gz,True,,,Kongsberg EM30x,2022.0,Pacific
+EX1002,ok,5737153918.0,107,428,.all.mb58.gz,True,,,Kongsberg EM30x,2010.0,Pacific
+FK200110,ok,37848740859.0,236,944,.all.mb58.gz,True,,,Kongsberg EM30x,2020.0,Indian
+FA160004,ok,380416536.0,4,16,.all.mb58.gz,True,,,Kongsberg EM30x,2016.0,Gulf of Mexico/Caribbean
+TN242,ok,369267712.0,9,36,.mb56.gz,True,29.75,193.33,Kongsberg EM30x,2009.0,Pacific
+FA160005,ok,2462391809.0,13,52,.all.mb58.gz,True,,,Kongsberg EM30x,2016.0,Gulf of Mexico/Caribbean
+NA125,ok,15303307885.0,876,876,.all.mb58.gz,True,,,Kongsberg EM30x,2020.0,Pacific
+TN272,ok,38612260044.0,1688,1688,.all.mb58.gz,True,,,Kongsberg EM30x,2011.0,Indian
+FK190726,ok,19952252702.0,335,1340,.all.mb58.gz,True,,,Kongsberg EM30x,2019.0,Atlantic
+HI-07-01,no_data_dir,,0,0,,,,,Kongsberg EM30x,2007.0,Pacific
+FK140502,ok,58117059921.0,1104,4416,.all.mb58.gz,True,,,Kongsberg EM30x,2014.0,Pacific
+FA160006,ok,10131364875.0,30,120,.all.mb58.gz,True,,,Kongsberg EM30x,2016.0,Gulf of Mexico/Caribbean
+TN323,ok,1782627601.0,134,536,.all.mb58.gz,True,,,Kongsberg EM30x,2015.0,Pacific
+NA127,ok,5363270668.0,89,356,.all.mb58.gz,True,,,Kongsberg EM30x,2021.0,Pacific
+FK009A,ok,32251148711.0,218,872,.all.mb58.gz,True,,,Kongsberg EM30x,2013.0,Pacific
+TN337,ok,1489724316.0,58,232,.all.mb58.gz,True,,,Kongsberg EM30x,2016.0,Pacific
+EX0903,ok,2803064425.0,106,106,.mb163,True,,,Kongsberg EM30x,2009.0,Pacific
+EX1603,ok,2283437585.0,426,1704,.gsf.mb121.gz,True,,,Kongsberg EM30x,2016.0,Atlantic
+EX1702,ok,3233505073.0,290,1160,.gsf.mb121.gz,True,,,Kongsberg EM30x,2017.0,Pacific
+FK150117,ok,7756390.0,2,8,.all.mb58.gz,True,,,Kongsberg EM30x,2015.0,Pacific
+SKQ201910S,ok,9439803455.0,111,444,.all.mb58.gz,True,,,Kongsberg EM30x,2019.0,Pacific
+NA102,ok,6024675769.0,355,1420,.all.mb58.gz,True,,,Kongsberg EM30x,2018.0,Pacific
+EX1304L2,no_data_dir,,0,0,,,,,Kongsberg EM30x,2013.0,Atlantic
+EX1902,ok,8319772836.0,216,864,.gsf.mb121.gz,True,,,Kongsberg EM30x,2019.0,Gulf of Mexico/Caribbean
+EX1803,ok,12365658751.0,356,1424,.gsf.mb121.gz,True,,,Kongsberg EM30x,2018.0,Gulf of Mexico/Caribbean
+EX1804,ok,36429376307.0,200,200,.mb121,True,,,Kongsberg EM30x,2018.0,Gulf of Mexico/Caribbean
+EX1608,ok,204541846.0,45,180,.gsf.mb121.gz,True,,,Kongsberg EM30x,2016.0,Pacific
+CV12_Gateways,ok,11323907142.0,54,216,.mb56.gz,True,20.18,168.66,Kongsberg EM30x,2012.0,Atlantic
+CV03_01,ok,17395015551.0,271,1084,.mb56.gz,True,8.48,214.76,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),2003.0,Atlantic
+AR57,ok,9865580297.0,83,332,.all.mb58.gz,True,,,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),2021.0,Atlantic
+Donegal_Bay,ok,35891204302.0,747,747,.mb56.gz,True,31.58,64.58,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),2002.0,Atlantic
+SR1902,ok,3162567336.0,79,316,.all.mb58.gz,True,,,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),2019.0,Pacific
+AR52-B,ok,315207885.0,9,36,.all.mb58.gz,True,,,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),2021.0,Atlantic
+SR1905,ok,1143752498.0,21,84,.all.mb58.gz,True,,,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),2019.0,Pacific
+NF-08-08-GRNMS,ok,20395758501.0,260,1040,.mb56.gz,True,15.52,30.77,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),2008.0,Atlantic
+AR55,ok,6193871264.0,46,184,.all.mb58.gz,True,,,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),2021.0,Atlantic
+SR1709,ok,8699703298.0,411,1644,.fbt,True,,,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),2017.0,Pacific
+NF2104,ok,30965465398.0,398,1592,.all.mb58.gz,True,,,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),2021.0,Atlantic
+NF-08-11-TER,ok,7445481965.0,314,1256,.mb56.gz,True,15.1,433.95,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),2008.0,Gulf of Mexico/Caribbean
+NF-08-03-FACE,ok,794469786.0,48,192,.mb56.gz,True,3.68,53.84,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),2008.0,Gulf of Mexico/Caribbean
+CE03_01,ok,9992118500.0,107,428,.mb56.gz,True,6.74,223.48,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),2003.0,Atlantic
+KM0516,ok,5773118671.0,99,396,.mb56.gz,True,,,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),2005.0,Pacific
+NF-11-09-CIOERT,ok,1720830594.0,70,280,.mb201.gz,True,,,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),2011.0,Gulf of Mexico/Caribbean
+CC_BlockA11,ok,12709954815.0,221,884,.mb84.gz,True,,,Reson,2006.0,Pacific
+CC2_BlockB08,ok,50927762638.0,87,441,.sxr.gz,True,,,Reson,2007.0,Pacific
+NT05-16,ok,147366191.0,52,260,.mb84.gz,True,0.5347,2461.6905,Reson,2005.0,Pacific
+NF0406,ok,4782825808.0,378,1512,.mb121.gz,True,,,Reson,2004.0,Atlantic
+Pinnacles,ok,379120514.0,34,136,.mb84.gz,True,,,Reson,2000.0,Pacific
+SCC_Block16,ok,68211826181.0,87,434,.mb88.gz,True,,,Reson,2010.0,Pacific
+NF-14-02,ok,22657118999.0,41,206,.mb201.gz,True,,,Reson,2014.0,Atlantic
+CC_BlockA02,ok,7165621947.0,79,316,.mb84.gz,True,,,Reson,2007.0,Pacific
+NT05-15,ok,331740681.0,103,515,.mb84.gz,True,0.5582,2411.3235,Reson,2005.0,Pacific
+BSS_Block03,no_data_dir,,0,0,,,,,Reson,2011.0,Pacific
+AHI-06-02,ok,26063796001.0,213,852,.mb121.gz,True,25.89,200.02,Reson,2006.0,Pacific
+CC_BlockA09,ok,13713310018.0,214,856,.mb84.gz,True,,,Reson,2007.0,Pacific
+AHI-05-08,ok,13305353406.0,91,364,.mb121.gz,True,0.02,655.21,Reson,2005.0,Pacific
+MontereyBay_HoleFill,no_data_dir,,0,0,,,,,Reson,2003.0,Pacific
+CC_BlockA05_quicksilver,ok,8346310759.0,113,452,.mb84.gz,True,,,Reson,2006.0,Pacific
+CC_BlockA05,ok,3617090731.0,92,368,.mb84.gz,True,,,Reson,2007.0,Pacific
+CarmelBay_ventresca,ok,2397779230.0,141,564,.mb84.gz,True,,,Reson,2000.0,Pacific
+CC2_BlockB12_pacific_star,ok,10856199764.0,60,240,.mb84.gz,True,,,Reson,2007.0,Pacific
+CC2_BlockB06_pacific_star,ok,9310598740.0,60,240,.mb84.gz,True,,,Reson,2007.0,Pacific
+BSS_Block06,no_data_dir,,0,0,,,,,Reson,2011.0,Pacific
+CC2_BlockA11,ok,85844642519.0,51,604,.sxr.gz,True,,,Reson,2007.0,Pacific
+SCC_Block13,ok,66082313625.0,114,502,.mb88.gz,True,,,Reson,2010.0,Pacific
+NF0505,ok,41914480126.0,238,952,.mb121.gz,True,0.02,22.364,Reson,2005.0,Atlantic
+SCC_Block09,ok,64811059413.0,136,550,.mb88.gz,True,,,Reson,2010.0,Pacific
+KN161L08,ok,295720154.0,133,532,.mb41.gz,True,230.8,2400.3999,SeaBeam family,2000.0,Atlantic
+AT12,ok,273746327.0,7,28,.mb41.gz,True,63.86,5103.5,SeaBeam family,2005.0,Atlantic
+PACS03MV,ok,72706696.0,0,57,.fnv,False,4156.0,5312.0,SeaBeam family,1998.0,Pacific
+DI9403,ok,5089997.0,0,13,.gps,False,1686.0,3944.0,SeaBeam family,1994.0,Pacific
+BMRG02MV,ok,50620845.0,0,40,.fnv,False,2836.0,6306.0,SeaBeam family,1995.0,Pacific
+KN155,ok,848183971.0,319,1297,.fbt,True,490.6,3880.5,SeaBeam family,1997.0,Atlantic
+CERE03WT,ok,141161266.0,40,126,.mb11,True,1240.0,5603.0,SeaBeam family,1982.0,Atlantic
+HLY03DF,ok,1937767126.0,706,2824,.mb41.gz,True,4404.5,5311.7998,SeaBeam family,2003.0,Pacific
+B00228,ok,132965270.0,16,80,.inf,True,840.0,1884.0,SeaBeam family,1990.0,Gulf of Mexico/Caribbean
+TUNE09WT,ok,63473154.0,0,40,.fnv,False,31.0,5903.0,SeaBeam family,1992.0,Atlantic
+KN197-08,ok,10415865897.0,1681,1681,.mb94.gz,True,3266.659,4473.4474,SeaBeam family,2010.0,Atlantic
+AT18-03,ok,125754118.0,51,204,.mb41.gz,True,346.18,1711.5,SeaBeam family,2010.0,Gulf of Mexico/Caribbean
+KN176L03,ok,482887269.0,6,24,.mb41.gz,True,612.0,9473.0,SeaBeam family,2004.0,Atlantic
+PANR02MV,ok,234284953.0,16,65,.mb32,True,42.0,5979.0,SeaBeam family,1997.0,Atlantic
+HLY0201,ok,2359149019.0,579,2316,.mb41.gz,True,991.6,3507.1001,SeaBeam family,2002.0,Pacific
+B00154,ok,32568726.0,20,100,.inf,True,1740.0,2946.0,SeaBeam family,1988.0,Pacific
+KN195-10,ok,20854607687.0,3723,3723,.mb94.gz,True,,,SeaBeam family,2009.0,Pacific
+A129L6,ok,23197426.0,0,47,.r00,False,466.0,2515.0,SeaBeam family,1993.0,Atlantic
+KN208,ok,77194952.0,13,52,.mb94.gz,True,,,SeaBeam family,2012.0,Atlantic
+HLY09TE,ok,2450464758.0,281,1124,.mb41.gz,True,58.49,1494.3,SeaBeam family,2009.0,Pacific
+B00261,ok,56634161.0,9,45,.inf,True,1695.0,2616.0,SeaBeam family,1991.0,Gulf of Mexico/Caribbean
+RB0305,ok,488390176.0,168,672,.mb41.gz,True,,,SeaBeam family,2003.0,Atlantic
+B00184,ok,52274887.0,13,65,.inf,True,657.0,3621.0,SeaBeam family,1989.0,Pacific
+RC2606,ok,42067284.0,0,65,.a00,False,376.0,4315.0,SeaBeam family,1985.0,Atlantic
+B00283,ok,125261719.0,12,60,.inf,True,429.0,2214.0,SeaBeam family,1991.0,Pacific
+VANC06MV,ok,429047092.0,15,60,.mb32,True,2126.0,5982.0,SeaBeam family,2003.0,Atlantic
+PPTU05WT,ok,54230733.0,0,24,.fnv,False,32.0,3469.0,SeaBeam family,1986.0,Pacific
+PLUM03WT,ok,8810497.0,0,3,.90feb14,False,65.0,3601.0,SeaBeam family,1990.0,Atlantic
+B00307,ok,53955477.0,21,105,.inf,True,2068.0,2748.0,SeaBeam family,1992.0,Atlantic
+WEST13MV,ok,210532877.0,0,123,.fnv,False,2545.0,4044.0,SeaBeam family,1995.0,Pacific
+RB0605AMMA,ok,291862431.0,52,208,.mb94.gz,True,,,SeaBeam family,2006.0,Atlantic
+KN223,ok,6691972010.0,1051,1051,.mb94.gz,True,,,SeaBeam family,2014.0,Atlantic
+RC2705,ok,46029966.0,0,91,.r00,False,84.0,4357.0,SeaBeam family,1986.0,Indian
+B00178,ok,30939952.0,10,50,.inf,True,2837.0,3727.0,SeaBeam family,1989.0,Pacific
+COOK09MV,ok,159183462.0,3,12,.mb32,True,105.0,2699.0,SeaBeam family,2001.0,Pacific
+KN192-05,ok,7713696621.0,1136,1136,.mb94.gz,True,4637.9234,5391.6385,SeaBeam family,2007.0,Atlantic
+AT11L19,ok,27666087.0,1,5,.info,True,162.96,2387.8,SeaBeam family,2004.0,Pacific
+NBP9603A,ok,338555162.0,113,455,.inf,True,89.25,3779.3999,SeaBeam family,1996.0,Pacific
+GLOR06MV,ok,209238126.0,0,102,.fnv,False,481.0,4307.0,SeaBeam family,1993.0,Atlantic
+B00005,ok,134107960.0,20,112,.inf,True,306.0,1486.0,SeaBeam family,1984.0,Pacific
+L2-94-WO,ok,13790931.0,0,49,.gps,False,1141.0,3469.0,SeaBeam family,1994.0,Pacific
+DI9102,ok,498381.0,0,9,.gps,False,2244.0,2502.0,SeaBeam family,1991.0,Pacific
+KN147L2,ok,2477919915.0,941,3764,.mb41.gz,True,458.6,2666.3999,SeaBeam family,1996.0,Atlantic
+B00249,ok,164460538.0,16,80,.inf,True,652.0,1624.0,SeaBeam family,1990.0,Gulf of Mexico/Caribbean
+HLY0701,ok,3144009709.0,763,3052,.mb41.gz,True,8.6,1342.4,SeaBeam family,2007.0,Pacific
+RB0404b,ok,277186335.0,59,236,.mb94.gz,True,,,SeaBeam family,2004.0,Atlantic
+BMRG07MV,ok,304230093.0,0,45,.fnv,False,17.0,925.0,SeaBeam family,1996.0,Pacific
+SOJN05MV,ok,66312092.0,0,36,.fnv,False,28.0,6506.0,SeaBeam family,1997.0,Indian
+B00182,ok,61802492.0,11,55,.inf,True,419.0,1866.0,SeaBeam family,1989.0,Pacific
+B00229,ok,107883924.0,13,65,.inf,True,783.0,2231.0,SeaBeam family,1990.0,Gulf of Mexico/Caribbean
+AT07L25,ok,269344533.0,5,21,.mb41.gz,True,535.32,3744.5,SeaBeam family,2002.0,Atlantic
+RB0208,ok,226818160.0,79,318,.mb41.gz,True,10.2,8511.2002,SeaBeam family,2002.0,Atlantic
+SU9201,ok,11151462.0,2,10,.inf,True,69.0,5587.0,SeaBeam family,1992.0,Atlantic
+KN173L01,ok,1118926124.0,26,104,.mb41.gz,True,71.38,5092.3999,SeaBeam family,2003.0,Atlantic
+RB0105,ok,317740849.0,0,476,.ed.gz,False,,,SeaBeam family,2001.0,Pacific
+HLY0801,ok,1299291462.0,310,1240,.mb41.gz,True,8.75,1148.4,SeaBeam family,2008.0,Pacific
+HLY07TI,ok,853130421.0,89,356,.mb41.gz,True,9.6,289.14,SeaBeam family,2007.0,Pacific
+AT03L49,ok,423158610.0,149,596,.mb41.gz,True,1018.7,1937.7,SeaBeam family,2000.0,Pacific
+HLY06TE,ok,495376234.0,129,516,.mb41.gz,True,781.1,2772.7,SeaBeam family,2006.0,Pacific
+B00015,ok,34102986.0,10,60,.fnv,True,961.0,1529.0,SeaBeam family,1985.0,Pacific
+CRGN02WT,ok,72175826.0,0,42,.fnv,False,1124.0,5364.0,SeaBeam family,1987.0,Pacific
+B00256,ok,82991304.0,12,60,.inf,True,1288.0,2363.0,SeaBeam family,1990.0,Gulf of Mexico/Caribbean
+B00021,ok,30362113.0,7,39,.fnv,True,1206.0,2783.0,SeaBeam family,1985.0,Pacific
+B00258,ok,68555979.0,8,40,.inf,True,100.0,1203.0,other/unknown,1990.0,Gulf of Mexico/Caribbean
+B00304,ok,182566502.0,18,90,.inf,True,101.0,483.0,other/unknown,1992.0,Gulf of Mexico/Caribbean
+CRUISE7,ok,115289207.0,84,254,.mb15,True,1693.0,5890.0,other/unknown,1988.0,Atlantic
+B00305,ok,266909287.0,24,120,.inf,True,101.0,549.0,other/unknown,1992.0,Gulf of Mexico/Caribbean
+PC1802L1,ok,3483337741.0,64,256,.gsf.mb121.gz,True,,,other/unknown,2018.0,Gulf of Mexico/Caribbean
+B00254,ok,242613967.0,21,105,.inf,True,100.0,1220.0,other/unknown,1990.0,Gulf of Mexico/Caribbean
+B00051,ok,419881680.0,36,180,.inf,True,91.0,470.0,other/unknown,1986.0,Pacific
+TON16_01,ok,19072004660.0,1920,3840,.gsf.mb121.gz,True,,,other/unknown,2016.0,Atlantic
+B00094,ok,143053006.0,9,45,.inf,True,25.0,237.0,other/unknown,1986.0,Pacific
+GEO12_02,ok,19703073434.0,662,3310,.gsf.mb121.gz,True,,,other/unknown,2012.0,Atlantic
+HB1906L3,ok,5632918248.0,579,2316,.all.mb58.gz,True,,,other/unknown,2019.0,Atlantic
+BELL01,no_data_dir,,0,0,,,,,other/unknown,,Atlantic

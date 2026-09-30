@@ -1,0 +1,127 @@
+{
+  "ncei_footprints_total": 3885,
+  "ship_only": 3884,
+  "excluded_by_survey_id": 262,
+  "excluded_by_10km_zone": 412,
+  "exclusion_zone_inputs": {
+    "pair_footprints": 37,
+    "lockbox_lr_cruise_footprints": 2,
+    "candidate_footprints": 16
+  },
+  "remaining_cruises": 3210,
+  "by_basin": {
+    "Pacific": 1642,
+    "Atlantic": 976,
+    "Gulf of Mexico/Caribbean": 243,
+    "Indian": 167,
+    "Southern": 87,
+    "Arctic": 75,
+    "Mediterranean": 20
+  },
+  "by_family": {
+    "Kongsberg EM12x (deep)": 972,
+    "SeaBeam family": 848,
+    "Kongsberg EM30x": 554,
+    "Reson": 323,
+    "Kongsberg EM7xx/EM1xxx/EM2040 (shallow)": 196,
+    "other/unknown": 166,
+    "Atlas Hydrosweep": 141,
+    "ELAC": 10
+  },
+  "by_decade": {
+    "1980.0": 269,
+    "1990.0": 417,
+    "2000.0": 1031,
+    "2010.0": 1287,
+    "2020.0": 204
+  },
+  "sample_n": 244,
+  "sample_ok": 236,
+  "sample_status": {
+    "ok": 236,
+    "no_data_dir": 8
+  },
+  "est_total_swath_tb": 25.3,
+  "per_family": {
+    "Atlas Hydrosweep": {
+      "n_surveys": 141,
+      "n_sampled_ok": 11,
+      "mean_gb_per_survey": 0.41,
+      "est_total_tb": 0.06,
+      "frac_griddable_unchanged": 0.9090909090909091
+    },
+    "ELAC": {
+      "n_surveys": 10,
+      "n_sampled_ok": 3,
+      "mean_gb_per_survey": 0.81,
+      "est_total_tb": 0.01,
+      "frac_griddable_unchanged": 1.0
+    },
+    "Kongsberg EM12x (deep)": {
+      "n_surveys": 972,
+      "n_sampled_ok": 75,
+      "mean_gb_per_survey": 8.01,
+      "est_total_tb": 7.78,
+      "frac_griddable_unchanged": 1.0
+    },
+    "Kongsberg EM30x": {
+      "n_surveys": 554,
+      "n_sampled_ok": 37,
+      "mean_gb_per_survey": 10.47,
+      "est_total_tb": 5.8,
+      "frac_griddable_unchanged": 1.0
+    },
+    "Kongsberg EM7xx/EM1xxx/EM2040 (shallow)": {
+      "n_surveys": 196,
+      "n_sampled_ok": 15,
+      "mean_gb_per_survey": 10.65,
+      "est_total_tb": 2.09,
+      "frac_griddable_unchanged": 1.0
+    },
+    "Reson": {
+      "n_surveys": 323,
+      "n_sampled_ok": 21,
+      "mean_gb_per_survey": 24.46,
+      "est_total_tb": 7.9,
+      "frac_griddable_unchanged": 1.0
+    },
+    "SeaBeam family": {
+      "n_surveys": 848,
+      "n_sampled_ok": 63,
+      "mean_gb_per_survey": 1.11,
+      "est_total_tb": 0.94,
+      "frac_griddable_unchanged": 0.7301587301587301
+    },
+    "other/unknown": {
+      "n_surveys": 166,
+      "n_sampled_ok": 11,
+      "mean_gb_per_survey": 4.48,
+      "est_total_tb": 0.74,
+      "frac_griddable_unchanged": 1.0
+    }
+  },
+  "frac_griddable_unchanged_weighted": 0.925,
+  "depth_distribution_sample(max depth m)": {
+    "(0, 200]": 10,
+    "(200, 1000]": 16,
+    "(1000, 2000]": 15,
+    "(2000, 3000]": 18,
+    "(3000, 4000]": 15,
+    "(4000, 6000]": 32,
+    "(6000, 12000]": 8
+  },
+  "format_mix_sample(top ext)": {
+    ".all.mb58.gz": 73,
+    ".mb56.gz": 25,
+    ".gsf.mb121.gz": 21,
+    ".inf": 20,
+    ".mb41.gz": 17,
+    ".fnv": 12,
+    ".mb84.gz": 11,
+    ".mb94.gz": 10,
+    ".mb21.gz": 8,
+    ".mb58.gz": 4,
+    ".mb121.gz": 4,
+    ".fbt": 3
+  }
+}
