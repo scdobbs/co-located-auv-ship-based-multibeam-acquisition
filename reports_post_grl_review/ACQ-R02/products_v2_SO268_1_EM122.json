@@ -1,0 +1,33 @@
+[
+ {
+  "pair_id": "ccz_so268_1",
+  "cruise": "SO268_1_EM122",
+  "qa": {
+   "n_common_cells": 4338,
+   "median_offset_m": -0.286,
+   "rms_m": 1.5504,
+   "robust_sigma_m": 1.4069,
+   "rms_over_median_s_lr": 0.3459,
+   "robust_sigma_over_median_s_lr": 0.3139,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    -0.5,
+    0.5
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "control_vs_v1": {
+   "ship_count": "equal",
+   "ship_sd": "equal",
+   "ship_xtrack_frac": "equal",
+   "ship_beam_angle": "equal"
+  },
+  "median_rsd_over_sd": 0.8696315288543701,
+  "cells": 9292,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ }
+]

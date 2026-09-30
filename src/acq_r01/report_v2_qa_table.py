@@ -36,7 +36,7 @@ def main():
         ex = d / "products_extra.json"; e = json.loads(ex.read_text()) if ex.exists() else {}
         rec.update({"n_common": q.get("n_common_cells"), "median_offset_m": q.get("median_offset_m"), "robust_sigma_m": q.get("robust_sigma_m"),
                     "robust_sigma_over_s_lr": q.get("robust_sigma_over_median_s_lr"), "rms_m": q.get("rms_m"), "argmin": q.get("shift_argmin_cells"),
-                    "sigma_gain_at_argmin_m": gain, "flags": ",".join(q.get("flags") or []) or "—", "median_rsd_over_sd": e.get("median_rsd_over_sd"),
+                    "sigma_gain_at_argmin_m": gain, "qa_flags": ",".join(q.get("flags") or []) or "—", "median_rsd_over_sd": e.get("median_rsd_over_sd"),
                     "control_vs_v1": ";".join(f"{k}:{v}" for k, v in (e.get("control_vs_v1") or {}).items()), "beam_angle": p.get("beam_angle_method")})
         rows.append(rec)
     df = pd.DataFrame(rows); df.to_csv(R02 / "v2_qa_table.csv", index=False)
@@ -45,10 +45,10 @@ def main():
         if r.get("available") is False:
             md.append(f"| {r.pair_id} | {r.unit} | available: false ({r.get('note', '')}) | | | | | | | | | |"); continue
         ctrl = "equal" if r.get("control_vs_v1") and all(v.endswith(":equal") for v in str(r.control_vs_v1).split(";")) else r.get("control_vs_v1")
-        md.append(f"| {r.pair_id} | {r.unit} | {r.n_common} | {r.median_offset_m} | {r.robust_sigma_m} | {r.robust_sigma_over_s_lr} | {r.rms_m} | {r.argmin} | {r.sigma_gain_at_argmin_m} | {r.flags} | {r.median_rsd_over_sd} | {ctrl} |")
+        md.append(f"| {r.pair_id} | {r.unit} | {r.n_common} | {r.median_offset_m} | {r.robust_sigma_m} | {r.robust_sigma_over_s_lr} | {r.rms_m} | {r.argmin} | {r.sigma_gain_at_argmin_m} | {r.qa_flags} | {r.median_rsd_over_sd} | {ctrl} |")
     (R02 / "v2_qa_table.md").write_text("\n".join(md)); print("\n".join(md))
     av = df[df.available == True]
-    print("\nflag counts:", av.flags.str.split(",").explode().value_counts().to_dict(), "| pairs with no flag:", int((av.flags == "—").sum()), "of", len(av))
+    print("\nflag counts:", av.qa_flags.str.split(",").explode().value_counts().to_dict(), "| pairs with no flag:", int((av.qa_flags == "—").sum()), "of", len(av))
     return 0
 
 

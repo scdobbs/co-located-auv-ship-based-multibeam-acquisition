@@ -1,0 +1,33 @@
+[
+ {
+  "pair_id": "EW9801__MGDS_31425",
+  "cruise": "EW9801",
+  "qa": {
+   "n_common_cells": 5255,
+   "median_offset_m": 0.1276,
+   "rms_m": 8.7734,
+   "robust_sigma_m": 4.7803,
+   "rms_over_median_s_lr": 0.2436,
+   "robust_sigma_over_median_s_lr": 0.1327,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    -0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "control_vs_v1": {
+   "ship_count": "equal",
+   "ship_sd": "equal",
+   "ship_xtrack_frac": "equal",
+   "ship_beam_angle": "equal"
+  },
+  "median_rsd_over_sd": 0.8353204131126404,
+  "cells": 5465,
+  "beam_angle_method": "geometric",
+  "matches_lr_tif": true
+ }
+]

@@ -1,0 +1,582 @@
+[
+ {
+  "pair_id": "cal_dig_morro_bay__20190318m2_Transect601060m",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190318m2_Transect601060m/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190510m1_BankFlankHoles",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190510m1_BankFlankHoles/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190510m2_BankFlankIncipCh",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190510m2_BankFlankIncipCh/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190511m1_6thHeadlessCany",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190511m1_6thHeadlessCany/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190511m2_BankTopEofCanyon3",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190511m2_BankTopEofCanyon3/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__luciachica_2007",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/luciachica_2007/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__pockmark_south",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/pockmark_south/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__basin_flank",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/basin_flank/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "ccz_so268_1",
+  "unit": "CCZ",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/ccz_so268_1/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 4338,
+   "median_offset_m": -0.286,
+   "rms_m": 1.5504,
+   "robust_sigma_m": 1.4069,
+   "rms_over_median_s_lr": 0.3459,
+   "robust_sigma_over_median_s_lr": 0.3139,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    -0.5,
+    0.5
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 9292,
+  "median_rsd_over_sd": 0.87
+ },
+ {
+  "pair_id": "discol_so242_1",
+  "unit": "DISCOL",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/discol_so242_1/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 17287,
+   "median_offset_m": 0.1929,
+   "rms_m": 2.2309,
+   "robust_sigma_m": 2.0169,
+   "rms_over_median_s_lr": 0.5941,
+   "robust_sigma_over_median_s_lr": 0.5371,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    -0.75,
+    0.5
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 28968,
+  "median_rsd_over_sd": 0.703
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20180426m2_Channel1000",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180426m2_Channel1000/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20180427m1_Channel700",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180427m1_Channel700/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20180427m3_PockmarkNorth",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180427m3_PockmarkNorth/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20180428m1_Cable",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180428m1_Cable/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190314m4_LuciaChica970m",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190314m4_LuciaChica970m/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190315m1_HeadlessCanyon",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190315m1_HeadlessCanyon/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190316m1_BankTop",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190316m1_BankTop/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190317m1_1000mGully",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190317m1_1000mGully/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190317m2_600mGully",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190317m2_600mGully/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__201804_LuciaChica2m",
+  "unit": "CalDIG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/201804_LuciaChica2m/ship_products_v2",
+  "errors": [],
+  "available": false
+ },
+ {
+  "pair_id": "tag_m127",
+  "unit": "TAG",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/tag_m127/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 111884,
+   "median_offset_m": -0.4885,
+   "rms_m": 5.8698,
+   "robust_sigma_m": 4.0426,
+   "rms_over_median_s_lr": 0.2069,
+   "robust_sigma_over_median_s_lr": 0.1425,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    -0.5,
+    0.5
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 111884,
+  "median_rsd_over_sd": 0.799
+ },
+ {
+  "pair_id": "AT37-13__MGDS_31199",
+  "unit": "AT37-13",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT37-13__MGDS_31199/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 13421,
+   "median_offset_m": -0.1595,
+   "rms_m": 6.2088,
+   "robust_sigma_m": 2.4065,
+   "rms_over_median_s_lr": 0.181,
+   "robust_sigma_over_median_s_lr": 0.0702,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": []
+  },
+  "cells": 13490,
+  "median_rsd_over_sd": 0.892
+ },
+ {
+  "pair_id": "EW9801__MGDS_31425",
+  "unit": "EW9801",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EW9801__MGDS_31425/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 5255,
+   "median_offset_m": 0.1276,
+   "rms_m": 8.7734,
+   "robust_sigma_m": 4.7803,
+   "rms_over_median_s_lr": 0.2436,
+   "robust_sigma_over_median_s_lr": 0.1327,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    -0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 5465,
+  "median_rsd_over_sd": 0.835
+ },
+ {
+  "pair_id": "NA080__MGDS_31290",
+  "unit": "NA080",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31290/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 16310,
+   "median_offset_m": 0.229,
+   "rms_m": 15.6281,
+   "robust_sigma_m": 1.5767,
+   "rms_over_median_s_lr": 2.0513,
+   "robust_sigma_over_median_s_lr": 0.207,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": []
+  },
+  "cells": 58200,
+  "median_rsd_over_sd": 0.791
+ },
+ {
+  "pair_id": "NA090__MGDS_31212",
+  "unit": "NA090",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA090__MGDS_31212/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 6241,
+   "median_offset_m": -0.1089,
+   "rms_m": 2.8959,
+   "robust_sigma_m": 0.6271,
+   "rms_over_median_s_lr": 0.7978,
+   "robust_sigma_over_median_s_lr": 0.1728,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 6241,
+  "median_rsd_over_sd": 0.862
+ },
+ {
+  "pair_id": "RR1506__MGDS_29779",
+  "unit": "RR1506",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/RR1506__MGDS_29779/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 202705,
+   "median_offset_m": 0.0933,
+   "rms_m": 3.7426,
+   "robust_sigma_m": 1.1711,
+   "rms_over_median_s_lr": 0.2529,
+   "robust_sigma_over_median_s_lr": 0.0792,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": []
+  },
+  "cells": 204734,
+  "median_rsd_over_sd": 0.861
+ },
+ {
+  "pair_id": "TN399__MGDS_30373",
+  "unit": "TN399",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN399__MGDS_30373/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 89392,
+   "median_offset_m": 0.0171,
+   "rms_m": 2.8202,
+   "robust_sigma_m": 1.1413,
+   "rms_over_median_s_lr": 0.7552,
+   "robust_sigma_over_median_s_lr": 0.3056,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 90387,
+  "median_rsd_over_sd": 0.845
+ },
+ {
+  "pair_id": "AR26__MGDS_31838",
+  "unit": "AR26",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AR26__MGDS_31838/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 12279,
+   "median_offset_m": -0.3225,
+   "rms_m": 4.5565,
+   "robust_sigma_m": 2.3345,
+   "rms_over_median_s_lr": 0.078,
+   "robust_sigma_over_median_s_lr": 0.04,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 13684,
+  "median_rsd_over_sd": 0.928
+ },
+ {
+  "pair_id": "TN299__MGDS_27339",
+  "unit": "TN299",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN299__MGDS_27339/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 5399,
+   "median_offset_m": -0.1709,
+   "rms_m": 4.2746,
+   "robust_sigma_m": 2.8429,
+   "rms_over_median_s_lr": 0.3494,
+   "robust_sigma_over_median_s_lr": 0.2324,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 22435,
+  "median_rsd_over_sd": 0.881
+ },
+ {
+  "pair_id": "FK181031__MGDS_24618",
+  "unit": "FK181031",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK181031__MGDS_24618/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 8346,
+   "median_offset_m": -0.187,
+   "rms_m": 9.0032,
+   "robust_sigma_m": 1.34,
+   "rms_over_median_s_lr": 3.7123,
+   "robust_sigma_over_median_s_lr": 0.5525,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 8346,
+  "median_rsd_over_sd": 0.602
+ },
+ {
+  "pair_id": "TN299__MGDS_31253",
+  "unit": "TN299",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN299__MGDS_31253/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 8661,
+   "median_offset_m": -0.0065,
+   "rms_m": 1.0272,
+   "robust_sigma_m": 0.5993,
+   "rms_over_median_s_lr": 0.2064,
+   "robust_sigma_over_median_s_lr": 0.1204,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 8668,
+  "median_rsd_over_sd": 0.959
+ },
+ {
+  "pair_id": "NA076__MGDS_32317",
+  "unit": "NA076",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA076__MGDS_32317/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 23613,
+   "median_offset_m": 0.0271,
+   "rms_m": 0.5061,
+   "robust_sigma_m": 0.4211,
+   "rms_over_median_s_lr": 0.2261,
+   "robust_sigma_over_median_s_lr": 0.1882,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 23650,
+  "median_rsd_over_sd": 0.859
+ },
+ {
+  "pair_id": "EW0207__MGDS_32556",
+  "unit": "EW0207",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EW0207__MGDS_32556/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "vertical_offset",
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 44781,
+   "median_offset_m": -1.0408,
+   "rms_m": 9.6492,
+   "robust_sigma_m": 5.3082,
+   "rms_over_median_s_lr": 1.3399,
+   "robust_sigma_over_median_s_lr": 0.7371,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "vertical_offset",
+    "registration_shift"
+   ]
+  },
+  "cells": 45248,
+  "median_rsd_over_sd": 0.827
+ },
+ {
+  "pair_id": "2009_Amundsen__MGDS_30046",
+  "unit": "Amundsen",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/2009_Amundsen__MGDS_30046/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 132271,
+   "median_offset_m": 0.0301,
+   "rms_m": 2.1494,
+   "robust_sigma_m": 0.2315,
+   "rms_over_median_s_lr": 0.4468,
+   "robust_sigma_over_median_s_lr": 0.0481,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 132286,
+  "median_rsd_over_sd": 0.984
+ }
+]

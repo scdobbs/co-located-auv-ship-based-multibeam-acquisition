@@ -1,0 +1,35 @@
+pair_id,unit,available,note,n_common,median_offset_m,robust_sigma_m,robust_sigma_over_s_lr,rms_m,argmin,sigma_gain_at_argmin_m,qa_flags,median_rsd_over_sd,control_vs_v1,beam_angle
+cal_dig_morro_bay__20190318m2_Transect601060m,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+cal_dig_morro_bay__20190510m1_BankFlankHoles,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+cal_dig_morro_bay__20190510m2_BankFlankIncipCh,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+cal_dig_morro_bay__20190511m1_6thHeadlessCany,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+cal_dig_morro_bay__20190511m2_BankTopEofCanyon3,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+cal_dig_morro_bay__luciachica_2007,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+cal_dig_morro_bay__pockmark_south,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+cal_dig_morro_bay__basin_flank,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+ccz_so268_1,CCZ,True,,4338.0,-0.286,1.4069,0.3139,1.5504,"[-0.5, 0.5]",0.6118,registration_shift,0.8696315288543701,ship_count:equal;ship_sd:equal;ship_xtrack_frac:equal;ship_beam_angle:equal,launch_angle
+discol_so242_1,DISCOL,True,,17287.0,0.1929,2.0169,0.5371,2.2309,"[-0.75, 0.5]",0.3722,registration_shift,0.7031917572021484,ship_count:equal;ship_sd:equal;ship_xtrack_frac:equal;ship_beam_angle:equal,launch_angle
+cal_dig_morro_bay__20180426m2_Channel1000,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+cal_dig_morro_bay__20180427m1_Channel700,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+cal_dig_morro_bay__20180427m3_PockmarkNorth,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+cal_dig_morro_bay__20180428m1_Cable,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+cal_dig_morro_bay__20190314m4_LuciaChica970m,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+cal_dig_morro_bay__20190315m1_HeadlessCanyon,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+cal_dig_morro_bay__20190316m1_BankTop,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+cal_dig_morro_bay__20190317m1_1000mGully,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+cal_dig_morro_bay__20190317m2_600mGully,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+cal_dig_morro_bay__201804_LuciaChica2m,CalDIG,False,"Provider mosaic (USGS Cal DIG I v2, 10.5066/P9QQZ27U) combin",,,,,,,,,,,
+tag_m127,TAG,True,,111884.0,-0.4885,4.0426,0.1425,5.8698,"[-0.5, 0.5]",2.7377,registration_shift,0.7993440628051758,ship_count:equal;ship_sd:equal;ship_xtrack_frac:equal;ship_beam_angle:equal,launch_angle
+AT37-13__MGDS_31199,AT37-13,True,,13421.0,-0.1595,2.4065,0.0702,6.2088,"[0.0, 0.0]",0.0,—,0.8924112319946289,ship_count:equal;ship_sd:equal;ship_xtrack_frac:equal;ship_beam_angle:equal,launch_angle
+EW9801__MGDS_31425,EW9801,True,,5255.0,0.1276,4.7803,0.1327,8.7734,"[-0.25, -0.25]",0.641,registration_shift,0.8353204131126404,ship_count:equal;ship_sd:equal;ship_xtrack_frac:equal;ship_beam_angle:equal,geometric
+NA080__MGDS_31290,NA080,True,,16310.0,0.229,1.5767,0.207,15.6281,"[0.0, 0.0]",0.0,—,0.790639340877533,ship_count:equal;ship_sd:equal;ship_xtrack_frac:equal;ship_beam_angle:equal,launch_angle
+NA090__MGDS_31212,NA090,True,,6241.0,-0.1089,0.6271,0.1728,2.8959,"[0.25, -0.25]",0.0715,registration_shift,0.8617777228355408,ship_count:equal;ship_sd:equal;ship_xtrack_frac:equal;ship_beam_angle:equal,launch_angle
+RR1506__MGDS_29779,RR1506,True,,202705.0,0.0933,1.1711,0.0792,3.7426,"[0.0, 0.0]",0.0,—,0.8613840341567993,ship_count:equal;ship_sd:equal;ship_xtrack_frac:equal;ship_beam_angle:equal,launch_angle
+TN399__MGDS_30373,TN399,True,,89392.0,0.0171,1.1413,0.3056,2.8202,"[0.0, 0.25]",0.2282,registration_shift,0.8447128534317017,ship_count:equal;ship_sd:equal;ship_xtrack_frac:equal;ship_beam_angle:equal,launch_angle
+AR26__MGDS_31838,AR26,True,,12279.0,-0.3225,2.3345,0.04,4.5565,"[0.25, 0.0]",0.2477,registration_shift,0.9278613328933716,ship_count:equal;ship_sd:equal;ship_xtrack_frac:equal;ship_beam_angle:equal,launch_angle
+TN299__MGDS_27339,TN299,True,,5399.0,-0.1709,2.8429,0.2324,4.2746,"[0.25, -0.25]",0.4312,registration_shift,0.8814843893051147,ship_count:equal;ship_sd:equal;ship_xtrack_frac:equal;ship_beam_angle:equal,launch_angle
+FK181031__MGDS_24618,FK181031,True,,8346.0,-0.187,1.34,0.5525,9.0032,"[0.0, -0.25]",0.109,registration_shift,0.6021999716758728,ship_count:equal;ship_sd:equal;ship_xtrack_frac:equal;ship_beam_angle:equal,launch_angle
+TN299__MGDS_31253,TN299,True,,8661.0,-0.0065,0.5993,0.1204,1.0272,"[0.0, -0.25]",0.0073,registration_shift,0.9593462944030762,ship_count:equal;ship_sd:equal;ship_xtrack_frac:equal;ship_beam_angle:equal,launch_angle
+NA076__MGDS_32317,NA076,True,,23613.0,0.0271,0.4211,0.1882,0.5061,"[0.25, -0.25]",0.1453,registration_shift,0.859058141708374,ship_count:equal;ship_sd:equal;ship_xtrack_frac:equal;ship_beam_angle:equal,launch_angle
+EW0207__MGDS_32556,EW0207,True,,44781.0,-1.0408,5.3082,0.7371,9.6492,"[0.25, -0.25]",1.2164,"vertical_offset,registration_shift",0.8265411853790283,ship_count:equal;ship_sd:equal;ship_xtrack_frac:equal;ship_beam_angle:equal,launch_angle
+2009_Amundsen__MGDS_30046,Amundsen,True,,132271.0,0.0301,0.2315,0.0481,2.1494,"[0.25, -0.25]",0.0159,registration_shift,0.9844729900360107,ship_count:equal;ship_sd:equal;ship_xtrack_frac:equal;ship_beam_angle:equal,launch_angle

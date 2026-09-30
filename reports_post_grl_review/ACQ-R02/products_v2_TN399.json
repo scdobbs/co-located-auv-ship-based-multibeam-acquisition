@@ -1,0 +1,33 @@
+[
+ {
+  "pair_id": "TN399__MGDS_30373",
+  "cruise": "TN399",
+  "qa": {
+   "n_common_cells": 89392,
+   "median_offset_m": 0.0171,
+   "rms_m": 2.8202,
+   "robust_sigma_m": 1.1413,
+   "rms_over_median_s_lr": 0.7552,
+   "robust_sigma_over_median_s_lr": 0.3056,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "control_vs_v1": {
+   "ship_count": "equal",
+   "ship_sd": "equal",
+   "ship_xtrack_frac": "equal",
+   "ship_beam_angle": "equal"
+  },
+  "median_rsd_over_sd": 0.8447128534317017,
+  "cells": 90387,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ }
+]

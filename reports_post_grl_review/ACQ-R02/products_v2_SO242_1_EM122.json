@@ -1,0 +1,33 @@
+[
+ {
+  "pair_id": "discol_so242_1",
+  "cruise": "SO242_1_EM122",
+  "qa": {
+   "n_common_cells": 17287,
+   "median_offset_m": 0.1929,
+   "rms_m": 2.2309,
+   "robust_sigma_m": 2.0169,
+   "rms_over_median_s_lr": 0.5941,
+   "robust_sigma_over_median_s_lr": 0.5371,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    -0.75,
+    0.5
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "control_vs_v1": {
+   "ship_count": "equal",
+   "ship_sd": "equal",
+   "ship_xtrack_frac": "equal",
+   "ship_beam_angle": "equal"
+  },
+  "median_rsd_over_sd": 0.7031917572021484,
+  "cells": 28968,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ }
+]

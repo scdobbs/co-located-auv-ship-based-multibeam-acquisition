@@ -1,0 +1,31 @@
+[
+ {
+  "pair_id": "AT37-13__MGDS_31199",
+  "cruise": "AT37-13",
+  "qa": {
+   "n_common_cells": 13421,
+   "median_offset_m": -0.1595,
+   "rms_m": 6.2088,
+   "robust_sigma_m": 2.4065,
+   "rms_over_median_s_lr": 0.181,
+   "robust_sigma_over_median_s_lr": 0.0702,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": []
+  },
+  "control_vs_v1": {
+   "ship_count": "equal",
+   "ship_sd": "equal",
+   "ship_xtrack_frac": "equal",
+   "ship_beam_angle": "equal"
+  },
+  "median_rsd_over_sd": 0.8924112319946289,
+  "cells": 13490,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ }
+]

@@ -1,0 +1,31 @@
+[
+ {
+  "pair_id": "RR1506__MGDS_29779",
+  "cruise": "RR1506",
+  "qa": {
+   "n_common_cells": 202705,
+   "median_offset_m": 0.0933,
+   "rms_m": 3.7426,
+   "robust_sigma_m": 1.1711,
+   "rms_over_median_s_lr": 0.2529,
+   "robust_sigma_over_median_s_lr": 0.0792,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": []
+  },
+  "control_vs_v1": {
+   "ship_count": "equal",
+   "ship_sd": "equal",
+   "ship_xtrack_frac": "equal",
+   "ship_beam_angle": "equal"
+  },
+  "median_rsd_over_sd": 0.8613840341567993,
+  "cells": 204734,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ }
+]

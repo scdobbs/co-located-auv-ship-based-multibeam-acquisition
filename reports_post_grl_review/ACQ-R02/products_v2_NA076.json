@@ -1,0 +1,33 @@
+[
+ {
+  "pair_id": "NA076__MGDS_32317",
+  "cruise": "NA076",
+  "qa": {
+   "n_common_cells": 23613,
+   "median_offset_m": 0.0271,
+   "rms_m": 0.5061,
+   "robust_sigma_m": 0.4211,
+   "rms_over_median_s_lr": 0.2261,
+   "robust_sigma_over_median_s_lr": 0.1882,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "control_vs_v1": {
+   "ship_count": "equal",
+   "ship_sd": "equal",
+   "ship_xtrack_frac": "equal",
+   "ship_beam_angle": "equal"
+  },
+  "median_rsd_over_sd": 0.859058141708374,
+  "cells": 23650,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ }
+]
