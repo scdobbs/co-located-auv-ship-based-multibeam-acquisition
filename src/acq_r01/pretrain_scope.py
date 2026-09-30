@@ -57,17 +57,29 @@ def fetch_all_footprints() -> gpd.GeoDataFrame:
     cache = CACHE / "ncei_all_footprints.geojson"
     if cache.exists():
         return gpd.read_file(cache)
-    feats, off = [], 0
+    feats, off, page = [], 0, 250
     while True:
+        # small pages + simplified geometry (maxAllowableOffset ~0.01 deg): the full-detail
+        # 2000-record page returns HTTP 500 from the NCEI server.
         p = {"where": "1=1", "outFields": "NCEI_ID,SURVEY_ID,PLATFORM,SOURCE,INSTRUMENT,SURVEY_YEAR,START_TIME,END_TIME,Version,DOWNLOAD_URL,SURVEY_AND_VERSION",
-             "returnGeometry": "true", "outSR": "4326", "f": "geojson", "resultOffset": off, "resultRecordCount": 2000}
-        r = requests.get(LAYER, params=p, headers=H, timeout=300); r.raise_for_status()
-        j = r.json(); f = j.get("features", []); feats += f
+             "returnGeometry": "true", "outSR": "4326", "f": "geojson", "resultOffset": off, "resultRecordCount": page,
+             "maxAllowableOffset": 0.01, "geometryPrecision": 4, "orderByFields": "OBJECTID"}
+        f = None
+        for attempt in range(5):
+            try:
+                r = requests.get(LAYER, params=p, headers=H, timeout=300)
+                if r.status_code >= 500:
+                    time.sleep(10 * (attempt + 1)); continue
+                r.raise_for_status(); j = r.json(); f = j.get("features", []); break
+            except Exception as e:
+                log.warning("page offset=%d attempt %d: %s", off, attempt, e); time.sleep(10 * (attempt + 1))
+        if f is None:
+            raise RuntimeError(f"NCEI footprints page at offset {off} failed after retries")
+        feats += f
         log.info("footprints page offset=%d n=%d", off, len(f))
-        if len(f) < 2000 or not j.get("properties", {}).get("exceededTransferLimit", len(f) == 2000):
-            if len(f) < 2000:
-                break
-        off += 2000; time.sleep(0.5)
+        if len(f) < page:
+            break
+        off += page; time.sleep(0.5)
     gdf = gpd.GeoDataFrame.from_features(feats, crs="EPSG:4326")
     gdf.to_file(cache, driver="GeoJSON")
     return gdf
