@@ -3,8 +3,8 @@ cruise,status,hr,planned_gb,source,data_url,n_files_total,n_files_planned,whole_
 AT37-05,planned,MGDS:24043,5.66,NCEI,https://data.ngdc.noaa.gov/platforms/ocean/ships/atlantis/AT37-05/multibeam/data/version1/MB/,274.0,274.0,5.66,whole,mb58,,development (joins existing unit)
 AT42-06,planned,MGDS:5174,1.93,NCEI,https://data.ngdc.noaa.gov/platforms/ocean/ships/atlantis/AT42-06/multibeam/data/version1/MB/,90.0,90.0,1.93,whole,mb58,,development (ruling H1)
 EX0909,planned,MGDS:24002,5.14,NCEI,https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX0909/multibeam/data/version2/MB/,368.0,368.0,5.14,whole,mb162,ISO path 404; recovered via https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX0909/multibeam/data/version2/MB/,development (ruling H1)
-EX1202L2,no_data_dir,MGDS:20815,,,,,,,,,ISO path 404; no usable version dir (tried 5 ship variants),development (ruling H1)
-EX1202L3,no_data_dir,MGDS:31321,,,,,,,,,ISO path 404; no usable version dir (tried 5 ship variants),development (ruling H1)
+EX1202L2,planned,MGDS:20815,7.21,NCEI,https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1202Leg2/multibeam/data/version2/MB/,323.0,323.0,7.21,whole,mb162,ISO path 404; recovered via https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1202Leg2/multibeam/data/version2/MB/,development (ruling H1)
+EX1202L3,planned,MGDS:31321,6.99,NCEI,https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1202Leg3/multibeam/data/version2/MB/,279.0,279.0,6.99,whole,mb163,ISO path 404; recovered via https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1202Leg3/multibeam/data/version2/MB/,development (ruling H1)
 EX1206,planned,MGDS:31831,15.45,NCEI,https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1206/multibeam/data/version2/MB/,614.0,614.0,15.45,subset (nav ∩ footprint buffered 4.0 km),mb162,ISO path 404; recovered via https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1206/multibeam/data/version2/MB/,development (ruling H1)
 EX1402L2,planned,MGDS:31073,10.16,NCEI,https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1402L2/multibeam/data/version2/MB/,311.0,311.0,10.16,subset (nav ∩ footprint buffered 4.0 km),mb163,ISO path 404; recovered via https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1402L2/multibeam/data/version2/MB/,development (ruling H1)
 FK151121,planned,MGDS:22383,7.37,NCEI,https://data.ngdc.noaa.gov/platforms/ocean/ships/falkor/FK151121/multibeam/data/version1/MB/,274.0,274.0,7.37,whole,mb58,,development
@@ -13,6 +13,12 @@ KM0923,planned,MGDS:31429,0.78,NCEI,https://data.ngdc.noaa.gov/platforms/ocean/s
 KN182L03,planned,MGDS:30193,1.18,NCEI,https://data.ngdc.noaa.gov/platforms/ocean/ships/knorr/KN182L03/multibeam/data/version1/MB/,28.0,28.0,1.18,whole,mb41,,confirmatory
 NA080,already_on_oak,MGDS:31289,0.0,,,,,,,,,
 NR07-1,planned,MGDS:31813;MGDS:31814,0.9,NCEI,https://data.ngdc.noaa.gov/platforms/ocean/ships/northern_resolution/NR07-1/multibeam/data/version1/MB/,58.0,58.0,0.9,whole,mb56,,development (ruling H1)
+PANGAEA_864677,planned,PANGAEA:889317,8.04,PANGAEA,,349.0,349.0,8.04,whole,,,development
+PANGAEA_892317,planned,PANGAEA:884112,39.68,PANGAEA,,1170.0,1170.0,39.68,whole (no per-file position),ALL,,development
+PANGAEA:993972,no_file_table,PANGAEA:958275,,,,,,,,,"<html>
+<head>
+<meta http-equiv=""Content-Type"" content=""text/html;charset=ISO-8859-1""/>
+<title>Error ",confirmatory
 RC2511,planned,MGDS:32239,0.05,NCEI,https://data.ngdc.noaa.gov/platforms/ocean/ships/robert_d._conrad/RC2511/multibeam/data/version1/MB/,107.0,107.0,0.05,whole,mb15,,confirmatory
 RP15DI86,needs_format_review,MGDS:30368,,,https://data.ngdc.noaa.gov/platforms/ocean/ships/discoverer/RP15DI86/multibeam/data/version1/MB/,,,,,,"no recognised swath files; exts {'gps': 2, 'inf': 2}",development
 SUM1004,planned,MGDS:33090,4.68,NCEI,https://data.ngdc.noaa.gov/platforms/ocean/ships/sumner/SUM1004/multibeam/data/version1/MB/,222.0,222.0,4.68,whole,mb121,,confirmatory

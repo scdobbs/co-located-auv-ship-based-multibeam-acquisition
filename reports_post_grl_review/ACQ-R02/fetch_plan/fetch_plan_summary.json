@@ -1,15 +1,14 @@
 {
-  "n_cruises": 19,
-  "n_planned": 13,
+  "n_cruises": 22,
+  "n_planned": 17,
   "needs_format_review": [
     "RP15DI86"
   ],
   "failed": [
-    "EX1202L2",
-    "EX1202L3"
+    "PANGAEA:993972"
   ],
-  "total_gb": 58.7,
+  "total_gb": 120.62,
   "cap_gb": 500.0,
   "within_cap": true,
-  "n_files": 3383
+  "n_files": 5504
 }

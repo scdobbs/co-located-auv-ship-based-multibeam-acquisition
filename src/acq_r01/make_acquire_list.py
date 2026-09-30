@@ -35,7 +35,7 @@ def main():
     for cr, g in v.groupby("lr_best_real"):
         cr = str(cr)
         hrs = [h for h in g.hr_id if not str(desig.get(h, "")).startswith("dropped")]
-        if cr not in ok or not hrs:
+        if (cr not in ok and cr.replace("PANGAEA:", "PANGAEA_") not in ok) or not hrs:
             continue
         cdir = cr.replace("PANGAEA:", "PANGAEA_")
         sn = sonar.get(cr, "")
