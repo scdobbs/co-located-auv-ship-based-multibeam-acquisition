@@ -37,18 +37,36 @@ NAV_SEARCH = ['"Master tracks" AND M112', '"master track" AND METEOR AND M112', 
               '"M112" AND (navigation OR track OR DSHIP OR underway OR "master track")']
 
 
-def fetch_head(url: str, name: str, work: Path, sess: requests.Session, throttle: float) -> dict:
-    """First 2 MB of the file (one Range request, verbatim URL) -> work/<name>."""
+class Pacer:
+    """Adaptive request pacing for hs.pangaea.de: the host rate-limits small requests with 503s. Start at 3 s between
+    requests; every 503 adds 3 s (cap 30 s); 20 consecutive successes remove 1 s (floor 3 s)."""
+    def __init__(self, base=3.0, floor=3.0, cap=30.0):
+        self.wait, self.floor, self.cap, self.ok = base, floor, cap, 0
+        self.n_503 = 0
+
+    def success(self):
+        self.ok += 1
+        if self.ok >= 20:
+            self.wait = max(self.floor, self.wait - 1.0); self.ok = 0
+
+    def throttled(self):
+        self.n_503 += 1; self.ok = 0; self.wait = min(self.cap, self.wait + 3.0)
+
+
+def fetch_head(url: str, name: str, work: Path, sess: requests.Session, pacer: Pacer) -> dict:
+    """First 2 MB of the file (one Range request, verbatim URL) -> work/<name>.  On 503 the file is left for a later
+    pass (status 503, head_bytes 0) after a single 30 s pause, so one slow file cannot stall the queue."""
     local = work / name
     rec = {"file_name": name, "http_status": None, "head_bytes": 0, "note": ""}
     if local.exists() and local.stat().st_size >= HEAD_BYTES:
         rec.update({"http_status": "cached", "head_bytes": local.stat().st_size}); return rec
-    for attempt in range(6):
+    for attempt in range(2):
         try:
+            time.sleep(pacer.wait)
             with sess.get(url, headers={**R.HEADERS, "Range": f"bytes=0-{HEAD_BYTES - 1}"}, timeout=180, stream=True) as g:
                 rec["http_status"] = g.status_code
                 if g.status_code in (429, 503) or g.status_code >= 500:
-                    time.sleep(min(120, 5 * 2 ** attempt)); continue
+                    pacer.throttled(); time.sleep(30.0); continue
                 if g.status_code not in (200, 206):
                     rec["note"] = f"http {g.status_code}"; return rec
                 n = 0
@@ -60,10 +78,10 @@ def fetch_head(url: str, name: str, work: Path, sess: requests.Session, throttle
                 rec["head_bytes"] = n
                 if g.status_code == 200:
                     rec["note"] = "server ignored Range (full body, truncated locally)"
-            time.sleep(throttle); return rec
+            pacer.success(); return rec
         except Exception as e:
-            rec["note"] = f"{type(e).__name__}"; time.sleep(min(60, 2 ** attempt))
-    rec["note"] += "; gave up"; return rec
+            rec["note"] = f"{type(e).__name__}"; time.sleep(10.0)
+    return rec
 
 
 def positions_batch(work: Path, names: list[str]) -> dict:
@@ -113,7 +131,8 @@ def positions_batch(work: Path, names: list[str]) -> dict:
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(); ap.add_argument("--throttle", type=float, default=0.5); ap.add_argument("--limit", type=int, default=None)
+    ap = argparse.ArgumentParser(); ap.add_argument("--throttle", type=float, default=0.5, help="(unused: pacing is adaptive)"); ap.add_argument("--limit", type=int, default=None)
+    ap.add_argument("--budget-hours", type=float, default=20.0)
     a = ap.parse_args(argv)
     info = R.PANGAEA_UNITS[CRUISE]
     cand = pd.read_csv(R.REPORT_DIR / f"pangaea_{info['dataset']}_all_candidates.csv", parse_dates=["start_time"]).sort_values("start_time").reset_index(drop=True)
@@ -122,15 +141,24 @@ def main(argv=None):
     if pos_csv.exists():
         for r in csv.DictReader(pos_csv.open()):
             done[r["file_name"]] = r
-    work = Path(os.environ.get("L_SCRATCH", "/tmp")) / "acq_r03_m112_heads"; work.mkdir(parents=True, exist_ok=True)
-    sess = requests.Session(); t0 = time.time()
+    work = R.C.SCRATCH_DATA / "acq_r03_m112_heads"; work.mkdir(parents=True, exist_ok=True)   # group scratch: survives a restart
+    sess = requests.Session(); t0 = time.time(); pacer = Pacer()
     fields = ["file_name", "http_status", "head_bytes", "lon", "lat", "n_nav", "lon_min", "lon_max", "lat_min", "lat_max", "method", "note"]
     todo = [r for _, r in cand.iterrows() if r.file_name not in done][: a.limit or None]
     heads = {}
-    for k, r in enumerate(todo, 1):                                  # phase 1: all heads (one Range request each)
-        heads[r.file_name] = fetch_head(r.url, r.file_name, work, sess, a.throttle)
-        if k % 100 == 0:
-            print(f"  {k}/{len(todo)} heads fetched, {time.time() - t0:.0f} s", flush=True)
+    queue = list(todo); n_pass = 0
+    while queue and (time.time() - t0) / 3600 < a.budget_hours:               # phase 1: all heads, re-queuing 503s
+        n_pass += 1; nxt = []
+        for k, r in enumerate(queue, 1):
+            h = fetch_head(r.url, r.file_name, work, sess, pacer); heads[r.file_name] = h
+            if h["head_bytes"] <= 0:
+                nxt.append(r)
+            if k % 50 == 0:
+                print(f"  pass {n_pass}: {k}/{len(queue)} tried, {sum(1 for x in heads.values() if x['head_bytes'] > 0)}/{len(todo)} heads on disk, wait {pacer.wait:.0f} s, 503s {pacer.n_503}, {time.time() - t0:.0f} s", flush=True)
+        queue = nxt
+        if queue:
+            print(f"  pass {n_pass} done: {len(queue)} heads still missing; pausing 120 s before the next pass", flush=True); time.sleep(120)
+    unresolved = [r.file_name for r in queue]
     names = [n for n, h in heads.items() if h["head_bytes"] > 0]
     print(f"  {len(names)} heads on disk; one MB-System pass ...", flush=True)
     pos = positions_batch(work, names) if names else {}              # phase 2: one container, all files
@@ -150,6 +178,8 @@ def main(argv=None):
         except OSError:
             pass
     print(f"  positions: {len(done)}/{len(cand)} known, {time.time() - t0:.0f} s", flush=True)
+    if unresolved:
+        print(f"HOLD: {len(unresolved)} files without a head after {n_pass} passes ({(time.time() - t0) / 3600:.1f} h); selection written for the resolved files only")
     if len(done) < len(cand):
         print(f"positions incomplete: {len(done)}/{len(cand)}"); return 1
     # selection: segment [start_i, start_{i+1}) against the buffered footprint, in local UTM
@@ -185,11 +215,12 @@ def main(argv=None):
             "method": "2: HTTP Range 2 MB head per .all -> first position datagram (mbnavlist); file spans [start_i, start_i+1); segment ∩ buffered footprint",
             "method_1_navigation_dataset": {"result": "not available: no M112 master-track / DSHIP / navigation dataset on PANGAEA", "queries": NAV_SEARCH},
             "range_test": "hs.pangaea.de answered 206 Partial Content to Range: bytes=0-1048575 (2026-09-30)",
-            "n_positions_parsed": int(pos.lon.notna().sum()), "n_no_position": int(pos.lon.isna().sum()),
+            "n_positions_parsed": int(pos.lon.notna().sum()), "n_no_position": int(pos.lon.isna().sum()), "unresolved_heads": unresolved,
+            "pacing": {"final_wait_s": pacer.wait, "n_503": pacer.n_503, "passes": n_pass},
             "position_methods": pos.method.fillna("none").value_counts().to_dict()}
     summ = publish(CRUISE, out, info, note, [], len(cand), int(cand.advertised_bytes.sum()))
     print(json.dumps({k: v for k, v in summ.items() if k != "rows_skipped_url_name_mismatch"}, indent=1, default=str))
-    return 0
+    return 2 if unresolved else 0
 
 
 if __name__ == "__main__":

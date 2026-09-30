@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=acq_r03_m112
 #SBATCH --partition=normal
-#SBATCH --time=40:00:00
+#SBATCH --time=44:00:00
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=8G
 #SBATCH --output=/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/logs/acq_r03_m112_%j.out
