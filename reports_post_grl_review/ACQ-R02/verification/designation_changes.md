@@ -20,9 +20,9 @@
 | nu02 | MGDS:30368 |  | MGDS:30368: development | RCSN204 | RP15DI86 |
 | nu01 | MGDS:32239 |  | MGDS:32239: confirmatory | nan | RC2511 |
 | nu03 | MGDS:33090 |  | MGDS:33090: confirmatory | NA179 | SUM1004 |
-| pu01 | PANGAEA:889317 |  | PANGAEA:889317: development | M114/1 | PANGAEA:900987 |
+| pu00 | PANGAEA:884112 |  | PANGAEA:884112: development |  | PANGAEA:892317 |
+| pu01 | PANGAEA:889317 |  | PANGAEA:889317: development | M114/1 | PANGAEA:864677 |
 | pu03 | PANGAEA:958275 |  | PANGAEA:958275: confirmatory | POS510 | PANGAEA:993972 |
-| pu00 | PANGAEA:884112 |  | PANGAEA:884112: development |  | PANGAEA:891656 |
 
 ## Changes against ACQ-R01 / §4.3 assignments
 

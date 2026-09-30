@@ -38,7 +38,14 @@ def main():
         if cr not in ok or not hrs:
             continue
         cdir = cr.replace("PANGAEA:", "PANGAEA_")
-        lines.append(f"{cdir}|{','.join(hrs)}|{sonar.get(cr, '')}")
+        sn = sonar.get(cr, "")
+        if (not sn or sn == "nan") and cdir.startswith("PANGAEA_"):
+            # sonar not in the dataset title: infer from the planned raw file names (e.g. ..._M114_EM122.all)
+            fp = pd.read_csv(R02 / "fetch_plan" / "file_plan.csv")
+            names = " ".join(fp[fp.cruise == cdir].filename.astype(str).head(20))
+            m = __import__("re").search(r"EM ?\d{3,4}|SEABEAM ?\d{4}|HYDROSWEEP", names, __import__("re").I)
+            sn = m.group(0).upper().replace(" ", "") if m else ""
+        lines.append(f"{cdir}|{','.join(hrs)}|{sn}")
     p = C.REPO / "sbatch" / "acq_r02_acquire_list.txt"
     p.write_text("\n".join(lines) + "\n")
     print("\n".join(lines)); print(f"{len(lines)} cruises -> {p}")

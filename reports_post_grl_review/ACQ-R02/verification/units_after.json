@@ -307,6 +307,23 @@
       "corpus_members": []
     },
     {
+      "unit_id": "pu00",
+      "members": [
+        "PANGAEA:884112"
+      ],
+      "corpus_units": [],
+      "designations": {
+        "PANGAEA:884112": "development"
+      },
+      "hr_cruises": [
+        ""
+      ],
+      "lr_cruises": [
+        "PANGAEA:892317"
+      ],
+      "corpus_members": []
+    },
+    {
       "unit_id": "pu01",
       "members": [
         "PANGAEA:889317"
@@ -319,7 +336,7 @@
         "M114/1"
       ],
       "lr_cruises": [
-        "PANGAEA:900987"
+        "PANGAEA:864677"
       ],
       "corpus_members": []
     },
@@ -337,23 +354,6 @@
       ],
       "lr_cruises": [
         "PANGAEA:993972"
-      ],
-      "corpus_members": []
-    },
-    {
-      "unit_id": "pu00",
-      "members": [
-        "PANGAEA:884112"
-      ],
-      "corpus_units": [],
-      "designations": {
-        "PANGAEA:884112": "development"
-      },
-      "hr_cruises": [
-        ""
-      ],
-      "lr_cruises": [
-        "PANGAEA:891656"
       ],
       "corpus_members": []
     }

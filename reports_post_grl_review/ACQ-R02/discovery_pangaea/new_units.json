@@ -14,7 +14,7 @@
       "depth_min_m": 1600.0,
       "depth_max_m": 1600.0,
       "ship_cruises": [
-        "PANGAEA:891656"
+        "PANGAEA:892317"
       ],
       "hr_sources": [
         {
@@ -23,8 +23,8 @@
           "title": "AUV MARUM-SEAL Dive 71-73: High resolution bathymetry and backscatter of Venere Mud Vulcano",
           "platform": "AUV",
           "campaigns": "",
-          "best_lr": "PANGAEA:891656",
-          "best_lr_kind": "pangaea_processed_grid"
+          "best_lr": "PANGAEA:892317",
+          "best_lr_kind": "pangaea_raw_swath"
         }
       ],
       "lon": 17.036,
@@ -41,7 +41,7 @@
       "depth_min_m": 1200.0,
       "depth_max_m": 2900.0,
       "ship_cruises": [
-        "PANGAEA:900987"
+        "PANGAEA:864677"
       ],
       "hr_sources": [
         {
@@ -50,8 +50,8 @@
           "title": "AUV MARUM-SEAL Dive 70: High Resolution Bathymetry and Backscatter of Chapopote Asphalt Volcano",
           "platform": "AUV",
           "campaigns": "M114/1",
-          "best_lr": "PANGAEA:900987",
-          "best_lr_kind": "pangaea_processed_grid"
+          "best_lr": "PANGAEA:864677",
+          "best_lr_kind": "pangaea_raw_swath"
         }
       ],
       "lon": -93.453,
@@ -116,7 +116,7 @@
     "auv_hits": 10809,
     "auv_bathymetry_datasets": 11,
     "ship_hits": 13145,
-    "ship_datasets": 1060,
+    "ship_datasets": 1108,
     "status_counts": {
       "candidate": 5,
       "in_corpus": 3,
