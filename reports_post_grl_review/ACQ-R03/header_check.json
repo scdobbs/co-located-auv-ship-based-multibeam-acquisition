@@ -1,0 +1,456 @@
+{
+ "generated": "2026-09-30T22:49:45+00:00",
+ "gdal_netcdf_placement_check": {
+  "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/TN399__union.grd",
+  "conventions": "CF-1.7",
+  "node_offset_attr": null,
+  "x_first_node": -104.368708113573,
+  "dx": 0.00040580604085960204,
+  "rasterio_left_edge": -104.36891101659344,
+  "left_edge_minus_first_node_in_cells": -0.5,
+  "y_last_node": 10.110128371957883,
+  "rasterio_top_edge": 10.110328029995742,
+  "top_edge_minus_last_node_in_cells": 0.5,
+  "interpretation": "GDAL places pixel centres on the x/y coordinate nodes (edges = node -/+ half cell): PixelIsArea with the value at the pixel centre = the node. mbgrid's node values are footprint-weighted means centred on the node, so this is the correct registration; no half-cell error."
+ },
+ "pairs": {
+  "ccz_so268_1": {
+   "lr_native_res_m": 50.0,
+   "target_crs": "EPSG:32611",
+   "code_path": "src/pipeline.py -> src/harmonize.harmonize_pair: rioxarray.open_rasterio (GDAL GeoTIFF reader, PixelIsArea semantics); same CRS -> no reprojection, clip only (grid alignment preserved: lr.tif edges are multiples of 50 m as in the raw grid)",
+   "grids": {
+    "raw_lr": {
+     "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw/ccz_so268_1/lr_10.1594_PANGAEA.915764_SO268_BGR_EM122_50m.tif",
+     "driver": "GTiff",
+     "crs": "EPSG:32611",
+     "res": [
+      50.0,
+      50.0
+     ],
+     "shape": [
+      640,
+      640
+     ],
+     "bounds": [
+      480650.0,
+      1301000.0,
+      512650.0,
+      1333000.0
+     ],
+     "AREA_OR_POINT_tag": "Area",
+     "registration": "PixelIsArea"
+    },
+    "harmonized_lr": {
+     "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/ccz_so268_1/lr.tif",
+     "driver": "GTiff",
+     "crs": "EPSG:32611",
+     "res": [
+      50.0,
+      50.0
+     ],
+     "shape": [
+      92,
+      101
+     ],
+     "bounds": [
+      495500.0,
+      1315850.0,
+      500550.0,
+      1320450.0
+     ],
+     "AREA_OR_POINT_tag": "Area",
+     "registration": "PixelIsArea"
+    },
+    "raw_hr": {
+     "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw/ccz_so268_1/hr_10.1594_PANGAEA.915765_SO268_BGR_AUV_3m.tif",
+     "driver": "GTiff",
+     "crs": "EPSG:32611",
+     "res": [
+      3.0,
+      3.0
+     ],
+     "shape": [
+      1536,
+      1683
+     ],
+     "bounds": [
+      495500.4999519298,
+      1315831.4999796266,
+      500549.4999519298,
+      1320439.4999796266
+     ],
+     "AREA_OR_POINT_tag": "Area",
+     "registration": "PixelIsArea"
+    },
+    "harmonized_hr": {
+     "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/ccz_so268_1/hr.tif",
+     "driver": "GTiff",
+     "crs": "EPSG:32611",
+     "res": [
+      3.0,
+      3.0
+     ],
+     "shape": [
+      1534,
+      1682
+     ],
+     "bounds": [
+      495476.4999519298,
+      1315813.4999796266,
+      500522.4999519298,
+      1320415.4999796266
+     ],
+     "AREA_OR_POINT_tag": "Area",
+     "registration": "PixelIsArea"
+    }
+   },
+   "harmonized_lr_origin_offset_from_raw_in_cells": 297.0,
+   "registration_mismatch_established": false,
+   "frame_offset": {
+    "applied": false,
+    "dx_m": 0.0,
+    "dy_m": 0.0,
+    "basis": "none",
+    "evidence": "raw LR GTRasterTypeGeoKey = PixelIsArea; harmonize_pair read it with GDAL PixelIsArea semantics; no header-established mismatch"
+   },
+   "implied_offset_m_in_lr_tif": 0.0
+  },
+  "discol_so242_1": {
+   "lr_native_res_m": 38.0,
+   "target_crs": "EPSG:32716",
+   "code_path": "src/pipeline.py -> src/harmonize.harmonize_pair: rioxarray.open_rasterio; same CRS -> clip only (lr.tif origin = raw origin + integer number of cells)",
+   "grids": {
+    "raw_lr": {
+     "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw/discol_so242_1/lr_10.1594_PANGAEA.905579_DISCOL_workingAreaUTM.tif",
+     "driver": "GTiff",
+     "crs": "EPSG:32716",
+     "res": [
+      38.684639904699814,
+      38.68463990469973
+     ],
+     "shape": [
+      649,
+      973
+     ],
+     "bounds": [
+      320212.5942284415,
+      9207727.80900572,
+      357852.7488557144,
+      9232834.14030387
+     ],
+     "AREA_OR_POINT_tag": "Area",
+     "registration": "PixelIsArea"
+    },
+    "harmonized_lr": {
+     "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/discol_so242_1/lr.tif",
+     "driver": "GTiff",
+     "crs": "EPSG:32716",
+     "res": [
+      38.68463990469996,
+      38.68463990470325
+     ],
+     "shape": [
+      136,
+      213
+     ],
+     "bounds": [
+      336460.1429884154,
+      9215271.313787136,
+      344699.9712881165,
+      9220532.424814176
+     ],
+     "AREA_OR_POINT_tag": "Area",
+     "registration": "PixelIsArea"
+    },
+    "raw_hr": {
+     "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw/discol_so242_1/hr_10.1594_PANGAEA.905580_AUV_bathymetry.tif",
+     "driver": "GTiff",
+     "crs": "EPSG:32716",
+     "res": [
+      2.1854899999999975,
+      2.1854899999998985
+     ],
+     "shape": [
+      2517,
+      3824
+     ],
+     "bounds": [
+      336395.1739458745,
+      9215104.74601753,
+      344752.4877058745,
+      9220605.62434753
+     ],
+     "AREA_OR_POINT_tag": "Area",
+     "registration": "PixelIsArea"
+    },
+    "harmonized_hr": {
+     "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/discol_so242_1/hr.tif",
+     "driver": "GTiff",
+     "crs": "EPSG:32716",
+     "res": [
+      2.1854900000000113,
+      2.1854899999992945
+     ],
+     "shape": [
+      2419,
+      3773
+     ],
+     "bounds": [
+      336454.1821758745,
+      9215259.915807532,
+      344700.0359458745,
+      9220546.61611753
+     ],
+     "AREA_OR_POINT_tag": "Area",
+     "registration": "PixelIsArea"
+    }
+   },
+   "harmonized_lr_origin_offset_from_raw_in_cells": 420.0,
+   "registration_mismatch_established": false,
+   "frame_offset": {
+    "applied": false,
+    "dx_m": 0.0,
+    "dy_m": 0.0,
+    "basis": "none",
+    "evidence": "raw LR GTRasterTypeGeoKey = PixelIsArea; harmonize_pair read it with GDAL PixelIsArea semantics; no header-established mismatch"
+   },
+   "implied_offset_m_in_lr_tif": 0.0
+  },
+  "tag_m127": {
+   "lr_native_res_m": 30.0,
+   "target_crs": "EPSG:32623",
+   "code_path": "src/pipeline.py -> src/harmonize.harmonize_pair: rioxarray.open_rasterio (EPSG:4326 GeoTIFF, PixelIsArea) -> rio.reproject to EPSG:32623, bilinear",
+   "grids": {
+    "raw_lr": {
+     "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw/tag_m127/lr_10.1594_PANGAEA.899408_M127_EM122_bathymetry_WGS84_30m.tif",
+     "driver": "GTiff",
+     "crs": "EPSG:4326",
+     "res": [
+      0.00026969999999999913,
+      0.0002697000000000003
+     ],
+     "shape": [
+      2868,
+      3015
+     ],
+     "bounds": [
+      -45.217994850000004,
+      25.77404015,
+      -44.404849350000006,
+      26.547539750000002
+     ],
+     "AREA_OR_POINT_tag": "Area",
+     "registration": "PixelIsArea"
+    },
+    "harmonized_lr": {
+     "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/tag_m127/lr.tif",
+     "driver": "GTiff",
+     "crs": "EPSG:32623",
+     "res": [
+      28.37585988549851,
+      28.375859885498706
+     ],
+     "shape": [
+      337,
+      332
+     ],
+     "bounds": [
+      514831.97067917546,
+      2886830.9470182853,
+      524252.75616116094,
+      2896393.6117996983
+     ],
+     "AREA_OR_POINT_tag": "Area",
+     "registration": "PixelIsArea"
+    },
+    "raw_hr": {
+     "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw/tag_m127/hr_10.1594_PANGAEA.899415_M127_AbyssBathy_WGS84_2m.tif",
+     "driver": "GTiff",
+     "crs": "EPSG:4326",
+     "res": [
+      1.7976562141491422e-05,
+      1.7976252605252422e-05
+     ],
+     "shape": [
+      4798,
+      5230
+     ],
+     "bounds": [
+      -44.851603,
+      26.100588,
+      -44.75758558,
+      26.18683806
+     ],
+     "AREA_OR_POINT_tag": null,
+     "registration": "PixelIsArea (GTRasterTypeGeoKey absent; GeoTIFF default)"
+    },
+    "harmonized_hr": {
+     "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/tag_m127/hr.tif",
+     "driver": "GTiff",
+     "crs": "EPSG:32623",
+     "res": [
+      1.8879699693721153,
+      1.887969969372139
+     ],
+     "shape": [
+      5067,
+      4985
+     ],
+     "bounds": [
+      514808.99238394643,
+      2886812.836801991,
+      524220.5226812664,
+      2896379.1806367994
+     ],
+     "AREA_OR_POINT_tag": "Area",
+     "registration": "PixelIsArea"
+    }
+   },
+   "registration_mismatch_established": false,
+   "frame_offset": {
+    "applied": false,
+    "dx_m": 0.0,
+    "dy_m": 0.0,
+    "basis": "none",
+    "evidence": "raw LR GTRasterTypeGeoKey = PixelIsArea; harmonize_pair read it with GDAL PixelIsArea semantics; no header-established mismatch"
+   },
+   "implied_offset_m_in_lr_tif": 0.0
+  },
+  "EW0207__MGDS_32556": {
+   "lr_native_res_m": 79.4,
+   "target_crs": "EPSG:32609",
+   "code_path": "LR: mbgrid CF/COARDS netCDF (x/y coordinate variables) read by src/discovery/stage_c1_harmonize.materialize -> rasterio.open (GDAL netCDF driver; gmt_grd.is_gmt_grd is False for the 2-D COARDS layout, and the _read_coards_grd fallback is not reached because rasterio opens the file) -> src/harmonize.harmonize_pair reproject to EPSG:32609, bilinear. HR: MBARI classic GMT grid via src/gmt_grd.convert (from_bounds on x_range/y_range: node range treated as outer edges, a half-cell + 1/nx scale error on the HR side only); the HR was then rigidly co-registered to lr.tif (stage F masked coreg), so the pair is internally consistent and the HR registration does not enter the ship products.",
+   "grids": {
+    "raw_lr": {
+     "file": "raw_lr/EW0207",
+     "status": "not on OAK (June scratch raw_lr/ purged 2026-09-20); registration established from the format + reader (see code_path and gdal_netcdf_placement_check)",
+     "format": "mbgrid CF/COARDS netCDF (x/y coordinate variables; GMT_version 6.1.1)"
+    },
+    "harmonized_lr": {
+     "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EW0207__MGDS_32556/lr.tif",
+     "driver": "GTiff",
+     "crs": "EPSG:32609",
+     "res": [
+      79.27958217502838,
+      79.27958217502757
+     ],
+     "shape": [
+      258,
+      188
+     ],
+     "bounds": [
+      420317.27669573354,
+      5099964.301576306,
+      435221.83814463887,
+      5120418.433777464
+     ],
+     "AREA_OR_POINT_tag": "Area",
+     "registration": "PixelIsArea"
+    },
+    "raw_hr": {
+     "file": "reharvest_c1/MGDS_32556",
+     "status": "not on OAK (June scratch raw_lr/ purged 2026-09-20); registration established from the format + reader (see code_path and gdal_netcdf_placement_check)",
+     "format": "MBARI classic GMT netCDF (1-D z, x_range/y_range)"
+    },
+    "harmonized_hr": {
+     "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EW0207__MGDS_32556/hr.tif",
+     "driver": "GTiff",
+     "crs": "EPSG:32609",
+     "res": [
+      1.2303378630260844,
+      1.230337863026109
+     ],
+     "shape": [
+      16668,
+      12122
+     ],
+     "bounds": [
+      420348.97433471144,
+      5099984.396073427,
+      435263.12991031364,
+      5120491.667574346
+     ],
+     "AREA_OR_POINT_tag": "Area",
+     "registration": "PixelIsArea"
+    }
+   },
+   "registration_mismatch_established": false,
+   "frame_offset": {
+    "applied": false,
+    "dx_m": 0.0,
+    "dy_m": 0.0,
+    "basis": "none",
+    "evidence": "LR = mbgrid CF netCDF read with GDAL (pixel centres on the coordinate nodes, verified: edge - node = -0.5 cell); no header-established mismatch"
+   },
+   "implied_offset_m_in_lr_tif": 0.0
+  },
+  "EW9801__MGDS_31425": {
+   "lr_native_res_m": 50.4,
+   "target_crs": "EPSG:32605",
+   "code_path": "LR: mbgrid CF/COARDS netCDF read by src/discovery/stage_f_harmonize._lr_to_tif -> rasterio.open (GDAL netCDF driver) -> src/harmonize.harmonize_pair reproject to EPSG:32605, bilinear. HR: float GeoTIFF (EPSG:4326) via rasterio.",
+   "grids": {
+    "raw_lr": {
+     "file": "raw_lr/EW9801",
+     "status": "not on OAK (June scratch raw_lr/ purged 2026-09-20); registration established from the format + reader (see code_path and gdal_netcdf_placement_check)",
+     "format": "mbgrid CF/COARDS netCDF (x/y coordinate variables; GMT_version 6.1.1)"
+    },
+    "harmonized_lr": {
+     "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EW9801__MGDS_31425/lr.tif",
+     "driver": "GTiff",
+     "crs": "EPSG:32605",
+     "res": [
+      47.9986635720056,
+      47.998663572007594
+     ],
+     "shape": [
+      97,
+      69
+     ],
+     "bounds": [
+      260753.03313848114,
+      2090006.108497123,
+      264064.94092494954,
+      2094661.9788636076
+     ],
+     "AREA_OR_POINT_tag": "Area",
+     "registration": "PixelIsArea"
+    },
+    "raw_hr": {
+     "file": "staging_phase1/MGDS_31425",
+     "status": "not on OAK (June scratch raw_lr/ purged 2026-09-20); registration established from the format + reader (see code_path and gdal_netcdf_placement_check)",
+     "format": "float GeoTIFF (EPSG:4326)"
+    },
+    "harmonized_hr": {
+     "file": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EW9801__MGDS_31425/hr.tif",
+     "driver": "GTiff",
+     "crs": "EPSG:32605",
+     "res": [
+      2.066556123827675,
+      2.0665561238276027
+     ],
+     "shape": [
+      2266,
+      1614
+     ],
+     "bounds": [
+      260746.58381583885,
+      2090012.0065867729,
+      264082.0053996967,
+      2094694.8227633662
+     ],
+     "AREA_OR_POINT_tag": "Area",
+     "registration": "PixelIsArea"
+    }
+   },
+   "registration_mismatch_established": false,
+   "frame_offset": {
+    "applied": false,
+    "dx_m": 0.0,
+    "dy_m": 0.0,
+    "basis": "none",
+    "evidence": "LR = mbgrid CF netCDF read with GDAL (pixel centres on the coordinate nodes, verified: edge - node = -0.5 cell); no header-established mismatch"
+   },
+   "implied_offset_m_in_lr_tif": 0.0
+  }
+ }
+}

@@ -1,0 +1,218 @@
+{
+ "generated": "2026-09-30T22:50:32+00:00",
+ "accepted_over_30m_with_qgis_basis": [
+  {
+   "pair_id": "AR26__MGDS_31838",
+   "leakage_unit": "lu14",
+   "designation": "development",
+   "horiz_offset_m": 32.59,
+   "vert_offset_m": -8061.53,
+   "coreg_status": "QGIS_R3_approved; PSR=3.42; offset=32.59m",
+   "coreg_peak_psr": 3.42,
+   "notes": "LR_ship_cruise=AR26 (R/V Neil Armstrong, Kongsberg EM (.all) / 20160207); HR_AUV=PC1704/EasternNorthAmericanMargin (cross_cruise); independence: real single-cruise NCEI multibeam LR vs AUV HR, distinct sonar; HR_native=sounding_density(ok);  | LR_acq_date=2016-02-07 | C2a 2026-06-26: lr_native=29.4 = max(footprint 29.4, posting 29.4) from Kongsberg EM (.all)@1684.0m; prior 32.3->29.4 (proxy artifact); res_ratio 29.64; rasters unchanged",
+   "qc_artifact_path": "qc_plots/reaudit_real23/real_nonadvancing_qgis__AR26__MGDS_31838.png"
+  },
+  {
+   "pair_id": "TN159__MGDS_21981",
+   "leakage_unit": "lu17",
+   "designation": "lockbox",
+   "horiz_offset_m": 44.79,
+   "vert_offset_m": -7655.16,
+   "coreg_status": "QGIS_R3_approved; PSR=5.2; offset=44.79m",
+   "coreg_peak_psr": 5.2,
+   "notes": "LR_ship_cruise=TN159 (R/V Thomas G. Thompson, Simrad EM (.all) / 20030729); HR_AUV=AT15-36/JdF:Endeavour (cross_cruise); independence: real single-cruise NCEI multibeam LR vs AUV HR, distinct sonar; HR_native=sounding_density(ok);  | LR_acq_date=2003-07-29 | C2a 2026-06-26: lr_native=41.0 = max(footprint 38.0, posting 41.0) from Simrad EM (.all)@2179.0m; prior 317.5->41.0 (proxy artifact); res_ratio 41.37; rasters unchanged",
+   "qc_artifact_path": "qc_plots/reaudit_real23/real_nonadvancing_qgis__TN159__MGDS_21981.png"
+  },
+  {
+   "pair_id": "NA076__MGDS_32317",
+   "leakage_unit": "lu11",
+   "designation": "development",
+   "horiz_offset_m": 47.01,
+   "vert_offset_m": -4.91,
+   "coreg_status": "masked_coreg; offset=47.01m; MAD=0.77m; QGIS_signed_off_2026-06-26; offset>30m_USBL_QGIS_basis",
+   "coreg_peak_psr": null,
+   "notes": "C1 float recovery; LR_ship_cruise=NA076 (E/V Nautilus, Kongsberg EM302, LR_acq=2016-08-15); HR_AUV=SantaMonicaMounds_MBARI/PacificOcean:SouthernCalifornia (HR_acq=NotProvided); independence: distinct ship LR vs AUV, co-located by 50 joint tiles; leakage_unit=new(SantaMonicaMound); masked_coreg dz=-4.91m; NOTE offset>USBL, QGIS-signed | P1.4 2026-06-26: lr_native_res_m 221->22.9 (derivation artifact; EM302 footprint ~15m, grid posting 15.2m, sqrt-fill proxy ~23m); rasters unchanged | C2a 2026-06-26: lr_native=15.2 = max(footprint 15.1, posting 15.2) from Kongsberg EM302@862.5m; prior 22.9->15.2 (proxy artifact); res_ratio 15.2; rasters unchanged",
+   "qc_artifact_path": "harmonized/NA076__MGDS_32317/qc/NA076__MGDS_32317_overlay.png"
+  },
+  {
+   "pair_id": "EW0207__MGDS_32556",
+   "leakage_unit": "lu16",
+   "designation": "development",
+   "horiz_offset_m": 50.85,
+   "vert_offset_m": -27.71,
+   "coreg_status": "masked_coreg offset=50.85m MAD=9.27m; QGIS_signed_off_2026-06-26; offset>30m_USBL_QGIS_basis",
+   "coreg_peak_psr": null,
+   "notes": "C1 float recovery; LR_ship_cruise=EW0207 (R/V Maurice Ewing, MB-format-183 multibeam, LR_acq=2072-21-32); HR_AUV=AxialSeamount_MBARI/JdF:Axial (NRift sub-grid of uid32556; disjoint from TN268x30466=SRift; no shared HR pixels; HR_acq=NotProvided); independence: distinct ship LR vs AUV, co-located by 692 joint tiles; leakage_unit=22 | C2a 2026-06-26: lr_native=79.4 = max(footprint 65.4, posting 79.4) from SeaBeam 2120/MR1 class@1874.3m; prior 87.8->79.4 (proxy artifact); res_ratio 79.4; rasters unchanged | leakage_policy=conservative (shared HR survey cruise_id OR shared LR ship cruise lr_cruise OR centroid<=50km => one unit, any distance)",
+   "qc_artifact_path": "harmonized/EW0207__MGDS_32556/qc/EW0207__MGDS_32556_overlay.png"
+  },
+  {
+   "pair_id": "2009_Amundsen__MGDS_30046",
+   "leakage_unit": "lu18",
+   "designation": "development",
+   "horiz_offset_m": 35.43,
+   "vert_offset_m": -1.7,
+   "coreg_status": "masked_coreg offset=35.43m MAD=0.73m; QGIS_signed_off_2026-06-26; offset>30m_USBL_QGIS_basis",
+   "coreg_peak_psr": null,
+   "notes": "C1 float recovery; LR_ship_cruise=2009_Amundsen (CCGS Amundsen, Kongsberg EM (.all), LR_acq=2009-09-26); HR_AUV=Arctic_MBARI/BeaufortSea (Shelf_Edge_Scar_w_Adj_Remnant sub-grid; only Arctic/shelf-slope; 4 more 30046 sub-grids available; HR_acq=NotProvided); independence: distinct ship LR vs AUV, co-located by 144 joint tiles; leakage_unit=new(Arctic) | C2a 2026-06-26: lr_native=16.0 = max(footprint 4.2, posting 16.0) from Kongsberg EM (.all)@238.8m; prior 42.0->16.0 (proxy artifact); res_ratio 16.0; rasters unchanged",
+   "qc_artifact_path": "harmonized/2009_Amundsen__MGDS_30046/qc/2009_Amundsen__MGDS_30046_overlay.png"
+  }
+ ],
+ "over_30m_not_under_qgis_basis": [
+  {
+   "pair_id": "cal_dig_morro_bay__20190318m2_Transect601060m",
+   "leakage_unit": "lu12",
+   "horiz_offset_m": 37.94733192202055,
+   "coreg_status": "needs_review"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190510m2_BankFlankIncipCh",
+   "leakage_unit": "lu12",
+   "horiz_offset_m": 47.41307836451879,
+   "coreg_status": "needs_review"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__luciachica_2007",
+   "leakage_unit": "lu12",
+   "horiz_offset_m": 32.0624390837628,
+   "coreg_status": "needs_review"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__basin_flank",
+   "leakage_unit": "lu12",
+   "horiz_offset_m": 41.23105625617661,
+   "coreg_status": "needs_review"
+  },
+  {
+   "pair_id": "ccz_so268_1",
+   "leakage_unit": "lu06",
+   "horiz_offset_m": 31.89043743820395,
+   "coreg_status": "needs_review"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20180428m1_Cable",
+   "leakage_unit": "lu12",
+   "horiz_offset_m": 56.639209034025185,
+   "coreg_status": "needs_review"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190315m1_HeadlessCanyon",
+   "leakage_unit": "lu12",
+   "horiz_offset_m": 42.04759208325728,
+   "coreg_status": "needs_review"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190317m2_600mGully",
+   "leakage_unit": "lu12",
+   "horiz_offset_m": 40.496913462633174,
+   "coreg_status": "needs_review"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__201804_LuciaChica2m",
+   "leakage_unit": "lu12",
+   "horiz_offset_m": 34.23448553724738,
+   "coreg_status": "needs_review"
+  }
+ ],
+ "record_quotes": [
+  {
+   "file": "reports/stage_f_harmonization_2026-06-23.md",
+   "line": 51,
+   "text": "### 3b. Poor co-registration lock (offset > USBL bound or negative PSR)"
+  },
+  {
+   "file": "reports/stage_f_harmonization_2026-06-23.md",
+   "line": 52,
+   "text": "Several pairs have horizontal offsets **> 30 m** (the AUV USBL bound) or **negative PSR** (ambiguous lock) \u2014 e.g. `KN210-05\u00d722436` (offset 145 m), `EW9904\u00d730217` (64 m), `FK006B\u00d720811` (PSR \u22120.97), `FK171110\u00d724485` (PSR \u221218). Deep, large, sparse-LR pairs co-register poorly; **the overlay must confirm the alignment** \u2014 a large solved offset may be a real USBL error correction or a bad lock. QGIS arbitrates."
+  },
+  {
+   "file": "reports/stage_f_harmonization_2026-06-23.md",
+   "line": 71,
+   "text": "3. **Scrutinize the large-offset/negative-PSR pairs (\u00a73b)** \u2014 confirm real alignment vs bad lock."
+  },
+  {
+   "file": "reports/stage_f5_valid_masks_2026-06-23.md",
+   "line": 42,
+   "text": "| `clean` | **9** | horizontal lock good on real cells (offset \u2264 30 m USBL, PSR > 0) |"
+  },
+  {
+   "file": "reports/stage_f5_valid_masks_2026-06-23.md",
+   "line": 43,
+   "text": "| `genuine_coreg_fail` | **14** | offset > 30 m or PSR \u2264 0 on real cells \u2192 QGIS scrutinize / likely exclude |"
+  },
+  {
+   "file": "reports/stage_f5_valid_masks_2026-06-23.md",
+   "line": 47,
+   "text": "Lock quality is judged on the **horizontal** \u00a73b criteria (offset within the AUV USBL"
+  },
+  {
+   "file": "reports/stage_f5_valid_masks_2026-06-23.md",
+   "line": 140,
+   "text": "The 9 `clean` pairs lock within the USBL bound on real data (offset 2.7\u201316.7 m,"
+  },
+  {
+   "file": "reports/stage_f5_valid_masks_2026-06-23.md",
+   "line": 142,
+   "text": "- **offset > 30 m** (most: FK181031\u00d724620 59.7 m, TN299\u00d731256 53.3 m, 2009_Amundsen 148.6 m, the SKQ/Tonga pairs ~47\u201353 m) \u2014 a solved shift beyond the AUV USBL bound: either a real large USBL error or a bad lock; **QGIS arbitrates**."
+  },
+  {
+   "file": "reports/stage_f5_valid_masks_2026-06-23.md",
+   "line": 180,
+   "text": "3. **14 coreg_fail (\u00a74):** QGIS-arbitrate large-offset vs bad-lock via the `_overlay_f5`."
+  },
+  {
+   "file": "reports/stage_c1_reharvest_step2_harmonization_2026-06-26.md",
+   "line": 18,
+   "text": "| **SantaMonica** `NA076\u00d732317` | Santa Monica Mound (margin seep mound) | new | 50 | 4.1 | \u2212862 / 866 \u2713 | 47 m / 0.8 m | offset > 30 m USBL \u2192 **QGIS arbitrate** (MAD 0.8 m is excellent; same ~47\u201353 m offset the original NA076 pair showed) |"
+  },
+  {
+   "file": "reports/stage_c1_reharvest_step2_harmonization_2026-06-26.md",
+   "line": 20,
+   "text": "All three read real negative depths matching their sites; QC figures show matching HR/LR hillshades, shared-scale depth, small HR\u2212LR diff over joint, and overlapping histograms. **Pescadero and Pythia lock cleanly within the USBL bound; Santa Monica's 47 m solved offset is the one judgment call** (a real USBL error vs a soft lock \u2014 the overlay is the arbiter, exactly as for the corpus's borderline pairs)."
+  },
+  {
+   "file": "reports/stage_c1_reharvest_step2_harmonization_2026-06-26.md",
+   "line": 35,
+   "text": "1. **Sign off the QC figures** (`c1_candidate__*.png`): I recommend advancing **Pescadero** and **Pythia** now; **Santa Monica** on your QGIS read of the 47 m offset."
+  },
+  {
+   "file": "reports/stage_c1_phase1_report_2026-06-26.md",
+   "line": 28,
+   "text": "- Harmonized the best sub-grid (`Shelf_Edge_Scar_w_Adj_Remnant`, 588k joint cells, full overlap): **144 tiles, \u2212239 m, coreg offset 35 m / MAD 0.73**. Offset just over the 30 m USBL bound (like Santa Monica) \u2192 **QGIS read** \u2014 MAD 0.73 m is excellent."
+  },
+  {
+   "file": "reports/stage_c1_append_report_2026-06-26.md",
+   "line": 16,
+   "text": "| `NA076\u00d732317` | Santa Monica Mound | continental_margin | 221 | 47.0 / 0.8 m | new lu; offset>USBL, QGIS-signed-off |"
+  },
+  {
+   "file": "reports/stage_manifest_completeness_report_2026-06-26.md",
+   "line": 32,
+   "text": "> `QGIS_R3_approved; PSR=undefined (no interior peak); offset=<X> m`"
+  },
+  {
+   "file": "reports/directive_phase2_stage_f5_valid_masks.md",
+   "line": 53,
+   "text": "`coregister._residuals` and `qa.compute` already restrict to finite-in-both \u2014 but **re-run them on the `joint_valid` (real-data) mask**, not just `isfinite`, so \u00a73b's bad locks (`KN210-05\u00d722436` 145 m, `FK006B\u00d720811` PSR \u22120.97, `FK171110\u00d724485` PSR \u221218) are judged on real soundings, not interpolated fill. Verdict per pair: `clean` / `rescued` (locks once fill excluded) / `genuine_coreg_fail` (still poor \u2192 scrutinize/exclude)."
+  },
+  {
+   "file": "src/discovery/stage_c1_phase1_execute.py",
+   "line": 111,
+   "text": "df.at[i, \"coreg_status\"] = f\"SUPERSEDE ver2025 SRift; masked_coreg offset={sr['coreg']['offset_m']}m MAD={sr['coreg']['post_mad_m']}m; QGIS_signed_off_2026-06-26\""
+  },
+  {
+   "file": "src/discovery/stage_c1_phase1_execute.py",
+   "line": 130,
+   "text": "\"coreg_status\": f\"masked_coreg offset={coreg['offset_m']}m MAD={coreg['post_mad_m']}m; QGIS_signed_off_2026-06-26\" + (\"; offset>30m_USBL_QGIS_basis\" if coreg[\"offset_m\"] > 30 else \"\"),"
+  },
+  {
+   "file": "src/discovery/stage_c1_append.py",
+   "line": 104,
+   "text": "+ (\"; offset>30m_USBL_QGIS_basis\" if (cg.get(\"offset_m\") or 0) > 30 else \"\"))"
+  },
+  {
+   "file": "src/discovery/stage_c1_append.py",
+   "line": 131,
+   "text": "f\"{'NOTE offset>USBL, QGIS-signed' if (cg.get('offset_m') or 0)>30 else 'clean lock'}\"),"
+  }
+ ]
+}

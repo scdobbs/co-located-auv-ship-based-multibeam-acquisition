@@ -1,0 +1,23 @@
+{
+ "cruise": "PANGAEA_864677",
+ "done": 6,
+ "todo": 55,
+ "fetched": 6,
+ "failed": [],
+ "gb_moved": 0.162,
+ "elapsed_h": 0.047,
+ "mean_rate_MBps": 0.9633,
+ "last": {
+  "name": "0002_20150216_192530_M114_EM122.all",
+  "url": "https://hs.pangaea.de/bathy/m114/0002_20150216_192530_M114_EM122.all",
+  "advertised": 32475136,
+  "status": "fetched",
+  "http": 200,
+  "bytes_transferred": 32476030,
+  "seconds": 28.5,
+  "attempts": 5,
+  "size": 32476030,
+  "sha256": "54fc8b1df796d302a8cdb2438deba4b58153c2460d0cbd731d4c1e8b836cb5c1"
+ },
+ "at": "2026-09-30T22:52:04+00:00"
+}
