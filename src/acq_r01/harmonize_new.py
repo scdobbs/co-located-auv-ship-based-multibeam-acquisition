@@ -242,6 +242,8 @@ def processed_lr_crosscheck(cruise: str, lr_out: Path, tmp: Path) -> dict:
         lr = ds.read(1, masked=True).filled(np.nan); tcrs, ttr = ds.crs, ds.transform; shp = lr.shape
         lr = np.where(np.isclose(lr, FILL, atol=1e-3), np.nan, lr)
     with rasterio.open(str(raw)) as ps:
+        if not np.issubdtype(np.dtype(ps.dtypes[0]), np.floating) or ps.count > 1:
+            rec["status"] = f"processed_product_not_a_float_grid (dtype {ps.dtypes[0]}, {ps.count} bands)"; return rec
         pcrs = ps.crs
         b = ps.bounds
         if pcrs is None and -180 <= b.left <= 180 and -90 <= b.bottom <= 90 and -90 <= b.top <= 90:

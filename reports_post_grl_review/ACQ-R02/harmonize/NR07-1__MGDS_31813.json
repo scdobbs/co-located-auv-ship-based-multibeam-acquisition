@@ -7,28 +7,23 @@
  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NR07-1__MGDS_31813",
  "hr_cruise": "AT26-15",
  "set": "H1",
- "hr_tiles_used": 46,
+ "hr_tiles_used": 16,
  "target_crs": "EPSG:32616",
- "overlap_km2": 23.728,
+ "overlap_km2": 19.799,
  "coreg": {
-  "dx_m": 36.0,
-  "dy_m": -3.0,
-  "dz_m": 395.28,
-  "offset_m": 36.13,
-  "n": 33447,
   "pass": false,
-  "post_residual_mad_m": 189.577
+  "error": "coregistration has only 0 valid samples"
  },
- "hr_res_m": 1.5,
- "n_hr_valid": 792460,
- "n_lr_valid": 7992915,
- "n_joint_valid": 614140,
- "joint_area_km2": 1.382,
- "n_valid_tiles_256": 2,
+ "hr_res_m": 1.499,
+ "n_hr_valid": 2321519,
+ "n_lr_valid": 0,
+ "n_joint_valid": 0,
+ "joint_area_km2": 0.0,
+ "n_valid_tiles_256": 0,
  "qa_pass": false,
- "hr_p50_over_joint_m": -1850.2,
+ "hr_p50_over_joint_m": null,
  "lr_native": {
-  "beam_footprint_m": 30.86,
+  "beam_footprint_m": 49.84,
   "posting_m": 49.9,
   "lr_native_m": 49.9,
   "beamwidth_deg": 1.0,
@@ -38,7 +33,7 @@
   "pair_id": "NR07-1__MGDS_31813",
   "status": "ok",
   "lr_native_m": 49.9,
-  "edge_coh": 0.012,
+  "edge_coh": null,
   "max_recoverable_k": 8,
   "per_k": {
    "2": "recoverable_signal",
@@ -59,20 +54,18 @@
   "pair_id": "NR07-1__MGDS_31813",
   "cruise": "NR07-1",
   "qa": {
-   "n_common_cells": 6240,
-   "median_offset_m": -0.1355,
-   "rms_m": 22.6455,
-   "robust_sigma_m": 3.1536,
+   "n_common_cells": 0,
+   "median_offset_m": null,
+   "rms_m": null,
+   "robust_sigma_m": null,
    "rms_over_median_s_lr": null,
    "robust_sigma_over_median_s_lr": null,
    "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
-   "shift_argmin_cells": [
-    -0.25,
-    -0.25
-   ],
+   "shift_argmin_cells": null,
    "shift_surface_file": "qa_shift_surface.csv",
    "flags": [
-    "registration_shift"
+    "insufficient_overlap",
+    "no_common_cells"
    ]
   },
   "control_vs_v1": {
@@ -81,9 +74,9 @@
    "ship_xtrack_frac": "v1 missing",
    "ship_beam_angle": "v1 missing"
   },
-  "median_rsd_over_sd": 0.8168147802352905,
-  "cells": 7352,
-  "beam_angle_method": "launch_angle",
+  "median_rsd_over_sd": null,
+  "cells": 0,
+  "beam_angle_method": "geometric",
   "matches_lr_tif": true
  },
  "processed_lr_crosscheck": {
@@ -94,5 +87,5 @@
   "status": "processed_product_is_xyz_points_not_gridded"
  },
  "status": "harmonized_development",
- "wall_s": 814.8
+ "wall_s": 1361.4
 }

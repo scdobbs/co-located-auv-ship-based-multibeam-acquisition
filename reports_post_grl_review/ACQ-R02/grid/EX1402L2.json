@@ -1,0 +1,28 @@
+{
+ "cruise": "EX1402L2",
+ "hr": [
+  "MGDS:31073"
+ ],
+ "n_files": 311,
+ "format": 163,
+ "sonar": "Kongsberg EM302",
+ "beamwidth_deg": 1.0,
+ "beamwidth_key": "em302",
+ "footprint_depth_m": 937.7,
+ "cell_m": 16.37,
+ "region": "-92.83270238284456/-87.99068894715543/27.06851387925009/29.18072005374991",
+ "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mbgrid -I datalist.mb-1 -O grid_EX1402L2 -R -92.83270238284456/-87.99068894715543/27.06851387925009/29.18072005374991 -E 0.00016670057276728457/0.0001470173052359923/degrees -A2 -G3 -F1 -C0 -M",
+ "mode": "raw",
+ "outputs": {
+  "grid": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/EX1402L2__union.grd",
+  "_num": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/EX1402L2__union_num.grd",
+  "_sd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/EX1402L2__union_sd.grd"
+ },
+ "fill_fraction_per_hr": {
+  "MGDS:31073": 0.4556
+ },
+ "grid_depth_median": -862.5,
+ "wall_s": 2933.5,
+ "mbsystem": "5.8.2beta06",
+ "code_commit": "885b3f7bc21cd647d77d37a6e67504a1e22d22f2"
+}

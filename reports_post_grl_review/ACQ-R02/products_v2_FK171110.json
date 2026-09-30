@@ -3,10 +3,10 @@
   "pair_id": "FK171110__MGDS_24424",
   "cruise": "FK171110",
   "qa": {
-   "n_common_cells": 53591,
-   "median_offset_m": -0.0627,
-   "rms_m": 5.7638,
-   "robust_sigma_m": 1.5756,
+   "n_common_cells": 5200,
+   "median_offset_m": -0.027,
+   "rms_m": 4.6569,
+   "robust_sigma_m": 1.1378,
    "rms_over_median_s_lr": null,
    "robust_sigma_over_median_s_lr": null,
    "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
@@ -23,8 +23,8 @@
    "ship_xtrack_frac": "v1 missing",
    "ship_beam_angle": "v1 missing"
   },
-  "median_rsd_over_sd": 0.9871938228607178,
-  "cells": 54702,
+  "median_rsd_over_sd": 0.969318151473999,
+  "cells": 5200,
   "beam_angle_method": "launch_angle",
   "matches_lr_tif": true
  }

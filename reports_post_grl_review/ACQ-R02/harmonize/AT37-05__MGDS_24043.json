@@ -1,0 +1,92 @@
+{
+ "pair_id": "AT37-05__MGDS_24043",
+ "hr_id": "MGDS:24043",
+ "lr_cruise": "AT37-05",
+ "designation": "development (joins existing unit)",
+ "unit": "vu05",
+ "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT37-05__MGDS_24043",
+ "hr_cruise": "AT37-05",
+ "set": "R01",
+ "hr_tiles_used": 12,
+ "target_crs": "EPSG:32613",
+ "overlap_km2": 14.679,
+ "coreg": {
+  "dx_m": -12.98,
+  "dy_m": 13.05,
+  "dz_m": -73.9,
+  "offset_m": 18.41,
+  "n": 79821,
+  "pass": true,
+  "post_residual_mad_m": 20.773
+ },
+ "hr_res_m": 1.001,
+ "n_hr_valid": 4253679,
+ "n_lr_valid": 14569248,
+ "n_joint_valid": 4251803,
+ "joint_area_km2": 4.261,
+ "n_valid_tiles_256": 71,
+ "qa_pass": true,
+ "hr_p50_over_joint_m": -2499.0,
+ "lr_native": {
+  "beam_footprint_m": 44.02,
+  "posting_m": 55.99,
+  "lr_native_m": 55.99,
+  "beamwidth_deg": 1.0,
+  "rule": "max(footprint, posting) (C2a)"
+ },
+ "k_sweep": {
+  "pair_id": "AT37-05__MGDS_24043",
+  "status": "ok",
+  "lr_native_m": 56.0,
+  "edge_coh": 0.003,
+  "max_recoverable_k": 4,
+  "per_k": {
+   "2": "recoverable_signal",
+   "4": "recoverable_signal",
+   "8": "roughness_only",
+   "16": "roughness_only",
+   "32": "no_spectrum"
+  },
+  "thresholds": {
+   "slope_red": -0.97,
+   "slope_white": -0.8,
+   "coh_circular": 0.136,
+   "grid": "AUV-native final harmonized; anchors=21 validated; corrected lr_native"
+  }
+ },
+ "qc_figure": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/qc/acq_r02/AT37-05__MGDS_24043.png",
+ "products_v2": {
+  "pair_id": "AT37-05__MGDS_24043",
+  "cruise": "AT37-05",
+  "qa": {
+   "n_common_cells": 4698,
+   "median_offset_m": 46.3285,
+   "rms_m": 57.8225,
+   "robust_sigma_m": 28.8933,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    -1.0,
+    1.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "vertical_offset",
+    "registration_shift"
+   ]
+  },
+  "control_vs_v1": {
+   "ship_count": "v1 missing",
+   "ship_sd": "v1 missing",
+   "ship_xtrack_frac": "v1 missing",
+   "ship_beam_angle": "v1 missing"
+  },
+  "median_rsd_over_sd": 0.07916930317878723,
+  "cells": 4698,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ },
+ "status": "harmonized_development",
+ "wall_s": 3152.6
+}

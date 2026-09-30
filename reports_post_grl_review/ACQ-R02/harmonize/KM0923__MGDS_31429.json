@@ -9,24 +9,24 @@
  "set": "R01",
  "hr_tiles_used": 2,
  "target_crs": "EPSG:32605",
- "overlap_km2": 95.924,
+ "overlap_km2": 95.912,
  "coreg": {
-  "dx_m": -33.36,
-  "dy_m": -3.15,
-  "dz_m": -15.48,
-  "offset_m": 33.5,
-  "n": 53845,
-  "pass": false,
-  "post_residual_mad_m": 8.129
+  "dx_m": -13.57,
+  "dy_m": -3.3,
+  "dz_m": -15.72,
+  "offset_m": 13.96,
+  "n": 53515,
+  "pass": true,
+  "post_residual_mad_m": 8.162
  },
- "hr_res_m": 3.357,
- "n_hr_valid": 1565515,
- "n_lr_valid": 6580773,
- "n_joint_valid": 1375500,
- "joint_area_km2": 15.499,
- "n_valid_tiles_256": 23,
- "qa_pass": false,
- "hr_p50_over_joint_m": -4800.6,
+ "hr_res_m": 2.054,
+ "n_hr_valid": 4182354,
+ "n_lr_valid": 17687830,
+ "n_joint_valid": 3677714,
+ "joint_area_km2": 15.517,
+ "n_valid_tiles_256": 57,
+ "qa_pass": true,
+ "hr_p50_over_joint_m": -4801.1,
  "lr_native": {
   "beam_footprint_m": 83.56,
   "posting_m": 86.94,
@@ -38,13 +38,13 @@
   "pair_id": "KM0923__MGDS_31429",
   "status": "ok",
   "lr_native_m": 86.9,
-  "edge_coh": 0.002,
-  "max_recoverable_k": 8,
+  "edge_coh": 0.009,
+  "max_recoverable_k": 16,
   "per_k": {
    "2": "recoverable_signal",
    "4": "recoverable_signal",
    "8": "recoverable_signal",
-   "16": "no_spectrum",
+   "16": "recoverable_signal",
    "32": "no_spectrum"
   },
   "thresholds": {
@@ -87,5 +87,5 @@
   "matches_lr_tif": true
  },
  "status": "harmonized_development",
- "wall_s": 880.4
+ "wall_s": 2599.9
 }

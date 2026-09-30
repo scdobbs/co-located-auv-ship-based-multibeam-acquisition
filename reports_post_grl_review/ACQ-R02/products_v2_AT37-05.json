@@ -1,20 +1,23 @@
 [
  {
-  "pair_id": "NR07-1__MGDS_31813",
-  "cruise": "NR07-1",
+  "pair_id": "AT37-05__MGDS_24043",
+  "cruise": "AT37-05",
   "qa": {
-   "n_common_cells": 0,
-   "median_offset_m": null,
-   "rms_m": null,
-   "robust_sigma_m": null,
+   "n_common_cells": 4698,
+   "median_offset_m": 46.3285,
+   "rms_m": 57.8225,
+   "robust_sigma_m": 28.8933,
    "rms_over_median_s_lr": null,
    "robust_sigma_over_median_s_lr": null,
    "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
-   "shift_argmin_cells": null,
+   "shift_argmin_cells": [
+    -1.0,
+    1.0
+   ],
    "shift_surface_file": "qa_shift_surface.csv",
    "flags": [
-    "insufficient_overlap",
-    "no_common_cells"
+    "vertical_offset",
+    "registration_shift"
    ]
   },
   "control_vs_v1": {
@@ -23,9 +26,9 @@
    "ship_xtrack_frac": "v1 missing",
    "ship_beam_angle": "v1 missing"
   },
-  "median_rsd_over_sd": null,
-  "cells": 0,
-  "beam_angle_method": "geometric",
+  "median_rsd_over_sd": 0.07916930317878723,
+  "cells": 4698,
+  "beam_angle_method": "launch_angle",
   "matches_lr_tif": true
  }
 ]
