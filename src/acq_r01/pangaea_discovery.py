@@ -56,7 +56,8 @@ HR_EXCL_RE = re.compile(r"sensor data|CTD|turbidity|photo|image|mosaic|video|sid
                         r"backscatter (data|processed)|navigation|track|USBL|position", re.I)
 # ship datasets that are not bathymetry although a multibeam sonar is named in the title (ACQ-R02 §5 fix:
 # the Kolumbo candidate's best LR had been an EM710 *water column* dataset)
-SHIP_EXCL_RE = re.compile(r"water ?column|backscatter|sidescan|side-scan|navigation|sound velocity|CTD|calibration", re.I)
+# (title *starts* with the non-bathymetry product: raw-swath titles legitimately mention "bathymetry ... & water column")
+SHIP_EXCL_RE = re.compile(r"^\s*(water ?column|backscatter|sidescan|side-scan|navigation|sound velocity|CTD|calibration)\b", re.I)
 SHIP_SONAR_RE = re.compile(r"EM ?\d{3,4}|Hydrosweep|SeaBeam|multibeam|swath sonar", re.I)
 RAW_RE = re.compile(r"raw data|links to raw|RAW-Data|entire dataset", re.I)
 COMPOSITE_RE = re.compile(r"combined|merged|compil|GEBCO|GMRT|synthesis|integrat", re.I)

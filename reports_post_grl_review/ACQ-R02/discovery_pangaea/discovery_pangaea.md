@@ -4,7 +4,7 @@
  "auv_hits": 10809,
  "auv_bathymetry_datasets": 11,
  "ship_hits": 13145,
- "ship_datasets": 1215,
+ "ship_datasets": 1060,
  "status_counts": {
   "candidate": 5,
   "in_corpus": 3,
@@ -28,10 +28,10 @@
 
 | unit | n | basin | setting | depth | best LR | HR (PANGAEA id, platform, campaign) |
 |---|---|---|---|---|---|---|
-| pu00 | 1 | Mediterranean | hydrothermal_vent | 1600.0–1600.0 | PANGAEA:892317 | PANGAEA:884112 AUV  |
-| pu01 | 1 | Gulf of Mexico/Caribbean | volcanic_or_seamount | 1200.0–2900.0 | PANGAEA:864677 | PANGAEA:889317 AUV M114/1 |
+| pu00 | 1 | Mediterranean | hydrothermal_vent | 1600.0–1600.0 | PANGAEA:891656 | PANGAEA:884112 AUV  |
+| pu01 | 1 | Gulf of Mexico/Caribbean | volcanic_or_seamount | 1200.0–2900.0 | PANGAEA:900987 | PANGAEA:889317 AUV M114/1 |
 | pu02 | 1 | Mediterranean | continental_margin | None–None | PANGAEA:922750 | PANGAEA:941403 AUV AL532 |
-| pu03 | 1 | Mediterranean | hydrothermal_vent | None–None | PANGAEA:994139 | PANGAEA:958275 AUV POS510 |
+| pu03 | 1 | Mediterranean | hydrothermal_vent | None–None | PANGAEA:993972 | PANGAEA:958275 AUV POS510 |
 
 ## Candidates joining EXISTING units (DISCOL / CCZ / TAG / others)
 

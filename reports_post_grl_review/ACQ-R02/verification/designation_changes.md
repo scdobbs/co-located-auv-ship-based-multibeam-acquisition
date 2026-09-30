@@ -20,8 +20,9 @@
 | nu02 | MGDS:30368 |  | MGDS:30368: development | RCSN204 | RP15DI86 |
 | nu01 | MGDS:32239 |  | MGDS:32239: confirmatory | nan | RC2511 |
 | nu03 | MGDS:33090 |  | MGDS:33090: confirmatory | NA179 | SUM1004 |
-| pu01 | PANGAEA:889317 |  | PANGAEA:889317: development | M114/1 | PANGAEA:864677 |
-| pu03 | PANGAEA:958275 |  | PANGAEA:958275: confirmatory | POS510 | PANGAEA:994139 |
+| pu01 | PANGAEA:889317 |  | PANGAEA:889317: development | M114/1 | PANGAEA:900987 |
+| pu03 | PANGAEA:958275 |  | PANGAEA:958275: confirmatory | POS510 | PANGAEA:993972 |
+| pu00 | PANGAEA:884112 |  | PANGAEA:884112: development |  | PANGAEA:891656 |
 
 ## Changes against ACQ-R01 / §4.3 assignments
 
@@ -39,5 +40,4 @@
 | MGDS:24449 | nan | development (joins existing unit) | no_elevation_raster | no readable float raster (renders/PDF only) |
 | MGDS:33027 | nan | development (joins existing unit) | false_pair | no LR footprint overlaps the real HR footprint (best PASC02WT: 0.05) |
 | MGDS:33081 | nu03 | confirmatory | false_pair | no LR footprint overlaps the real HR footprint (best SUM1004: 0.002) |
-| PANGAEA:884112 | pu00 | development | no_elevation_raster | no readable float raster (renders/PDF only) |
-| PANGAEA:941403 | pu02 | confirmatory | hr_download_or_footprint_failed | 503 Server Error: Service Unavailable for url: https://download.pangaea.de/dataset/941403/files/Abyss354-Mittelwert.tif |
+| PANGAEA:941403 | pu02 | confirmatory | no_elevation_raster | no readable float raster (renders/PDF only) |

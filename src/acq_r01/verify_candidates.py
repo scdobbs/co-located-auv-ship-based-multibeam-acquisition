@@ -52,6 +52,7 @@ R01 = C.REPO / "reports_post_grl_review" / "ACQ-R01"
 R02 = C.REPO / "reports_post_grl_review" / "ACQ-R02"
 OUT = R02 / "verification"
 RAW_HR = C.OAK / "raw_hr"
+CACHE = C.SCRATCH_DATA / "discovery_cache" / "acq_r02_verify"
 H1 = ["MGDS:5174", "MGDS:24002", "MGDS:31321", "MGDS:31813", "MGDS:31814", "MGDS:31831", "MGDS:20815", "MGDS:21847", "MGDS:31073", "MGDS:31291", "MGDS:24467"]
 LOCKBOX_HR_CRUISES = {"AT42-03", "AT15-36"}
 R_KM = 50.0
@@ -411,6 +412,71 @@ def hr_footprint(row, meta) -> dict:
     return {**info, "geom": geom}
 
 
+PANGAEA_LR_FP_SOURCE: dict = {}
+
+
+def pangaea_lr_footprint(pid: str, pship: pd.DataFrame):
+    """Real (or best available) footprint of a PANGAEA ship dataset. The ES bbox of a raw-swath dataset is
+    often just the track's start and end point (e.g. M112 892317: 'M112-track' event), so it cannot be
+    used as an extent. Order: (1) valid-data polygon of a same-campaign processed grid (small download,
+    kept under raw_lr_gridded/processed_crosscheck/); (2) union of per-file bounding boxes from the tab
+    export; (3) per-file start positions buffered 0.1 deg; (4) the metadata bbox, flagged."""
+    import io
+    cache = CACHE / "pangaea_lr_fp"; cache.mkdir(parents=True, exist_ok=True)
+    fp = cache / f"{pid}.geojson"
+    if fp.exists():
+        g = gpd.read_file(fp); PANGAEA_LR_FP_SOURCE[pid] = g.iloc[0].get("source", "cached"); return g.geometry.union_all()
+    r = pship.loc[pid]
+    camps = {c for c in str(r.campaigns).split(";") if c and c != "nan"}
+    geom, src = None, None
+    # (1) processed grid of the same campaign (or the dataset itself if it is a grid)
+    grids = [pid] if r.lr_kind == "pangaea_processed_grid" else []
+    grids += [i for i, x in pship.iterrows() if x.lr_kind == "pangaea_processed_grid" and i != pid and camps & {c for c in str(x.campaigns).split(";") if c}]
+    for gid in grids[:2]:
+        try:
+            urls = [u for u in pangaea_file_urls(gid) if re.search(r"\.(grd|tif|tiff|nc|asc)(\.gz)?$", u, re.I)]
+            if not urls:
+                continue
+            d = C.OAK / "raw_lr_gridded" / "processed_crosscheck" / f"PANGAEA_{gid}"; d.mkdir(parents=True, exist_ok=True)
+            u = urls[0]; lp = d / u.rsplit("/", 1)[-1]
+            if not lp.exists():
+                with requests.get(u, headers=H, stream=True, timeout=900) as g:
+                    g.raise_for_status()
+                    with lp.with_name(lp.name + ".part").open("wb") as fh:
+                        for ch in g.iter_content(1 << 20):
+                            fh.write(ch)
+                lp.with_name(lp.name + ".part").rename(lp)
+            for rp in stage_b._decompress(lp):
+                p4326, crs, how = polygon_with_crs_fallback(rp, f"PANGAEA:{gid}", d)
+                geom, src = p4326, f"processed_grid PANGAEA:{gid} ({rp.name}, {crs}/{how})"; break
+            if geom is not None:
+                break
+        except Exception as e:
+            log.warning("PANGAEA %s processed-grid footprint via %s failed: %s", pid, gid, str(e)[:100])
+    if geom is None:
+        try:
+            t = requests.get(f"https://doi.pangaea.de/10.1594/PANGAEA.{pid}?format=textfile", headers=H, timeout=120).text.splitlines()
+            s0 = [i for i, l in enumerate(t) if l.startswith("*/")][0] + 1
+            df = pd.read_csv(io.StringIO("\n".join(t[s0:])), sep="\t")
+            cols = {c.lower(): c for c in df.columns}
+            if {"longitude east", "longitude west", "latitude south", "latitude north"} <= set(cols):
+                bxs = [box(w, so, e, n) for w, e, so, n in zip(df[cols["longitude west"]], df[cols["longitude east"]], df[cols["latitude south"]], df[cols["latitude north"]]) if np.isfinite([w, e, so, n]).all()]
+                geom, src = unary_union(bxs), f"per_file_bboxes ({len(bxs)} files)"
+            else:
+                lo = next((c for c in df.columns if re.match(r"(File start )?longitude$", c, re.I)), None); la = next((c for c in df.columns if re.match(r"(File start )?latitude$", c, re.I)), None)
+                if lo and la:
+                    from shapely.geometry import Point
+                    pts = [Point(x, y).buffer(0.1) for x, y in zip(df[lo], df[la]) if np.isfinite([x, y]).all()]
+                    geom, src = unary_union(pts), f"per_file_start_positions_buffered_0.1deg ({len(pts)} files)"
+        except Exception as e:
+            log.warning("PANGAEA %s tab footprint failed: %s", pid, str(e)[:100])
+    if geom is None:
+        geom, src = box(r.west, r.south, r.east, r.north), "metadata_bbox (may be track endpoints only)"
+    gpd.GeoDataFrame({"id": [pid], "source": [src]}, geometry=[geom], crs="EPSG:4326").to_file(fp, driver="GeoJSON")
+    PANGAEA_LR_FP_SOURCE[pid] = src
+    return geom
+
+
 def lr_overlaps(geom, lr_cruises: set, ncei: gpd.GeoDataFrame, pship: pd.DataFrame | None) -> dict:
     out = {}
     if geom is None:
@@ -419,8 +485,11 @@ def lr_overlaps(geom, lr_cruises: set, ncei: gpd.GeoDataFrame, pship: pd.DataFra
     for cr in lr_cruises:
         if cr.startswith("PANGAEA:"):
             if pship is not None and cr.split(":")[1] in pship.index:
-                r = pship.loc[cr.split(":")[1]]; g = box(r.west, r.south, r.east, r.north)
-                inter = make_valid(geom).intersection(g); out[cr] = round(stage_b._polygon_area_km2(inter), 3) if not inter.is_empty else 0.0
+                try:
+                    g = make_valid(pangaea_lr_footprint(cr.split(":")[1], pship))
+                except Exception as e:
+                    log.warning("footprint %s failed: %s", cr, str(e)[:80]); out[cr] = None; continue
+                inter = geom.intersection(g); out[cr] = round(stage_b._polygon_area_km2(inter), 3) if not inter.is_empty else 0.0
             continue
         sub = ncei[ncei.SURVEY_ID == cr]
         if sub.empty:
@@ -480,6 +549,7 @@ def main(argv=None):
         ov = lr_overlaps(geom, lrs, ncei, pship)
         real = {k: v for k, v in ov.items() if v and v >= MIN_OVERLAP_KM2}
         rec["lr_overlap_km2"] = json.dumps(ov); rec["lr_cruises_real"] = ";".join(sorted(real))
+        rec["lr_footprint_source"] = json.dumps({k: PANGAEA_LR_FP_SOURCE[k.split(":")[1]] for k in ov if k.startswith("PANGAEA:") and k.split(":")[1] in PANGAEA_LR_FP_SOURCE})[:300]
         if not real:
             rec.update({"status": "false_pair", "reason": f"no LR footprint overlaps the real HR footprint (best {r.lr_best}: {ov.get(r.lr_best)})"}); recs.append(rec); continue
         rec["lr_best_real"] = r.lr_best if r.lr_best in real else max(real, key=real.get)

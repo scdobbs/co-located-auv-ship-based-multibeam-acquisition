@@ -319,7 +319,7 @@
         "M114/1"
       ],
       "lr_cruises": [
-        "PANGAEA:864677"
+        "PANGAEA:900987"
       ],
       "corpus_members": []
     },
@@ -336,7 +336,24 @@
         "POS510"
       ],
       "lr_cruises": [
-        "PANGAEA:994139"
+        "PANGAEA:993972"
+      ],
+      "corpus_members": []
+    },
+    {
+      "unit_id": "pu00",
+      "members": [
+        "PANGAEA:884112"
+      ],
+      "corpus_units": [],
+      "designations": {
+        "PANGAEA:884112": "development"
+      },
+      "hr_cruises": [
+        ""
+      ],
+      "lr_cruises": [
+        "PANGAEA:891656"
       ],
       "corpus_members": []
     }
@@ -402,18 +419,11 @@
       "no LR footprint overlaps the real HR footprint (best SUM1004: 0.002)"
     ],
     [
-      "PANGAEA:884112",
-      "pu00",
-      "development",
-      "no_elevation_raster",
-      "no readable float raster (renders/PDF only)"
-    ],
-    [
       "PANGAEA:941403",
       "pu02",
       "confirmatory",
-      "hr_download_or_footprint_failed",
-      "503 Server Error: Service Unavailable for url: https://download.pangaea.de/dataset/941403/files/Abyss354-Mittelwert.tif"
+      "no_elevation_raster",
+      "no readable float raster (renders/PDF only)"
     ]
   ]
 }

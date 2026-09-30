@@ -36,7 +36,7 @@ R02 = C.REPO / "reports_post_grl_review" / "ACQ-R02"
 GRIDDED = C.OAK / "raw_lr_gridded"
 BEAMWIDTH = [("em122", 1.0), ("em120", 1.0), ("em124", 1.0), ("em302", 1.0), ("em304", 1.0), ("em300", 1.0), ("em710", 1.0), ("em712", 1.0),
              ("em1002", 2.0), ("em2040", 1.0), ("seabeam 2100", 2.0), ("seabeam 2112", 2.0), ("seabeam 2000", 3.3), ("seabeam 3012", 1.5),
-             ("seabeam 3050", 1.5), ("hydrosweep", 2.3), ("seabeam", 2.0), ("reson", 1.0)]
+             ("seabeam 3050", 1.5), ("seabeam1050", 1.5), ("seabeam 1050", 1.5), ("hydrosweep", 2.3), ("seabeam", 2.0), ("reson", 1.0)]
 DEFAULT_BW = 1.5
 
 

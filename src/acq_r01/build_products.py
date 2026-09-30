@@ -84,6 +84,8 @@ def fmt_for(name: str) -> int:
         return 58            # Kongsberg .all (3rd-gen); stage C used 58 for *.all.mb58.gz
     if re.search(r"\.gsf(\.gz)?$", name, re.I):
         return 121
+    if re.search(r"\.xse(\.gz)?$", name, re.I):
+        return 94             # ELAC/SeaBeam XSE (MB-System MBF_L3XSERAW); AL532 SeaBeam 1050 (ACQ-R02)
     raise ValueError(f"cannot infer MB format for {name}")
 
 

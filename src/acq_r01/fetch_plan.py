@@ -14,6 +14,7 @@ The plan is NOT executed here.  Cumulative volume > 500 GB -> the plan is a HOLD
 from __future__ import annotations
 
 import io
+import re
 import json
 import logging
 import math
@@ -93,11 +94,32 @@ def plan_pangaea(dataset_id: str, hr_geoms: list, depth_m: float) -> tuple[list[
     except IndexError:
         return [], {"cruise": f"PANGAEA:{dataset_id}", "status": "no_file_table", "note": r.text[:100]}
     df = pd.read_csv(io.StringIO("\n".join(lines[s:])), sep="\t")
-    ucol = next((c for c in df.columns if "URL raw" in c), None) or next((c for c in df.columns if "URL" in c), None)
+    ucol = next((c for c in df.columns if "URL raw" in c), None) or next((c for c in df.columns if "URL all" in c), None) or next((c for c in df.columns if "URL" in c), None)
+    if ucol is None and any(c.startswith("Binary") for c in df.columns):
+        # PANGAEA binary-object datasets (e.g. AL532 922750): several 'Binary' column groups (svp .tsv, .xse, .inf);
+        # take the group whose 'Content' says multibeam raw data file, URL = download.pangaea.de/dataset/<id>/files/<name>
+        bcols = [c for c in df.columns if c == "Binary" or re.match(r"Binary\.\d+$", c)]
+        recs = []
+        for bc in bcols:
+            sfx = bc[len("Binary"):]
+            cc = f"Content{sfx}"; sc = f"Binary (Size) [Bytes]{sfx}"
+            for _, r in df.iterrows():
+                name = r.get(bc); content = str(r.get(cc, ""))
+                if isinstance(name, str) and name and re.search(r"\.(all|xse|mb\d+|gsf|s7k|kmall)(\.gz)?$", name, re.I) and not re.search(r"supplementary|navigation", content, re.I):
+                    recs.append({"name": name, "bytes": _parse_size(r.get(sc)), "url": f"https://download.pangaea.de/dataset/{dataset_id}/files/{name}",
+                                 "lat": r.get("File start latitude"), "lon": r.get("File start longitude")})
+        if not recs:
+            return [], {"cruise": f"PANGAEA:{dataset_id}", "status": "no_raw_urls", "note": "binary columns but no multibeam raw files"}
+        df = pd.DataFrame(recs); ucol = "url"; size = df.bytes.astype("int64")
+        df["File size [kByte]"] = size / 1024.0; df["Latitude"] = df.lat; df["Longitude"] = df.lon; df["File format"] = df.name.str.rsplit(".", n=1).str[-1]
     if ucol is None:
         return [], {"cruise": f"PANGAEA:{dataset_id}", "status": "no_raw_urls", "note": str(list(df.columns))[:150]}
     df = df[df[ucol].notna()]
-    size = (df["File size [kByte]"] * 1024).round().astype("int64") if "File size [kByte]" in df else pd.Series([0] * len(df))
+    # multibeam raw files only (M112 892317 lists .all and .wcd rows in one table; sound-velocity .tsv etc. are not swath)
+    df = df[df[ucol].astype(str).str.contains(r"\.(?:all|xse|mb\d+|gsf|s7k|kmall)(?:\.gz)?$", case=False, regex=True)]
+    if df.empty:
+        return [], {"cruise": f"PANGAEA:{dataset_id}", "status": "no_raw_urls", "note": "no multibeam raw swath files in the file table"}
+    size = (df["File size [kByte]"] * 1024).round().astype("int64") if "File size [kByte]" in df else pd.Series([0] * len(df), index=df.index)
     whole_gb = float(size.sum()) / 1e9
     if whole_gb < WHOLE_GB or not {"Latitude", "Longitude"} <= set(df.columns):
         keep = np.ones(len(df), bool); mode = "whole" if whole_gb < WHOLE_GB else "whole (no per-file position)"
@@ -111,6 +133,14 @@ def plan_pangaea(dataset_id: str, hr_geoms: list, depth_m: float) -> tuple[list[
             for u, b in zip(sub[ucol], size[keep])]
     return plan, {"cruise": f"PANGAEA_{dataset_id}", "status": "planned", "source": "PANGAEA", "n_files_total": int(len(df)), "n_files_planned": int(len(sub)),
                   "whole_gb": round(whole_gb, 2), "planned_gb": round(float(size[keep].sum()) / 1e9, 2), "mode": mode, "format_hint": str(df["File format"].iloc[0]) if "File format" in df else ""}
+
+
+def _parse_size(v) -> int:
+    """'2.4 MBytes' / '719 Bytes' / '17.9 kBytes' -> bytes."""
+    m = re.match(r"\s*([\d.]+)\s*([kMG]?)Bytes", str(v))
+    if not m:
+        return 0
+    return int(float(m.group(1)) * {"": 1, "k": 1024, "M": 1024 ** 2, "G": 1024 ** 3}[m.group(2)])
 
 
 def hav_km_pt(lon1, lat1, lon2, lat2):
