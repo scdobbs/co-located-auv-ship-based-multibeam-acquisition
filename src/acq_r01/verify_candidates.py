@@ -43,6 +43,8 @@ from shapely.ops import unary_union
 from src.acq_r01 import common as C
 from src.acq_r01.discovery_rerun import basin, hav_km, UF
 from src.discovery import stage_b
+from rasterio.features import shapes as _shapes
+stage_b.shapes = _shapes
 from src.discovery.hr_format_gate import is_rgb_visualization
 
 log = logging.getLogger("acq_r02.verify")
@@ -164,6 +166,110 @@ def pangaea_file_urls(pid: str) -> list[str]:
     return urls
 
 
+# --------------------------------------------------------------------------- #
+# CRS fallback for grids without an embedded CRS (.asc, GMT .grd, COARDS .nc): the June pipeline's
+# crs_recovery logic in compact form — catalog native_crs when it is an EPSG code, else geographic
+# if the coordinate ranges are lon/lat, else the UTM zone of the catalog centroid; the recovered
+# polygon must land within 2 deg of the catalog centroid or it is rejected (crs_failed_verification).
+# --------------------------------------------------------------------------- #
+_CATS = None
+
+
+def _catalog_info(hr_id):
+    global _CATS
+    if _CATS is None:
+        _CATS = []
+        for cat in (R01 / "discovery_rerun" / "hr_catalog.gpkg", C.REPO / "reports/discovery/hr_catalog.gpkg"):
+            try:
+                _CATS.append(gpd.read_file(cat, layer="hr").set_index("hr_id"))
+            except Exception:
+                pass
+    crs, cen = None, None
+    for g in _CATS:
+        if hr_id in g.index:
+            r = g.loc[hr_id]
+            for col in ("recovered_crs", "native_crs"):
+                v = r.get(col) if hasattr(r, "get") else None
+                if crs is None and isinstance(v, str) and v.upper().startswith("EPSG"):
+                    crs = v
+            if cen is None and r.geometry is not None:
+                cen = (r.geometry.centroid.x, r.geometry.centroid.y)
+    return crs, cen
+
+
+def _open_any(rp: Path, tmp: Path, crs_hint):
+    """Open a raster for polygonisation; returns (rasterio path to open, crs string or None)."""
+    from src import gmt_grd
+    from src.discovery.stage_c5_sweep import _read_coards_grd
+    if gmt_grd.is_gmt_grd(rp):
+        out = tmp / (rp.stem + ".gmtconv.tif")
+        if not out.exists():
+            gmt_grd.convert(rp, out, crs=crs_hint)
+        return out
+    for cand in (str(rp), f"NETCDF:{rp}"):
+        try:
+            with rasterio.open(cand) as ds:
+                if ds.transform is not None and not (abs(ds.transform.a - 1) < 1e-12 and abs(ds.transform.e - 1) < 1e-12):
+                    return cand
+        except Exception:
+            continue
+    out = tmp / (rp.stem + ".coards.tif")
+    if not out.exists():
+        _read_coards_grd(rp, crs_hint, out)
+    return out
+
+
+def polygon_with_crs_fallback(rp: Path, hr_id: str, tmp: Path):
+    """(poly4326, crs_used, note).  Tries the stage-B path first; on 'no CRS' infers one."""
+    try:
+        poly, crs = stage_b._valid_polygon_from_raster(rp)
+        p4326 = stage_b._native_to_4326(poly, crs)
+        b = p4326.bounds if p4326 is not None else None
+        # a GMT grid converted without a CRS is labelled EPSG:4326 but holds projected coordinates
+        if b is not None and -180 <= b[0] <= 180 and -180 <= b[2] <= 180 and -90 <= b[1] <= 90 and -90 <= b[3] <= 90:
+            return p4326, crs, "embedded"
+    except Exception as e:
+        if "no CRS" not in str(e) and "Invalid projection" not in str(e):
+            raise
+    cat_crs, cen = _catalog_info(hr_id)
+    src = _open_any(rp, tmp, cat_crs)
+    with rasterio.open(src) as ds:
+        b = ds.bounds; h, w = ds.height, ds.width
+        sy = max(1, h // 1024); sx = max(1, w // 1024)
+        arr = ds.read(1, out_shape=(h // sy, w // sx), masked=True)
+        tr = ds.transform * ds.transform.scale(sx, sy)
+    geographic = -180 <= b.left <= 180 and -180 <= b.right <= 180 and -90 <= b.bottom <= 90 and -90 <= b.top <= 90
+    cands = []
+    if cat_crs:
+        cands.append((cat_crs, "catalog"))
+    if geographic:
+        cands.append(("EPSG:4326", "range_geographic"))
+    if cen is not None and not geographic:
+        z = int((cen[0] + 180) // 6) + 1
+        cands.append((f"EPSG:{(32600 if cen[1] >= 0 else 32700) + z}", "utm_from_catalog_centroid"))
+        cands.append((f"EPSG:{(32700 if cen[1] >= 0 else 32600) + z}", "utm_other_hemisphere"))
+    m = arr.mask if hasattr(arr, "mask") else np.zeros(arr.shape, bool)
+    if np.isscalar(m) or getattr(m, "ndim", 0) == 0:
+        m = np.zeros(arr.shape, bool)
+    valid = (~m) & np.isfinite(np.asarray(arr.filled(np.nan), dtype="float32"))
+    valid = np.squeeze(valid).astype("uint8")
+    if valid.sum() == 0:
+        raise RuntimeError("no valid pixels")
+    polys = [shape(g) for g, val in stage_b.shapes(valid, mask=valid.astype(bool), transform=tr) if val == 1]
+    native = unary_union(polys)
+    for crs, why in cands:
+        try:
+            p4326 = stage_b._native_to_4326(native, crs)
+        except Exception:
+            continue
+        if p4326 is None or p4326.is_empty:
+            continue
+        c = p4326.centroid
+        if cen is None or (abs(c.x - cen[0]) <= 2.0 and abs(c.y - cen[1]) <= 2.0):
+            return p4326, crs, why
+    raise RuntimeError(f"crs_failed_verification (tried {[c for c, _ in cands]}; catalog centroid {cen})")
+
+
 def download_hr(row) -> dict:
     d = RAW_HR / row.hr_id.replace(":", "_"); d.mkdir(parents=True, exist_ok=True)
     meta_p = d / "download_manifest.json"
@@ -205,13 +311,14 @@ def hr_footprint(row, meta) -> dict:
         for rp in rasters:
             if rp.suffix.lower() in (".pdf", ".txt", ".xml", ".jpg", ".png", ".kml", ".kmz"):
                 per_file.append({"file": rp.name, "status": "non_raster"}); continue
+            if rp.suffix.lower() in (".xyz", ".txt", ".csv", ".dat"):
+                per_file.append({"file": rp.name, "status": "xyz_points_not_a_grid"}); continue
             rgb, why = is_rgb_visualization(rp)
             if rgb:
                 per_file.append({"file": rp.name, "status": f"rgb_render:{why}"}); continue
             try:
-                poly, crs = stage_b._valid_polygon_from_raster(rp)
-                p4326 = stage_b._native_to_4326(poly, crs)
-                polys.append(p4326); per_file.append({"file": rp.name, "status": "ok", "crs": crs, "area_km2": round(stage_b._polygon_area_km2(p4326), 3)})
+                p4326, crs, how = polygon_with_crs_fallback(rp, row.hr_id, d)
+                polys.append(p4326); per_file.append({"file": rp.name, "status": "ok", "crs": crs, "crs_source": how, "area_km2": round(stage_b._polygon_area_km2(p4326), 3)})
                 try:
                     with rasterio.open(str(rp)) as ds:
                         for k, v in ds.tags().items():
