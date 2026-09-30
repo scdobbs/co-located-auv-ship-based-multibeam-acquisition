@@ -1,0 +1,63 @@
+{
+ "pair_id": "2009_Amundsen__MGDS_30047",
+ "hr_id": "MGDS:30047",
+ "lr_cruise": "2009_Amundsen",
+ "designation": "development (joins existing unit)",
+ "unit": "lu18",
+ "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/2009_Amundsen__MGDS_30047",
+ "hr_cruise": NaN,
+ "set": "R01",
+ "hr_tiles_used": 4,
+ "target_crs": "EPSG:32608",
+ "overlap_km2": 263.294,
+ "coreg": {
+  "dx_m": -27.03,
+  "dy_m": 7.13,
+  "dz_m": -2.16,
+  "offset_m": 27.95,
+  "n": 70322,
+  "pass": true,
+  "post_residual_mad_m": 0.909
+ },
+ "hr_res_m": 1.485,
+ "n_hr_valid": 14448766,
+ "n_lr_valid": 93869698,
+ "n_joint_valid": 13550359,
+ "joint_area_km2": 29.896,
+ "n_valid_tiles_256": 201,
+ "qa_pass": true,
+ "hr_p50_over_joint_m": -222.7,
+ "lr_native": {
+  "beam_footprint_m": 4.87,
+  "posting_m": 2.92,
+  "lr_native_m": 4.87,
+  "beamwidth_deg": 1.0,
+  "rule": "max(footprint, posting) (C2a)"
+ },
+ "k_sweep": {
+  "pair_id": "2009_Amundsen__MGDS_30047",
+  "status": "ok",
+  "lr_native_m": 4.9,
+  "edge_coh": 0.0,
+  "max_recoverable_k": null,
+  "per_k": {
+   "2": "no_spectrum",
+   "4": "no_spectrum",
+   "8": "no_spectrum",
+   "16": "no_spectrum",
+   "32": "no_spectrum"
+  },
+  "thresholds": {
+   "slope_red": -0.97,
+   "slope_white": -0.8,
+   "coh_circular": 0.136,
+   "grid": "AUV-native final harmonized; anchors=21 validated; corrected lr_native"
+  }
+ },
+ "qc_figure": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/qc/acq_r02/2009_Amundsen__MGDS_30047.png",
+ "products_v2": {
+  "error": "A process in the process pool was terminated abruptly while the future was running or pending."
+ },
+ "status": "harmonized_development",
+ "wall_s": 601.2
+}
