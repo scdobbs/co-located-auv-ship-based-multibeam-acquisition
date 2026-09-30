@@ -69,7 +69,7 @@ def basin(lon: float, lat: float) -> str:
         return "Mediterranean"
     if -100 <= lon <= 20:
         return "Atlantic" if not (-100 <= lon <= -80 and 18 <= lat <= 31) else "Gulf of Mexico/Caribbean"
-    if 20 < lon <= 147 and lat < 30:
+    if (20 < lon <= 100 and lat < 30) or (100 < lon <= 147 and lat < -8):
         return "Indian"
     return "Pacific"
 
@@ -165,15 +165,21 @@ def gate(m):
     for _, s in sel.iterrows():
         h = s.hr_id
         hrow = hr.loc[h] if h in hr.index else None
-        fmt = str(hrow["format"]) if hrow is not None else ""
-        doi = str(s.hr_doi or "")
+        if hrow is not None and isinstance(hrow, pd.DataFrame):
+            hrow = hrow.iloc[0]
+        fmt = str(hrow["format"]) if hrow is not None and isinstance(hrow["format"], str) else ""
+        doi = str(s.hr_doi) if isinstance(s.hr_doi, str) else ""
+        hcr = hrow["cruise_id"] if hrow is not None else ""
+        hcr = hcr.strip() if isinstance(hcr, str) else ""
         r = {"hr_id": h, "hr_doi": doi, "hr_title": str(s.hr_title or "")[:100], "hr_platform": s.hr_platform,
-             "hr_native_res_m": s.hr_native_res_m, "hr_format": fmt, "hr_cruise": str(hrow["cruise_id"]) if hrow is not None else "",
+             "hr_native_res_m": s.hr_native_res_m, "hr_format": fmt, "hr_cruise": hcr,
              "gate_tier": s.tier, "gate_tier_reason": s.tier_reason, "best_lr": s.lr_cruise_id, "lr_sonar": s.lr_sonar,
              "lr_platform": s.lr_platform, "independence": s.independence_verdict, "footprint_suspect": bool(s.footprint_suspect),
              "footprint_km2": s.hr_footprint_km2, "depth_min_m": s.depth_min_m, "depth_max_m": s.depth_max_m,
              "terrain_hint": s.terrain_hint, "overlap_km2": s.overlap_km2, "hr_bytes": s.hr_size_bytes_estimate}
-        c = s.geometry.centroid; r["lon"], r["lat"] = float(c.x), float(c.y); r["basin"] = basin(c.x, c.y)
+        # centroid from the HR CATALOG footprint (the stage-A selection geometry is not the HR polygon)
+        c = (hrow.geometry if hrow is not None and hrow.geometry is not None else s.geometry).centroid
+        r["lon"], r["lat"] = float(c.x), float(c.y); r["basin"] = basin(c.x, c.y)
         if h.startswith("MANIFEST:") or h in corpus_hr or (doi and doi in corpus_dois):
             r["status"] = "in_corpus"; r["reason"] = "HR already in the 39-pair manifest"
         elif h in rec.index and not str(rec.loc[h, "fate"]).startswith("in corpus"):
@@ -205,10 +211,10 @@ def gate(m):
         else:
             r["k_prior"] = None
         # leakage relations
-        lrs = lr_cruises_of.get(h, [str(s.lr_cruise_id)])
+        lrs = [x for x in lr_cruises_of.get(h, [str(s.lr_cruise_id)]) if x and x.lower() != "nan"]
         r["lr_cruises_all"] = ";".join(lrs)
         joins = set()
-        if r["hr_cruise"] in hr_cruise_units:
+        if r["hr_cruise"] and r["hr_cruise"] in hr_cruise_units:
             joins |= hr_cruise_units[r["hr_cruise"]]
         for cr in lrs:
             joins |= lr_cruise_units.get(cr, set())
@@ -229,8 +235,8 @@ def gate(m):
     recs = new_free.to_dict("records")
     for i, a in enumerate(recs):
         for b in recs[i + 1:]:
-            if (a["hr_cruise"] and a["hr_cruise"] == b["hr_cruise"]) or \
-               set(a["lr_cruises_all"].split(";")) & set(b["lr_cruises_all"].split(";")) or \
+            shared_lr = {x for x in str(a["lr_cruises_all"]).split(";") if x} & {x for x in str(b["lr_cruises_all"]).split(";") if x}
+            if (a["hr_cruise"] and a["hr_cruise"] == b["hr_cruise"]) or shared_lr or \
                hav_km((a["lon"], a["lat"]), (b["lon"], b["lat"])) <= R_KM:
                 uf.union(a["hr_id"], b["hr_id"])
     groups = {}

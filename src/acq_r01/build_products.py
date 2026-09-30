@@ -321,7 +321,7 @@ def build_cruise(cruise: str, provider_pair: str | None, nproc: int, only_pairs=
     if fman.get("n_files_failed", 0):
         raise RuntimeError(f"{cruise}: fetch incomplete ({fman['n_files_failed']} failed files) — not building products "
                            f"on a partial swath set; re-run the fetch first")
-    sha = {f["name"]: (f.get("url"), f["sha256"]) for f in fman["files"]}
+    sha = {(f.get("name") or f["filename"]): (f.get("url"), f["sha256"]) for f in fman["files"]}
     if len(sha) != len(files):
         raise RuntimeError(f"{cruise}: {len(files)} swath files on disk vs {len(sha)} in fetch_manifest.json")
     fmt = fmt_for(files[0].name)
