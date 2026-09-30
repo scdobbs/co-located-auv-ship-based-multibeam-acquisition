@@ -37,11 +37,12 @@ NAV_SEARCH = ['"Master tracks" AND M112', '"master track" AND METEOR AND M112', 
               '"M112" AND (navigation OR track OR DSHIP OR underway OR "master track")']
 
 
-def head_positions(url: str, name: str, work: Path, sess: requests.Session, throttle: float) -> dict:
-    """First 2 MB of the file -> (lon, lat) of the first position datagram, plus the head's nav bbox."""
+def fetch_head(url: str, name: str, work: Path, sess: requests.Session, throttle: float) -> dict:
+    """First 2 MB of the file (one Range request, verbatim URL) -> work/<name>."""
     local = work / name
-    rec = {"file_name": name, "http_status": None, "head_bytes": 0, "lon": None, "lat": None, "n_nav": 0,
-           "lon_min": None, "lon_max": None, "lat_min": None, "lat_max": None, "method": None, "note": ""}
+    rec = {"file_name": name, "http_status": None, "head_bytes": 0, "note": ""}
+    if local.exists() and local.stat().st_size >= HEAD_BYTES:
+        rec.update({"http_status": "cached", "head_bytes": local.stat().st_size}); return rec
     for attempt in range(6):
         try:
             with sess.get(url, headers={**R.HEADERS, "Range": f"bytes=0-{HEAD_BYTES - 1}"}, timeout=180, stream=True) as g:
@@ -59,42 +60,56 @@ def head_positions(url: str, name: str, work: Path, sess: requests.Session, thro
                 rec["head_bytes"] = n
                 if g.status_code == 200:
                     rec["note"] = "server ignored Range (full body, truncated locally)"
-            break
+            time.sleep(throttle); return rec
         except Exception as e:
             rec["note"] = f"{type(e).__name__}"; time.sleep(min(60, 2 ** attempt))
-    else:
-        rec["note"] += "; gave up"; return rec
-    r = R.C.mb(["mbnavlist", "-F58", "-I", local.name, "-OXY"], cwd=str(work))
-    pts = []
+    rec["note"] += "; gave up"; return rec
+
+
+def positions_batch(work: Path, names: list[str]) -> dict:
+    """ONE container invocation (apptainer start-up is ~30-60 s on Sherlock nodes) running mbnavlist over every head;
+    files without navigation get one batched mbinfo pass.  Returns name -> position record."""
+    out = {}
+    lst = work / "heads.lst"; lst.write_text("".join(n + "\n" for n in names))
+    script = 'while read f; do echo "## $f"; mbnavlist -F58 -I "$f" -OXY 2>/dev/null; done < heads.lst'
+    r = R.C.mb(["sh", "-c", script], cwd=str(work), timeout=6 * 3600)
+    cur = None; pts = {}
     for ln in (r.stdout or "").splitlines():
+        if ln.startswith("## "):
+            cur = ln[3:].strip(); pts[cur] = []; continue
         p = ln.split()
-        if len(p) >= 2:
+        if cur and len(p) >= 2:
             try:
                 lo, la = float(p[0]), float(p[1])
             except ValueError:
                 continue
             if abs(lo) <= 180 and abs(la) <= 90 and (lo, la) != (0.0, 0.0):
-                pts.append((lo, la))
-    if pts:
-        rec.update({"lon": pts[0][0], "lat": pts[0][1], "n_nav": len(pts), "method": "mbnavlist -OXY (position datagrams)",
-                    "lon_min": min(p[0] for p in pts), "lon_max": max(p[0] for p in pts), "lat_min": min(p[1] for p in pts), "lat_max": max(p[1] for p in pts)})
-    else:
-        r2 = R.C.mb(["mbinfo", "-F58", "-I", local.name], cwd=str(work))
-        out = r2.stdout or ""
-        mlo = re.search(r"Minimum Longitude:\s+([-\d.]+)\s+Maximum Longitude:\s+([-\d.]+)", out)
-        mla = re.search(r"Minimum Latitude:\s+([-\d.]+)\s+Maximum Latitude:\s+([-\d.]+)", out)
-        if mlo and mla:
-            rec.update({"lon": (float(mlo.group(1)) + float(mlo.group(2))) / 2, "lat": (float(mla.group(1)) + float(mla.group(2))) / 2,
-                        "lon_min": float(mlo.group(1)), "lon_max": float(mlo.group(2)), "lat_min": float(mla.group(1)), "lat_max": float(mla.group(2)),
-                        "method": "mbinfo bbox of the 2 MB head (fallback)"})
-        else:
-            rec["note"] += "; no navigation parsed from the head"
-    try:
-        local.unlink()
-    except OSError:
-        pass
-    time.sleep(throttle)
-    return rec
+                pts[cur].append((lo, la))
+    for n in names:
+        q = pts.get(n, [])
+        if q:
+            out[n] = {"lon": q[0][0], "lat": q[0][1], "n_nav": len(q), "method": "mbnavlist -OXY (position datagrams)",
+                      "lon_min": min(a for a, _ in q), "lon_max": max(a for a, _ in q), "lat_min": min(b for _, b in q), "lat_max": max(b for _, b in q)}
+    missing = [n for n in names if n not in out]
+    if missing:
+        lst.write_text("".join(n + "\n" for n in missing))
+        script = 'while read f; do echo "## $f"; mbinfo -F58 -I "$f" 2>/dev/null | grep -E "Minimum (Longitude|Latitude)"; done < heads.lst'
+        r = R.C.mb(["sh", "-c", script], cwd=str(work), timeout=3600)
+        cur = None; buf = {}
+        for ln in (r.stdout or "").splitlines():
+            if ln.startswith("## "):
+                cur = ln[3:].strip(); buf[cur] = ""; continue
+            if cur:
+                buf[cur] += ln + "\n"
+        for n in missing:
+            t = buf.get(n, "")
+            mlo = re.search(r"Minimum Longitude:\s+([-\d.]+)\s+Maximum Longitude:\s+([-\d.]+)", t)
+            mla = re.search(r"Minimum Latitude:\s+([-\d.]+)\s+Maximum Latitude:\s+([-\d.]+)", t)
+            if mlo and mla:
+                out[n] = {"lon": (float(mlo.group(1)) + float(mlo.group(2))) / 2, "lat": (float(mla.group(1)) + float(mla.group(2))) / 2, "n_nav": 0,
+                          "lon_min": float(mlo.group(1)), "lon_max": float(mlo.group(2)), "lat_min": float(mla.group(1)), "lat_max": float(mla.group(2)),
+                          "method": "mbinfo bbox of the 2 MB head (fallback)"}
+    return out
 
 
 def main(argv=None):
@@ -108,22 +123,33 @@ def main(argv=None):
         for r in csv.DictReader(pos_csv.open()):
             done[r["file_name"]] = r
     work = Path(os.environ.get("L_SCRATCH", "/tmp")) / "acq_r03_m112_heads"; work.mkdir(parents=True, exist_ok=True)
-    sess = requests.Session(); t0 = time.time(); n_new = 0
+    sess = requests.Session(); t0 = time.time()
     fields = ["file_name", "http_status", "head_bytes", "lon", "lat", "n_nav", "lon_min", "lon_max", "lat_min", "lat_max", "method", "note"]
+    todo = [r for _, r in cand.iterrows() if r.file_name not in done][: a.limit or None]
+    heads = {}
+    for k, r in enumerate(todo, 1):                                  # phase 1: all heads (one Range request each)
+        heads[r.file_name] = fetch_head(r.url, r.file_name, work, sess, a.throttle)
+        if k % 100 == 0:
+            print(f"  {k}/{len(todo)} heads fetched, {time.time() - t0:.0f} s", flush=True)
+    names = [n for n, h in heads.items() if h["head_bytes"] > 0]
+    print(f"  {len(names)} heads on disk; one MB-System pass ...", flush=True)
+    pos = positions_batch(work, names) if names else {}              # phase 2: one container, all files
     new_file = not pos_csv.exists()
     with pos_csv.open("a", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields)
         if new_file:
             w.writeheader()
-        for i, r in cand.iterrows():
-            if r.file_name in done:
-                continue
-            if a.limit and n_new >= a.limit:
-                break
-            rec = head_positions(r.url, r.file_name, work, sess, a.throttle)
-            w.writerow(rec); fh.flush(); done[r.file_name] = rec; n_new += 1
-            if n_new % 50 == 0:
-                print(f"  {n_new} heads read, {len(done)}/{len(cand)} known, {time.time() - t0:.0f} s", flush=True)
+        for n, h in heads.items():
+            rec = {**{f: None for f in fields}, **h, **pos.get(n, {})}
+            if n not in pos:
+                rec["note"] = (rec.get("note") or "") + "; no navigation parsed from the head"
+            w.writerow(rec); done[n] = rec
+    for n in names:
+        try:
+            (work / n).unlink()
+        except OSError:
+            pass
+    print(f"  positions: {len(done)}/{len(cand)} known, {time.time() - t0:.0f} s", flush=True)
     if len(done) < len(cand):
         print(f"positions incomplete: {len(done)}/{len(cand)}"); return 1
     # selection: segment [start_i, start_{i+1}) against the buffered footprint, in local UTM

@@ -1,0 +1,36 @@
+{
+ "runs": [
+  {
+   "cruise": "PANGAEA_864677",
+   "status": "complete",
+   "n_selected": 59,
+   "n_on_oak": 59,
+   "n_remaining": 0,
+   "remaining": [],
+   "gb_selected": 1.401,
+   "gb_transferred_this_run": 1.303,
+   "wall_h_this_run": 0.45,
+   "mean_rate_MBps_this_run": 0.8037,
+   "n_failed_this_run": 0,
+   "throttle_s": 1.0,
+   "workers": 1,
+   "at": "2026-09-30T23:16:18+00:00"
+  }
+ ],
+ "latest": {
+  "cruise": "PANGAEA_864677",
+  "status": "complete",
+  "n_selected": 59,
+  "n_on_oak": 59,
+  "n_remaining": 0,
+  "remaining": [],
+  "gb_selected": 1.401,
+  "gb_transferred_this_run": 1.303,
+  "wall_h_this_run": 0.45,
+  "mean_rate_MBps_this_run": 0.8037,
+  "n_failed_this_run": 0,
+  "throttle_s": 1.0,
+  "workers": 1,
+  "at": "2026-09-30T23:16:18+00:00"
+ }
+}
