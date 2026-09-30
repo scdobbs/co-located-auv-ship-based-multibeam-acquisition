@@ -1,0 +1,20 @@
+[
+ {
+  "pair_id": "RR1506__MGDS_29779",
+  "cruise": "RR1506",
+  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/RR1506__MGDS_29779/ship_products_v1",
+  "qa": {
+   "n_common_cells": 202705,
+   "rms_m": 2.6264,
+   "median_offset_m": 0.0179,
+   "mad_m": 0.6429,
+   "rms_over_median_s_lr": 0.1775,
+   "flag": "exceeds_0.10"
+  },
+  "cells": 204734,
+  "cells_lr_valid": 204822,
+  "n_soundings": 2825564,
+  "angle_method": "mblist ',A' beam depression angle measured from vertical down (launch angle)",
+  "matches_lr_tif": true
+ }
+]

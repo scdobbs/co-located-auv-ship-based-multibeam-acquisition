@@ -1,0 +1,20 @@
+[
+ {
+  "pair_id": "ccz_so268_1",
+  "cruise": "SO268_1_EM122",
+  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/ccz_so268_1/ship_products_v1",
+  "qa": {
+   "n_common_cells": 4338,
+   "rms_m": 3.8572,
+   "median_offset_m": -0.3453,
+   "mad_m": 0.98,
+   "rms_over_median_s_lr": 0.8606,
+   "flag": "exceeds_0.10"
+  },
+  "cells": 9292,
+  "cells_lr_valid": 4338,
+  "n_soundings": 2643070,
+  "angle_method": "mblist ',A' beam depression angle measured from vertical down (launch angle)",
+  "matches_lr_tif": true
+ }
+]

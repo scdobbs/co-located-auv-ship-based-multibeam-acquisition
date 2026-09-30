@@ -1,0 +1,38 @@
+[
+ {
+  "pair_id": "TN299__MGDS_27339",
+  "cruise": "TN299",
+  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN299__MGDS_27339/ship_products_v1",
+  "qa": {
+   "n_common_cells": 5399,
+   "rms_m": 3.946,
+   "median_offset_m": -0.1362,
+   "mad_m": 1.6199,
+   "rms_over_median_s_lr": 0.3225,
+   "flag": "exceeds_0.10"
+  },
+  "cells": 22435,
+  "cells_lr_valid": 5482,
+  "n_soundings": 433277,
+  "angle_method": "mblist ',A' beam depression angle measured from vertical down (launch angle)",
+  "matches_lr_tif": true
+ },
+ {
+  "pair_id": "TN299__MGDS_31253",
+  "cruise": "TN299",
+  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN299__MGDS_31253/ship_products_v1",
+  "qa": {
+   "n_common_cells": 8661,
+   "rms_m": 0.8096,
+   "median_offset_m": -0.0228,
+   "mad_m": 0.3224,
+   "rms_over_median_s_lr": 0.1627,
+   "flag": "exceeds_0.10"
+  },
+  "cells": 8668,
+  "cells_lr_valid": 8669,
+  "n_soundings": 370692,
+  "angle_method": "mblist ',A' beam depression angle measured from vertical down (launch angle)",
+  "matches_lr_tif": true
+ }
+]

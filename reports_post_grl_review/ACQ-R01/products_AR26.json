@@ -1,0 +1,20 @@
+[
+ {
+  "pair_id": "AR26__MGDS_31838",
+  "cruise": "AR26",
+  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AR26__MGDS_31838/ship_products_v1",
+  "qa": {
+   "n_common_cells": 12279,
+   "rms_m": 4.3212,
+   "median_offset_m": -0.3118,
+   "mad_m": 1.5092,
+   "rms_over_median_s_lr": 0.074,
+   "flag": "ok"
+  },
+  "cells": 13684,
+  "cells_lr_valid": 12617,
+  "n_soundings": 607118,
+  "angle_method": "mblist ',A' beam depression angle measured from vertical down (launch angle)",
+  "matches_lr_tif": true
+ }
+]

@@ -1,0 +1,20 @@
+[
+ {
+  "pair_id": "EW9801__MGDS_31425",
+  "cruise": "EW9801",
+  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EW9801__MGDS_31425/ship_products_v1",
+  "qa": {
+   "n_common_cells": 5255,
+   "rms_m": 7.3309,
+   "median_offset_m": 0.0552,
+   "mad_m": 2.4967,
+   "rms_over_median_s_lr": 0.2035,
+   "flag": "exceeds_0.10"
+  },
+  "cells": 5465,
+  "cells_lr_valid": 5479,
+  "n_soundings": 72482,
+  "angle_method": "geometric atan(|acrosstrack| / |depth|) (mblist ',A' not carried by this format)",
+  "matches_lr_tif": true
+ }
+]

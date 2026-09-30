@@ -1,0 +1,20 @@
+[
+ {
+  "pair_id": "EW0207__MGDS_32556",
+  "cruise": "EW0207",
+  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EW0207__MGDS_32556/ship_products_v1",
+  "qa": {
+   "n_common_cells": 44781,
+   "rms_m": 7.0238,
+   "median_offset_m": -0.1047,
+   "mad_m": 2.4014,
+   "rms_over_median_s_lr": 0.9753,
+   "flag": "exceeds_0.10"
+  },
+  "cells": 45248,
+  "cells_lr_valid": 45255,
+  "n_soundings": 1278379,
+  "angle_method": "mblist ',A' beam depression angle measured from vertical down (launch angle)",
+  "matches_lr_tif": true
+ }
+]

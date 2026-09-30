@@ -1,0 +1,20 @@
+[
+ {
+  "pair_id": "2009_Amundsen__MGDS_30046",
+  "cruise": "2009_Amundsen",
+  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/2009_Amundsen__MGDS_30046/ship_products_v1",
+  "qa": {
+   "n_common_cells": 132271,
+   "rms_m": 1.2568,
+   "median_offset_m": -0.0168,
+   "mad_m": 0.112,
+   "rms_over_median_s_lr": 0.2612,
+   "flag": "exceeds_0.10"
+  },
+  "cells": 132286,
+  "cells_lr_valid": 132288,
+  "n_soundings": 72048499,
+  "angle_method": "mblist ',A' beam depression angle measured from vertical down (launch angle)",
+  "matches_lr_tif": true
+ }
+]

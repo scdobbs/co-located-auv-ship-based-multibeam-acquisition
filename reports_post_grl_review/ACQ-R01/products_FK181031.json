@@ -1,0 +1,20 @@
+[
+ {
+  "pair_id": "FK181031__MGDS_24618",
+  "cruise": "FK181031",
+  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK181031__MGDS_24618/ship_products_v1",
+  "qa": {
+   "n_common_cells": 8346,
+   "rms_m": 21.5161,
+   "median_offset_m": 0.0562,
+   "mad_m": 1.1733,
+   "rms_over_median_s_lr": 8.8718,
+   "flag": "exceeds_0.10"
+  },
+  "cells": 8346,
+  "cells_lr_valid": 8346,
+  "n_soundings": 3903852,
+  "angle_method": "mblist ',A' beam depression angle measured from vertical down (launch angle)",
+  "matches_lr_tif": true
+ }
+]

@@ -1,0 +1,20 @@
+[
+ {
+  "pair_id": "AT37-13__MGDS_31199",
+  "cruise": "AT37-13",
+  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT37-13__MGDS_31199/ship_products_v1",
+  "qa": {
+   "n_common_cells": 13421,
+   "rms_m": 4.5357,
+   "median_offset_m": -0.0372,
+   "mad_m": 1.3059,
+   "rms_over_median_s_lr": 0.1322,
+   "flag": "exceeds_0.10"
+  },
+  "cells": 13490,
+  "cells_lr_valid": 13513,
+  "n_soundings": 1047053,
+  "angle_method": "mblist ',A' beam depression angle measured from vertical down (launch angle)",
+  "matches_lr_tif": true
+ }
+]

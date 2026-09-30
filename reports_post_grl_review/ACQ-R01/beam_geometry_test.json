@@ -1,0 +1,262 @@
+{
+  "per_unit": [
+    {
+      "unit": "NA090",
+      "n": 177,
+      "rho_plane_xtrack": -0.27430705839580344,
+      "rho_plane_xtrack_partial": -0.30976567233946783,
+      "rho_plane_beamangle": -0.3264183445577466,
+      "rho_plane_beamangle_partial": -0.3255007704160247,
+      "rho_treslp_xtrack": -0.2579919842107997,
+      "rho_treslp_xtrack_partial": -0.3216097366735341,
+      "rho_treslp_beamangle": -0.2880468655321065,
+      "rho_treslp_beamangle_partial": -0.30724234344973256,
+      "median_xtrack_frac": 0.5590888261795044,
+      "median_beam_angle": 42.935516357421875,
+      "median_plane_m": 0.447428996752031,
+      "median_T_res_lp_m": 0.5897574249259969
+    },
+    {
+      "unit": "NA080",
+      "n": 200,
+      "rho_plane_xtrack": -0.03617640441011026,
+      "rho_plane_xtrack_partial": -0.0850041251031276,
+      "rho_plane_beamangle": -0.14429760744018602,
+      "rho_plane_beamangle_partial": -0.1907522688067202,
+      "rho_treslp_xtrack": -0.029817745443636093,
+      "rho_treslp_xtrack_partial": -0.0731913297832446,
+      "rho_treslp_beamangle": -0.14569414235355885,
+      "rho_treslp_beamangle_partial": -0.22786169654241356,
+      "median_xtrack_frac": 0.46940575540065765,
+      "median_beam_angle": 23.093411445617676,
+      "median_plane_m": 2.811028794907342,
+      "median_T_res_lp_m": 3.1551966411527115
+    },
+    {
+      "unit": "TN399",
+      "n": 200,
+      "rho_plane_xtrack": 0.5215585389634741,
+      "rho_plane_xtrack_partial": 0.33678841971049284,
+      "rho_plane_beamangle": 0.5089867246681168,
+      "rho_plane_beamangle_partial": 0.33796894922373066,
+      "rho_treslp_xtrack": 0.5326723168079203,
+      "rho_treslp_xtrack_partial": 0.31497937448436214,
+      "rho_treslp_beamangle": 0.4996084902122554,
+      "rho_treslp_beamangle_partial": 0.2906997674941874,
+      "median_xtrack_frac": 0.41913652420043945,
+      "median_beam_angle": 34.03339195251465,
+      "median_plane_m": 0.8409209466592134,
+      "median_T_res_lp_m": 1.3691250762925273
+    },
+    {
+      "unit": "RR1506",
+      "n": 200,
+      "rho_plane_xtrack": 0.4026565664141604,
+      "rho_plane_xtrack_partial": 0.22526213155328886,
+      "rho_plane_beamangle": 0.44657616440411013,
+      "rho_plane_beamangle_partial": 0.2864411610290258,
+      "rho_treslp_xtrack": 0.4369144228605716,
+      "rho_treslp_xtrack_partial": 0.2729978249456237,
+      "rho_treslp_beamangle": 0.41162829070726775,
+      "rho_treslp_beamangle_partial": 0.22325508137703445,
+      "median_xtrack_frac": 0.4725516140460968,
+      "median_beam_angle": 43.11913871765137,
+      "median_plane_m": 1.165197638068353,
+      "median_T_res_lp_m": 2.044234171343292
+    },
+    {
+      "unit": "AT37-13",
+      "n": 186,
+      "rho_plane_xtrack": -0.2719011231345197,
+      "rho_plane_xtrack_partial": -0.056406622251024524,
+      "rho_plane_beamangle": -0.40387432455743655,
+      "rho_plane_beamangle_partial": -0.06569940649637043,
+      "rho_treslp_xtrack": -0.17681186447789865,
+      "rho_treslp_xtrack_partial": 0.1436222836602343,
+      "rho_treslp_beamangle": -0.31540731692534346,
+      "rho_treslp_beamangle_partial": 0.1500170171896927,
+      "median_xtrack_frac": 0.3025839328765869,
+      "median_beam_angle": 37.945573806762695,
+      "median_plane_m": 2.4929352248652927,
+      "median_T_res_lp_m": 4.730234126972967
+    },
+    {
+      "unit": "FK181031",
+      "n": 200,
+      "rho_plane_xtrack": 0.03851946298657467,
+      "rho_plane_xtrack_partial": 0.1676891922298058,
+      "rho_plane_beamangle": 0.0653446336158404,
+      "rho_plane_beamangle_partial": 0.2598184954623866,
+      "rho_treslp_xtrack": -0.024089102227555694,
+      "rho_treslp_xtrack_partial": 0.1565019125478137,
+      "rho_treslp_beamangle": -0.012756318907972701,
+      "rho_treslp_beamangle_partial": 0.23966849171229285,
+      "median_xtrack_frac": 0.5082744657993317,
+      "median_beam_angle": 16.778587341308594,
+      "median_plane_m": 0.9108536262996373,
+      "median_T_res_lp_m": 0.9650429586667846
+    },
+    {
+      "unit": "TN299",
+      "n": 400,
+      "rho_plane_xtrack": 0.4571387321170757,
+      "rho_plane_xtrack_partial": 0.4190879942999644,
+      "rho_plane_beamangle": 0.12363977274857967,
+      "rho_plane_beamangle_partial": 0.2087261170382315,
+      "rho_treslp_xtrack": 0.5167678547990925,
+      "rho_treslp_xtrack_partial": 0.5465441659010368,
+      "rho_treslp_beamangle": 0.18352614703841896,
+      "rho_treslp_beamangle_partial": 0.32701141882136764,
+      "median_xtrack_frac": 0.46322400867938995,
+      "median_beam_angle": 35.68703651428223,
+      "median_plane_m": 1.4756037453802295,
+      "median_T_res_lp_m": 2.861150451943579
+    },
+    {
+      "unit": "EW0207",
+      "n": 200,
+      "rho_plane_xtrack": 0.2566399159979,
+      "rho_plane_xtrack_partial": 0.2278106952673817,
+      "rho_plane_beamangle": 0.25119177979449486,
+      "rho_plane_beamangle_partial": 0.21271881797044928,
+      "rho_treslp_xtrack": 0.20927023175579393,
+      "rho_treslp_xtrack_partial": 0.14962424060601515,
+      "rho_treslp_beamangle": 0.2147543688592215,
+      "rho_treslp_beamangle_partial": 0.15233480837020927,
+      "median_xtrack_frac": 0.27689921855926514,
+      "median_beam_angle": 23.91151237487793,
+      "median_plane_m": 6.124640155573666,
+      "median_T_res_lp_m": 6.405505846989115
+    }
+  ],
+  "summary_native7": {
+    "rho_plane_xtrack": {
+      "median_over_units": 0.03851946298657467,
+      "ci95": [
+        -0.2719011231345197,
+        0.4571387321170757
+      ],
+      "n_units": 7,
+      "ew0207": 0.2566399159979
+    },
+    "rho_plane_xtrack_partial": {
+      "median_over_units": 0.1676891922298058,
+      "ci95": [
+        -0.0850041251031276,
+        0.33678841971049284
+      ],
+      "n_units": 7,
+      "ew0207": 0.2278106952673817
+    },
+    "rho_plane_beamangle": {
+      "median_over_units": 0.0653446336158404,
+      "ci95": [
+        -0.3264183445577466,
+        0.44657616440411013
+      ],
+      "n_units": 7,
+      "ew0207": 0.25119177979449486
+    },
+    "rho_plane_beamangle_partial": {
+      "median_over_units": 0.2087261170382315,
+      "ci95": [
+        -0.1907522688067202,
+        0.2864411610290258
+      ],
+      "n_units": 7,
+      "ew0207": 0.21271881797044928
+    },
+    "rho_treslp_xtrack": {
+      "median_over_units": -0.024089102227555694,
+      "ci95": [
+        -0.17681186447789865,
+        0.5167678547990925
+      ],
+      "n_units": 7,
+      "ew0207": 0.20927023175579393
+    },
+    "rho_treslp_xtrack_partial": {
+      "median_over_units": 0.1565019125478137,
+      "ci95": [
+        -0.0731913297832446,
+        0.31497937448436214
+      ],
+      "n_units": 7,
+      "ew0207": 0.14962424060601515
+    },
+    "rho_treslp_beamangle": {
+      "median_over_units": -0.012756318907972701,
+      "ci95": [
+        -0.2880468655321065,
+        0.41162829070726775
+      ],
+      "n_units": 7,
+      "ew0207": 0.2147543688592215
+    },
+    "rho_treslp_beamangle_partial": {
+      "median_over_units": 0.22325508137703445,
+      "ci95": [
+        -0.22786169654241356,
+        0.2906997674941874
+      ],
+      "n_units": 7,
+      "ew0207": 0.15233480837020927
+    }
+  },
+  "dropped": {
+    "NA090": {
+      "n_tiles": 177,
+      "n_used": 177,
+      "n_plane2_le_0": 0,
+      "n_no_ship_cells": 0
+    },
+    "NA080": {
+      "n_tiles": 200,
+      "n_used": 200,
+      "n_plane2_le_0": 0,
+      "n_no_ship_cells": 0
+    },
+    "TN399": {
+      "n_tiles": 200,
+      "n_used": 200,
+      "n_plane2_le_0": 0,
+      "n_no_ship_cells": 0
+    },
+    "RR1506": {
+      "n_tiles": 200,
+      "n_used": 200,
+      "n_plane2_le_0": 0,
+      "n_no_ship_cells": 0
+    },
+    "AT37-13": {
+      "n_tiles": 186,
+      "n_used": 186,
+      "n_plane2_le_0": 0,
+      "n_no_ship_cells": 0
+    },
+    "FK181031": {
+      "n_tiles": 200,
+      "n_used": 200,
+      "n_plane2_le_0": 0,
+      "n_no_ship_cells": 0
+    },
+    "TN299": {
+      "n_tiles": 400,
+      "n_used": 400,
+      "n_plane2_le_0": 0,
+      "n_no_ship_cells": 0
+    },
+    "EW0207": {
+      "n_tiles": 200,
+      "n_used": 200,
+      "n_plane2_le_0": 0,
+      "n_no_ship_cells": 0
+    }
+  },
+  "n_boot": 2000,
+  "seed": 20260929,
+  "inputs": {
+    "s3_pertile": "/scratch/users/scdobbs/grl_review/R03/s3/s3_pertile.parquet",
+    "tile_window_hr_px": 256
+  }
+}

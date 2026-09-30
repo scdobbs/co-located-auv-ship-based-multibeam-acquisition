@@ -1,0 +1,20 @@
+[
+ {
+  "pair_id": "TN399__MGDS_30373",
+  "cruise": "TN399",
+  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN399__MGDS_30373/ship_products_v1",
+  "qa": {
+   "n_common_cells": 89392,
+   "rms_m": 2.5106,
+   "median_offset_m": 0.0073,
+   "mad_m": 0.6814,
+   "rms_over_median_s_lr": 0.6723,
+   "flag": "exceeds_0.10"
+  },
+  "cells": 90387,
+  "cells_lr_valid": 90380,
+  "n_soundings": 663506,
+  "angle_method": "mblist ',A' beam depression angle measured from vertical down (launch angle)",
+  "matches_lr_tif": true
+ }
+]

@@ -1,0 +1,20 @@
+[
+ {
+  "pair_id": "NA090__MGDS_31212",
+  "cruise": "NA090",
+  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA090__MGDS_31212/ship_products_v1",
+  "qa": {
+   "n_common_cells": 6241,
+   "rms_m": 1.7209,
+   "median_offset_m": -0.0126,
+   "mad_m": 0.3701,
+   "rms_over_median_s_lr": 0.4741,
+   "flag": "exceeds_0.10"
+  },
+  "cells": 6241,
+  "cells_lr_valid": 6241,
+  "n_soundings": 3296107,
+  "angle_method": "mblist ',A' beam depression angle measured from vertical down (launch angle)",
+  "matches_lr_tif": true
+ }
+]

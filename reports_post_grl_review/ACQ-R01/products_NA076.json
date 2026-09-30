@@ -1,0 +1,20 @@
+[
+ {
+  "pair_id": "NA076__MGDS_32317",
+  "cruise": "NA076",
+  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA076__MGDS_32317/ship_products_v1",
+  "qa": {
+   "n_common_cells": 23613,
+   "rms_m": 0.4144,
+   "median_offset_m": 0.0126,
+   "mad_m": 0.2323,
+   "rms_over_median_s_lr": 0.1852,
+   "flag": "exceeds_0.10"
+  },
+  "cells": 23650,
+  "cells_lr_valid": 23661,
+  "n_soundings": 547817,
+  "angle_method": "mblist ',A' beam depression angle measured from vertical down (launch angle)",
+  "matches_lr_tif": true
+ }
+]

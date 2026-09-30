@@ -1,0 +1,20 @@
+[
+ {
+  "pair_id": "discol_so242_1",
+  "cruise": "SO242_1_EM122",
+  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/discol_so242_1/ship_products_v1",
+  "qa": {
+   "n_common_cells": 17287,
+   "rms_m": 6.6569,
+   "median_offset_m": 0.1841,
+   "mad_m": 1.729,
+   "rms_over_median_s_lr": 1.7727,
+   "flag": "exceeds_0.10"
+  },
+  "cells": 28968,
+  "cells_lr_valid": 17287,
+  "n_soundings": 5916139,
+  "angle_method": "mblist ',A' beam depression angle measured from vertical down (launch angle)",
+  "matches_lr_tif": true
+ }
+]
