@@ -8,7 +8,7 @@
 --cruise NA076
 --cruise FK181031
 --cruise RR1506
---cruise EW0207
+--cruise EW0207 --batch-files 100
 --cruise 2009_Amundsen
 --cruise SO242_1_EM122 --provider discol_so242_1
 --cruise M127_EM122 --provider tag_m127

@@ -71,6 +71,8 @@ PROVIDER_SWATH = {
                        "doi": "10.1594/PANGAEA.859528"},
     "tag_m127": {"cruise_dir": "M127_EM122", "kind": "provider_swath",
                  "doi": "10.1594/PANGAEA.899408"},
+    "ccz_so268_1": {"cruise_dir": "SO268_1_EM122", "kind": "provider_swath",
+                    "doi": "10.1594/PANGAEA.919755"},
 }
 
 
@@ -110,29 +112,40 @@ def lr_window(lr_path: Path, margin_factor: float = 3.0, min_margin_m: float = 2
 
 
 def _run_mblist_one(args):
-    """Worker: (swath path, fmt, window, workdir, grid, z_ref) -> per-file grid ACCUMULATORS
-    (binned inside the worker, so the parent never holds raw soundings), plus the exact
-    command line, row count and any stderr."""
-    src, fmt, window, workdir, grid, z_ref = args
-    src = Path(src); workdir = Path(workdir)
+    """Worker: (swath paths (one or many), fmt, window, workdir, grid, z_ref) -> per-file grid
+    ACCUMULATORS (binned inside the worker, so the parent never holds raw soundings), plus the
+    exact command line, row count and any stderr.  With several paths the files are listed in a
+    datalist and read by ONE mblist call (-F-1); the ping key (N, unix time) keeps pings distinct."""
+    srcs, fmt, window, workdir, grid, z_ref = args
+    srcs = [Path(x) for x in ([srcs] if isinstance(srcs, str) else srcs)]
+    workdir = Path(workdir)
     workdir.mkdir(parents=True, exist_ok=True)
-    local = workdir / (src.name[:-3] if src.name.endswith(".gz") else src.name)
-    made = False
+    made, locals_ = [], []
     try:
-        if src.name.endswith(".gz"):
-            if not local.exists():
-                with gzip.open(src, "rb") as s, local.open("wb") as d:
-                    shutil.copyfileobj(s, d, 1 << 22)
-                made = True
-        elif not local.exists():
-            local.symlink_to(src); made = True
+        for src in srcs:
+            local = workdir / (src.name[:-3] if src.name.endswith(".gz") else src.name)
+            if src.name.endswith(".gz"):
+                if not local.exists():
+                    with gzip.open(src, "rb") as s, local.open("wb") as d:
+                        shutil.copyfileobj(s, d, 1 << 22)
+                    made.append(local)
+            elif not local.exists():
+                local.symlink_to(src); made.append(local)
+            locals_.append(local)
         w, e, s_, n = window
-        cmd = ["mblist", f"-F{fmt}", "-I", local.name, "-MA", "-R", f"{w:.6f}/{e:.6f}/{s_:.6f}/{n:.6f}",
-               "-O", MBLIST_O]
+        if len(locals_) == 1:
+            cmd = ["mblist", f"-F{fmt}", "-I", locals_[0].name, "-MA", "-R", f"{w:.6f}/{e:.6f}/{s_:.6f}/{n:.6f}",
+                   "-O", MBLIST_O]
+            dl = None
+        else:
+            dl = workdir / f"datalist_{locals_[0].name}_{len(locals_)}.mb-1"
+            dl.write_text("".join(f"{l.name} {fmt}\n" for l in locals_))
+            cmd = ["mblist", "-F-1", "-I", dl.name, "-MA", "-R", f"{w:.6f}/{e:.6f}/{s_:.6f}/{n:.6f}", "-O", MBLIST_O]
         r = C.mb(cmd, cwd=str(workdir))
-        cmdline = f"(cd {workdir} && {C.mb_cmdline(cmd)})"
+        cmdline = f"(cd {workdir} && {C.mb_cmdline(cmd)})" + (f"  # datalist: {', '.join(l.name for l in locals_)}" if dl else "")
         out = r.stdout or ""
-        base = {"file": src.name, "n": 0, "acc": None, "stats": None, "cmd": cmdline, "rc": r.returncode,
+        base = {"file": srcs[0].name if len(srcs) == 1 else f"{srcs[0].name} .. {srcs[-1].name} ({len(srcs)} files)",
+                "n": 0, "acc": None, "stats": None, "cmd": cmdline, "rc": r.returncode,
                 "stderr": (r.stderr or "")[-300:]}
         if not out.strip():
             return base
@@ -148,7 +161,7 @@ def _run_mblist_one(args):
         base.update({"n": int(a.shape[0]), "acc": acc, "stats": stats})
         return base
     finally:
-        if made:
+        for local in made:
             try:
                 local.unlink()
             except Exception:
@@ -161,18 +174,18 @@ def _run_mblist_one(args):
 
 
 def per_ping_geometry(a: np.ndarray):
-    """Half-width per ping = max|xtrack| among the ping's valid beams (within this file)."""
+    """Half-width per ping = max|xtrack| among the ping's valid beams.  Ping identity =
+    (ping count N, unix time M): unique within a file and across a multi-file datalist run."""
     ping = a[:, COLS.index("ping")]
+    utime = a[:, COLS.index("utime")]
     xt = np.abs(a[:, COLS.index("xtrack")])
-    # group by ping id (contiguous in mblist output; sort to be safe)
-    order = np.argsort(ping, kind="stable")
-    ping_s, xt_s = ping[order], xt[order]
-    starts = np.r_[0, np.flatnonzero(np.diff(ping_s)) + 1]
+    order = np.lexsort((ping, utime))
+    ping_s, ut_s, xt_s = ping[order], utime[order], xt[order]
+    new_grp = np.r_[True, (np.diff(ping_s) != 0) | (np.diff(ut_s) != 0)]
+    starts = np.flatnonzero(new_grp)
     hw = np.maximum.reduceat(xt_s, starts)
-    hw_per_row = np.empty_like(xt_s)
-    ends = np.r_[starts[1:], len(ping_s)]
-    for i, (s0, e0) in enumerate(zip(starts, ends)):
-        hw_per_row[s0:e0] = hw[i]
+    gid = np.cumsum(new_grp) - 1
+    hw_per_row = hw[gid]
     out = np.empty_like(xt)
     out[order] = hw_per_row
     return out, len(starts)
@@ -321,7 +334,7 @@ def median_s_lr(pair_id: str):
     return None, None
 
 
-def build_cruise(cruise: str, provider_pair: str | None, nproc: int, only_pairs=None):
+def build_cruise(cruise: str, provider_pair: str | None, nproc: int, only_pairs=None, batch_files: int = 1):
     t0 = time.time()
     m = C.load_manifest()
     if provider_pair:
@@ -361,7 +374,8 @@ def build_cruise(cruise: str, provider_pair: str | None, nproc: int, only_pairs=
         log.info("[%s] %s: lr %s %s window=%s margin=%.0fm files=%d fmt=%d", cruise, pid, geom["crs"],
                  geom["shape"], [round(v, 4) for v in geom["window"]], geom["margin_m"], len(files), fmt)
         grid = {"crs": geom["crs"].to_string(), "transform": list(geom["transform"])[:6], "shape": tuple(geom["shape"])}
-        tasks = [(str(f), fmt, geom["window"], str(workdir / pid), grid, z_ref) for f in files]
+        groups = [files[i:i + batch_files] for i in range(0, len(files), max(1, batch_files))]
+        tasks = [([str(f) for f in g] if batch_files > 1 else str(g[0]), fmt, geom["window"], str(workdir / pid), grid, z_ref) for g in groups]
         cmds, per_file = [], []
         acc, stats = empty_acc(*geom["shape"]), empty_stats()
         with ProcessPoolExecutor(max_workers=nproc) as ex:
@@ -436,10 +450,11 @@ def main(argv=None):
     ap.add_argument("--provider", default=None, help="provider pair id (discol_so242_1 | tag_m127)")
     ap.add_argument("--nproc", type=int, default=8)
     ap.add_argument("--pairs", default=None)
+    ap.add_argument("--batch-files", type=int, default=1, help="files per mblist datalist call (1 = one call per file)")
     a = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     only = a.pairs.split(",") if a.pairs else None
-    res = build_cruise(a.cruise, a.provider, a.nproc, only)
+    res = build_cruise(a.cruise, a.provider, a.nproc, only, a.batch_files)
     print(json.dumps(res, indent=1, default=str))
     return 0 if res else 1
 
