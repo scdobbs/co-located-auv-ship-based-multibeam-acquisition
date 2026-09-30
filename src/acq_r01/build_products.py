@@ -110,9 +110,10 @@ def lr_window(lr_path: Path, margin_factor: float = 3.0, min_margin_m: float = 2
 
 
 def _run_mblist_one(args):
-    """Worker: (gz or plain swath path, fmt, window, workdir) -> parsed ndarray (n,9) or None,
-    plus the exact command line and any stderr."""
-    src, fmt, window, workdir = args
+    """Worker: (swath path, fmt, window, workdir, grid, z_ref) -> per-file grid ACCUMULATORS
+    (binned inside the worker, so the parent never holds raw soundings), plus the exact
+    command line, row count and any stderr."""
+    src, fmt, window, workdir, grid, z_ref = args
     src = Path(src); workdir = Path(workdir)
     workdir.mkdir(parents=True, exist_ok=True)
     local = workdir / (src.name[:-3] if src.name.endswith(".gz") else src.name)
@@ -131,15 +132,21 @@ def _run_mblist_one(args):
         r = C.mb(cmd, cwd=str(workdir))
         cmdline = f"(cd {workdir} && {C.mb_cmdline(cmd)})"
         out = r.stdout or ""
+        base = {"file": src.name, "n": 0, "acc": None, "stats": None, "cmd": cmdline, "rc": r.returncode,
+                "stderr": (r.stderr or "")[-300:]}
         if not out.strip():
-            return {"file": src.name, "n": 0, "data": None, "cmd": cmdline, "rc": r.returncode,
-                    "stderr": (r.stderr or "")[-300:]}
-        arr = np.loadtxt(io.StringIO(out), delimiter="\t", ndmin=2)
-        if arr.shape[1] != len(COLS):
-            return {"file": src.name, "n": 0, "data": None, "cmd": cmdline, "rc": r.returncode,
-                    "stderr": f"unexpected column count {arr.shape[1]}"}
-        return {"file": src.name, "n": int(arr.shape[0]), "data": arr, "cmd": cmdline,
-                "rc": r.returncode, "stderr": (r.stderr or "")[-300:]}
+            return base
+        df = pd.read_csv(io.StringIO(out), sep="\t", header=None, names=COLS, dtype="float64", engine="c",
+                         na_values=["NaN", "nan"], on_bad_lines="skip")
+        del out
+        if df.shape[1] != len(COLS):
+            base["stderr"] = f"unexpected column count {df.shape[1]}"; return base
+        a = df.to_numpy(); del df
+        import pyproj
+        transformer = pyproj.Transformer.from_crs("EPSG:4326", grid["crs"], always_xy=True)
+        acc, stats = bin_array(a, grid["shape"], grid["transform"], z_ref, transformer)
+        base.update({"n": int(a.shape[0]), "acc": acc, "stats": stats})
+        return base
     finally:
         if made:
             try:
@@ -171,53 +178,71 @@ def per_ping_geometry(a: np.ndarray):
     return out, len(starts)
 
 
-def bin_pair(chunks, geom, z_ref: float, transformer):
-    ny, nx = geom["shape"]
-    tr = geom["transform"]
-    acc = {k: np.zeros(ny * nx, dtype="float64") for k in ("n", "sz", "szz", "sx", "sa")}
-    stats = {"n_rows": 0, "n_pings": 0, "n_flag_nonzero": 0, "n_beamdep_valid": 0,
-             "n_out_of_grid": 0, "n_hw_zero": 0, "hw_sum": 0.0, "hw_n": 0}
-    for a in chunks:
-        if a is None or a.shape[0] == 0:
-            continue
-        lon, lat = a[:, 0], a[:, 1]
-        topo, xt, graz, bdep, flag = a[:, 2], a[:, 3], a[:, 4], a[:, 5], a[:, 6]
-        stats["n_rows"] += int(a.shape[0])
-        stats["n_flag_nonzero"] += int((flag != 0).sum())
-        hw, npings = per_ping_geometry(a)
-        stats["n_pings"] += npings
-        stats["hw_sum"] += float(hw.sum()); stats["hw_n"] += int(hw.size)
-        ok_hw = hw > 0
-        stats["n_hw_zero"] += int((~ok_hw).sum())
-        xfrac = np.where(ok_hw, np.abs(xt) / np.where(ok_hw, hw, 1.0), np.nan)
-        bd_ok = np.isfinite(bdep) & (bdep > 0) & (bdep < 90)
-        stats["n_beamdep_valid"] += int(bd_ok.sum())
-        x, y = transformer.transform(lon, lat)
-        col = np.floor((x - tr.c) / tr.a).astype("int64")
-        row = np.floor((y - tr.f) / tr.e).astype("int64")
-        inside = (row >= 0) & (row < ny) & (col >= 0) & (col < nx) & np.isfinite(topo)
-        stats["n_out_of_grid"] += int((~inside).sum())
-        if not inside.any():
-            continue
-        idx = (row[inside] * nx + col[inside])
-        z = topo[inside] - z_ref
-        acc["n"] += np.bincount(idx, minlength=ny * nx)
-        acc["sz"] += np.bincount(idx, weights=z, minlength=ny * nx)
-        acc["szz"] += np.bincount(idx, weights=z * z, minlength=ny * nx)
-        xf = xfrac[inside]; xf_ok = np.isfinite(xf)
-        acc["sx"] += np.bincount(idx[xf_ok], weights=xf[xf_ok], minlength=ny * nx)
-        # beam angle accumulated separately for both methods; chosen at the end:
-        #   ',A' = beam depression angle from vertical (launch angle, includes refraction), or
-        #   geometric fallback atan(|acrosstrack| / |depth|) if the format does not carry ',A'
-        geom_angle = np.degrees(np.arctan2(np.abs(xt), np.abs(topo)))
-        for key, val in (("sa_dep", np.where(bd_ok, bdep, np.nan)[inside]),
-                         ("sa_graz", geom_angle[inside])):
-            v_ok = np.isfinite(val)
-            acc.setdefault(key, np.zeros(ny * nx)); acc.setdefault(key + "_n", np.zeros(ny * nx))
-            acc[key] += np.bincount(idx[v_ok], weights=val[v_ok], minlength=ny * nx)
-            acc[key + "_n"] += np.bincount(idx[v_ok], minlength=ny * nx)
-        acc.setdefault("sx_n", np.zeros(ny * nx))
-        acc["sx_n"] += np.bincount(idx[xf_ok], minlength=ny * nx)
+ACC_KEYS = ("n", "sz", "szz", "sx", "sx_n", "sa_dep", "sa_dep_n", "sa_graz", "sa_graz_n")
+
+
+def empty_acc(ny, nx):
+    return {k: np.zeros(ny * nx, dtype="float64") for k in ACC_KEYS}
+
+
+def empty_stats():
+    return {"n_rows": 0, "n_pings": 0, "n_flag_nonzero": 0, "n_beamdep_valid": 0,
+            "n_out_of_grid": 0, "n_hw_zero": 0, "hw_sum": 0.0, "hw_n": 0}
+
+
+def merge_acc(acc, stats, acc2, stats2):
+    if acc2 is None:
+        return
+    for k in ACC_KEYS:
+        acc[k] += acc2[k]
+    for k in stats:
+        stats[k] += stats2[k]
+
+
+def bin_array(a: np.ndarray, shape, transform, z_ref: float, transformer):
+    """Bin one file's soundings (n x 9 mblist columns) onto the lr.tif grid; returns
+    (accumulators, stats).  transform = affine coefficients [a, b, c, d, e, f]."""
+    ny, nx = shape
+    ta, tc, te, tf = transform[0], transform[2], transform[4], transform[5]
+    acc = empty_acc(ny, nx); stats = empty_stats()
+    if a is None or a.shape[0] == 0:
+        return acc, stats
+    lon, lat = a[:, 0], a[:, 1]
+    topo, xt, graz, bdep, flag = a[:, 2], a[:, 3], a[:, 4], a[:, 5], a[:, 6]
+    stats["n_rows"] += int(a.shape[0])
+    stats["n_flag_nonzero"] += int((flag != 0).sum())
+    hw, npings = per_ping_geometry(a)
+    stats["n_pings"] += npings
+    stats["hw_sum"] += float(hw.sum()); stats["hw_n"] += int(hw.size)
+    ok_hw = hw > 0
+    stats["n_hw_zero"] += int((~ok_hw).sum())
+    xfrac = np.where(ok_hw, np.abs(xt) / np.where(ok_hw, hw, 1.0), np.nan)
+    bd_ok = np.isfinite(bdep) & (bdep > 0) & (bdep < 90)
+    stats["n_beamdep_valid"] += int(bd_ok.sum())
+    x, y = transformer.transform(lon, lat)
+    col = np.floor((x - tc) / ta).astype("int64")
+    row = np.floor((y - tf) / te).astype("int64")
+    inside = (row >= 0) & (row < ny) & (col >= 0) & (col < nx) & np.isfinite(topo)
+    stats["n_out_of_grid"] += int((~inside).sum())
+    if not inside.any():
+        return acc, stats
+    idx = (row[inside] * nx + col[inside])
+    z = topo[inside] - z_ref
+    acc["n"] += np.bincount(idx, minlength=ny * nx)
+    acc["sz"] += np.bincount(idx, weights=z, minlength=ny * nx)
+    acc["szz"] += np.bincount(idx, weights=z * z, minlength=ny * nx)
+    xf = xfrac[inside]; xf_ok = np.isfinite(xf)
+    acc["sx"] += np.bincount(idx[xf_ok], weights=xf[xf_ok], minlength=ny * nx)
+    acc["sx_n"] += np.bincount(idx[xf_ok], minlength=ny * nx)
+    # beam angle accumulated separately for both methods; chosen at the end:
+    #   ',A' = beam depression angle from vertical (launch angle, includes refraction), or
+    #   geometric fallback atan(|acrosstrack| / |depth|) if the format does not carry ',A'
+    geom_angle = np.degrees(np.arctan2(np.abs(xt), np.abs(topo)))
+    for key, val in (("sa_dep", np.where(bd_ok, bdep, np.nan)[inside]),
+                     ("sa_graz", geom_angle[inside])):
+        v_ok = np.isfinite(val)
+        acc[key] += np.bincount(idx[v_ok], weights=val[v_ok], minlength=ny * nx)
+        acc[key + "_n"] += np.bincount(idx[v_ok], minlength=ny * nx)
     return acc, stats
 
 
@@ -335,18 +360,15 @@ def build_cruise(cruise: str, provider_pair: str | None, nproc: int, only_pairs=
         z_ref = float(np.nanmedian(geom["lr"])) if np.isfinite(geom["lr"]).any() else 0.0
         log.info("[%s] %s: lr %s %s window=%s margin=%.0fm files=%d fmt=%d", cruise, pid, geom["crs"],
                  geom["shape"], [round(v, 4) for v in geom["window"]], geom["margin_m"], len(files), fmt)
-        import pyproj
-        transformer = pyproj.Transformer.from_crs("EPSG:4326", geom["crs"], always_xy=True)
-        tasks = [(str(f), fmt, geom["window"], str(workdir / pid)) for f in files]
-        cmds, per_file, chunks = [], [], []
+        grid = {"crs": geom["crs"].to_string(), "transform": list(geom["transform"])[:6], "shape": tuple(geom["shape"])}
+        tasks = [(str(f), fmt, geom["window"], str(workdir / pid), grid, z_ref) for f in files]
+        cmds, per_file = [], []
+        acc, stats = empty_acc(*geom["shape"]), empty_stats()
         with ProcessPoolExecutor(max_workers=nproc) as ex:
             for r in ex.map(_run_mblist_one, tasks, chunksize=1):
                 cmds.append(r["cmd"]); per_file.append({"file": r["file"], "n_rows": r["n"], "rc": r["rc"],
                                                         "stderr": r["stderr"]})
-                if r["data"] is not None:
-                    chunks.append(r["data"])
-        acc, stats = bin_pair(chunks, geom, z_ref, transformer)
-        del chunks
+                merge_acc(acc, stats, r["acc"], r["stats"])
         prods, angle_method = finalize(acc, stats, geom, z_ref)
         out_dir = pdir / "ship_products_v1"
         out_dir.mkdir(exist_ok=True)
