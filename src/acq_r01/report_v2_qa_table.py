@@ -45,7 +45,7 @@ def main():
         if r.get("available") is False:
             md.append(f"| {r.pair_id} | {r.unit} | available: false ({r.get('note', '')}) | | | | | | | | | |"); continue
         ctrl = "equal" if r.get("control_vs_v1") and all(v.endswith(":equal") for v in str(r.control_vs_v1).split(";")) else r.get("control_vs_v1")
-        md.append(f"| {r.pair_id} | {r.unit} | {r.n_common} | {r.median_offset_m} | {r.robust_sigma_m} | {r.robust_sigma_over_s_lr} | {r.rms_m} | {r.argmin} | {r.sigma_gain_at_argmin_m} | {r.qa_flags} | {r.median_rsd_over_sd} | {ctrl} |")
+        md.append(f"| {r.pair_id} | {r.unit} | {r.n_common} | {r.median_offset_m} | {r.robust_sigma_m} | {r.robust_sigma_over_s_lr} | {r.rms_m} | {r["argmin"]} | {r.sigma_gain_at_argmin_m} | {r.qa_flags} | {r.median_rsd_over_sd} | {ctrl} |")
     (R02 / "v2_qa_table.md").write_text("\n".join(md)); print("\n".join(md))
     av = df[df.available == True]
     print("\nflag counts:", av.qa_flags.str.split(",").explode().value_counts().to_dict(), "| pairs with no flag:", int((av.qa_flags == "—").sum()), "of", len(av))
