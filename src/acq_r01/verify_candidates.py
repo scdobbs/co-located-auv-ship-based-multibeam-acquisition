@@ -36,7 +36,7 @@ import numpy as np
 import pandas as pd
 import rasterio
 import requests
-from shapely import wkb as shp_wkb
+from shapely import wkb as shp_wkb, make_valid
 from shapely.geometry import box, shape
 from shapely.ops import unary_union
 
@@ -234,17 +234,21 @@ def lr_overlaps(geom, lr_cruises: set, ncei: gpd.GeoDataFrame, pship: pd.DataFra
     out = {}
     if geom is None:
         return out
+    geom = make_valid(geom)
     for cr in lr_cruises:
         if cr.startswith("PANGAEA:"):
             if pship is not None and cr.split(":")[1] in pship.index:
                 r = pship.loc[cr.split(":")[1]]; g = box(r.west, r.south, r.east, r.north)
-                inter = geom.intersection(g); out[cr] = round(stage_b._polygon_area_km2(inter), 3) if not inter.is_empty else 0.0
+                inter = make_valid(geom).intersection(g); out[cr] = round(stage_b._polygon_area_km2(inter), 3) if not inter.is_empty else 0.0
             continue
         sub = ncei[ncei.SURVEY_ID == cr]
         if sub.empty:
             out[cr] = None; continue
-        g = sub.geometry.union_all(); inter = geom.intersection(g)
-        out[cr] = round(stage_b._polygon_area_km2(inter), 3) if not inter.is_empty else 0.0
+        try:
+            g = unary_union([make_valid(x) for x in sub.geometry]); inter = geom.intersection(g)
+            out[cr] = round(stage_b._polygon_area_km2(inter), 3) if not inter.is_empty else 0.0
+        except Exception as e:
+            log.warning("overlap %s failed: %s", cr, str(e)[:80]); out[cr] = None
     return out
 
 
