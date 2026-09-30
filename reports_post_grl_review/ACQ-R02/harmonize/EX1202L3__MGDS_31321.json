@@ -1,0 +1,65 @@
+{
+ "pair_id": "EX1202L3__MGDS_31321",
+ "hr_id": "MGDS:31321",
+ "lr_cruise": "EX1202L3",
+ "designation": "development (ruling H1)",
+ "unit": "vu00",
+ "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EX1202L3__MGDS_31321",
+ "hr_cruise": "M2-11-01",
+ "set": "H1",
+ "hr_tiles_used": 11,
+ "target_crs": "EPSG:32616",
+ "overlap_km2": 11.77,
+ "coreg": {
+  "pass": false,
+  "error": "coregistration has only 0 valid samples"
+ },
+ "hr_res_m": 2.0,
+ "n_hr_valid": 475198,
+ "n_lr_valid": 0,
+ "n_joint_valid": 0,
+ "joint_area_km2": 0.0,
+ "n_valid_tiles_256": 0,
+ "qa_pass": false,
+ "hr_p50_over_joint_m": null,
+ "lr_native": {
+  "beam_footprint_m": 34.91,
+  "posting_m": 34.86,
+  "lr_native_m": 34.91,
+  "beamwidth_deg": 1.0,
+  "rule": "max(footprint, posting) (C2a)"
+ },
+ "k_sweep": {
+  "pair_id": "EX1202L3__MGDS_31321",
+  "status": "ok",
+  "lr_native_m": 34.9,
+  "edge_coh": null,
+  "max_recoverable_k": 4,
+  "per_k": {
+   "2": "recoverable_signal",
+   "4": "recoverable_signal",
+   "8": "no_spectrum",
+   "16": "no_spectrum",
+   "32": "no_spectrum"
+  },
+  "thresholds": {
+   "slope_red": -0.97,
+   "slope_white": -0.8,
+   "coh_circular": 0.136,
+   "grid": "AUV-native final harmonized; anchors=21 validated; corrected lr_native"
+  }
+ },
+ "qc_figure": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/qc/acq_r02/EX1202L3__MGDS_31321.png",
+ "products_v2": {
+  "error": "[Errno 2] No such file or directory: '/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EX1202L3__MGDS_31321/ship_products_v2/qa_shift_s"
+ },
+ "processed_lr_crosscheck": {
+  "cruise": "EX1202L3",
+  "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1202Leg3/multibeam/data/version1/products/EX1202L3_MB_FNL_100m_WGS84.tif.gz",
+  "bytes": 7882154,
+  "sha256": "24b11cde74f4c7d3eb6b5b2c0f98d9df1c1ff11b202a713f5d26fefbdf4fe1fc",
+  "status": "processed_product_not_a_float_grid (dtype uint8, 4 bands)"
+ },
+ "status": "harmonized_development",
+ "wall_s": 548.4
+}

@@ -53,7 +53,9 @@ def main():
     out.to_parquet(p, index=False)
     C.write_json(R02 / "manifest_v2_summary.json", {"date": date.today().isoformat(), "rows": int(len(out)), "existing": int(len(m2)), "new": int(len(new)),
                                                   "by_designation": out.designation.value_counts().to_dict(), "path": str(p), "sha256": C.sha256_file(p)})
-    print(out.designation.value_counts().to_dict(), len(out), p)
+    dev_new = [r["pair_id"] for r in rows if not str(r["designation"]).startswith("confirmatory")]
+    (R02 / "new_dev_pairs.txt").write_text(",".join(dev_new) + "\n")
+    print(out.designation.value_counts().to_dict(), len(out), p, "| new development pairs:", dev_new)
     return 0
 
 

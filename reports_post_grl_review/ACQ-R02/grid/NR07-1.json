@@ -9,10 +9,11 @@
  "sonar": "Simrad EM120",
  "beamwidth_deg": 1.0,
  "beamwidth_key": "em120",
- "footprint_depth_m": 2855.3,
- "cell_m": 49.84,
- "region": "-94.52719726683794/-84.85231797617301/26.014290878455583/28.41769912052219",
- "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mbgrid -I datalist.mb-1 -O grid_NR07-1 -R -94.52719726683794/-84.85231797617301/26.014290878455583/28.41769912052219 -E 0.00050341356118785/0.00044768000785649534/degrees -A2 -G3 -F1 -C0 -M",
+ "footprint_depth_m": 3008.3,
+ "cell_m": 52.51,
+ "region": "-84.96373143655512/-84.85242154945584/26.014290878455583/26.06217170844612",
+ "region_choice": "patch cluster: 582 of 721 parts within 5 km of the part with the largest LR-footprint intersection (bbox coverage 0.000)",
+ "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mbgrid -I datalist.mb-1 -O grid_NR07-1 -R -84.96373143655512/-84.85242154945584/26.014290878455583/26.06217170844612 -E 0.0005249478562857769/0.0004716663511725074/degrees -A2 -G3 -F1 -C0 -M",
  "mode": "raw",
  "outputs": {
   "grid": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/NR07-1__union.grd",
@@ -20,11 +21,11 @@
   "_sd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/NR07-1__union_sd.grd"
  },
  "fill_fraction_per_hr": {
-  "MGDS:31813": 0.2257,
-  "MGDS:31814": 0.263
+  "MGDS:31813": 0.8102,
+  "MGDS:31814": 0.8071
  },
- "grid_depth_median": -3027.7,
- "wall_s": 90.7,
+ "grid_depth_median": -2549.8,
+ "wall_s": 240.4,
  "mbsystem": "5.8.2beta06",
- "code_commit": "5ee382b1c024e312d8a65def72e3bcf87f182d9d"
+ "code_commit": "412209085ee12273f8387612af218b36016c35f4"
 }

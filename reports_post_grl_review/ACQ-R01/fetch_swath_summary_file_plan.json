@@ -1,18 +1,17 @@
 {
   "cruises": {
-    "EX1202L2": {
-      "n_planned": 323,
-      "n_ok": 323,
+    "EX1206": {
+      "n_planned": 614,
+      "n_ok": 614,
       "n_failed": 0,
-      "gb": 7.209,
+      "gb": 15.45,
       "complete": true
     }
   },
-  "total_gb": 7.209,
-  "wall_s": 41.7,
+  "total_gb": 15.45,
+  "wall_s": 75.6,
   "status_counts": {
-    "skip_present": 321,
-    "empty_file": 2
+    "skip_present": 614
   },
-  "generated": "2026-09-30T19:32:10.501725+00:00"
+  "generated": "2026-09-30T19:46:41.014977+00:00"
 }

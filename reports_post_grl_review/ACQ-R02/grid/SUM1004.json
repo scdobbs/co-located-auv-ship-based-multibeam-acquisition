@@ -1,0 +1,29 @@
+{
+ "cruise": "SUM1004",
+ "hr": [
+  "MGDS:33090"
+ ],
+ "n_files": 222,
+ "format": 121,
+ "sonar": "None",
+ "beamwidth_deg": 1.5,
+ "beamwidth_key": "default",
+ "footprint_depth_m": 5757.7,
+ "cell_m": 150.74,
+ "region": "148.8564331594889/149.05293908668955/15.309851828571613/15.413061237743413",
+ "region_choice": "patch cluster: 1 of 16 parts within 5 km of the part with the largest LR-footprint intersection (bbox coverage 0.000)",
+ "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mbgrid -I datalist.mb-1 -O grid_SUM1004 -R 148.8564331594889/149.05293908668955/15.309851828571613/15.413061237743413 -E 0.0014043194179518684/0.0013541484614976362/degrees -A2 -G3 -F1 -C0 -M",
+ "mode": "raw",
+ "outputs": {
+  "grid": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/SUM1004__union.grd",
+  "_num": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/SUM1004__union_num.grd",
+  "_sd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/SUM1004__union_sd.grd"
+ },
+ "fill_fraction_per_hr": {
+  "MGDS:33090": 0.7659
+ },
+ "grid_depth_median": -5758.3,
+ "wall_s": 325.7,
+ "mbsystem": "5.8.2beta06",
+ "code_commit": "412209085ee12273f8387612af218b36016c35f4"
+}

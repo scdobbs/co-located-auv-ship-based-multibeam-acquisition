@@ -1,0 +1,29 @@
+{
+ "pair_id": "SUM1004__MGDS_33090",
+ "hr_id": "MGDS:33090",
+ "lr_cruise": "SUM1004",
+ "designation": "confirmatory",
+ "unit": "nu03",
+ "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu03/SUM1004__MGDS_33090",
+ "hr_cruise": "NA179",
+ "set": "R01",
+ "hr_tiles_used": 1,
+ "target_crs": "EPSG:32655",
+ "overlap_km2": 186.252,
+ "coreg": {
+  "dx_m": 32.01,
+  "dy_m": -34.0,
+  "dz_m": -11.56,
+  "offset_m": 46.7,
+  "n": 59100,
+  "pass": false
+ },
+ "hr_res_m": 1.0,
+ "n_hr_valid": 6769501,
+ "n_lr_valid": 169995076,
+ "n_joint_valid": 5173720,
+ "joint_area_km2": 5.175,
+ "n_valid_tiles_256": 80,
+ "qa_pass": false,
+ "status": "harmonized_confirmatory (sealed: pass/fail, shift, counts only)"
+}
