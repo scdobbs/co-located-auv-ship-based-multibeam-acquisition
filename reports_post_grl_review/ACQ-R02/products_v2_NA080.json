@@ -1,15 +1,15 @@
 [
  {
-  "pair_id": "NA080__MGDS_31290",
+  "pair_id": "NA080__MGDS_31289",
   "cruise": "NA080",
   "qa": {
-   "n_common_cells": 16310,
-   "median_offset_m": 0.229,
-   "rms_m": 15.6281,
-   "robust_sigma_m": 1.5767,
-   "rms_over_median_s_lr": 2.0513,
-   "robust_sigma_over_median_s_lr": 0.207,
-   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "n_common_cells": 16348,
+   "median_offset_m": 0.1351,
+   "rms_m": 16.099,
+   "robust_sigma_m": 1.4169,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
    "shift_argmin_cells": [
     0.0,
     0.0
@@ -18,13 +18,13 @@
    "flags": []
   },
   "control_vs_v1": {
-   "ship_count": "equal",
-   "ship_sd": "equal",
-   "ship_xtrack_frac": "equal",
-   "ship_beam_angle": "equal"
+   "ship_count": "v1 missing",
+   "ship_sd": "v1 missing",
+   "ship_xtrack_frac": "v1 missing",
+   "ship_beam_angle": "v1 missing"
   },
-  "median_rsd_over_sd": 0.790639340877533,
-  "cells": 58200,
+  "median_rsd_over_sd": 0.7933217883110046,
+  "cells": 58491,
   "beam_angle_method": "launch_angle",
   "matches_lr_tif": true
  }

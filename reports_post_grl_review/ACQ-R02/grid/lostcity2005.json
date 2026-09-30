@@ -1,0 +1,28 @@
+{
+ "cruise": "lostcity2005",
+ "hr": [
+  "MGDS:21847"
+ ],
+ "n_files": 758,
+ "format": 94,
+ "sonar": "SeaBeam 2112",
+ "beamwidth_deg": 2.0,
+ "beamwidth_key": "seabeam 2112",
+ "footprint_depth_m": 819.1,
+ "cell_m": 28.59,
+ "region": "-42.1443172165264/-42.089230683473595/30.10569779825009/30.14023159174991",
+ "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mbgrid -I datalist.mb-1 -O grid_lostcity2005 -R -42.1443172165264/-42.089230683473595/30.10569779825009/30.14023159174991 -E 0.0002969727827163495/0.00025686670961732884/degrees -A2 -G3 -F1 -C0 -M",
+ "mode": "raw",
+ "outputs": {
+  "grid": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/lostcity2005__union.grd",
+  "_num": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/lostcity2005__union_num.grd",
+  "_sd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/lostcity2005__union_sd.grd"
+ },
+ "fill_fraction_per_hr": {
+  "MGDS:21847": 0.7853
+ },
+ "grid_depth_median": -1110.7,
+ "wall_s": 1684.5,
+ "mbsystem": "5.8.2beta06",
+ "code_commit": "28bb137c633cb945607edcdc0980d287dbddf2d6"
+}

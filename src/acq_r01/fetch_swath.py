@@ -84,10 +84,9 @@ def fetch_one(rec: dict, sess: requests.Session) -> dict:
         r["status"] = "skip_present_unverified_len"
     elif clen is None and http != "200":
         r["status"] = "failed_head"; return r
-    elif clen is None:
-        # HEAD 200 without Content-Length (2 EX1202L2 files): fetch and accept a non-empty body
-        clen = -1
     else:
+        if clen is None:
+            clen = -1          # HEAD 200 without Content-Length (2 EX1202L2 files): fetch and accept a non-empty body
         if out.exists():
             out.unlink()                       # size mismatch: re-fetch
         for attempt in range(_RETRIES):
