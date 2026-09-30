@@ -155,6 +155,8 @@ def resolve_data_dir(data_url: str, listing_cache: Path) -> tuple[str | None, st
         return None, "ISO path 404 and no /multibeam/data/ parent to probe"
     # Try the ISO-advertised parent first, then ship-segment variants.
     parents = [base.group(1)] + _ship_segment_variants(base.group(1))
+    # Okeanos Explorer legs are served as EX1202Leg2 while the survey id is EX1202L2 (ACQ-R02)
+    parents += [re.sub(r"/(EX\d{4})L(\d)/", r"/\1Leg\2/", x) for x in list(parents) if re.search(r"/EX\d{4}L\d/", x)]
     seen: set[str] = set()
     for parent in parents:
         if parent in seen:

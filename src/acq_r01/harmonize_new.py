@@ -166,6 +166,73 @@ def lock_dir(d: Path):
             p.chmod(0o444)
 
 
+# --------------------------------------------------------------------------- #
+# §6.2 H1 cross-check: the NCEI processed grid is NOT the LR source (LR is gridded from the raw swath
+# like every other pair); it is compared with the raw-swath LR over the harmonized LR grid (median
+# offset and robust sigma), development pairs only.
+# --------------------------------------------------------------------------- #
+STAGE1_MANIFEST = C.REPO / "reports/discovery/stage1_download_manifest.csv"
+
+
+def processed_lr_crosscheck(cruise: str, lr_out: Path, tmp: Path) -> dict:
+    import gzip
+    import requests
+    rec = {"cruise": cruise}
+    url = None
+    if STAGE1_MANIFEST.exists():
+        m = pd.read_csv(STAGE1_MANIFEST)
+        hit = m[(m.role == "LR_processed") & (m.fetch_id == f"NCEI_MBBDB:{cruise}")]
+        if len(hit):
+            url = str(hit.iloc[0].url)
+    if url is None:
+        rec["status"] = "no_processed_product_listed"; return rec
+    rec["url"] = url
+    d = GRIDDED / "processed_crosscheck" / cruise; d.mkdir(parents=True, exist_ok=True)
+    p = d / url.rsplit("/", 1)[-1]
+    if not p.exists():
+        with requests.get(url, headers={"User-Agent": "auv_ship_colocated_bathy/acq_r02"}, stream=True, timeout=600) as g:
+            g.raise_for_status()
+            with p.open("wb") as fh:
+                for ch in g.iter_content(1 << 20):
+                    fh.write(ch)
+    rec["bytes"] = p.stat().st_size; rec["sha256"] = C.sha256_file(p)
+    raw = p
+    if p.suffix == ".gz":
+        raw = p.with_suffix("")
+        if not raw.exists():
+            with gzip.open(p, "rb") as src, raw.open("wb") as dst:
+                shutil.copyfileobj(src, dst)
+    if raw.suffix.lower() in (".xyz", ".txt", ".csv", ".dat"):
+        rec["status"] = "processed_product_is_xyz_points_not_gridded"; return rec
+    with rasterio.open(str(lr_out)) as ds:
+        lr = ds.read(1, masked=True).filled(np.nan); tcrs, ttr = ds.crs, ds.transform; shp = lr.shape
+        lr = np.where(np.isclose(lr, FILL, atol=1e-3), np.nan, lr)
+    with rasterio.open(str(raw)) as ps:
+        pcrs = ps.crs
+        b = ps.bounds
+        if pcrs is None and -180 <= b.left <= 180 and -90 <= b.bottom <= 90 and -90 <= b.top <= 90:
+            pcrs = rasterio.crs.CRS.from_epsg(4326); rec["processed_crs_assumed"] = "EPSG:4326 (no CRS in file; geographic range)"
+        if pcrs is None:
+            rec["status"] = "processed_product_has_no_crs"; return rec
+        src = ps.read(1, masked=True).filled(np.nan).astype("float32")
+        if ps.nodata is not None:
+            src = np.where(np.isclose(src, ps.nodata), np.nan, src)
+        if np.nanmedian(src) > 0:
+            src = -src; rec["processed_sign_flipped"] = True
+        dst = np.full(shp, np.nan, "float32")
+        reproject(src, dst, src_transform=ps.transform, src_crs=pcrs, dst_transform=ttr, dst_crs=tcrs,
+                  resampling=Resampling.bilinear, src_nodata=np.nan, dst_nodata=np.nan)
+    ok = np.isfinite(lr) & np.isfinite(dst)
+    if ok.sum() < 100:
+        rec["status"] = f"insufficient_common_cells ({int(ok.sum())})"; return rec
+    diff = lr[ok] - dst[ok]
+    med = float(np.median(diff)); mad = float(np.median(np.abs(diff - med)))
+    rec.update({"status": "ok", "processed_file": raw.name, "processed_res_native": [abs(ps.transform.a), abs(ps.transform.e)], "n_common": int(ok.sum()),
+                "median_offset_m_rawswath_minus_processed": round(med, 3), "robust_sigma_m": round(1.4826 * mad, 3),
+                "p05_m": round(float(np.percentile(diff, 5)), 3), "p95_m": round(float(np.percentile(diff, 95)), 3)})
+    return rec
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--hr", required=True); ap.add_argument("--cruise", required=True); ap.add_argument("--nproc", type=int, default=8)
@@ -273,6 +340,11 @@ def main(argv=None):
         rec["products_v2"] = res[0] if res else None
     except Exception as e:
         rec["products_v2"] = {"error": str(e)[:150]}
+    if str(row.get("set", "")) == "H1":
+        try:
+            rec["processed_lr_crosscheck"] = processed_lr_crosscheck(a.cruise, lr_out, tmp)
+        except Exception as e:
+            rec["processed_lr_crosscheck"] = {"status": f"error: {str(e)[:120]}"}
     rec["status"] = "harmonized_development"; rec["wall_s"] = round(time.time() - t0, 1)
     _write(rec); lock_dir(out_dir); shutil.rmtree(tmp, ignore_errors=True)
     log.info("%s", json.dumps({k: rec[k] for k in ("pair_id", "status", "overlap_km2", "coreg", "n_valid_tiles_256", "lr_native", "k_sweep")}, default=str)[:800])
