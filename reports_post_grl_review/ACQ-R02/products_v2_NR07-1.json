@@ -1,0 +1,33 @@
+[
+ {
+  "pair_id": "NR07-1__MGDS_31813",
+  "cruise": "NR07-1",
+  "qa": {
+   "n_common_cells": 6240,
+   "median_offset_m": -0.1355,
+   "rms_m": 22.6455,
+   "robust_sigma_m": 3.1536,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    -0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "control_vs_v1": {
+   "ship_count": "v1 missing",
+   "ship_sd": "v1 missing",
+   "ship_xtrack_frac": "v1 missing",
+   "ship_beam_angle": "v1 missing"
+  },
+  "median_rsd_over_sd": 0.8168147802352905,
+  "cells": 7352,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ }
+]

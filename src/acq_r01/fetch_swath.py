@@ -82,8 +82,11 @@ def fetch_one(rec: dict, sess: requests.Session) -> dict:
         r["status"] = "skip_present"
     elif out.exists() and clen is None and out.stat().st_size > 0:
         r["status"] = "skip_present_unverified_len"
-    elif clen is None:
+    elif clen is None and http != "200":
         r["status"] = "failed_head"; return r
+    elif clen is None:
+        # HEAD 200 without Content-Length (2 EX1202L2 files): fetch and accept a non-empty body
+        clen = -1
     else:
         if out.exists():
             out.unlink()                       # size mismatch: re-fetch
@@ -100,14 +103,14 @@ def fetch_one(rec: dict, sess: requests.Session) -> dict:
                     with tmp.open("wb") as fh:
                         for chunk in g.iter_content(chunk_size=1 << 20):
                             fh.write(chunk); n += len(chunk)
-                if n == clen:
-                    tmp.rename(out); r["status"] = "fetched"; break
+                if n == clen or (clen == -1 and n > 0):
+                    tmp.rename(out); r["status"] = "fetched" if clen != -1 else "fetched_unverified_len"; break
                 tmp.unlink(missing_ok=True); time.sleep(2 ** attempt)
             except requests.Timeout:
                 r["http_status"] = "timeout"; time.sleep(2 ** attempt)
             except Exception as e:
                 r["http_status"] = f"err:{type(e).__name__}"; time.sleep(2 ** attempt)
-        if r["status"] != "fetched":
+        if not r["status"].startswith("fetched"):
             r["status"] = "failed_get"; return r
         time.sleep(_THROTTLE)
     r["received"] = out.stat().st_size
@@ -213,8 +216,8 @@ def main(argv=None):
     # per-cruise SHA256SUMS + fetch manifest on OAK
     summary = {}
     for cr, g in df.groupby("cruise"):
-        ok = g[g.status.isin(["fetched", "skip_present", "skip_present_unverified_len"])]
-        bad = g[~g.status.isin(["fetched", "skip_present", "skip_present_unverified_len"])]
+        ok = g[g.status.isin(["fetched", "fetched_unverified_len", "skip_present", "skip_present_unverified_len"])]
+        bad = g[~g.status.isin(["fetched", "fetched_unverified_len", "skip_present", "skip_present_unverified_len"])]
         d = C.RAW_SWATH_OAK / cr
         with (d / "SHA256SUMS").open("w") as f:
             for _, r in ok.iterrows():

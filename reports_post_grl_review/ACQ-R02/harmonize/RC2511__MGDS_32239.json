@@ -1,0 +1,29 @@
+{
+ "pair_id": "RC2511__MGDS_32239",
+ "hr_id": "MGDS:32239",
+ "lr_cruise": "RC2511",
+ "designation": "confirmatory",
+ "unit": "nu01b",
+ "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu01b/RC2511__MGDS_32239",
+ "hr_cruise": NaN,
+ "set": "R01",
+ "hr_tiles_used": 3,
+ "target_crs": "EPSG:32623",
+ "overlap_km2": 184.922,
+ "coreg": {
+  "dx_m": -23.78,
+  "dy_m": -8.22,
+  "dz_m": 0.02,
+  "offset_m": 25.16,
+  "n": 42694,
+  "pass": true
+ },
+ "hr_res_m": 1.037,
+ "n_hr_valid": 84038760,
+ "n_lr_valid": 114085120,
+ "n_joint_valid": 51156739,
+ "joint_area_km2": 55.007,
+ "n_valid_tiles_256": 800,
+ "qa_pass": true,
+ "status": "harmonized_confirmatory (sealed: pass/fail, shift, counts only)"
+}

@@ -1,0 +1,33 @@
+[
+ {
+  "pair_id": "KM0923__MGDS_31429",
+  "cruise": "KM0923",
+  "qa": {
+   "n_common_cells": 9079,
+   "median_offset_m": 0.0591,
+   "rms_m": 10.9605,
+   "robust_sigma_m": 4.7888,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    -0.25,
+    0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "control_vs_v1": {
+   "ship_count": "v1 missing",
+   "ship_sd": "v1 missing",
+   "ship_xtrack_frac": "v1 missing",
+   "ship_beam_angle": "v1 missing"
+  },
+  "median_rsd_over_sd": 0.867991030216217,
+  "cells": 10353,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ }
+]

@@ -1,17 +1,18 @@
 {
   "cruises": {
-    "EX1402L2": {
-      "n_planned": 311,
-      "n_ok": 311,
-      "n_failed": 0,
-      "gb": 10.155,
-      "complete": true
+    "EX1202L3": {
+      "n_planned": 279,
+      "n_ok": 278,
+      "n_failed": 1,
+      "gb": 6.999,
+      "complete": false
     }
   },
-  "total_gb": 10.155,
-  "wall_s": 599.9,
+  "total_gb": 6.999,
+  "wall_s": 26.0,
   "status_counts": {
-    "fetched": 311
+    "skip_present": 278,
+    "failed_head": 1
   },
-  "generated": "2026-09-30T17:56:41.320181+00:00"
+  "generated": "2026-09-30T18:04:46.026551+00:00"
 }

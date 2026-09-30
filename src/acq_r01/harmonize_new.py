@@ -96,11 +96,35 @@ def materialize(hr_id, path: Path, out: Path):
         return None
 
 
+_VARIANT_RANK = [("navadjust", 0), ("_tide_", 1)]
+
+
 def hr_rasters(hr_id) -> list[Path]:
+    """Float HR rasters of a candidate. MGDS Sentry/ABE releases list several processing variants of the same
+    dive (…_tide_1x1, …_tide_equal_1x1, …_autopilot, …_gain50_navadjust): keep ONE per dive (navadjust > plain
+    tide > others) so the mosaic never blends different navigation solutions of the same survey."""
     d = RAW_HR / hr_id.replace(":", "_")
     cands = [p for p in d.rglob("*") if p.is_file() and p.suffix.lower() in RASTER_EXT and not p.name.endswith(".converted.tif")
              and "diff" not in p.name.lower() and "interp" not in p.name.lower() and "Int." not in p.name]
-    return [p for p in cands if not is_rgb_visualization(p)[0]]
+    cands = [p for p in cands if not is_rgb_visualization(p)[0]]
+    import re as _re
+    groups = {}
+    for p in cands:
+        m = _re.match(r"^((?:sentry|abe|jason)\d+)_", p.name, _re.I)
+        groups.setdefault(m.group(1).lower() if m else p.name, []).append(p)
+
+    def rank(p):
+        n = p.name.lower()
+        if "navadjust" in n:
+            return (0, "equal" in n, "autopilot" in n, len(n))
+        return (1, "equal" in n, "autopilot" in n, "gain" in n, len(n))
+    out = []
+    for k, ps in groups.items():
+        ps = sorted(ps, key=rank)
+        if len(ps) > 1:
+            log.info("%s: dive %s has %d variants; using %s", hr_id, k, len(ps), ps[0].name)
+        out.append(ps[0])
+    return sorted(out)
 
 
 def hr_mosaic(hr_id, lr_bounds_4326, tmp: Path):
@@ -128,14 +152,16 @@ def hr_mosaic(hr_id, lr_bounds_4326, tmp: Path):
     try:
         b = (min(s.bounds.left for s in srcs), min(s.bounds.bottom for s in srcs), max(s.bounds.right for s in srcs), max(s.bounds.top for s in srcs))
         span = max(b[2] - b[0], b[3] - b[1]); native = min(abs(s.res[0]) for s in srcs)
-        if span / native > 3000.0:
-            # dispersed dive patches (e.g. MGDS:32239: EMARK, Hydra, Puy des Folles tens of km apart): mosaicking would
-            # coarsen the HR to span/3000; keep the patch with the largest LR overlap at native resolution instead
+        union_area = (b[2] - b[0]) * (b[3] - b[1]); tile_area = sum((s.bounds.right - s.bounds.left) * (s.bounds.top - s.bounds.bottom) for s in srcs)
+        coverage = tile_area / union_area if union_area > 0 else 1.0
+        if coverage < 0.2 or (span / native) ** 2 > 4e8:
+            # dispersed dive patches (e.g. MGDS:32239: EMARK, Hydra, Puy des Folles tens of km apart) or a mosaic too large
+            # for memory: never coarsen the HR to fit — keep the patch with the largest LR overlap at native resolution
             for s_ in srcs:
                 s_.close()
-            log.warning("%s: %d HR patches span %.0f native cells; keeping the largest-overlap patch, no mosaic", hr_id, len(kept), span / native)
+            log.warning("%s: %d HR patches, bbox coverage %.2f, span %.0f native cells; keeping the largest-overlap patch, no mosaic", hr_id, len(kept), coverage, span / native)
             return max(kept, key=lambda k: k[1])[0], len(kept)
-        res = native
+        res = native            # the HR is never resampled coarser than its native GSD by the mosaic
         mosaic, tr = rmerge.merge(srcs, res=res, nodata=FILL)
         out = tmp / "hr_mosaic.tif"
         prof = {"driver": "GTiff", "height": mosaic.shape[1], "width": mosaic.shape[2], "count": 1, "dtype": "float32", "crs": crs0,
