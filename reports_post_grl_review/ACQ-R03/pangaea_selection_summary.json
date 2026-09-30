@@ -1,0 +1,40 @@
+{
+ "PANGAEA_864677": {
+  "cruise_dir": "PANGAEA_864677",
+  "dataset": "864677",
+  "doi": "10.1594/PANGAEA.864677",
+  "cruise": "M114/1",
+  "unit": "pu01",
+  "hr": "PANGAEA:889317",
+  "n_all_files_whole_cruise": 349,
+  "gb_whole_cruise": 8.036,
+  "n_selected": 59,
+  "gb_selected": 1.401,
+  "rows_skipped_url_name_mismatch": [],
+  "selection": {
+   "hr": "PANGAEA:889317",
+   "utm": "EPSG:32615",
+   "hr_footprint_km2": 6.322,
+   "buffered_km2": 95.862,
+   "buffer_m": 4000.0,
+   "method": "per-file WKT ship track \u2229 buffered footprint (fallback: bounds box)",
+   "geometry_methods": {
+    "wkt_track": 349
+   }
+  },
+  "generated": "2026-09-30T22:40:19+00:00",
+  "files": {
+   "csv": "pangaea_selection_PANGAEA_864677.csv",
+   "urls": "pangaea_selection_PANGAEA_864677_urls.txt",
+   "candidates": "pangaea_candidates_PANGAEA_864677.csv"
+  }
+ },
+ "PANGAEA_892317": {
+  "cruise_dir": "PANGAEA_892317",
+  "n_all_files_whole_cruise": 1170,
+  "gb_whole_cruise": 39.676,
+  "rows_skipped_url_name_mismatch": [],
+  "status": "candidates only; positions from m112_positions.py",
+  "n_wcd_rows_excluded": 1162
+ }
+}
