@@ -1,0 +1,140 @@
+{
+  "generated": "2026-09-30",
+  "source": "PANGAEA",
+  "policy": "conservative: shared HR cruise OR shared LR cruise OR centroid<=50km",
+  "units": [
+    {
+      "unit_id": "pu00",
+      "members": [
+        "PANGAEA:884112"
+      ],
+      "n_candidates": 1,
+      "basin": "Mediterranean",
+      "setting": "hydrothermal_vent",
+      "depth_min_m": 1600.0,
+      "depth_max_m": 1600.0,
+      "ship_cruises": [
+        "PANGAEA:892317"
+      ],
+      "hr_sources": [
+        {
+          "hr_id": "PANGAEA:884112",
+          "doi": "10.1594/PANGAEA.884112",
+          "title": "AUV MARUM-SEAL Dive 71-73: High resolution bathymetry and backscatter of Venere Mud Vulcano",
+          "platform": "AUV",
+          "campaigns": "",
+          "best_lr": "PANGAEA:892317",
+          "best_lr_kind": "pangaea_raw_swath"
+        }
+      ],
+      "lon": 17.036,
+      "lat": 38.162
+    },
+    {
+      "unit_id": "pu01",
+      "members": [
+        "PANGAEA:889317"
+      ],
+      "n_candidates": 1,
+      "basin": "Gulf of Mexico/Caribbean",
+      "setting": "volcanic_or_seamount",
+      "depth_min_m": 1200.0,
+      "depth_max_m": 2900.0,
+      "ship_cruises": [
+        "PANGAEA:864677"
+      ],
+      "hr_sources": [
+        {
+          "hr_id": "PANGAEA:889317",
+          "doi": "10.1594/PANGAEA.889317",
+          "title": "AUV MARUM-SEAL Dive 70: High Resolution Bathymetry and Backscatter of Chapopote Asphalt Volcano",
+          "platform": "AUV",
+          "campaigns": "M114/1",
+          "best_lr": "PANGAEA:864677",
+          "best_lr_kind": "pangaea_raw_swath"
+        }
+      ],
+      "lon": -93.453,
+      "lat": 21.909
+    },
+    {
+      "unit_id": "pu02",
+      "members": [
+        "PANGAEA:941403"
+      ],
+      "n_candidates": 1,
+      "basin": "Mediterranean",
+      "setting": "continental_margin",
+      "depth_min_m": null,
+      "depth_max_m": null,
+      "ship_cruises": [
+        "PANGAEA:922750"
+      ],
+      "hr_sources": [
+        {
+          "hr_id": "PANGAEA:941403",
+          "doi": "10.1594/PANGAEA.941403",
+          "title": "Multibeam bathymetry processed data (Reson SeaBat T50-S working area dataset) of AUV ABYSS during cr",
+          "platform": "AUV",
+          "campaigns": "AL532",
+          "best_lr": "PANGAEA:922750",
+          "best_lr_kind": "pangaea_raw_swath"
+        }
+      ],
+      "lon": 15.291,
+      "lat": 37.525
+    },
+    {
+      "unit_id": "pu03",
+      "members": [
+        "PANGAEA:958275"
+      ],
+      "n_candidates": 1,
+      "basin": "Mediterranean",
+      "setting": "hydrothermal_vent",
+      "depth_min_m": null,
+      "depth_max_m": null,
+      "ship_cruises": [
+        "PANGAEA:994139"
+      ],
+      "hr_sources": [
+        {
+          "hr_id": "PANGAEA:958275",
+          "doi": "10.1594/PANGAEA.958275",
+          "title": "Multibeam bathymetry processed data (Reson SeaBat 7125 working area dataset) of AUV ABYSS during cru",
+          "platform": "AUV",
+          "campaigns": "POS510",
+          "best_lr": "PANGAEA:994139",
+          "best_lr_kind": "pangaea_raw_swath"
+        }
+      ],
+      "lon": 25.439,
+      "lat": 36.48
+    }
+  ],
+  "counts": {
+    "auv_hits": 10809,
+    "auv_bathymetry_datasets": 11,
+    "ship_hits": 13145,
+    "ship_datasets": 1215,
+    "status_counts": {
+      "candidate": 5,
+      "in_corpus": 3,
+      "hr_raw_only": 2,
+      "no_independent_ship_lr": 1
+    },
+    "shares_lockbox": 0,
+    "join_existing_units": 1,
+    "near_r01_or_h1": 0,
+    "new_units": 4,
+    "new_units_by_setting": {
+      "hydrothermal_vent": 2,
+      "volcanic_or_seamount": 1,
+      "continental_margin": 1
+    },
+    "new_units_by_basin": {
+      "Mediterranean": 3,
+      "Gulf of Mexico/Caribbean": 1
+    }
+  }
+}

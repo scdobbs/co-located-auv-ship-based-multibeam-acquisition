@@ -183,7 +183,7 @@ def _decompress(path: Path) -> list[Path]:
                     dst.write(chunk)
         return [out]
     if suf == ".zip":
-        out_dir = path.with_suffix("_unzipped")
+        out_dir = path.with_name(path.stem + "_unzipped")
         out_dir.mkdir(parents=True, exist_ok=True)
         extracted: list[Path] = []
         with zipfile.ZipFile(path) as zf:

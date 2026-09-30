@@ -123,7 +123,8 @@ def load_candidates(include_pangaea: bool) -> pd.DataFrame:
                          "lr_best": str(r.best_lr), "lr_cruises_all": str(r.lr_cruises_all), "lon": float(r.lon), "lat": float(r.lat),
                          "prior_unit": punit.get(hid, ("", ""))[0],
                          "prior_designation": punit.get(hid, ("", "development (joins existing unit)" if isinstance(r.joins_existing_units, str) and r.joins_existing_units else ""))[1],
-                         "prior_joins": str(r.joins_existing_units) if isinstance(r.joins_existing_units, str) else "", "general_type": ""})
+                         "prior_joins": str(r.joins_existing_units) if isinstance(r.joins_existing_units, str) else "", "general_type": "",
+                         "lr_options": str(r.lr_options) if isinstance(r.lr_options, str) else ""})
     df = pd.DataFrame(rows)
     df["hr_cruise_meta"] = df.hr_cruise_catalog.where(df.hr_cruise_catalog != "", df.hr_cruise_desc)
     # MGDS:5174 first (directive §5.1)
@@ -348,13 +349,21 @@ def download_hr(row) -> dict:
             if "format=zip" in u:
                 name = f"PANGAEA_{row.hr_id.split(':')[1]}.zip"
             p = d / name
-            if not p.exists():
-                with requests.get(u, headers=H, stream=True, timeout=600) as g:
-                    g.raise_for_status()
-                    with p.open("wb") as fh:
-                        for ch in g.iter_content(1 << 20):
-                            fh.write(ch)
-            files.append({"url": u, "path": str(p), "bytes": p.stat().st_size, "sha256": sha256_file(p)})
+            try:
+                if not p.exists():
+                    tmp_p = p.with_name(p.name + ".part")
+                    with requests.get(u, headers=H, stream=True, timeout=600) as g:
+                        g.raise_for_status()
+                        with tmp_p.open("wb") as fh:
+                            for ch in g.iter_content(1 << 20):
+                                fh.write(ch)
+                    tmp_p.rename(p)
+                files.append({"url": u, "path": str(p), "bytes": p.stat().st_size, "sha256": sha256_file(p)})
+            except Exception as e:           # one unavailable companion file must not sink the dataset
+                log.warning("PANGAEA %s: %s -> %s", row.hr_id, u, str(e)[:100])
+                files.append({"url": u, "path": None, "bytes": 0, "error": str(e)[:120]})
+        if not any(f.get("path") for f in files):
+            raise RuntimeError("no PANGAEA file could be downloaded: " + "; ".join(f.get("error", "") for f in files)[:200])
     meta = {"hr_id": row.hr_id, "files": files, "bytes": int(sum(f["bytes"] for f in files))}
     meta_p.write_text(json.dumps(meta, indent=1))
     return meta
@@ -463,6 +472,11 @@ def main(argv=None):
         geoms[r.hr_id] = geom
         rec["lon"], rec["lat"] = float(geom.centroid.x), float(geom.centroid.y); rec["basin"] = basin(rec["lon"], rec["lat"])
         lrs = {x for x in str(r.lr_cruises_all).split(";") if x and x != "nan"} | ({str(r.lr_best)} if r.lr_best and r.lr_best != "nan" else set())
+        if r.hr_id.startswith("PANGAEA:") and isinstance(r.get("lr_options"), str):
+            # every PANGAEA ship dataset offered for this HR (bathymetry only: water-column etc. were dropped by classify_ship)
+            for opt in r.lr_options.split(" || "):
+                if opt.startswith("PANGAEA:") and (pship is None or opt.split("|")[0].split(":")[1] in pship.index):
+                    lrs.add(opt.split("|")[0])
         ov = lr_overlaps(geom, lrs, ncei, pship)
         real = {k: v for k, v in ov.items() if v and v >= MIN_OVERLAP_KM2}
         rec["lr_overlap_km2"] = json.dumps(ov); rec["lr_cruises_real"] = ";".join(sorted(real))

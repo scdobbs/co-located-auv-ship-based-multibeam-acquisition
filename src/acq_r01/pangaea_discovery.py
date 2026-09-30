@@ -54,6 +54,9 @@ AUV_RE = re.compile(r"\b(AUV|Abyss|ABYSS|MARUM-SEAL|SEAL|REMUS|HUGIN|Sentry|Aste
 BATHY_RE = re.compile(r"bathymetr|multibeam|MBES|\bgrid", re.I)
 HR_EXCL_RE = re.compile(r"sensor data|CTD|turbidity|photo|image|mosaic|video|sidescan|side-scan|ParaSound|sediment echo|water column|magnetic|flow rate|fish|calving|"
                         r"backscatter (data|processed)|navigation|track|USBL|position", re.I)
+# ship datasets that are not bathymetry although a multibeam sonar is named in the title (ACQ-R02 §5 fix:
+# the Kolumbo candidate's best LR had been an EM710 *water column* dataset)
+SHIP_EXCL_RE = re.compile(r"water ?column|backscatter|sidescan|side-scan|navigation|sound velocity|CTD|calibration", re.I)
 SHIP_SONAR_RE = re.compile(r"EM ?\d{3,4}|Hydrosweep|SeaBeam|multibeam|swath sonar", re.I)
 RAW_RE = re.compile(r"raw data|links to raw|RAW-Data|entire dataset", re.I)
 COMPOSITE_RE = re.compile(r"combined|merged|compil|GEBCO|GMRT|synthesis|integrat", re.I)
@@ -147,7 +150,8 @@ def classify_auv(df):
 
 def classify_ship(df):
     t = df.title.fillna("")
-    keep = t.str.contains(SHIP_SONAR_RE) & ~t.str.contains(AUV_RE) & ~t.str.contains(COMPOSITE_RE) & ~df.abstract.fillna("").str.contains(r"\bAUV\b|autonomous underwater", case=False)
+    keep = (t.str.contains(SHIP_SONAR_RE) & ~t.str.contains(AUV_RE) & ~t.str.contains(COMPOSITE_RE) & ~t.str.contains(SHIP_EXCL_RE)
+            & ~df.abstract.fillna("").str.contains(r"\bAUV\b|autonomous underwater", case=False))
     df = df[keep].copy()
     df["lr_kind"] = np.where(df.title.str.contains(RAW_RE), "pangaea_raw_swath", "pangaea_processed_grid")
     df["sonar"] = df.title.str.extract(r"(EM ?\d{3,4}(?:\s*MK\s*II)?|Hydrosweep(?: DS(?:-2)?)?|SeaBeam ?\d*)", flags=re.I)[0].str.replace(" ", "", regex=False).str.upper()

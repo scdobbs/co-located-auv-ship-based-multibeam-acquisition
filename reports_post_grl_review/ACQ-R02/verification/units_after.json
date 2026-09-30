@@ -37,7 +37,7 @@
         "MGDS:31289": "development (joins existing unit)"
       },
       "hr_cruises": [
-        ""
+        "nan"
       ],
       "lr_cruises": [
         "NA080"
@@ -104,7 +104,7 @@
         "MGDS:30047": "development (joins existing unit)"
       },
       "hr_cruises": [
-        ""
+        "nan"
       ],
       "lr_cruises": [
         "2009_Amundsen"
@@ -282,7 +282,7 @@
         "MGDS:32239": "confirmatory"
       },
       "hr_cruises": [
-        ""
+        "nan"
       ],
       "lr_cruises": [
         "RC2511"
@@ -305,6 +305,40 @@
         "SUM1004"
       ],
       "corpus_members": []
+    },
+    {
+      "unit_id": "pu01",
+      "members": [
+        "PANGAEA:889317"
+      ],
+      "corpus_units": [],
+      "designations": {
+        "PANGAEA:889317": "development"
+      },
+      "hr_cruises": [
+        "M114/1"
+      ],
+      "lr_cruises": [
+        "PANGAEA:864677"
+      ],
+      "corpus_members": []
+    },
+    {
+      "unit_id": "pu03",
+      "members": [
+        "PANGAEA:958275"
+      ],
+      "corpus_units": [],
+      "designations": {
+        "PANGAEA:958275": "confirmatory"
+      },
+      "hr_cruises": [
+        "POS510"
+      ],
+      "lr_cruises": [
+        "PANGAEA:994139"
+      ],
+      "corpus_members": []
     }
   ],
   "changes": [
@@ -313,56 +347,28 @@
   "dropped": [
     [
       "MGDS:24467",
-      "",
+      NaN,
       "development (ruling H1)",
       "false_pair",
       "no LR footprint overlaps the real HR footprint (best TN313: 0.311)"
     ],
     [
       "MGDS:31291",
-      "",
+      NaN,
       "development (ruling H1)",
       "no_elevation_raster",
       "no readable float raster (renders/PDF only)"
     ],
     [
-      "PANGAEA:884112",
-      "pu00",
-      "development",
-      "no_elevation_raster",
-      "no readable float raster (renders/PDF only)"
-    ],
-    [
-      "PANGAEA:889317",
-      "pu01",
-      "development",
-      "hr_download_or_footprint_failed",
-      "503 Server Error: Service Unavailable for url: https://hs.pangaea.de/Maps/Chapopote_MainAsphaltField/M114_AUV-Dive70/2015_M114_EM2040_AUV_D70_A2F1C7E1"
-    ],
-    [
       "PANGAEA:892662",
-      "",
+      NaN,
       "development (joins existing unit)",
       "hr_download_or_footprint_failed",
       "401 Client Error: Unauthorized for url: https://store.pangaea.de/Publications/AlevizosE-etal_2018/AUV-grid-data.zip"
     ],
     [
-      "PANGAEA:941403",
-      "pu02",
-      "confirmatory",
-      "hr_download_or_footprint_failed",
-      "503 Server Error: Service Unavailable for url: https://download.pangaea.de/dataset/941403/files/Abyss353-2x2.tif"
-    ],
-    [
-      "PANGAEA:958275",
-      "pu03",
-      "confirmatory",
-      "hr_download_or_footprint_failed",
-      "503 Server Error: Service Unavailable for url: https://download.pangaea.de/dataset/958275/files/Multibeam_bathymetry_processed_data_AUV_Abyss_RVPOSEID"
-    ],
-    [
       "MGDS:16792",
-      "",
+      NaN,
       "development (joins existing unit)",
       "no_elevation_raster",
       "no readable float raster (renders/PDF only)"
@@ -376,14 +382,14 @@
     ],
     [
       "MGDS:24449",
-      "",
+      NaN,
       "development (joins existing unit)",
       "no_elevation_raster",
       "no readable float raster (renders/PDF only)"
     ],
     [
       "MGDS:33027",
-      "",
+      NaN,
       "development (joins existing unit)",
       "false_pair",
       "no LR footprint overlaps the real HR footprint (best PASC02WT: 0.05)"
@@ -394,6 +400,20 @@
       "confirmatory",
       "false_pair",
       "no LR footprint overlaps the real HR footprint (best SUM1004: 0.002)"
+    ],
+    [
+      "PANGAEA:884112",
+      "pu00",
+      "development",
+      "no_elevation_raster",
+      "no readable float raster (renders/PDF only)"
+    ],
+    [
+      "PANGAEA:941403",
+      "pu02",
+      "confirmatory",
+      "hr_download_or_footprint_failed",
+      "503 Server Error: Service Unavailable for url: https://download.pangaea.de/dataset/941403/files/Abyss354-Mittelwert.tif"
     ]
   ]
 }

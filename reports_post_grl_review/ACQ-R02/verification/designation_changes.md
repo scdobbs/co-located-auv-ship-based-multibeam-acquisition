@@ -5,10 +5,10 @@
 | unit | members | corpus units | designations | HR cruises | LR cruises |
 |---|---|---|---|---|---|
 | lu07 | MGDS:24002; MGDS:31429 | lu07 | MGDS:24002: development (ruling H1); MGDS:31429: development (joins existing unit) | FK140625,TN293 | EX0909,KM0923 |
-| lu13 | MGDS:31289 | lu13 | MGDS:31289: development (joins existing unit) |  | NA080 |
+| lu13 | MGDS:31289 | lu13 | MGDS:31289: development (joins existing unit) | nan | NA080 |
 | lu05 | MGDS:33068; MGDS:5174 | lu05 | MGDS:5174: development (ruling H1); MGDS:33068: development (joins existing unit) | AT07-04,AT50-21 | AT42-06,TN399 |
 | lu01 | MGDS:24424 | lu01 | MGDS:24424: development (joins existing unit) | FK171110 | FK171110 |
-| lu18 | MGDS:30047 | lu18 | MGDS:30047: development (joins existing unit) |  | 2009_Amundsen |
+| lu18 | MGDS:30047 | lu18 | MGDS:30047: development (joins existing unit) | nan | 2009_Amundsen |
 | vu00 | MGDS:20815; MGDS:31321 |  | MGDS:20815: development (ruling H1); MGDS:31321: development (ruling H1) | AT18-03,M2-11-01 | EX1202L2,EX1202L3 |
 | vu01 | MGDS:21847 |  | MGDS:21847: development (ruling H1) | AT07-34 | lostcity2005 |
 | vu02 | MGDS:31073 |  | MGDS:31073: development (ruling H1) | AT26-14 | EX1402L2 |
@@ -18,8 +18,10 @@
 | vu05 | MGDS:24043 |  | MGDS:24043: development (joins existing unit) | AT37-05 | AT37-05 |
 | nu01 | MGDS:30193 |  | MGDS:30193: confirmatory | AT40-02 | KN182L03 |
 | nu02 | MGDS:30368 |  | MGDS:30368: development | RCSN204 | RP15DI86 |
-| nu01 | MGDS:32239 |  | MGDS:32239: confirmatory |  | RC2511 |
+| nu01 | MGDS:32239 |  | MGDS:32239: confirmatory | nan | RC2511 |
 | nu03 | MGDS:33090 |  | MGDS:33090: confirmatory | NA179 | SUM1004 |
+| pu01 | PANGAEA:889317 |  | PANGAEA:889317: development | M114/1 | PANGAEA:864677 |
+| pu03 | PANGAEA:958275 |  | PANGAEA:958275: confirmatory | POS510 | PANGAEA:994139 |
 
 ## Changes against ACQ-R01 / §4.3 assignments
 
@@ -29,15 +31,13 @@
 
 | hr | prior unit | prior designation | status | reason |
 |---|---|---|---|---|
-| MGDS:24467 |  | development (ruling H1) | false_pair | no LR footprint overlaps the real HR footprint (best TN313: 0.311) |
-| MGDS:31291 |  | development (ruling H1) | no_elevation_raster | no readable float raster (renders/PDF only) |
-| PANGAEA:884112 | pu00 | development | no_elevation_raster | no readable float raster (renders/PDF only) |
-| PANGAEA:889317 | pu01 | development | hr_download_or_footprint_failed | 503 Server Error: Service Unavailable for url: https://hs.pangaea.de/Maps/Chapopote_MainAsphaltField/M114_AUV-Dive70/2015_M114_EM2040_AUV_D70_A2F1C7E1 |
-| PANGAEA:892662 |  | development (joins existing unit) | hr_download_or_footprint_failed | 401 Client Error: Unauthorized for url: https://store.pangaea.de/Publications/AlevizosE-etal_2018/AUV-grid-data.zip |
-| PANGAEA:941403 | pu02 | confirmatory | hr_download_or_footprint_failed | 503 Server Error: Service Unavailable for url: https://download.pangaea.de/dataset/941403/files/Abyss353-2x2.tif |
-| PANGAEA:958275 | pu03 | confirmatory | hr_download_or_footprint_failed | 503 Server Error: Service Unavailable for url: https://download.pangaea.de/dataset/958275/files/Multibeam_bathymetry_processed_data_AUV_Abyss_RVPOSEID |
-| MGDS:16792 |  | development (joins existing unit) | no_elevation_raster | no readable float raster (renders/PDF only) |
+| MGDS:24467 | nan | development (ruling H1) | false_pair | no LR footprint overlaps the real HR footprint (best TN313: 0.311) |
+| MGDS:31291 | nan | development (ruling H1) | no_elevation_raster | no readable float raster (renders/PDF only) |
+| PANGAEA:892662 | nan | development (joins existing unit) | hr_download_or_footprint_failed | 401 Client Error: Unauthorized for url: https://store.pangaea.de/Publications/AlevizosE-etal_2018/AUV-grid-data.zip |
+| MGDS:16792 | nan | development (joins existing unit) | no_elevation_raster | no readable float raster (renders/PDF only) |
 | MGDS:22384 | nu00 | development | no_elevation_raster | no readable float raster (renders/PDF only) |
-| MGDS:24449 |  | development (joins existing unit) | no_elevation_raster | no readable float raster (renders/PDF only) |
-| MGDS:33027 |  | development (joins existing unit) | false_pair | no LR footprint overlaps the real HR footprint (best PASC02WT: 0.05) |
+| MGDS:24449 | nan | development (joins existing unit) | no_elevation_raster | no readable float raster (renders/PDF only) |
+| MGDS:33027 | nan | development (joins existing unit) | false_pair | no LR footprint overlaps the real HR footprint (best PASC02WT: 0.05) |
 | MGDS:33081 | nu03 | confirmatory | false_pair | no LR footprint overlaps the real HR footprint (best SUM1004: 0.002) |
+| PANGAEA:884112 | pu00 | development | no_elevation_raster | no readable float raster (renders/PDF only) |
+| PANGAEA:941403 | pu02 | confirmatory | hr_download_or_footprint_failed | 503 Server Error: Service Unavailable for url: https://download.pangaea.de/dataset/941403/files/Abyss354-Mittelwert.tif |
