@@ -16,7 +16,13 @@ LIST=${ACQ_LIST:-sbatch/acq_r02_acquire_list.txt}
 LINE=$(sed -n "${SLURM_ARRAY_TASK_ID}p" "$LIST")
 CRUISE=${LINE%%|*}; REST=${LINE#*|}; HRS=${REST%%|*}; SONAR=${REST#*|}
 echo "task ${SLURM_ARRAY_TASK_ID}: cruise=$CRUISE hrs=$HRS sonar=$SONAR host=$(hostname) commit=$(git rev-parse --short HEAD)"
-$PY -m src.acq_r01.fetch_swath --plan-csv reports_post_grl_review/ACQ-R02/fetch_plan/file_plan.csv --cruises "$CRUISE" --workers ${FETCH_WORKERS:-4} --throttle ${FETCH_THROTTLE:-0.2} || { echo "FETCH FAILED"; exit 1; }
+# fetch is resumable: retry up to 3 times (transient HEAD/GET failures), then stop if still incomplete
+RC=1
+for attempt in 1 2 3; do
+  $PY -m src.acq_r01.fetch_swath --plan-csv reports_post_grl_review/ACQ-R02/fetch_plan/file_plan.csv --cruises "$CRUISE" --workers ${FETCH_WORKERS:-4} --throttle ${FETCH_THROTTLE:-0.2} && { RC=0; break; }
+  echo "fetch attempt $attempt incomplete"; sleep 60
+done
+[ $RC -eq 0 ] || { echo "FETCH FAILED"; exit 1; }
 $PY -m src.acq_r01.grid_lr --cruise "$CRUISE" --hr "$HRS" --sonar "$SONAR" || { echo "GRID FAILED"; exit 1; }
 IFS=',' read -ra HRA <<< "$HRS"
 for h in "${HRA[@]}"; do

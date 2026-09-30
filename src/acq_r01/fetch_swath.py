@@ -185,6 +185,11 @@ def main(argv=None):
         plan = pd.read_csv(C.FILE_PLAN)
         plan = plan[(plan.kind == "swath") & (plan.cruise.isin(cruises))]
         suffix = ""
+    if plan.empty:
+        # cruise already on OAK (fetch plan status already_on_oak) or nothing planned: nothing to do
+        have = [c for c in (a.cruises or "").split(",") if c and (C.RAW_SWATH_OAK / c / "fetch_manifest.json").exists()]
+        log.info("plan is empty for %s; already on OAK: %s", a.cruises, have)
+        return 0 if have else 1
     log.info("plan: %d swath files, %.2f GB advertised, cruises=%s",
              len(plan), plan.advertised.sum() / 1e9, cruises)
     C.REPORT_DIR.mkdir(parents=True, exist_ok=True)

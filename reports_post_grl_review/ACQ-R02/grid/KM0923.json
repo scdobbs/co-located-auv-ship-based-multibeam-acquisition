@@ -1,0 +1,28 @@
+{
+ "cruise": "KM0923",
+ "hr": [
+  "MGDS:31429"
+ ],
+ "n_files": 229,
+ "format": 56,
+ "sonar": "Simrad EM120",
+ "beamwidth_deg": 1.0,
+ "beamwidth_key": "em120",
+ "footprint_depth_m": 4999.0,
+ "cell_m": 87.25,
+ "region": "-155.2004840752964/-155.0956663921059/18.692255050725784/18.80286522389683",
+ "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mbgrid -I datalist.mb-1 -O grid_KM0923 -R -155.2004840752964/-155.0956663921059/18.692255050725784/18.80286522389683 -E 0.0008277055291028043/0.0007837906328307404/degrees -A2 -G3 -F1 -C0 -M",
+ "mode": "raw",
+ "outputs": {
+  "grid": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/KM0923__union.grd",
+  "_num": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/KM0923__union_num.grd",
+  "_sd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/KM0923__union_sd.grd"
+ },
+ "fill_fraction_per_hr": {
+  "MGDS:31429": 0.8857
+ },
+ "grid_depth_median": -4799.1,
+ "wall_s": 68.4,
+ "mbsystem": "5.8.2beta06",
+ "code_commit": "5ee382b1c024e312d8a65def72e3bcf87f182d9d"
+}

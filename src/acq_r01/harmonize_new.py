@@ -127,7 +127,15 @@ def hr_mosaic(hr_id, lr_bounds_4326, tmp: Path):
     srcs = [rasterio.open(k[0]) for k in kept]
     try:
         b = (min(s.bounds.left for s in srcs), min(s.bounds.bottom for s in srcs), max(s.bounds.right for s in srcs), max(s.bounds.top for s in srcs))
-        span = max(b[2] - b[0], b[3] - b[1]); native = min(abs(s.res[0]) for s in srcs); res = max(native, span / 3000.0)
+        span = max(b[2] - b[0], b[3] - b[1]); native = min(abs(s.res[0]) for s in srcs)
+        if span / native > 3000.0:
+            # dispersed dive patches (e.g. MGDS:32239: EMARK, Hydra, Puy des Folles tens of km apart): mosaicking would
+            # coarsen the HR to span/3000; keep the patch with the largest LR overlap at native resolution instead
+            for s_ in srcs:
+                s_.close()
+            log.warning("%s: %d HR patches span %.0f native cells; keeping the largest-overlap patch, no mosaic", hr_id, len(kept), span / native)
+            return max(kept, key=lambda k: k[1])[0], len(kept)
+        res = native
         mosaic, tr = rmerge.merge(srcs, res=res, nodata=FILL)
         out = tmp / "hr_mosaic.tif"
         prof = {"driver": "GTiff", "height": mosaic.shape[1], "width": mosaic.shape[2], "count": 1, "dtype": "float32", "crs": crs0,

@@ -1,0 +1,17 @@
+{
+  "cruises": {
+    "EX1402L2": {
+      "n_planned": 311,
+      "n_ok": 311,
+      "n_failed": 0,
+      "gb": 10.155,
+      "complete": true
+    }
+  },
+  "total_gb": 10.155,
+  "wall_s": 599.9,
+  "status_counts": {
+    "fetched": 311
+  },
+  "generated": "2026-09-30T17:56:41.320181+00:00"
+}

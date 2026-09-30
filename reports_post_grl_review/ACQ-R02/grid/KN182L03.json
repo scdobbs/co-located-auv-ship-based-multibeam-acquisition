@@ -1,0 +1,28 @@
+{
+ "cruise": "KN182L03",
+ "hr": [
+  "MGDS:30193"
+ ],
+ "n_files": 28,
+ "format": 41,
+ "sonar": "SeaBeam 2112",
+ "beamwidth_deg": 2.0,
+ "beamwidth_key": "seabeam 2112",
+ "footprint_depth_m": 2956.9,
+ "cell_m": 103.23,
+ "region": "-45.08710738913726/-44.84714622103317/13.57648083525009/14.09940652274991",
+ "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mbgrid -I datalist.mb-1 -O grid_KN182L03 -R -45.08710738913726/-44.84714622103317/13.57648083525009/14.09940652274991 -E 0.000955006547360433/0.0009272885328914856/degrees -A2 -G3 -F1 -C0 -M",
+ "mode": "raw",
+ "outputs": {
+  "grid": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/KN182L03__union.grd",
+  "_num": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/KN182L03__union_num.grd",
+  "_sd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/KN182L03__union_sd.grd"
+ },
+ "fill_fraction_per_hr": {
+  "MGDS:30193": 0.9063
+ },
+ "grid_depth_median": -2999.1,
+ "wall_s": 85.5,
+ "mbsystem": "5.8.2beta06",
+ "code_commit": "5ee382b1c024e312d8a65def72e3bcf87f182d9d"
+}

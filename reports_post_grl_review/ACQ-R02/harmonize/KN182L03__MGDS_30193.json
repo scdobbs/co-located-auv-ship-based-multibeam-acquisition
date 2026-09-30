@@ -1,0 +1,29 @@
+{
+ "pair_id": "KN182L03__MGDS_30193",
+ "hr_id": "MGDS:30193",
+ "lr_cruise": "KN182L03",
+ "designation": "confirmatory",
+ "unit": "nu01a",
+ "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu01a/KN182L03__MGDS_30193",
+ "hr_cruise": "AT40-02",
+ "set": "R01",
+ "hr_tiles_used": 40,
+ "target_crs": "EPSG:32623",
+ "overlap_km2": 52.9,
+ "coreg": {
+  "dx_m": -34.0,
+  "dy_m": -34.0,
+  "dz_m": -30.76,
+  "offset_m": 48.08,
+  "n": 66786,
+  "pass": false
+ },
+ "hr_res_m": 1.0,
+ "n_hr_valid": 11120600,
+ "n_lr_valid": 49930948,
+ "n_joint_valid": 10416888,
+ "joint_area_km2": 10.408,
+ "n_valid_tiles_256": 166,
+ "qa_pass": false,
+ "status": "harmonized_confirmatory (sealed: pass/fail, shift, counts only)"
+}
