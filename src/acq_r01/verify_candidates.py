@@ -163,12 +163,28 @@ def pangaea_file_urls(pid: str) -> list[str]:
     urls = []
     r = requests.get(f"https://doi.pangaea.de/10.1594/PANGAEA.{pid}?format=textfile", headers=H, timeout=120)
     lines = r.text.splitlines()
+    if r.status_code == 400 and "collection" in r.text.lower():
+        # dataset publication series: follow the child datasets (summary.txt inside ?format=zip lists them)
+        import zipfile
+        z = requests.get(f"https://doi.pangaea.de/10.1594/PANGAEA.{pid}?format=zip", headers=H, timeout=120)
+        summ = zipfile.ZipFile(io.BytesIO(z.content)).read("summary.txt").decode("utf-8", "replace")
+        kids = []
+        for l in summ.splitlines():
+            m = re.search(r"10\.1594/PANGAEA\.(\d+)", l)
+            if m and m.group(1) != pid:
+                kids.append((m.group(1), l))
+        bathy = [k for k, l in kids if re.search(r"bathymetr", l, re.I) and not re.search(r"backscatter mosaic|sidescan", l, re.I)]
+        log.info("PANGAEA %s is a collection: children %s, bathymetry %s", pid, [k for k, _ in kids], bathy)
+        for k in (bathy or [k for k, _ in kids]):
+            urls.extend(pangaea_file_urls(k))
+        grids = [u for u in urls if not re.search(r"\.xyz(\.gz)?$", u, re.I)]
+        return list(dict.fromkeys(grids or urls))
     try:
         s = [i for i, l in enumerate(lines) if l.startswith("*/")][0] + 1
         df = pd.read_csv(io.StringIO("\n".join(lines[s:])), sep="\t")
         for col in [c for c in df.columns if "URL" in c]:
             for u in df[col].dropna().astype(str):
-                if re.search(r"\.(tif|tiff|nc|grd|asc|zip|xyz)(\.gz)?$", u, re.I):
+                if u.startswith("http") and re.search(r"\.(tif|tiff|nc|grd|asc|zip|xyz)(\.gz)?$", u, re.I):
                     urls.append(u)
         if "Binary" in df.columns:          # PANGAEA binary files: https://download.pangaea.de/dataset/<id>/files/<name>
             for name in df["Binary"].dropna().astype(str):
@@ -182,9 +198,17 @@ def pangaea_file_urls(pid: str) -> list[str]:
             u = d.get("contentUrl") or ""
             if "format=zip" in u or re.search(r"\.(tif|tiff|nc|grd|asc|zip)(\.gz)?$", u, re.I):
                 urls.append(u)
-    # prefer gridded products over point clouds when both are offered
+    return _prefer_bathy(urls)
+
+
+def _prefer_bathy(urls):
+    """Prefer gridded bathymetry over point clouds, and over the companion count / sd / amplitude /
+    backscatter / grayscale-render products that PANGAEA lists next to it (MB-System naming:
+    A2 = bathymetry, A3 = amplitude, A4 = sidescan; _num / _sd = cell count / std dev)."""
     grids = [u for u in urls if not re.search(r"\.xyz(\.gz)?$", u, re.I)]
-    return list(dict.fromkeys(grids or urls))
+    aux = re.compile(r"(_num|_sd|standardabweichung|grayscale|backscatter|sidescan|amplitude|_A[34]F\d)", re.I)
+    bathy = [u for u in grids if not aux.search(u.rsplit("/", 1)[-1])]
+    return list(dict.fromkeys(bathy or grids or urls))
 
 
 # --------------------------------------------------------------------------- #
@@ -206,6 +230,14 @@ def _catalog_info(hr_id):
             except Exception:
                 pass
     crs, cen = None, None
+    if hr_id.startswith("PANGAEA:"):
+        pa = R02 / "discovery_pangaea" / "auv_datasets.csv"
+        if pa.exists():
+            t = pd.read_csv(pa, dtype={"id": str}).set_index("id")
+            pid = hr_id.split(":")[1]
+            if pid in t.index:
+                cen = (float(t.loc[pid, "lon"]), float(t.loc[pid, "lat"]))
+        return crs, cen
     for g in _CATS:
         if hr_id in g.index:
             r = g.loc[hr_id]
@@ -447,6 +479,13 @@ def main(argv=None):
         rec["status"] = "verified"; recs.append(rec)
         log.info("[%s] verified: area %.2f km2, LR real %s (best %s %.2f km2), HR cruise %s [%s]", r.hr_id, fpi["area_km2"], sorted(real), rec["lr_best_real"], rec["lr_best_overlap_km2"], rec["hr_cruise_final"], rec["hr_cruise_source"])
     v = pd.DataFrame(recs)
+    if a.only and (OUT / "candidates_verified.csv").exists():     # partial re-run: replace only those rows
+        prev = pd.read_csv(OUT / "candidates_verified.csv")
+        v = pd.concat([prev[~prev.hr_id.isin(v.hr_id)], v], ignore_index=True)
+        if (OUT / "hr_footprints.gpkg").exists():
+            pg = gpd.read_file(OUT / "hr_footprints.gpkg")
+            for _, x in pg[~pg.hr_id.isin(geoms)].iterrows():
+                geoms.setdefault(x.hr_id, x.geometry)
     v.to_csv(OUT / "candidates_verified.csv", index=False)
     if geoms:
         gpd.GeoDataFrame({"hr_id": list(geoms)}, geometry=list(geoms.values()), crs="EPSG:4326").to_file(OUT / "hr_footprints.gpkg", driver="GPKG")

@@ -10,132 +10,65 @@
         "lu07"
       ],
       "designations": {
-        "MGDS:24002": "development",
-        "MGDS:31429": "development"
+        "MGDS:24002": "development (ruling H1)",
+        "MGDS:31429": "development (joins existing unit)"
       },
       "hr_cruises": [
         "FK140625",
         "TN293"
       ],
       "lr_cruises": [
-        "AII8L11",
-        "AMAT08RR",
-        "B00297",
-        "DRFT11RR",
-        "DRFT13RR",
-        "EW9801",
         "EX0909",
-        "FK140625",
-        "KM0518",
-        "KM0719",
-        "KM0923",
-        "KM1018",
-        "KM1120A",
-        "KM1808",
-        "KR1998",
-        "Loihi",
-        "MGLN10MV",
-        "MGLN11MV",
-        "NECR05RR",
-        "RR1610",
-        "SEAW03RR",
-        "TUNE03WT",
-        "YK1999",
-        "YK2002"
+        "KM0923"
+      ],
+      "corpus_members": [
+        "EW9801__MGDS_31425"
       ]
     },
     {
-      "unit_id": "lu05+lu13",
+      "unit_id": "lu13",
       "members": [
-        "MGDS:24043",
-        "MGDS:31289",
+        "MGDS:31289"
+      ],
+      "corpus_units": [
+        "lu13"
+      ],
+      "designations": {
+        "MGDS:31289": "development (joins existing unit)"
+      },
+      "hr_cruises": [
+        ""
+      ],
+      "lr_cruises": [
+        "NA080"
+      ],
+      "corpus_members": [
+        "NA080__MGDS_31290"
+      ]
+    },
+    {
+      "unit_id": "lu05",
+      "members": [
         "MGDS:33068",
         "MGDS:5174"
       ],
       "corpus_units": [
-        "lu05",
-        "lu13"
+        "lu05"
       ],
       "designations": {
-        "MGDS:5174": "development",
-        "MGDS:24043": "development",
-        "MGDS:31289": "development",
-        "MGDS:33068": "development"
+        "MGDS:5174": "development (ruling H1)",
+        "MGDS:33068": "development (joins existing unit)"
       },
       "hr_cruises": [
-        "",
         "AT07-04",
-        "AT37-05",
         "AT50-21"
       ],
       "lr_cruises": [
-        "A125L24",
-        "A125L25",
-        "A125L39",
-        "A131L11",
-        "A131L9",
-        "AII2L25",
-        "AII2L26",
-        "AT03L29",
-        "AT03L30",
-        "AT03L33",
-        "AT03L47",
-        "AT07L04",
-        "AT07L06",
-        "AT07L26",
-        "AT11L03",
-        "AT11L07",
-        "AT11L09",
-        "AT15-16",
-        "AT15-41",
-        "AT18-12",
-        "AT26-10",
-        "AT26-23",
-        "AT37-05",
-        "AT37-11",
-        "AT37-12",
-        "AT3L10",
         "AT42-06",
-        "AT42-09",
-        "AT42-21",
-        "B00210",
-        "B00211",
-        "CERE02WT",
-        "DRFT02RR",
-        "ENCR01WT",
-        "EW9405",
-        "EW9708",
-        "EX1503L2",
-        "FK190315",
-        "HLY05TI",
-        "KN182L13",
-        "MGL0812",
-        "MGL1108",
-        "MRTN15WT",
-        "Monterey",
-        "NA080",
-        "NA082",
-        "NA103",
-        "NA117",
-        "NA122",
-        "NA130",
-        "NEMO01MV",
-        "NEMO02MV",
-        "PASC01WT",
-        "PASC02WT",
-        "PHNX02MV",
-        "RAIT01WT",
-        "RAIT02WT",
-        "RAPA01WT",
-        "RC2607",
-        "RR1710",
-        "SERA02WT",
-        "TN188",
-        "TN396",
-        "TN399",
-        "TUNE01WT",
-        "VANC01MV",
-        "VNTR03WT"
+        "TN399"
+      ],
+      "corpus_members": [
+        "TN399__MGDS_30373"
       ]
     },
     {
@@ -147,18 +80,16 @@
         "lu01"
       ],
       "designations": {
-        "MGDS:24424": "development"
+        "MGDS:24424": "development (joins existing unit)"
       },
       "hr_cruises": [
         "FK171110"
       ],
       "lr_cruises": [
-        "BMRG08MV",
-        "FK171110",
-        "KM0703",
-        "KM1008",
-        "RR0916",
-        "RR1211"
+        "FK171110"
+      ],
+      "corpus_members": [
+        "KIWI10RR__MGDS_24499"
       ]
     },
     {
@@ -170,20 +101,16 @@
         "lu18"
       ],
       "designations": {
-        "MGDS:30047": "development"
+        "MGDS:30047": "development (joins existing unit)"
       },
       "hr_cruises": [
         ""
       ],
       "lr_cruises": [
-        "2003_Amundsen",
-        "2004_Amundsen",
-        "2006_Amundsen",
-        "2009_Amundsen",
-        "2010_Amundsen",
-        "2011_Amundsen",
-        "HLY03TD",
-        "HLY1103"
+        "2009_Amundsen"
+      ],
+      "corpus_members": [
+        "2009_Amundsen__MGDS_30046"
       ]
     },
     {
@@ -204,7 +131,8 @@
       "lr_cruises": [
         "EX1202L2",
         "EX1202L3"
-      ]
+      ],
+      "corpus_members": []
     },
     {
       "unit_id": "vu01",
@@ -220,7 +148,8 @@
       ],
       "lr_cruises": [
         "lostcity2005"
-      ]
+      ],
+      "corpus_members": []
     },
     {
       "unit_id": "vu02",
@@ -236,7 +165,8 @@
       ],
       "lr_cruises": [
         "EX1402L2"
-      ]
+      ],
+      "corpus_members": []
     },
     {
       "unit_id": "vu03",
@@ -254,7 +184,8 @@
       ],
       "lr_cruises": [
         "NR07-1"
-      ]
+      ],
+      "corpus_members": []
     },
     {
       "unit_id": "vu04",
@@ -270,7 +201,8 @@
       ],
       "lr_cruises": [
         "EX1206"
-      ]
+      ],
+      "corpus_members": []
     },
     {
       "unit_id": "nu00",
@@ -285,55 +217,43 @@
         "FK151121"
       ],
       "lr_cruises": [
-        "BCH1101E",
-        "COOK07MV",
-        "EW0202",
-        "EX1605L1",
-        "FK151121",
-        "FK161129",
-        "HEE1001A",
-        "MV1302",
-        "PAT0903E",
-        "PPTU09WT",
-        "RR1412",
-        "RR1413",
-        "SUM0704",
-        "SUM0901E"
-      ]
+        "FK151121"
+      ],
+      "corpus_members": []
+    },
+    {
+      "unit_id": "vu05",
+      "members": [
+        "MGDS:24043"
+      ],
+      "corpus_units": [],
+      "designations": {
+        "MGDS:24043": "development (joins existing unit)"
+      },
+      "hr_cruises": [
+        "AT37-05"
+      ],
+      "lr_cruises": [
+        "AT37-05"
+      ],
+      "corpus_members": []
     },
     {
       "unit_id": "nu01",
       "members": [
-        "MGDS:30193",
-        "MGDS:32239"
+        "MGDS:30193"
       ],
       "corpus_units": [],
       "designations": {
-        "MGDS:30193": "confirmatory",
-        "MGDS:32239": "confirmatory"
+        "MGDS:30193": "confirmatory"
       },
       "hr_cruises": [
-        "",
         "AT40-02"
       ],
       "lr_cruises": [
-        "AT04L04",
-        "AT05L03",
-        "AT05L04",
-        "AT3L3",
-        "AT40-02",
-        "EW0102",
-        "EW9704",
-        "EX2206",
-        "KN161L04",
-        "KN180L02",
-        "KN182L03",
-        "KN207-02",
-        "KN209-02",
-        "RC2511",
-        "RC2909",
-        "RC3001"
-      ]
+        "KN182L03"
+      ],
+      "corpus_members": []
     },
     {
       "unit_id": "nu02",
@@ -348,16 +268,26 @@
         "RCSN204"
       ],
       "lr_cruises": [
-        "EW9504",
-        "EW9505",
-        "EX0904",
-        "EX2208",
-        "Escanaba",
-        "MGLN46MV",
-        "RB9702",
-        "RP15DI86",
-        "TN403"
-      ]
+        "RP15DI86"
+      ],
+      "corpus_members": []
+    },
+    {
+      "unit_id": "nu01",
+      "members": [
+        "MGDS:32239"
+      ],
+      "corpus_units": [],
+      "designations": {
+        "MGDS:32239": "confirmatory"
+      },
+      "hr_cruises": [
+        ""
+      ],
+      "lr_cruises": [
+        "RC2511"
+      ],
+      "corpus_members": []
     },
     {
       "unit_id": "nu03",
@@ -372,17 +302,14 @@
         "NA179"
       ],
       "lr_cruises": [
-        "EX1005",
-        "KM1004",
-        "MGL1202",
-        "PD20MT05",
-        "SR1906",
-        "SU10-1",
         "SUM1004"
-      ]
+      ],
+      "corpus_members": []
     }
   ],
-  "changes": [],
+  "changes": [
+    "unit nu01 SPLIT into 2 components; each part inherits its designation"
+  ],
   "dropped": [
     [
       "MGDS:24467",
@@ -409,8 +336,8 @@
       "PANGAEA:889317",
       "pu01",
       "development",
-      "no_elevation_raster",
-      "no readable float raster (renders/PDF only)"
+      "hr_download_or_footprint_failed",
+      "503 Server Error: Service Unavailable for url: https://hs.pangaea.de/Maps/Chapopote_MainAsphaltField/M114_AUV-Dive70/2015_M114_EM2040_AUV_D70_A2F1C7E1"
     ],
     [
       "PANGAEA:892662",
@@ -423,15 +350,15 @@
       "PANGAEA:941403",
       "pu02",
       "confirmatory",
-      "no_elevation_raster",
-      "no readable float raster (renders/PDF only)"
+      "hr_download_or_footprint_failed",
+      "503 Server Error: Service Unavailable for url: https://download.pangaea.de/dataset/941403/files/Abyss353-2x2.tif"
     ],
     [
       "PANGAEA:958275",
       "pu03",
       "confirmatory",
-      "no_elevation_raster",
-      "no readable float raster (renders/PDF only)"
+      "hr_download_or_footprint_failed",
+      "503 Server Error: Service Unavailable for url: https://download.pangaea.de/dataset/958275/files/Multibeam_bathymetry_processed_data_AUV_Abyss_RVPOSEID"
     ],
     [
       "MGDS:16792",
