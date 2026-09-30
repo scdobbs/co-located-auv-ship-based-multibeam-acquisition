@@ -1,0 +1,20 @@
+[
+ {
+  "pair_id": "tag_m127",
+  "cruise": "M127_EM122",
+  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/tag_m127/ship_products_v1",
+  "qa": {
+   "n_common_cells": 111884,
+   "rms_m": 6.8125,
+   "median_offset_m": 0.3912,
+   "mad_m": 2.8826,
+   "rms_over_median_s_lr": 0.2401,
+   "flag": "exceeds_0.10"
+  },
+  "cells": 111884,
+  "cells_lr_valid": 111884,
+  "n_soundings": 18581488,
+  "angle_method": "mblist ',A' beam depression angle measured from vertical down (launch angle)",
+  "matches_lr_tif": true
+ }
+]

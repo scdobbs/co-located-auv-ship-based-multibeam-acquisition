@@ -20,7 +20,7 @@
 | cal_dig_morro_bay__20190317m1_1000mGully | CalDIG | False | ok | None |  |  |  |  |  () |  |
 | cal_dig_morro_bay__20190317m2_600mGully | CalDIG | False | ok | None |  |  |  |  |  () |  |
 | cal_dig_morro_bay__201804_LuciaChica2m | CalDIG | False | ok | None |  |  |  |  |  () |  |
-| tag_m127 | TAG | None | FAIL | None |  |  |  |  |  () | products.json missing |
+| tag_m127 | TAG | True | ok | exceeds_0.10 | 6.8125 | 0.3912 | 2.8826 | 0.2401 | 111884 (1.0) |  |
 | AT37-13__MGDS_31199 | AT37-13 | True | ok | exceeds_0.10 | 4.5357 | -0.0372 | 1.3059 | 0.1322 | 13490 (0.9932) |  |
 | EW9801__MGDS_31425 | EW9801 | True | ok | exceeds_0.10 | 7.3309 | 0.0552 | 2.4967 | 0.2035 | 5465 (0.9591) |  |
 | NA080__MGDS_31290 | NA080 | True | ok | exceeds_0.10 | 8.5624 | 0.1367 | 0.7927 | 1.1239 | 58200 (1.0) |  |

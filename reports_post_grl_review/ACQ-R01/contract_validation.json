@@ -185,9 +185,20 @@
     "pair_id": "tag_m127",
     "unit": "TAG",
     "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/tag_m127/ship_products_v1",
-    "errors": [
-      "products.json missing"
-    ]
+    "errors": [],
+    "available": true,
+    "flag": "exceeds_0.10",
+    "cells": 111884,
+    "lr_valid_cells": 111884,
+    "frac_lr_valid_covered": 1.0,
+    "qa": {
+      "n_common_cells": 111884,
+      "rms_m": 6.8125,
+      "median_offset_m": 0.3912,
+      "mad_m": 2.8826,
+      "rms_over_median_s_lr": 0.2401,
+      "flag": "exceeds_0.10"
+    }
   },
   {
     "pair_id": "AT37-13__MGDS_31199",
