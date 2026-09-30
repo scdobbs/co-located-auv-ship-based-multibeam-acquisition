@@ -1,12 +1,12 @@
 [
  {
-  "pair_id": "NR07-1__MGDS_31814",
-  "cruise": "NR07-1",
+  "pair_id": "EX1202L2__MGDS_20815",
+  "cruise": "EX1202L2",
   "qa": {
-   "n_common_cells": 7812,
-   "median_offset_m": -0.1898,
-   "rms_m": 19.2747,
-   "robust_sigma_m": 3.0956,
+   "n_common_cells": 51880,
+   "median_offset_m": 0.0768,
+   "rms_m": 0.9226,
+   "robust_sigma_m": 0.6358,
    "rms_over_median_s_lr": null,
    "robust_sigma_over_median_s_lr": null,
    "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
@@ -25,9 +25,9 @@
    "ship_xtrack_frac": "v1 missing",
    "ship_beam_angle": "v1 missing"
   },
-  "median_rsd_over_sd": 0.8078770041465759,
-  "cells": 9249,
-  "beam_angle_method": "launch_angle",
+  "median_rsd_over_sd": 0.8910719752311707,
+  "cells": 52065,
+  "beam_angle_method": "geometric",
   "matches_lr_tif": true
  }
 ]

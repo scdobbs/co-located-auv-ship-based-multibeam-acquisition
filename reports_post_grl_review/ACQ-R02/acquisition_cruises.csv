@@ -1,0 +1,18 @@
+cruise,files_on_oak,gb_on_oak,fetch_complete,format,sonar,beamwidth_deg,depth_m,cell_m,region_choice,n_valid,wall_s
+AT37-05,274,5.65,True,58,Kongsberg EM122,1.0,3209.0,56.01,whole footprint,,631.0
+AT42-06,90,1.93,True,58,Kongsberg EM122,1.0,2515.7,43.91,whole footprint,,94.4
+EX0909,368,5.15,True,162,Simrad EM302,1.0,2000.0,34.91,whole footprint,,613.7
+EX1202L2,323,7.21,True,162,Simrad EM302,1.0,1354.0,23.63,whole footprint,,825.5
+EX1202L3,279,7.0,True,163,Simrad EM302,1.0,2000.0,34.91,whole footprint,,410.6
+EX1206,614,15.45,True,162,Kongsberg EM302,1.0,2000.0,34.91,whole footprint,,3725.3
+EX1402L2,311,10.15,True,163,Kongsberg EM302,1.0,937.7,16.37,whole footprint,,2933.5
+FK151121,274,7.37,True,58,Kongsberg EM302; EM710,1.0,3796.1,66.26,whole footprint,,780.5
+FK171110,50,3.0,True,58,Kongsberg EM302,1.0,2760.9,48.19,whole footprint,,221.6
+KM0923,229,0.78,True,56,Simrad EM120,1.0,4999.0,87.25,whole footprint,,68.4
+KN182L03,28,1.17,True,41,SeaBeam 2112,2.0,2956.9,103.23,whole footprint,,85.5
+NA080,51,0.53,True,58,Kongsberg EM302,1.0,3284.7,57.33,whole footprint,,152.6
+NR07-1,58,0.9,True,56,Simrad EM120,1.0,3008.3,52.51,patch cluster: 582 of 721 parts within 5 km of the part with,,240.4
+RC2511,107,0.05,True,15,SeaBeam,2.0,3585.0,125.15,whole footprint,,129.2
+SUM1004,222,4.68,True,121,None,1.5,5757.7,150.74,patch cluster: 1 of 16 parts within 5 km of the part with th,,325.7
+TN399,10,0.17,True,58,Kongsberg EM302,1.0,2547.6,44.46,whole footprint,,120.7
+lostcity2005,758,2.42,True,94,SeaBeam 2112,2.0,819.1,28.59,whole footprint,,1684.5

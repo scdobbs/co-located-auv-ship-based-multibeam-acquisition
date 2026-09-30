@@ -1,0 +1,88 @@
+{
+ "pair_id": "EX1202L2__MGDS_20815",
+ "hr_id": "MGDS:20815",
+ "lr_cruise": "EX1202L2",
+ "designation": "development (ruling H1)",
+ "unit": "vu00",
+ "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EX1202L2__MGDS_20815",
+ "hr_cruise": "AT18-03",
+ "set": "H1",
+ "hr_tiles_used": 3,
+ "target_crs": "EPSG:32616",
+ "overlap_km2": 33.278,
+ "coreg": {
+  "dx_m": -19.53,
+  "dy_m": 5.61,
+  "dz_m": -3.69,
+  "offset_m": 20.32,
+  "n": 79116,
+  "pass": true,
+  "post_residual_mad_m": 1.292
+ },
+ "hr_res_m": 1.047,
+ "n_hr_valid": 3343618,
+ "n_lr_valid": 26222716,
+ "n_joint_valid": 3322857,
+ "joint_area_km2": 3.644,
+ "n_valid_tiles_256": 53,
+ "qa_pass": true,
+ "hr_p50_over_joint_m": -1394.6,
+ "lr_native": {
+  "beam_footprint_m": 23.7,
+  "posting_m": 23.59,
+  "lr_native_m": 23.7,
+  "beamwidth_deg": 1.0,
+  "rule": "max(footprint, posting) (C2a)"
+ },
+ "k_sweep": {
+  "pair_id": "EX1202L2__MGDS_20815",
+  "status": "no_curve",
+  "thresholds": {
+   "slope_red": -0.97,
+   "slope_white": -0.8,
+   "coh_circular": 0.136,
+   "grid": "AUV-native final harmonized; anchors=21 validated; corrected lr_native"
+  }
+ },
+ "qc_figure": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/qc/acq_r02/EX1202L2__MGDS_20815.png",
+ "products_v2": {
+  "pair_id": "EX1202L2__MGDS_20815",
+  "cruise": "EX1202L2",
+  "qa": {
+   "n_common_cells": 51880,
+   "median_offset_m": 0.0768,
+   "rms_m": 0.9226,
+   "robust_sigma_m": 0.6358,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.25,
+    0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "control_vs_v1": {
+   "ship_count": "v1 missing",
+   "ship_sd": "v1 missing",
+   "ship_xtrack_frac": "v1 missing",
+   "ship_beam_angle": "v1 missing"
+  },
+  "median_rsd_over_sd": 0.8910719752311707,
+  "cells": 52065,
+  "beam_angle_method": "geometric",
+  "matches_lr_tif": true
+ },
+ "processed_lr_crosscheck": {
+  "cruise": "EX1202L2",
+  "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1202Leg2/multibeam/data/version1/products/EX1202L2_MB_FNL_WGS84_50m.tif.gz",
+  "bytes": 5162073,
+  "sha256": "502f14dadb69f4f9ad6a3ae0618b4eeb2323a25aba8b94ba3d89203e32191583",
+  "status": "processed_product_not_a_float_grid (dtype uint8, 4 bands)"
+ },
+ "status": "harmonized_development",
+ "wall_s": 1442.2
+}
