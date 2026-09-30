@@ -7,15 +7,15 @@
  "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EX1206__MGDS_31831",
  "hr_cruise": "AT29-04",
  "set": "H1",
- "hr_tiles_used": 8,
+ "hr_tiles_used": 3,
  "target_crs": "EPSG:32618",
- "overlap_km2": 8.335,
+ "overlap_km2": 17.351,
  "coreg": {
   "pass": false,
   "error": "coregistration has only 0 valid samples"
  },
- "hr_res_m": 1.0,
- "n_hr_valid": 1465538,
+ "hr_res_m": 1.18,
+ "n_hr_valid": 1079469,
  "n_lr_valid": 0,
  "n_joint_valid": 0,
  "joint_area_km2": 0.0,
@@ -24,7 +24,7 @@
  "hr_p50_over_joint_m": null,
  "lr_native": {
   "beam_footprint_m": 34.91,
-  "posting_m": 34.85,
+  "posting_m": 34.79,
   "lr_native_m": 34.91,
   "beamwidth_deg": 1.0,
   "rule": "max(footprint, posting) (C2a)"
@@ -51,11 +51,15 @@
  },
  "qc_figure": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/qc/acq_r02/EX1206__MGDS_31831.png",
  "products_v2": {
-  "error": "[Errno 13] Permission denied: '/lscratch/scdobbs/acq_r02/EX1206/EX1206__MGDS_31831/EX1206_EX03192012_2012-307_0002_20121102_211647_EX1206_MB.txt.mb162"
+  "error": "[Errno 13] Permission denied: '/lscratch/scdobbs/acq_r02/EX1206/EX1206__MGDS_31831/EX1206_EX03192012_2012-307_0001_20121102_201647_EX1206_MB.txt.mb162"
  },
  "processed_lr_crosscheck": {
-  "status": "error: Cannot convert fill_value nan to dtype uint8"
+  "cruise": "EX1206",
+  "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1206/multibeam/data/version1/products/EX1206_MB_FNL_100m_WGS84.tif.gz",
+  "bytes": 1084714,
+  "sha256": "ff24df70e1601fcb0e474d2100de2fd0e742a15d8ec5aa777c54101f003920d9",
+  "status": "processed_product_not_a_float_grid (dtype uint8, 4 bands)"
  },
  "status": "harmonized_development",
- "wall_s": 226.7
+ "wall_s": 58.4
 }

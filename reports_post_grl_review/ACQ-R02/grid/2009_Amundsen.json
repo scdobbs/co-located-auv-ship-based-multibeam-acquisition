@@ -1,0 +1,29 @@
+{
+ "cruise": "2009_Amundsen",
+ "hr": [
+  "MGDS:30047"
+ ],
+ "n_files": 377,
+ "format": 58,
+ "sonar": "Kongsberg EM302",
+ "beamwidth_deg": 1.0,
+ "beamwidth_key": "em302",
+ "footprint_depth_m": 166.8,
+ "cell_m": 2.91,
+ "region": "-136.29295545103363/-135.82276920415026/70.529395069931/70.67615657580808",
+ "region_choice": "patch cluster: 5 of 29 parts within 5 km of the part with the largest LR-footprint intersection (bbox coverage 0.044)",
+ "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mbgrid -I datalist.mb-1 -O grid_2009_Amundsen -R -136.29295545103363/-135.82276920415026/70.529395069931/70.67615657580808 -E 7.873793768438938e-05/2.615008442122586e-05/degrees -A2 -G3 -F1 -C0 -M",
+ "mode": "raw",
+ "outputs": {
+  "grid": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/2009_Amundsen__union.grd",
+  "_num": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/2009_Amundsen__union_num.grd",
+  "_sd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/2009_Amundsen__union_sd.grd"
+ },
+ "fill_fraction_per_hr": {
+  "MGDS:30047": 0.9465
+ },
+ "grid_depth_median": -272.2,
+ "wall_s": 2250.5,
+ "mbsystem": "5.8.2beta06",
+ "code_commit": "e84744af584bd377ca5cd174151a8338dd6b247b"
+}

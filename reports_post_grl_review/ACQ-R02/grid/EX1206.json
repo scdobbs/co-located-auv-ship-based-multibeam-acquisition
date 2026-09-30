@@ -10,8 +10,9 @@
  "beamwidth_key": "em302",
  "footprint_depth_m": 2000.0,
  "cell_m": 34.91,
- "region": "-75.94166272874222/-69.27393441000477/32.96443382126507/39.881059555785846",
- "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mbgrid -I datalist.mb-1 -O grid_EX1206 -R -75.94166272874222/-69.27393441000477/32.96443382126507/39.881059555785846 -E 0.00038970302698367103/0.0003135777143643115/degrees -A2 -G3 -F1 -C0 -M",
+ "region": "-74.50712595923856/-74.46010847548852/36.847130148710654/36.91039785268627",
+ "region_choice": "patch cluster: 36 of 47 parts within 5 km of the part with the largest LR-footprint intersection (bbox coverage 0.000)",
+ "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mbgrid -I datalist.mb-1 -O grid_EX1206 -R -74.50712595923856/-74.46010847548852/36.847130148710654/36.91039785268627 -E 0.00039201764533983705/0.0003135777143643115/degrees -A2 -G3 -F1 -C0 -M",
  "mode": "raw",
  "outputs": {
   "grid": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/EX1206__union.grd",
@@ -22,7 +23,7 @@
   "MGDS:31831": 0.0
  },
  "grid_depth_median": null,
- "wall_s": 3725.3,
+ "wall_s": 1878.6,
  "mbsystem": "5.8.2beta06",
- "code_commit": "885b3f7bc21cd647d77d37a6e67504a1e22d22f2"
+ "code_commit": "e84744af584bd377ca5cd174151a8338dd6b247b"
 }
