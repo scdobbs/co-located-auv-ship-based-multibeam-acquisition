@@ -64,6 +64,21 @@ ALL15 = {**NATIVE7, **CALDIG, **EXPANSION7}
 UNIT_OF = {p: u for d in (NATIVE7, EW0207, CALDIG, EXPANSION7) for u, ps in d.items() for p in ps}
 PROVIDER_UNITS = ("CalDIG", "CCZ", "DISCOL", "TAG")
 
+# --------------------------------------------------------------------------- #
+# Confirmatory seal (ACQ-R02 §0): units designated confirmatory. Their harmonized outputs live
+# under OAK harmonized_confirmatory/<unit>/<pair>/; no residual-amplitude statistic, k sweep,
+# spectral ratio, baseline, model or target is computed on them before Phase 4.
+# --------------------------------------------------------------------------- #
+CONFIRMATORY_UNITS = ("nu01", "nu03")          # ACQ-R01 designation (seed 20260929); §4.3 adds more
+HARMONIZED_CONFIRMATORY = OAK / "harmonized_confirmatory"
+
+
+def confirmatory_paths(units=None):
+    """Directories that hold confirmatory-unit outputs (for the CNN repo's guard)."""
+    units = tuple(units) if units else CONFIRMATORY_UNITS
+    return [HARMONIZED_CONFIRMATORY / u for u in units]
+
+
 # The 12 NCEI-swath cruises in ACQ-R01 §2.1 scope (LR ship cruise = pair_id prefix).
 NCEI_CRUISES = ("RR1506", "AT37-13", "TN399", "EW9801", "FK181031", "NA090", "NA076",
                 "NA080", "AR26", "TN299", "EW0207", "2009_Amundsen")

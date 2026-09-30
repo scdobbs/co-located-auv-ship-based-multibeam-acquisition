@@ -14,12 +14,25 @@ from datetime import datetime, timezone
 from src.acq_r01 import common as C
 
 
-def write_one(row, reason: str, kind: str = "none"):
+def write_one(row, reason: str, kind: str = "none", version: int = 1):
     C.assert_no_lockbox([row.pair_id])
-    out_dir = C.pair_dir_oak(row) / "ship_products_v1"
+    out_dir = C.pair_dir_oak(row) / f"ship_products_v{version}"
     out_dir.mkdir(exist_ok=True)
     for f in out_dir.glob("*.tif"):
         raise RuntimeError(f"{row.pair_id}: rasters present in {out_dir}; refusing to mark unavailable")
+    if version == 2:
+        pj = {"contract_version": 2, "pair_id": row.pair_id, "lr_tif_path": str(C.pair_dir_oak(row) / "lr.tif"),
+              "available": {"ship_count": False, "ship_sd": False, "ship_rsd": False, "ship_xtrack_frac": False, "ship_beam_angle": False},
+              "unavailable_reason": reason,
+              "source": {"kind": kind, "files": [], "mb_format": None, "processing_mode": None},
+              "beam_angle_method": None,
+              "software": {"mbsystem": C.MBSYSTEM_VERSION, "container": f"apptainer sandbox {C.SANDBOX}", "code_commit": C.git_commit()},
+              "commands": [], "grid": None, "qa_vs_lr_tif": None, "created": datetime.now(timezone.utc).isoformat()}
+        p = out_dir / "products.json"
+        if p.exists():
+            p.chmod(0o644)
+        p.write_text(json.dumps(pj, indent=1)); p.chmod(0o444)
+        return str(p)
     pj = {"contract_version": 1, "pair_id": row.pair_id,
           "available": {"ship_sd": False, "ship_count": False, "ship_xtrack_frac": False, "ship_beam_angle": False},
           "unavailable_reason": reason,
@@ -38,6 +51,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--unit", default=None); ap.add_argument("--pair", default=None)
     ap.add_argument("--reason", required=True); ap.add_argument("--kind", default="none")
+    ap.add_argument("--version", type=int, default=1)
     a = ap.parse_args(argv)
     m = C.load_manifest()
     if a.unit:
@@ -45,7 +59,7 @@ def main(argv=None):
     else:
         pids = [a.pair]
     rows = m[m.pair_id.isin(pids)]
-    written = [write_one(r, a.reason, a.kind) for _, r in rows.iterrows()]
+    written = [write_one(r, a.reason, a.kind, a.version) for _, r in rows.iterrows()]
     print(json.dumps(written, indent=1)); return 0
 
 
