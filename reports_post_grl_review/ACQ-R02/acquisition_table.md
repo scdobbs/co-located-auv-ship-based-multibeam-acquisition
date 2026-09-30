@@ -2,12 +2,13 @@
 
 | cruise | files | GB | complete | fmt | sonar | bw° | depth m | cell m | region | wall s |
 |---|---|---|---|---|---|---|---|---|---|---|
+| 2009_Amundsen | 377 | 26.58 | True | 58 | Kongsberg EM302 | 1.0 | 166.8 | 2.91 | patch cluster: 5 of 29 parts within 5 km of the part with th | 2250.5 |
 | AT37-05 | 274 | 5.65 | True | 58 | Kongsberg EM122 | 1.0 | 3209.0 | 56.01 | whole footprint | 631.0 |
 | AT42-06 | 90 | 1.93 | True | 58 | Kongsberg EM122 | 1.0 | 2515.7 | 43.91 | whole footprint | 94.4 |
 | EX0909 | 368 | 5.15 | True | 162 | Simrad EM302 | 1.0 | 2000.0 | 34.91 | whole footprint | 613.7 |
 | EX1202L2 | 323 | 7.21 | True | 162 | Simrad EM302 | 1.0 | 1354.0 | 23.63 | whole footprint | 825.5 |
 | EX1202L3 | 279 | 7.0 | True | 163 | Simrad EM302 | 1.0 | 2000.0 | 34.91 | whole footprint | 410.6 |
-| EX1206 | 614 | 15.45 | True | 162 | Kongsberg EM302 | 1.0 | 2000.0 | 34.91 | whole footprint | 3725.3 |
+| EX1206 | 614 | 15.45 | True | 162 | Kongsberg EM302 | 1.0 | 2000.0 | 34.91 | patch cluster: 36 of 47 parts within 5 km of the part with t | 1878.6 |
 | EX1402L2 | 311 | 10.15 | True | 163 | Kongsberg EM302 | 1.0 | 937.7 | 16.37 | whole footprint | 2933.5 |
 | FK151121 | 274 | 7.37 | True | 58 | Kongsberg EM302; EM710 | 1.0 | 3796.1 | 66.26 | whole footprint | 780.5 |
 | FK171110 | 50 | 3.0 | True | 58 | Kongsberg EM302 | 1.0 | 2760.9 | 48.19 | whole footprint | 221.6 |
@@ -24,13 +25,14 @@
 
 | pair | set | unit | designation | HR res m | tiles | overlap km² | LR valid cells | joint km² | tiles≥50% | coreg off m | dz m | coreg | QA | MAD m | LR native m | k | v2 flags | v2 σ m | H1 x-check |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2009_Amundsen__MGDS_30047 | R01 | lu18 | development (joins existing unit) | 1.485 | 4 | 263.294 | 93869698 | 29.896 | 201 | 27.95 | -2.16 | pass | pass | 0.909 | 4.87 |  | registration_shift | 0.5655 |    |
 | AT37-05__MGDS_24043 | R01 | vu05 | development (joins existing unit) | 1.001 | 12 | 14.679 | 14569248 | 4.261 | 71 | 18.41 | -73.9 | pass | pass | 20.773 | 55.99 | 4.0 | vertical_offset,registration_shift | 28.8933 |    |
 | AT42-06__MGDS_5174 | H1 | lu05 | development (ruling H1) | 4.987 | 2 | 23.598 | 928514 | 8.267 | 4 | 11.15 | -9.63 | pass | pass | 0.877 | 44.5 | 2.0 | registration_shift | 0.9473 | no_processed_product_listed   |
 | EX0909__MGDS_24002 | H1 | lu07 | development (ruling H1) | 2.054 | 2 | 95.912 | 0 | 0.0 | 0 |  |  | FAIL | fail |  | 34.91 | 4.0 | [Errno 2] No such file or directory: '/o |  | processed_product_not_a_float_grid (dtype uin   |
 | EX1202L2__MGDS_20815 | H1 | vu00 | development (ruling H1) | 1.047 | 3 | 33.278 | 26222716 | 3.644 | 53 | 20.32 | -3.69 | pass | pass | 1.292 | 23.7 |  | registration_shift | 0.6358 | processed_product_not_a_float_grid (dtype uin   |
 | EX1202L3__MGDS_31321 | H1 | vu00 | development (ruling H1) | 2.0 | 11 | 11.77 | 0 | 0.0 | 0 |  |  | FAIL | fail |  | 34.91 | 4.0 | [Errno 2] No such file or directory: '/o |  | processed_product_not_a_float_grid (dtype uin   |
-| EX1206__MGDS_31831 | H1 | vu04 | development (ruling H1) | 1.0 | 8 | 8.335 | 0 | 0.0 | 0 |  |  | FAIL | fail |  | 34.91 | 8.0 | [Errno 13] Permission denied: '/lscratch |  | error: Cannot convert fill_value nan to dtype   |
-| EX1402L2__MGDS_31073 | H1 | vu02 | development (ruling H1) | 1.0 | 16 | 4.655 | 2890399 | 1.832 | 27 | 7.27 | -0.78 | pass | pass | 0.989 | 16.37 | 4.0 | registration_shift | 0.3644 | error: Cannot convert fill_value nan to dtype   |
+| EX1206__MGDS_31831 | H1 | vu04 | development (ruling H1) | 1.18 | 3 | 17.351 | 0 | 0.0 | 0 |  |  | FAIL | fail |  | 34.91 | 8.0 | [Errno 13] Permission denied: '/lscratch |  | processed_product_not_a_float_grid (dtype uin   |
+| EX1402L2__MGDS_31073 | H1 | vu02 | development (ruling H1) | 1.0 | 16 | 4.655 | 2890399 | 1.832 | 27 | 7.27 | -0.78 | pass | pass | 0.989 | 16.37 | 4.0 | registration_shift | 0.3644 | processed_product_not_a_float_grid (dtype uin   |
 | FK151121__MGDS_22383 | R01 | nu00 | development | 1.0 | 5 | 25.515 | 25106512 | 12.117 | 184 | 9.05 | -6.22 | pass | pass | 6.087 | 65.99 | 16.0 | registration_shift | 3.2207 |    |
 | FK171110__MGDS_24424 | R01 | lu01 | development (joins existing unit) | 1.001 | 2 | 11.831 | 11794167 | 0.012 | 0 | 6.43 | -22.54 | pass | fail | 5.684 | 47.92 | 16.0 |  | 1.1378 |    |
 | KM0923__MGDS_31429 | R01 | lu07 | development (joins existing unit) | 2.054 | 2 | 95.912 | 17687830 | 15.517 | 57 | 13.96 | -15.72 | pass | pass | 8.162 | 86.94 | 16.0 | registration_shift | 4.7888 |    |

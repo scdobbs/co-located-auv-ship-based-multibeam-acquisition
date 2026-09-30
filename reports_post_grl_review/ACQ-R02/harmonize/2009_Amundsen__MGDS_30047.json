@@ -56,8 +56,41 @@
  },
  "qc_figure": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/qc/acq_r02/2009_Amundsen__MGDS_30047.png",
  "products_v2": {
-  "error": "A process in the process pool was terminated abruptly while the future was running or pending."
+  "pair_id": "2009_Amundsen__MGDS_30047",
+  "cruise": "2009_Amundsen",
+  "qa": {
+   "n_common_cells": 24022477,
+   "median_offset_m": 0.1115,
+   "rms_m": 11.4988,
+   "robust_sigma_m": 0.5655,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    -0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "control_vs_v1": {
+   "ship_count": "v1 missing",
+   "ship_sd": "v1 missing",
+   "ship_xtrack_frac": "v1 missing",
+   "ship_beam_angle": "v1 missing"
+  },
+  "median_rsd_over_sd": 0.7854366898536682,
+  "cells": 25478240,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
  },
  "status": "harmonized_development",
- "wall_s": 601.2
+ "wall_s": 601.2,
+ "products_v2_rerun": {
+  "reason": "in-line build failed in harmonize job (OOM in process pool)",
+  "nproc": 4,
+  "code_commit": "463cb6b2188cbaa6fd8b43882e23151d0f2bf5c3"
+ }
 }

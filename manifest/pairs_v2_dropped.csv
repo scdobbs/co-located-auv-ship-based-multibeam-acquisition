@@ -1,0 +1,10 @@
+pair_id,dropped_from,leakage_unit,lr_cruise,reason,harmonized_dir
+EX0909__MGDS_24002,development (ruling H1),lu07,EX0909,no_lr_soundings_under_hr,harmonized/EX0909__MGDS_24002
+EX1202L3__MGDS_31321,development (ruling H1),vu00,EX1202L3,no_lr_soundings_under_hr,harmonized/EX1202L3__MGDS_31321
+EX1206__MGDS_31831,development (ruling H1),vu04,EX1206,no_lr_soundings_under_hr,harmonized/EX1206__MGDS_31831
+FK171110__MGDS_24424,development (joins existing unit),lu01,FK171110,zero_valid_tiles_256,harmonized/FK171110__MGDS_24424
+KN182L03__MGDS_30193,confirmatory,nu01a,KN182L03,coreg_fail offset=48.08 m,harmonized_confirmatory/nu01a/KN182L03__MGDS_30193
+NR07-1__MGDS_31813,development (ruling H1),vu03,NR07-1,coreg_fail offset=41.57 m dz=223.23 m MAD=265.355 m,harmonized/NR07-1__MGDS_31813
+NR07-1__MGDS_31814,development (ruling H1),vu03,NR07-1,coreg_fail offset=50.86 m dz=409.5 m MAD=377.818 m,harmonized/NR07-1__MGDS_31814
+SUM1004__MGDS_33090,confirmatory,nu03,SUM1004,coreg_fail offset=46.7 m,harmonized_confirmatory/nu03/SUM1004__MGDS_33090
+lostcity2005__MGDS_21847,development (ruling H1),vu01,lostcity2005,coreg_fail offset=50.98 m dz=6.7 m MAD=7.725 m,harmonized/lostcity2005__MGDS_21847

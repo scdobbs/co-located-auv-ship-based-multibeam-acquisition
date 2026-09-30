@@ -1,0 +1,261 @@
+[
+ {
+  "pair_id": "2009_Amundsen__MGDS_30047",
+  "unit": null,
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/2009_Amundsen__MGDS_30047/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 24022477,
+   "median_offset_m": 0.1115,
+   "rms_m": 11.4988,
+   "robust_sigma_m": 0.5655,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    -0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 25478240,
+  "median_rsd_over_sd": 0.785
+ },
+ {
+  "pair_id": "AT37-05__MGDS_24043",
+  "unit": null,
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT37-05__MGDS_24043/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "vertical_offset",
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 4698,
+   "median_offset_m": 46.3285,
+   "rms_m": 57.8225,
+   "robust_sigma_m": 28.8933,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    -1.0,
+    1.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "vertical_offset",
+    "registration_shift"
+   ]
+  },
+  "cells": 4698,
+  "median_rsd_over_sd": 0.079
+ },
+ {
+  "pair_id": "AT42-06__MGDS_5174",
+  "unit": null,
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-06__MGDS_5174/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 12202,
+   "median_offset_m": 0.0353,
+   "rms_m": 1.6943,
+   "robust_sigma_m": 0.9473,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.0,
+    0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 12296,
+  "median_rsd_over_sd": 0.876
+ },
+ {
+  "pair_id": "EX1202L2__MGDS_20815",
+  "unit": null,
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EX1202L2__MGDS_20815/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 51880,
+   "median_offset_m": 0.0768,
+   "rms_m": 0.9226,
+   "robust_sigma_m": 0.6358,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.25,
+    0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 52065,
+  "median_rsd_over_sd": 0.891
+ },
+ {
+  "pair_id": "EX1402L2__MGDS_31073",
+  "unit": null,
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EX1402L2__MGDS_31073/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 10834,
+   "median_offset_m": 0.0499,
+   "rms_m": 0.4795,
+   "robust_sigma_m": 0.3644,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.0,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 10841,
+  "median_rsd_over_sd": 0.91
+ },
+ {
+  "pair_id": "FK151121__MGDS_22383",
+  "unit": null,
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 5818,
+   "median_offset_m": -0.0752,
+   "rms_m": 4.8581,
+   "robust_sigma_m": 3.2207,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.0,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 5827,
+  "median_rsd_over_sd": 0.938
+ },
+ {
+  "pair_id": "KM0923__MGDS_31429",
+  "unit": null,
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/KM0923__MGDS_31429/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 9079,
+   "median_offset_m": 0.0591,
+   "rms_m": 10.9605,
+   "robust_sigma_m": 4.7888,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    -0.25,
+    0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 10353,
+  "median_rsd_over_sd": 0.868
+ },
+ {
+  "pair_id": "NA080__MGDS_31289",
+  "unit": null,
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 16348,
+   "median_offset_m": 0.1351,
+   "rms_m": 16.099,
+   "robust_sigma_m": 1.4169,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.0,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": []
+  },
+  "cells": 58491,
+  "median_rsd_over_sd": 0.793
+ },
+ {
+  "pair_id": "TN399__MGDS_33068",
+  "unit": null,
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN399__MGDS_33068/ship_products_v2",
+  "errors": [],
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 7763,
+   "median_offset_m": 0.085,
+   "rms_m": 2.6037,
+   "robust_sigma_m": 0.6287,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.0,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "cells": 7820,
+  "median_rsd_over_sd": 0.832
+ }
+]

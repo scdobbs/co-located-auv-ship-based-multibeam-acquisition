@@ -1,0 +1,91 @@
+{
+  "date": "2026-09-30",
+  "rows": 49,
+  "existing": 39,
+  "new": 10,
+  "by_designation": {
+    "development": 38,
+    "development (joins existing unit)": 5,
+    "development (ruling H1)": 3,
+    "lockbox": 2,
+    "confirmatory": 1
+  },
+  "path": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_v2.parquet",
+  "sha256": "bda414dccd634bfc609366ac7054fec9a1c798849caa59ad4e5ebad7622ac603",
+  "dropped": [
+    {
+      "pair_id": "EX0909__MGDS_24002",
+      "dropped_from": "development (ruling H1)",
+      "leakage_unit": "lu07",
+      "lr_cruise": "EX0909",
+      "reason": "no_lr_soundings_under_hr",
+      "harmonized_dir": "harmonized/EX0909__MGDS_24002"
+    },
+    {
+      "pair_id": "EX1202L3__MGDS_31321",
+      "dropped_from": "development (ruling H1)",
+      "leakage_unit": "vu00",
+      "lr_cruise": "EX1202L3",
+      "reason": "no_lr_soundings_under_hr",
+      "harmonized_dir": "harmonized/EX1202L3__MGDS_31321"
+    },
+    {
+      "pair_id": "EX1206__MGDS_31831",
+      "dropped_from": "development (ruling H1)",
+      "leakage_unit": "vu04",
+      "lr_cruise": "EX1206",
+      "reason": "no_lr_soundings_under_hr",
+      "harmonized_dir": "harmonized/EX1206__MGDS_31831"
+    },
+    {
+      "pair_id": "FK171110__MGDS_24424",
+      "dropped_from": "development (joins existing unit)",
+      "leakage_unit": "lu01",
+      "lr_cruise": "FK171110",
+      "reason": "zero_valid_tiles_256",
+      "harmonized_dir": "harmonized/FK171110__MGDS_24424"
+    },
+    {
+      "pair_id": "KN182L03__MGDS_30193",
+      "dropped_from": "confirmatory",
+      "leakage_unit": "nu01a",
+      "lr_cruise": "KN182L03",
+      "reason": "coreg_fail offset=48.08 m",
+      "harmonized_dir": "harmonized_confirmatory/nu01a/KN182L03__MGDS_30193"
+    },
+    {
+      "pair_id": "NR07-1__MGDS_31813",
+      "dropped_from": "development (ruling H1)",
+      "leakage_unit": "vu03",
+      "lr_cruise": "NR07-1",
+      "reason": "coreg_fail offset=41.57 m dz=223.23 m MAD=265.355 m",
+      "harmonized_dir": "harmonized/NR07-1__MGDS_31813"
+    },
+    {
+      "pair_id": "NR07-1__MGDS_31814",
+      "dropped_from": "development (ruling H1)",
+      "leakage_unit": "vu03",
+      "lr_cruise": "NR07-1",
+      "reason": "coreg_fail offset=50.86 m dz=409.5 m MAD=377.818 m",
+      "harmonized_dir": "harmonized/NR07-1__MGDS_31814"
+    },
+    {
+      "pair_id": "SUM1004__MGDS_33090",
+      "dropped_from": "confirmatory",
+      "leakage_unit": "nu03",
+      "lr_cruise": "SUM1004",
+      "reason": "coreg_fail offset=46.7 m",
+      "harmonized_dir": "harmonized_confirmatory/nu03/SUM1004__MGDS_33090"
+    },
+    {
+      "pair_id": "lostcity2005__MGDS_21847",
+      "dropped_from": "development (ruling H1)",
+      "leakage_unit": "vu01",
+      "lr_cruise": "lostcity2005",
+      "reason": "coreg_fail offset=50.98 m dz=6.7 m MAD=7.725 m",
+      "harmonized_dir": "harmonized/lostcity2005__MGDS_21847"
+    }
+  ],
+  "dropped_path": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_v2_dropped.csv",
+  "dropped_sha256": "1717bd66d0f5dc769fc2ccd8aa8ebc09518a02b36147b5c8a423f47cedbd00cc"
+}

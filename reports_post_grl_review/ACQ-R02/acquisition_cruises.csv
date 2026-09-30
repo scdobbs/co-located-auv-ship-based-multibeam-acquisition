@@ -1,10 +1,11 @@
 cruise,files_on_oak,gb_on_oak,fetch_complete,format,sonar,beamwidth_deg,depth_m,cell_m,region_choice,n_valid,wall_s
+2009_Amundsen,377,26.58,True,58,Kongsberg EM302,1.0,166.8,2.91,patch cluster: 5 of 29 parts within 5 km of the part with th,,2250.5
 AT37-05,274,5.65,True,58,Kongsberg EM122,1.0,3209.0,56.01,whole footprint,,631.0
 AT42-06,90,1.93,True,58,Kongsberg EM122,1.0,2515.7,43.91,whole footprint,,94.4
 EX0909,368,5.15,True,162,Simrad EM302,1.0,2000.0,34.91,whole footprint,,613.7
 EX1202L2,323,7.21,True,162,Simrad EM302,1.0,1354.0,23.63,whole footprint,,825.5
 EX1202L3,279,7.0,True,163,Simrad EM302,1.0,2000.0,34.91,whole footprint,,410.6
-EX1206,614,15.45,True,162,Kongsberg EM302,1.0,2000.0,34.91,whole footprint,,3725.3
+EX1206,614,15.45,True,162,Kongsberg EM302,1.0,2000.0,34.91,patch cluster: 36 of 47 parts within 5 km of the part with t,,1878.6
 EX1402L2,311,10.15,True,163,Kongsberg EM302,1.0,937.7,16.37,whole footprint,,2933.5
 FK151121,274,7.37,True,58,Kongsberg EM302; EM710,1.0,3796.1,66.26,whole footprint,,780.5
 FK171110,50,3.0,True,58,Kongsberg EM302,1.0,2760.9,48.19,whole footprint,,221.6

@@ -87,7 +87,11 @@
   "matches_lr_tif": true
  },
  "processed_lr_crosscheck": {
-  "status": "error: Cannot convert fill_value nan to dtype uint8"
+  "cruise": "EX1402L2",
+  "url": "http://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1402L2/multibeam/data/version1/products/EX1402L2_MB_FNL_01_50m_WGS84.tif.gz",
+  "bytes": 743463,
+  "sha256": "c13fd74ddecd5f6f746c9430820f0272d58b7aa0172560732adc2761e319cad3",
+  "status": "processed_product_not_a_float_grid (dtype uint8, 4 bands)"
  },
  "status": "harmonized_development",
  "wall_s": 1930.8
