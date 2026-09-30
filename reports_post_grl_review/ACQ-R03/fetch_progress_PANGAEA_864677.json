@@ -1,23 +1,23 @@
 {
  "cruise": "PANGAEA_864677",
- "done": 6,
+ "done": 14,
  "todo": 55,
- "fetched": 6,
+ "fetched": 14,
  "failed": [],
- "gb_moved": 0.162,
- "elapsed_h": 0.047,
- "mean_rate_MBps": 0.9633,
+ "gb_moved": 0.349,
+ "elapsed_h": 0.1,
+ "mean_rate_MBps": 0.9677,
  "last": {
-  "name": "0002_20150216_192530_M114_EM122.all",
-  "url": "https://hs.pangaea.de/bathy/m114/0002_20150216_192530_M114_EM122.all",
-  "advertised": 32475136,
+  "name": "0006_20150216_205415_M114_EM122.all",
+  "url": "https://hs.pangaea.de/bathy/m114/0006_20150216_205415_M114_EM122.all",
+  "advertised": 4721664,
   "status": "fetched",
   "http": 200,
-  "bytes_transferred": 32476030,
-  "seconds": 28.5,
-  "attempts": 5,
-  "size": 32476030,
-  "sha256": "54fc8b1df796d302a8cdb2438deba4b58153c2460d0cbd731d4c1e8b836cb5c1"
+  "bytes_transferred": 4721804,
+  "seconds": 11.7,
+  "attempts": 3,
+  "size": 4721804,
+  "sha256": "cc8f82a6987f65683613a543823c1835f2b9d99194b4405855264f7ede99b5ff"
  },
- "at": "2026-09-30T22:52:04+00:00"
+ "at": "2026-09-30T22:55:17+00:00"
 }

@@ -1,0 +1,65 @@
+{
+ "generated": "2026-09-30T22:52:59+00:00",
+ "rule": "C2a: lr_native = max(documented beam footprint 2\u00b7depth\u00b7tan(bw/2), grid posting); stage C cell = footprint at the median depth of the soundings inside the HR footprint bbox",
+ "beamwidth_deg": 1.0,
+ "pairs": {
+  "2009_Amundsen__MGDS_30046": {
+   "median_depth_under_hr_m": {
+    "hr_median_over_joint_now": -238.8,
+    "june_record_depth_m": 238.8,
+    "june_hr_p50_over_joint": -238.8
+   },
+   "documented_footprint_m": {
+    "at_june_record_depth": 4.17,
+    "june_record_value": 4.2
+   },
+   "gridding_cell_used_m": {
+    "value": 16.0,
+    "lr_tif_posting_now": 16.01,
+    "grid_file": "2009_Amundsen__MGDS_30045.grd",
+    "origin": "June stage-C pilot grid for HR MGDS:30045 (stage_c_pilot_measurements.json): est_cell 15.98 m = 2\u00b7depth\u00b7tan(0.5\u00b0) at the MEDIAN DEPTH OF THE MGDS:30045 FOOTPRINT BBOX, 915.4805 m (grid depth range -1683.9..-62.9 m); the 30046 pair (C1 phase 1, 2026-06-26) was harmonized against that existing grid, not regridded at its own footprint depth"
+   },
+   "lr_native_c2a_m": {
+    "recorded": 16.0,
+    "rule_eval": "max(4.2, 16.0) = 16.0",
+    "june_case": "B_regrid (posting>>footprint)",
+    "june_note": "2009_Amundsen x30046: footprint 4.2m (nadir, shallow 238m) << posting 16m. RECOMMEND lr_native=16 (posting, realistic hull res), NO re-grid (4m over-claims). pending Steve confirm."
+   }
+  },
+  "2009_Amundsen__MGDS_30047": {
+   "median_depth_under_hr_m": {
+    "hr_median_over_joint_now": -222.7,
+    "acq_r02_hr_p50_over_joint": -222.7,
+    "grid_footprint_depth_m (soundings in HR bbox)": 166.8,
+    "harmonized_lr_median_depth_used_for_lr_native": 279.0
+   },
+   "documented_footprint_m": {
+    "at_grid_footprint_depth": 2.91,
+    "at_harmonized_lr_median_depth (used)": 4.87,
+    "at_hr_median_over_joint": 3.89
+   },
+   "gridding_cell_used_m": {
+    "value": 2.91,
+    "lr_tif_posting_now": 2.92,
+    "origin": "ACQ-R02 grid_lr.py: 2\u00b7depth\u00b7tan(0.5\u00b0) at the median depth of the soundings inside the MGDS:30047 footprint bbox (grid/2009_Amundsen.json footprint_depth_m); region = LR-seeded 5 km patch cluster"
+   },
+   "lr_native_c2a_m": {
+    "recorded": 4.87,
+    "rule_eval": "max(4.87, 2.92) = 4.87",
+    "record": {
+     "beam_footprint_m": 4.87,
+     "posting_m": 2.92,
+     "lr_native_m": 4.87,
+     "beamwidth_deg": 1.0,
+     "rule": "max(footprint, posting) (C2a)"
+    }
+   }
+  }
+ },
+ "verdict": {
+  "same_rule": "Both pairs record lr_native = max(footprint, posting) (C2a).",
+  "explained_by_depth": false,
+  "deviation": "The difference (16 m vs 4.87 m) is NOT explained by depth: both HR sit at 220\u2013240 m (footprints 3.9\u20134.2 m). 30046's posting (16 m) comes from a grid whose cell was set by the 915 m median depth of the MGDS:30045 footprint bbox, i.e. the stage-C cell rule applied to a different, deeper HR; the pair was never gridded at its own footprint depth (Steve's June C2a case-B ruling: lr_native = 16 m posting, no regrid). 30047's posting (2.91 m) follows the standard rule at its own footprint depth (166.8 m), and its lr_native (4.87 m) uses the footprint at the harmonized-LR median depth (279 m), not the HR median (223 m) or the grid depth (167 m): a third depth definition inside one pair.",
+  "hold": "HOLD H-A (\u00a74): 2009_Amundsen__MGDS_30046's 16 m posting deviates from the standard stage-C cell (its own-footprint cell would be \u2248 4.2 m); the two lu18 pairs therefore carry lr_native 16 m and 4.87 m over the same shelf at the same depth. Steve's call: keep the June ruling (16 m, no regrid) or regrid 30046 at its own footprint depth in a later directive. Nothing modified here."
+ }
+}
