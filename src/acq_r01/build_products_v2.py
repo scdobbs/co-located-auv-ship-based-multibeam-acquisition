@@ -202,18 +202,26 @@ def control_vs_v1(out_dir: Path, prods: dict) -> dict:
     return res
 
 
-def build_cruise(cruise, provider_pair, nproc, only_pairs=None, batch_files=1):
+def build_cruise(cruise, provider_pair, nproc, only_pairs=None, batch_files=1, spec=None):
+    """spec (ACQ-R02 new pairs): list of {pair_id, pair_dir, cruise_dir, src_kind, s_lr_override} —
+    bypasses the manifest; otherwise pairs come from the manifest (ACQ-R01 scope)."""
     t0 = time.time()
-    m = C.load_manifest()
-    if provider_pair:
-        info = V1.PROVIDER_SWATH[provider_pair]
-        rows = m[m.pair_id == provider_pair]; cruise_dir = C.RAW_SWATH_OAK / info["cruise_dir"]; src_kind = info["kind"]
+    if spec:
+        items = [(d["pair_id"], Path(d["pair_dir"])) for d in spec]
+        cruise_dir = Path(spec[0]["cruise_dir"]); src_kind = spec[0].get("src_kind", "ncei_swath")
+        C.assert_no_lockbox([p for p, _ in items])
     else:
-        C.assert_no_lockbox_cruise([cruise])
-        rows = m[(m.lr_cruise == cruise) & m.pair_id.isin(C.PAIRS_IN_SCOPE)]; cruise_dir = C.RAW_SWATH_OAK / cruise; src_kind = "ncei_swath"
-    if only_pairs:
-        rows = rows[rows.pair_id.isin(only_pairs)]
-    C.assert_no_lockbox(rows.pair_id.tolist())
+        m = C.load_manifest()
+        if provider_pair:
+            info = V1.PROVIDER_SWATH[provider_pair]
+            rows = m[m.pair_id == provider_pair]; cruise_dir = C.RAW_SWATH_OAK / info["cruise_dir"]; src_kind = info["kind"]
+        else:
+            C.assert_no_lockbox_cruise([cruise])
+            rows = m[(m.lr_cruise == cruise) & m.pair_id.isin(C.PAIRS_IN_SCOPE)]; cruise_dir = C.RAW_SWATH_OAK / cruise; src_kind = "ncei_swath"
+        if only_pairs:
+            rows = rows[rows.pair_id.isin(only_pairs)]
+        C.assert_no_lockbox(rows.pair_id.tolist())
+        items = [(r.pair_id, C.pair_dir_oak(r)) for _, r in rows.iterrows()]
     files = V1.swath_files(cruise_dir)
     fman = json.loads((cruise_dir / "fetch_manifest.json").read_text())
     if fman.get("n_files_failed", 0):
@@ -222,8 +230,8 @@ def build_cruise(cruise, provider_pair, nproc, only_pairs=None, batch_files=1):
     fmt = V1.fmt_for(files[0].name)
     workdir = Path(os.environ.get("L_SCRATCH", "/tmp")) / "acq_r02" / cruise
     results = []
-    for _, row in rows.iterrows():
-        pid = row.pair_id; pdir = C.pair_dir_oak(row); lr_path = pdir / "lr.tif"
+    for pid, pdir in items:
+        lr_path = pdir / "lr.tif"
         geom = V1.lr_window(lr_path)
         z_ref = float(np.nanmedian(geom["lr"])) if np.isfinite(geom["lr"]).any() else 0.0
         grid = {"crs": geom["crs"].to_string(), "transform": list(geom["transform"])[:6], "shape": tuple(geom["shape"])}
@@ -251,6 +259,8 @@ def build_cruise(cruise, provider_pair, nproc, only_pairs=None, batch_files=1):
         with rasterio.open(out_dir / "ship_rsd.tif") as a, rasterio.open(lr_path) as b:
             matches = (a.crs == b.crs and a.transform == b.transform and a.shape == b.shape)
         slr, slr_src = V1.median_s_lr(pid)
+        if slr is None:
+            slr_src = "none (new pair: no CNN-repo tile table yet)"
         csv_path = out_dir / "qa_shift_surface.csv"
         if csv_path.exists():
             csv_path.chmod(0o644)
@@ -295,9 +305,11 @@ def main(argv=None):
     ap.add_argument("--cruise", required=True); ap.add_argument("--provider", default=None)
     ap.add_argument("--nproc", type=int, default=8); ap.add_argument("--pairs", default=None)
     ap.add_argument("--batch-files", type=int, default=1)
+    ap.add_argument("--spec", default=None, help="JSON list of {pair_id, pair_dir, cruise_dir, src_kind} for new pairs")
     a = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
-    res = build_cruise(a.cruise, a.provider, a.nproc, a.pairs.split(",") if a.pairs else None, a.batch_files)
+    spec = json.loads(Path(a.spec).read_text()) if a.spec else None
+    res = build_cruise(a.cruise, a.provider, a.nproc, a.pairs.split(",") if a.pairs else None, a.batch_files, spec)
     print(json.dumps(res, indent=1, default=str))
     return 0 if res else 1
 
