@@ -11,7 +11,7 @@ set -uo pipefail
 module load python/3.12.1 openblas/0.3.28
 cd /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition
 PY=/home/users/scdobbs/bathy_diffusion_env/bin/python
-LIST=sbatch/acq_r02_prodv2ucts_list.txt
+LIST=sbatch/acq_r01_products_list.txt
 LINE=$(sed -n "${SLURM_ARRAY_TASK_ID}p" "$LIST")
 echo "task ${SLURM_ARRAY_TASK_ID}: $LINE host=$(hostname) L_SCRATCH=$L_SCRATCH commit=$(git rev-parse --short HEAD)"
 # shellcheck disable=SC2086
