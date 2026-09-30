@@ -1,0 +1,254 @@
+{
+  "generated": "2026-09-29",
+  "policy": "conservative: shared HR survey OR shared LR cruise OR centroid<=50km",
+  "units": [
+    {
+      "unit_id": "nu00",
+      "members": [
+        "MGDS:22383",
+        "MGDS:22384"
+      ],
+      "n_candidates": 2,
+      "basin": "Pacific",
+      "setting": "volcanic_or_seamount",
+      "depth_min_m": -4407.1123,
+      "depth_max_m": -3185.042,
+      "ship_cruises": [
+        "FK151121"
+      ],
+      "hr_sources": [
+        {
+          "hr_id": "MGDS:22383",
+          "doi": "10.1594/IEDA/322383",
+          "title": "Processed Gridded Near-Bottom AUV Sentry Bathymetric Sonar Data from the Izu-Bonin-Mariana Volcanic ",
+          "platform": "Sentry",
+          "gate_tier": "needs_geometry",
+          "footprint_suspect": true
+        },
+        {
+          "hr_id": "MGDS:22384",
+          "doi": "10.1594/IEDA/322384",
+          "title": "Processed Near-Bottom AUV Sentry Bathymetric Sonar Images from the Izu-Bonin-Mariana Volcanic Arc ac",
+          "platform": "Sentry",
+          "gate_tier": "needs_geometry",
+          "footprint_suspect": true
+        }
+      ],
+      "est_volume_gb": {
+        "hr": 0.16,
+        "lr_raw_swath": 8.12,
+        "lr_cruise_sizes_gb": {
+          "FK151121": 8.12
+        }
+      },
+      "lr_native_doc_m": [
+        66.3,
+        NaN
+      ],
+      "ratio_doc": [
+        66.3,
+        NaN
+      ],
+      "k_prior": [
+        16.0,
+        NaN
+      ],
+      "lon": 144.616,
+      "lat": 16.635
+    },
+    {
+      "unit_id": "nu01",
+      "members": [
+        "MGDS:30193",
+        "MGDS:32239"
+      ],
+      "n_candidates": 2,
+      "basin": "Atlantic",
+      "setting": "mixed:continental_margin|volcanic_or_seamount",
+      "depth_min_m": -4464.354,
+      "depth_max_m": -998.681,
+      "ship_cruises": [
+        "KN182L03",
+        "RC2511"
+      ],
+      "hr_sources": [
+        {
+          "hr_id": "MGDS:30193",
+          "doi": "10.26022/IEDA/330193",
+          "title": "Processed near-bottom Sentry AUV bathymetry data (netCDF grids) at the Mid-Atlantic Ridge (AT40-02, ",
+          "platform": "Sentry",
+          "gate_tier": "needs_geometry",
+          "footprint_suspect": true
+        },
+        {
+          "hr_id": "MGDS:32239",
+          "doi": "",
+          "title": "MBARI Mapping AUV near-bottom processed swath bathymetry gridded data (netCDF format) at the Mid-Atl",
+          "platform": "AUV",
+          "gate_tier": "needs_geometry",
+          "footprint_suspect": true
+        }
+      ],
+      "est_volume_gb": {
+        "hr": 0.9,
+        "lr_raw_swath": 1.56,
+        "lr_cruise_sizes_gb": {
+          "RC2511": 0.14,
+          "KN182L03": 1.42
+        }
+      },
+      "lr_native_doc_m": [
+        112.1,
+        95.4
+      ],
+      "ratio_doc": [
+        112.1,
+        121.5
+      ],
+      "k_prior": [
+        16.0,
+        16.0
+      ],
+      "lon": -45.014,
+      "lat": 13.811
+    },
+    {
+      "unit_id": "nu02",
+      "members": [
+        "MGDS:30368"
+      ],
+      "n_candidates": 1,
+      "basin": "Pacific",
+      "setting": "continental_margin",
+      "depth_min_m": -3367.811,
+      "depth_max_m": -3149.308,
+      "ship_cruises": [
+        "RP15DI86"
+      ],
+      "hr_sources": [
+        {
+          "hr_id": "MGDS:30368",
+          "doi": "10.26022/IEDA/330368",
+          "title": "Escanaba Trough (Gorda Ridge) AUV near-bottom processed swath bathymetry gridded data in GMT-compati",
+          "platform": "AUV",
+          "gate_tier": "needs_geometry",
+          "footprint_suspect": true
+        }
+      ],
+      "est_volume_gb": {
+        "hr": 0.1,
+        "lr_raw_swath": 0.01,
+        "lr_cruise_sizes_gb": {
+          "RP15DI86": 0.01
+        }
+      },
+      "lr_native_doc_m": [
+        113.8
+      ],
+      "ratio_doc": [
+        114.0
+      ],
+      "k_prior": [
+        16.0
+      ],
+      "lon": -127.518,
+      "lat": 40.874
+    },
+    {
+      "unit_id": "nu03",
+      "members": [
+        "MGDS:33081",
+        "MGDS:33090"
+      ],
+      "n_candidates": 2,
+      "basin": "Pacific",
+      "setting": "abyssal_plain",
+      "depth_min_m": -5807.713,
+      "depth_max_m": -3683.719,
+      "ship_cruises": [
+        "SUM1004"
+      ],
+      "hr_sources": [
+        {
+          "hr_id": "MGDS:33081",
+          "doi": "10.60521/333081",
+          "title": "Processed Gridded Near-Bottom AUV Bathymetry Data (EM2040) from the Mariana Islands, acquired during",
+          "platform": "Sentry",
+          "gate_tier": "needs_geometry",
+          "footprint_suspect": true
+        },
+        {
+          "hr_id": "MGDS:33090",
+          "doi": "10.60521/333090",
+          "title": "Processed Gridded Near-Bottom AUV Bathymetry Data (EM2040) from the Mariana Islands, acquired during",
+          "platform": "Sentry",
+          "gate_tier": "needs_geometry",
+          "footprint_suspect": true
+        }
+      ],
+      "est_volume_gb": {
+        "hr": 0.17,
+        "lr_raw_swath": 5.61,
+        "lr_cruise_sizes_gb": {
+          "SUM1004": 5.61
+        }
+      },
+      "lr_native_doc_m": [
+        NaN,
+        NaN
+      ],
+      "ratio_doc": [
+        NaN,
+        NaN
+      ],
+      "k_prior": [
+        NaN,
+        NaN
+      ],
+      "lon": 148.07,
+      "lat": 6.954
+    }
+  ],
+  "counts": {
+    "hr_in_selection": 130,
+    "status_counts": {
+      "previously_excluded": 56,
+      "in_corpus": 49,
+      "new_candidate": 16,
+      "gate_excluded": 5,
+      "render_no_elevation": 2,
+      "not_auv_bathymetry": 2
+    },
+    "new_candidates_by_gate_tier": {
+      "needs_geometry": 13,
+      "training": 1,
+      "eval_only": 1,
+      "raw_lr_to_grid": 1
+    },
+    "new_candidates_by_source_tier": {
+      "MGDS (Tier 3 US fleet)": 16,
+      "other": 0
+    },
+    "new_candidates_by_k_prior": {
+      "8.0": 5,
+      "16.0": 5,
+      "NaN": 4,
+      "2.0": 1,
+      "4.0": 1
+    },
+    "new_candidates_footprint_unverified": 13,
+    "join_existing_unit": 9,
+    "shares_lockbox": 0,
+    "new_leakage_units": 4,
+    "new_units_by_setting": {
+      "volcanic_or_seamount": 1,
+      "mixed:continental_margin|volcanic_or_seamount": 1,
+      "continental_margin": 1,
+      "abyssal_plain": 1
+    },
+    "new_units_by_basin": {
+      "Pacific": 3,
+      "Atlantic": 1
+    }
+  }
+}

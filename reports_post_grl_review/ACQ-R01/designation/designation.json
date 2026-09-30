@@ -1,0 +1,21 @@
+{
+  "seed": 20260929,
+  "run_at": "2026-09-30T00:19:10.984268+00:00",
+  "input": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R01/discovery_rerun/new_units.json",
+  "input_sha256": "199f429e92f4792ddf153cee2d25a69ca7d666165ae6d16ebf1c23c899b31ff8",
+  "output_csv": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R01/designation/designation.csv",
+  "output_sha256": "660ffe4613b7cb968a88056e8cbfb02e3093ad822b789895da88abc4827210cd",
+  "n_units": 4,
+  "n_development": 2,
+  "n_confirmatory": 2,
+  "strata_merges": [
+    "singleton settings ['abyssal_plain', 'continental_margin', 'volcanic_or_seamount'] merged by basin Pacific",
+    "singleton nu01 (mixed:continental_margin|volcanic_or_seamount, Atlantic) attached to stratum merged:Pacific"
+  ],
+  "code_commit": "b64ef7bdfe468b7ddff0c75d07c15a22f446205d",
+  "rules": [
+    "failed unit is dropped from its set, never reassigned",
+    "no model/baseline/target value on confirmatory units before Phase 4",
+    "later discovery runs re-run this script with a new recorded seed"
+  ]
+}

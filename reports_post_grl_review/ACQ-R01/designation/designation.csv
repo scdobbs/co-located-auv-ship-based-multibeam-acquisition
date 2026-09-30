@@ -1,0 +1,5 @@
+unit_id,stratum,setting,basin,assignment,members,ship_cruises
+nu02,merged:Pacific,continental_margin,Pacific,development,MGDS:30368,RP15DI86
+nu00,merged:Pacific,volcanic_or_seamount,Pacific,development,MGDS:22383;MGDS:22384,FK151121
+nu03,merged:Pacific,abyssal_plain,Pacific,confirmatory,MGDS:33081;MGDS:33090,SUM1004
+nu01,merged:Pacific,mixed:continental_margin|volcanic_or_seamount,Atlantic,confirmatory,MGDS:30193;MGDS:32239,KN182L03;RC2511
