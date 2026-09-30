@@ -69,8 +69,9 @@ PROVIDER_UNITS = ("CalDIG", "CCZ", "DISCOL", "TAG")
 # under OAK harmonized_confirmatory/<unit>/<pair>/; no residual-amplitude statistic, k sweep,
 # spectral ratio, baseline, model or target is computed on them before Phase 4.
 # --------------------------------------------------------------------------- #
-CONFIRMATORY_UNITS = ("nu01", "nu03",          # ACQ-R01 designation (seed 20260929): MAR mixed, Mariana abyssal
-                      "pu02", "pu03")          # ACQ-R02 §4.3 PANGAEA designation (seed 20260930): Etna margin AL532, Kolumbo POS510
+CONFIRMATORY_UNITS = ("nu01", "nu01a", "nu01b",  # ACQ-R01 designation (seed 20260929): MAR mixed; split at §5.4 verification into nu01a (30193/KN182L03) + nu01b (32239/RC2511)
+                      "nu03",                    # Mariana abyssal (33090/SUM1004; 33081 dropped as false pair)
+                      "pu02", "pu03")            # ACQ-R02 §4.3 PANGAEA designation (seed 20260930): Etna margin AL532 (dropped: HR is a render), Kolumbo POS510
 HARMONIZED_CONFIRMATORY = OAK / "harmonized_confirmatory"
 
 
