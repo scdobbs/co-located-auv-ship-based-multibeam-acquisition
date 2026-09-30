@@ -239,7 +239,7 @@
       "corpus_members": []
     },
     {
-      "unit_id": "nu01",
+      "unit_id": "nu01a",
       "members": [
         "MGDS:30193"
       ],
@@ -273,7 +273,7 @@
       "corpus_members": []
     },
     {
-      "unit_id": "nu01",
+      "unit_id": "nu01b",
       "members": [
         "MGDS:32239"
       ],
@@ -316,7 +316,7 @@
         "PANGAEA:884112": "development"
       },
       "hr_cruises": [
-        ""
+        "nan"
       ],
       "lr_cruises": [
         "PANGAEA:892317"
@@ -359,7 +359,7 @@
     }
   ],
   "changes": [
-    "unit nu01 SPLIT into 2 components; each part inherits its designation"
+    "unit nu01 SPLIT into 2 components (nu01a, nu01b); each part inherits its designation"
   ],
   "dropped": [
     [

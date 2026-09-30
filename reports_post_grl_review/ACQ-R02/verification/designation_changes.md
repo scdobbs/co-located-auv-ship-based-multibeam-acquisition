@@ -16,17 +16,17 @@
 | vu04 | MGDS:31831 |  | MGDS:31831: development (ruling H1) | AT29-04 | EX1206 |
 | nu00 | MGDS:22383 |  | MGDS:22383: development | FK151121 | FK151121 |
 | vu05 | MGDS:24043 |  | MGDS:24043: development (joins existing unit) | AT37-05 | AT37-05 |
-| nu01 | MGDS:30193 |  | MGDS:30193: confirmatory | AT40-02 | KN182L03 |
+| nu01a | MGDS:30193 |  | MGDS:30193: confirmatory | AT40-02 | KN182L03 |
 | nu02 | MGDS:30368 |  | MGDS:30368: development | RCSN204 | RP15DI86 |
-| nu01 | MGDS:32239 |  | MGDS:32239: confirmatory | nan | RC2511 |
+| nu01b | MGDS:32239 |  | MGDS:32239: confirmatory | nan | RC2511 |
 | nu03 | MGDS:33090 |  | MGDS:33090: confirmatory | NA179 | SUM1004 |
-| pu00 | PANGAEA:884112 |  | PANGAEA:884112: development |  | PANGAEA:892317 |
+| pu00 | PANGAEA:884112 |  | PANGAEA:884112: development | nan | PANGAEA:892317 |
 | pu01 | PANGAEA:889317 |  | PANGAEA:889317: development | M114/1 | PANGAEA:864677 |
 | pu03 | PANGAEA:958275 |  | PANGAEA:958275: confirmatory | POS510 | PANGAEA:993972 |
 
 ## Changes against ACQ-R01 / §4.3 assignments
 
-- unit nu01 SPLIT into 2 components; each part inherits its designation
+- unit nu01 SPLIT into 2 components (nu01a, nu01b); each part inherits its designation
 
 ## Dropped at verification
 

@@ -655,7 +655,11 @@ def leakage_rerun(v: pd.DataFrame):
             prior_groups.setdefault(nodes[x]["unit"], set()).add(uf.find(x))
     for u, roots in prior_groups.items():
         if len(roots) > 1:
-            changes.append(f"unit {u} SPLIT into {len(roots)} components; each part inherits its designation")
+            # give the parts distinct ids (nu01a, nu01b, ...) so grouped CV / the manifest never treat them as one unit
+            parts = [x for x in units_after if x["unit_id"] == u]
+            for i, part in enumerate(sorted(parts, key=lambda x: x["members"])):
+                part["unit_id"] = f"{u}{chr(97 + i)}"
+            changes.append(f"unit {u} SPLIT into {len(roots)} components ({', '.join(x['unit_id'] for x in parts)}); each part inherits its designation")
     dropped_by_verification = [(r.hr_id, r.prior_unit, r.prior_designation, r.status, r.reason) for _, r in v[v.status != "verified"].iterrows()]
     C.write_json(OUT / "units_after.json", {"units": units_after, "changes": changes, "dropped": dropped_by_verification})
     md = ["# Designation changes (ACQ-R02 §5.4)\n", "## Components after verification\n",
