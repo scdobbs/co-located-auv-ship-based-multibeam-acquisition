@@ -157,117 +157,34 @@ def sha256_file(p: Path) -> str:
 
 
 def pangaea_file_urls(pid: str) -> list[str]:
-    r = requests.get(f"https://doi.pangaea.de/10.1594/PANGAEA.{pid}?format=metadata_jsonld", headers=H, timeout=60)
-    j = r.json(); urls = []
-    for d in j.get("distribution") or []:
-        u = d.get("contentUrl") or ""
-        if re.search(r"\.(tif|tiff|nc|grd|asc|zip)(\.gz)?$", u, re.I):
-            urls.append(u)
-    return urls
-
-
-# --------------------------------------------------------------------------- #
-# CRS fallback for grids without an embedded CRS (.asc, GMT .grd, COARDS .nc): the June pipeline's
-# crs_recovery logic in compact form — catalog native_crs when it is an EPSG code, else geographic
-# if the coordinate ranges are lon/lat, else the UTM zone of the catalog centroid; the recovered
-# polygon must land within 2 deg of the catalog centroid or it is rejected (crs_failed_verification).
-# --------------------------------------------------------------------------- #
-_CATS = None
-
-
-def _catalog_info(hr_id):
-    global _CATS
-    if _CATS is None:
-        _CATS = []
-        for cat in (R01 / "discovery_rerun" / "hr_catalog.gpkg", C.REPO / "reports/discovery/hr_catalog.gpkg"):
-            try:
-                _CATS.append(gpd.read_file(cat, layer="hr").set_index("hr_id"))
-            except Exception:
-                pass
-    crs, cen = None, None
-    for g in _CATS:
-        if hr_id in g.index:
-            r = g.loc[hr_id]
-            for col in ("recovered_crs", "native_crs"):
-                v = r.get(col) if hasattr(r, "get") else None
-                if crs is None and isinstance(v, str) and v.upper().startswith("EPSG"):
-                    crs = v
-            if cen is None and r.geometry is not None:
-                cen = (r.geometry.centroid.x, r.geometry.centroid.y)
-    return crs, cen
-
-
-def _open_any(rp: Path, tmp: Path, crs_hint):
-    """Open a raster for polygonisation; returns (rasterio path to open, crs string or None)."""
-    from src import gmt_grd
-    from src.discovery.stage_c5_sweep import _read_coards_grd
-    if gmt_grd.is_gmt_grd(rp):
-        out = tmp / (rp.stem + ".gmtconv.tif")
-        if not out.exists():
-            gmt_grd.convert(rp, out, crs=crs_hint)
-        return out
-    for cand in (str(rp), f"NETCDF:{rp}"):
-        try:
-            with rasterio.open(cand) as ds:
-                if ds.transform is not None and not (abs(ds.transform.a - 1) < 1e-12 and abs(ds.transform.e - 1) < 1e-12):
-                    return cand
-        except Exception:
-            continue
-    out = tmp / (rp.stem + ".coards.tif")
-    if not out.exists():
-        _read_coards_grd(rp, crs_hint, out)
-    return out
-
-
-def polygon_with_crs_fallback(rp: Path, hr_id: str, tmp: Path):
-    """(poly4326, crs_used, note).  Tries the stage-B path first; on 'no CRS' infers one."""
+    """PANGAEA grid products are listed in the dataset's tab export ('URL file' / 'URL raw' columns) or
+    offered as the dataset zip (?format=zip); the JSON-LD distribution only points at the tab/html."""
+    import io
+    urls = []
+    r = requests.get(f"https://doi.pangaea.de/10.1594/PANGAEA.{pid}?format=textfile", headers=H, timeout=120)
+    lines = r.text.splitlines()
     try:
-        poly, crs = stage_b._valid_polygon_from_raster(rp)
-        p4326 = stage_b._native_to_4326(poly, crs)
-        b = p4326.bounds if p4326 is not None else None
-        # a GMT grid converted without a CRS is labelled EPSG:4326 but holds projected coordinates
-        if b is not None and -180 <= b[0] <= 180 and -180 <= b[2] <= 180 and -90 <= b[1] <= 90 and -90 <= b[3] <= 90:
-            return p4326, crs, "embedded"
+        s = [i for i, l in enumerate(lines) if l.startswith("*/")][0] + 1
+        df = pd.read_csv(io.StringIO("\n".join(lines[s:])), sep="\t")
+        for col in [c for c in df.columns if "URL" in c]:
+            for u in df[col].dropna().astype(str):
+                if re.search(r"\.(tif|tiff|nc|grd|asc|zip|xyz)(\.gz)?$", u, re.I):
+                    urls.append(u)
+        if "Binary" in df.columns:          # PANGAEA binary files: https://download.pangaea.de/dataset/<id>/files/<name>
+            for name in df["Binary"].dropna().astype(str):
+                if re.search(r"\.(tif|tiff|nc|grd|asc|zip)(\.gz)?$", name, re.I):
+                    urls.append(f"https://download.pangaea.de/dataset/{pid}/files/{name}")
     except Exception as e:
-        if "no CRS" not in str(e) and "Invalid projection" not in str(e):
-            raise
-    cat_crs, cen = _catalog_info(hr_id)
-    src = _open_any(rp, tmp, cat_crs)
-    with rasterio.open(src) as ds:
-        b = ds.bounds; h, w = ds.height, ds.width
-        sy = max(1, h // 1024); sx = max(1, w // 1024)
-        arr = ds.read(1, out_shape=(h // sy, w // sx), masked=True)
-        tr = ds.transform * ds.transform.scale(sx, sy)
-    geographic = -180 <= b.left <= 180 and -180 <= b.right <= 180 and -90 <= b.bottom <= 90 and -90 <= b.top <= 90
-    cands = []
-    if cat_crs:
-        cands.append((cat_crs, "catalog"))
-    if geographic:
-        cands.append(("EPSG:4326", "range_geographic"))
-    if cen is not None and not geographic:
-        z = int((cen[0] + 180) // 6) + 1
-        cands.append((f"EPSG:{(32600 if cen[1] >= 0 else 32700) + z}", "utm_from_catalog_centroid"))
-        cands.append((f"EPSG:{(32700 if cen[1] >= 0 else 32600) + z}", "utm_other_hemisphere"))
-    m = arr.mask if hasattr(arr, "mask") else np.zeros(arr.shape, bool)
-    if np.isscalar(m) or getattr(m, "ndim", 0) == 0:
-        m = np.zeros(arr.shape, bool)
-    valid = (~m) & np.isfinite(np.asarray(arr.filled(np.nan), dtype="float32"))
-    valid = np.squeeze(valid).astype("uint8")
-    if valid.sum() == 0:
-        raise RuntimeError("no valid pixels")
-    polys = [shape(g) for g, val in stage_b.shapes(valid, mask=valid.astype(bool), transform=tr) if val == 1]
-    native = unary_union(polys)
-    for crs, why in cands:
-        try:
-            p4326 = stage_b._native_to_4326(native, crs)
-        except Exception:
-            continue
-        if p4326 is None or p4326.is_empty:
-            continue
-        c = p4326.centroid
-        if cen is None or (abs(c.x - cen[0]) <= 2.0 and abs(c.y - cen[1]) <= 2.0):
-            return p4326, crs, why
-    raise RuntimeError(f"crs_failed_verification (tried {[c for c, _ in cands]}; catalog centroid {cen})")
+        log.warning("PANGAEA %s tab parse: %s", pid, str(e)[:80])
+    if not urls:
+        j = requests.get(f"https://doi.pangaea.de/10.1594/PANGAEA.{pid}?format=metadata_jsonld", headers=H, timeout=60).json()
+        for d in j.get("distribution") or []:
+            u = d.get("contentUrl") or ""
+            if "format=zip" in u or re.search(r"\.(tif|tiff|nc|grd|asc|zip)(\.gz)?$", u, re.I):
+                urls.append(u)
+    # prefer gridded products over point clouds when both are offered
+    grids = [u for u in urls if not re.search(r"\.xyz(\.gz)?$", u, re.I)]
+    return list(dict.fromkeys(grids or urls))
 
 
 def download_hr(row) -> dict:
@@ -282,7 +199,10 @@ def download_hr(row) -> dict:
             files.append({"data_uid": uid, "path": str(p) if p else None, "bytes": p.stat().st_size if p else 0, "sha256": sha256_file(p) if p else None})
     else:
         for u in pangaea_file_urls(row.hr_id.split(":")[1]):
-            name = u.rsplit("/", 1)[-1]; p = d / name
+            name = u.rsplit("/", 1)[-1]
+            if "format=zip" in u:
+                name = f"PANGAEA_{row.hr_id.split(':')[1]}.zip"
+            p = d / name
             if not p.exists():
                 with requests.get(u, headers=H, stream=True, timeout=600) as g:
                     g.raise_for_status()
@@ -361,8 +281,11 @@ def lr_overlaps(geom, lr_cruises: set, ncei: gpd.GeoDataFrame, pship: pd.DataFra
 
 def main(argv=None):
     ap = argparse.ArgumentParser(); ap.add_argument("--no-pangaea", action="store_true"); ap.add_argument("--only", default=None)
+    ap.add_argument("--leakage-only", action="store_true", help="re-run §5.4 from candidates_verified.csv (no downloads)")
     a = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+    if a.leakage_only:
+        leakage_rerun(pd.read_csv(OUT / "candidates_verified.csv")); return 0
     OUT.mkdir(parents=True, exist_ok=True)
     df = lockbox_precheck(load_candidates(not a.no_pangaea))
     if a.only:
@@ -430,8 +353,9 @@ def leakage_rerun(v: pd.DataFrame):
                             "designation": "lockbox" if r.pair_id in C.LOCKBOX else "development"}
     ok = v[v.status == "verified"]
     for _, r in ok.iterrows():
-        nodes[r.hr_id] = {"hr_cruise": str(r.hr_cruise_final or ""), "lr": {x for x in str(r.lr_cruises_real).split(";") if x}, "c": (r.lon, r.lat),
-                          "unit": r.prior_unit or "", "kind": r.set, "designation": r.prior_designation or "development"}
+        nodes[r.hr_id] = {"hr_cruise": str(r.hr_cruise_final or ""), "lr": {str(r.lr_best_real)} if isinstance(r.lr_best_real, str) and r.lr_best_real else set(), "c": (r.lon, r.lat),
+                          "unit": r.prior_unit if isinstance(r.prior_unit, str) else "", "kind": r.set,
+                          "designation": r.prior_designation if isinstance(r.prior_designation, str) and r.prior_designation else "development"}
     keys = list(nodes); uf = UF(keys)
     for i, a in enumerate(keys):
         A = nodes[a]
@@ -439,7 +363,7 @@ def leakage_rerun(v: pd.DataFrame):
             B = nodes[b]
             if A["kind"] == "corpus" and B["kind"] == "corpus":
                 continue
-            shared_hr = A["hr_cruise"] and A["hr_cruise"] not in ("", "nan") and A["hr_cruise"] == B["hr_cruise"]
+            shared_hr = bool(A["hr_cruise"]) and A["hr_cruise"] not in ("", "nan", "None") and A["hr_cruise"] == B["hr_cruise"]
             shared_lr = bool(A["lr"] & B["lr"] - {"", "nan"})
             near = A["c"] and B["c"] and hav_km(A["c"], B["c"]) <= R_KM
             if shared_hr or shared_lr or near:
@@ -464,7 +388,7 @@ def leakage_rerun(v: pd.DataFrame):
             final = {x: "dropped (shares acquisition with lockbox)" for x in cand}
             changes.append(f"{sorted(cand)}: component includes a LOCKBOX pair -> all dropped")
         elif corp:
-            final = {x: ("dropped (confirmatory unit merged with existing unit)" if x in conf else "development") for x in cand}
+            final = {x: ("dropped (confirmatory unit merged with existing unit)" if x in conf else (desigs[x] if desigs[x].startswith("development") else "development")) for x in cand}
             for x in conf:
                 changes.append(f"{x} ({nodes[x]['unit']}, confirmatory) merges with existing unit(s) {corp_units} -> DROPPED")
             for x in dev:
@@ -486,7 +410,8 @@ def leakage_rerun(v: pd.DataFrame):
             if not prior_units:
                 k_new += 1
         units_after.append({"unit_id": unit_id, "members": sorted(cand), "corpus_units": corp_units, "designations": final,
-                            "hr_cruises": sorted({nodes[x]["hr_cruise"] for x in cand}), "lr_cruises": sorted(set().union(*[nodes[x]["lr"] for x in cand]))})
+                            "hr_cruises": sorted({nodes[x]["hr_cruise"] for x in cand}), "lr_cruises": sorted(set().union(*[nodes[x]["lr"] for x in cand])),
+                        "corpus_members": corp})
     # splits: a prior unit whose members now sit in different components inherit the parent's designation (already the case: desigs carried)
     prior_groups = {}
     for x in ok.hr_id:
