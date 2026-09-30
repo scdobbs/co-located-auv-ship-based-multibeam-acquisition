@@ -1,0 +1,99 @@
+{
+ "pair_id": "lostcity2005__MGDS_21847",
+ "hr_id": "MGDS:21847",
+ "lr_cruise": "lostcity2005",
+ "designation": "development (ruling H1)",
+ "unit": "vu01",
+ "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/lostcity2005__MGDS_21847",
+ "hr_cruise": "AT07-34",
+ "set": "H1",
+ "hr_tiles_used": 1,
+ "target_crs": "EPSG:32623",
+ "overlap_km2": 6.434,
+ "coreg": {
+  "dx_m": -49.99,
+  "dy_m": -10.01,
+  "dz_m": 6.7,
+  "offset_m": 50.98,
+  "n": 44651,
+  "pass": false,
+  "post_residual_mad_m": 7.725
+ },
+ "hr_res_m": 4.997,
+ "n_hr_valid": 145665,
+ "n_lr_valid": 168736,
+ "n_joint_valid": 108782,
+ "joint_area_km2": 2.716,
+ "n_valid_tiles_256": 2,
+ "qa_pass": false,
+ "hr_p50_over_joint_m": -933.4,
+ "lr_native": {
+  "beam_footprint_m": 33.91,
+  "posting_m": 28.67,
+  "lr_native_m": 33.91,
+  "beamwidth_deg": 2.0,
+  "rule": "max(footprint, posting) (C2a)"
+ },
+ "k_sweep": {
+  "pair_id": "lostcity2005__MGDS_21847",
+  "status": "ok",
+  "lr_native_m": 33.9,
+  "edge_coh": 0.002,
+  "max_recoverable_k": 2,
+  "per_k": {
+   "2": "recoverable_signal",
+   "4": "no_spectrum",
+   "8": "no_spectrum",
+   "16": "no_spectrum",
+   "32": "no_spectrum"
+  },
+  "thresholds": {
+   "slope_red": -0.97,
+   "slope_white": -0.8,
+   "coh_circular": 0.136,
+   "grid": "AUV-native final harmonized; anchors=21 validated; corrected lr_native"
+  }
+ },
+ "qc_figure": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/qc/acq_r02/lostcity2005__MGDS_21847.png",
+ "products_v2": {
+  "pair_id": "lostcity2005__MGDS_21847",
+  "cruise": "lostcity2005",
+  "qa": {
+   "n_common_cells": 5002,
+   "median_offset_m": 0.1429,
+   "rms_m": 19.5428,
+   "robust_sigma_m": 5.116,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    -0.25,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "control_vs_v1": {
+   "ship_count": "v1 missing",
+   "ship_sd": "v1 missing",
+   "ship_xtrack_frac": "v1 missing",
+   "ship_beam_angle": "v1 missing"
+  },
+  "median_rsd_over_sd": 0.6977131962776184,
+  "cells": 5508,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ },
+ "processed_lr_crosscheck": {
+  "cruise": "lostcity2005",
+  "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/ronald_h._brown/lostcity2005/multibeam/data/version1/products/western_massif_0p0005.asc.gz",
+  "bytes": 566857,
+  "sha256": "8ae2f476291e8a23794fbde33093d51397d527bafbf001e8906273524af50b87",
+  "processed_crs_assumed": "EPSG:4326 (no CRS in file; geographic range)",
+  "status": "insufficient_common_cells (0)"
+ },
+ "status": "harmonized_development",
+ "wall_s": 3910.4
+}

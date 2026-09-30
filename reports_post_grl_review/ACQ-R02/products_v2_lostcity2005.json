@@ -1,0 +1,33 @@
+[
+ {
+  "pair_id": "lostcity2005__MGDS_21847",
+  "cruise": "lostcity2005",
+  "qa": {
+   "n_common_cells": 5002,
+   "median_offset_m": 0.1429,
+   "rms_m": 19.5428,
+   "robust_sigma_m": 5.116,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    -0.25,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "control_vs_v1": {
+   "ship_count": "v1 missing",
+   "ship_sd": "v1 missing",
+   "ship_xtrack_frac": "v1 missing",
+   "ship_beam_angle": "v1 missing"
+  },
+  "median_rsd_over_sd": 0.6977131962776184,
+  "cells": 5508,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ }
+]

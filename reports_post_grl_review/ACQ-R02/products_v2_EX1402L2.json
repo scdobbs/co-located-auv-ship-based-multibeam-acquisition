@@ -1,0 +1,33 @@
+[
+ {
+  "pair_id": "EX1402L2__MGDS_31073",
+  "cruise": "EX1402L2",
+  "qa": {
+   "n_common_cells": 10834,
+   "median_offset_m": 0.0499,
+   "rms_m": 0.4795,
+   "robust_sigma_m": 0.3644,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.0,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "control_vs_v1": {
+   "ship_count": "v1 missing",
+   "ship_sd": "v1 missing",
+   "ship_xtrack_frac": "v1 missing",
+   "ship_beam_angle": "v1 missing"
+  },
+  "median_rsd_over_sd": 0.9104845523834229,
+  "cells": 10841,
+  "beam_angle_method": "geometric",
+  "matches_lr_tif": true
+ }
+]

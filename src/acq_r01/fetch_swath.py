@@ -104,11 +104,15 @@ def fetch_one(rec: dict, sess: requests.Session) -> dict:
                             fh.write(chunk); n += len(chunk)
                 if n == clen or (clen == -1 and n > 0):
                     tmp.rename(out); r["status"] = "fetched" if clen != -1 else "fetched_unverified_len"; break
+                if clen == -1 and n == 0:
+                    tmp.unlink(missing_ok=True); r["status"] = "empty_file"; break   # served as an empty body: nothing to keep
                 tmp.unlink(missing_ok=True); time.sleep(2 ** attempt)
             except requests.Timeout:
                 r["http_status"] = "timeout"; time.sleep(2 ** attempt)
             except Exception as e:
                 r["http_status"] = f"err:{type(e).__name__}"; time.sleep(2 ** attempt)
+        if r["status"] == "empty_file":
+            return r
         if not r["status"].startswith("fetched"):
             r["status"] = "failed_get"; return r
         time.sleep(_THROTTLE)
@@ -215,8 +219,9 @@ def main(argv=None):
     # per-cruise SHA256SUMS + fetch manifest on OAK
     summary = {}
     for cr, g in df.groupby("cruise"):
-        ok = g[g.status.isin(["fetched", "fetched_unverified_len", "skip_present", "skip_present_unverified_len"])]
-        bad = g[~g.status.isin(["fetched", "fetched_unverified_len", "skip_present", "skip_present_unverified_len"])]
+        _OK = ["fetched", "fetched_unverified_len", "skip_present", "skip_present_unverified_len", "empty_file"]
+        ok = g[g.status.isin(_OK)]
+        bad = g[~g.status.isin(_OK)]
         d = C.RAW_SWATH_OAK / cr
         with (d / "SHA256SUMS").open("w") as f:
             for _, r in ok.iterrows():
