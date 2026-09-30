@@ -158,6 +158,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--cruises", default=",".join(C.NCEI_CRUISES))
     ap.add_argument("--pangaea", default=None, help="comma list of PANGAEA dataset ids (859528,899408,919755)")
+    ap.add_argument("--plan-csv", default=None, help="generic per-file plan (cruise,filename,url,advertised,kind) e.g. ACQ-R02 fetch_plan/file_plan.csv")
     ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--throttle", type=float, default=None, help="seconds between requests per worker")
     ap.add_argument("--plan-only", action="store_true")
@@ -166,7 +167,15 @@ def main(argv=None):
     global _THROTTLE
     if a.throttle is not None:
         _THROTTLE = a.throttle
-    if a.pangaea:
+    if a.plan_csv:
+        plan = pd.read_csv(a.plan_csv)
+        plan = plan[plan.kind == "swath"]
+        if a.cruises and a.cruises != ",".join(C.NCEI_CRUISES):
+            plan = plan[plan.cruise.isin(a.cruises.split(","))]
+        cruises = sorted(plan.cruise.unique())
+        C.assert_no_lockbox_cruise(cruises)
+        suffix = "_" + Path(a.plan_csv).stem
+    elif a.pangaea:
         plan = pd.concat([pangaea_plan(d) for d in a.pangaea.split(",")], ignore_index=True)
         cruises = sorted(plan.cruise.unique())
         suffix = "_pangaea"
@@ -206,8 +215,8 @@ def main(argv=None):
             for _, r in ok.iterrows():
                 f.write(f"{r.sha256}  {r.filename}\n")
         src_note = ("PANGAEA (hs.pangaea.de): " + "; ".join(f"10.1594/PANGAEA.{k} {v['note']}" for k, v in PANGAEA_RAW.items() if v["cruise_dir"] == cr)
-                    if a.pangaea else "NCEI MBBDB (data.ngdc.noaa.gov)")
-        man = {"cruise": cr, "source": src_note, "plan": ("pangaea tab export" if a.pangaea else str(C.FILE_PLAN)),
+                    if a.pangaea else ("PANGAEA (hs.pangaea.de)" if cr.startswith("PANGAEA_") else "NCEI MBBDB (data.ngdc.noaa.gov)"))
+        man = {"cruise": cr, "source": src_note, "plan": ("pangaea tab export" if a.pangaea else (a.plan_csv or str(C.FILE_PLAN))),
                "fetched_at": datetime.now(timezone.utc).isoformat(), "n_files_planned": int(len(g)),
                "n_files_ok": int(len(ok)), "n_files_failed": int(len(bad)),
                "bytes_ok": int(ok.received.sum()), "failed": bad[["filename", "url", "status", "http_status"]].to_dict("records"),
