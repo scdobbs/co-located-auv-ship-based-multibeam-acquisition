@@ -48,6 +48,48 @@ def beamwidth_for(sonar: str):
     return DEFAULT_BW, "default"
 
 
+NCEI_FP = C.SCRATCH_DATA / "discovery_cache" / "acq_r01_2026-09-29" / "ncei_all_footprints.geojson"
+
+
+def lr_catalog_footprint(cruise: str):
+    """NCEI survey polygon of the LR cruise (None for PANGAEA cruises / unknown)."""
+    try:
+        from shapely import make_valid
+        n = gpd.read_file(NCEI_FP); n = n[n.SURVEY_ID == cruise]
+        return unary_union([make_valid(g) for g in n.geometry]) if len(n) else None
+    except Exception:
+        return None
+
+
+def grid_region(union, near_km: float = 5.0, min_coverage: float = 0.2, lr_fp=None):
+    """The HR footprint of an MGDS release can be a set of dive patches tens to hundreds of km apart
+    (MGDS:31831 spans 6.6 x 6.9 deg; 33090 1.6 x 7.5 deg). Gridding the whole bounding box is hopeless
+    (10^9 cells) and the harmonization keeps one patch anyway (harmonize_new.hr_mosaic). Region rule:
+    if the parts cover < 20 % of their bounding box, take the largest part plus every part within
+    near_km of it; else the whole union. Returns (geometry, note)."""
+    from shapely.geometry import box
+    parts = list(getattr(union, "geoms", [union]))
+    b = union.bounds; bbox_area = (b[2] - b[0]) * (b[3] - b[1])
+    if len(parts) == 1 or bbox_area <= 0 or sum(p.area for p in parts) / bbox_area >= min_coverage:
+        return union, f"whole footprint ({len(parts)} parts)"
+    parts.sort(key=lambda p: p.area, reverse=True)
+    core = parts[0]; how = "largest part"
+    if lr_fp is not None:
+        # the pair lives where the LR cruise actually surveyed: seed the cluster with the part that has the
+        # largest intersection with the LR catalog footprint (MGDS:31813: 16 Sentry dives across the Gulf of
+        # Mexico, NR07-1 covers only the Florida Escarpment dives)
+        inter = [(p.intersection(lr_fp).area, p) for p in parts]
+        best = max(inter, key=lambda t: t[0])
+        if best[0] > 0:
+            core = best[1]; how = "part with the largest LR-footprint intersection"
+    mlat = core.centroid.y
+    dlon = near_km * 1000 / (111320 * max(0.2, math.cos(math.radians(mlat)))); dlat = near_km * 1000 / 111320
+    cb = core.bounds; near = box(cb[0] - dlon, cb[1] - dlat, cb[2] + dlon, cb[3] + dlat)
+    keep = [p for p in parts if p.intersects(near)]
+    g = unary_union(keep)
+    return g, f"patch cluster: {len(keep)} of {len(parts)} parts within {near_km:.0f} km of the {how} (bbox coverage {sum(p.area for p in parts) / bbox_area:.3f})"
+
+
 def prepare(cruise: str, wd: Path):
     src = C.RAW_SWATH_OAK / cruise
     files = swath_files(src)
@@ -91,6 +133,8 @@ def main(argv=None):
     t0 = time.time()
     fps = gpd.read_file(R02 / "verification" / "hr_footprints.gpkg").set_index("hr_id")
     hrs = a.hr.split(","); union = unary_union([fps.loc[h].geometry for h in hrs])
+    union, region_note = grid_region(union, lr_fp=lr_catalog_footprint(a.cruise))
+    log.info("grid region: %s", region_note)
     wd = Path(os.environ.get("L_SCRATCH", "/tmp")) / "acq_r02_grid" / a.cruise
     dl, files, fmt = prepare(a.cruise, wd)
     depth = footprint_depth(dl, wd, union)
@@ -124,7 +168,7 @@ def main(argv=None):
         inpoly = ~geometry_mask([fps.loc[h].geometry], out_shape=arr.shape, transform=tr, invert=False)
         fills[h] = round(float((np.isfinite(arr) & inpoly).sum() / max(1, inpoly.sum())), 4)
     rec = {"cruise": a.cruise, "hr": hrs, "n_files": len(files), "format": fmt, "sonar": a.sonar, "beamwidth_deg": bw, "beamwidth_key": bw_key,
-           "footprint_depth_m": round(depth, 1), "cell_m": round(cell, 2), "region": R, "mbgrid_command": C.mb_cmdline(cmd), "mode": "raw",
+           "footprint_depth_m": round(depth, 1), "cell_m": round(cell, 2), "region": R, "region_choice": region_note, "mbgrid_command": C.mb_cmdline(cmd), "mode": "raw",
            "outputs": outs, "fill_fraction_per_hr": fills, "grid_depth_median": round(float(np.nanmedian(arr)), 1) if np.isfinite(arr).any() else None,
            "wall_s": round(time.time() - t0, 1), "mbsystem": C.MBSYSTEM_VERSION, "code_commit": C.git_commit()}
     (R02 / "grid").mkdir(exist_ok=True)
