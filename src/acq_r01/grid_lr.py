@@ -33,6 +33,7 @@ from src.acq_r01.build_products import fmt_for, swath_files
 
 log = logging.getLogger("acq_r02.grid")
 R02 = C.REPO / "reports_post_grl_review" / "ACQ-R02"
+OUT = Path(os.environ.get("ACQ_REPORT_DIR", str(R02)))   # ACQ-R03: grid records of new runs go to the current report dir
 GRIDDED = C.OAK / "raw_lr_gridded"
 BEAMWIDTH = [("em122", 1.0), ("em120", 1.0), ("em124", 1.0), ("em302", 1.0), ("em304", 1.0), ("em300", 1.0), ("em710", 1.0), ("em712", 1.0),
              ("em1002", 2.0), ("em2040", 1.0), ("seabeam 2100", 2.0), ("seabeam 2112", 2.0), ("seabeam 2000", 3.3), ("seabeam 3012", 1.5),
@@ -171,8 +172,8 @@ def main(argv=None):
            "footprint_depth_m": round(depth, 1), "cell_m": round(cell, 2), "region": R, "region_choice": region_note, "mbgrid_command": C.mb_cmdline(cmd), "mode": "raw",
            "outputs": outs, "fill_fraction_per_hr": fills, "grid_depth_median": round(float(np.nanmedian(arr)), 1) if np.isfinite(arr).any() else None,
            "wall_s": round(time.time() - t0, 1), "mbsystem": C.MBSYSTEM_VERSION, "code_commit": C.git_commit()}
-    (R02 / "grid").mkdir(exist_ok=True)
-    (R02 / "grid" / f"{a.cruise}.json").write_text(json.dumps(rec, indent=1))
+    (OUT / "grid").mkdir(parents=True, exist_ok=True)
+    (OUT / "grid" / f"{a.cruise}.json").write_text(json.dumps(rec, indent=1))
     shutil.rmtree(wd, ignore_errors=True)
     log.info("%s", json.dumps(rec)); return 0
 

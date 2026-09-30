@@ -35,6 +35,7 @@ from src.discovery.stage_c5_sweep import _read_coards_grd
 
 log = logging.getLogger("acq_r02.harm")
 R02 = C.REPO / "reports_post_grl_review" / "ACQ-R02"
+OUT = Path(os.environ.get("ACQ_REPORT_DIR", str(R02)))   # ACQ-R03: grid/harmonize records of new runs go to the current report dir
 RAW_HR = C.OAK / "raw_hr"
 GRIDDED = C.OAK / "raw_lr_gridded"
 FILL = -9999.0
@@ -82,7 +83,13 @@ def materialize(hr_id, path: Path, out: Path):
                 continue
             use = src_crs.to_string() if src_crs else crs
             if not use:
-                continue
+                # ACQ-R03: the same fallback verify_candidates.py used for CRS-less provider grids (PANGAEA .asc / GMT .grd):
+                # a geographic coordinate range -> EPSG:4326
+                b = rasterio.transform.array_bounds(arr.shape[0], arr.shape[1], tr)
+                if -180 <= b[0] <= 180 and -180 <= b[2] <= 180 and -90 <= b[1] <= 90 and -90 <= b[3] <= 90:
+                    use = "EPSG:4326"
+                else:
+                    continue
             prof = {"driver": "GTiff", "height": arr.shape[0], "width": arr.shape[1], "count": 1, "dtype": "float32", "crs": use,
                     "transform": tr, "nodata": nod if nod is not None else FILL, "compress": "DEFLATE", "BIGTIFF": "IF_SAFER"}
             with rasterio.open(out, "w", **prof) as d:
@@ -273,6 +280,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--hr", required=True); ap.add_argument("--cruise", required=True); ap.add_argument("--nproc", type=int, default=8)
     ap.add_argument("--batch-files", type=int, default=1)
+    ap.add_argument("--products-version", default="2", choices=["2", "2.1"], help="contract products built in-line for development pairs")
     a = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     t0 = time.time()
@@ -293,7 +301,7 @@ def main(argv=None):
     rec = {"pair_id": pid, "hr_id": a.hr, "lr_cruise": a.cruise, "designation": d, "unit": unit, "out_dir": str(out_dir),
            "hr_cruise": row.get("hr_cruise_final", ""), "set": row.get("set", "")}
     tmp = Path(os.environ.get("L_SCRATCH", "/tmp")) / "acq_r02_harm" / pid; tmp.mkdir(parents=True, exist_ok=True)
-    grid_rec = json.loads((R02 / "grid" / f"{a.cruise}.json").read_text())
+    grid_rec = json.loads((OUT / "grid" / f"{a.cruise}.json").read_text())
     lr_tif, lr_posting_m = lr_to_tif(a.cruise, tmp)
     with rasterio.open(str(lr_tif)) as ds:
         lrb = transform_bounds(ds.crs, "EPSG:4326", *ds.bounds)
@@ -372,13 +380,19 @@ def main(argv=None):
     except Exception as e:
         rec["qc_figure_error"] = str(e)[:120]
     try:
-        from src.acq_r01 import build_products_v2 as V2
         cruise_dir = C.RAW_SWATH_OAK / a.cruise
-        res = V2.build_cruise(a.cruise, None, a.nproc, None, a.batch_files,
-                              spec=[{"pair_id": pid, "pair_dir": str(out_dir), "cruise_dir": str(cruise_dir), "src_kind": "ncei_swath" if not a.cruise.startswith("PANGAEA_") else "provider_swath"}])
-        rec["products_v2"] = res[0] if res else None
+        src_kind = "ncei_swath" if not a.cruise.startswith("PANGAEA_") else "provider_swath"
+        if a.products_version == "2.1":
+            from src.acq_r03 import build_products_v2_1 as V21
+            res = V21.build([(pid, out_dir)], a.cruise, cruise_dir, src_kind, a.nproc, a.batch_files)
+            rec["products_v2_1"] = res[0] if res else None
+        else:
+            from src.acq_r01 import build_products_v2 as V2
+            res = V2.build_cruise(a.cruise, None, a.nproc, None, a.batch_files,
+                                  spec=[{"pair_id": pid, "pair_dir": str(out_dir), "cruise_dir": str(cruise_dir), "src_kind": src_kind}])
+            rec["products_v2"] = res[0] if res else None
     except Exception as e:
-        rec["products_v2"] = {"error": str(e)[:150]}
+        rec["products_v" + a.products_version.replace(".", "_")] = {"error": str(e)[:150]}
     if str(row.get("set", "")) == "H1":
         try:
             rec["processed_lr_crosscheck"] = processed_lr_crosscheck(a.cruise, lr_out, tmp)
@@ -391,8 +405,8 @@ def main(argv=None):
 
 
 def _write(rec):
-    (R02 / "harmonize").mkdir(exist_ok=True)
-    (R02 / "harmonize" / f"{rec['pair_id']}.json").write_text(json.dumps(rec, indent=1, default=str))
+    (OUT / "harmonize").mkdir(parents=True, exist_ok=True)
+    (OUT / "harmonize" / f"{rec['pair_id']}.json").write_text(json.dumps(rec, indent=1, default=str))
     log.info("[%s] %s", rec["pair_id"], rec.get("status"))
 
 
