@@ -128,15 +128,27 @@ def validate(pid: str, pdir):
             if both.any() and np.sign(np.nanmedian(mm[both])) != np.sign(np.nanmedian(lr_arr[both])):
                 res["errors"].append(f"{r} sign differs from lr.tif")
         v2d = pdir / "ship_products_v2"; ctrl = {}
+        # a documented v2 deficiency: files the June/ACQ-R02 build lost (mblist rc != 0, 0 rows) that v2.1 read (rc 0, rows > 0)
+        v2_lost = []
+        try:
+            e2 = {q["file"]: q for q in json.loads((v2d / "products_extra.json").read_text())["per_file"]}
+            e21 = {q["file"]: q for q in json.loads((d / "products_extra.json").read_text())["per_file"]}
+            v2_lost = [f for f, q in e2.items() if q["rc"] != 0 and q["n_rows"] == 0 and f in e21 and e21[f]["rc"] == 0 and e21[f]["n_rows"] > 0]
+            v21_lost = [f for f, q in e21.items() if q["rc"] != 0]
+            if v21_lost:
+                res["errors"].append(f"v2.1 build has {len(v21_lost)} failed mblist call(s): {v21_lost[:3]}")
+        except Exception:
+            pass
         for r in RASTERS:
             t2 = v2d / f"{r}.tif"
             if t2.exists():
                 with rasterio.open(t2) as ds:
                     eq = np.array_equal(ds.read(1), arrs[r], equal_nan=True)
                 ctrl[r] = bool(eq)
-                if not eq and not fo.get("applied"):
+                if not eq and not fo.get("applied") and not v2_lost:
                     res["errors"].append(f"{r} differs from v2 without a frame offset")
         res["control_equal_v2"] = ctrl
+        res["v2_lost_files"] = v2_lost
         res["cells"] = int(has.sum())
         with np.errstate(invalid="ignore", divide="ignore"):
             ratio = arrs["ship_rsd"] / arrs["ship_sd"]
@@ -161,7 +173,7 @@ def main(argv=None):
           "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for r in out:
         q = r.get("qa") or {}; fo = r.get("frame_offset") or {}
-        ce = r.get("control_equal_v2"); ce_s = ("all" if ce and all(ce.values()) else ("some differ" if ce else "")) if r.get("available") else ""
+        ce = r.get("control_equal_v2"); ce_s = ("all" if ce and all(ce.values()) else ((f"differ: v2 lost {len(r['v2_lost_files'])} file(s)" if r.get("v2_lost_files") else "DIFFER") if ce else "")) if r.get("available") else ""
         md.append(f"| {r['pair_id']} | {r['unit']} | {r.get('available')} | {'ok' if not r['errors'] else 'FAIL'} | {q.get('n_common_cells', '')} | {q.get('median_offset_m', '')} | "
                   f"{q.get('sigma0_m', '')} | {q.get('shift_argmin_cells', '')} | {q.get('sigma_argmin_m', '')} | {q.get('gain_m', '')} | {(q.get('registration_gate') or {}).get('min_gain_m', '')} | "
                   f"{','.join(q.get('flags', []) or []) or ('—' if r.get('available') else '')} | {'applied' if fo.get('applied') else 'none'} | {ce_s} | {'; '.join(r['errors'])} |")

@@ -84,9 +84,12 @@ def _worker(args):
             dl.write_text("".join(f"{l.name} {fmt}\n" for l in locals_))
             cmd = ["mblist", "-F-1", "-I", dl.name, "-MA", "-R", f"{w:.6f}/{e:.6f}/{s_:.6f}/{n:.6f}", "-O", V1.MBLIST_O]
         r = None
-        for attempt in range(2):                             # a container start can stall indefinitely on a node: bounded, retried once
-            try:
-                r = C.mb(cmd, cwd=str(workdir), timeout=2400); break
+        for attempt in range(3):                             # bounded (a container start can stall) and retried: mblist returns a transient
+            try:                                             # rc 255 on single files (seen in June and today); a repeat read succeeds
+                r = C.mb(cmd, cwd=str(workdir), timeout=2400)
+                if r.returncode == 0:
+                    break
+                time.sleep(5 * (attempt + 1))
             except subprocess.TimeoutExpired:
                 r = None
         cmdline = f"(cd {workdir} && {C.mb_cmdline(cmd)})" + (f"  # datalist: {', '.join(l.name for l in locals_)}" if dl else "")
