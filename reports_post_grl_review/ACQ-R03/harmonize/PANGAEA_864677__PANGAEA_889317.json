@@ -1,0 +1,106 @@
+{
+ "pair_id": "PANGAEA_864677__PANGAEA_889317",
+ "hr_id": "PANGAEA:889317",
+ "lr_cruise": "PANGAEA_864677",
+ "designation": "development",
+ "unit": "pu01",
+ "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/PANGAEA_864677__PANGAEA_889317",
+ "hr_cruise": "M114/1",
+ "set": "P4",
+ "hr_tiles_used": 1,
+ "target_crs": "EPSG:32615",
+ "overlap_km2": 11.555,
+ "coreg": {
+  "dx_m": -20.0,
+  "dy_m": 49.97,
+  "dz_m": 42.54,
+  "offset_m": 53.83,
+  "n": 63150,
+  "pass": false,
+  "post_residual_mad_m": 4.731
+ },
+ "hr_res_m": 9.996,
+ "n_hr_valid": 63269,
+ "n_lr_valid": 112496,
+ "n_joint_valid": 63198,
+ "joint_area_km2": 6.315,
+ "n_valid_tiles_256": 1,
+ "qa_pass": false,
+ "hr_p50_over_joint_m": -2946.0,
+ "lr_native": {
+  "beam_footprint_m": 52.13,
+  "posting_m": 51.14,
+  "lr_native_m": 52.13,
+  "beamwidth_deg": 1.0,
+  "rule": "max(footprint, posting) (C2a)"
+ },
+ "k_sweep": {
+  "pair_id": "PANGAEA_864677__PANGAEA_889317",
+  "status": "ok",
+  "lr_native_m": 52.1,
+  "edge_coh": 0.0,
+  "max_recoverable_k": 2,
+  "per_k": {
+   "2": "recoverable_signal",
+   "4": "no_spectrum",
+   "8": "no_spectrum",
+   "16": "no_spectrum",
+   "32": "no_spectrum"
+  },
+  "thresholds": {
+   "slope_red": -0.97,
+   "slope_white": -0.8,
+   "coh_circular": 0.136,
+   "grid": "AUV-native final harmonized; anchors=21 validated; corrected lr_native"
+  }
+ },
+ "qc_figure": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/qc/acq_r02/PANGAEA_864677__PANGAEA_889317.png",
+ "products_v2_1": {
+  "pair_id": "PANGAEA_864677__PANGAEA_889317",
+  "cruise": "PANGAEA_864677",
+  "qa": {
+   "n_common_cells": 4410,
+   "median_offset_m": 0.2673,
+   "rms_m": 39.1198,
+   "robust_sigma_m": 2.0069,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.0,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 2.0069,
+   "sigma_argmin_m": 2.0069,
+   "gain_m": 0.0,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1003
+   },
+   "flags": []
+  },
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "control_vs_v2": {
+   "ship_count": "v2 missing",
+   "ship_sd": "v2 missing",
+   "ship_rsd": "v2 missing",
+   "ship_xtrack_frac": "v2 missing",
+   "ship_beam_angle": "v2 missing",
+   "ship_mean_regrid": "v2 missing",
+   "ship_median_regrid": "v2 missing"
+  },
+  "median_rsd_over_sd": 0.5006726384162903,
+  "cells": 4410,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ },
+ "status": "harmonized_development",
+ "wall_s": 1127.3
+}

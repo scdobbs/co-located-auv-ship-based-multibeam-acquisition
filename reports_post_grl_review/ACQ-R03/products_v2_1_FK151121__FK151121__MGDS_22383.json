@@ -1,0 +1,48 @@
+[
+ {
+  "pair_id": "FK151121__MGDS_22383",
+  "cruise": "FK151121",
+  "qa": {
+   "n_common_cells": 5818,
+   "median_offset_m": -0.0752,
+   "rms_m": 4.8581,
+   "robust_sigma_m": 3.2207,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.0,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 3.2207,
+   "sigma_argmin_m": 3.0194,
+   "gain_m": 0.2014,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.161
+   },
+   "flags": []
+  },
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "control_vs_v2": {
+   "ship_count": "equal",
+   "ship_sd": "equal",
+   "ship_rsd": "equal",
+   "ship_xtrack_frac": "equal",
+   "ship_beam_angle": "equal",
+   "ship_mean_regrid": "equal",
+   "ship_median_regrid": "equal"
+  },
+  "median_rsd_over_sd": 0.93760085105896,
+  "cells": 5827,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ }
+]

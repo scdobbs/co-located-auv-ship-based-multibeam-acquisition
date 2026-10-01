@@ -1,0 +1,48 @@
+[
+ {
+  "pair_id": "PANGAEA_864677__PANGAEA_889317",
+  "cruise": "PANGAEA_864677",
+  "qa": {
+   "n_common_cells": 4410,
+   "median_offset_m": 0.2673,
+   "rms_m": 39.1198,
+   "robust_sigma_m": 2.0069,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.0,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 2.0069,
+   "sigma_argmin_m": 2.0069,
+   "gain_m": 0.0,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1003
+   },
+   "flags": []
+  },
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "control_vs_v2": {
+   "ship_count": "v2 missing",
+   "ship_sd": "v2 missing",
+   "ship_rsd": "v2 missing",
+   "ship_xtrack_frac": "v2 missing",
+   "ship_beam_angle": "v2 missing",
+   "ship_mean_regrid": "v2 missing",
+   "ship_median_regrid": "v2 missing"
+  },
+  "median_rsd_over_sd": 0.5006726384162903,
+  "cells": 4410,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ }
+]

@@ -1,0 +1,26 @@
+pair_id,unit,designation,n_common,median_offset_m,v2_argmin,v2_flags,v2_1_built,frame_offset,v2_1_argmin,sigma0_m,sigma_argmin_m,gain_m,gate_min_gain_m,v2_1_flags
+NA090__MGDS_31212,lu10,development,6241,-0.1089,"[0.25, -0.25]",registration_shift,True,none,"[0.25, -0.25]",0.6271,0.5556,0.0715,0.1,—
+NA080__MGDS_31290,lu13,development,16310,0.229,"[0.0, 0.0]",—,True,none,"[0.0, 0.0]",1.5767,1.5767,0.0,0.1,—
+TN399__MGDS_30373,lu05,development,89392,0.0171,"[0.0, 0.25]",registration_shift,True,none,"[0.0, 0.25]",1.1413,0.9131,0.2282,0.1,—
+RR1506__MGDS_29779,lu00,development,202705,0.0933,"[0.0, 0.0]",—,True,none,"[0.0, 0.0]",1.1711,1.1711,0.0,0.1,—
+AT37-13__MGDS_31199,lu04,development,13421,-0.1595,"[0.0, 0.0]",—,True,none,"[0.0, 0.0]",2.4065,2.4065,0.0,0.1203,—
+FK181031__MGDS_24618,lu08,development,8346,-0.187,"[0.0, -0.25]",registration_shift,True,none,"[0.0, -0.25]",1.34,1.2309,0.109,0.1,—
+TN299__MGDS_27339,lu15,development,5399,-0.1709,"[0.25, -0.25]",registration_shift,True,none,"[0.25, -0.25]",2.8429,2.4116,0.4312,0.1421,—
+TN299__MGDS_31253,lu15,development,8661,-0.0065,"[0.0, -0.25]",registration_shift,True,none,"[0.0, -0.25]",0.5993,0.592,0.0073,0.1,—
+EW0207__MGDS_32556,lu16,development,44781,-1.0408,"[0.25, -0.25]","vertical_offset,registration_shift",True,none,"[0.25, -0.25]",5.3082,4.0918,1.2164,0.2654,vertical_offset
+ccz_so268_1,lu06,development,4338,-0.286,"[-0.5, 0.5]",registration_shift,True,none,"[-0.5, 0.5]",1.4069,0.7951,0.6118,0.1,registration_shift
+discol_so242_1,lu02,development,17287,0.1929,"[-0.75, 0.5]",registration_shift,True,none,"[-0.75, 0.5]",2.0169,1.6447,0.3722,0.1008,registration_shift
+tag_m127,lu09,development,111884,-0.4885,"[-0.5, 0.5]",registration_shift,True,none,"[-0.5, 0.5]",4.0426,1.3049,2.7377,0.2021,registration_shift
+EW9801__MGDS_31425,lu07,development,5255,0.1276,"[-0.25, -0.25]",registration_shift,True,none,"[-0.25, -0.25]",4.7803,4.1392,0.641,0.239,—
+AR26__MGDS_31838,lu14,development,12279,-0.3225,"[0.25, 0.0]",registration_shift,True,none,"[0.25, 0.0]",2.3345,2.0868,0.2477,0.1167,—
+NA076__MGDS_32317,lu11,development,23613,0.0271,"[0.25, -0.25]",registration_shift,True,none,"[0.25, -0.25]",0.4211,0.2759,0.1453,0.1,—
+2009_Amundsen__MGDS_30046,lu18,development,132271,0.0301,"[0.25, -0.25]",registration_shift,True,none,"[0.25, -0.25]",0.2315,0.2157,0.0159,0.1,—
+2009_Amundsen__MGDS_30047,lu18,development (joins existing unit),24022477,0.1115,"[-0.25, -0.25]",registration_shift,True,none,"[-0.25, -0.25]",0.5655,0.3958,0.1697,0.1,—
+AT37-05__MGDS_24043,vu05,development (joins existing unit),4698,46.3285,"[-1.0, 1.0]","vertical_offset,registration_shift",True,none,"[-1.0, 1.0]",28.8933,25.9412,2.9522,1.4447,"vertical_offset,registration_shift"
+AT42-06__MGDS_5174,lu05,development (ruling H1),12202,0.0353,"[0.0, 0.25]",registration_shift,True,none,"[0.0, 0.25]",0.9473,0.769,0.1783,0.1,—
+EX1202L2__MGDS_20815,vu00,development (ruling H1),51880,0.0768,"[0.25, 0.25]",registration_shift,True,none,"[0.25, 0.25]",0.6358,0.5441,0.0917,0.1,—
+EX1402L2__MGDS_31073,vu02,development (ruling H1),10834,0.0499,"[0.0, -0.25]",registration_shift,True,none,"[0.0, -0.25]",0.3644,0.3377,0.0267,0.1,—
+FK151121__MGDS_22383,nu00,development,5818,-0.0752,"[0.0, -0.25]",registration_shift,True,none,"[0.0, -0.25]",3.2207,3.0194,0.2014,0.161,—
+KM0923__MGDS_31429,lu07,development (joins existing unit),9079,0.0591,"[-0.25, 0.25]",registration_shift,True,none,"[-0.25, 0.25]",4.7888,4.1727,0.6161,0.2394,—
+NA080__MGDS_31289,lu13,development (joins existing unit),16348,0.1351,"[0.0, 0.0]",—,True,none,"[0.0, 0.0]",1.3666,1.3666,0.0,0.1,—
+TN399__MGDS_33068,lu05,development (joins existing unit),7763,0.085,"[0.0, -0.25]",registration_shift,True,none,"[0.0, -0.25]",0.6287,0.5656,0.0632,0.1,—

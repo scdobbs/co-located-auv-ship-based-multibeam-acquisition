@@ -1,0 +1,50 @@
+[
+ {
+  "pair_id": "ccz_so268_1",
+  "cruise": "SO268_1_EM122",
+  "qa": {
+   "n_common_cells": 4338,
+   "median_offset_m": -0.286,
+   "rms_m": 1.5504,
+   "robust_sigma_m": 1.4069,
+   "rms_over_median_s_lr": 0.3459,
+   "robust_sigma_over_median_s_lr": 0.3139,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    -0.5,
+    0.5
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 1.4069,
+   "sigma_argmin_m": 0.7951,
+   "gain_m": 0.6118,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "raw LR GTRasterTypeGeoKey = PixelIsArea; harmonize_pair read it with GDAL PixelIsArea semantics; no header-established mismatch"
+  },
+  "control_vs_v2": {
+   "ship_count": "equal",
+   "ship_sd": "equal",
+   "ship_rsd": "equal",
+   "ship_xtrack_frac": "equal",
+   "ship_beam_angle": "equal",
+   "ship_mean_regrid": "equal",
+   "ship_median_regrid": "equal"
+  },
+  "median_rsd_over_sd": 0.8696315288543701,
+  "cells": 9292,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ }
+]

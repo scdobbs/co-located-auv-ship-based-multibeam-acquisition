@@ -1,0 +1,50 @@
+[
+ {
+  "pair_id": "EW0207__MGDS_32556",
+  "cruise": "EW0207",
+  "qa": {
+   "n_common_cells": 44781,
+   "median_offset_m": -1.0408,
+   "rms_m": 9.6492,
+   "robust_sigma_m": 5.3082,
+   "rms_over_median_s_lr": 1.3399,
+   "robust_sigma_over_median_s_lr": 0.7371,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 5.3082,
+   "sigma_argmin_m": 4.0918,
+   "gain_m": 1.2164,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.2654
+   },
+   "flags": [
+    "vertical_offset"
+   ]
+  },
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "LR = mbgrid CF netCDF read with GDAL (pixel centres on the coordinate nodes, verified: edge - node = -0.5 cell); no header-established mismatch"
+  },
+  "control_vs_v2": {
+   "ship_count": "equal",
+   "ship_sd": "equal",
+   "ship_rsd": "equal",
+   "ship_xtrack_frac": "equal",
+   "ship_beam_angle": "equal",
+   "ship_mean_regrid": "equal",
+   "ship_median_regrid": "equal"
+  },
+  "median_rsd_over_sd": 0.8265411853790283,
+  "cells": 45248,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ }
+]

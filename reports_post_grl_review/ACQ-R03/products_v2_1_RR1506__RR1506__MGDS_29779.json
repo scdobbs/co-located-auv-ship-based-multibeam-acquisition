@@ -1,0 +1,48 @@
+[
+ {
+  "pair_id": "RR1506__MGDS_29779",
+  "cruise": "RR1506",
+  "qa": {
+   "n_common_cells": 202705,
+   "median_offset_m": 0.0933,
+   "rms_m": 3.7426,
+   "robust_sigma_m": 1.1711,
+   "rms_over_median_s_lr": 0.2529,
+   "robust_sigma_over_median_s_lr": 0.0792,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 1.1711,
+   "sigma_argmin_m": 1.1711,
+   "gain_m": 0.0,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "control_vs_v2": {
+   "ship_count": "equal",
+   "ship_sd": "equal",
+   "ship_rsd": "equal",
+   "ship_xtrack_frac": "equal",
+   "ship_beam_angle": "equal",
+   "ship_mean_regrid": "equal",
+   "ship_median_regrid": "equal"
+  },
+  "median_rsd_over_sd": 0.8613840341567993,
+  "cells": 204734,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ }
+]

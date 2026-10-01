@@ -1,0 +1,29 @@
+{
+ "cruise": "PANGAEA_864677",
+ "hr": [
+  "PANGAEA:889317"
+ ],
+ "n_files": 83,
+ "format": 58,
+ "sonar": "Kongsberg EM122",
+ "beamwidth_deg": 1.0,
+ "beamwidth_key": "em122",
+ "footprint_depth_m": 2937.2,
+ "cell_m": 51.26,
+ "region": "-93.46276894726094/-93.41021005960738/21.882191074956364/21.929237307615864",
+ "region_choice": "whole footprint (1 parts)",
+ "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mbgrid -I datalist.mb-1 -O grid_PANGAEA_864677 -R -93.46276894726094/-93.41021005960738/21.882191074956364/21.929237307615864 -E 0.0004963552803203211/0.0004605179578769988/degrees -A2 -G3 -F1 -C0 -M",
+ "mode": "raw",
+ "outputs": {
+  "grid": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/PANGAEA_864677__union.grd",
+  "_num": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/PANGAEA_864677__union_num.grd",
+  "_sd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/PANGAEA_864677__union_sd.grd"
+ },
+ "fill_fraction_per_hr": {
+  "PANGAEA:889317": 1.0
+ },
+ "grid_depth_median": -3103.1,
+ "wall_s": 450.9,
+ "mbsystem": "5.8.2beta06",
+ "code_commit": "edbbb7834a8ccb495219238cef969ce13b114047"
+}
