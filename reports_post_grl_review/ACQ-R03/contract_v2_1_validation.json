@@ -1142,9 +1142,7 @@
  {
   "pair_id": "AT37-05__MGDS_24043",
   "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT37-05__MGDS_24043/ship_products_v2_1",
-  "errors": [
-   "v2.1 build has 6 failed mblist call(s): ['0001_20161201_053210_Atlantis.all.mb58.gz', '0004_20161107_061235_Atlantis.all.mb58.gz', '0017_20161107_191235_Atlantis.all.mb58.gz']"
-  ],
+  "errors": [],
   "frame_offset": {
    "applied": false,
    "dx_m": 0.0,
@@ -1200,9 +1198,7 @@
  {
   "pair_id": "AT42-06__MGDS_5174",
   "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-06__MGDS_5174/ship_products_v2_1",
-  "errors": [
-   "v2.1 build has 2 failed mblist call(s): ['0002_20181204_160433_Atlantis.all.mb58.gz', '0005_20181204_190434_Atlantis.all.mb58.gz']"
-  ],
+  "errors": [],
   "frame_offset": {
    "applied": false,
    "dx_m": 0.0,
@@ -1302,9 +1298,7 @@
  {
   "pair_id": "EX1402L2__MGDS_31073",
   "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EX1402L2__MGDS_31073/ship_products_v2_1",
-  "errors": [
-   "v2.1 build has 3 failed mblist call(s): ['EX1402L2_Okeanos_March_2011_2014-079_0004_20140320_020232_EX1402L2_MB.txt.mb163', 'EX1402L2_Okeanos_March_2011_2014-079_0018_20140320_154542_EX1402L2_MB.txt.mb163', 'EX1402L2_Okeanos_March_2011_2014-087_0201_20140328_163338_EX1402L2_MB.txt.mb163']"
-  ],
+  "errors": [],
   "frame_offset": {
    "applied": false,
    "dx_m": 0.0,

@@ -35,10 +35,10 @@
 | NA076__MGDS_32317 | lu11 | True | ok | 23613 | 0.0271 | 0.4211 | [0.25, -0.25] | 0.2759 | 0.1453 | 0.1 | — | none | all |  |
 | 2009_Amundsen__MGDS_30046 | lu18 | True | ok | 132271 | 0.0301 | 0.2315 | [0.25, -0.25] | 0.2157 | 0.0159 | 0.1 | — | none | all |  |
 | 2009_Amundsen__MGDS_30047 | lu18 | True | ok | 24022477 | 0.1115 | 0.5655 | [-0.25, -0.25] | 0.3958 | 0.1697 | 0.1 | — | none | all |  |
-| AT37-05__MGDS_24043 | vu05 | True | FAIL | 4698 | 46.3285 | 28.8933 | [-1.0, 1.0] | 25.9412 | 2.9522 | 1.4447 | vertical_offset,registration_shift | none | all | v2.1 build has 6 failed mblist call(s): ['0001_20161201_053210_Atlantis.all.mb58.gz', '0004_20161107_061235_Atlantis.all.mb58.gz', '0017_20161107_191235_Atlantis.all.mb58.gz'] |
-| AT42-06__MGDS_5174 | lu05 | True | FAIL | 12202 | 0.0353 | 0.9473 | [0.0, 0.25] | 0.769 | 0.1783 | 0.1 | — | none | all | v2.1 build has 2 failed mblist call(s): ['0002_20181204_160433_Atlantis.all.mb58.gz', '0005_20181204_190434_Atlantis.all.mb58.gz'] |
+| AT37-05__MGDS_24043 | vu05 | True | ok | 4698 | 46.3285 | 28.8933 | [-1.0, 1.0] | 25.9412 | 2.9522 | 1.4447 | vertical_offset,registration_shift | none | all |  |
+| AT42-06__MGDS_5174 | lu05 | True | ok | 12202 | 0.0353 | 0.9473 | [0.0, 0.25] | 0.769 | 0.1783 | 0.1 | — | none | all |  |
 | EX1202L2__MGDS_20815 | vu00 | True | ok | 51880 | 0.0768 | 0.6358 | [0.25, 0.25] | 0.5441 | 0.0917 | 0.1 | — | none | all |  |
-| EX1402L2__MGDS_31073 | vu02 | True | FAIL | 10834 | 0.0499 | 0.3644 | [0.0, -0.25] | 0.3377 | 0.0267 | 0.1 | — | none | all | v2.1 build has 3 failed mblist call(s): ['EX1402L2_Okeanos_March_2011_2014-079_0004_20140320_020232_EX1402L2_MB.txt.mb163', 'EX1402L2_Okeanos_March_2011_2014-079_0018_20140320_154542_EX1402L2_MB.txt.mb163', 'EX1402L2_Okeanos_March_2011_2014-087_0201_20140328_163338_EX1402L2_MB.txt.mb163'] |
+| EX1402L2__MGDS_31073 | vu02 | True | ok | 10834 | 0.0499 | 0.3644 | [0.0, -0.25] | 0.3377 | 0.0267 | 0.1 | — | none | all |  |
 | FK151121__MGDS_22383 | nu00 | True | ok | 5818 | -0.0752 | 3.2207 | [0.0, -0.25] | 3.0194 | 0.2014 | 0.161 | — | none | all |  |
 | KM0923__MGDS_31429 | lu07 | True | ok | 9079 | 0.0591 | 4.7888 | [-0.25, 0.25] | 4.1727 | 0.6161 | 0.2394 | — | none | all |  |
 | NA080__MGDS_31289 | lu13 | True | ok | 16348 | 0.1689 | 1.3666 | [0.0, 0.0] | 1.3666 | 0.0 | 0.1 | — | none | differ: v2 lost 2 file(s) |  |
