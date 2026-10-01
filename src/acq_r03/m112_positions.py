@@ -42,15 +42,20 @@ class Pacer:
     requests; every 503 adds 3 s (cap 30 s); 20 consecutive successes remove 1 s (floor 3 s)."""
     def __init__(self, base=3.0, floor=3.0, cap=30.0):
         self.wait, self.floor, self.cap, self.ok = base, floor, cap, 0
-        self.n_503 = 0
+        self.n_503 = 0; self.consec = 0
 
     def success(self):
-        self.ok += 1
+        self.ok += 1; self.consec = 0
         if self.ok >= 20:
             self.wait = max(self.floor, self.wait - 1.0); self.ok = 0
 
     def throttled(self):
-        self.n_503 += 1; self.ok = 0; self.wait = min(self.cap, self.wait + 3.0)
+        self.n_503 += 1; self.ok = 0; self.wait = min(self.cap, self.wait + 3.0); self.consec += 1
+
+    def pause_after_503(self):
+        """Grows with consecutive 503s (60 s, 120 s, ... up to 10 min): the host's "Please wait" overload page can
+        persist for tens of minutes; probing it every 30 s only prolongs it."""
+        return min(600.0, 60.0 * 2 ** max(0, self.consec - 1))
 
 
 def fetch_head(url: str, name: str, work: Path, sess: requests.Session, pacer: Pacer) -> dict:
@@ -66,7 +71,7 @@ def fetch_head(url: str, name: str, work: Path, sess: requests.Session, pacer: P
             with sess.get(url, headers={**R.HEADERS, "Range": f"bytes=0-{HEAD_BYTES - 1}"}, timeout=180, stream=True) as g:
                 rec["http_status"] = g.status_code
                 if g.status_code in (429, 503) or g.status_code >= 500:
-                    pacer.throttled(); time.sleep(30.0); continue
+                    pacer.throttled(); time.sleep(pacer.pause_after_503()); continue
                 if g.status_code not in (200, 206):
                     rec["note"] = f"http {g.status_code}"; return rec
                 n = 0
@@ -142,7 +147,7 @@ def main(argv=None):
         for r in csv.DictReader(pos_csv.open()):
             done[r["file_name"]] = r
     work = R.C.SCRATCH_DATA / "acq_r03_m112_heads"; work.mkdir(parents=True, exist_ok=True)   # group scratch: survives a restart
-    sess = requests.Session(); t0 = time.time(); pacer = Pacer()
+    t0 = time.time(); pacer = Pacer()
     fields = ["file_name", "http_status", "head_bytes", "lon", "lat", "n_nav", "lon_min", "lon_max", "lat_min", "lat_max", "method", "note"]
     todo = [r for _, r in cand.iterrows() if r.file_name not in done][: a.limit or None]
     heads = {}
@@ -150,7 +155,7 @@ def main(argv=None):
     while queue and (time.time() - t0) / 3600 < a.budget_hours:               # phase 1: all heads, re-queuing 503s
         n_pass += 1; nxt = []
         for k, r in enumerate(queue, 1):
-            h = fetch_head(r.url, r.file_name, work, sess, pacer); heads[r.file_name] = h
+            h = fetch_head(r.url, r.file_name, work, requests.Session(), pacer); heads[r.file_name] = h
             if h["head_bytes"] <= 0:
                 nxt.append(r)
             if k % 50 == 0:
