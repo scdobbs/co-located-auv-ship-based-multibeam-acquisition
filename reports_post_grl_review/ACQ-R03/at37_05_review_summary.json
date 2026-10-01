@@ -1,0 +1,1496 @@
+{
+ "pair_id": "AT37-05__MGDS_24043",
+ "cruise": "AT37-05",
+ "n_swath_files": 274,
+ "n_files_failed_extraction": 2,
+ "n_files_with_soundings_in_grid": 4,
+ "n_soundings_in_grid": 81846,
+ "cells_with_soundings": 4698,
+ "cells_eligible_(count>=6)": 4696,
+ "cells_bimodal": 2087,
+ "fraction_bimodal_of_eligible": 0.4444,
+ "bimodal_rule": {
+  "min_count": 6,
+  "minor_fraction_min": 0.2,
+  "gap_min_m": 10.0
+ },
+ "gap_m_percentiles_eligible": {
+  "50": 286.0,
+  "75": 362.89,
+  "90": 424.95,
+  "95": 478.99
+ },
+ "line_pairs_overlapping": 6,
+ "line_pairs_exceeding_local_spread": 4,
+ "median_abs_line_diff_m": 115.68,
+ "max_abs_line_diff_m": 294.52,
+ "median_local_spread_m": 3.62,
+ "line_pairs_with_>=20_shared_cells": [
+  {
+   "line_i": "0000_20161106_035035_Atlantis.all.mb58.gz",
+   "line_j": "0009_20161106_011723_Atlantis.all.mb58.gz",
+   "n_shared_cells": 4517,
+   "median_diff_m": 294.52,
+   "mad_diff_m": 84.86,
+   "local_robust_spread_m": 3.36,
+   "abs_median_diff_over_spread": 87.76,
+   "exceeds_local_spread": true
+  },
+  {
+   "line_i": "0005_20161106_063320_Atlantis.all.mb58.gz",
+   "line_j": "0009_20161106_011723_Atlantis.all.mb58.gz",
+   "n_shared_cells": 4493,
+   "median_diff_m": 294.03,
+   "mad_diff_m": 84.93,
+   "local_robust_spread_m": 3.45,
+   "abs_median_diff_over_spread": 85.13,
+   "exceeds_local_spread": true
+  },
+  {
+   "line_i": "0006_20161106_000728_Atlantis.all.mb58.gz",
+   "line_j": "0009_20161106_011723_Atlantis.all.mb58.gz",
+   "n_shared_cells": 1530,
+   "median_diff_m": 226.4,
+   "mad_diff_m": 94.44,
+   "local_robust_spread_m": 4.0,
+   "abs_median_diff_over_spread": 56.59,
+   "exceeds_local_spread": true
+  },
+  {
+   "line_i": "0000_20161106_035035_Atlantis.all.mb58.gz",
+   "line_j": "0006_20161106_000728_Atlantis.all.mb58.gz",
+   "n_shared_cells": 1560,
+   "median_diff_m": 4.96,
+   "mad_diff_m": 4.52,
+   "local_robust_spread_m": 3.6,
+   "abs_median_diff_over_spread": 1.38,
+   "exceeds_local_spread": true
+  },
+  {
+   "line_i": "0005_20161106_063320_Atlantis.all.mb58.gz",
+   "line_j": "0006_20161106_000728_Atlantis.all.mb58.gz",
+   "n_shared_cells": 1561,
+   "median_diff_m": 2.78,
+   "mad_diff_m": 3.47,
+   "local_robust_spread_m": 3.65,
+   "abs_median_diff_over_spread": 0.76,
+   "exceeds_local_spread": false
+  },
+  {
+   "line_i": "0000_20161106_035035_Atlantis.all.mb58.gz",
+   "line_j": "0005_20161106_063320_Atlantis.all.mb58.gz",
+   "n_shared_cells": 4669,
+   "median_diff_m": 1.68,
+   "mad_diff_m": 3.33,
+   "local_robust_spread_m": 3.7,
+   "abs_median_diff_over_spread": 0.45,
+   "exceeds_local_spread": false
+  }
+ ],
+ "windows_top3": [
+  {
+   "r0": 0,
+   "c0": 36,
+   "n_bimodal": 735,
+   "n_eligible": 1295,
+   "frac_bimodal": 0.568,
+   "mean_gap_bimodal_m": 366.486
+  },
+  {
+   "r0": 36,
+   "c0": 36,
+   "n_bimodal": 468,
+   "n_eligible": 792,
+   "frac_bimodal": 0.591,
+   "mean_gap_bimodal_m": 174.647
+  },
+  {
+   "r0": 0,
+   "c0": 0,
+   "n_bimodal": 334,
+   "n_eligible": 1296,
+   "frac_bimodal": 0.258,
+   "mean_gap_bimodal_m": 301.572
+  }
+ ],
+ "mblist_commands": [
+  "apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mblist -F58 -I 0000_20161104_135423_Atlantis.all.mb58 -MA -R -106.248087/-106.068889/8.501244/8.667990 -O XYZ#NM",
+  "apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mblist -F58 -I 0000_20161105_022306_Atlantis.all.mb58 -MA -R -106.248087/-106.068889/8.501244/8.667990 -O XYZ#NM",
+  "..."
+ ],
+ "per_file": [
+  {
+   "file": "0000_20161104_135423_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0000_20161105_022306_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0000_20161105_220617_Atlantis.all.mb58.gz",
+   "n_rows": 21486,
+   "rc": 0
+  },
+  {
+   "file": "0000_20161106_025548_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0000_20161106_035035_Atlantis.all.mb58.gz",
+   "n_rows": 262390,
+   "rc": 0
+  },
+  {
+   "file": "0000_20161107_021227_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0000_20161109_210028_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0000_20161109_211356_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0000_20161110_071152_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0000_20161116_001025_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0000_20161121_222242_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0000_20161124_063315_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0000_20161201_043217_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0000_20161201_164322_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0001_20161104_145416_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0001_20161105_032308_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0001_20161105_222730_Atlantis.all.mb58.gz",
+   "n_rows": 251574,
+   "rc": 0
+  },
+  {
+   "file": "0001_20161106_025635_Atlantis.all.mb58.gz",
+   "n_rows": 37861,
+   "rc": 0
+  },
+  {
+   "file": "0001_20161106_045036_Atlantis.all.mb58.gz",
+   "n_rows": 8585,
+   "rc": 0
+  },
+  {
+   "file": "0001_20161107_031235_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0001_20161109_221359_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0001_20161110_081147_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0001_20161116_011018_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0001_20161121_225628_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0001_20161124_063935_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0001_20161201_053210_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0002_20161104_155426_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0002_20161105_042301_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0002_20161105_232405_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0002_20161106_045231_Atlantis.all.mb58.gz",
+   "n_rows": 269952,
+   "rc": 0
+  },
+  {
+   "file": "0002_20161107_041227_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0002_20161109_231403_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0002_20161110_091151_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0002_20161119_010147_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0002_20161121_235622_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0002_20161124_073940_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0002_20161201_060927_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0003_20161104_165426_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0003_20161105_052306_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0003_20161105_234304_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0003_20161106_055235_Atlantis.all.mb58.gz",
+   "n_rows": 28159,
+   "rc": 0
+  },
+  {
+   "file": "0003_20161107_051227_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0003_20161110_001354_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0003_20161110_093805_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0003_20161122_005623_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0003_20161124_083940_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0003_20161201_061405_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0004_20161104_175422_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0004_20161105_062300_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0004_20161105_234433_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0004_20161107_061235_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0004_20161110_011357_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0004_20161110_103810_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0004_20161122_015627_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0004_20161124_093939_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0004_20161201_071415_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0005_20161104_185426_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0005_20161105_072303_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0005_20161105_234808_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0005_20161106_063320_Atlantis.all.mb58.gz",
+   "n_rows": 183229,
+   "rc": 0
+  },
+  {
+   "file": "0005_20161107_071233_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 255
+  },
+  {
+   "file": "0005_20161110_021358_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0005_20161110_113809_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0005_20161122_021009_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0005_20161124_103940_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0005_20161201_081407_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0006_20161104_195419_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0006_20161105_082300_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0006_20161106_000728_Atlantis.all.mb58.gz",
+   "n_rows": 242635,
+   "rc": 0
+  },
+  {
+   "file": "0006_20161106_073325_Atlantis.all.mb58.gz",
+   "n_rows": 109310,
+   "rc": 0
+  },
+  {
+   "file": "0006_20161107_081234_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0006_20161110_031358_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0006_20161110_123806_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0006_20161122_021614_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0006_20161124_113937_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0006_20161201_091409_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0007_20161104_205415_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0007_20161105_092312_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0007_20161106_083316_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0007_20161107_091233_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0007_20161110_041359_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0007_20161110_133808_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0007_20161122_023141_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0007_20161124_123943_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0007_20161201_101414_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0008_20161104_215419_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0008_20161106_010210_Atlantis.all.mb58.gz",
+   "n_rows": 53878,
+   "rc": 0
+  },
+  {
+   "file": "0008_20161106_093322_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0008_20161107_101231_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0008_20161110_051354_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0008_20161110_143810_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0008_20161122_033138_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0008_20161124_133936_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0008_20161201_102248_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0009_20161104_225052_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0009_20161106_011723_Atlantis.all.mb58.gz",
+   "n_rows": 107775,
+   "rc": 0
+  },
+  {
+   "file": "0009_20161106_103324_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0009_20161107_111233_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0009_20161110_061402_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0009_20161110_153815_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0009_20161122_043146_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0009_20161124_143943_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0009_20161201_112245_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0010_20161104_235034_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0010_20161106_024236_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0010_20161106_113323_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0010_20161107_121229_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0010_20161110_163809_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0010_20161122_053146_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0010_20161124_153939_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0010_20161201_122251_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0011_20161105_000648_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0011_20161106_123315_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0011_20161107_131232_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0011_20161110_173810_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0011_20161122_063141_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0011_20161124_163939_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0011_20161201_132243_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0012_20161105_010645_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0012_20161105_015604_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0012_20161106_133324_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0012_20161107_141230_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0012_20161110_183809_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0012_20161122_065524_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0012_20161124_173946_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0012_20161201_142243_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0013_20161105_021038_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0013_20161106_143322_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0013_20161107_151234_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0013_20161110_193807_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0013_20161122_075521_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0013_20161124_183941_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0013_20161201_152248_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0014_20161106_153325_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0014_20161107_161236_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0014_20161110_203805_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0014_20161122_085525_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 255
+  },
+  {
+   "file": "0014_20161124_193937_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0014_20161201_162250_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0015_20161106_163315_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0015_20161107_171228_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0015_20161110_213811_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0015_20161122_095530_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0015_20161124_201652_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0016_20161106_173320_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0016_20161107_181232_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0016_20161110_223809_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0016_20161122_103309_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0016_20161124_203432_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0017_20161106_183323_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0017_20161107_191235_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0017_20161110_225141_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0017_20161122_113300_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0017_20161124_213430_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0018_20161106_183355_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0018_20161107_201234_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0018_20161110_235144_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0018_20161122_123307_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0018_20161124_220831_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0019_20161106_193350_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0019_20161107_211235_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0019_20161111_005141_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0019_20161122_123831_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0019_20161125_003033_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0020_20161106_203358_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0020_20161107_221227_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0020_20161111_015144_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0020_20161122_125920_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0020_20161125_024753_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0021_20161106_213351_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0021_20161107_231237_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0021_20161111_025146_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0021_20161122_131306_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0021_20161127_000254_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0022_20161106_223400_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0022_20161109_063915_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0022_20161111_035143_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0022_20161122_141314_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0022_20161127_000305_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0023_20161106_233351_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0023_20161109_073912_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0023_20161111_045138_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0023_20161122_151312_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0023_20161127_231707_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0024_20161107_003350_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0024_20161109_083908_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0024_20161111_055144_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0024_20161122_161310_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0024_20161128_233239_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0025_20161107_013350_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0025_20161109_093913_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0025_20161111_065146_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0025_20161122_170158_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0025_20161129_222914_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0026_20161109_103907_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0026_20161111_075137_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0026_20161122_172029_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0026_20161129_232917_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0027_20161109_113908_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0027_20161111_085146_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0027_20161122_182021_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0028_20161109_123912_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0028_20161111_095143_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0028_20161122_192029_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0029_20161109_133912_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0029_20161111_105144_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0029_20161122_202030_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0030_20161109_143912_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0030_20161111_115138_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0030_20161122_212021_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0031_20161109_153915_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0031_20161111_125138_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0031_20161111_130039_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0031_20161122_222026_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0032_20161109_163913_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0032_20161111_130607_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0032_20161122_232021_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0033_20161109_173912_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0033_20161111_140606_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0033_20161122_235725_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0034_20161109_183914_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0034_20161111_150604_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0034_20161123_001324_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0035_20161109_185151_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0035_20161111_160603_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0035_20161123_011320_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0036_20161109_195150_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0036_20161111_170610_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0036_20161123_015806_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0037_20161109_203454_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0037_20161111_180610_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0037_20161123_022025_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0038_20161109_204406_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0038_20161111_190610_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0038_20161123_032023_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0039_20161111_200607_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0039_20161123_042027_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0040_20161111_210601_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0040_20161123_052020_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0041_20161111_220606_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0041_20161123_062026_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0042_20161111_230602_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0042_20161123_072018_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0043_20161112_000607_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0043_20161123_082022_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0044_20161112_001806_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0044_20161123_092024_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0045_20161112_011651_Atlantis.all.mb58.gz",
+   "n_rows": 85637,
+   "rc": 0
+  },
+  {
+   "file": "0045_20161123_102023_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0046_20161123_112025_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0047_20161112_015611_Atlantis.all.mb58.gz",
+   "n_rows": 5836,
+   "rc": 0
+  },
+  {
+   "file": "0047_20161123_122026_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0048_20161114_001240_Atlantis.all.mb58.gz",
+   "n_rows": 49905,
+   "rc": 0
+  },
+  {
+   "file": "0048_20161123_132018_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0049_20161114_011246_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0049_20161123_142022_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0050_20161123_152020_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0051_20161123_153435_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0052_20161123_163438_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0053_20161123_164954_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0054_20161123_174953_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0055_20161123_184949_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0056_20161123_194953_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0057_20161123_204947_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0058_20161123_214952_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0059_20161123_224946_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0060_20161123_234952_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0061_20161124_004948_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0062_20161124_014953_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0063_20161124_024950_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0064_20161124_034945_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0065_20161124_044948_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0066_20161124_054950_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  },
+  {
+   "file": "0067_20161124_060602_Atlantis.all.mb58.gz",
+   "n_rows": 0,
+   "rc": 0
+  }
+ ],
+ "wall_s": 2653.2,
+ "code_commit": "e45c22765bcf483245fe801218db009b9dc5019a",
+ "generated": "2026-10-01T00:52:20+00:00"
+}
