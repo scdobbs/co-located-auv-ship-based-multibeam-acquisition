@@ -41,11 +41,18 @@ HTML scraping.
 config/harmonization.yaml   # all human decisions: CRS, resampling, datum, QA thresholds, data_root
 src/                        # acquisition + harmonization code (CLI: python -m src.cli)
 src/discovery/              # ship-companion discovery (read-only / append-only)
-manifest/pairs.parquet      # the pair catalog (schema documented in CLAUDE.md §5)
+src/acq_r01/, src/acq_r03/  # post-GRL-review directives ACQ-R01/R02/R03 (lockbox guard, raw swath, ship products, manifest v2/v2.1)
+manifest/pairs.parquet      # the June pair catalog (schema documented in CLAUDE.md §5) — frozen
+manifest/pairs_v2_1.parquet # the current catalog (ACQ-R03); pairs_v2*_dropped.csv list every dropped pair and why
+reports_post_grl_review/    # directives + interface contracts (verbatim), rulings, per-directive reports and artifacts
 sbatch/                     # Slurm batch scripts for running stages on Sherlock
-reports/                    # per-run acquisition + QA reports
+reports/                    # June stage reports (on disk, not tracked since 238ea61)
+docs/                       # CHANGES_since_first_iteration.md — how the repo evolved from the first iteration
 logs/
 ```
+
+Bulk data now live on Oak (`/oak/stanford/groups/hilley/auv_ship_colocated_bathy/`), not scratch; see
+[`docs/CHANGES_since_first_iteration.md`](docs/CHANGES_since_first_iteration.md) for the full map of what changed.
 
 **Bulk rasters do not live here.** All raw and harmonized GeoTIFFs are written to Sherlock
 **scratch** (`data_root` in the config), never to `$HOME`. Only small text artifacts (code,
