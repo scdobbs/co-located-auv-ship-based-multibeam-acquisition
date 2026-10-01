@@ -51,12 +51,13 @@ docs/                       # CHANGES_since_first_iteration.md — how the repo 
 logs/
 ```
 
-Bulk data now live on Oak (`/oak/stanford/groups/hilley/auv_ship_colocated_bathy/`), not scratch; see
-[`docs/CHANGES_since_first_iteration.md`](docs/CHANGES_since_first_iteration.md) for the full map of what changed.
-
-**Bulk rasters do not live here.** All raw and harmonized GeoTIFFs are written to Sherlock
-**scratch** (`data_root` in the config), never to `$HOME`. Only small text artifacts (code,
-config, manifest, logs, reports) are version-controlled.
+**Large binary files do not live in this repo.** Raw ship swath, raw AUV grids, harmonized
+GeoTIFFs, masks and ship-product rasters are kept on Oak
+(`/oak/stanford/groups/hilley/auv_ship_colocated_bathy/`); Sherlock scratch (`data_root` in the
+config) holds only working files, because scratch is purged after 90 days. Nothing goes to
+`$HOME`. Only small text artifacts (code, config, manifests, logs, reports) are
+version-controlled. See [`docs/CHANGES_since_first_iteration.md`](docs/CHANGES_since_first_iteration.md)
+for how this changed from the first iteration, when `data_root` on scratch was the only data location.
 
 ## Usage
 
