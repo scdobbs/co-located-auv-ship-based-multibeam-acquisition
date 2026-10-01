@@ -14,5 +14,5 @@ PY=/home/users/scdobbs/bathy_diffusion_env/bin/python
 LINE=$(sed -n "${SLURM_ARRAY_TASK_ID}p" sbatch/acq_r03_products_v2_1_rerun_list.txt)
 echo "task ${SLURM_ARRAY_TASK_ID}: $LINE host=$(hostname) commit=$(git rev-parse --short HEAD)"
 # shellcheck disable=SC2086
-$PY -m src.acq_r03.build_products_v2_1 $LINE --nproc 8
+$PY -m src.acq_r03.build_products_v2_1 $LINE --nproc ${NPROC:-8}
 echo "exit=$?"

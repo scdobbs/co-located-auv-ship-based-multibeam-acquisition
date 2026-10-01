@@ -84,14 +84,14 @@ def _worker(args):
             dl.write_text("".join(f"{l.name} {fmt}\n" for l in locals_))
             cmd = ["mblist", "-F-1", "-I", dl.name, "-MA", "-R", f"{w:.6f}/{e:.6f}/{s_:.6f}/{n:.6f}", "-O", V1.MBLIST_O]
         r = None
-        for attempt in range(3):                             # bounded (a container start can stall) and retried: mblist returns a transient
-            try:                                             # rc 255 on single files (seen in June and today); a repeat read succeeds
-                r = C.mb(cmd, cwd=str(workdir), timeout=2400)
+        for attempt in range(6):                             # bounded (a container start can stall in fuse-overlayfs) and retried: under
+            try:                                             # concurrent starts apptainer fails with "fuse-overlayfs failed to mount ... in 10s"
+                r = C.mb(cmd, cwd=str(workdir), timeout=2400)   # (rc 255, no output); a repeat start succeeds (seen in June and today)
                 if r.returncode == 0:
                     break
-                time.sleep(5 * (attempt + 1))
+                time.sleep(15 * (attempt + 1))
             except subprocess.TimeoutExpired:
-                r = None
+                r = None; time.sleep(15)
         cmdline = f"(cd {workdir} && {C.mb_cmdline(cmd)})" + (f"  # datalist: {', '.join(l.name for l in locals_)}" if dl else "")
         if r is None:
             return {"file": srcs_l[0].name if len(srcs_l) == 1 else f"{srcs_l[0].name} .. ({len(srcs_l)} files)", "n": 0, "acc": None, "stats": None, "idx": None, "z": None,
