@@ -23,6 +23,7 @@ import json
 import logging
 import os
 import shutil
+import subprocess
 import sys
 import time
 from concurrent.futures import ProcessPoolExecutor
@@ -82,8 +83,16 @@ def _worker(args):
             dl = workdir / f"datalist_{locals_[0].name}_{len(locals_)}.mb-1"
             dl.write_text("".join(f"{l.name} {fmt}\n" for l in locals_))
             cmd = ["mblist", "-F-1", "-I", dl.name, "-MA", "-R", f"{w:.6f}/{e:.6f}/{s_:.6f}/{n:.6f}", "-O", V1.MBLIST_O]
-        r = C.mb(cmd, cwd=str(workdir))
+        r = None
+        for attempt in range(2):                             # a container start can stall indefinitely on a node: bounded, retried once
+            try:
+                r = C.mb(cmd, cwd=str(workdir), timeout=2400); break
+            except subprocess.TimeoutExpired:
+                r = None
         cmdline = f"(cd {workdir} && {C.mb_cmdline(cmd)})" + (f"  # datalist: {', '.join(l.name for l in locals_)}" if dl else "")
+        if r is None:
+            return {"file": srcs_l[0].name if len(srcs_l) == 1 else f"{srcs_l[0].name} .. ({len(srcs_l)} files)", "n": 0, "acc": None, "stats": None, "idx": None, "z": None,
+                    "cmd": cmdline, "rc": -9, "stderr": "mblist/container timeout (2 x 2400 s)"}
         out = r.stdout or ""
         base = {"file": srcs_l[0].name if len(srcs_l) == 1 else f"{srcs_l[0].name} .. {srcs_l[-1].name} ({len(srcs_l)} files)",
                 "n": 0, "acc": None, "stats": None, "idx": None, "z": None, "cmd": cmdline, "rc": r.returncode, "stderr": (r.stderr or "")[-300:]}
@@ -204,6 +213,9 @@ def build(items, cruise, cruise_dir: Path, src_kind: str, nproc: int, batch_file
                 V1.merge_acc(acc, stats, r["acc"], r["stats"])
                 if r["idx"] is not None and r["idx"].size:
                     idxs.append(r["idx"]); zs.append(r["z"])
+        bad = [p for p in per_file if p["rc"] != 0]
+        if bad:
+            raise RuntimeError(f"{pid}: {len(bad)} mblist call(s) failed or timed out ({bad[:3]}); not writing products on a partial swath set")
         prods, angle_method = V1.finalize(acc, stats, geom, z_ref)
         ny, nx = geom["shape"]
         idx = np.concatenate(idxs) if idxs else np.zeros(0, "int32"); z = np.concatenate(zs) if zs else np.zeros(0)

@@ -20,6 +20,7 @@ import io
 import json
 import os
 import shutil
+import subprocess
 import sys
 import time
 from concurrent.futures import ProcessPoolExecutor
@@ -39,6 +40,7 @@ PAIR = "AT37-05__MGDS_24043"; CRUISE = "AT37-05"
 OUT = R.REVIEW_DIR / PAIR
 COLS = ["lon", "lat", "topo", "beam", "ping", "utime"]
 MIN_N = 6; MINOR_FRAC = 0.2; GAP_M = 10.0; WIN_M = 2000.0
+CACHE = C.SCRATCH_DATA / "acq_r03_at37_cache"
 
 
 def _worker(args):
@@ -50,12 +52,25 @@ def _worker(args):
             shutil.copyfileobj(s, d, 1 << 22)
         w, e, s_, n = window
         cmd = ["mblist", f"-F{fmt}", "-I", local.name, "-MA", "-R", f"{w:.6f}/{e:.6f}/{s_:.6f}/{n:.6f}", "-O", "XYZ#NM"]
-        r = C.mb(cmd, cwd=str(workdir))
+        cache = CACHE / (src.name + ".parquet")
+        if cache.exists():                                   # re-run after a stalled container: reuse the extracted soundings
+            df = pd.read_parquet(cache)
+            return {"file": src.name, "n": int(len(df)), "df": df if len(df) else None, "cmd": C.mb_cmdline(cmd) + "  # cached", "rc": 0}
+        r = None
+        for attempt in range(2):                             # a container start can stall indefinitely on a node: bounded, retried once
+            try:
+                r = C.mb(cmd, cwd=str(workdir), timeout=1200); break
+            except subprocess.TimeoutExpired:
+                r = None
+        if r is None:
+            return {"file": src.name, "n": 0, "df": None, "cmd": C.mb_cmdline(cmd), "rc": -9, "note": "mblist/container timeout (2 x 1200 s)"}
         out = r.stdout or ""
         if not out.strip():
+            pd.DataFrame(columns=COLS + ["file"]).to_parquet(cache, index=False)
             return {"file": src.name, "n": 0, "df": None, "cmd": C.mb_cmdline(cmd), "rc": r.returncode}
         df = pd.read_csv(io.StringIO(out), sep="\t", header=None, names=COLS, dtype="float64", engine="c", na_values=["NaN", "nan"], on_bad_lines="skip")
         df["file"] = src.name
+        df.to_parquet(cache, index=False)
         return {"file": src.name, "n": int(len(df)), "df": df, "cmd": C.mb_cmdline(cmd), "rc": r.returncode}
     finally:
         for p in [local] + [workdir / (local.name + ext) for ext in (".inf", ".fbt", ".fnv", ".esf", ".par", ".resf")]:
@@ -103,11 +118,11 @@ def main(argv=None):
     geom = V1.lr_window(pdir / "lr.tif")
     ny, nx = geom["shape"]; tr = geom["transform"]; crs = geom["crs"]
     files = V1.swath_files(C.RAW_SWATH_OAK / CRUISE); fmt = V1.fmt_for(files[0].name)
-    workdir = Path(os.environ.get("L_SCRATCH", "/tmp")) / "acq_r03_at37"
+    workdir = Path(os.environ.get("L_SCRATCH", "/tmp")) / "acq_r03_at37"; CACHE.mkdir(parents=True, exist_ok=True)
     dfs, cmds, per_file = [], [], []
     with ProcessPoolExecutor(max_workers=a.nproc) as ex:
         for r in ex.map(_worker, [(str(f), fmt, geom["window"], str(workdir / f.name)) for f in files], chunksize=1):
-            per_file.append({"file": r["file"], "n_rows": r["n"], "rc": r["rc"]}); cmds.append(r["cmd"])
+            per_file.append({"file": r["file"], "n_rows": r["n"], "rc": r["rc"], **({"note": r["note"]} if r.get("note") else {})}); cmds.append(r["cmd"])
             if r["df"] is not None:
                 dfs.append(r["df"])
     s = pd.concat(dfs, ignore_index=True)
@@ -176,7 +191,7 @@ def main(argv=None):
     ls = s.groupby("file").agg(n_soundings=("topo", "size"), n_cells=("cell", "nunique"), median_depth_m=("depth_m", "median"), t_start=("utime", "min"), t_end=("utime", "max")).reset_index()
     ls["t_start"] = pd.to_datetime(ls.t_start, unit="s"); ls["t_end"] = pd.to_datetime(ls.t_end, unit="s"); ls.to_csv(OUT / "line_summary.csv", index=False)
     n_el = int((cnt >= MIN_N).sum())
-    summ = {"pair_id": PAIR, "cruise": CRUISE, "n_swath_files": len(files), "n_files_with_soundings_in_grid": int(s.file.nunique()), "n_soundings_in_grid": n_sound,
+    summ = {"pair_id": PAIR, "cruise": CRUISE, "n_swath_files": len(files), "n_files_failed_extraction": sum(1 for p in per_file if p["rc"] != 0), "n_files_with_soundings_in_grid": int(s.file.nunique()), "n_soundings_in_grid": n_sound,
             "cells_with_soundings": int((cnt > 0).sum()), "cells_eligible_(count>=6)": n_el, "cells_bimodal": int(bim.sum()), "fraction_bimodal_of_eligible": round(float(bim.sum()) / max(1, n_el), 4),
             "bimodal_rule": {"min_count": MIN_N, "minor_fraction_min": MINOR_FRAC, "gap_min_m": GAP_M}, "gap_m_percentiles_eligible": {p: round(float(np.nanpercentile(gap[np.isfinite(gap)], p)), 2) for p in (50, 75, 90, 95)} if np.isfinite(gap).any() else None,
             "line_pairs_overlapping": int(len(lo)), "line_pairs_exceeding_local_spread": int(lo.exceeds_local_spread.sum()) if len(lo) else 0,
