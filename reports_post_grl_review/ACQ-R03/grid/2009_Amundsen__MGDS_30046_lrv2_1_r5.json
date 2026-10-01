@@ -1,0 +1,25 @@
+{
+ "pair_id": "2009_Amundsen__MGDS_30046",
+ "cruise": "2009_Amundsen",
+ "ruling": "rulings_ACQ-R03 R5",
+ "n_files": 377,
+ "format": 58,
+ "sonar": "Kongsberg EM302",
+ "beamwidth_deg": 1.0,
+ "depth_definition": "median depth of the pair's own HR (all valid cells of the harmonized hr.tif), positive metres",
+ "own_hr_median_depth_m": 238.8,
+ "cell_m": 4.168,
+ "region": "-136.29718500395379/-136.04211903150428/70.52808757601893/70.58863827279384",
+ "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mbgrid -I datalist.mb-1 -O grid_2009_Amundsen__MGDS_30046_lrv2_1 -R -136.29718500395379/-136.04211903150428/70.52808757601893/70.58863827279384 -E 0.0001124767622058121/3.7437495265107816e-05/degrees -A2 -G3 -F1 -C0 -M",
+ "mode": "raw",
+ "outputs": {
+  "grid": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/2009_Amundsen__MGDS_30046__lrv2_1.grd",
+  "_num": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/2009_Amundsen__MGDS_30046__lrv2_1_num.grd",
+  "_sd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/2009_Amundsen__MGDS_30046__lrv2_1_sd.grd"
+ },
+ "grid_depth_median": -195.4,
+ "grid_fill_fraction": 0.9403,
+ "wall_s": 1295.6,
+ "mbsystem": "5.8.2beta06",
+ "code_commit": "f503aff1cec28bcfa944f3c651bc08e540b13f2b"
+}

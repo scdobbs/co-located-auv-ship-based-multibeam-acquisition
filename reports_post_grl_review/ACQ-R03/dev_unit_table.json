@@ -245,15 +245,15 @@
    "n_pairs": 2,
    "pairs": "2009_Amundsen__MGDS_30046; 2009_Amundsen__MGDS_30047",
    "tiles_ge50": 345,
-   "k": "4.0; no-k",
-   "n_usable_pairs (with k)": 1,
+   "k": "no-k; no-k",
+   "n_usable_pairs (with k)": 0,
    "products_available": "2/2",
    "ship_products_usable": "2/2",
    "v2_1_flags": "\u2014; \u2014",
    "basin": "BeaufortSea",
    "setting": "shelf_slope",
-   "unit_usable": true,
-   "unit_usable_with_ship_channels": true
+   "unit_usable": false,
+   "unit_usable_with_ship_channels": false
   },
   {
    "unit": "nu00",
@@ -304,13 +304,13 @@
  "counts": {
   "development_units": 20,
   "development_pairs": 45,
-  "usable_units (>=1 pair with k)": 18,
-  "usable_pairs (with k)": 40,
-  "no_k_pairs": 5,
-  "usable_units_with_usable_ship_channels": 13,
-  "usable_pairs_with_usable_ship_channels": 18,
+  "usable_units (>=1 pair with k)": 17,
+  "usable_pairs (with k)": 39,
+  "no_k_pairs": 6,
+  "usable_units_with_usable_ship_channels": 12,
+  "usable_pairs_with_usable_ship_channels": 17,
   "pairs_with_products_available": 24,
   "pairs_with_usable_products": 20
  },
- "generated": "2026-10-01T17:56:40+00:00"
+ "generated": "2026-10-01T18:42:04+00:00"
 }

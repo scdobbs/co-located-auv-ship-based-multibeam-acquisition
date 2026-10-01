@@ -1,0 +1,135 @@
+{
+ "pair_id": "2009_Amundsen__MGDS_30046",
+ "ruling": "rulings_ACQ-R03 R5",
+ "depth_definition": "median depth of the pair's own HR (all valid cells of the harmonized hr.tif), positive metres",
+ "own_hr_median_depth_m": 238.8,
+ "grid": {
+  "pair_id": "2009_Amundsen__MGDS_30046",
+  "cruise": "2009_Amundsen",
+  "ruling": "rulings_ACQ-R03 R5",
+  "n_files": 377,
+  "format": 58,
+  "sonar": "Kongsberg EM302",
+  "beamwidth_deg": 1.0,
+  "depth_definition": "median depth of the pair's own HR (all valid cells of the harmonized hr.tif), positive metres",
+  "own_hr_median_depth_m": 238.8,
+  "cell_m": 4.168,
+  "region": "-136.29718500395379/-136.04211903150428/70.52808757601893/70.58863827279384",
+  "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mbgrid -I datalist.mb-1 -O grid_2009_Amundsen__MGDS_30046_lrv2_1 -R -136.29718500395379/-136.04211903150428/70.52808757601893/70.58863827279384 -E 0.0001124767622058121/3.7437495265107816e-05/degrees -A2 -G3 -F1 -C0 -M",
+  "mode": "raw",
+  "outputs": {
+   "grid": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/2009_Amundsen__MGDS_30046__lrv2_1.grd",
+   "_num": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/2009_Amundsen__MGDS_30046__lrv2_1_num.grd",
+   "_sd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/2009_Amundsen__MGDS_30046__lrv2_1_sd.grd"
+  },
+  "grid_depth_median": -195.4,
+  "grid_fill_fraction": 0.9403,
+  "wall_s": 1295.6,
+  "mbsystem": "5.8.2beta06",
+  "code_commit": "f503aff1cec28bcfa944f3c651bc08e540b13f2b"
+ },
+ "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/2009_Amundsen__MGDS_30046/lrv2_1",
+ "overlap_km2": 9.409,
+ "coreg": {
+  "dx_m": -17.01,
+  "dy_m": -5.01,
+  "dz_m": -0.43,
+  "offset_m": 17.73,
+  "n": 74313,
+  "pass": true,
+  "post_residual_mad_m": 0.624,
+  "note": "re-co-registration of the June (already co-registered) HR against the new LR; expected small"
+ },
+ "hr_res_m": 1.0,
+ "n_hr_valid": 9416790,
+ "n_lr_valid": 9232645,
+ "n_joint_valid": 9094896,
+ "joint_area_km2": 9.087,
+ "n_valid_tiles_256": 143,
+ "qa_pass": true,
+ "lr_native": {
+  "beam_footprint_m": 4.17,
+  "posting_m": 4.18,
+  "lr_native_m": 4.18,
+  "beamwidth_deg": 1.0,
+  "rule": "max(footprint at own-HR median depth, posting) (C2a)"
+ },
+ "previous": {
+  "lr_native_m": 16.0,
+  "posting_m": 16.01,
+  "grid": "2009_Amundsen__MGDS_30045.grd (June pilot, 915 m)"
+ },
+ "k_sweep": {
+  "pair_id": "2009_Amundsen__MGDS_30046",
+  "status": "ok",
+  "lr_native_m": 4.2,
+  "edge_coh": 0.004,
+  "max_recoverable_k": null,
+  "per_k": {
+   "2": "no_spectrum",
+   "4": "no_spectrum",
+   "8": "no_spectrum",
+   "16": "no_spectrum",
+   "32": "no_spectrum"
+  },
+  "thresholds": {
+   "slope_red": -0.97,
+   "slope_white": -0.8,
+   "coh_circular": 0.136,
+   "grid": "AUV-native final harmonized; anchors=21 validated; corrected lr_native"
+  }
+ },
+ "qc_figure": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/qc/acq_r03/2009_Amundsen__MGDS_30046_lrv2_1.png",
+ "products_v2_1": {
+  "pair_id": "2009_Amundsen__MGDS_30046",
+  "cruise": "2009_Amundsen",
+  "qa": {
+   "n_common_cells": 526531,
+   "median_offset_m": 0.0171,
+   "rms_m": 0.664,
+   "robust_sigma_m": 0.3461,
+   "rms_over_median_s_lr": 0.138,
+   "robust_sigma_over_median_s_lr": 0.0719,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 0.3461,
+   "sigma_argmin_m": 0.2383,
+   "gain_m": 0.1078,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "control_vs_v2": {
+   "ship_count": "v2 missing",
+   "ship_sd": "v2 missing",
+   "ship_rsd": "v2 missing",
+   "ship_xtrack_frac": "v2 missing",
+   "ship_beam_angle": "v2 missing",
+   "ship_mean_regrid": "v2 missing",
+   "ship_median_regrid": "v2 missing"
+  },
+  "median_rsd_over_sd": 0.9086382389068604,
+  "cells": 1830729,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ },
+ "ruling_names": {
+  "lr_v2_1.tif": "copy of lrv2_1/lr.tif",
+  "hr_v2_1.tif": "copy of lrv2_1/hr.tif (re-co-registered)",
+  "ship_products_v2_1_lrv2_1": "symlink -> lrv2_1/ship_products_v2_1"
+ },
+ "status": "harmonized_development_lrv2_1"
+}

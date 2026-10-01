@@ -137,12 +137,15 @@ def main():
     c2c = json.loads((C.REPO / "reports/discovery/stage_c2c_sweep.json").read_text())
     kmap = {p["pair_id"]: p for p in (c2c.get("pairs") or c2c.get("results") or []) if isinstance(p, dict) and "pair_id" in p}
     for i, row in m.iterrows():
+        if "R5" in str(m.at[i, "ruling_source"]):
+            continue                                     # R5 pairs carry the re-swept k (None = no-k), never the June value
         if (row.get("max_recoverable_k") is None or (isinstance(row.get("max_recoverable_k"), float) and np.isnan(row.get("max_recoverable_k")))) and row.pair_id in kmap and str(row.designation).startswith("development"):
             m.at[i, "max_recoverable_k"] = kmap[row.pair_id].get("max_recoverable_k"); m.at[i, "k_sweep_status"] = kmap[row.pair_id].get("status")
     for pid, why in C.STOPPED_NO_K.items():
         i = m.index[m.pair_id == pid]
         if len(i):
             m.at[i[0], "k_sweep_status"] = (m.at[i[0], "k_sweep_status"] or "") + " (June no-k stop)"
+    m["ruling_source"] = m["ruling_source"].map(lambda v: "; ".join(dict.fromkeys([x for x in str(v).split("; ") if x])) if v else "")
     m["manifest_version"] = "2.1"
     out = C.REPO / "manifest" / "pairs_v2_1.parquet"; m.to_parquet(out, index=False)
     dall = pd.concat([dropped.assign(ruling_source=""), pd.DataFrame(dropped_new)], ignore_index=True, sort=False)

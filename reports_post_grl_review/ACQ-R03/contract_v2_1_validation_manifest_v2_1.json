@@ -1,0 +1,1536 @@
+[
+ {
+  "pair_id": "cal_dig_morro_bay__20190318m2_Transect601060m",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190318m2_Transect601060m/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190510m1_BankFlankHoles",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190510m1_BankFlankHoles/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190510m2_BankFlankIncipCh",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190510m2_BankFlankIncipCh/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190511m1_6thHeadlessCany",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190511m1_6thHeadlessCany/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190511m2_BankTopEofCanyon3",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190511m2_BankTopEofCanyon3/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__luciachica_2007",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/luciachica_2007/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__pockmark_south",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/pockmark_south/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__basin_flank",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/basin_flank/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "ccz_so268_1",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/ccz_so268_1/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "raw LR GTRasterTypeGeoKey = PixelIsArea; harmonize_pair read it with GDAL PixelIsArea semantics; no header-established mismatch"
+  },
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 4338,
+   "median_offset_m": -0.286,
+   "rms_m": 1.5504,
+   "robust_sigma_m": 1.4069,
+   "rms_over_median_s_lr": 0.3459,
+   "robust_sigma_over_median_s_lr": 0.3139,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    -0.5,
+    0.5
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 1.4069,
+   "sigma_argmin_m": 0.7951,
+   "gain_m": 0.6118,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 9292,
+  "median_rsd_over_sd": 0.87,
+  "unit": "lu06",
+  "designation": "development"
+ },
+ {
+  "pair_id": "discol_so242_1",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/discol_so242_1/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "raw LR GTRasterTypeGeoKey = PixelIsArea; harmonize_pair read it with GDAL PixelIsArea semantics; no header-established mismatch"
+  },
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 17287,
+   "median_offset_m": 0.1929,
+   "rms_m": 2.2309,
+   "robust_sigma_m": 2.0169,
+   "rms_over_median_s_lr": 0.5941,
+   "robust_sigma_over_median_s_lr": 0.5371,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    -0.75,
+    0.5
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 2.0169,
+   "sigma_argmin_m": 1.6447,
+   "gain_m": 0.3722,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1008
+   },
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 28968,
+  "median_rsd_over_sd": 0.703,
+  "unit": "lu02",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20180426m2_Channel1000",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180426m2_Channel1000/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20180427m1_Channel700",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180427m1_Channel700/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20180427m3_PockmarkNorth",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180427m3_PockmarkNorth/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20180428m1_Cable",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180428m1_Cable/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190314m4_LuciaChica970m",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190314m4_LuciaChica970m/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190315m1_HeadlessCanyon",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190315m1_HeadlessCanyon/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190316m1_BankTop",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190316m1_BankTop/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190317m1_1000mGully",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190317m1_1000mGully/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__20190317m2_600mGully",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190317m2_600mGully/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "cal_dig_morro_bay__201804_LuciaChica2m",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/201804_LuciaChica2m/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu12",
+  "designation": "development"
+ },
+ {
+  "pair_id": "tag_m127",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/tag_m127/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "raw LR GTRasterTypeGeoKey = PixelIsArea; harmonize_pair read it with GDAL PixelIsArea semantics; no header-established mismatch"
+  },
+  "available": true,
+  "flags": [
+   "registration_shift"
+  ],
+  "qa": {
+   "n_common_cells": 111884,
+   "median_offset_m": -0.4885,
+   "rms_m": 5.8698,
+   "robust_sigma_m": 4.0426,
+   "rms_over_median_s_lr": 0.2069,
+   "robust_sigma_over_median_s_lr": 0.1425,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    -0.5,
+    0.5
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 4.0426,
+   "sigma_argmin_m": 1.3049,
+   "gain_m": 2.7377,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.2021
+   },
+   "flags": [
+    "registration_shift"
+   ]
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [
+   "0002_20160611_163054_M127_EM122.all"
+  ],
+  "cells": 111884,
+  "median_rsd_over_sd": 0.799,
+  "unit": "lu09",
+  "designation": "development"
+ },
+ {
+  "pair_id": "AT37-13__MGDS_31199",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT37-13__MGDS_31199/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 13421,
+   "median_offset_m": -0.1595,
+   "rms_m": 6.2088,
+   "robust_sigma_m": 2.4065,
+   "rms_over_median_s_lr": 0.181,
+   "robust_sigma_over_median_s_lr": 0.0702,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 2.4065,
+   "sigma_argmin_m": 2.4065,
+   "gain_m": 0.0,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1203
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 13490,
+  "median_rsd_over_sd": 0.892,
+  "unit": "lu04",
+  "designation": "development"
+ },
+ {
+  "pair_id": "EW9801__MGDS_31425",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EW9801__MGDS_31425/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "LR = mbgrid CF netCDF read with GDAL (pixel centres on the coordinate nodes, verified: edge - node = -0.5 cell); no header-established mismatch"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 5255,
+   "median_offset_m": 0.1276,
+   "rms_m": 8.7734,
+   "robust_sigma_m": 4.7803,
+   "rms_over_median_s_lr": 0.2436,
+   "robust_sigma_over_median_s_lr": 0.1327,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    -0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 4.7803,
+   "sigma_argmin_m": 4.1392,
+   "gain_m": 0.641,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.239
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 5465,
+  "median_rsd_over_sd": 0.835,
+  "unit": "lu07",
+  "designation": "development"
+ },
+ {
+  "pair_id": "NA080__MGDS_31290",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31290/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 16310,
+   "median_offset_m": 0.229,
+   "rms_m": 15.6281,
+   "robust_sigma_m": 1.5767,
+   "rms_over_median_s_lr": 2.0513,
+   "robust_sigma_over_median_s_lr": 0.207,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 1.5767,
+   "sigma_argmin_m": 1.5767,
+   "gain_m": 0.0,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 58200,
+  "median_rsd_over_sd": 0.791,
+  "unit": "lu13",
+  "designation": "development"
+ },
+ {
+  "pair_id": "NA090__MGDS_31212",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA090__MGDS_31212/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 6241,
+   "median_offset_m": -0.1089,
+   "rms_m": 2.8959,
+   "robust_sigma_m": 0.6271,
+   "rms_over_median_s_lr": 0.7978,
+   "robust_sigma_over_median_s_lr": 0.1728,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 0.6271,
+   "sigma_argmin_m": 0.5556,
+   "gain_m": 0.0715,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 6241,
+  "median_rsd_over_sd": 0.862,
+  "unit": "lu10",
+  "designation": "development"
+ },
+ {
+  "pair_id": "RR1506__MGDS_29779",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/RR1506__MGDS_29779/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 202705,
+   "median_offset_m": 0.0933,
+   "rms_m": 3.7426,
+   "robust_sigma_m": 1.1711,
+   "rms_over_median_s_lr": 0.2529,
+   "robust_sigma_over_median_s_lr": 0.0792,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 1.1711,
+   "sigma_argmin_m": 1.1711,
+   "gain_m": 0.0,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 204734,
+  "median_rsd_over_sd": 0.861,
+  "unit": "lu00",
+  "designation": "development"
+ },
+ {
+  "pair_id": "TN268__MGDS_30466",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN268__MGDS_30466/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu16",
+  "designation": "development"
+ },
+ {
+  "pair_id": "TN399__MGDS_30373",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN399__MGDS_30373/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 89392,
+   "median_offset_m": 0.0171,
+   "rms_m": 2.8202,
+   "robust_sigma_m": 1.1413,
+   "rms_over_median_s_lr": 0.7552,
+   "robust_sigma_over_median_s_lr": 0.3056,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 1.1413,
+   "sigma_argmin_m": 0.9131,
+   "gain_m": 0.2282,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 90387,
+  "median_rsd_over_sd": 0.845,
+  "unit": "lu05",
+  "designation": "development"
+ },
+ {
+  "pair_id": "FK181031__MGDS_24367",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK181031__MGDS_24367/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu08",
+  "designation": "development"
+ },
+ {
+  "pair_id": "AR26__MGDS_31838",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AR26__MGDS_31838/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 12279,
+   "median_offset_m": -0.3225,
+   "rms_m": 4.5565,
+   "robust_sigma_m": 2.3345,
+   "rms_over_median_s_lr": 0.078,
+   "robust_sigma_over_median_s_lr": 0.04,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 2.3345,
+   "sigma_argmin_m": 2.0868,
+   "gain_m": 0.2477,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1167
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 13684,
+  "median_rsd_over_sd": 0.928,
+  "unit": "lu14",
+  "designation": "development"
+ },
+ {
+  "pair_id": "TN299__MGDS_27339",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN299__MGDS_27339/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 5399,
+   "median_offset_m": -0.1709,
+   "rms_m": 4.2746,
+   "robust_sigma_m": 2.8429,
+   "rms_over_median_s_lr": 0.3494,
+   "robust_sigma_over_median_s_lr": 0.2324,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 2.8429,
+   "sigma_argmin_m": 2.4116,
+   "gain_m": 0.4312,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1421
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 22435,
+  "median_rsd_over_sd": 0.881,
+  "unit": "lu15",
+  "designation": "development"
+ },
+ {
+  "pair_id": "KIWI10RR__MGDS_24499",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/KIWI10RR__MGDS_24499/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "no swath products; not applicable"
+  },
+  "available": false,
+  "unit": "lu01",
+  "designation": "development"
+ },
+ {
+  "pair_id": "FK181031__MGDS_24618",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK181031__MGDS_24618/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 8346,
+   "median_offset_m": -0.187,
+   "rms_m": 9.0032,
+   "robust_sigma_m": 1.34,
+   "rms_over_median_s_lr": 3.7123,
+   "robust_sigma_over_median_s_lr": 0.5525,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 1.34,
+   "sigma_argmin_m": 1.2309,
+   "gain_m": 0.109,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [
+   "0128_20181118_044721_FK181031_EM302.all.mb58.gz"
+  ],
+  "cells": 8346,
+  "median_rsd_over_sd": 0.602,
+  "unit": "lu08",
+  "designation": "development"
+ },
+ {
+  "pair_id": "TN299__MGDS_31253",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN299__MGDS_31253/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 8661,
+   "median_offset_m": -0.0065,
+   "rms_m": 1.0272,
+   "robust_sigma_m": 0.5993,
+   "rms_over_median_s_lr": 0.2064,
+   "robust_sigma_over_median_s_lr": 0.1204,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 0.5993,
+   "sigma_argmin_m": 0.592,
+   "gain_m": 0.0073,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 8668,
+  "median_rsd_over_sd": 0.959,
+  "unit": "lu15",
+  "designation": "development"
+ },
+ {
+  "pair_id": "NA076__MGDS_32317",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA076__MGDS_32317/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 23613,
+   "median_offset_m": 0.0271,
+   "rms_m": 0.5061,
+   "robust_sigma_m": 0.4211,
+   "rms_over_median_s_lr": 0.2261,
+   "robust_sigma_over_median_s_lr": 0.1882,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 0.4211,
+   "sigma_argmin_m": 0.2759,
+   "gain_m": 0.1453,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 23650,
+  "median_rsd_over_sd": 0.859,
+  "unit": "lu11",
+  "designation": "development"
+ },
+ {
+  "pair_id": "EW0207__MGDS_32556",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EW0207__MGDS_32556/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "LR = mbgrid CF netCDF read with GDAL (pixel centres on the coordinate nodes, verified: edge - node = -0.5 cell); no header-established mismatch"
+  },
+  "available": true,
+  "flags": [
+   "vertical_offset"
+  ],
+  "qa": {
+   "n_common_cells": 44781,
+   "median_offset_m": -1.0408,
+   "rms_m": 9.6492,
+   "robust_sigma_m": 5.3082,
+   "rms_over_median_s_lr": 1.3399,
+   "robust_sigma_over_median_s_lr": 0.7371,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 5.3082,
+   "sigma_argmin_m": 4.0918,
+   "gain_m": 1.2164,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.2654
+   },
+   "flags": [
+    "vertical_offset"
+   ]
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 45248,
+  "median_rsd_over_sd": 0.827,
+  "unit": "lu16",
+  "designation": "development"
+ },
+ {
+  "pair_id": "2009_Amundsen__MGDS_30046",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/2009_Amundsen__MGDS_30046/lrv2_1/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 526531,
+   "median_offset_m": 0.0171,
+   "rms_m": 0.664,
+   "robust_sigma_m": 0.3461,
+   "rms_over_median_s_lr": 0.138,
+   "robust_sigma_over_median_s_lr": 0.0719,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 0.3461,
+   "sigma_argmin_m": 0.2383,
+   "gain_m": 0.1078,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "control_equal_v2": {},
+  "v2_lost_files": [],
+  "cells": 1830729,
+  "median_rsd_over_sd": 0.909,
+  "unit": "lu18",
+  "designation": "development"
+ },
+ {
+  "pair_id": "2009_Amundsen__MGDS_30047",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/2009_Amundsen__MGDS_30047/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 24022477,
+   "median_offset_m": 0.1115,
+   "rms_m": 11.4988,
+   "robust_sigma_m": 0.5655,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    -0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 0.5655,
+   "sigma_argmin_m": 0.3958,
+   "gain_m": 0.1697,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 25478240,
+  "median_rsd_over_sd": 0.785,
+  "unit": "lu18",
+  "designation": "development (joins existing unit)"
+ },
+ {
+  "pair_id": "AT42-06__MGDS_5174",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-06__MGDS_5174/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 12202,
+   "median_offset_m": 0.0353,
+   "rms_m": 1.6943,
+   "robust_sigma_m": 0.9473,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.0,
+    0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 0.9473,
+   "sigma_argmin_m": 0.769,
+   "gain_m": 0.1783,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 12296,
+  "median_rsd_over_sd": 0.876,
+  "unit": "lu05",
+  "designation": "development (ruling H1)"
+ },
+ {
+  "pair_id": "EX1202L2__MGDS_20815",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EX1202L2__MGDS_20815/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 51880,
+   "median_offset_m": 0.0768,
+   "rms_m": 0.9226,
+   "robust_sigma_m": 0.6358,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.25,
+    0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 0.6358,
+   "sigma_argmin_m": 0.5441,
+   "gain_m": 0.0917,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 52065,
+  "median_rsd_over_sd": 0.891,
+  "unit": "vu00",
+  "designation": "development (ruling H1)"
+ },
+ {
+  "pair_id": "EX1402L2__MGDS_31073",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EX1402L2__MGDS_31073/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 10834,
+   "median_offset_m": 0.0499,
+   "rms_m": 0.4795,
+   "robust_sigma_m": 0.3644,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.0,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 0.3644,
+   "sigma_argmin_m": 0.3377,
+   "gain_m": 0.0267,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 10841,
+  "median_rsd_over_sd": 0.91,
+  "unit": "vu02",
+  "designation": "development (ruling H1)"
+ },
+ {
+  "pair_id": "FK151121__MGDS_22383",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 5818,
+   "median_offset_m": -0.0752,
+   "rms_m": 4.8581,
+   "robust_sigma_m": 3.2207,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.0,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 3.2207,
+   "sigma_argmin_m": 3.0194,
+   "gain_m": 0.2014,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.161
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 5827,
+  "median_rsd_over_sd": 0.938,
+  "unit": "nu00",
+  "designation": "development"
+ },
+ {
+  "pair_id": "KM0923__MGDS_31429",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/KM0923__MGDS_31429/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 9079,
+   "median_offset_m": 0.0591,
+   "rms_m": 10.9605,
+   "robust_sigma_m": 4.7888,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    -0.25,
+    0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 4.7888,
+   "sigma_argmin_m": 4.1727,
+   "gain_m": 0.6161,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.2394
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [
+   "em120-275-135334-0019.mb56.gz",
+   "em120-277-084048-0053.mb56.gz",
+   "em120-286-040138-0170.mb56.gz"
+  ],
+  "cells": 10353,
+  "median_rsd_over_sd": 0.868,
+  "unit": "lu07",
+  "designation": "development (joins existing unit)"
+ },
+ {
+  "pair_id": "NA080__MGDS_31289",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 16348,
+   "median_offset_m": 0.1689,
+   "rms_m": 16.0694,
+   "robust_sigma_m": 1.3666,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.0,
+    0.0
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 1.3666,
+   "sigma_argmin_m": 1.3666,
+   "gain_m": 0.0,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": false,
+   "ship_sd": false,
+   "ship_rsd": false,
+   "ship_xtrack_frac": false,
+   "ship_beam_angle": false,
+   "ship_mean_regrid": false,
+   "ship_median_regrid": false
+  },
+  "v2_lost_files": [
+   "0028_20170517_125749_Nautilus.all.mb58.gz",
+   "0039_20170517_190823_Nautilus.all.mb58.gz"
+  ],
+  "cells": 58491,
+  "median_rsd_over_sd": 0.79,
+  "unit": "lu13",
+  "designation": "development (joins existing unit)"
+ },
+ {
+  "pair_id": "TN399__MGDS_33068",
+  "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN399__MGDS_33068/ship_products_v2_1",
+  "errors": [],
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "available": true,
+  "flags": [],
+  "qa": {
+   "n_common_cells": 7763,
+   "median_offset_m": 0.085,
+   "rms_m": 2.6037,
+   "robust_sigma_m": 0.6287,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.0,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 0.6287,
+   "sigma_argmin_m": 0.5656,
+   "gain_m": 0.0632,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "control_equal_v2": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true,
+   "ship_mean_regrid": true,
+   "ship_median_regrid": true
+  },
+  "v2_lost_files": [],
+  "cells": 7820,
+  "median_rsd_over_sd": 0.832,
+  "unit": "lu05",
+  "designation": "development (joins existing unit)"
+ }
+]

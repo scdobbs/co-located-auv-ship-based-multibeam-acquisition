@@ -16,9 +16,9 @@
 | lu14 | AR26__MGDS_31838 | 15 | 4.0 | 1 | 1/1 | 1/1 | — | EasternNorthAmericanMargin | continental_margin |
 | lu15 | TN299__MGDS_27339; TN299__MGDS_31253 | 322 | 16.0; 8.0 | 2 | 2/2 | 2/2 | —; — | Gorda | volcanic |
 | lu16 | EW0207__MGDS_32556; TN268__MGDS_30466 | 1,924 | 16.0; no-k | 1 | 1/2 | 0/2 | vertical_offset; — | JdF:Axial | volcanic |
-| lu18 | 2009_Amundsen__MGDS_30046; 2009_Amundsen__MGDS_30047 | 345 | 4.0; no-k | 1 | 2/2 | 2/2 | —; — | BeaufortSea | shelf_slope |
+| lu18 | 2009_Amundsen__MGDS_30046; 2009_Amundsen__MGDS_30047 | 345 | no-k; no-k | 0 | 2/2 | 2/2 | —; — | BeaufortSea | shelf_slope |
 | nu00 | FK151121__MGDS_22383 | 184 | 16.0 | 1 | 1/1 | 1/1 | — | Pacific | volcanic |
 | vu00 | EX1202L2__MGDS_20815 | 53 | no-k | 0 | 1/1 | 1/1 | — | Gulf of Mexico/Caribbean | continental_margin |
 | vu02 | EX1402L2__MGDS_31073 | 27 | 4.0 | 1 | 1/1 | 1/1 | — | Gulf of Mexico/Caribbean | continental_margin |
 
-**Counts:** development_units = 20; development_pairs = 45; usable_units (>=1 pair with k) = 18; usable_pairs (with k) = 40; no_k_pairs = 5; usable_units_with_usable_ship_channels = 13; usable_pairs_with_usable_ship_channels = 18; pairs_with_products_available = 24; pairs_with_usable_products = 20
+**Counts:** development_units = 20; development_pairs = 45; usable_units (>=1 pair with k) = 17; usable_pairs (with k) = 39; no_k_pairs = 6; usable_units_with_usable_ship_channels = 12; usable_pairs_with_usable_ship_channels = 17; pairs_with_products_available = 24; pairs_with_usable_products = 20

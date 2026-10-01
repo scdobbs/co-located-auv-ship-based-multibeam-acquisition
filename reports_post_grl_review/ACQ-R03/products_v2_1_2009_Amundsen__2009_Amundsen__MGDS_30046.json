@@ -3,21 +3,21 @@
   "pair_id": "2009_Amundsen__MGDS_30046",
   "cruise": "2009_Amundsen",
   "qa": {
-   "n_common_cells": 132271,
-   "median_offset_m": 0.0301,
-   "rms_m": 2.1494,
-   "robust_sigma_m": 0.2315,
-   "rms_over_median_s_lr": 0.4468,
-   "robust_sigma_over_median_s_lr": 0.0481,
+   "n_common_cells": 526531,
+   "median_offset_m": 0.0171,
+   "rms_m": 0.664,
+   "robust_sigma_m": 0.3461,
+   "rms_over_median_s_lr": 0.138,
+   "robust_sigma_over_median_s_lr": 0.0719,
    "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
    "shift_argmin_cells": [
     0.25,
     -0.25
    ],
    "shift_surface_file": "qa_shift_surface.csv",
-   "sigma0_m": 0.2315,
-   "sigma_argmin_m": 0.2157,
-   "gain_m": 0.0159,
+   "sigma0_m": 0.3461,
+   "sigma_argmin_m": 0.2383,
+   "gain_m": 0.1078,
    "registration_gate": {
     "min_shift_cells": 0.5,
     "min_gain_m": 0.1
@@ -32,16 +32,16 @@
    "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
   },
   "control_vs_v2": {
-   "ship_count": "equal",
-   "ship_sd": "equal",
-   "ship_rsd": "equal",
-   "ship_xtrack_frac": "equal",
-   "ship_beam_angle": "equal",
-   "ship_mean_regrid": "equal",
-   "ship_median_regrid": "equal"
+   "ship_count": "v2 missing",
+   "ship_sd": "v2 missing",
+   "ship_rsd": "v2 missing",
+   "ship_xtrack_frac": "v2 missing",
+   "ship_beam_angle": "v2 missing",
+   "ship_mean_regrid": "v2 missing",
+   "ship_median_regrid": "v2 missing"
   },
-  "median_rsd_over_sd": 0.9844729900360107,
-  "cells": 132286,
+  "median_rsd_over_sd": 0.9086382389068604,
+  "cells": 1830729,
   "beam_angle_method": "launch_angle",
   "matches_lr_tif": true
  }

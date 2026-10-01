@@ -8,7 +8,7 @@
   "confirmatory": 3,
   "lockbox": 2
  },
- "r5": "pending",
+ "r5": "applied",
  "dropped_rows": 9,
  "dropped_new": [
   "AT37-05__MGDS_24043",
@@ -59,7 +59,7 @@
   "TN399__MGDS_33068": []
  },
  "path": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_v2_1.parquet",
- "sha256": "67be71462a08463b5d712dd3ec0677b6985228870f4443f4de5a8af72b8c1cdb",
+ "sha256": "f57f3d8f98b320b136549de300ccac58787129af658a1c62296bab16b6c2ac35",
  "dropped_path": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_v2_1_dropped.csv",
  "dropped_sha256": "1f1bb181c63df8991ddc981c731bbf048a25ec56cb33435487b356d603073dab"
 }

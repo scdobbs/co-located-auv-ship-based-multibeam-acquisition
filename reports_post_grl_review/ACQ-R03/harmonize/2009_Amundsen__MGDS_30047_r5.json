@@ -1,0 +1,36 @@
+{
+ "pair_id": "2009_Amundsen__MGDS_30047",
+ "ruling": "rulings_ACQ-R03 R5",
+ "depth_definition": "median depth of the pair's own HR (all valid cells of the harmonized hr.tif), positive metres",
+ "own_hr_median_depth_m": 223.9,
+ "lr_native": {
+  "beam_footprint_m": 3.91,
+  "posting_m": 2.92,
+  "lr_native_m": 3.91,
+  "beamwidth_deg": 1.0,
+  "rule": "max(footprint at own-HR median depth, posting) (C2a)"
+ },
+ "previous_lr_native_m": 4.87,
+ "previous_depth_basis": "harmonized-LR median depth (279 m)",
+ "k_sweep": {
+  "pair_id": "2009_Amundsen__MGDS_30047",
+  "status": "ok",
+  "lr_native_m": 3.9,
+  "edge_coh": 0.0,
+  "max_recoverable_k": null,
+  "per_k": {
+   "2": "no_spectrum",
+   "4": "no_spectrum",
+   "8": "no_spectrum",
+   "16": "no_spectrum",
+   "32": "no_spectrum"
+  },
+  "thresholds": {
+   "slope_red": -0.97,
+   "slope_white": -0.8,
+   "coh_circular": 0.136,
+   "grid": "AUV-native final harmonized; anchors=21 validated; corrected lr_native"
+  }
+ },
+ "regridded": false
+}

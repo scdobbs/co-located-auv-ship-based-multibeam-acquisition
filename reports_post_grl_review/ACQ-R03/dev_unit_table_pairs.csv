@@ -3,7 +3,7 @@ lu00,RR1506__MGDS_29779,649,8.0,False,,True,True,,KermadecArc,seamount,
 lu01,KIWI10RR__MGDS_24499,3,,True,,False,False,,Tonga,continental_margin,
 lu02,discol_so242_1,81,4.0,False,,True,False,registration_shift,Peru Basin,abyssal_plain,rulings_ACQ-R03 R4
 lu04,AT37-13__MGDS_31199,47,8.0,False,,True,True,,CostaRicaRift,continental_margin,
-lu05,AT42-06__MGDS_5174,4,2.0,False,pass,True,True,,Pacific,volcanic,rulings_ACQ-R03 labels; rulings_ACQ-R03 labels
+lu05,AT42-06__MGDS_5174,4,2.0,False,pass,True,True,,Pacific,volcanic,rulings_ACQ-R03 labels
 lu05,TN399__MGDS_30373,1583,16.0,False,,True,True,,EPR:9N,volcanic,
 lu05,TN399__MGDS_33068,46,16.0,False,pass,True,True,,Pacific,volcanic,rulings_ACQ-R03 labels
 lu06,ccz_so268_1,17,4.0,False,,True,False,registration_shift,Equatorial NE Pacific (CCZ),nodule_field,rulings_ACQ-R03 R4
@@ -39,8 +39,8 @@ lu15,TN299__MGDS_27339,226,16.0,False,,True,True,,Gorda,volcanic,
 lu15,TN299__MGDS_31253,96,8.0,False,,True,True,,Cascadia,continental_margin,
 lu16,EW0207__MGDS_32556,692,16.0,False,,True,False,vertical_offset,JdF:Axial,volcanic,
 lu16,TN268__MGDS_30466,1232,,True,,False,False,,JdF:Axial,volcanic,
-lu18,2009_Amundsen__MGDS_30046,144,4.0,False,,True,True,,BeaufortSea,shelf_slope,
-lu18,2009_Amundsen__MGDS_30047,201,,True,pass,True,True,,Arctic,shelf_slope,rulings_ACQ-R03 labels
+lu18,2009_Amundsen__MGDS_30046,144,,True,pass,True,True,,BeaufortSea,shelf_slope,rulings_ACQ-R03 R5
+lu18,2009_Amundsen__MGDS_30047,201,,True,pass,True,True,,Arctic,shelf_slope,rulings_ACQ-R03 labels; rulings_ACQ-R03 R5
 nu00,FK151121__MGDS_22383,184,16.0,False,pass,True,True,,Pacific,volcanic,rulings_ACQ-R03 labels
 vu00,EX1202L2__MGDS_20815,53,,True,pass,True,True,,Gulf of Mexico/Caribbean,continental_margin,rulings_ACQ-R03 labels
 vu02,EX1402L2__MGDS_31073,27,4.0,False,pass,True,True,,Gulf of Mexico/Caribbean,continental_margin,rulings_ACQ-R03 labels
