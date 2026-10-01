@@ -157,11 +157,11 @@ def validate(pid: str, pdir):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(); ap.add_argument("--pairs", default=None); ap.add_argument("--out", default="contract_v2_1_validation")
+    ap = argparse.ArgumentParser(); ap.add_argument("--pairs", default=None); ap.add_argument("--out", default="contract_v2_1_validation"); ap.add_argument("--manifest", default=None)
     a = ap.parse_args(argv)
-    m = pd.read_parquet(C.REPO / "manifest" / "pairs_v2.parquet").set_index("pair_id")
+    m = pd.read_parquet(a.manifest or (C.REPO / "manifest" / "pairs_v2.parquet")).set_index("pair_id")
     new = (R.R02 / "new_dev_pairs.txt").read_text().strip().split(",")
-    pids = a.pairs.split(",") if a.pairs else list(C.PAIRS_IN_SCOPE) + new
+    pids = a.pairs.split(",") if a.pairs else ([p for p in m.index if str(m.loc[p, "designation"]).startswith("development")] if a.manifest else list(C.PAIRS_IN_SCOPE) + new)
     C.assert_no_lockbox(pids)
     out = []
     for pid in pids:

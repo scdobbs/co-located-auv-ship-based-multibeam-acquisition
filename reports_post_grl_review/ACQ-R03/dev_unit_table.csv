@@ -1,0 +1,21 @@
+unit,n_pairs,pairs,tiles_ge50,k,n_usable_pairs (with k),products_available,ship_products_usable,v2_1_flags,basin,setting,unit_usable,unit_usable_with_ship_channels
+lu00,1,RR1506__MGDS_29779,649,8.0,1,1/1,1/1,—,KermadecArc,seamount,True,True
+lu01,1,KIWI10RR__MGDS_24499,3,no-k,0,0/1,0/1,—,Tonga,continental_margin,False,False
+lu02,1,discol_so242_1,81,4.0,1,1/1,0/1,registration_shift,Peru Basin,abyssal_plain,True,False
+lu04,1,AT37-13__MGDS_31199,47,8.0,1,1/1,1/1,—,CostaRicaRift,continental_margin,True,True
+lu05,3,AT42-06__MGDS_5174; TN399__MGDS_30373; TN399__MGDS_33068,1633,2.0; 16.0; 16.0,3,3/3,3/3,—; —; —,Pacific,volcanic,True,True
+lu06,1,ccz_so268_1,17,4.0,1,1/1,0/1,registration_shift,Equatorial NE Pacific (CCZ),nodule_field,True,False
+lu07,2,EW9801__MGDS_31425; KM0923__MGDS_31429,93,2.0; 16.0,2,2/2,2/2,—; —,Pacific,volcanic,True,True
+lu08,2,FK181031__MGDS_24367; FK181031__MGDS_24618,316,no-k; 16.0,1,1/2,1/2,—; —,AlarconRise,volcanic,True,True
+lu09,1,tag_m127,196,4.0,1,1/1,0/1,registration_shift,"Mid-Atlantic Ridge, 26°N",hydrothermal_vent,True,False
+lu10,1,NA090__MGDS_31212,47,8.0,1,1/1,1/1,—,NotProvided,continental_margin,True,True
+lu11,1,NA076__MGDS_32317,50,4.0,1,1/1,1/1,—,PacificOcean:SouthernCalifornia,continental_margin,True,True
+lu12,18,cal_dig_morro_bay__20180426m2_Channel1000; cal_dig_morro_bay__20180427m1_Channel700; cal_dig_morro_bay__20180427m3_PockmarkNorth; cal_dig_morro_bay__20180428m1_Cable; cal_dig_morro_bay__201804_LuciaChica2m; cal_dig_morro_bay__20190314m4_LuciaChica970m; cal_dig_morro_bay__20190315m1_HeadlessCanyon; cal_dig_morro_bay__20190316m1_BankTop; cal_dig_morro_bay__20190317m1_1000mGully; cal_dig_morro_bay__20190317m2_600mGully; cal_dig_morro_bay__20190318m2_Transect601060m; cal_dig_morro_bay__20190510m1_BankFlankHoles; cal_dig_morro_bay__20190510m2_BankFlankIncipCh; cal_dig_morro_bay__20190511m1_6thHeadlessCany; cal_dig_morro_bay__20190511m2_BankTopEofCanyon3; cal_dig_morro_bay__basin_flank; cal_dig_morro_bay__luciachica_2007; cal_dig_morro_bay__pockmark_south,640,2.0; 2.0; 2.0; 2.0; 2.0; 2.0; 2.0; 2.0; 2.0; 2.0; 2.0; 2.0; 2.0; 2.0; 2.0; 2.0; 2.0; 2.0,18,0/18,0/18,—; —; —; —; —; —; —; —; —; —; —; —; —; —; —; —; —; —,Offshore South-Central California,continental_margin,True,False
+lu13,2,NA080__MGDS_31289; NA080__MGDS_31290,1621,16.0; 16.0,2,2/2,2/2,—; —,Pacific,seamount,True,True
+lu14,1,AR26__MGDS_31838,15,4.0,1,1/1,1/1,—,EasternNorthAmericanMargin,continental_margin,True,True
+lu15,2,TN299__MGDS_27339; TN299__MGDS_31253,322,16.0; 8.0,2,2/2,2/2,—; —,Gorda,volcanic,True,True
+lu16,2,EW0207__MGDS_32556; TN268__MGDS_30466,1924,16.0; no-k,1,1/2,0/2,vertical_offset; —,JdF:Axial,volcanic,True,False
+lu18,2,2009_Amundsen__MGDS_30046; 2009_Amundsen__MGDS_30047,345,4.0; no-k,1,2/2,2/2,—; —,BeaufortSea,shelf_slope,True,True
+nu00,1,FK151121__MGDS_22383,184,16.0,1,1/1,1/1,—,Pacific,volcanic,True,True
+vu00,1,EX1202L2__MGDS_20815,53,no-k,0,1/1,1/1,—,Gulf of Mexico/Caribbean,continental_margin,False,False
+vu02,1,EX1402L2__MGDS_31073,27,4.0,1,1/1,1/1,—,Gulf of Mexico/Caribbean,continental_margin,True,True

@@ -1,0 +1,46 @@
+unit,pair_id,tiles_ge50,k,no_k,qa,products_available,ship_products_usable,v2_1_flags,basin,setting,ruling
+lu00,RR1506__MGDS_29779,649,8.0,False,,True,True,,KermadecArc,seamount,
+lu01,KIWI10RR__MGDS_24499,3,,True,,False,False,,Tonga,continental_margin,
+lu02,discol_so242_1,81,4.0,False,,True,False,registration_shift,Peru Basin,abyssal_plain,rulings_ACQ-R03 R4
+lu04,AT37-13__MGDS_31199,47,8.0,False,,True,True,,CostaRicaRift,continental_margin,
+lu05,AT42-06__MGDS_5174,4,2.0,False,pass,True,True,,Pacific,volcanic,rulings_ACQ-R03 labels; rulings_ACQ-R03 labels
+lu05,TN399__MGDS_30373,1583,16.0,False,,True,True,,EPR:9N,volcanic,
+lu05,TN399__MGDS_33068,46,16.0,False,pass,True,True,,Pacific,volcanic,rulings_ACQ-R03 labels
+lu06,ccz_so268_1,17,4.0,False,,True,False,registration_shift,Equatorial NE Pacific (CCZ),nodule_field,rulings_ACQ-R03 R4
+lu07,EW9801__MGDS_31425,36,2.0,False,,True,True,,Pacific,volcanic,rulings_ACQ-R03 labels
+lu07,KM0923__MGDS_31429,57,16.0,False,pass,True,True,,Pacific,volcanic,rulings_ACQ-R03 labels
+lu08,FK181031__MGDS_24367,5,,True,,False,False,,AlarconRise,volcanic,
+lu08,FK181031__MGDS_24618,311,16.0,False,,True,True,,GulfOfCalifornia:PescaderoBasin,hydrothermal_vent,
+lu09,tag_m127,196,4.0,False,,True,False,registration_shift,"Mid-Atlantic Ridge, 26°N",hydrothermal_vent,rulings_ACQ-R03 R4
+lu10,NA090__MGDS_31212,47,8.0,False,,True,True,,NotProvided,continental_margin,
+lu11,NA076__MGDS_32317,50,4.0,False,,True,True,,PacificOcean:SouthernCalifornia,continental_margin,
+lu12,cal_dig_morro_bay__20180426m2_Channel1000,48,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__20180427m1_Channel700,35,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__20180427m3_PockmarkNorth,21,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__20180428m1_Cable,17,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__201804_LuciaChica2m,43,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__20190314m4_LuciaChica970m,19,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__20190315m1_HeadlessCanyon,41,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__20190316m1_BankTop,53,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__20190317m1_1000mGully,37,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__20190317m2_600mGully,45,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__20190318m2_Transect601060m,22,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__20190510m1_BankFlankHoles,48,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__20190510m2_BankFlankIncipCh,45,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__20190511m1_6thHeadlessCany,51,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__20190511m2_BankTopEofCanyon3,55,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__basin_flank,14,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__luciachica_2007,11,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu12,cal_dig_morro_bay__pockmark_south,35,2.0,False,,False,False,,Offshore South-Central California,continental_margin,
+lu13,NA080__MGDS_31289,807,16.0,False,pass,True,True,,Pacific,seamount,rulings_ACQ-R03 labels
+lu13,NA080__MGDS_31290,814,16.0,False,,True,True,,DavidsonSeamount:OctopusGarden,seamount,
+lu14,AR26__MGDS_31838,15,4.0,False,,True,True,,EasternNorthAmericanMargin,continental_margin,
+lu15,TN299__MGDS_27339,226,16.0,False,,True,True,,Gorda,volcanic,
+lu15,TN299__MGDS_31253,96,8.0,False,,True,True,,Cascadia,continental_margin,
+lu16,EW0207__MGDS_32556,692,16.0,False,,True,False,vertical_offset,JdF:Axial,volcanic,
+lu16,TN268__MGDS_30466,1232,,True,,False,False,,JdF:Axial,volcanic,
+lu18,2009_Amundsen__MGDS_30046,144,4.0,False,,True,True,,BeaufortSea,shelf_slope,
+lu18,2009_Amundsen__MGDS_30047,201,,True,pass,True,True,,Arctic,shelf_slope,rulings_ACQ-R03 labels
+nu00,FK151121__MGDS_22383,184,16.0,False,pass,True,True,,Pacific,volcanic,rulings_ACQ-R03 labels
+vu00,EX1202L2__MGDS_20815,53,,True,pass,True,True,,Gulf of Mexico/Caribbean,continental_margin,rulings_ACQ-R03 labels
+vu02,EX1402L2__MGDS_31073,27,4.0,False,pass,True,True,,Gulf of Mexico/Caribbean,continental_margin,rulings_ACQ-R03 labels

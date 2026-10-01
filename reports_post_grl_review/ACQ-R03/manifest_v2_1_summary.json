@@ -1,0 +1,65 @@
+{
+ "date": "2026-10-01",
+ "rows": 50,
+ "by_designation": {
+  "development": 38,
+  "development (joins existing unit)": 4,
+  "development (ruling H1)": 3,
+  "confirmatory": 3,
+  "lockbox": 2
+ },
+ "r5": "pending",
+ "dropped_rows": 9,
+ "dropped_new": [
+  "AT37-05__MGDS_24043",
+  "PANGAEA_864677__PANGAEA_889317"
+ ],
+ "reinstated_R6": [
+  "KN182L03__MGDS_30193",
+  "SUM1004__MGDS_33090"
+ ],
+ "ship_products_usable": {
+  "false": 25,
+  "true": 20,
+  "null": 4,
+  "NaN": 1
+ },
+ "flags_v2_1": {
+  "ccz_so268_1": [
+   "registration_shift"
+  ],
+  "discol_so242_1": [
+   "registration_shift"
+  ],
+  "tag_m127": [
+   "registration_shift"
+  ],
+  "AT37-13__MGDS_31199": [],
+  "EW9801__MGDS_31425": [],
+  "NA080__MGDS_31290": [],
+  "NA090__MGDS_31212": [],
+  "RR1506__MGDS_29779": [],
+  "TN399__MGDS_30373": [],
+  "AR26__MGDS_31838": [],
+  "TN299__MGDS_27339": [],
+  "FK181031__MGDS_24618": [],
+  "TN299__MGDS_31253": [],
+  "NA076__MGDS_32317": [],
+  "EW0207__MGDS_32556": [
+   "vertical_offset"
+  ],
+  "2009_Amundsen__MGDS_30046": [],
+  "2009_Amundsen__MGDS_30047": [],
+  "AT42-06__MGDS_5174": [],
+  "EX1202L2__MGDS_20815": [],
+  "EX1402L2__MGDS_31073": [],
+  "FK151121__MGDS_22383": [],
+  "KM0923__MGDS_31429": [],
+  "NA080__MGDS_31289": [],
+  "TN399__MGDS_33068": []
+ },
+ "path": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_v2_1.parquet",
+ "sha256": "67be71462a08463b5d712dd3ec0677b6985228870f4443f4de5a8af72b8c1cdb",
+ "dropped_path": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_v2_1_dropped.csv",
+ "dropped_sha256": "1f1bb181c63df8991ddc981c731bbf048a25ec56cb33435487b356d603073dab"
+}
