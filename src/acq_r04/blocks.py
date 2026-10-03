@@ -12,8 +12,11 @@ Per cruise (raw swath already on scratch, fetch manifest complete):
      exclusion_v1 geometry (block-level guard, distances in the block's UTM; 10 km to HR footprints and lockbox LR
      cruise footprints (+1.113 km NCEI simplification tolerance for the latter), 50 km to lockbox centroids).
   4. Grid each candidate: cell = 2 * median_depth * tan(bw / 2) (bw from the cruise's NCEI instrument, ACQ-R02
-     grid_lr.beamwidth_for), `mbgrid -I <block datalist> -O <root> -R e0/e1/n0/n1 -J UTM<zz><N|S> -E cell/cell/meters
-     -A2 -G3 -F1 -C0 -M` over the files whose sounding bounds reach the block (+2 km); raw soundings.
+     grid_lr.beamwidth_for), over the files whose sounding bounds reach the block (+2 km); raw soundings.
+     GRID_MODE "dev_chain" (default; steering ruling 2026-10-03) reproduces the development lr.tif chain:
+     geographic `mbgrid -R <block lon/lat bounds +/- 1 km> -E dx/dy/degrees -A2 -G3 -F1 -C0 -M` (stage C), then the
+     stage-F warp to the block's UTM zone (bilinear, GDAL default output grid) and a clip to the block.
+     "direct_utm" (pilot v0): `mbgrid -R e0/e1/n0/n1 -J UTM<zz><N|S> -E cell/cell/meters ...`.
   5. Keep if fill (finite cells / grid cells) >= 0.50.  Write grid.tif (float32, NaN nodata, positive up, block UTM CRS),
      block.json, and `lr.tif -> grid.tif` (the role the contract builder reads).
   6. Products: src.acq_r03.build_products_v2_1.build() UNCHANGED, items=[(block_id, block_dir)], cruise_dir = a staging
@@ -283,7 +286,73 @@ def files_for_block(cov: Coverage, zc, ei, ni, pad_m=2000.0):
     return sorted(out)
 
 
+GRID_MODE = "dev_chain"      # steering ruling 2026-10-03: match the development lr.tif representation ("direct_utm" = pilot v0)
+DEV_FILL = -9999.0           # stage_f_harmonize.FILL / harmonize_new FILL
+
+
+def geo_region(zc, ei, ni, cell):
+    """Stage-C geographic recipe for a block (stage_c_full.py:181-187, acq_r01/grid_lr.py main): region = the block's
+    lon/lat bounds +/- 1 km, mid-latitude cell conversion dlon = 1/(111320*max(0.2, cos(mlat))), dlat = 1/111320,
+    -E dx/dy/degrees.  Returns (R string, dx, dy, lonlat bounds)."""
+    epsg = zone_epsg(zc)
+    inv = pyproj.Transformer.from_crs(f"EPSG:{epsg}", "EPSG:4326", always_xy=True)
+    bx = box(ei * R.BLOCK_M, ni * R.BLOCK_M, (ei + 1) * R.BLOCK_M, (ni + 1) * R.BLOCK_M).segmentize(500.0)
+    xs, ys = inv.transform(*bx.exterior.xy)
+    xs = np.asarray(xs)
+    if xs.max() - xs.min() > 180:                       # block straddles the antimeridian: express in 0..360
+        xs = np.where(xs < 0, xs + 360.0, xs)
+    w, e, s, n = float(xs.min()), float(xs.max()), float(np.min(ys)), float(np.max(ys))
+    mlat = (s + n) / 2
+    dlon = 1 / (111320 * max(0.2, math.cos(math.radians(mlat))))
+    dlat = 1 / 111320
+    Rg = f"{w - 1000 * dlon}/{e + 1000 * dlon}/{s - 1000 * dlat}/{n + 1000 * dlat}"
+    return Rg, cell * dlon, cell * dlat, (w, s, e, n)
+
+
+def mbgrid_args_geo(dl_name, root, Rg, dx, dy):
+    """Stage-C mbgrid call, verbatim form (stage_c_full.py:189-190)."""
+    return ["mbgrid", "-I", dl_name, "-O", root, "-R", Rg, "-E", f"{dx}/{dy}/degrees", *R.MBGRID_FLAGS]
+
+
+def grd_to_block_tif(grd: Path, tmp_tif: Path, tif: Path, zc, ei, ni):
+    """Development warp chain for one block:
+      (1) .grd -> GeoTIFF with the grd's CRS and nodata (stage_f_harmonize._lr_to_tif / harmonize_new.lr_to_tif);
+      (2) harmonize._open (rioxarray, masked) + harmonize._reproject(target UTM, bilinear, nodata -9999): GDAL default
+          output grid, no explicit resolution (as harmonize.harmonize_pair; verified against 8 development lr.tif);
+      (3) rio.clip to the block polygon, drop=True, all_touched=False (as harmonize_pair's overlap clip);
+      (4) written as grid.tif: float32, NaN nodata (contract), positive up."""
+    from src import harmonize as H
+    with rasterio.open(str(grd)) as ds:
+        arr = ds.read(1).astype("float32")
+        prof = {"driver": "GTiff", "height": ds.height, "width": ds.width, "count": 1, "dtype": "float32",
+                "crs": ds.crs.to_string() if ds.crs else "EPSG:4326", "transform": ds.transform,
+                "nodata": ds.nodata if ds.nodata is not None else DEV_FILL}
+    with rasterio.open(tmp_tif, "w", **prof) as d:
+        d.write(arr, 1)
+    epsg = zone_epsg(zc)
+    da = H._open(tmp_tif)
+    p = H._reproject(da, f"EPSG:{epsg}", H._RESAMPLING["bilinear"], DEV_FILL)
+    bx = box(ei * R.BLOCK_M, ni * R.BLOCK_M, (ei + 1) * R.BLOCK_M, (ni + 1) * R.BLOCK_M)
+    c = p.rio.clip([bx], f"EPSG:{epsg}", drop=True, all_touched=False)
+    a = c.values.astype("float32")
+    a[a == np.float32(DEV_FILL)] = np.nan
+    a[np.abs(a) >= 99999.0] = np.nan
+    tr = c.rio.transform()
+    out_prof = {"driver": "GTiff", "dtype": "float32", "count": 1, "height": a.shape[0], "width": a.shape[1], "crs": f"EPSG:{epsg}",
+                "transform": tr, "nodata": float("nan"), "compress": "DEFLATE", "predictor": 3}
+    if tif.exists():
+        tif.chmod(0o644)
+    with rasterio.open(tif, "w", **out_prof) as d:
+        d.write(a, 1)
+    tif.chmod(0o444)
+    with rasterio.open(tmp_tif) as g:
+        geo_res = (abs(g.transform.a), abs(g.transform.e))
+    tmp_tif.unlink(missing_ok=True)
+    return a, tr, geo_res
+
+
 def mbgrid_args(dl_name, root, zc, ei, ni, cell):
+    """Pilot v0 ('direct_utm'): mbgrid straight into the block's UTM zone (superseded by GRID_MODE dev_chain)."""
     z, sh = divmod(int(zc), 2)
     e0, e1 = ei * R.BLOCK_M, (ei + 1) * R.BLOCK_M; n0, n1 = ni * R.BLOCK_M, (ni + 1) * R.BLOCK_M
     return ["mbgrid", "-I", dl_name, "-O", root, "-R", f"{e0:.1f}/{e1:.1f}/{n0:.1f}/{n1:.1f}", "-J", f"UTM{z:02d}{'S' if sh else 'N'}",
@@ -452,7 +521,12 @@ def process(cruise, grid_workers=4, prod_workers=4, only_blocks=None, out_root: 
     for zc, ei, ni, bid, row in cands:
         files = files_for_block(cov, zc, ei, ni)
         row["files"] = files
-        gjobs.append((bid, files, mbgrid_args(f"dl_{bid}.mb-1", f"g_{bid}", zc, ei, ni, row["cell_m"])))
+        if GRID_MODE == "dev_chain":
+            Rg, dx, dy, _ = geo_region(zc, ei, ni, row["cell_m"])
+            row["geo_E_deg"] = [dx, dy]
+            gjobs.append((bid, files, mbgrid_args_geo(f"dl_{bid}.mb-1", f"g_{bid}", Rg, dx, dy)))
+        else:
+            gjobs.append((bid, files, mbgrid_args(f"dl_{bid}.mb-1", f"g_{bid}", zc, ei, ni, row["cell_m"])))
     nb = max(1, math.ceil(len(gjobs) / max(1, grid_workers * 4)))
     batches = [gjobs[i:i + nb] for i in range(0, len(gjobs), nb)]
     gres = {}
@@ -475,7 +549,11 @@ def process(cruise, grid_workers=4, prod_workers=4, only_blocks=None, out_root: 
                     p.chmod(0o644)
             shutil.rmtree(bdir)
         bdir.mkdir(parents=True)
-        arr, tr = grd_to_tif(wd / f"g_{bid}.grd", bdir / "grid.tif", zone_epsg(zc))
+        if GRID_MODE == "dev_chain":
+            arr, tr, geo_res = grd_to_block_tif(wd / f"g_{bid}.grd", wd / f"g_{bid}_geo.tif", bdir / "grid.tif", zc, ei, ni)
+            row["geo_grid_res_deg"] = [geo_res[0], geo_res[1]]
+        else:
+            arr, tr = grd_to_tif(wd / f"g_{bid}.grd", bdir / "grid.tif", zone_epsg(zc))
         fill = float(np.isfinite(arr).mean())
         row["fill"] = round(fill, 4); row["grid_shape"] = list(arr.shape); row["cell_m_actual"] = [round(tr.a, 4), round(-tr.e, 4)]
         if fill < R.FILL_MIN:
@@ -489,6 +567,12 @@ def process(cruise, grid_workers=4, prod_workers=4, only_blocks=None, out_root: 
               "n_soundings": row["n_soundings"], "median_depth_m": row["median_depth_m"], "median_depth_resolution_m": BIN,
               "beamwidth_deg": bw, "beamwidth_source": f"grid_lr.beamwidth_for('{meta.instrument}') -> {bw_key}",
               "cell_m": round(row["cell_m"], 4), "cell_m_actual": row["cell_m_actual"], "fill": row["fill"],
+              "grid_mode": GRID_MODE,
+              "gridding_chain": ("stage-C geographic mbgrid (-E dx/dy/degrees, stage_c_full.py:181-190) -> grd GeoTIFF "
+                                 "(stage_f_harmonize._lr_to_tif) -> harmonize._open/_reproject to block UTM, bilinear, nodata -9999, GDAL "
+                                 "default output grid (harmonize.py:53-63) -> rio.clip to block, drop=True, all_touched=False "
+                                 "(harmonize.py:122-123) -> NaN nodata") if GRID_MODE == "dev_chain" else "mbgrid -J UTM direct (pilot v0)",
+              "geo_E_deg": row.get("geo_E_deg"), "geo_grid_res_deg": row.get("geo_grid_res_deg"),
               "guard_margin_m": row["guard_margin_m"], "guard_nearest": row["guard_nearest"],
               "mb_format": fmt, "files": [gz_of[f] for f in row["files"]], "mbgrid_command": row["mbgrid_command"],
               "mbsystem": C.MBSYSTEM_VERSION, "container": f"{C.SANDBOX} ({C.CONTAINER_DIGEST})", "code_commit": C.git_commit(),
@@ -534,7 +618,10 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--cruise", required=True)
     ap.add_argument("--grid-workers", type=int, default=4); ap.add_argument("--prod-workers", type=int, default=4)
+    ap.add_argument("--grid-mode", default="dev_chain", choices=["dev_chain", "direct_utm"])
     a = ap.parse_args(argv)
+    global GRID_MODE
+    GRID_MODE = a.grid_mode
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     try:
         rec = process(a.cruise, a.grid_workers, a.prod_workers)

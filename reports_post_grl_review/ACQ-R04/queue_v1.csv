@@ -1,0 +1,391 @@
+cruise,batch,family,advertised_bytes,gate_family
+HE0905,1,SeaBeam family,2258726745,True
+KN153,1,SeaBeam family,165556229,True
+LD-10-08-CB-PDCL,1,Reson,401569587,True
+W00216,1,Reson,1061902131,True
+CE03_03,1,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),21116118630,True
+NF-08-12-FKNMS,1,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),4086195815,True
+GEO11_05,1,other/unknown,4179935851,True
+B00273,1,other/unknown,7301735,True
+MV1210,1,Kongsberg EM12x (deep),50862162023,False
+NBP0402,1,Kongsberg EM12x (deep),5634513921,False
+64PE395,1,Kongsberg EM30x,624625882,False
+EX1104,1,Kongsberg EM30x,1574227149,False
+EQT190008,1,Kongsberg EM30x,686817280,False
+SKQ201502T,1,Kongsberg EM30x,6906236109,False
+KM1404,1,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),13653717811,False
+CC_BlockA05,1,Reson,3536657818,False
+B00207,1,SeaBeam family,2269594,False
+VANC23MV,1,SeaBeam family,22225101,False
+KN172L09,1,SeaBeam family,185597952,False
+PANR06MV,1,SeaBeam family,195712610,False
+NBP9904,1,SeaBeam family,394988337,False
+B00162,1,other/unknown,26878976,False
+EW9808,1,Atlas Hydrosweep,42257613,False
+EW9902,1,Atlas Hydrosweep,22557696,False
+M33L2,1,Atlas Hydrosweep,23333888,False
+EW0203,1,Atlas Hydrosweep,1319981978,False
+HLY21TD,1,Kongsberg EM12x (deep),39913869927,False
+AR30-01,1,Kongsberg EM12x (deep),7925901517,False
+RB1008,1,Kongsberg EM12x (deep),515004210,False
+MV1112,1,Kongsberg EM12x (deep),82208358,False
+HLY19TB,2,Kongsberg EM12x (deep),10499391594,False
+NBP0802,2,Kongsberg EM12x (deep),6776850432,False
+EX2205,2,Kongsberg EM30x,7020349026,False
+USF1999FMG,2,Kongsberg EM30x,1291302093,False
+VANC12MV,2,Kongsberg EM30x,9532540930,False
+FK210726,2,Kongsberg EM30x,13495752911,False
+CE03_01,2,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),8969623963,False
+NF1601,2,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),34661937970,False
+SR1709,2,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),7846703104,False
+NF-12-05-SBNMS,2,Reson,6915664694,False
+PointSur,2,Reson,10665638095,False
+MR10-05-2,2,SeaBeam family,4286646156,False
+KN192-03,2,SeaBeam family,56451276,False
+AT07L30,2,SeaBeam family,240438477,False
+KN197-06,2,SeaBeam family,1648454854,False
+HLY09TA,2,SeaBeam family,555799145,False
+NBP9602,2,SeaBeam family,382079180,False
+GEO12_02,2,other/unknown,12347602129,False
+B00259,2,other/unknown,7000679,False
+B00067,2,other/unknown,18182964,False
+EW9804,2,Atlas Hydrosweep,43725620,False
+EW0006,2,Atlas Hydrosweep,38249064,False
+M31L2,2,Atlas Hydrosweep,46015276,False
+EW0204,2,Atlas Hydrosweep,329471796,False
+HLY1202,2,Kongsberg EM12x (deep),12376358500,False
+AR30-03,2,Kongsberg EM12x (deep),599500550,False
+AT18-17,2,Kongsberg EM12x (deep),290620416,False
+RR1602,2,Kongsberg EM12x (deep),2177250509,False
+KM0803,2,Kongsberg EM12x (deep),1032134036,False
+NBP0602A,2,Kongsberg EM12x (deep),20011394866,False
+KRY10_03,2,Kongsberg EM30x,28542349925,False
+EX1906,2,Kongsberg EM30x,28668937828,False
+VANC16MV,2,Kongsberg EM30x,1877556837,False
+FK210206,2,Kongsberg EM30x,77144731245,False
+AR31-C,2,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),2410676224,False
+NF-07-01-FACE,2,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),273458998,False
+SR1905,2,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),973025280,False
+NF-11-03-GRNMS,2,Reson,6679828272,False
+MacKerricher,2,Reson,1928185858,False
+HE0805,2,SeaBeam family,1152904620,False
+AT16,2,SeaBeam family,196551989,False
+B00129,2,SeaBeam family,8750899,False
+VANC11MV,2,SeaBeam family,242325913,False
+KN182L07,2,SeaBeam family,1977614336,False
+NBP9905,2,SeaBeam family,11744051,False
+PC1902L1,3,other/unknown,3684926669,False
+B00244,3,other/unknown,6606234,False
+B00020,3,other/unknown,41182824,False
+EW0107,3,Atlas Hydrosweep,51484466,False
+EW0213,3,Atlas Hydrosweep,233339904,False
+EW0408,3,Atlas Hydrosweep,3587735372,False
+AT32,3,Kongsberg EM12x (deep),16995319808,False
+PD20RS01,3,Kongsberg EM12x (deep),487482982,False
+KM1405,3,Kongsberg EM12x (deep),1701838848,False
+NBP1503,3,Kongsberg EM12x (deep),11694678016,False
+SUL2011,3,Kongsberg EM30x,2213753651,False
+FS190006,3,Kongsberg EM30x,326107136,False
+TN296,3,Kongsberg EM30x,1407608422,False
+CE03_02,3,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),18405025383,False
+NF-08-15-OE,3,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),605762355,False
+KM1304,3,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),7954602393,False
+CC2_BlockB03,3,Reson,7530033971,False
+HLY0302,3,SeaBeam family,931032062,False
+AT4L02,3,SeaBeam family,584102295,False
+B00206,3,SeaBeam family,1820672,False
+B00093,3,SeaBeam family,1328128,False
+HB1902L1,3,other/unknown,6437024975,False
+PC1801L3,3,other/unknown,7447728538,False
+B00012,3,other/unknown,27449753,False
+EW0306,3,Atlas Hydrosweep,1260174728,False
+EW0501,3,Atlas Hydrosweep,3603960189,False
+EW9202,3,Atlas Hydrosweep,49702502,False
+GAL2016,3,Kongsberg EM12x (deep),18708296090,False
+RR1117,3,Kongsberg EM12x (deep),9169237185,False
+KM0622,3,Kongsberg EM12x (deep),650476957,False
+NBP0302,3,Kongsberg EM12x (deep),4543945830,False
+TN375,3,Kongsberg EM30x,20166618113,False
+USF2003Pulley,3,Kongsberg EM30x,6455364609,False
+Niihau,3,Kongsberg EM30x,507930214,False
+NF1905,3,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),106807217356,False
+NF-06-04-SEA,3,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),184920884,False
+S-1-00-OR,3,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),654002790,False
+CC2_BlockA02_pacific_star,3,Reson,14621868032,False
+B00308,3,SeaBeam family,8592998,False
+HLY0001,3,SeaBeam family,397997572,False
+COOK17MV,3,SeaBeam family,21220967,False
+HEN04-2,3,other/unknown,645588375,False
+B00267,3,other/unknown,16636519,False
+B00127,3,other/unknown,20011008,False
+EW9207,3,Atlas Hydrosweep,6501171,False
+EW9513,4,Atlas Hydrosweep,145647208,False
+FSP200208,4,Kongsberg EM12x (deep),687341568,False
+FG210025,4,Kongsberg EM12x (deep),738197504,False
+KM0617,4,Kongsberg EM12x (deep),354476438,False
+NBP0501,4,Kongsberg EM12x (deep),3278906368,False
+CV13_SEAI_4,4,Kongsberg EM30x,20973617152,False
+TN338,4,Kongsberg EM30x,34352845125,False
+AR66-B,4,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),8846314496,False
+NF-11-02-CRER,4,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),9158656,False
+KM1406,4,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),44040192,False
+DA0301,4,Reson,511461381,False
+KN166L14,4,SeaBeam family,1867513856,False
+B00275,4,SeaBeam family,15378635,False
+B00087,4,SeaBeam family,1596416,False
+HB1802L2,4,other/unknown,3379071281,False
+PC2101L2,4,other/unknown,1573028870,False
+B00031,4,other/unknown,18548328,False
+EW9402,4,Atlas Hydrosweep,105277030,False
+EW0004,4,Atlas Hydrosweep,179201639,False
+AR35-01,4,Kongsberg EM12x (deep),19712431719,False
+PD20RS03,4,Kongsberg EM12x (deep),257635124,False
+KM0806,4,Kongsberg EM12x (deep),441844737,False
+CV12_01,4,Kongsberg EM30x,64806820251,False
+EX0901,4,Kongsberg EM30x,5472308429,False
+NF2009-Woods-Hole,4,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),32505856,False
+NF-17-08L2,4,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),8621287014,False
+NF1707,4,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),9746618778,False
+NT06-22,4,Reson,36700160,False
+KN179L02,4,SeaBeam family,385875968,False
+AT04L03,4,SeaBeam family,33449574,False
+NBP9605,4,SeaBeam family,152395672,False
+GEO11_01,4,other/unknown,1947939633,False
+B00239,4,other/unknown,20058112,False
+B00016,4,other/unknown,26744014,False
+SO99,4,Atlas Hydrosweep,35725923,False
+AT21-02,4,Kongsberg EM12x (deep),4403096374,False
+RR1502,4,Kongsberg EM12x (deep),10704236182,False
+KRY09_02,4,Kongsberg EM30x,74536766669,False
+SKQ202212S,4,Kongsberg EM30x,8307762790,False
+KRY14_03,4,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),158028057806,False
+NF-13-02,4,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),18139090123,False
+SCC_Block26,4,Reson,56955520000,False
+KN151L3,4,SeaBeam family,869745226,False
+B00167,4,SeaBeam family,6739558,False
+AII8501,4,SeaBeam family,29360128,False
+TON16_01,5,other/unknown,19071864504,False
+PC1802L1,5,other/unknown,2006697370,False
+SUM0105U,5,other/unknown,73190605,False
+EW0206,5,Atlas Hydrosweep,460988328,False
+RB1101,5,Kongsberg EM12x (deep),270742323,False
+ZHNG07RR,5,Kongsberg EM12x (deep),877969931,False
+KRY12_05,5,Kongsberg EM30x,26942426318,False
+TN274,5,Kongsberg EM30x,14215310337,False
+CE03_06,5,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),1555038208,False
+NF1804,5,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),29441862245,False
+SCC_Block22,5,Reson,57514393600,False
+KN199-02,5,SeaBeam family,17413898962,False
+B00226,5,SeaBeam family,8080590,False
+B00008,5,SeaBeam family,5285069,False
+SUM0408P,5,other/unknown,94162125,False
+EW9408,5,Atlas Hydrosweep,29753754,False
+MGL1308,5,Kongsberg EM12x (deep),2130718755,False
+MV1217,5,Kongsberg EM12x (deep),20643630285,False
+FS200206,5,Kongsberg EM30x,235929600,False
+Heceta,5,Kongsberg EM30x,2737202790,False
+AR22,5,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),174587904,False
+NT06-07,5,Reson,54525952,False
+KN221-03,5,SeaBeam family,5347947333,False
+KN176L03,5,SeaBeam family,401604608,False
+HLY0901,5,SeaBeam family,1044381287,False
+B00142,5,other/unknown,14877081,False
+EW9511,5,Atlas Hydrosweep,174064058,False
+NBP1406,5,Kongsberg EM12x (deep),12217841255,False
+HLY11TE,5,Kongsberg EM12x (deep),9191612826,False
+64PE270,5,Kongsberg EM30x,2951107891,False
+SKQ201615S,5,Kongsberg EM30x,1581567181,False
+AR57,5,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),9079827251,False
+CC_BlockA01_quicksilver,5,Reson,1775448883,False
+KN196-02,5,SeaBeam family,3092145769,False
+B00041,5,SeaBeam family,2633728,False
+EW9506,5,Atlas Hydrosweep,28521267,False
+RB-19-04,5,Kongsberg EM12x (deep),16434719948,False
+MGL1212,5,Kongsberg EM12x (deep),14155755609,False
+KRY11_06,5,Kongsberg EM30x,26316950733,False
+FK200103,5,Kongsberg EM30x,7678722048,False
+NF-12-07-HBH,5,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),228170138,False
+SoquelCanyon,5,Reson,3338246554,False
+KN164L02,5,SeaBeam family,3333423104,False
+COOK24MV,5,SeaBeam family,4596531,False
+PD19ST02,5,Kongsberg EM12x (deep),781658938,False
+KM1309,6,Kongsberg EM12x (deep),3663039488,False
+FK161229,6,Kongsberg EM30x,27675650664,False
+AR66-A,6,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),23492193792,False
+SCC_Block09,6,Reson,61463750246,False
+KN213-03,6,SeaBeam family,7870618206,False
+MR06-04-2,6,SeaBeam family,1076281741,False
+AT28,6,Kongsberg EM12x (deep),106078618,False
+PD19SL02,6,Kongsberg EM12x (deep),627258172,False
+TN259,6,Kongsberg EM30x,3316157644,False
+CON04_01,6,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),9034339122,False
+PGE_South,6,Reson,27362492007,False
+VANC06MV,6,SeaBeam family,66401280,False
+B00058,6,SeaBeam family,3174400,False
+MGL1305,6,Kongsberg EM12x (deep),22168090830,False
+RR1612,6,Kongsberg EM12x (deep),11616988774,False
+TN314,6,Kongsberg EM30x,6419547956,False
+NF1909,6,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),581645107,False
+CC2_BlockB05,6,Reson,7817238938,False
+RC2711,6,SeaBeam family,36233829,False
+HLY08TA,6,SeaBeam family,1230382081,False
+RB-20-02,6,Kongsberg EM12x (deep),51668471731,False
+MGL0903,6,Kongsberg EM12x (deep),7369411168,False
+Tran2sou,6,Kongsberg EM30x,523449140,False
+NF-09-06-LF,6,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),3925029681,False
+PresidioShoals,6,Reson,2744891188,False
+AT06L01b,6,SeaBeam family,169869312,False
+B00236,6,SeaBeam family,15227904,False
+FSP20220706,6,Kongsberg EM12x (deep),547251814,False
+HLY10TC,6,Kongsberg EM12x (deep),8038323803,False
+TN358,6,Kongsberg EM30x,59999518720,False
+AR40,6,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),176789913,False
+SCC_Block18,6,Reson,65168369254,False
+AT12,6,SeaBeam family,228694426,False
+COOK09MV,6,SeaBeam family,17720934,False
+MSM88,6,Kongsberg EM12x (deep),21349318635,False
+KM1517,6,Kongsberg EM12x (deep),34193102437,False
+SKQ201506T,6,Kongsberg EM30x,4862246912,False
+CE06_01,6,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),22951126632,False
+SCC_Block13,6,Reson,56974376960,False
+AT07L35,6,SeaBeam family,582605414,False
+B00288,6,SeaBeam family,3410739,False
+MSM43,6,Kongsberg EM12x (deep),15179525114,False
+KM0816,6,Kongsberg EM12x (deep),356538368,False
+NA085,6,Kongsberg EM30x,285212672,False
+CV07_SFI_GWB,6,Kongsberg EM7xx/EM1xxx/EM2040 (shallow),4410891263,False
+NT05-11,7,Reson,407892588,False
+AVON03MV,7,SeaBeam family,31876710,False
+SUM1006,7,Kongsberg EM12x (deep),3932230243,False
+TN316,7,Kongsberg EM30x,11308228506,False
+CC2_BlockB05_pacific_star,7,Reson,10864295936,False
+GLOR07MV,7,SeaBeam family,93113549,False
+MGL1104,7,Kongsberg EM12x (deep),4711118439,False
+NA070,7,Kongsberg EM30x,7802863615,False
+StillwaterCove,7,Reson,180145359,False
+KN195-12,7,SeaBeam family,178857469,False
+KM1006,7,Kongsberg EM12x (deep),13106324890,False
+NA064,7,Kongsberg EM30x,2947215974,False
+CC2_BlockA10,7,Reson,4288531045,False
+B00033,7,SeaBeam family,3105383,False
+HLY11TC,7,Kongsberg EM12x (deep),3838180154,False
+SKQ201810S,7,Kongsberg EM30x,12832223846,False
+Shalebeds_Shallow,7,Reson,524615270,False
+B00013,7,SeaBeam family,6520832,False
+KM0324,7,Kongsberg EM12x (deep),3349040013,False
+SKQ202012S,7,Kongsberg EM30x,7047848345,False
+CC_BlockA11,7,Reson,12466476852,False
+B00065,7,SeaBeam family,17752883,False
+DRFT15RR,7,Kongsberg EM12x (deep),1260042658,False
+Haleakel,7,Kongsberg EM30x,725851749,False
+CC_BlockA08_quicksilver,7,Reson,4140532941,False
+B00059,7,SeaBeam family,3266560,False
+CNTL08RR,7,Kongsberg EM12x (deep),562670998,False
+FK160719,7,Kongsberg EM30x,836556495,False
+CC2_BlockB02_pacific_star,7,Reson,15255732224,False
+HLY06TE,7,SeaBeam family,407281663,False
+PD19MT02,7,Kongsberg EM12x (deep),1286344288,False
+NA061,7,Kongsberg EM30x,1687281254,False
+CC2_BlockB13-14,7,Reson,36069997158,False
+KN195-08,7,SeaBeam family,546823372,False
+KM0919,7,Kongsberg EM12x (deep),1250393291,False
+Maui,7,Kongsberg EM30x,29360128,False
+CC2_BlockB04,7,Reson,15882151526,False
+B00287,7,SeaBeam family,6856089,False
+KM1015,7,Kongsberg EM12x (deep),964689920,False
+EQT20210702,7,Kongsberg EM30x,840970650,False
+NT06-12,7,Reson,3040870,False
+KN195-03,7,SeaBeam family,6655957763,False
+RR1312,7,Kongsberg EM12x (deep),4405642036,False
+SKQ201501T,7,Kongsberg EM30x,10834935808,False
+CC2_BlockA09,7,Reson,3509436827,False
+GENE04RR,8,SeaBeam family,852238534,False
+MV1214,8,Kongsberg EM12x (deep),3100219802,False
+NA104,8,Kongsberg EM30x,6096927336,False
+AHI-06-01,8,Reson,15557664843,False
+PANR08MV,8,SeaBeam family,30618419,False
+KM0206,8,Kongsberg EM12x (deep),14471702173,False
+TN350,8,Kongsberg EM30x,13796845569,False
+CC2_BlockB06_pacific_star,8,Reson,9310306304,False
+COOK23MV,8,SeaBeam family,91169485,False
+RR1010,8,Kongsberg EM12x (deep),2483921101,False
+TN250,8,Kongsberg EM30x,20662204006,False
+AHI-05-01,8,Reson,22616735744,False
+RITS93C,8,SeaBeam family,4773069,False
+KRUS03RR,8,Kongsberg EM12x (deep),1973198651,False
+SKQ202103S,8,Kongsberg EM30x,3551317197,False
+SlateRock,8,Reson,9932111873,False
+HLY04TC,8,SeaBeam family,307126471,False
+SR1701,8,Kongsberg EM12x (deep),4269814577,False
+NA124,8,Kongsberg EM30x,3615619891,False
+HLY07TC,8,SeaBeam family,361597547,False
+MV1304,8,Kongsberg EM12x (deep),15376854220,False
+Pjs,8,Kongsberg EM30x,369098752,False
+AT07L24,8,SeaBeam family,24851252,False
+ZHNG02RR,8,Kongsberg EM12x (deep),2266960991,False
+SKQ201804S,8,Kongsberg EM30x,4223768986,False
+KIWI09RR,8,SeaBeam family,207255347,False
+KM1201,8,Kongsberg EM12x (deep),3487878349,False
+NA094,8,Kongsberg EM30x,1555877068,False
+INDEX2010,8,SeaBeam family,166650985,False
+KM0507,8,Kongsberg EM12x (deep),1016804160,False
+NA077,8,Kongsberg EM30x,3115942094,False
+AMLR92T,8,SeaBeam family,36624793,False
+SU10-2,8,Kongsberg EM12x (deep),26721124967,False
+SKQ202006S,8,Kongsberg EM30x,4123000832,False
+B00156,8,SeaBeam family,8295219,False
+RR1105,8,Kongsberg EM12x (deep),5065827433,False
+TN335,8,Kongsberg EM30x,9163492968,False
+HLY07TD,8,SeaBeam family,397945451,False
+AMAT02RR,8,Kongsberg EM12x (deep),4094092984,False
+EX1606,8,Kongsberg EM30x,1319632070,False
+COOK18MV,8,SeaBeam family,20484506,False
+RR1903,8,Kongsberg EM12x (deep),2990542849,False
+B00074,8,SeaBeam family,2828288,False
+RR1719,8,Kongsberg EM12x (deep),5006894080,False
+HNRO06RR,8,SeaBeam family,436412311,False
+PD19MT01,9,Kongsberg EM12x (deep),52114225,False
+B00069,9,SeaBeam family,2492416,False
+KM0824,9,Kongsberg EM12x (deep),108317900,False
+NBP9704B,9,SeaBeam family,738868225,False
+SR1919,9,Kongsberg EM12x (deep),4545977549,False
+HNRO18RR,9,SeaBeam family,824684734,False
+RR1814,9,Kongsberg EM12x (deep),15040510157,False
+KM1010,9,Kongsberg EM12x (deep),6737243135,False
+KM0921,9,Kongsberg EM12x (deep),1814566716,False
+KM1218,9,Kongsberg EM12x (deep),5301796557,False
+CNTL03RR,9,Kongsberg EM12x (deep),823237013,False
+HLY14TD,9,Kongsberg EM12x (deep),14568204288,False
+PD20AL03,9,Kongsberg EM12x (deep),192099122,False
+MV1009,9,Kongsberg EM12x (deep),8555646157,False
+RR1608,9,Kongsberg EM12x (deep),2078277632,False
+RR1403,9,Kongsberg EM12x (deep),2450714624,False
+MGL1115,9,Kongsberg EM12x (deep),12298916331,False
+KM0606,9,Kongsberg EM12x (deep),193147699,False
+KM0308,9,Kongsberg EM12x (deep),1463766829,False
+KM1923,9,Kongsberg EM12x (deep),2481171866,False
+RR0915,9,Kongsberg EM12x (deep),6496202959,False
+KM0612,9,Kongsberg EM12x (deep),1692679180,False
+KM1312,9,Kongsberg EM12x (deep),29158558311,False
+NBP0304D,9,Kongsberg EM12x (deep),1176921703,False
+KM0409,9,Kongsberg EM12x (deep),1078628970,False
+PD19T301,9,Kongsberg EM12x (deep),6460538331,False
+MV0906,9,Kongsberg EM12x (deep),641880738,False
+HLY17TC,9,Kongsberg EM12x (deep),19279559172,False
+KM0401,9,Kongsberg EM12x (deep),518016006,False
+RR1208,9,Kongsberg EM12x (deep),4320299208,False
+KM0629,9,Kongsberg EM12x (deep),345715507,False
+KM1409,9,Kongsberg EM12x (deep),8933527450,False
+KM1009,9,Kongsberg EM12x (deep),24362614784,False
+KM0620,9,Kongsberg EM12x (deep),1390760959,False
+MV1008,9,Kongsberg EM12x (deep),6932240794,False
+NBP0304,9,Kongsberg EM12x (deep),3409929415,False
+AT26-09,9,Kongsberg EM12x (deep),1129579112,False
+MGL1208,9,Kongsberg EM12x (deep),9139339463,False
+PD20YT01,9,Kongsberg EM12x (deep),463365741,False
+KM1123,9,Kongsberg EM12x (deep),7303331840,False
+KM0904,9,Kongsberg EM12x (deep),464840910,False
+MV1015,9,Kongsberg EM12x (deep),94576586547,False
+KM0802,9,Kongsberg EM12x (deep),20027801,False
+HLY14TC,9,Kongsberg EM12x (deep),10772387430,False
+ZHNG09RR,9,Kongsberg EM12x (deep),2419854537,False

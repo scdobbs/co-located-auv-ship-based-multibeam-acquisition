@@ -43,12 +43,12 @@ def choose(n=10, k=4):
     return out
 
 
-def summary(concurrency: int):
+def summary(concurrency: int, tag: str = "v1", logs=None):
     cruises = (R.REPORT_DIR / "pilot_cruises.txt").read_text().split()
     sel = pd.read_csv(R.REPORT_DIR / "selection_v1.csv")
     rows = []
     for c in cruises:
-        lg = R.WORK_LOGS / cdir_name(c)
+        lg = (logs or R.WORK_LOGS) / cdir_name(c)
         f = json.loads((lg / "fetch.json").read_text()) if (lg / "fetch.json").exists() else {}
         rj = lg / "cruise_record.json"
         r = json.loads(rj.read_text()) if rj.exists() else {}
@@ -63,7 +63,7 @@ def summary(concurrency: int):
                      "failures": len(r.get("failures", [])) + (1 if fail else 0) + (f.get("n_failed") or 0),
                      "cruise_error": fail["error"][:200] if fail else None})
     df = pd.DataFrame(rows)
-    df.to_csv(R.REPORT_DIR / "pilot_v1.csv", index=False)
+    df.to_csv(R.REPORT_DIR / f"pilot_{tag}.csv", index=False)
     ok = df[df.process_wall_s.notna()]
     tot_bytes = int(sel.advertised_bytes.sum())
     fetch_rate = float(ok.raw_bytes.sum() / ok.fetch_s.sum()) if len(ok) else None
@@ -93,19 +93,19 @@ def summary(concurrency: int):
     e = ex["extrapolation"]
     ex["hold"] = {"raw": e["raw_download_TB"] > 3.0, "wall": e["full_run_wall_h"] > 96.0, "oak": (e["oak_output_GB"] or 0) > 600.0}
     ex["any_hold"] = any(ex["hold"].values())
-    R.write_json(R.REPORT_DIR / "pilot_v1.json", ex)
+    R.write_json(R.REPORT_DIR / f"pilot_{tag}.json", ex)
     print(df.to_string()); print(json.dumps(ex, indent=1))
     return ex
 
 
 def main(argv=None):
     ap = argparse.ArgumentParser(); ap.add_argument("mode", choices=["choose", "summary"])
-    ap.add_argument("--concurrency", type=int, default=16)
+    ap.add_argument("--concurrency", type=int, default=16); ap.add_argument("--tag", default="v1")
     a = ap.parse_args(argv)
     if a.mode == "choose":
         choose()
     else:
-        summary(a.concurrency)
+        summary(a.concurrency, a.tag)
     return 0
 
 

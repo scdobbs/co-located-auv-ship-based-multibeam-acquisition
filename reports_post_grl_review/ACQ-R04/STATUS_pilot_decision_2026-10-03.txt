@@ -1,0 +1,91 @@
+ACQ-R04 (ship-only pretraining corpus) — status after the pilot, for decision
+Date: 2026-10-03 (acquisition repo, Sherlock). Sources in brackets: reports_post_grl_review/ACQ-R04/<file>:<key>.
+
+DECISION REQUESTED
+  Go / no-go for the full run of the remaining 390 selected cruises.
+  The pilot found no HOLD: all three directive limits are met. The run is otherwise ready to launch.
+
+DONE AND COMMITTED
+  - Guard: the lockbox guard now also blocks every path under harmonized_confirmatory/. It also now covers
+    geopandas, pyogrio and parquet reads, which previously bypassed it. Self-test: 24/24 blocked.
+    [guard_selftest.json]
+  - Fixed inputs: both manifest v2.1 hashes match the directive. [s1_hashes.json]
+  - Exclusion and pool (commit 71f9c03):
+      * NCEI footprints: 3,885 records = 3,657 unique cruises.
+      * 689 cruises excluded:
+          rule 1 shared cruise  40
+          rule 2 spatial        688
+          rule 3 composite      0
+          rule 4 non-ship       1
+        (a cruise can match several rules)
+      * Pool: 2,968 cruises, of which 2,691 are readable (26.1 TB).
+      [exclusion_v1.json:counts, pool_crawl_summary.json]
+  - Selection (commit ab3d726):
+      * 400 cruises, seed 20261003, 2.997 TB advertised.
+      * The initial draw was 3.72 TB; 7 replacements brought it under the 3 TB cap.
+      * By family: EM12x 124, SeaBeam 86, EM30x 63, Reson 38, EM7xx/shallow 35, Hydrosweep 27,
+        other 26, ELAC 1.
+      * By basin: Pacific 238, Atlantic 86, Gulf of Mexico/Caribbean 41, Indian 16, Southern 10,
+        Arctic 8, Mediterranean 1.
+      [selection_v1.json]
+
+PILOT (10 cruises, 4 families: Hydrosweep, ELAC, EM12x, EM30x) [pilot_v1.csv, pilot_v1.json]
+  - Fetch: 4,732 files, 55.2 GB, 0 failed, 20.7 MB/s.
+  - Processing: all 10 cruises completed. One container-start failure (fuse-overlayfs) was retried
+    automatically; it was not miscounted as "no soundings".
+  - Blocks: 985 kept out of 3,697.
+      dropped for fill < 50%        1,914
+      dropped for depth outside 300-6,500 m   798
+    Two cruises kept 0 blocks:
+      SKQ201818S (Arctic shelf, mostly shallower than 300 m)
+      RUB320161220_area4 (ELAC; no block reached 50% fill)
+  - Ship products: 821/985 blocks usable.
+      vertical_offset flag     162
+      registration_shift flag  5
+  - Cell sizes: 23.7-190.8 m, median 98 m (development LR spans about 10-87 m).
+    Caveat: the "first 10 that span 4 families" rule produced no SeaBeam, Reson, EM7xx or "other"
+    cruise in the pilot. Those families are extrapolated at the pooled rate.
+
+EXTRAPOLATION TO 400 CRUISES (16 concurrent tasks) [pilot_v1.json:extrapolation]
+                          projected                              limit   HOLD?
+  raw download            2.997 TB (selection total, not extrapolated)   3 TB    no
+  full-run wall time      41.0 h (fetch-bound: 40.2 h)           96 h    no
+  OAK output              13.5 GB                                600 GB  no
+  Robustness check: if every cruise took as long as the slowest pilot cruise (8,237 s), processing
+  would take 57 h. It overlaps the 40 h fetch, so the run still stays under 96 h.
+
+IF GO, THE PLAN
+  - Fetch: chained fetch jobs, one at a time, so NCEI never sees more than 6 workers in total.
+    About 2.94 TB to group scratch over roughly 40 h.
+  - Processing: each batch's gridding array starts when that batch's fetch completes, at up to 16
+    concurrent tasks. Slurm dependencies, no polling.
+  - Then: corpus manifest -> copy to OAK with verified SHA256SUMS -> §4.1 independent exclusion
+    check -> §4.2 reproduction spot-check (12 blocks) -> report.
+
+ITEMS FOR STEERING (going into the report's challenge section; not blocking the run)
+  1. Extra exclusions. I also excluded cruises within 10 km of every polygon in the ACQ-R02
+     hr_footprints.gpkg: the full multi-dive HR releases, pu00 and pu03. This goes beyond the
+     directive's footprint list and removes 87 more cruises (pool 2,968 instead of 3,055).
+     [exclusion_v1.json:counts.excluded_only_by_extra_gpkg]
+  2. Buffer distances. ACQ-R01 buffered by 10 km in EPSG:6933. That projection is not distance-true:
+     at 60 deg latitude, "10 km" covers only about 5.8 km north-south on the ground. I measured true
+     distances in local equidistant projections instead. Because the cached NCEI footprints are
+     simplified (0.01 deg), cruises are tested at 10 km + 1.11 km; the per-block test uses exactly 10 km.
+  3. ACQ-R01's "3,210 remaining cruises" counted footprint records, not cruises. Re-running ACQ-R01's
+     own code gives 3,210 records = 3,016 unique cruises. Differences from this pool:
+       - 153 cruises now excluded: near footprints of pairs acquired since ACQ-R01, the extra
+         polygons in item 1, and the new 50 km lockbox radius.
+       - 105 cruises now included: they were excluded only because of ACQ-R01 discovery candidates
+         that never became units.
+  4. Allocation rule. "Floor of 15 per family, the rest proportional" is ambiguous. I gave each
+     family 15 plus a proportional share of the remaining 295. "Over-represented stratum" (size cap)
+     is undefined; I used "share of bytes > share of cruises".
+  5. Gridding projection. The development LR was gridded in geographic coordinates, then bilinearly
+     warped to UTM. Pretraining blocks are gridded directly in UTM by mbgrid (same -A2 -G3 -F1 -C0 -M
+     recipe), with no warp step, so they may be marginally sharper than the development LR.
+  6. Depth is known for only 107 pool cruises (from the ACQ-R01 sample). The .inf files sit in NCEI
+     generated/ directories, which were not walked because they are slow to list and hold no swath.
+  7. Silent listing failures. The stage A/B NCEI directory walker silently skipped subdirectories it
+     could not list. The ACQ-R04 crawl retries each listing and records failures instead
+     (1 cruise left listing_incomplete; it is not selectable).
+  8. No CHANGE_LEDGER.md exists in this repo. I will create one with the ACQ-R04 row.

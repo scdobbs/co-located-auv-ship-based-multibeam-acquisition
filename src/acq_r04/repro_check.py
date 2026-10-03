@@ -101,13 +101,21 @@ def repro_one(row, root: Path):
     rec = {"cruise": row.cruise, "block": row.block, "family": row.instrument_family, "median_depth_persisted": bj["median_depth_m"],
            "median_depth_repro": round(dmed, 2), "n_soundings_persisted": bj["n_soundings"], "n_soundings_repro": b["n"],
            "cell_persisted": bj["cell_m"], "cell_repro": round(cell, 4)}
-    args = B.mbgrid_args(f"dl_{row.block}.mb-1", f"g_{row.block}", zc, ei, ni, cell)
+    mode = bj.get("grid_mode", "direct_utm")
+    if mode == "dev_chain":
+        Rg, dx, dy, _ = B.geo_region(zc, ei, ni, cell)
+        args = B.mbgrid_args_geo(f"dl_{row.block}.mb-1", f"g_{row.block}", Rg, dx, dy)
+    else:
+        args = B.mbgrid_args(f"dl_{row.block}.mb-1", f"g_{row.block}", zc, ei, ni, cell)
     res = B.run_mbgrid_batch(wd, [(row.block, loc, args)], bj["mb_format"])
     if not res[row.block]["ok"]:
         rec["error"] = f"mbgrid failed {res[row.block]}"; return rec
     tdir = R.SCR / "pretrain_v1_repro" / cd / row.block
     shutil.rmtree(tdir, ignore_errors=True); tdir.mkdir(parents=True)
-    B.grd_to_tif(wd / f"g_{row.block}.grd", tdir / "grid.tif", B.zone_epsg(zc))
+    if mode == "dev_chain":
+        B.grd_to_block_tif(wd / f"g_{row.block}.grd", wd / f"g_{row.block}_geo.tif", tdir / "grid.tif", zc, ei, ni)
+    else:
+        B.grd_to_tif(wd / f"g_{row.block}.grd", tdir / "grid.tif", B.zone_epsg(zc))
     (tdir / "lr.tif").symlink_to("grid.tif")
     rec["grid.tif"] = cmp(pdir / "grid.tif", tdir / "grid.tif")
     pr = B.run_products(row.cruise, row.block + "_repro", tdir, bj["files"], fman["files"], R.WORK_LOGS / cd / "repro")

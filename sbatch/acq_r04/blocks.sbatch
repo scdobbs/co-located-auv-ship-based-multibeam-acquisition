@@ -13,4 +13,4 @@ cd /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition
 PY=/home/users/scdobbs/bathy_diffusion_env/bin/python
 CRUISE=$(sed -n "$((SLURM_ARRAY_TASK_ID+1))p" "$1")
 echo "host=$(hostname) commit=$(git rev-parse --short HEAD) cruise=$CRUISE"; df -h "$L_SCRATCH" | tail -1
-/usr/bin/time -v $PY -m src.acq_r04.blocks --cruise "$CRUISE" --grid-workers 4 --prod-workers 4; echo "blocks exit=$?"
+/usr/bin/time -v $PY -m src.acq_r04.blocks --cruise "$CRUISE" --grid-workers 4 --prod-workers 4 --grid-mode ${GRID_MODE:-dev_chain}; echo "blocks exit=$?"

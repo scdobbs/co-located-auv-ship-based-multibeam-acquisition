@@ -54,11 +54,16 @@ def build(cruises=None):
                 led.append({"level": "block", "cruise": c, "item": f["block"], "stage": "products_failed", "reason": str(f["detail"])[:300]})
         for bdir in sorted((R.STAGE / cd).glob("*/block.json")):
             b = json.loads(bdir.read_text()); p = b.get("products", {})
+            pj = bdir.parent / "ship_products_v2_1" / "products.json"
+            qa = (json.loads(pj.read_text()).get("qa_vs_lr_tif") or {}) if pj.exists() else {}
             rows.append({"cruise": c, "block": b["block"], "stratum": b["stratum"], "instrument_family": b["family"], "basin": b["basin"],
                          "year": b["year"], "instrument": b["instrument"], "crs": b["crs"], "median_depth_m": b["median_depth_m"],
                          "cell_m": b["cell_m"], "fill": b["fill"], "n_soundings": b["n_soundings"],
                          "products_usable": bool(p.get("usable", False)), "products_flags": ";".join(p.get("flags", []) or []),
                          "products_available": json.dumps(p.get("available", {})), "products_error": p.get("error"),
+                         "qa_median_offset_m": qa.get("median_offset_m"), "qa_robust_sigma_m": qa.get("robust_sigma_m"),
+                         "qa_shift_argmin_cells": json.dumps(qa.get("shift_argmin_cells")), "qa_gain_m": qa.get("gain_m"),
+                         "qa_n_common_cells": qa.get("n_common_cells"), "grid_mode": b.get("grid_mode"),
                          "grid_tif_sha256": b["grid_tif_sha256"],
                          "block_dir": str(R.OAK_OUT / cd / b["block"])})
     return pd.DataFrame(rows), pd.DataFrame(led)

@@ -1,0 +1,22 @@
+{
+ "checked": "2026-10-03T13:54:47+00:00",
+ "serc_guidance": {
+  "source": "https://stanford-rc.github.io/docs-earth/docs/getting-started-sherlock",
+  "quote": "Please restrict jobs to approximately 1000 (or so) concurrent CPUs per individual.",
+  "partition": "serc: owner QoS, AllowGroups sh_o-serc (user is a member), MaxTime 7-00:00:00, PreemptMode OFF, DefMemPerCPU 6000 MB, 383 nodes / 14,352 CPUs (scontrol show partition serc)",
+  "owner_qos_limits": "MaxTRESPU cpu=99999, MaxSubmitPU 3000 (sacctmgr show qos owner)",
+  "planned": "16 concurrent array tasks x 8 CPUs = 128 CPUs (+ 4 CPUs fetch on normal)",
+  "conflict": false,
+  "decision": "gridding array on serc"
+ },
+ "group_scratch_quota_sh_quota": "GROUP_SCRATCH |  68.3GB / 100.0TB [            0%] |  74.1K /  20.0M (  0%)",
+ "group_scratch": {
+  "used_bytes": "68.3GB",
+  "limit_bytes": "100.0TB",
+  "used_files": "74.1K",
+  "limit_files": "20.0M",
+  "pretrain_raw_now_GB": 52,
+  "full_run_adds_TB": 2.94,
+  "full_run_adds_files": 116831
+ }
+}

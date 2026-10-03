@@ -105,6 +105,30 @@ def main(argv=None):
         md(man.groupby("depth_band", observed=False).agg(blocks=("block", "count")).reset_index(), "corpus_by_depth", a.manifest)
         ct = pd.crosstab(man.instrument_family, man.cell_band, margins=True, margins_name="all").reset_index()
         md(ct, "cell_size_coverage", a.manifest)
+        # vertical_offset flag: median offset (ship_median_regrid - grid.tif, m) against block depth (steering ruling 2026-10-03)
+        vo = man[man.products_flags.fillna("").str.contains("vertical_offset")].copy()
+        if len(man):
+            man["vo"] = man.products_flags.fillna("").str.contains("vertical_offset")
+            dbins = pd.cut(man.median_depth_m, [300, 1000, 2000, 3000, 4000, 5000, 6500], right=False)
+            g = man.groupby(dbins, observed=False)
+            tab = pd.DataFrame({"blocks": g.size(), "flagged_vertical_offset": g.vo.sum(),
+                                "median_offset_all_m (median)": g.qa_median_offset_m.median(),
+                                "median_offset_flagged_m (median)": man[man.vo].groupby(dbins[man.vo], observed=False).qa_median_offset_m.median(),
+                                "median_offset_flagged_m (min)": man[man.vo].groupby(dbins[man.vo], observed=False).qa_median_offset_m.min(),
+                                "median_offset_flagged_m (max)": man[man.vo].groupby(dbins[man.vo], observed=False).qa_median_offset_m.max(),
+                                "abs_offset/depth_flagged (median)": (man[man.vo].qa_median_offset_m.abs() / man[man.vo].median_depth_m).groupby(dbins[man.vo], observed=False).median()}).reset_index()
+            tab = tab.rename(columns={"median_depth_m": "depth band (m)"}); tab["depth band (m)"] = tab["depth band (m)"].astype(str)
+            md(tab, "vertical_offset_vs_depth", a.manifest + " (qa_median_offset_m from each block's products.json)")
+            import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
+            fig, ax = plt.subplots(figsize=(7, 4.5))
+            ax.scatter(man.loc[~man.vo, "median_depth_m"], man.loc[~man.vo, "qa_median_offset_m"], s=6, c="#9aa5b1", label="not flagged")
+            ax.scatter(vo.median_depth_m, vo.qa_median_offset_m, s=8, c="#c2410c", label="vertical_offset flag")
+            ax.axhline(0.5, lw=0.8, ls="--", c="k"); ax.axhline(-0.5, lw=0.8, ls="--", c="k")
+            ax.set_xlabel("block median depth (m)"); ax.set_ylabel("QA median offset, ship median − grid.tif (m)")
+            ax.set_title("Contract v2.1 QA: median offset vs depth (dashed: ±0.5 m threshold)"); ax.legend(frameon=False)
+            fig.tight_layout(); fig.savefig(T / "vertical_offset_vs_depth.png", dpi=120); plt.close(fig)
+            out["vertical_offset"] = {"flagged": int(man.vo.sum()), "blocks": int(len(man)),
+                                      "spearman_abs_offset_vs_depth_flagged": float(vo.qa_median_offset_m.abs().corr(vo.median_depth_m, method="spearman")) if len(vo) > 2 else None}
         fl = man.products_flags.fillna("").str.split(";").explode()
         md(fl[fl != ""].value_counts().rename_axis("flag").reset_index(name="blocks"), "product_flags", a.manifest)
         out["corpus"] = {"blocks": int(len(man)), "cruises": int(man.cruise.nunique()), "cell_min": float(man.cell_m.min()), "cell_max": float(man.cell_m.max()),
