@@ -1,0 +1,10 @@
+batch_01 fetch=46415350 blocks=46415366 n=30
+gate=46415370
+batch_02 fetch=46415373 blocks=46415375 n=45
+batch_03 fetch=46415377 blocks=46415379 n=45
+batch_04 fetch=46415380 blocks=46415381 n=45
+batch_05 fetch=46415382 blocks=46415383 n=45
+batch_06 fetch=46415384 blocks=46415385 n=45
+batch_07 fetch=46415386 blocks=46415387 n=45
+batch_08 fetch=46415389 blocks=46415390 n=45
+batch_09 fetch=46415391 blocks=46415392 n=45
