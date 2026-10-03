@@ -1,0 +1,157 @@
+{
+ "generated": "2026-10-03T02:49:45+00:00",
+ "fixed_input_sha256": {
+  "pairs_v2_1.parquet": "f57f3d8f98b320b136549de300ccac58787129af658a1c62296bab16b6c2ac35",
+  "pairs_v2_1_dropped.csv": "1f1bb181c63df8991ddc981c731bbf048a25ec56cb33435487b356d603073dab"
+ },
+ "all_blocked": true,
+ "control": "control read ok",
+ "n_checks": 24,
+ "checks": [
+  {
+   "target": "lockbox:AT42-03__MGDS_32007",
+   "reader": "builtins.open",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007/lr.tif",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:AT42-03__MGDS_32007",
+   "reader": "rasterio.open",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007/lr.tif",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:AT42-03__MGDS_32007",
+   "reader": "numpy.load",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007/lr.tif",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:AT42-03__MGDS_32007",
+   "reader": "geopandas.read_file",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007/lr.tif",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:AT42-03__MGDS_32007",
+   "reader": "pyogrio.read_dataframe",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007/lr.tif",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:AT42-03__MGDS_32007",
+   "reader": "pandas.read_parquet",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007/lr.tif",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:TN159__MGDS_21981",
+   "reader": "builtins.open",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981/lr.tif",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:TN159__MGDS_21981",
+   "reader": "rasterio.open",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981/lr.tif",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:TN159__MGDS_21981",
+   "reader": "numpy.load",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981/lr.tif",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:TN159__MGDS_21981",
+   "reader": "geopandas.read_file",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981/lr.tif",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:TN159__MGDS_21981",
+   "reader": "pyogrio.read_dataframe",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981/lr.tif",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:TN159__MGDS_21981",
+   "reader": "pandas.read_parquet",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981/lr.tif",
+   "result": "blocked"
+  },
+  {
+   "target": "confirmatory:nu01a",
+   "reader": "builtins.open",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu01a/KN182L03__MGDS_30193/footprint.geojson",
+   "result": "blocked"
+  },
+  {
+   "target": "confirmatory:nu01a",
+   "reader": "rasterio.open",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu01a/KN182L03__MGDS_30193/footprint.geojson",
+   "result": "blocked"
+  },
+  {
+   "target": "confirmatory:nu01a",
+   "reader": "numpy.load",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu01a/KN182L03__MGDS_30193/footprint.geojson",
+   "result": "blocked"
+  },
+  {
+   "target": "confirmatory:nu01a",
+   "reader": "geopandas.read_file",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu01a/KN182L03__MGDS_30193/footprint.geojson",
+   "result": "blocked"
+  },
+  {
+   "target": "confirmatory:nu01a",
+   "reader": "pyogrio.read_dataframe",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu01a/KN182L03__MGDS_30193/footprint.geojson",
+   "result": "blocked"
+  },
+  {
+   "target": "confirmatory:nu01a",
+   "reader": "pandas.read_parquet",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu01a/KN182L03__MGDS_30193/footprint.geojson",
+   "result": "blocked"
+  },
+  {
+   "target": "confirmatory:root",
+   "reader": "builtins.open",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory",
+   "result": "blocked"
+  },
+  {
+   "target": "confirmatory:root",
+   "reader": "rasterio.open",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory",
+   "result": "blocked"
+  },
+  {
+   "target": "confirmatory:root",
+   "reader": "numpy.load",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory",
+   "result": "blocked"
+  },
+  {
+   "target": "confirmatory:root",
+   "reader": "geopandas.read_file",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory",
+   "result": "blocked"
+  },
+  {
+   "target": "confirmatory:root",
+   "reader": "pyogrio.read_dataframe",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory",
+   "result": "blocked"
+  },
+  {
+   "target": "confirmatory:root",
+   "reader": "pandas.read_parquet",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory",
+   "result": "blocked"
+  }
+ ],
+ "code_commit": "fb2356f8d9e7ec89b2e3f4c921b478025e0ec321"
+}

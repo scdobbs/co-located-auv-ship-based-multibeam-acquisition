@@ -93,10 +93,16 @@ assert not any(p in LOCKBOX for p in PAIRS_IN_SCOPE)
 
 
 def _check(path):
-    s = os.fspath(path) if not isinstance(path, int) else ""
+    try:
+        s = os.fspath(path) if not isinstance(path, int) else ""
+    except TypeError:
+        s = str(path)          # file-like objects (BytesIO etc.): checked by their repr only
     for l in LOCKBOX:
         if l in str(s):
             raise PermissionError(f"LOCKBOX GUARD (ACQ-R01 §0): refusing to open {s}")
+    # ACQ-R04 §0.2: confirmatory outputs are sealed until Phase 4; nothing under harmonized_confirmatory/ is opened.
+    if "harmonized_confirmatory" in str(s).replace("\\", "/").split("/"):
+        raise PermissionError(f"CONFIRMATORY GUARD (ACQ-R04 §0.2): refusing to open {s}")
     return path
 
 
@@ -128,6 +134,34 @@ def install_lockbox_guard():
         def guarded_nl(file, *a, **k):
             _check(file); return _nl(file, *a, **k)
         np.load = guarded_nl
+    except ImportError:
+        pass
+    # ACQ-R04: GDAL/OGR- and Arrow-backed readers do not go through builtins.open; guard them too.
+    try:
+        import geopandas as gpd
+        _grf = gpd.read_file
+
+        def guarded_grf(filename, *a, **k):
+            _check(filename); return _grf(filename, *a, **k)
+        gpd.read_file = guarded_grf
+    except ImportError:
+        pass
+    try:
+        import pyogrio
+        _prd = pyogrio.read_dataframe
+
+        def guarded_prd(path_or_buffer, *a, **k):
+            _check(path_or_buffer); return _prd(path_or_buffer, *a, **k)
+        pyogrio.read_dataframe = guarded_prd
+    except ImportError:
+        pass
+    try:
+        import pandas as pd
+        _rpq = pd.read_parquet
+
+        def guarded_rpq(path, *a, **k):
+            _check(path); return _rpq(path, *a, **k)
+        pd.read_parquet = guarded_rpq
     except ImportError:
         pass
     _installed = True

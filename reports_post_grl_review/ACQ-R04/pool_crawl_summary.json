@@ -1,0 +1,19 @@
+{
+ "generated": "2026-10-03T04:00:34+00:00",
+ "n_pool": 2968,
+ "status_counts": {
+  "ok": 2691,
+  "no_swath_legacy": 188,
+  "no_data_dir": 80,
+  "no_iso": 8,
+  "listing_incomplete": 1
+ },
+ "readable": 2691,
+ "readable_frac": 0.9067,
+ "advertised_tb_readable": 26.088,
+ "depth_known": 107,
+ "wall_s": 151.1,
+ "listing_cache": "/scratch/groups/hilley/auv_ship_colocated_bathy/discovery_cache/acq_r01_2026-09-29/ncei_dirlist",
+ "geoportal_cache": "/scratch/groups/hilley/auv_ship_colocated_bathy/discovery_cache/acq_r01_2026-09-29/geoportal",
+ "code_commit": "fb2356f8d9e7ec89b2e3f4c921b478025e0ec321"
+}

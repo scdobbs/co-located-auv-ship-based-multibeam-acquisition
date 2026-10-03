@@ -1,0 +1,10 @@
+{
+ "exclusion_v1.json": "08b8b9a3bd31badfb28a3a713aa1a483d247209e9ff6569bb64ced1ec8133ddd",
+ "pool_v1.csv": "54f05c0322519567ab4c874a2fab167c1e1e77dfd20f73e73d3fd47b37604cb1",
+ "pool_ids_v1.csv": "222986e22abe10c4c9bf9aae85344adb063c8b67a6e3567f5213c8a5a005a52d",
+ "exclusion_geometries_v1.geojson": "88a136c1b97dc10b0bc05e4c1caeb235b5e1165ccaf3eb948affe2aae06723aa",
+ "exclusion_geometries_v1.geojson_path": "/scratch/groups/hilley/auv_ship_colocated_bathy/discovery_cache/acq_r04_2026-10-02/exclusion_geometries_v1.geojson",
+ "guard_selftest.json": "001597f02721fe313649edaa459b8ebccb218ecff268eb8f972fdc65a9843f48",
+ "recorded": "2026-10-03T04:02:41+00:00",
+ "note": "ACQ-R04 \u00a71 outputs, committed before \u00a72 (selection) runs"
+}
