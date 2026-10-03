@@ -44,8 +44,8 @@ def main():
             rows.append({"version": ver, "cruise": c, "family": rec["family"], "blocks_total": rec["blocks_total"], "kept": rec["blocks_kept"],
                          "drop_fill": st.get("drop_fill", 0), "drop_depth": st.get("drop_depth", 0), "drop_guard": st.get("drop_exclusion_guard", 0),
                          "fail_mbgrid": st.get("fail_mbgrid", 0), "usable": int(d.usable.sum()) if len(d) else 0,
-                         "vertical_offset": int(d.flags.str.contains("vertical_offset").sum()) if len(d) else 0,
-                         "registration_shift": int(d.flags.str.contains("registration_shift").sum()) if len(d) else 0,
+                         "vertical_offset": int(d["flags"].str.contains("vertical_offset").sum()) if len(d) else 0,
+                         "registration_shift": int(d["flags"].str.contains("registration_shift").sum()) if len(d) else 0,
                          "cell_grid_min_m": d.cell_grid_m.min() if len(d) else np.nan, "cell_grid_median_m": d.cell_grid_m.median() if len(d) else np.nan,
                          "cell_grid_max_m": d.cell_grid_m.max() if len(d) else np.nan, "fill_median": d.fill.median() if len(d) else np.nan,
                          "wall_s": rec.get("wall_s"), "failures": len(rec.get("failures", []))})

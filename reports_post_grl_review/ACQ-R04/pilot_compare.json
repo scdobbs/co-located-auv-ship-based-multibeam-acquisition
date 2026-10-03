@@ -1,0 +1,53 @@
+{
+ "generated": "2026-10-03T19:48:29+00:00",
+ "totals": {
+  "before_direct_utm": {
+   "blocks_total": 3697,
+   "kept": 985,
+   "drop_fill": 1914,
+   "drop_depth": 798,
+   "fail_mbgrid": 0,
+   "usable": 821,
+   "vertical_offset": 162,
+   "registration_shift": 5,
+   "cell_nominal_min_median_max_m": [
+    23.6572,
+    98.0909,
+    190.7851
+   ],
+   "cell_grid_min_median_max_m": [
+    23.6407,
+    98.0392,
+    192.3077
+   ],
+   "fill_median": 0.8158,
+   "wall_s": 29814.6,
+   "failures": 0
+  },
+  "after_dev_chain": {
+   "blocks_total": 3697,
+   "kept": 1031,
+   "drop_fill": 1868,
+   "drop_depth": 798,
+   "fail_mbgrid": 0,
+   "usable": 832,
+   "vertical_offset": 187,
+   "registration_shift": 58,
+   "cell_nominal_min_median_max_m": [
+    23.6572,
+    97.9582,
+    190.7851
+   ],
+   "cell_grid_min_median_max_m": [
+    23.6209,
+    97.8131,
+    190.6635
+   ],
+   "fill_median": 0.8343,
+   "wall_s": 41226.0,
+   "failures": 0
+  },
+  "blocks_kept_in_both": 984,
+  "cell_grid_ratio_after_over_before_median": 0.998192950498999
+ }
+}
