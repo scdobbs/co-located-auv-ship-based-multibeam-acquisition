@@ -359,7 +359,7 @@ def mbgrid_args(dl_name, root, zc, ei, ni, cell):
             "-E", f"{cell:.4f}/{cell:.4f}/meters", *R.MBGRID_FLAGS]
 
 
-def run_mbgrid_batch(wd: Path, jobs, fmt, timeout_s=12 * 3600, attempts=6):
+def run_mbgrid_batch(wd: Path, jobs, fmt, timeout_s=3 * 3600, attempts=6):
     """jobs: list of (bid, files, args).  One container call runs every mbgrid of the batch; per-block rc markers.
     Blocks whose mbgrid did not finish with rc 0 and a grid are re-run (bounded); still failing -> returned as failed."""
     res = {}; todo = list(jobs)
