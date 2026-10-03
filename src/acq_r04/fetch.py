@@ -38,8 +38,20 @@ def fetch_cruise(cruise: str, plan: pd.DataFrame, workers: int) -> dict:
     C.assert_no_lockbox_cruise([cruise])
     d = R.PRETRAIN_RAW / cdir_name(cruise)
     d.mkdir(parents=True, exist_ok=True)
-    recs = [{"cruise": cdir_name(cruise), "filename": r.filename, "url": r.url, "advertised": int(r.advertised), "kind": "swath"}
-            for r in plan.itertuples()]
+    # Name collisions (found 2026-10-03, AR30-01): multi-sonar cruises serve the same file name from several NCEI
+    # subdirectories (e.g. MB/em710/9999.all.mb58.gz and MB/em122/9999.all.mb58.gz).  A flat raw directory would let one
+    # overwrite the other.  Colliding names are stored as <parent dir>__<name>; a plain-named copy left by an earlier fetch
+    # (ambiguous: either source) is moved to _quarantine_name_collision/, never used.
+    dup = plan.filename.duplicated(keep=False)
+    local = [f"{u.rstrip('/').split('/')[-2]}__{n}" if is_dup else n for n, u, is_dup in zip(plan.filename, plan.url, dup)]
+    for n in sorted(set(plan.filename[dup])):
+        if (d / n).exists():
+            qd = d / "_quarantine_name_collision"; qd.mkdir(exist_ok=True)
+            (d / n).rename(qd / n)
+            log.warning("[%s] %s: ambiguous plain-named copy from an earlier fetch quarantined", cruise, n)
+    recs = [{"cruise": cdir_name(cruise), "filename": ln, "url": r.url, "advertised": int(r.advertised), "kind": "swath"}
+            for ln, r in zip(local, plan.itertuples())]
+    assert len(set(r["filename"] for r in recs)) == len(recs), f"{cruise}: local file names still collide"
     t0 = time.time()
     sessions = [requests.Session() for _ in range(workers)]
     with ThreadPoolExecutor(max_workers=workers) as ex:
