@@ -1,0 +1,56 @@
+{
+ "generated": "2026-10-03T17:39:17+00:00",
+ "lr_cruises_checked": [
+  "2009_Amundsen",
+  "AR26",
+  "AT37-13",
+  "AT42-06",
+  "Cal DIG I",
+  "EW0207",
+  "EW9801",
+  "EX1202L2",
+  "EX1402L2",
+  "FK151121",
+  "FK181031",
+  "KIWI10RR",
+  "KM0923",
+  "M127",
+  "NA076",
+  "NA080",
+  "NA090",
+  "RR1506",
+  "SO242/1",
+  "SO268/1",
+  "TN268",
+  "TN299",
+  "TN399"
+ ],
+ "n_dev_pairs": 45,
+ "plans": {
+  "stage_b": "reports/discovery/stage_b_file_plan_2026-06-22.csv",
+  "acq_r02": "reports_post_grl_review/ACQ-R02/fetch_plan/file_plan.csv"
+ },
+ "collisions": 1,
+ "cruises_with_collisions": [
+  "AR26"
+ ],
+ "rows": [
+  {
+   "lr_cruise": "AR26",
+   "filename": "9999.all.mb58.gz",
+   "plan": "stage_b_2026-06-22",
+   "n_urls": 2,
+   "urls": "https://data.ngdc.noaa.gov/platforms/ocean/ships/neil_armstrong/AR26/multibeam/data/version1/MB/em710/9999.all.mb58.gz | https://data.ngdc.noaa.gov/platforms/ocean/ships/neil_armstrong/AR26/multibeam/data/version1/MB/em122/9999.all.mb58.gz",
+   "advertised": "11534336 | 1229",
+   "stage_b_log": "em710:fetched:11138466.0; em122:fetched:11138466.0",
+   "acq_r01_r02_log": "em710:fetched:11138466:5b9786916bd5; em122:fetched:1275:9119747fe524",
+   "oak_file_size": 1275,
+   "content_length_per_url": "{\"em710\": 11138466, \"em122\": 1275}",
+   "oak_copy_is": "em122",
+   "fetch_manifest_entries": 2,
+   "fetch_manifest_sha256s": "5b9786916bd5,9119747fe524",
+   "pairs": "AR26__MGDS_31838"
+  }
+ ],
+ "code_commit": "c4c09fb8103aa70170ade1d7d50a627960afa090"
+}

@@ -1,0 +1,48 @@
+ACQ-R04 — HOLD from the read-only name-collision audit (steering ruling 2026-10-03)
+Sources: name_collision_audit.json / name_collision_audit.csv (src/acq_r04/audit_name_collisions.py; metadata only).
+Nothing was rebuilt.
+
+SCOPE
+  45 development / no-k pairs of manifest v2.1, on 23 LR cruises (lockbox and confirmatory rows excluded by designation
+  before any path was formed).
+  Plans checked:
+    - stage-B file plan stage_b_file_plan_2026-06-22.csv (-> stage-C union grids);
+    - ACQ-R02 fetch_plan/file_plan.csv (-> grid_lr.py grids);
+    - ACQ-R01 PANGAEA fetch log (M127/TAG): no duplicate names.
+  DISCOL and CCZ have no plan or log entries in these sources and were not examined. Cal DIG has no swath.
+
+RESULT: one collision, AR26 (pair AR26__MGDS_31838, development, expansion unit)
+  The file name 9999.all.mb58.gz is served from two NCEI sonar subdirectories of AR26 (RV Neil Armstrong):
+    MB/em710/9999.all.mb58.gz   11,138,466 bytes (Content-Length)
+    MB/em122/9999.all.mb58.gz        1,275 bytes
+  Both went into one flat directory, so only one survived each time.
+
+  Which copy each stage used:
+  - Stage C (June; dev lr.tif = stage-C union grid -> stage F):
+      stage_b_fetch_log.csv shows both URLs "fetched" with 11,138,466 bytes received.
+      The stage-B recovery report "restored" the em710 copy and diagnosed the 1,275 B as a "transient NCEI HEAD
+      glitch". That diagnosis was wrong: 1,275 B is the em122 copy's real size.
+      -> the development lr.tif was gridded from the em710 copy; the em122 copy (1,275 B) was not used.
+  - ACQ-R01 re-fetch to OAK raw_lr_swath/AR26/ (2026-09-29):
+      the OAK file is 1,275 bytes (os.stat) = the em122 copy.
+      fetch_manifest.json lists two 9999.all.mb58.gz entries with different sha256s (5b9786916bd5 = em710,
+      9119747fe524 = em122), but only one file exists.
+      -> ship_products_v1, _v2 and _v2_1 (all built 2026-09-30) record source file 9999.all.mb58.gz with sha
+         9119747fe524 (em122, 1,275 B). The em710 copy (11.1 MB) is missing from every AR26 product set.
+
+  Consequence:
+    - AR26's lr.tif and its contract products were built from different raw file sets.
+    - The products may lack soundings that lr.tif contains, or vice versa (metadata cannot tell whether the em710
+      9999 file has pings inside the pair's lr.tif window).
+    - The AR26 fetch manifest misdescribes what is on disk.
+  -> HOLD (per the ruling): "a development lr.tif or product set may have been built from overwritten files".
+
+NOT AFFECTED (by this audit)
+  - The other 21 NCEI-swath development cruises: no duplicate file names in their plans.
+  - TAG (PANGAEA M127): no duplicate names in the PANGAEA fetch log.
+  - The pretraining run: fixed in code (commit 6f06846). AR30-01, the only affected cruise processed so far, is being
+    re-fetched and re-gridded first in the relaunch.
+
+DECISION FOR STEERING
+  Whether to rebuild AR26 (re-fetch both copies under distinct names, then re-grid lr.tif and/or rebuild products)
+  or to treat the products as deficient (as done for NA080__MGDS_31289 in ACQ-R03). Nothing has been changed.
