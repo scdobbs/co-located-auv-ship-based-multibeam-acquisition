@@ -1,0 +1,49 @@
+ACQ-R04 — HOLD after batch 1 of the full run (2026-10-03, Saturday morning)
+Trigger: steering ruling of 2026-10-03, "Stop and report as a HOLD if any of those families yields zero kept blocks".
+Status: everything after batch 1 has been stopped. Nothing is lost: the fetch is resumable, and batch 2's 11 completed
+cruises stay on scratch.
+
+WHAT HAPPENED
+  Batch 1 started with 2 cruises from each family the pilot did not cover; some families had more cruises later in the
+  batch. Kept blocks, from each cruise's cruise_record.json in pretrain_v1_logs/:
+    SeaBeam family : KN153 21, KN172L09 16, B00207 3, VANC23MV 40 (HE0905 still running)  -> passes
+    Reson          : CC_BlockA05 0, LD-10-08-CB-PDCL 0, W00216 0     -> HOLD (every block dropped: median depth < 300 m)
+    EM7xx/shallow  : CE03_03 0, KM1404 0, NF-08-12-FKNMS 0           -> HOLD (drops: depth 168, fill 12)
+    other/unknown  : B00162 0, GEO11_05 0, B00273 0                  -> HOLD (drops: depth 14, fill 33)
+  This is not a gridding failure: no block failed in mbgrid. These are shelf and coastal surveys, removed by the
+  directive's 300 m depth floor (§3.3.4).
+  The gate job (46415370) records this formally in gate_batch1.json once the remaining batch-1 tasks finish.
+
+WHY IT MATTERS
+  Those three families are 99 of the 390 remaining cruises and 1.156 TB of the 2.942 TB still to download (39%):
+    Reson 38 cruises, 0.556 TB;  EM7xx/shallow 35 cruises, 0.537 TB;  other/unknown 26 cruises, 0.063 TB.
+  [queue_v1.csv]
+  Depth is known only for a few of them (ACQ-R01 .inf sample; pool_v1.csv depth_max_m): EM7xx 75th percentile
+  max depth 221 m (n=6); Reson and other n=5 each.
+
+OPTIONS (steering's call; none implemented)
+  A. Keep the 300 m floor and selection_v1 as is: download the 1.16 TB, and accept that these families contribute
+     few or no blocks.
+  B. Keep the 300 m floor, and re-select (selection_v2): require evidence a cruise reaches >= 300 m before
+     selection, or re-allocate those families' slots and bytes to the deep families. This changes the committed
+     selection and family balance.
+  C. Lower the depth floor for the pretraining corpus. Those blocks would have cells below the development range:
+     at 100 m depth, a 1 deg beam gives a 1.7 m cell.
+  D. Drop the three families from the corpus and continue with the other 291 cruises.
+
+ALSO FOUND (fixed in code, not yet re-run)
+  - File-name collisions on multi-sonar cruises: the same name served from several NCEI sonar subdirectories, e.g.
+    MB/em710/9999.all.mb58.gz and MB/em122/9999.all.mb58.gz. The flat raw directory let one overwrite the other.
+    AR30-01 (batch 1) failed loudly at decompression and was not miscounted as "no soundings".
+    11 of the 400 selected cruises are affected (13 names); none is in the pilot.
+    Fix (commit 6f06846): colliding names are stored as <subdir>__<name>, and ambiguous earlier copies are
+    quarantined, never used. AR30-01 needs a re-fetch and re-grid.
+  - Pilot re-grid with the development gridding chain: 9/10 done; AT39-06 still running. Interim on 7 cruises:
+    kept blocks 213 -> 217, cell sizes essentially unchanged, QA flags vertical_offset 7 -> 13 and
+    registration_shift 0 -> 3. Full before/after to follow.
+
+JOBS
+  still running: batch-1 gridding array 46415366 (deep and Hydrosweep cruises), pilot re-grid 46413185_6,
+                 gate 46415370 (pending)
+  cancelled:     batch-2 fetch 46415373 (stopped after 11 of 45 cruises); every batch 2-9 fetch and gridding job
+  Relaunch after the ruling: sbatch/acq_r04/launch_full.sh (with the queue revised per the ruling).
