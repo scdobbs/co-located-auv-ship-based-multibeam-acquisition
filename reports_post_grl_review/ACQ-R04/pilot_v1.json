@@ -1,0 +1,57 @@
+{
+ "generated": "2026-10-03T13:37:33+00:00",
+ "pilot_cruises": [
+  "EW0007",
+  "EW9702",
+  "SO92",
+  "EW0305",
+  "RUB320161220_area4",
+  "NBP0304A",
+  "AT39-06",
+  "PD19PR01",
+  "FG210027",
+  "SKQ201818S"
+ ],
+ "families": [
+  "Atlas Hydrosweep",
+  "ELAC",
+  "Kongsberg EM12x (deep)",
+  "Kongsberg EM30x"
+ ],
+ "n_ok": 10,
+ "pilot_raw_bytes": 55202373670,
+ "pilot_fetch_s": 2664.5,
+ "pilot_process_s": 29814.6,
+ "pilot_output_bytes": 248345325,
+ "pilot_blocks_kept": 985,
+ "fetch_rate_MBps": 20.72,
+ "process_s_per_GB_pooled": 540.1,
+ "process_s_per_GB_by_family": {
+  "Atlas Hydrosweep": 9509.8,
+  "ELAC": 1370.4,
+  "Kongsberg EM12x (deep)": 636.8,
+  "Kongsberg EM30x": 127.1
+ },
+ "output_bytes_per_raw_byte": 0.004498816056074133,
+ "concurrency_assumed": 16,
+ "extrapolation": {
+  "raw_download_TB": 2.997,
+  "fetch_wall_h": 40.2,
+  "processing_cpu_task_h": 421.3,
+  "processing_wall_h": 26.3,
+  "full_run_wall_h": 41.0,
+  "oak_output_GB": 13.5,
+  "blocks_kept_est": 53480
+ },
+ "limits": {
+  "raw_TB": 3.0,
+  "wall_h": 96.0,
+  "oak_GB": 600.0
+ },
+ "hold": {
+  "raw": false,
+  "wall": false,
+  "oak": false
+ },
+ "any_hold": false
+}

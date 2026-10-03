@@ -1,0 +1,11 @@
+cruise,family,basin,files,files_failed,raw_bytes,advertised_bytes,fetch_s,decompress_s,coverage_s,grid_s,products_s,process_wall_s,soundings,blocks_total,blocks_kept,block_status,output_bytes,failures,cruise_error
+EW0007,Atlas Hydrosweep,Atlantic,7,0,33788977,33659290,4.1,0.1,12.3,1202.2,333.9,1556.0,3612568,403,75,"{""drop_fill"": 255, ""kept"": 75, ""drop_depth"": 73}",4767223,0,
+EW9702,Atlas Hydrosweep,Gulf of Mexico/Caribbean,14,0,128962604,128724785,8.3,0.6,59.6,1436.1,184.4,1687.1,16234340,117,11,"{""drop_fill"": 76, ""drop_depth"": 30, ""kept"": 11}",21486770,0,
+SO92,Atlas Hydrosweep,Indian,104,0,49985739,49926142,14.3,0.3,26.8,1475.6,285.6,1794.1,3151146,103,39,"{""drop_fill"": 64, ""kept"": 39}",4383076,0,
+EW0305,Atlas Hydrosweep,Pacific,3170,0,857543076,857344414,396.1,5.1,2267.9,1937.8,906.1,5141.0,17035205,779,283,"{""drop_fill"": 447, ""kept"": 283, ""drop_depth"": 49}",42811121,0,
+RUB320161220_area4,ELAC,Southern,19,0,914298519,913327104,42.1,2.4,147.8,1096.2,0.0,1253.0,6694763,41,0,"{""drop_fill"": 38, ""drop_depth"": 3}",0,0,
+NBP0304A,Kongsberg EM12x (deep),Arctic,562,0,15679567830,15679161959,662.5,43.2,2402.6,757.9,191.8,3408.3,294638993,455,25,"{""drop_depth"": 306, ""drop_fill"": 124, ""kept"": 25}",16496748,0,
+AT39-06,Kongsberg EM12x (deep),Atlantic,233,0,5577843818,5583981773,251.8,12.0,563.5,5821.2,1814.6,8236.8,48648296,1276,489,"{""drop_fill"": 779, ""kept"": 489, ""drop_depth"": 8}",136910037,0,
+PD19PR01,Kongsberg EM12x (deep),Gulf of Mexico/Caribbean,63,0,218245902,217894091,15.8,0.7,111.9,575.2,185.4,875.7,2606104,45,6,"{""drop_depth"": 31, ""drop_fill"": 8, ""kept"": 6}",3322870,0,
+FG210027,Kongsberg EM12x (deep),Indian,39,0,1319624934,1321205760,57.2,4.2,320.6,1457.9,207.0,1996.0,8140604,162,57,"{""drop_fill"": 105, ""kept"": 57}",18167480,0,
+SKQ201818S,Kongsberg EM30x,Arctic,521,0,30422512271,30424474624,1212.3,76.0,2901.2,877.3,0.0,3866.6,720154463,316,0,"{""drop_depth"": 298, ""drop_fill"": 18}",0,0,
