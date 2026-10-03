@@ -1,0 +1,147 @@
+{
+ "generated": "2026-10-03T17:47:42+00:00",
+ "pair": "AR26__MGDS_31838",
+ "lr_tif_path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AR26__MGDS_31838/lr.tif",
+ "window_wesn": [
+  -74.74321034616266,
+  -74.56793948983203,
+  35.66997359833372,
+  35.790198927592755
+ ],
+ "margin_m": 5347.53955078125,
+ "lr_grid": {
+  "crs": "EPSG:32618",
+  "shape": [
+   88,
+   174
+  ],
+  "cell_m": 29.361984074294078
+ },
+ "copies": {
+  "em710": {
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/neil_armstrong/AR26/multibeam/data/version1/MB/em710/9999.all.mb58.gz",
+   "local": "/scratch/groups/hilley/auv_ship_colocated_bathy/acq_r04_ar26_check/AR26/em710__9999.all.mb58.gz",
+   "status": "fetched",
+   "content_length": 11138466,
+   "received": 11138466,
+   "bytes_match_content_length": true,
+   "gzip_ok": true,
+   "sha256": "5b9786916bd52addecf7c74b8964e08884b6a9f07f05500cd5da5f6240be73e9",
+   "manifest_sha256": "5b9786916bd52addecf7c74b8964e08884b6a9f07f05500cd5da5f6240be73e9",
+   "manifest_size": 11138466,
+   "sha256_matches_manifest": true,
+   "mblist_command": "(cd /lscratch/scdobbs/ar26_check && apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mblist -F58 -I em710__9999.all.mb58 -MA -R -74.743210/-74.567939/35.669974/35.790199 -O XYZDG,AFNM)",
+   "mblist_attempts": 1,
+   "soundings_in_window": 0,
+   "soundings_inside_lr_grid": 0,
+   "lr_cells_hit": 0,
+   "lr_cells_total": 15312,
+   "lr_cells_valid": 12617,
+   "frac_of_grid_cells": 0.0,
+   "frac_of_valid_lr_cells": 0.0,
+   "lr_valid_cells_hit": 0,
+   "pings_in_window": 0
+  },
+  "em122": {
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/neil_armstrong/AR26/multibeam/data/version1/MB/em122/9999.all.mb58.gz",
+   "local": "/scratch/groups/hilley/auv_ship_colocated_bathy/acq_r04_ar26_check/AR26/em122__9999.all.mb58.gz",
+   "status": "fetched",
+   "content_length": 1275,
+   "received": 1275,
+   "bytes_match_content_length": true,
+   "gzip_ok": true,
+   "sha256": "9119747fe52439cfb9284d1df7710f577e1fbbfb64f05cf93682232c30ead438",
+   "manifest_sha256": "9119747fe52439cfb9284d1df7710f577e1fbbfb64f05cf93682232c30ead438",
+   "manifest_size": 1275,
+   "sha256_matches_manifest": true,
+   "mblist_command": "(cd /lscratch/scdobbs/ar26_check && apptainer exec --bind /scratch,/home/groups,/oak /home/groups/hilley/containers/mbsystem_sandbox mblist -F58 -I em122__9999.all.mb58 -MA -R -74.743210/-74.567939/35.669974/35.790199 -O XYZDG,AFNM)",
+   "mblist_attempts": 1,
+   "soundings_in_window": 0,
+   "soundings_inside_lr_grid": 0,
+   "lr_cells_hit": 0,
+   "lr_cells_total": 15312,
+   "lr_cells_valid": 12617,
+   "frac_of_grid_cells": 0.0,
+   "frac_of_valid_lr_cells": 0.0,
+   "lr_valid_cells_hit": 0,
+   "pings_in_window": 0
+  }
+ },
+ "oak_file": {
+  "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/AR26/9999.all.mb58.gz",
+  "size": 1275
+ },
+ "manifest_subdir_counts": {
+  "em710": 4,
+  "em122": 7
+ },
+ "manifest_files": [
+  {
+   "file": "0000_20160207_155903_ShipName.all.mb58.gz",
+   "subdir": "em710",
+   "size": 16672872,
+   "sha256": "c2cc36d41d82"
+  },
+  {
+   "file": "0000_20180106_191726_Armstrong.all.mb58.gz",
+   "subdir": "em710",
+   "size": 21481420,
+   "sha256": "b1e9727a2633"
+  },
+  {
+   "file": "0001_20180106_191902_Armstrong.all.mb58.gz",
+   "subdir": "em710",
+   "size": 6634661,
+   "sha256": "a69824705c86"
+  },
+  {
+   "file": "9999.all.mb58.gz",
+   "subdir": "em710",
+   "size": 11138466,
+   "sha256": "5b9786916bd5"
+  },
+  {
+   "file": "0000_20160207_162844_ShipName.all.mb58.gz",
+   "subdir": "em122",
+   "size": 875696,
+   "sha256": "bca02f3f0651"
+  },
+  {
+   "file": "0000_20180117_114252_Armstrong.all.mb58.gz",
+   "subdir": "em122",
+   "size": 53898309,
+   "sha256": "48d6c895aa15"
+  },
+  {
+   "file": "0001_20160207_162852_ShipName.all.mb58.gz",
+   "subdir": "em122",
+   "size": 343868,
+   "sha256": "d75579a3aadf"
+  },
+  {
+   "file": "0001_20180117_121235_Armstrong.all.mb58.gz",
+   "subdir": "em122",
+   "size": 53566244,
+   "sha256": "d323e32df8d7"
+  },
+  {
+   "file": "0002_20160207_162856_ShipName.all.mb58.gz",
+   "subdir": "em122",
+   "size": 207810,
+   "sha256": "059298471d4b"
+  },
+  {
+   "file": "0002_20180117_124237_Armstrong.all.mb58.gz",
+   "subdir": "em122",
+   "size": 52798099,
+   "sha256": "ea95650d4f24"
+  },
+  {
+   "file": "9999.all.mb58.gz",
+   "subdir": "em122",
+   "size": 1275,
+   "sha256": "9119747fe524"
+  }
+ ],
+ "code_commit": "9680ff76f4108c9d8b59aa9c16bdb5c47f4970c5"
+}

@@ -46,3 +46,19 @@ NOT AFFECTED (by this audit)
 DECISION FOR STEERING
   Whether to rebuild AR26 (re-fetch both copies under distinct names, then re-grid lr.tif and/or rebuild products)
   or to treat the products as deficient (as done for NA080__MGDS_31289 in ACQ-R03). Nothing has been changed.
+
+RESOLUTION (2026-10-03, ruling "check before deciding") — HOLD CLOSED
+  Both copies re-fetched to scratch under distinct names. Each matches its Content-Length and its fetch-manifest sha256:
+    em710 11,138,466 B, sha 5b97...
+    em122      1,275 B, sha 9119...
+  Soundings inside the AR26__MGDS_31838 product window (V1.lr_window rule, the builder's mblist via the bounded
+  wrapper; lr.tif grid 88 x 174 cells at 29.4 m):
+    em710: 0 soundings, 0 pings, 0 / 15,312 cells
+    em122: 0
+  mbinfo (bounded wrapper) rules out a read failure:
+    em710: 460 records, 156,986 good beams, all at 32.86N 79.96W, depth 5-14 m, ~330 km from the window;
+    em122: 0 records.
+  Other AR26 files by NCEI sonar subdirectory: em710 3 (+ the 9999 file); em122 6 (+ the 9999 file).
+  -> No development lr.tif or product set lost soundings in the pair window.
+     The OAK fetch manifest and SHA256SUMS were corrected to match disk (ar26_manifest_correction.json;
+     sha256sum -c: 10/10 OK). Recorded in CHANGE_LEDGER.md. Nothing rebuilt.

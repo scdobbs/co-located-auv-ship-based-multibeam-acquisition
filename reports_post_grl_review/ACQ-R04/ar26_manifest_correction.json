@@ -1,0 +1,34 @@
+{
+ "generated": "2026-10-03T18:09:53+00:00",
+ "manifest": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/AR26/fetch_manifest.json",
+ "removed_entry": {
+  "filename": "9999.all.mb58.gz",
+  "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/neil_armstrong/AR26/multibeam/data/version1/MB/em710/9999.all.mb58.gz",
+  "size": 11138466,
+  "sha256": "5b9786916bd52addecf7c74b8964e08884b6a9f07f05500cd5da5f6240be73e9"
+ },
+ "before": {
+  "n_files_ok": 11,
+  "bytes_ok": 217618720
+ },
+ "after": {
+  "n_files_ok": 10,
+  "bytes_ok": 206480254
+ },
+ "sha256sum_c_rc": 0,
+ "sha256sum_c": [
+  "0000_20160207_155903_ShipName.all.mb58.gz: OK",
+  "0000_20180106_191726_Armstrong.all.mb58.gz: OK",
+  "0001_20180106_191902_Armstrong.all.mb58.gz: OK",
+  "0000_20160207_162844_ShipName.all.mb58.gz: OK",
+  "0000_20180117_114252_Armstrong.all.mb58.gz: OK",
+  "0001_20160207_162852_ShipName.all.mb58.gz: OK",
+  "0001_20180117_121235_Armstrong.all.mb58.gz: OK",
+  "0002_20160207_162856_ShipName.all.mb58.gz: OK",
+  "0002_20180117_124237_Armstrong.all.mb58.gz: OK",
+  "9999.all.mb58.gz: OK"
+ ],
+ "manifest_sizes_match_disk": true,
+ "manifest_sha256_after": "f06d46af51dd71111495bd6a012413cd712c44caf299ef0371a499ff1a5b1b73",
+ "SHA256SUMS_sha256_after": "cd36392fa4a7cd79a6e0fe96da7ec75cd815fe54a3dbcd31259453b3078a22b1"
+}

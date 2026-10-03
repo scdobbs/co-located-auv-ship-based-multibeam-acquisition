@@ -1,0 +1,38 @@
+{
+ "generated": "2026-10-03T18:06:32+00:00",
+ "copies": {
+  "em710": {
+   "attempts": 1,
+   "lines": [
+    "Number of Records:                         460",
+    "Bathymetry Data (400 beams):",
+    "Number of Beams:           184000",
+    "Number of Good Beams:      156986     85.32%",
+    "Number of Beams:           184000",
+    "Number of Good Beams:      156986     85.32%",
+    "Number of Good Pixels:     324436     34.44%",
+    "Start of Data:",
+    "End of Data:",
+    "Minimum Longitude:     -79.959524178   Maximum Longitude:     -79.959350566",
+    "Minimum Latitude:       32.860815995   Maximum Latitude:       32.861070853",
+    "Minimum Depth:           4.7836   Maximum Depth:          14.1568"
+   ]
+  },
+  "em122": {
+   "attempts": 1,
+   "lines": [
+    "Number of Records:                           0",
+    "Bathymetry Data (0 beams):",
+    "Number of Beams:                0",
+    "Number of Good Beams:           0      0.00%",
+    "Number of Beams:                0",
+    "Number of Good Beams:           0      0.00%",
+    "Number of Good Pixels:          0      0.00%",
+    "Start of Data:",
+    "End of Data:",
+    "Minimum Longitude:       0.000000000   Maximum Longitude:       0.000000000",
+    "Minimum Latitude:        0.000000000   Maximum Latitude:        0.000000000"
+   ]
+  }
+ }
+}
