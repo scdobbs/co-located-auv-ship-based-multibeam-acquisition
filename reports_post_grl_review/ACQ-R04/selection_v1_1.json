@@ -1,0 +1,53 @@
+{
+ "generated": "2026-10-03T17:37:31+00:00",
+ "code_commit": "c0ba2ac1881e100e3f8c4776025caa75c88bde2e",
+ "basis": "selection_v1 (seed 20261003), removal only, no new draw",
+ "selection_v1_sha256": "6db30469ce1a1e41c0bf88ede334f5d758c20628d474f52afed3770b68bc73ce",
+ "reason": "steering ruling 2026-10-03 (batch-1 HOLD, option D): removed under the 300 m depth floor (\u00a73.3.4); 9 of 9 tested cruises of the Reson, EM7xx/shallow and other/unknown families kept 0 blocks",
+ "families": [
+  "Reson",
+  "Kongsberg EM7xx/EM1xxx/EM2040 (shallow)",
+  "other/unknown"
+ ],
+ "tested_zero_yield": {
+  "CE03_03": 0,
+  "NF-08-12-FKNMS": 0,
+  "KM1404": 0,
+  "LD-10-08-CB-PDCL": 0,
+  "W00216": 0,
+  "CC_BlockA05": 0,
+  "GEO11_05": 0,
+  "B00273": 0,
+  "B00162": 0
+ },
+ "removed_n": 90,
+ "removed_bytes": 1108259954872,
+ "removed_by_family": {
+  "Reson": 35,
+  "Kongsberg EM7xx/EM1xxx/EM2040 (shallow)": 32,
+  "other/unknown": 23
+ },
+ "selection_v1_1_n": 310,
+ "selection_v1_1_bytes": 1888932835396,
+ "selection_v1_1_per_family": {
+  "Kongsberg EM12x (deep)": 124,
+  "SeaBeam family": 86,
+  "Kongsberg EM30x": 63,
+  "Atlas Hydrosweep": 27,
+  "Reson": 3,
+  "Kongsberg EM7xx/EM1xxx/EM2040 (shallow)": 3,
+  "other/unknown": 3,
+  "ELAC": 1
+ },
+ "queue_v1_1": {
+  "cruises": 271,
+  "batches": 7,
+  "bytes": 1674219984498,
+  "first": "AR30-01 (re-fetch + re-grid under the file-name collision fix, commit 6f06846)"
+ },
+ "sha256": {
+  "selection_v1_1.csv": "c605203b9f270f39e60afdf88f35b520e8fd0761bda468cd26e38bbd712e1885",
+  "selection_v1_1_removed.csv": "ceb8cbe746add7e7e45d8d366c86f26de26abb94189d9834ce74a2f0245fb029",
+  "queue_v1_1.csv": "f35a943694873a24e51db7a73bad1e9693f581d5e53d1d8f1ce9648c3fad79ba"
+ }
+}
