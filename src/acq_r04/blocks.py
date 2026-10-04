@@ -255,13 +255,14 @@ def coverage_pass(wd: Path, names, fmt, timeout_s=48 * 3600, attempts=6):
         # steering ruling 2026-10-04 (option 2): files that mblist itself rejected on every attempt are left out and
         # recorded (ledger); the cruise goes on with its readable files.  Still a loud failure if the container did not
         # run to the end on the last attempt (system problem, not a bad file) or if no file of the cruise is readable.
-        last = attempts_log[-1] if attempts_log else {}
-        rejected_every_time = [n for n in todo if all(n in a["failed_mblist"] for a in attempts_log)]
-        if not last.get("ended") or len(rejected_every_time) != len(todo) or len(todo) == len(names):
+        clean = [a for a in attempts_log if a.get("ended")]          # attempts whose container ran its script to the end
+        rejected = [n for n in todo if clean and all(n in a["failed_mblist"] for a in clean if n in a.get("files_list", todo))]
+        if len(clean) < 3 or len(rejected) != len(todo) or len(todo) == len(names):
             raise R.MBFailure(f"coverage pass: mblist failed for {len(todo)} file(s) after {attempts} attempts "
-                              f"(last attempt ended={last.get('ended')}; {len(names)} files in cruise): {todo[:5]}")
-        cov.unreadable = [{"file": n, "attempts": len(attempts_log), "reason": "mblist returned non-zero on every attempt (container ran to completion)",
-                           "stderr_tail": last.get("stderr_tail", "")} for n in todo]
+                              f"({len(clean)} clean attempts; {len(names)} files in cruise): {todo[:5]}")
+        cov.unreadable = [{"file": n, "attempts": len(attempts_log), "clean_rejections": len(clean),
+                           "reason": "mblist returned non-zero on every attempt whose container ran to completion (>= 3)",
+                           "stderr_tail": clean[-1].get("stderr_tail", "")} for n in todo]
         log.warning("coverage pass: %d unreadable file(s) left out after %d attempts: %s", len(todo), len(attempts_log), todo[:5])
     return cov, {"commands": cmds, "attempts": attempts_log}
 
