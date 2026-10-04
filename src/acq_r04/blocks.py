@@ -111,6 +111,7 @@ class Coverage:
         self.files = {}       # name -> {"n": int, "bounds": [w, s, e, n], "polar": int}
         self.polar = 0
         self.unparsed = 0     # mblist output lines with a non-numeric token (dropped, counted)
+        self.unreadable = []  # files mblist rejected on every attempt (left out; ledger)
 
     def add_file(self, name, arr):
         """arr: (n, 3) lon, lat, topo.  Adds every sounding to its block histogram."""
@@ -251,7 +252,17 @@ def coverage_pass(wd: Path, names, fmt, timeout_s=48 * 3600, attempts=6):
         if todo:
             time.sleep(15 * (attempt + 1))
     if todo:
-        raise R.MBFailure(f"coverage pass: mblist failed for {len(todo)} file(s) after {attempts} attempts: {todo[:5]}")
+        # steering ruling 2026-10-04 (option 2): files that mblist itself rejected on every attempt are left out and
+        # recorded (ledger); the cruise goes on with its readable files.  Still a loud failure if the container did not
+        # run to the end on the last attempt (system problem, not a bad file) or if no file of the cruise is readable.
+        last = attempts_log[-1] if attempts_log else {}
+        rejected_every_time = [n for n in todo if all(n in a["failed_mblist"] for a in attempts_log)]
+        if not last.get("ended") or len(rejected_every_time) != len(todo) or len(todo) == len(names):
+            raise R.MBFailure(f"coverage pass: mblist failed for {len(todo)} file(s) after {attempts} attempts "
+                              f"(last attempt ended={last.get('ended')}; {len(names)} files in cruise): {todo[:5]}")
+        cov.unreadable = [{"file": n, "attempts": len(attempts_log), "reason": "mblist returned non-zero on every attempt (container ran to completion)",
+                           "stderr_tail": last.get("stderr_tail", "")} for n in todo]
+        log.warning("coverage pass: %d unreadable file(s) left out after %d attempts: %s", len(todo), len(attempts_log), todo[:5])
     return cov, {"commands": cmds, "attempts": attempts_log}
 
 
@@ -517,6 +528,7 @@ def process(cruise, grid_workers=4, prod_workers=4, only_blocks=None, out_root: 
     rec["soundings"] = int(sum(f["n"] for f in cov.files.values())); rec["polar_soundings_dropped"] = int(cov.polar)
     rec["unparsed_lines_dropped"] = int(cov.unparsed)
     rec["files_without_soundings"] = sorted(n for n, f in cov.files.items() if f["n"] == 0)
+    rec["unreadable_files"] = [{**u, "file": gz_of.get(u["file"], u["file"])} for u in cov.unreadable]
     bw, bw_key = beamwidth_for(str(meta.instrument))
     rec["beamwidth_deg"] = bw; rec["beamwidth_key"] = bw_key
     guard = Guard()

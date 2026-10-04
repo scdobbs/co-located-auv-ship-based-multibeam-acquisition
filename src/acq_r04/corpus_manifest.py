@@ -37,6 +37,9 @@ def build(cruises=None):
             why = json.loads(fail.read_text())["error"] if fail.exists() else "not processed"
             led.append({"level": "cruise", "cruise": c, "item": c, "stage": "grid", "reason": why}); continue
         rec = json.loads(rj.read_text())
+        for u in rec.get("unreadable_files", []):
+            led.append({"level": "file", "cruise": c, "item": u["file"], "stage": "unreadable_skipped",
+                        "reason": f"{u['reason']}; {u['attempts']} attempts; left out of the cruise (ruling 2026-10-04 option 2)"})
         for f in rec.get("files_without_soundings", []):
             led.append({"level": "file", "cruise": c, "item": f, "stage": "coverage", "reason": "mblist returned no valid soundings"})
         if rec.get("polar_soundings_dropped"):
