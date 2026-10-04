@@ -1,0 +1,75 @@
+ACQ-R04 full run (selection_v1.1) — status, Saturday 2026-10-03, 19:25 PDT
+Sources: Slurm accounting (sacct/squeue); the per-cruise run records in
+$GROUP_SCRATCH/auv_ship_colocated_bathy/pretrain_v1_logs/<cruise>/ (cruise_record.json, cruise_failure.json);
+the job logs in logs/acq_r04_*.
+
+PROGRESS
+  Downloads (one fetch job at a time, <= 6 NCEI workers):
+    batches 1-3 complete: 135 cruises, 0 failed files
+    batch 4 running; batches 5-7 queued
+    about 1.2 TB of raw swath on group scratch so far
+  Gridding + contract products (serc partition):
+    66 cruises processed, 2,735 blocks kept
+    about 48 tasks running (~400 CPUs; serc guidance is ~1,000 CPUs per person)
+  Yields by family (cruises processed / blocks kept):
+    Kongsberg EM12x (deep)   17 / 1,103
+    Atlas Hydrosweep         11 /   968
+    SeaBeam family           14 /   337
+    Kongsberg EM30x          14 /   327
+    Reson 3 / 0, EM7xx 3 / 0, other 3 / 0  (the zero-yield batch-1 cruises kept in the ledger under selection_v1.1)
+    ELAC 1 / 0                             (pilot)
+
+FAILURES — 12 cruises. All failed loudly and are recorded; none was silently counted as "no soundings".
+
+  1. Scratch filesystem I/O errors on serc nodes (8 cruises). NOT re-run: this looks like a system fault, and
+     Sherlock's rules say not to work around one.
+       sh03-14n21, five tasks of job 46422951 failing at the same moment ("BrokenPipeError: [Errno 108] Cannot send
+         after transport endpoint shutdown" / "OSError: [Errno 5] Input/output error"):
+         FS200206, Heceta, EW9408, MGL1308, MV1217
+       sh03-14n17, ~16:12, "OSError: [Errno 5] Input/output error" writing grid.tif:  M31L2
+       sh03-09n16, ~17:50, "RasterioIOError: Write failed":                          FG210025
+       sh03-09n28, ~18:00, "RasterioIOError: Write failed":                          VANC11MV
+     Other tasks on other nodes wrote to the same directories without problems over the same period.
+
+  2. Bugs in my coverage-pass parser (2 cruises). FIXED in code (commit after 2401754); the batches that have not
+     started yet pick up the fix.
+       EX2205   — a failed mblist left its last line without a newline, so the '#ERR' marker was glued to a
+                  sounding line (' -73#ERR 0006_...gsf.mb121'). Fix: markers now start on a fresh line.
+       KN199-02 — a non-numeric token in the mblist output broke the strict float parse. Fix: fall back to numeric
+                  coercion, dropping those lines and counting them (unparsed_lines_dropped in the cruise record).
+     Both cruises need a re-run with the fixed code.
+
+  3. Product directory vanished during the product build (4 blocks of NBP0402; its other 70 kept blocks are fine).
+       Blocks 01S_E038_N0221, 01S_E039_N0222, 60S_E060_N0221, 60S_E061_N0221: the ship_products_v2_1/ directory
+       disappeared between writing the rasters and writing qa_shift_surface.csv.
+       All 4 blocks sit on the antimeridian (UTM zones 1S / 60S), and the job ran on sh03-14n22, next to the node
+       that lost scratch. Cause unexplained: possibly the same filesystem trouble, possibly an antimeridian edge case.
+
+  4. AR30-01 (first launch, file-name collision): superseded. It was re-fetched under the collision fix and
+     re-processed in the relaunch.
+
+EARLIER TODAY (already handled)
+  - HE0905, MV1210, NBP0402 (first launch's batch 1) were cancelled and re-queued as job 46426099:
+      HE0905: a stalled container start waiting out a 12 h mbgrid batch timeout (now 3 h);
+      MV1210 / NBP0402: pinned at the 16 GB memory request.
+    The pending gridding arrays were raised to 48 GB; the re-queued tasks run with 64 GB.
+
+DRAFT SUPPORT MESSAGE (for Steve to review and send to srcc-support@stanford.edu if he chooses)
+
+  Subject: Intermittent /scratch I/O errors from serc nodes, 2026-10-03
+
+  Hi, several of my Slurm jobs on the serc partition hit I/O errors on /scratch (/scratch/groups/hilley) on
+  Saturday 3 Oct (Pacific time):
+  - sh03-14n21: five tasks of job 46422951 failed at the same time with "BrokenPipeError: [Errno 108] Cannot send
+    after transport endpoint shutdown" / "OSError: [Errno 5] Input/output error"
+  - sh03-14n17 at ~16:12: "OSError: [Errno 5] Input/output error" writing a GeoTIFF (job array 46422944)
+  - sh03-09n16 at ~17:50 and sh03-09n28 at ~18:00: "Write failed" writing GeoTIFFs (job arrays 46422948 / 46422944)
+  Other tasks on other nodes wrote to the same directories without problems over the same period. Could you check
+  whether these nodes had Lustre client trouble? Thanks, Stephen Dobbs (scdobbs)
+
+DECISION FOR STEVE
+  1. Keep going (recommended): the pipeline continues; the 8 filesystem-affected cruises wait for a re-run once the
+     problem is understood; new failures keep being recorded the same way.
+  2. Pause: hold every job that has not started; running tasks finish; nothing new starts until Steve says so.
+  Either way, the 2 parser-bug cruises (EX2205, KN199-02) and NBP0402's 4 blocks need a re-run before the corpus
+  manifest is built.
