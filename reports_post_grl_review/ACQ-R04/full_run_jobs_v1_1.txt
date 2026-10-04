@@ -8,3 +8,4 @@ batch_07 fetch=46422965 blocks=46422966 n=1
 rerun_01 blocks=46426099 n=3 (HE0905, MV1210, NBP0402: old batch-1 tasks 0/8/9 cancelled — memory cap 16G / stalled mbgrid retry)
 rerun_02 blocks=46448324 n=2 (EX2205, KN199-02: coverage-parser bugs, fixed in code)
 node_run_01 nodes=46496574 n=16 x 32 CPUs (183 cruises)
+rerun_03 blocks=46498904 n=1 (RB-20-02: argv limit, fixed)
