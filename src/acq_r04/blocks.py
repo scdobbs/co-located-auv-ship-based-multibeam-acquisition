@@ -200,7 +200,9 @@ def coverage_pass(wd: Path, names, fmt, timeout_s=48 * 3600, attempts=6):
             break
         script = "for f in " + " ".join(shlex.quote(n) for n in todo) + \
                  f"; do printf '\\n#F %s\\n' \"$f\"; mblist -F{fmt} -I \"$f\" -MA -OXYZ || printf '\\n#ERR %s\\n' \"$f\"; done; printf '\\n#F __END__\\n'"
-        cmd = ["apptainer", "exec", *C.BIND, C.SANDBOX, "sh", "-c", script]
+        sp = wd / f"coverage_attempt{attempt + 1}.sh"          # script in a file: one argv string is capped at 128 KB
+        sp.write_text(script + "\n")
+        cmd = ["apptainer", "exec", *C.BIND, C.SANDBOX, "sh", sp.name]
         cmds.append(f"(cd {wd} && apptainer exec {' '.join(C.BIND)} {C.SANDBOX} sh -c 'for f in <{len(todo)} files>; do mblist -F{fmt} -I $f -MA -OXYZ; done')")
         t0 = time.time()
         p = subprocess.Popen(cmd, cwd=str(wd), stdout=subprocess.PIPE, stderr=subprocess.PIPE, start_new_session=True)
@@ -390,8 +392,10 @@ def run_mbgrid_batch(wd: Path, jobs, fmt, timeout_s=3 * 3600, attempts=6):
             dl.write_text("".join(f"{f} {fmt}\n" for f in files))
             lines.append(f"{' '.join(shlex.quote(a) for a in args)} > log_{bid}.txt 2>&1; echo \"#RC {bid} $?\"")
         script = "\n".join(lines) + "\necho '#RC __END__ 0'"
+        sp = wd / f"mbgrid_batch_{todo[0][0]}_a{attempt + 1}.sh"   # script in a file (argv-length limit)
+        sp.write_text(script + "\n")
         try:
-            out, _, _ = R.mb_bounded(["sh", "-c", script], wd, timeout=timeout_s, attempts=1)
+            out, _, _ = R.mb_bounded(["sh", sp.name], wd, timeout=timeout_s, attempts=1)
             text = out["stdout"] or ""
         except R.MBFailure as e:
             text = ""; log.warning("mbgrid batch attempt %d failed: %s", attempt + 1, str(e)[:300])
