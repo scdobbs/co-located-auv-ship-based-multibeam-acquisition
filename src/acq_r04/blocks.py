@@ -110,6 +110,7 @@ class Coverage:
         self.blocks = {}      # (zc, ei, ni) -> {"n": int, "off": int, "hist": np.ndarray(int64)}
         self.files = {}       # name -> {"n": int, "bounds": [w, s, e, n], "polar": int}
         self.polar = 0
+        self.unparsed = 0     # mblist output lines with a non-numeric token (dropped, counted)
 
     def add_file(self, name, arr):
         """arr: (n, 3) lon, lat, topo.  Adds every sounding to its block histogram."""
@@ -173,6 +174,20 @@ def _events(buf: bytes):
     return ev
 
 
+def _parse_xyz(x: bytes, cov) -> np.ndarray:
+    """lon/lat/topo lines -> float array.  Fast path float64; if any token is not numeric (seen on KN199-02), coerce
+    and drop those lines, counting them in cov.unparsed (recorded in the cruise record, never silent)."""
+    try:
+        return pd.read_csv(io.BytesIO(x), sep="\t", header=None, names=["lon", "lat", "topo"], dtype="float64",
+                           engine="c", on_bad_lines="skip").to_numpy()
+    except ValueError:
+        d = pd.read_csv(io.BytesIO(x), sep="\t", header=None, names=["lon", "lat", "topo"], dtype=str, engine="c", on_bad_lines="skip")
+        d = d.apply(pd.to_numeric, errors="coerce")
+        bad = d.isna().any(axis=1)
+        cov.unparsed += int(bad.sum())
+        return d[~bad].to_numpy(dtype="float64")
+
+
 def coverage_pass(wd: Path, names, fmt, timeout_s=48 * 3600, attempts=6):
     """One streamed container call over all files ('#F name' before each file's mblist output, '#ERR name' after a
     failed mblist, '#F __END__' at the end).  A file's soundings are committed only when the next '#F' marker closes
@@ -184,7 +199,7 @@ def coverage_pass(wd: Path, names, fmt, timeout_s=48 * 3600, attempts=6):
         if not todo:
             break
         script = "for f in " + " ".join(shlex.quote(n) for n in todo) + \
-                 f"; do printf '#F %s\\n' \"$f\"; mblist -F{fmt} -I \"$f\" -MA -OXYZ || printf '#ERR %s\\n' \"$f\"; done; printf '#F __END__\\n'"
+                 f"; do printf '\\n#F %s\\n' \"$f\"; mblist -F{fmt} -I \"$f\" -MA -OXYZ || printf '\\n#ERR %s\\n' \"$f\"; done; printf '\\n#F __END__\\n'"
         cmd = ["apptainer", "exec", *C.BIND, C.SANDBOX, "sh", "-c", script]
         cmds.append(f"(cd {wd} && apptainer exec {' '.join(C.BIND)} {C.SANDBOX} sh -c 'for f in <{len(todo)} files>; do mblist -F{fmt} -I $f -MA -OXYZ; done')")
         t0 = time.time()
@@ -205,8 +220,7 @@ def coverage_pass(wd: Path, names, fmt, timeout_s=48 * 3600, attempts=6):
             for kind, x in _events(buf):
                 if kind == "data":
                     if cur is not None and cur != "__END__" and cur not in failed and x.strip():
-                        per.append(pd.read_csv(io.BytesIO(x), sep="\t", header=None, names=["lon", "lat", "topo"], dtype="float64",
-                                               engine="c", on_bad_lines="skip").to_numpy())
+                        per.append(_parse_xyz(x, cov))
                 elif kind == "err":
                     failed.add(x)
                     if x == cur:
@@ -493,6 +507,7 @@ def process(cruise, grid_workers=4, prod_workers=4, only_blocks=None, out_root: 
     t = time.time(); cov, cov_cmds = coverage_pass(wd, loc, fmt); rec["coverage_s"] = round(time.time() - t, 1)
     rec["coverage"] = cov_cmds
     rec["soundings"] = int(sum(f["n"] for f in cov.files.values())); rec["polar_soundings_dropped"] = int(cov.polar)
+    rec["unparsed_lines_dropped"] = int(cov.unparsed)
     rec["files_without_soundings"] = sorted(n for n, f in cov.files.items() if f["n"] == 0)
     bw, bw_key = beamwidth_for(str(meta.instrument))
     rec["beamwidth_deg"] = bw; rec["beamwidth_key"] = bw_key
