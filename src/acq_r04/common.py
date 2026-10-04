@@ -87,23 +87,25 @@ def mb_bounded(args, cwd, timeout=2400, attempts=6, stdout_path: Path | None = N
     cmd = ["apptainer", "exec", *C.BIND, C.SANDBOX, *[str(a) for a in args]]
     last = None
     for attempt in range(attempts):
+        fo = open(stdout_path, "wb") if stdout_path is not None else None
+        p = subprocess.Popen(cmd, cwd=str(cwd), stdout=fo if fo else subprocess.PIPE, stderr=subprocess.PIPE,
+                             start_new_session=True)       # own process group: a timeout kills starter + fuse mount too
         try:
-            if stdout_path is not None:
-                with open(stdout_path, "wb") as fo:
-                    p = subprocess.run(cmd, cwd=str(cwd), stdout=fo, stderr=subprocess.PIPE, timeout=timeout)
-                out = None
-            else:
-                p = subprocess.run(cmd, cwd=str(cwd), capture_output=True, timeout=timeout)
-                out = p.stdout.decode(errors="replace")
-            err = p.stderr.decode(errors="replace")
+            o, e = p.communicate(timeout=timeout)
+            out = None if fo else o.decode(errors="replace")
+            err = e.decode(errors="replace")
             last = {"rc": p.returncode, "stderr": err[-600:], "stdout": out}
             if p.returncode in ok_rc:
                 return last, attempt + 1, " ".join(cmd)
         except subprocess.TimeoutExpired:
-            last = {"rc": -9, "stderr": f"timeout after {timeout} s", "stdout": None}
+            C.killpg_quietly(p); C.reap_bounded(p)
+            last = {"rc": -9, "stderr": f"timeout after {timeout} s (process group killed)", "stdout": None}
+        finally:
+            if fo:
+                fo.close()
         time.sleep(15 * (attempt + 1))
-    raise MBFailure(f"MB-System call failed after {attempts} attempts (cwd={cwd}): {' '.join(map(str, args))[:300]} "
-                    f"-> rc={last['rc']} stderr={last['stderr'][-300:]!r}")
+    raise MBFailure(f"MB-System call failed after {attempts} attempts: rc={last['rc']} stderr={last['stderr'][-300:]!r} "
+                    f"(cwd={cwd}): {' '.join(map(str, args))[:300]}")
 
 
 def mb_cmdline(args) -> str:

@@ -200,10 +200,50 @@ def git_commit() -> str:
         return "unknown"
 
 
+def killpg_quietly(p) -> None:
+    """Kill a child's whole process group (apptainer starter + fuse-overlayfs + the MB-System program)."""
+    import signal
+    try:
+        os.killpg(os.getpgid(p.pid), signal.SIGKILL)
+    except (ProcessLookupError, PermissionError):
+        pass
+
+
+def reap_bounded(p, wait_s: float = 30.0):
+    """After killpg: collect remaining output for at most wait_s, then close the pipes and stop waiting.  A descendant
+    that left the process group (e.g. under `timeout`) can hold a pipe open; an unbounded communicate() would hang."""
+    try:
+        return p.communicate(timeout=wait_s)
+    except subprocess.TimeoutExpired:
+        for f in (p.stdout, p.stderr):
+            try:
+                if f:
+                    f.close()
+            except Exception:
+                pass
+        try:
+            p.wait(timeout=wait_s)
+        except subprocess.TimeoutExpired:
+            pass
+        return None, None
+
+
 def mb(args, **kw) -> subprocess.CompletedProcess:
-    """Run an MB-System command inside the pinned Apptainer sandbox."""
+    """Run an MB-System command inside the pinned Apptainer sandbox.
+
+    ACQ-R04 (2026-10-04): the container runs in its own session; on a timeout the WHOLE process group is killed and
+    TimeoutExpired is re-raised (same interface as subprocess.run).  Killing only the `apptainer` parent left hung
+    starters and fuse-overlayfs mounts behind, which accumulated on shared nodes."""
     cmd = ["apptainer", "exec", *BIND, SANDBOX, *args]
-    return subprocess.run(cmd, capture_output=True, text=True, **kw)
+    timeout = kw.pop("timeout", None)
+    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, start_new_session=True, **kw)
+    try:
+        out, err = p.communicate(timeout=timeout)
+    except subprocess.TimeoutExpired:
+        killpg_quietly(p)
+        reap_bounded(p)
+        raise
+    return subprocess.CompletedProcess(cmd, p.returncode, out, err)
 
 
 def mb_cmdline(args) -> str:

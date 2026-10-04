@@ -1,0 +1,18 @@
+{
+ "generated": "2026-10-04T16:02:57+00:00",
+ "selection_v1_1": 310,
+ "done": 119,
+ "held": {
+  "FS200206": "scratch I/O (sh03-14n21)",
+  "Heceta": "scratch I/O (sh03-14n21)",
+  "EW9408": "scratch I/O (sh03-14n21)",
+  "MGL1308": "scratch I/O (sh03-14n21)",
+  "MV1217": "scratch I/O (sh03-14n21)",
+  "M31L2": "scratch I/O (sh03-14n17)",
+  "FG210025": "scratch I/O (sh03-09n16)",
+  "VANC11MV": "scratch I/O (sh03-09n28)",
+  "EX2205": "60 EM304 GSF files unreadable by mblist after 6 attempts (MBFailure)"
+ },
+ "remaining": 183,
+ "remaining_bytes": 1292615624683
+}

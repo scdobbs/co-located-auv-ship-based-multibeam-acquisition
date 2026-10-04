@@ -203,7 +203,7 @@ def coverage_pass(wd: Path, names, fmt, timeout_s=48 * 3600, attempts=6):
         cmd = ["apptainer", "exec", *C.BIND, C.SANDBOX, "sh", "-c", script]
         cmds.append(f"(cd {wd} && apptainer exec {' '.join(C.BIND)} {C.SANDBOX} sh -c 'for f in <{len(todo)} files>; do mblist -F{fmt} -I $f -MA -OXYZ; done')")
         t0 = time.time()
-        p = subprocess.Popen(cmd, cwd=str(wd), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        p = subprocess.Popen(cmd, cwd=str(wd), stdout=subprocess.PIPE, stderr=subprocess.PIPE, start_new_session=True)
         err_buf = []
         th = threading.Thread(target=lambda: err_buf.append(p.stderr.read()), daemon=True); th.start()
         cur, carry, failed, done, per = None, b"", set(), set(), []
@@ -211,7 +211,7 @@ def coverage_pass(wd: Path, names, fmt, timeout_s=48 * 3600, attempts=6):
         while True:
             chunk = p.stdout.read(1 << 26)
             if time.time() - t0 > timeout_s:
-                p.kill(); timed_out = True; break
+                C.killpg_quietly(p); timed_out = True; break
             if not chunk:
                 break
             buf = carry + chunk
@@ -233,7 +233,11 @@ def coverage_pass(wd: Path, names, fmt, timeout_s=48 * 3600, attempts=6):
                             cov.files.setdefault(cur, {"n": 0, "bounds": None, "polar": 0})
                         done.add(cur)
                     cur, per = x, []
-        p.wait(); th.join(timeout=60)
+        if timed_out:
+            C.reap_bounded(p)
+        else:
+            p.wait()
+        th.join(timeout=60)
         stderr = (err_buf[0] if err_buf else b"").decode(errors="replace")[-400:]
         ended = cur == "__END__"
         attempts_log.append({"attempt": attempt + 1, "files": len(todo), "committed": len(done), "failed_mblist": sorted(failed),
