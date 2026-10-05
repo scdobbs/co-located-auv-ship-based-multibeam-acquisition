@@ -1,0 +1,17 @@
+{
+ "generated": "2026-10-05T16:32:16+00:00",
+ "done": 148,
+ "held": {
+  "FS200206": "scratch I/O (sh03-14n21)",
+  "Heceta": "scratch I/O (sh03-14n21)",
+  "EW9408": "scratch I/O (sh03-14n21)",
+  "MGL1308": "scratch I/O (sh03-14n21)",
+  "MV1217": "scratch I/O (sh03-14n21)",
+  "M31L2": "scratch I/O (sh03-14n17)",
+  "FG210025": "scratch I/O (sh03-09n16)",
+  "VANC11MV": "scratch I/O (sh03-09n28)"
+ },
+ "remaining": 155,
+ "remaining_bytes": 1044856800039,
+ "change": "sandbox staged to node-local disk (storage rule); 3 cruises per node"
+}

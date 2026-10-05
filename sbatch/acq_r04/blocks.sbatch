@@ -10,6 +10,7 @@
 set -uo pipefail
 module load python/3.12.1 openblas/0.3.28
 cd /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition
+source sbatch/acq_r04/stage_sandbox.sh
 PY=/home/users/scdobbs/bathy_diffusion_env/bin/python
 CRUISE=$(sed -n "$((SLURM_ARRAY_TASK_ID+1))p" "$1")
 echo "host=$(hostname) commit=$(git rev-parse --short HEAD) cruise=$CRUISE"; df -h "$L_SCRATCH" | tail -1

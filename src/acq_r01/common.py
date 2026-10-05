@@ -35,7 +35,11 @@ FETCH_LIST = REPO / "reports/stage_b_fetch_list_2026-06-22.csv"
 
 # MB-System (pinned; see reports/mbsystem_build_pin.txt)
 MBSYSTEM_VERSION = "5.8.2beta06"
-SANDBOX = "/home/groups/hilley/containers/mbsystem_sandbox"
+SANDBOX_CANONICAL = "/home/groups/hilley/containers/mbsystem_sandbox"
+# ACQ-R04 (2026-10-05): jobs stage the sandbox to node-local $L_SCRATCH_JOB (one tarball from $GROUP_SCRATCH) and point
+# ACQ_MB_SANDBOX at the copy, so container starts never read their root filesystem from $GROUP_HOME (NFS) — Sherlock
+# storage rule: no intensive job I/O on $HOME/$GROUP_HOME.  Same files, same digest.
+SANDBOX = os.environ.get("ACQ_MB_SANDBOX", SANDBOX_CANONICAL)
 CONTAINER_DIGEST = "sha256:106f502d9f97ee0e9f5d889726320d1ae73a95fb102069e357a0bb0b35b39668"
 BIND = ["--bind", "/scratch,/home/groups,/oak"]
 
