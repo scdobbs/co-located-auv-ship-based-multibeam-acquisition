@@ -1,7 +1,8 @@
 """ACQ-R04 §3.5 — corpus manifest + failure ledger, from the persisted per-cruise records and block directories.
 
 pretrain_manifest_v1.parquet: one row per kept block (cruise, block, stratum, instrument family, basin, year, depth,
-cell, fill, products usable + flags, OAK block directory).  failure_ledger_v1.csv: every selected cruise, file or
+cell, fill, products usable + flags, OAK location: oak_tar + tar_member_dir, and grid_vsitar for direct GDAL reads —
+per-cruise tar layout, decision 2026-10-06).  failure_ledger_v1.csv: every selected cruise, file or
 block that was skipped, failed or dropped, with its reason (fetch failures, cruises not processed, files without
 soundings, polar soundings, blocks dropped by depth / guard / fill, mbgrid and product failures).
 Usage: python -m src.acq_r04.corpus_manifest [--version 1] [--remove-blocks file.csv --reason "..."]
@@ -68,7 +69,8 @@ def build(cruises=None):
                          "qa_shift_argmin_cells": json.dumps(qa.get("shift_argmin_cells")), "qa_gain_m": qa.get("gain_m"),
                          "qa_n_common_cells": qa.get("n_common_cells"), "grid_mode": b.get("grid_mode"),
                          "grid_tif_sha256": b["grid_tif_sha256"],
-                         "block_dir": str(R.OAK_OUT / cd / b["block"])})
+                         "oak_tar": str(R.OAK_OUT / "blocks" / f"{cd}.tar"), "tar_member_dir": f"{cd}/{b['block']}",
+                         "grid_vsitar": f"/vsitar/{R.OAK_OUT / 'blocks' / f'{cd}.tar'}/{cd}/{b['block']}/grid.tif"})
     return pd.DataFrame(rows), pd.DataFrame(led)
 
 

@@ -86,8 +86,17 @@ def cmp(a_path, b_path):
 
 def repro_one(row, root: Path):
     cd = B.cdir_name(row.cruise)
-    pdir = root / cd / row.block
-    bj = json.loads((pdir / "block.json").read_text())
+    if root == R.OAK_OUT:                 # persisted copy = per-cruise tar on OAK (decision 2026-10-06): read in place
+        import tarfile
+        tarp = R.OAK_OUT / "blocks" / f"{cd}.tar"
+        with tarfile.open(tarp) as tf:
+            bj = json.loads(tf.extractfile(f"{cd}/{row.block}/block.json").read())
+        pdir = f"/vsitar/{tarp}/{cd}/{row.block}"
+        prod_names = [f"{n}.tif" for n in ("ship_beam_angle", "ship_count", "ship_mean_regrid", "ship_median_regrid", "ship_rsd", "ship_sd", "ship_xtrack_frac")]
+    else:
+        pdir = root / cd / row.block
+        bj = json.loads((pdir / "block.json").read_text())
+        prod_names = sorted(p.name for p in (pdir / "ship_products_v2_1").glob("*.tif"))
     zc, ei, ni = B.parse_block_id(row.block)
     raw = R.PRETRAIN_RAW / cd
     fman = json.loads((raw / "fetch_manifest.json").read_text())
@@ -117,13 +126,13 @@ def repro_one(row, root: Path):
     else:
         B.grd_to_tif(wd / f"g_{row.block}.grd", tdir / "grid.tif", B.zone_epsg(zc))
     (tdir / "lr.tif").symlink_to("grid.tif")
-    rec["grid.tif"] = cmp(pdir / "grid.tif", tdir / "grid.tif")
+    rec["grid.tif"] = cmp(f"{pdir}/grid.tif", tdir / "grid.tif")
     pr = B.run_products(row.cruise, row.block + "_repro", tdir, bj["files"], fman["files"], R.WORK_LOGS / cd / "repro")
-    for f in sorted((pdir / "ship_products_v2_1").glob("*.tif")):
-        rec[f.name] = cmp(f, tdir / "ship_products_v2_1" / f.name)
+    for name in prod_names:
+        rec[name] = cmp(f"{pdir}/ship_products_v2_1/{name}", tdir / "ship_products_v2_1" / name)
     rec["products_usable_persisted"] = bj.get("products", {}).get("usable"); rec["products_usable_repro"] = pr["usable"]
     shutil.rmtree(wd, ignore_errors=True)
-    figure(pdir, R.REPORT_DIR / "qc" / f"{cd}__{row.block}.png",
+    figure(tdir, R.REPORT_DIR / "qc" / f"{cd}__{row.block}.png",
            f"{row.cruise} {row.block} — {row.instrument_family}, depth {bj['median_depth_m']:.0f} m, cell {bj['cell_m']:.1f} m, fill {bj['fill']:.2f}")
     return rec
 
