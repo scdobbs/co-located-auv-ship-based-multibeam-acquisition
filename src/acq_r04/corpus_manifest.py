@@ -24,8 +24,12 @@ def build(cruises=None):
     sel = pd.read_csv(R.REPORT_DIR / "selection_v1.csv")
     cruises = cruises if cruises is not None else sel.cruise.tolist()
     rows, led = [], []
+    rm_v11 = R.REPORT_DIR / "selection_v1_1_removed.csv"
+    removed_v11 = pd.read_csv(rm_v11).set_index("cruise").reason.to_dict() if rm_v11.exists() else {}
     for c in cruises:
         cd = cdir_name(c); lg = R.WORK_LOGS / cd
+        if c in removed_v11:
+            led.append({"level": "cruise", "cruise": c, "item": c, "stage": "removed_selection_v1_1", "reason": removed_v11[c]}); continue
         fj = lg / "fetch.json"
         if not fj.exists():
             led.append({"level": "cruise", "cruise": c, "item": c, "stage": "fetch", "reason": "not fetched"}); continue
