@@ -16,3 +16,4 @@ node_run_02 nodes=46634673 n=16 x 32 CPUs, 3 cruises/node, sandbox on L_SCRATCH_
 cancelled node_run_02 remainder Tue 09:43: 6 cruises (FK210206, TN358, TN338, AT32, MSM43, HLY10TC) stuck in repeated 3 h mbgrid batch timeouts — per-block file selection by whole-file bbox
 node_run_03 nodes=46788751 n=6 x 32 CPUs, 1 cruise/node, grid 4 + prod 1 (exact file selection)
 node_run_03 re-submitted as non-exclusive blocks=46793765 n=6 (8 CPU / 64G each; serc had no free whole nodes)
+rerun_06 blocks=46809722 n=8 (the 8 cruises held since the 2026-10-03 scratch I/O errors; Steve: go)
