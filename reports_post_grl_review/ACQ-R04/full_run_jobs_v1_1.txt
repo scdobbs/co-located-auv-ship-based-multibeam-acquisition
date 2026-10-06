@@ -17,3 +17,4 @@ cancelled node_run_02 remainder Tue 09:43: 6 cruises (FK210206, TN358, TN338, AT
 node_run_03 nodes=46788751 n=6 x 32 CPUs, 1 cruise/node, grid 4 + prod 1 (exact file selection)
 node_run_03 re-submitted as non-exclusive blocks=46793765 n=6 (8 CPU / 64G each; serc had no free whole nodes)
 rerun_06 blocks=46809722 n=8 (the 8 cruises held since the 2026-10-03 scratch I/O errors; Steve: go)
+wrap-up: manifest=46823513 persist=46823514 checkexcl=46823515 repro=46823517 tables=46823519 (after FK210206 46793765_0)
