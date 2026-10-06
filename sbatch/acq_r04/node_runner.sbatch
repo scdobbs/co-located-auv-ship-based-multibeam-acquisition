@@ -15,4 +15,4 @@ module load python/3.12.1 openblas/0.3.28
 cd /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition
 source sbatch/acq_r04/stage_sandbox.sh
 echo "host=$(hostname) commit=$(git rev-parse --short HEAD) slot=$SLURM_ARRAY_TASK_ID/$2"; df -h "$L_SCRATCH" | tail -1
-/home/users/scdobbs/bathy_diffusion_env/bin/python -m src.acq_r04.node_runner --list "$1" --slot "$SLURM_ARRAY_TASK_ID" --nslots "$2" --parallel 3; echo "runner exit=$?"
+/home/users/scdobbs/bathy_diffusion_env/bin/python -m src.acq_r04.node_runner --list "$1" --slot "$SLURM_ARRAY_TASK_ID" --nslots "$2" --parallel ${PARALLEL:-3} --grid-workers ${GRID_WORKERS:-2} --prod-workers ${PROD_WORKERS:-1}; echo "runner exit=$?"

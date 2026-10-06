@@ -128,6 +128,9 @@ class Coverage:
         rec["n"] += int(lon.size)
         if not lon.size:
             return
+        # 0.1-degree cells actually touched by this file's soundings (exact per-block file selection; 2026-10-06)
+        cells = np.unique(np.floor(lon * 10.0).astype("int64") * 10000 + np.floor(lat * 10.0).astype("int64"))
+        rec.setdefault("cells", set()).update(cells.tolist())
         zc = zone_code(lon, lat)
         depth_bin = np.floor(-z / BIN).astype("int64")
         for c in np.unique(zc):
@@ -304,16 +307,26 @@ class Guard:
 # gridding
 # --------------------------------------------------------------------------- #
 def files_for_block(cov: Coverage, zc, ei, ni, pad_m=2000.0):
+    """Files with soundings in the 0.1-degree cells around the block (block + pad_m, as lon/lat).  Exact superset of the
+    files that can contribute to the block's mbgrid region (block lon/lat bounds +/- 1 km): a file is selected only if it
+    has a sounding in a cell that region touches.  (Until 2026-10-06 the test was the file's whole lon/lat bounding box,
+    which for long transit files selected nearly every file for every block.)"""
     epsg = zone_epsg(zc)
     inv = pyproj.Transformer.from_crs(f"EPSG:{epsg}", "EPSG:4326", always_xy=True)
     bx = box(ei * R.BLOCK_M - pad_m, ni * R.BLOCK_M - pad_m, (ei + 1) * R.BLOCK_M + pad_m, (ni + 1) * R.BLOCK_M + pad_m)
-    w, s, e, n = shp_transform(inv.transform, bx.segmentize(1000.0)).bounds
+    xs, ys = inv.transform(*bx.segmentize(1000.0).exterior.xy)
+    xs, ys = np.asarray(xs), np.asarray(ys)
+    lat_rng = range(int(np.floor(ys.min() * 10)), int(np.floor(ys.max() * 10)) + 1)
+    if xs.max() - xs.min() > 180:                      # antimeridian: two longitude ranges
+        lon_rngs = [range(int(np.floor(xs[xs > 0].min() * 10)), 1800), range(-1800, int(np.floor(xs[xs < 0].max() * 10)) + 1)]
+    else:
+        lon_rngs = [range(int(np.floor(xs.min() * 10)), int(np.floor(xs.max() * 10)) + 1)]
+    want = {ix * 10000 + iy for r in lon_rngs for ix in r for iy in lat_rng}
     out = []
     for name, f in cov.files.items():
-        b = f.get("bounds")
-        if not b or f["n"] == 0:
+        if f["n"] == 0:
             continue
-        if b[0] <= e and b[2] >= w and b[1] <= n and b[3] >= s:
+        if f.get("cells") and not want.isdisjoint(f["cells"]):
             out.append(name)
     return sorted(out)
 
@@ -563,7 +576,7 @@ def process(cruise, grid_workers=4, prod_workers=4, only_blocks=None, out_root: 
             gjobs.append((bid, files, mbgrid_args_geo(f"dl_{bid}.mb-1", f"g_{bid}", Rg, dx, dy)))
         else:
             gjobs.append((bid, files, mbgrid_args(f"dl_{bid}.mb-1", f"g_{bid}", zc, ei, ni, row["cell_m"])))
-    nb = max(1, math.ceil(len(gjobs) / max(1, grid_workers * 4)))
+    nb = max(1, min(16, math.ceil(len(gjobs) / max(1, grid_workers * 4))))     # <= 16 blocks per container call (2026-10-06)
     batches = [gjobs[i:i + nb] for i in range(0, len(gjobs), nb)]
     gres = {}
     with ThreadPoolExecutor(max_workers=grid_workers) as ex:

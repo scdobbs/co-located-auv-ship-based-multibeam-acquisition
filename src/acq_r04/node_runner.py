@@ -43,6 +43,9 @@ def share(cruises, slot, nslots):
     return out[slot]
 
 
+GRID_W, PROD_W = 2, 1
+
+
 def run_one(c, tag):
     cd = cdir_name(c)
     if (R.WORK_LOGS / cd / "cruise_record.json").exists():
@@ -60,7 +63,7 @@ def run_one(c, tag):
     logp = C.REPO / "logs" / f"acq_r04_node_{tag}_{cd}.log"
     t0 = time.time()
     with open(logp, "w") as lf:
-        p = subprocess.Popen([PY, "-m", "src.acq_r04.blocks", "--cruise", c, "--grid-workers", "2", "--prod-workers", "1"],
+        p = subprocess.Popen([PY, "-m", "src.acq_r04.blocks", "--cruise", c, "--grid-workers", str(GRID_W), "--prod-workers", str(PROD_W)],
                              cwd=str(C.REPO), stdout=lf, stderr=subprocess.STDOUT, start_new_session=True)
         try:
             rc = p.wait(timeout=CRUISE_CAP_S)
@@ -76,7 +79,10 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--list", required=True); ap.add_argument("--slot", type=int, required=True); ap.add_argument("--nslots", type=int, required=True)
     ap.add_argument("--parallel", type=int, default=2)
+    ap.add_argument("--grid-workers", type=int, default=2); ap.add_argument("--prod-workers", type=int, default=1)
     a = ap.parse_args(argv)
+    global GRID_W, PROD_W
+    GRID_W, PROD_W = a.grid_workers, a.prod_workers
     cruises = [l.strip() for l in open(a.list) if l.strip()]
     C.assert_no_lockbox_cruise(cruises)
     mine = share(cruises, a.slot, a.nslots)
