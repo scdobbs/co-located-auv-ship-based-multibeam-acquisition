@@ -1,0 +1,19 @@
+{
+ "generated": "2026-10-07T00:13:28+00:00",
+ "version": "1",
+ "rows": 51322,
+ "sha256": "12709204d3ed2fc1043d09740f754b45c8f624bab95eaa1421d1167b8226ca69",
+ "ledger_rows": 127462,
+ "ledger_by_stage": {
+  "drop_fill": 112109,
+  "drop_depth": 14723,
+  "coverage": 402,
+  "removed_selection_v1_1": 90,
+  "products_failed": 62,
+  "unreadable_skipped": 61,
+  "drop_exclusion_guard": 14,
+  "no_blocks": 1
+ },
+ "removed_blocks": [],
+ "code_commit": "8e0a6ef68d0336813b8770aa022596563eff81bb"
+}

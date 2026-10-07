@@ -1,0 +1,15 @@
+{
+ "generated": "2026-10-07T02:57:53+00:00",
+ "manifest": "pretrain_manifest_v1.parquet",
+ "manifest_sha256": "12709204d3ed2fc1043d09740f754b45c8f624bab95eaa1421d1167b8226ca69",
+ "blocks_checked": 51322,
+ "agree": 51322,
+ "disagree": 0,
+ "n_footprint_sources": 87,
+ "n_shared_ids": 61,
+ "min_check_margin_m": 898.3,
+ "min_s33_margin_m": 894.2,
+ "blocks_with_no_footprint_within_prefilter": 46060,
+ "method": "pyproj.Geod(WGS84).inv, block corners + centroid to footprint vertices; centroid-in-polygon test; shared ids from manifest v2.1 + dropped",
+ "code_commit": "ad33a2bd9d523e8b74417b3c4bc456fe591b3669"
+}

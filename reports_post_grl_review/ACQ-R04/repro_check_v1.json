@@ -1,0 +1,645 @@
+{
+ "generated": "2026-10-07T00:26:54+00:00",
+ "seed": 20261004,
+ "root": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/pretrain_v1",
+ "manifest": "pretrain_manifest_v1.parquet",
+ "blocks": [
+  {
+   "cruise": "FK161229",
+   "block": "57N_E020_N0106",
+   "family": "Kongsberg EM30x",
+   "median_depth_persisted": 5339.35,
+   "median_depth_repro": 5339.35,
+   "n_soundings_persisted": 64392,
+   "n_soundings_repro": 64392,
+   "cell_persisted": 93.1916,
+   "cell_repro": 93.1916,
+   "grid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_beam_angle.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_count.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_mean_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_median_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_rsd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_sd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_xtrack_frac.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "products_usable_persisted": true,
+   "products_usable_repro": true
+  },
+  {
+   "cruise": "RR1403",
+   "block": "52N_E052_N0166",
+   "family": "Kongsberg EM12x (deep)",
+   "median_depth_persisted": 5428.55,
+   "median_depth_repro": 5428.55,
+   "n_soundings_persisted": 22665,
+   "n_soundings_repro": 22665,
+   "cell_persisted": 94.7485,
+   "cell_repro": 94.7485,
+   "grid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_beam_angle.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_count.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_mean_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_median_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_rsd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_sd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_xtrack_frac.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "products_usable_persisted": true,
+   "products_usable_repro": true
+  },
+  {
+   "cruise": "KN182L07",
+   "block": "17S_E044_N0401",
+   "family": "SeaBeam family",
+   "median_depth_persisted": 4907.55,
+   "median_depth_repro": 4907.55,
+   "n_soundings_persisted": 53482,
+   "n_soundings_repro": 53482,
+   "cell_persisted": 171.3232,
+   "cell_repro": 171.3232,
+   "grid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_beam_angle.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_count.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_mean_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_median_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_rsd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_sd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_xtrack_frac.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "products_usable_persisted": false,
+   "products_usable_repro": false
+  },
+  {
+   "cruise": "EW9511",
+   "block": "57S_E035_N0929",
+   "family": "Atlas Hydrosweep",
+   "median_depth_persisted": 3221.05,
+   "median_depth_repro": 3221.05,
+   "n_soundings_persisted": 21571,
+   "n_soundings_repro": 21571,
+   "cell_persisted": 129.3186,
+   "cell_repro": 129.3186,
+   "grid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_beam_angle.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_count.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_mean_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_median_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_rsd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_sd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_xtrack_frac.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "products_usable_persisted": true,
+   "products_usable_repro": true
+  },
+  {
+   "cruise": "TN358",
+   "block": "50N_E049_N0195",
+   "family": "Kongsberg EM30x",
+   "median_depth_persisted": 3976.85,
+   "median_depth_repro": 3976.85,
+   "n_soundings_persisted": 71350,
+   "n_soundings_repro": 71350,
+   "cell_persisted": 69.4109,
+   "cell_repro": 69.4109,
+   "grid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_beam_angle.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_count.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_mean_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_median_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_rsd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_sd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_xtrack_frac.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "products_usable_persisted": true,
+   "products_usable_repro": true
+  },
+  {
+   "cruise": "AR35-01",
+   "block": "22N_E029_N0474",
+   "family": "Kongsberg EM12x (deep)",
+   "median_depth_persisted": 4344.25,
+   "median_depth_repro": 4344.25,
+   "n_soundings_persisted": 65146,
+   "n_soundings_repro": 65146,
+   "cell_persisted": 75.8234,
+   "cell_repro": 75.8234,
+   "grid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_beam_angle.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_count.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_mean_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_median_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_rsd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_sd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_xtrack_frac.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "products_usable_persisted": true,
+   "products_usable_repro": true
+  },
+  {
+   "cruise": "COOK18MV",
+   "block": "02S_E053_N0635",
+   "family": "SeaBeam family",
+   "median_depth_persisted": 5693.05,
+   "median_depth_repro": 5693.05,
+   "n_soundings_persisted": 3566,
+   "n_soundings_repro": 3566,
+   "cell_persisted": 327.9868,
+   "cell_repro": 327.9868,
+   "grid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_beam_angle.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_count.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_mean_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_median_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_rsd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_sd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_xtrack_frac.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "products_usable_persisted": true,
+   "products_usable_repro": true
+  },
+  {
+   "cruise": "M33L2",
+   "block": "39S_E054_N0682",
+   "family": "Atlas Hydrosweep",
+   "median_depth_persisted": 5097.05,
+   "median_depth_repro": 5097.05,
+   "n_soundings_persisted": 3289,
+   "n_soundings_repro": 3289,
+   "cell_persisted": 204.6362,
+   "cell_repro": 204.6362,
+   "grid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_beam_angle.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_count.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_mean_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_median_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_rsd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_sd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_xtrack_frac.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "products_usable_persisted": true,
+   "products_usable_repro": true
+  },
+  {
+   "cruise": "TN375",
+   "block": "33S_E050_N0565",
+   "family": "Kongsberg EM30x",
+   "median_depth_persisted": 4724.85,
+   "median_depth_repro": 4724.85,
+   "n_soundings_persisted": 276844,
+   "n_soundings_repro": 276844,
+   "cell_persisted": 82.4663,
+   "cell_repro": 82.4663,
+   "grid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_beam_angle.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_count.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_mean_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_median_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_rsd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_sd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_xtrack_frac.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "products_usable_persisted": true,
+   "products_usable_repro": true
+  },
+  {
+   "cruise": "NBP0304",
+   "block": "04S_E030_N0964",
+   "family": "Kongsberg EM12x (deep)",
+   "median_depth_persisted": 5409.05,
+   "median_depth_repro": 5409.05,
+   "n_soundings_persisted": 8909,
+   "n_soundings_repro": 8909,
+   "cell_persisted": 94.4081,
+   "cell_repro": 94.4081,
+   "grid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_beam_angle.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_count.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_mean_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_median_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_rsd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_sd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_xtrack_frac.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "products_usable_persisted": true,
+   "products_usable_repro": true
+  },
+  {
+   "cruise": "GLOR07MV",
+   "block": "16S_E078_N0716",
+   "family": "SeaBeam family",
+   "median_depth_persisted": 3418.05,
+   "median_depth_repro": 3418.05,
+   "n_soundings_persisted": 14413,
+   "n_soundings_repro": 14413,
+   "cell_persisted": 196.92,
+   "cell_repro": 196.92,
+   "grid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_beam_angle.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_count.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_mean_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_median_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_rsd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_sd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_xtrack_frac.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "products_usable_persisted": true,
+   "products_usable_repro": true
+  },
+  {
+   "cruise": "EW9402",
+   "block": "26S_E016_N0987",
+   "family": "Atlas Hydrosweep",
+   "median_depth_persisted": 4357.05,
+   "median_depth_repro": 4357.05,
+   "n_soundings_persisted": 2649,
+   "n_soundings_repro": 2649,
+   "cell_persisted": 174.9267,
+   "cell_repro": 174.9267,
+   "grid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_beam_angle.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_count.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_mean_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_median_regrid.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_rsd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_sd.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "ship_xtrack_frac.tif": {
+    "same_grid": true,
+    "max_abs_diff": 0.0,
+    "nan_mismatch": 0
+   },
+   "products_usable_persisted": true,
+   "products_usable_repro": true
+  }
+ ],
+ "code_commit": "8e0a6ef68d0336813b8770aa022596563eff81bb"
+}

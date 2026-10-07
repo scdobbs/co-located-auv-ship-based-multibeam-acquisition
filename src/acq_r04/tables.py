@@ -153,7 +153,8 @@ def main(argv=None):
                         "families": int(r.family.nunique())}
     pv = load("persist_verify.json")
     if pv:
-        out["persist"] = {k: pv[k] for k in ("files", "gb", "verified_ok", "symlinks_lr_tif", "sha256sums_sha256")} | {"not_ok": len(pv["not_ok"])}
+        out["persist"] = {k: pv[k] for k in ("files", "gb", "verified_ok", "cruise_tars", "blocks", "tar_members", "sha256sums_sha256")} | \
+            {"not_ok": len(pv["not_ok"]), "vsitar_sha_ok": pv["vsitar_sample"]["sha_ok"], "vsitar_cruises": pv["vsitar_sample"]["cruises"]}
     R.write_json(R.REPORT_DIR / "tables.json", out)
     print(json.dumps(out, indent=1, default=str))
     return 0

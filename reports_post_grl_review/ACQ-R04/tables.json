@@ -1,0 +1,144 @@
+{
+ "exclusion": {
+  "ncei_records": 3885,
+  "unique_surveys": 3657,
+  "excluded_total": 689,
+  "pool_cruises": 2968,
+  "by_rule_any": {
+   "1_shared_cruise": 40,
+   "2_spatial": 688,
+   "3_composite": 0,
+   "4_non_ship": 1
+  },
+  "by_rule_first_in_order_1_to_4": {
+   "1_shared_cruise": 40,
+   "2_spatial": 648,
+   "3_composite": 0,
+   "4_non_ship": 1
+  },
+  "by_rule_only": {
+   "1_shared_cruise": 0,
+   "2_spatial": 648,
+   "3_composite": 0,
+   "4_non_ship": 1
+  },
+  "excluded_only_by_extra_gpkg": 87,
+  "spatial_only_via_tolerance": 16,
+  "acq_r01_records": 3210,
+  "acq_r01_unique": 3016,
+  "newly_excluded": 153,
+  "newly_included": 105
+ },
+ "pool": {
+  "cruises": 2968,
+  "readable": 2691,
+  "readable_frac": 0.9067,
+  "readable_TB": 26.088
+ },
+ "selection": {
+  "n_selected": 400,
+  "total_tb_final": 2.9972,
+  "n_replacements": 7,
+  "total_bytes_initial": 3723953465800,
+  "files_planned": 121563,
+  "selected_per_family": {
+   "Kongsberg EM12x (deep)": 124,
+   "SeaBeam family": 86,
+   "Kongsberg EM30x": 63,
+   "Reson": 38,
+   "Kongsberg EM7xx/EM1xxx/EM2040 (shallow)": 35,
+   "Atlas Hydrosweep": 27,
+   "other/unknown": 26,
+   "ELAC": 1
+  },
+  "selected_per_basin": {
+   "Pacific": 238,
+   "Atlantic": 86,
+   "Gulf of Mexico/Caribbean": 41,
+   "Indian": 16,
+   "Southern": 10,
+   "Arctic": 8,
+   "Mediterranean": 1
+  }
+ },
+ "pilot": {
+  "extrapolation": {
+   "raw_download_TB": 2.997,
+   "fetch_wall_h": 40.2,
+   "processing_cpu_task_h": 421.3,
+   "processing_wall_h": 26.3,
+   "full_run_wall_h": 41.0,
+   "oak_output_GB": 13.5,
+   "blocks_kept_est": 53480
+  },
+  "any_hold": false,
+  "hold": {
+   "raw": false,
+   "wall": false,
+   "oak": false
+  },
+  "concurrency": 16,
+  "fetch_rate_MBps": 20.72
+ },
+ "vertical_offset": {
+  "flagged": 2720,
+  "blocks": 51322,
+  "spearman_abs_offset_vs_depth_flagged": -0.01671849101129398
+ },
+ "corpus": {
+  "blocks": 51322,
+  "cruises": 255,
+  "cell_min": 5.2841,
+  "cell_max": 370.6772,
+  "cell_median": 93.1846,
+  "below_10m": 30,
+  "above_87m": 30695,
+  "within_10_87": 20597,
+  "usable": 47567,
+  "flagged": 3693,
+  "product_errors": 62
+ },
+ "ledger": {
+  "coverage": 402,
+  "drop_depth": 14723,
+  "drop_exclusion_guard": 14,
+  "drop_fill": 112109,
+  "no_blocks": 1,
+  "products_failed": 62,
+  "removed_selection_v1_1": 90,
+  "unreadable_skipped": 61
+ },
+ "check_4_1": {
+  "generated": "2026-10-07T02:57:53+00:00",
+  "manifest": "pretrain_manifest_v1.parquet",
+  "manifest_sha256": "12709204d3ed2fc1043d09740f754b45c8f624bab95eaa1421d1167b8226ca69",
+  "blocks_checked": 51322,
+  "agree": 51322,
+  "disagree": 0,
+  "n_footprint_sources": 87,
+  "n_shared_ids": 61,
+  "min_check_margin_m": 898.3,
+  "min_s33_margin_m": 894.2,
+  "blocks_with_no_footprint_within_prefilter": 46060,
+  "method": "pyproj.Geod(WGS84).inv, block corners + centroid to footprint vertices; centroid-in-polygon test; shared ids from manifest v2.1 + dropped",
+  "code_commit": "ad33a2bd9d523e8b74417b3c4bc456fe591b3669"
+ },
+ "repro": {
+  "blocks": 12,
+  "max_abs_diff_overall": 0.0,
+  "nan_mismatch_total": 0,
+  "families": 4
+ },
+ "persist": {
+  "files": 271,
+  "gb": 19.584,
+  "verified_ok": 271,
+  "cruise_tars": 255,
+  "blocks": 51322,
+  "tar_members": 615678,
+  "sha256sums_sha256": "bbcc6ff1e6e7ec9f7c840ce052b2b5c3932aaccf106c0fd617e4dc61ac72cb26",
+  "not_ok": 0,
+  "vsitar_sha_ok": 255,
+  "vsitar_cruises": 255
+ }
+}
