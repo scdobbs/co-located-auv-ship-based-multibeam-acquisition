@@ -50,7 +50,15 @@ def build(cruises=None):
         if rec.get("polar_soundings_dropped"):
             led.append({"level": "soundings", "cruise": c, "item": str(rec["polar_soundings_dropped"]), "stage": "coverage",
                         "reason": "soundings poleward of 84N/80S (no UTM zone) dropped"})
-        bl = pd.read_csv(lg / "block_ledger.csv")
+        blp = lg / "block_ledger.csv"
+        if not blp.exists() or blp.stat().st_size <= 1:      # cruise produced no blocks at all (e.g. AII8501: only polar soundings)
+            led.append({"level": "cruise", "cruise": c, "item": c, "stage": "no_blocks",
+                        "reason": f"no 10 km blocks: {rec.get('soundings', 0)} soundings in UTM range, "
+                                  f"{rec.get('polar_soundings_dropped', 0)} polar soundings dropped, "
+                                  f"{len(rec.get('files_without_soundings', []))} file(s) without soundings"})
+            bl = pd.DataFrame(columns=["block", "status", "median_depth_m"])
+        else:
+            bl = pd.read_csv(blp)
         for r in bl[bl.status != "kept"].itertuples():
             led.append({"level": "block", "cruise": c, "item": r.block, "stage": r.status,
                         "reason": {"drop_depth": f"median depth {r.median_depth_m} m outside 300-6500 m",
