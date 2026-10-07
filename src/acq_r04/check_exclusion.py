@@ -109,8 +109,17 @@ def main(argv=None):
     man = pd.read_parquet(R.REPORT_DIR / a.manifest)
     fps, m, d = footprint_vertices()
     sid = shared_ids(m, d)
+    # per-footprint prefilter radius, computed once: geodesic distance from its first vertex to its farthest vertex
+    spans = []
+    for name, kind, thr, fx, fy, poly in fps:
+        sp = 0.0
+        if fx.size > 1:
+            _, _, dd = GEOD.inv(np.full(fx.size, fx[0]), np.full(fy.size, fy[0]), fx, fy); sp = float(np.max(dd))
+        spans.append(sp)
     rows = []
-    for r in man.itertuples():
+    for k, r in enumerate(man.itertuples()):
+        if k % 2000 == 0:
+            print(f"{R.utc_now()} block {k}/{len(man)}", flush=True)
         bj = json.loads((R.STAGE / r.cruise.replace("/", "_") / r.block / "block.json").read_text())
         e0, n0, e1, n1 = bj["bounds_block_m"]
         inv = pyproj.Transformer.from_crs(bj["crs"], "EPSG:4326", always_xy=True)
@@ -119,12 +128,9 @@ def main(argv=None):
         lon, lat = np.asarray(lon), np.asarray(lat)
         best = (np.inf, None, None)                  # (margin, name, distance)
         contained = []
-        for name, kind, thr, fx, fy, poly in fps:
-            # coarse pre-filter: great-circle distance from the block centroid to the footprint's first vertex
+        for (name, kind, thr, fx, fy, poly), span in zip(fps, spans):
+            # coarse pre-filter (triangle inequality): centroid -> first vertex distance minus the footprint's span
             _, _, d0 = GEOD.inv(lon[4], lat[4], fx[:1], fy[:1])
-            span = 0.0
-            if fx.size > 1:
-                _, _, sp = GEOD.inv(np.full(fx.size, fx[0]), np.full(fy.size, fy[0]), fx, fy); span = float(np.max(sp))
             if float(d0[0]) - span > thr + 50_000.0:
                 continue
             LO = np.repeat(lon, fx.size); LA = np.repeat(lat, fx.size)
