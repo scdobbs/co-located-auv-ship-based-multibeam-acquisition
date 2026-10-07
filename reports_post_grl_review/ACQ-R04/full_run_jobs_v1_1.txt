@@ -19,3 +19,4 @@ node_run_03 re-submitted as non-exclusive blocks=46793765 n=6 (8 CPU / 64G each;
 rerun_06 blocks=46809722 n=8 (the 8 cruises held since the 2026-10-03 scratch I/O errors; Steve: go)
 wrap-up: manifest=46823513 persist=46823514 checkexcl=46823515 repro=46823517 tables=46823519 (after FK210206 46793765_0)
 wrap-up (2nd): manifest=46836107 persist=46836110 checkexcl=46836113 repro=46836116 tables=46836118 (1st chain stopped: empty block ledger of AII8501)
+wrap-up (3rd): checkexcl=46848685 tables=46848688 (prefilter fix; persist 46836110 + repro 46836116 already done)
