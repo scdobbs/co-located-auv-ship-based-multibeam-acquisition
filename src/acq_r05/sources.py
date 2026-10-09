@@ -100,7 +100,21 @@ def needed_region_4326(cruise: str) -> dict:
 def plan_subset(cruise: str, rec: dict, need: dict, workers: int = 6) -> dict:
     """List NCEI, fetch nav for files not on OAK, select files whose track intersects the nav polygon."""
     listing_cache = R.CACHE / "ncei_dirlist"; listing_cache.mkdir(parents=True, exist_ok=True)
-    recs = iter_cruise_files(rec["data_url"], listing_cache)
+    import logging as _lg
+    class _Catch(_lg.Handler):
+        def __init__(self): super().__init__(); self.msgs = []
+        def emit(self, r): self.msgs.append(r.getMessage())
+    h = _Catch(); _lg.getLogger("raw_lr_dryrun").addHandler(h); _lg.getLogger("src.discovery.raw_lr_dryrun").addHandler(h); _lg.getLogger().addHandler(h)
+    try:
+        recs = iter_cruise_files(rec["data_url"], listing_cache)
+    finally:
+        for lg_ in ("raw_lr_dryrun", "src.discovery.raw_lr_dryrun", ""):
+            _lg.getLogger(lg_).removeHandler(h)
+    failed_listings = [m for m in h.msgs if m.startswith("list ") and ("failed" in m or "HTTP" in m)]
+    if failed_listings:
+        # a failed sub-directory listing (e.g. NCEI's generated/ with the .fnv nav sidecars) silently turns every missing file
+        # into "no nav track" and the conservative rule into a whole-cruise fetch (NA080/TN299, 2026-10-09): loud stop instead.
+        raise RuntimeError(f"{cruise}: {len(failed_listings)} NCEI directory listing(s) failed; not planning on a partial listing: {failed_listings[:3]}")
     swath = [r for r in recs if r.kind == "swath"]; nav = {r.key: r for r in recs if r.kind == "nav"}
     if not swath:
         raise RuntimeError(f"{cruise}: NCEI listing at {rec['data_url']} has no swath files (listing cache {listing_cache})")
@@ -123,6 +137,9 @@ def plan_subset(cruise: str, rec: dict, need: dict, workers: int = 6) -> dict:
             chosen.append(item)
         else:
             outside.append(item["filename"])
+    if missing and len(unknown) > 0.2 * len(missing):
+        raise RuntimeError(f"{cruise}: {len(unknown)} of {len(missing)} missing files have no nav track ({sum(u['advertised'] for u in unknown) / 1e9:.1f} GB); "
+                           f"the conservative include would fetch most of the cruise — stopping for a decision (HOLD) instead of fetching")
     plan = {"cruise": cruise, "data_url": rec["data_url"], "n_files_ncei": len(swath), "bytes_ncei": int(sum(s.bytes for s in swath)),
             "n_on_oak": len(on_oak), "n_missing": len(missing), "n_track_intersects": len(chosen), "n_no_nav_track": len(unknown),
             "n_track_outside": len(outside), "bytes_track_intersects": int(sum(c["advertised"] for c in chosen)), "bytes_no_nav_track": int(sum(u["advertised"] for u in unknown)),
@@ -223,6 +240,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--cruise", required=True); ap.add_argument("--plan-only", action="store_true"); ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--skip-coverage", action="store_true"); ap.add_argument("--force-coverage", action="store_true")
+    ap.add_argument("--no-fetch", action="store_true", help="no NCEI listing/fetch: coverage pass over the files already on OAK (NA080/TN299 after the 2026-10-09 whole-cruise over-fetch)")
     a = ap.parse_args(argv)
     if a.workers > 6:
         raise SystemExit("NCEI etiquette: <= 6 workers")
@@ -232,7 +250,9 @@ def main(argv=None):
     rec = cruise_record(cruise); rec["pairs"] = pairs_of_cruise(cruise); rec["started"] = R.utc_now(); rec["host"] = os.uname().nodename
     need = needed_region_4326(cruise)
     rec["need"] = {"pairs": need["pairs"], "region_union_bounds": list(need["region_union"].bounds), "nav_union_bounds": list(need["nav_union"].bounds)}
-    if rec["is_subset"]:
+    if a.no_fetch:
+        rec["plan"] = {"note": "--no-fetch: no NCEI listing; coverage pass over the files already on OAK (fetch manifest complete)"}
+    elif rec["is_subset"]:
         plan = plan_subset(cruise, rec, need, a.workers)
         R.write_json(SRC_DIR / f"{cruise}_fetch_plan.json", {**plan, "generated": R.utc_now()}, mode=0o644)
         rec["plan"] = {k: v for k, v in plan.items() if k not in ("to_fetch", "outside", "no_nav_track")}

@@ -14,4 +14,4 @@ cd /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition
 source sbatch/acq_r04/stage_sandbox.sh
 CRUISE=$(sed -n "$((SLURM_ARRAY_TASK_ID+1))p" "$1")
 echo "host=$(hostname) commit=$(git rev-parse --short HEAD) cruise=$CRUISE"; df -h "$L_SCRATCH" | tail -1
-/usr/bin/time -v /home/users/scdobbs/bathy_diffusion_env/bin/python -m src.acq_r05.sources --cruise "$CRUISE" --workers ${WORKERS:-6}; echo "sources exit=$?"
+/usr/bin/time -v /home/users/scdobbs/bathy_diffusion_env/bin/python -m src.acq_r05.sources --cruise "$CRUISE" --workers ${WORKERS:-6} ${EXTRA:-}; echo "sources exit=$?"
