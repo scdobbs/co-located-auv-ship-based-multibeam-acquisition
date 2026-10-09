@@ -1,0 +1,209 @@
+{
+ "generated": "2026-10-09T21:44:53+00:00",
+ "context_v1_parquet": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R05/context_v1.parquet",
+ "sha256": "d09a9faef2b3ce65bdcaf1ebe5628b1b3ee0f2e57de8b71ba1113e3744b6bfa2",
+ "n_rows": 39,
+ "n_built": 39,
+ "n_not_built": 0,
+ "n_sha_mismatch": 0,
+ "n_files_verified_total": 318,
+ "n_files_bad_total": 0,
+ "per_pair": {
+  "RR1506__MGDS_29779": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "discol_so242_1": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "AT37-13__MGDS_31199": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "TN399__MGDS_30373": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "TN399__MGDS_33068": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "AT42-06__MGDS_5174": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "ccz_so268_1": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "EW9801__MGDS_31425": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "KM0923__MGDS_31429": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "FK181031__MGDS_24618": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "tag_m127": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "NA090__MGDS_31212": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "NA076__MGDS_32317": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__20180426m2_Channel1000": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__20180427m1_Channel700": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__20180427m3_PockmarkNorth": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__20180428m1_Cable": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__201804_LuciaChica2m": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__20190314m4_LuciaChica970m": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__20190315m1_HeadlessCanyon": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__20190316m1_BankTop": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__20190317m1_1000mGully": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__20190317m2_600mGully": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__20190318m2_Transect601060m": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__20190510m1_BankFlankHoles": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__20190510m2_BankFlankIncipCh": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__20190511m1_6thHeadlessCany": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__20190511m2_BankTopEofCanyon3": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__basin_flank": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__luciachica_2007": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "cal_dig_morro_bay__pockmark_south": {
+   "n_files": 4,
+   "n_bad": 0,
+   "bad": []
+  },
+  "NA080__MGDS_31290": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "NA080__MGDS_31289": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "AR26__MGDS_31838": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "TN299__MGDS_27339": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "TN299__MGDS_31253": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "FK151121__MGDS_22383": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "EX1402L2__MGDS_31073": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  },
+  "EW0207__MGDS_32556": {
+   "n_files": 13,
+   "n_bad": 0,
+   "bad": []
+  }
+ },
+ "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45"
+}

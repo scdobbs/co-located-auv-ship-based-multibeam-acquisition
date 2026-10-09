@@ -1,0 +1,382 @@
+{
+ "pair_id": "NA076__MGDS_32317",
+ "unit": "lu11",
+ "kind": "ncei_swath",
+ "lr_cruise": "NA076",
+ "lr_doi": "NCEI/NOAA Bathymetry (public domain), cruise NA076",
+ "started": "2026-10-09T21:39:11+00:00",
+ "host": "sh03-09n36.int",
+ "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45",
+ "directive": "ACQ-R05 2026-10-09",
+ "buffer_m": 5000.0,
+ "context_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA076__MGDS_32317/context_v1",
+ "lr_tif": {
+  "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA076__MGDS_32317/lr.tif",
+  "sha256": "85c0e0e1226e6018aba1a58a039119451944f83250f20eff45e8226dbfae4404",
+  "crs": "EPSG:32611",
+  "transform": [
+   15.19119504966446,
+   0.0,
+   345519.6088683868,
+   0.0,
+   -15.191195049665613,
+   3742781.6803113376
+  ],
+  "width": 258,
+  "height": 190,
+  "nodata": -9999.0,
+  "dtype": "float32"
+ },
+ "lattice": {
+  "crs": "EPSG:32611",
+  "transform": [
+   15.19119504966446,
+   0.0,
+   340521.7056970472,
+   0.0,
+   -15.191195049665613,
+   3747779.5834826776
+  ],
+  "width": 917,
+  "height": 849,
+  "dx": 15.19119504966446,
+  "dy": 15.191195049665613,
+  "lr_offset_col": 329,
+  "lr_offset_row": 329,
+  "lr_width": 258,
+  "lr_height": 190,
+  "bounds": [
+   340521.7056970472,
+   3734882.2588855117,
+   354452.0315575895,
+   3747779.5834826776
+  ],
+  "buffer_m": 5000.0,
+  "footprint_area_km2": 11.316515274724326,
+  "buffered_area_km2": 157.79045674316734
+ },
+ "lr_pixel_offset_in_context": {
+  "col": 329,
+  "row": 329
+ },
+ "source_lattice": {
+  "w": -118.67932815623733,
+  "s": 33.77948428745455,
+  "e": -118.6158929224862,
+  "n": 33.8229366334899,
+  "nx": 387,
+  "ny": 319,
+  "dx": 0.00016433998381123292,
+  "dy": 0.00013664259759544575,
+  "dx_requested": 0.00016431742689948604,
+  "dy_requested": 0.00013654329859863457,
+  "src_crs": "OGC:CRS84",
+  "kind": "june_stage_c_full_union",
+  "cruise": "NA076",
+  "live_hr": [
+   "MGDS:32321"
+  ],
+  "cell_m": 15.2,
+  "cell_rule": "achieved_cell_m",
+  "record": "reports/discovery/stage_c_full_measurements.json",
+  "tried": [
+   {
+    "cell_rule": "achieved_cell_m",
+    "cell_m": 15.2,
+    "nx": 387,
+    "ny": 319,
+    "match": true
+   }
+  ],
+  "how": "re-derived: stage_c_full.py:181-190 region = union of live HR footprints ['MGDS:32321'] +/- 1 km, cell = achieved_cell_m; grid itself purged from scratch"
+ },
+ "source_lattice_verification": {
+  "match": true,
+  "pixel_size_rel_diff": -3.1086244689504383e-15,
+  "lr_offset_in_warped_px": [
+   67.00000000000027,
+   66.99999999999643
+  ],
+  "warped_default": {
+   "transform": [
+    15.191195049664508,
+    0.0,
+    344501.79880005924,
+    0.0,
+    -15.191195049664508,
+    3743799.490379665
+   ],
+   "width": 393,
+   "height": 324
+  }
+ },
+ "source_files": [
+  {
+   "name": "0002_20160814_224301_Nautilus_EM302.gsf.mb121.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA076/0002_20160814_224301_Nautilus_EM302.gsf.mb121.gz",
+   "sha256": "3b1274462d6ac6f36c249f2f7cf3d518c0f0dfff9de83f83dee7d3abeb770c46",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA076/multibeam/data/version2/MB/em302/0002_20160814_224301_Nautilus_EM302.gsf.mb121.gz",
+   "size": 52182474,
+   "n_soundings": 1139516
+  },
+  {
+   "name": "0003_20160814_234301_Nautilus_EM302.gsf.mb121.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA076/0003_20160814_234301_Nautilus_EM302.gsf.mb121.gz",
+   "sha256": "e0fd112de9569c0978de5fcf2928ad331d146fc0486fca4ad6e7f900ddbba7c7",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA076/multibeam/data/version2/MB/em302/0003_20160814_234301_Nautilus_EM302.gsf.mb121.gz",
+   "size": 48967758,
+   "n_soundings": 1011498
+  }
+ ],
+ "source_selection": {
+  "rule": "files with a sounding in a 0.1-degree cell touched by the mbgrid region (ACQ-R04 coverage pass)",
+  "n_selected": 2,
+  "n_cruise_files_on_oak": 34,
+  "coverage_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R05/sources/NA076_coverage.json",
+  "unreadable_files_in_cruise": []
+ },
+ "gridding": {
+  "mb_format": 121,
+  "n_files": 2,
+  "decompress_s": 0.5,
+  "mbgrid_s": 5.3,
+  "mbgrid_attempts": 1,
+  "grd_vs_source_grd": null,
+  "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /lscratch/scdobbs/47141438/mbsystem_sandbox mbgrid -I datalist.mb-1 -O ctx_NA076__MGDS_32317 -R -118.73487507076553/-118.560346007958/33.7330258042721/33.86939511667235 -E 0.00016433998381123292/0.00013664259759544575/degrees -A2 -G3 -F1 -C0 -M",
+  "mbgrid_region": {
+   "R": "-118.73487507076553/-118.560346007958/33.7330258042721/33.86939511667235",
+   "E": "0.00016433998381123292/0.00013664259759544575/degrees",
+   "w": -118.73487507076553,
+   "s": 33.7330258042721,
+   "e": -118.560346007958,
+   "n": 33.86939511667235,
+   "nx": 1063,
+   "ny": 999,
+   "dx": 0.00016433998381123292,
+   "dy": 0.00013664259759544575,
+   "node_offset_from_source": [
+    -338,
+    -340
+   ],
+   "spacing_rel_err_after_mbgrid": [
+    -3.963496197911809e-14,
+    -4.973799150320701e-14
+   ],
+   "lonlat_box_unsnapped": [
+    -118.73478360930518,
+    33.73302666634508,
+    -118.56050000957494,
+    33.869277879437725
+   ]
+  },
+  "grd_lattice_check": {
+   "nx": [
+    1063,
+    1063
+   ],
+   "ny": [
+    999,
+    999
+   ],
+   "dx_rel": -3.963496197911809e-14,
+   "dy_rel": -4.973799150320701e-14,
+   "w_err_cells": 0.0,
+   "n_err_cells": 0.0,
+   "crs": "OGC:CRS84"
+  },
+  "grd_nodata": NaN,
+  "warp": {
+   "method": "harmonize._open (rioxarray, masked) + DataArray.rio.reproject(dst_crs=lr.tif CRS, transform=context lattice, shape=context shape, resampling=bilinear, nodata=-9999); -9999 and |z|>=99999 -> NaN; float32",
+   "development_chain_reference": "ACQ-R04 \u00a75.1 (harmonize._reproject bilinear nodata -9999, GDAL default output grid == lr.tif lattice, verified by lattice.verify_lattice)"
+  },
+  "persisted_grids_oak": {
+   "grd": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/NA076__MGDS_32317__context_v1.grd",
+    "sha256": "ac092da0ff3eec5d52f1622306be0a08a38932d7610dc9d6573b57ba572b2348"
+   },
+   "grd_num": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/NA076__MGDS_32317__context_v1_num.grd",
+    "sha256": "12bb15cde4e06a71a4a23daf22037461d6311b4384be6a917334eced94d2f233"
+   },
+   "grd_sd": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/NA076__MGDS_32317__context_v1_sd.grd",
+    "sha256": "210e56687833d23e43ec88cfd3bd8ac2eaf6a30a9695e20c233d196b519e2cd4"
+   }
+  }
+ },
+ "commands": [
+  "apptainer exec --bind /scratch,/home/groups,/oak /lscratch/scdobbs/47141438/mbsystem_sandbox mbgrid -I datalist.mb-1 -O ctx_NA076__MGDS_32317 -R -118.73487507076553/-118.560346007958/33.7330258042721/33.86939511667235 -E 0.00016433998381123292/0.00013664259759544575/degrees -A2 -G3 -F1 -C0 -M"
+ ],
+ "agreement": {
+  "what": "ctx_lr vs lr.tif on lr.tif valid cells",
+  "n_cells": 23657,
+  "n_reference_valid": 23661,
+  "n_reference_valid_but_context_nan": 4,
+  "median_diff": 0.00115966796875,
+  "rms": 0.013064294935869058,
+  "robust_sigma": 0.00588189697265625,
+  "max_abs_diff": 0.19927978515625,
+  "n_nonzero_diff": 23359,
+  "identical": false,
+  "median_diff_over_s_lr": 0.0005331059518288107,
+  "rms_over_s_lr": 0.006005730583613472,
+  "robust_sigma_over_s_lr": 0.0027039414458837193,
+  "frac_abs_diff_gt_0p1_s_lr": 0.0,
+  "median_s_lr_m": 2.1753048615791646,
+  "s_lr_source": "median of 207 tile s_lr values, CNN repo R04 tiles_v1.parquet",
+  "gate": {
+   "robust_sigma_over_s_lr_max": 0.1,
+   "abs_median_max_m": 0.5
+  },
+  "flags": []
+ },
+ "coverage": {
+  "n_cells": 778533,
+  "n_valid": 184238,
+  "valid_fraction": 0.23664764370938676,
+  "valid_fraction_outside_lr_window": 0.2201194495505906,
+  "valid_fraction_in_lr_window": 0.48261933904528764,
+  "lr_valid_fraction": 0.48268053855569154
+ },
+ "outputs": {
+  "ctx_lr.tif": "f204237049772615985b8b8f3d7745b8f06cfea895b758bee24316a75df7ed4e",
+  "ctx_lr_valid.tif": "e989f862081a45652bfbc52e6711b86bef7944e41f2c3525d9d9fe00c04a8f0b"
+ },
+ "products": {
+  "wall_s": 7.9,
+  "nproc": 4,
+  "batch_files": 1,
+  "builder": "src.acq_r03.build_products_v2_1.build (unchanged)",
+  "staging_note": "products.json lr_tif_path points at the scratch staging copy of ctx_lr.tif (same bytes as context_v1/ctx_lr.tif)",
+  "available": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true
+  },
+  "flags": [],
+  "qa_vs_ctx_lr": {
+   "n_common_cells": 183956,
+   "median_offset_m": 0.0223,
+   "rms_m": 0.4847,
+   "robust_sigma_m": 0.406,
+   "rms_over_median_s_lr": 0.2166,
+   "robust_sigma_over_median_s_lr": 0.1814,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 0.406,
+   "sigma_argmin_m": 0.2652,
+   "gain_m": 0.1409,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "matches_ctx_lr_grid": true,
+  "files": {
+   "products.json": "bb49cf31ce7f2a75c61fceba1718b254a9581b1013cdfce2b582607617bda7f1",
+   "products_extra.json": "5f95ba6a0a13b45fa9b9cc5c12e2032ffcbe284ab551db411bc0677a2f43c5cc",
+   "qa_shift_surface.csv": "2bd08c285799895b02874a6db366c3cee2dfc353a9b635475109bffc6993593a",
+   "ship_beam_angle.tif": "001ebc0c5b38e62a6cde34eef09b4f352634c42742608a380cf93bba5aaeea5e",
+   "ship_count.tif": "c94071be35c19b1000922be2bddb32119b9bb499207c7c55a15be6bbba452f9e",
+   "ship_mean_regrid.tif": "eafcbb3db78ab1eee18f46773d197783268bae137c2ac49ba8896ade6e0e639f",
+   "ship_median_regrid.tif": "5967d337768d381f26b24aa9659cca928ef9beef268acfd75df0fab8e45368b2",
+   "ship_rsd.tif": "edf4913c3b090e29a725fac4c5ee791f810cc46a64621e064a2022976c4d757e",
+   "ship_sd.tif": "2d6865224149196241ee2a80bb891ba1657c152df8dca55b9b11678a28ad9f94",
+   "ship_xtrack_frac.tif": "f58a111e9215e415d4ad4ed71f427ae54e9262b2b3fdaff36514db06e3063226"
+  },
+  "result": {
+   "pair_id": "NA076__MGDS_32317",
+   "cruise": "NA076",
+   "qa": {
+    "n_common_cells": 183956,
+    "median_offset_m": 0.0223,
+    "rms_m": 0.4847,
+    "robust_sigma_m": 0.406,
+    "rms_over_median_s_lr": 0.2166,
+    "robust_sigma_over_median_s_lr": 0.1814,
+    "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+    "shift_argmin_cells": [
+     0.25,
+     -0.25
+    ],
+    "shift_surface_file": "qa_shift_surface.csv",
+    "sigma0_m": 0.406,
+    "sigma_argmin_m": 0.2652,
+    "gain_m": 0.1409,
+    "registration_gate": {
+     "min_shift_cells": 0.5,
+     "min_gain_m": 0.1
+    },
+    "flags": []
+   },
+   "frame_offset": {
+    "applied": false,
+    "dx_m": 0.0,
+    "dy_m": 0.0,
+    "basis": "none",
+    "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+   },
+   "control_vs_v2": {
+    "ship_count": "v2 missing",
+    "ship_sd": "v2 missing",
+    "ship_rsd": "v2 missing",
+    "ship_xtrack_frac": "v2 missing",
+    "ship_beam_angle": "v2 missing",
+    "ship_mean_regrid": "v2 missing",
+    "ship_median_regrid": "v2 missing"
+   },
+   "median_rsd_over_sd": 0.8558588027954102,
+   "cells": 184249,
+   "beam_angle_method": "launch_angle",
+   "matches_lr_tif": true
+  }
+ },
+ "products_vs_existing": {
+  "ship_count": {
+   "what": "ship_count",
+   "n_cells": 23650,
+   "n_reference_valid": 23650,
+   "n_reference_valid_but_context_nan": 0,
+   "median_diff": 0.0,
+   "rms": 0.0,
+   "robust_sigma": 0.0,
+   "max_abs_diff": 0.0,
+   "n_nonzero_diff": 0,
+   "identical": true,
+   "frac_cells_count_differs": 0.0,
+   "sum_count_existing": 105819.0,
+   "sum_count_context_on_lr_cells": 105819.0
+  },
+  "ship_rsd": {
+   "what": "ship_rsd",
+   "n_cells": 23360,
+   "n_reference_valid": 23360,
+   "n_reference_valid_but_context_nan": 0,
+   "median_diff": 0.0,
+   "rms": 0.0,
+   "robust_sigma": 0.0,
+   "max_abs_diff": 0.0,
+   "n_nonzero_diff": 0,
+   "identical": true,
+   "median_diff_over_s_lr": 0.0,
+   "rms_over_s_lr": 0.0,
+   "robust_sigma_over_s_lr": 0.0,
+   "frac_abs_diff_gt_0p1_s_lr": 0.0
+  }
+ },
+ "wall_s": 52.0,
+ "finished": "2026-10-09T21:40:01+00:00",
+ "status": "built",
+ "sha256sums": {
+  "n_files": 13,
+  "n_bad": 0,
+  "bad": []
+ }
+}

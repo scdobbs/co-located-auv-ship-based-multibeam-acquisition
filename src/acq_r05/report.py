@@ -16,7 +16,11 @@ from src.acq_r05 import common as R
 
 def lookup(fname, keypath):
     obj = json.loads((R.REPORT_DIR / fname).read_text())
-    for k in keypath.split("."):
+    rest = keypath
+    while rest:
+        if isinstance(obj, dict) and rest in obj:            # keys may contain dots or slashes (file names): longest match first
+            obj = obj[rest]; break
+        k, _, rest = rest.partition(".")
         obj = obj[int(k)] if isinstance(obj, list) else obj[k]
     if isinstance(obj, bool):
         return "yes" if obj else "no"
@@ -34,7 +38,7 @@ def main(argv=None):
     a = ap.parse_args(argv)
     t = (R.REPORT_DIR / "REPORT_ACQ-R05_template.md").read_text()
     t = re.sub(r"\{\{table:([\w\-]+)\}\}", lambda m: (R.REPORT_DIR / "tables" / f"{m.group(1)}.md").read_text().strip(), t)
-    t = re.sub(r"\{\{json:([\w\-.]+?\.json):([\w.\-]+)\}\}", lambda m: lookup(m.group(1), m.group(2)), t)
+    t = re.sub(r"\{\{json:([\w\-.]+?\.json):([\w.\-/]+)\}\}", lambda m: lookup(m.group(1), m.group(2)), t)
     left = re.findall(r"\{\{[^}]+\}\}", t)
     if left:
         raise SystemExit(f"unresolved placeholders: {left}")

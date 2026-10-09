@@ -1,0 +1,73 @@
+{
+ "cruise": "EX1402L2",
+ "oak_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/EX1402L2",
+ "origin": "ACQ-R02 fetch plan",
+ "fetch_mode": "subset",
+ "whole_gb": 10.16,
+ "subset_gb": 10.16,
+ "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1402L2/multibeam/data/version2/MB/",
+ "n_files_ncei": 311,
+ "n_files_planned": 311,
+ "n_files_on_oak": 311,
+ "n_files_manifest": 311,
+ "bytes_on_oak": 10154753310,
+ "is_subset": false,
+ "pairs": [
+  "EX1402L2__MGDS_31073"
+ ],
+ "started": "2026-10-09T20:30:35+00:00",
+ "host": "sh04-11n29.int",
+ "need": {
+  "pairs": {
+   "EX1402L2__MGDS_31073": {
+    "region": {
+     "w": -91.2943804113325,
+     "s": 27.68628309657091,
+     "e": -91.15351759534553,
+     "n": 27.821539564903887,
+     "nx": 846,
+     "ny": 921
+    },
+    "median_depth_m": 512.0943298339844,
+    "nav_reach_m": 2000.0
+   }
+  },
+  "region_union_bounds": [
+   -91.2943804113325,
+   27.68628309657091,
+   -91.15351759534553,
+   27.821539564903887
+  ],
+  "nav_union_bounds": [
+   -91.31468128176104,
+   27.668233963236705,
+   -91.1332181168374,
+   27.839588315809163
+  ]
+ },
+ "plan": {
+  "note": "whole cruise on OAK; nothing to fetch"
+ },
+ "coverage": {
+  "cruise": "EX1402L2",
+  "mb_format": 163,
+  "n_files": 311,
+  "soundings": 307585945,
+  "files_without_soundings": [],
+  "unreadable_files": [],
+  "unparsed_lines_dropped": 0,
+  "polar_soundings_dropped": 0,
+  "decompress_s": 0.0,
+  "coverage_s": 1672.8,
+  "generated": "2026-10-09T20:58:28+00:00",
+  "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45"
+ },
+ "selection": {
+  "EX1402L2__MGDS_31073": {
+   "n_files": 3
+  }
+ },
+ "wall_s": 1674.0,
+ "finished": "2026-10-09T20:58:28+00:00",
+ "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45"
+}

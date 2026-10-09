@@ -1,0 +1,397 @@
+{
+ "pair_id": "EX1402L2__MGDS_31073",
+ "unit": "vu02",
+ "kind": "ncei_swath",
+ "lr_cruise": "EX1402L2",
+ "lr_doi": "None",
+ "started": "2026-10-09T21:38:47+00:00",
+ "host": "sh03-14n19.int",
+ "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45",
+ "directive": "ACQ-R05 2026-10-09",
+ "buffer_m": 5000.0,
+ "context_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EX1402L2__MGDS_31073/context_v1",
+ "lr_tif": {
+  "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EX1402L2__MGDS_31073/lr.tif",
+  "sha256": "c1494011d816ad4178210aab6c5b08d50e20a62b9917ee62cf6a2f4c48ad31a7",
+  "crs": "EPSG:32615",
+  "transform": [
+   16.369802493311575,
+   0.0,
+   674194.1032025177,
+   0.0,
+   -16.369802493311685,
+   3072611.755354435
+  ],
+  "width": 102,
+  "height": 171,
+  "nodata": -9999.0,
+  "dtype": "float32"
+ },
+ "lattice": {
+  "crs": "EPSG:32615",
+  "transform": [
+   16.369802493311575,
+   0.0,
+   669184.9436395643,
+   0.0,
+   -16.369802493311685,
+   3077620.9149173885
+  ],
+  "width": 714,
+  "height": 783,
+  "dx": 16.369802493311575,
+  "dy": 16.369802493311685,
+  "lr_offset_col": 306,
+  "lr_offset_row": 306,
+  "lr_width": 102,
+  "lr_height": 171,
+  "bounds": [
+   669184.9436395643,
+   3064803.3595651253,
+   680872.9826197888,
+   3077620.9149173885
+  ],
+  "buffer_m": 5000.0,
+  "footprint_area_km2": 4.655027335427779,
+  "buffered_area_km2": 127.68671856689762
+ },
+ "lr_pixel_offset_in_context": {
+  "col": 306,
+  "row": 306
+ },
+ "source_lattice": {
+  "w": -92.83270238284456,
+  "s": 27.06851387925009,
+  "e": -87.99068894715543,
+  "n": 29.18072005374991,
+  "nx": 29047,
+  "ny": 14368,
+  "dx": 0.00016670155738102063,
+  "dy": 0.00014701790036192788,
+  "src_crs": "OGC:CRS84",
+  "kind": "acq_r02_union_grd",
+  "cruise": "EX1402L2",
+  "grd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/EX1402L2__union.grd",
+  "grd_sha256": "adad618ae2ca23dff4790a8450432e4c47e011b3fff2b07d316b67e80f1d4490",
+  "record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R02/grid/EX1402L2.json",
+  "cell_m": 16.37,
+  "how": "read from the persisted ACQ-R02 union grid EX1402L2__union.grd (mbgrid region -92.83270238284456/-87.99068894715543/27.06851387925009/29.18072005374991)"
+ },
+ "source_lattice_verification": {
+  "match": true,
+  "pixel_size_rel_diff": -4.729550084903167e-14,
+  "lr_offset_in_warped_px": [
+   9648.0,
+   10129.000000000007
+  ],
+  "warped_default": {
+   "transform": [
+    16.36980249331235,
+    0.0,
+    516258.24874704017,
+    0.0,
+    -16.36980249331235,
+    3238421.484809196
+   ],
+   "width": 29372,
+   "height": 14930
+  }
+ },
+ "source_files": [
+  {
+   "name": "EX1402L2_Okeanos_March_2011_2014-092_0299_20140402_000001_EX1402L2_MB.txt.mb163",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/EX1402L2/EX1402L2_Okeanos_March_2011_2014-092_0299_20140402_000001_EX1402L2_MB.txt.mb163",
+   "sha256": "1ca5e13e62971d9802e6bba93015b12a6c3c9a6a59dd32cbfc9ba535a06afc72",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1402L2/multibeam/data/version2/MB/em302/EX1402L2_Okeanos_March_2011_2014-092_0299_20140402_000001_EX1402L2_MB.txt.mb163",
+   "size": 58281036,
+   "n_soundings": 1766092
+  },
+  {
+   "name": "EX1402L2_Okeanos_March_2011_2014-092_0300_20140402_015311_EX1402L2_MB.txt.mb163",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/EX1402L2/EX1402L2_Okeanos_March_2011_2014-092_0300_20140402_015311_EX1402L2_MB.txt.mb163",
+   "sha256": "20686c315e98214b4b7b98a8e431c3c2c3a14c64fc8e5c9bef24e291ae8a34df",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1402L2/multibeam/data/version2/MB/em302/EX1402L2_Okeanos_March_2011_2014-092_0300_20140402_015311_EX1402L2_MB.txt.mb163",
+   "size": 17582895,
+   "n_soundings": 532815
+  },
+  {
+   "name": "EX1402L2_Okeanos_March_2011_2014-092_0301_20140402_022702_EX1402L2_MB.txt.mb163",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/EX1402L2/EX1402L2_Okeanos_March_2011_2014-092_0301_20140402_022702_EX1402L2_MB.txt.mb163",
+   "sha256": "b3d5322f8bda83c64f42d24703a5848fc8c45449fb1fb49c6070bd20f43225a8",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer/EX1402L2/multibeam/data/version2/MB/em302/EX1402L2_Okeanos_March_2011_2014-092_0301_20140402_022702_EX1402L2_MB.txt.mb163",
+   "size": 82856334,
+   "n_soundings": 2510798
+  }
+ ],
+ "source_selection": {
+  "rule": "files with a sounding in a 0.1-degree cell touched by the mbgrid region (ACQ-R04 coverage pass)",
+  "n_selected": 3,
+  "n_cruise_files_on_oak": 311,
+  "coverage_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R05/sources/EX1402L2_coverage.json",
+  "unreadable_files_in_cruise": []
+ },
+ "gridding": {
+  "mb_format": 163,
+  "n_files": 3,
+  "decompress_s": 0.0,
+  "mbgrid_s": 21.9,
+  "mbgrid_attempts": 1,
+  "grd_vs_source_grd": {
+   "what": "context grd nodes vs ACQ-R02 union grd nodes (common nodes)",
+   "n_cells": 154714,
+   "n_reference_valid": 154714,
+   "n_reference_valid_but_context_nan": 0,
+   "median_diff": 0.0,
+   "rms": 0.0021754615500148245,
+   "robust_sigma": 0.0,
+   "max_abs_diff": 0.37261962890625,
+   "n_nonzero_diff": 185,
+   "identical": false,
+   "n_source_finite_context_nan": 0,
+   "n_context_finite_source_nan": 3,
+   "common_window_nodes": [
+    921,
+    846
+   ]
+  },
+  "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /lscratch/scdobbs/47141463/mbsystem_sandbox mbgrid -I datalist.mb-1 -O ctx_EX1402L2__MGDS_31073 -R -91.2943804113325/-91.15351759534553/27.68628309657091/27.821539564903887 -E 0.00016670155738102063/0.00014701790036192788/degrees -A2 -G3 -F1 -C0 -M",
+  "mbgrid_region": {
+   "R": "-91.2943804113325/-91.15351759534553/27.68628309657091/27.821539564903887",
+   "E": "0.00016670155738102063/0.00014701790036192788/degrees",
+   "w": -91.2943804113325,
+   "s": 27.68628309657091,
+   "e": -91.15351759534553,
+   "n": 27.821539564903887,
+   "nx": 846,
+   "ny": 921,
+   "dx": 0.00016670155738102063,
+   "dy": 0.00014701790036192788,
+   "node_offset_from_source": [
+    9228,
+    4202
+   ],
+   "spacing_rel_err_after_mbgrid": [
+    8.215650382226158e-15,
+    1.7319479184152442e-14
+   ],
+   "lonlat_box_unsnapped": [
+    -91.29436115367253,
+    27.68638457739284,
+    -91.15363311876706,
+    27.8215297450869
+   ]
+  },
+  "grd_lattice_check": {
+   "nx": [
+    846,
+    846
+   ],
+   "ny": [
+    921,
+    921
+   ],
+   "dx_rel": 8.215650382226158e-15,
+   "dy_rel": 1.7319479184152442e-14,
+   "w_err_cells": 0.0,
+   "n_err_cells": 0.0,
+   "crs": "OGC:CRS84"
+  },
+  "grd_nodata": NaN,
+  "warp": {
+   "method": "harmonize._open (rioxarray, masked) + DataArray.rio.reproject(dst_crs=lr.tif CRS, transform=context lattice, shape=context shape, resampling=bilinear, nodata=-9999); -9999 and |z|>=99999 -> NaN; float32",
+   "development_chain_reference": "ACQ-R04 \u00a75.1 (harmonize._reproject bilinear nodata -9999, GDAL default output grid == lr.tif lattice, verified by lattice.verify_lattice)"
+  },
+  "persisted_grids_oak": {
+   "grd": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/EX1402L2__MGDS_31073__context_v1.grd",
+    "sha256": "78b7a9ea51096d3fbe27b2b2ff424f476481e40a4a3658f4f08691c2a33bb49a"
+   },
+   "grd_num": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/EX1402L2__MGDS_31073__context_v1_num.grd",
+    "sha256": "3246198ca78ed8308b98eb37640f03982e9637bb5e67a2bd8c3c214c80d10528"
+   },
+   "grd_sd": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/EX1402L2__MGDS_31073__context_v1_sd.grd",
+    "sha256": "8095fd5cf7d1599d3a6e43d14d2e5ee7f63c1fc246d710308daccd303fdee8c0"
+   }
+  }
+ },
+ "commands": [
+  "apptainer exec --bind /scratch,/home/groups,/oak /lscratch/scdobbs/47141463/mbsystem_sandbox mbgrid -I datalist.mb-1 -O ctx_EX1402L2__MGDS_31073 -R -91.2943804113325/-91.15351759534553/27.68628309657091/27.821539564903887 -E 0.00016670155738102063/0.00014701790036192788/degrees -A2 -G3 -F1 -C0 -M"
+ ],
+ "agreement": {
+  "what": "ctx_lr vs lr.tif on lr.tif valid cells",
+  "n_cells": 10850,
+  "n_reference_valid": 10850,
+  "n_reference_valid_but_context_nan": 0,
+  "median_diff": -0.0312347412109375,
+  "rms": 0.08482111840566693,
+  "robust_sigma": 0.052009542846679684,
+  "max_abs_diff": 0.53265380859375,
+  "n_nonzero_diff": 10844,
+  "identical": false,
+  "median_diff_over_s_lr": -0.008027487695340925,
+  "rms_over_s_lr": 0.02179945976527302,
+  "robust_sigma_over_s_lr": 0.013366717605325616,
+  "frac_abs_diff_gt_0p1_s_lr": 0.0007373271889400922,
+  "median_s_lr_m": 3.890973414891166,
+  "s_lr_source": "median of 111 tile s_lr values, CNN repo R04 tiles_v1.parquet",
+  "gate": {
+   "robust_sigma_over_s_lr_max": 0.1,
+   "abs_median_max_m": 0.5
+  },
+  "flags": []
+ },
+ "coverage": {
+  "n_cells": 559062,
+  "n_valid": 132389,
+  "valid_fraction": 0.23680557791443524,
+  "valid_fraction_outside_lr_window": 0.2243879472693032,
+  "valid_fraction_in_lr_window": 0.6224056874211673,
+  "lr_valid_fraction": 0.6220616901731453
+ },
+ "outputs": {
+  "ctx_lr.tif": "a819c4d4086ea7d0313abbee5eda5ab60f735264ff63e68d2d38c2fd88a3ac66",
+  "ctx_lr_valid.tif": "af64ed525f5a296c71520caa9685ec5a79db92382270f9b50def1b9d528282c9"
+ },
+ "products": {
+  "wall_s": 10.4,
+  "nproc": 4,
+  "batch_files": 1,
+  "builder": "src.acq_r03.build_products_v2_1.build (unchanged)",
+  "staging_note": "products.json lr_tif_path points at the scratch staging copy of ctx_lr.tif (same bytes as context_v1/ctx_lr.tif)",
+  "available": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true
+  },
+  "flags": [],
+  "qa_vs_ctx_lr": {
+   "n_common_cells": 131701,
+   "median_offset_m": 0.0653,
+   "rms_m": 0.5779,
+   "robust_sigma_m": 0.4211,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 0.4211,
+   "sigma_argmin_m": 0.3569,
+   "gain_m": 0.0642,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "matches_ctx_lr_grid": true,
+  "files": {
+   "products.json": "d106ab4eb4ee2b89e7753142007273765e5744610b3b0d8970d07e896e8a5a65",
+   "products_extra.json": "386fb2de4b7a79df699e4d5dbc5272bbb4ed1165b636c3466b74d8feb4f28f9a",
+   "qa_shift_surface.csv": "050eeb5d1d73fa9028a3f2e4b35117c22ea5a9b1efed6501fab658b57acc96db",
+   "ship_beam_angle.tif": "d3b770932fe0bd81d3c4886f1fda5ee691a042b1c1f942738ae17959aab6205e",
+   "ship_count.tif": "37be66d74e9f018d480eb5a280bb20f3d1bdefb15b8b945895f46b4990f19bf3",
+   "ship_mean_regrid.tif": "1ad59eed51250e5373e667a40b7ffdd1cbb8e119f5186265e6fb1e4f4fa9d3f8",
+   "ship_median_regrid.tif": "8ad8bcc5de01df9f425d01335e938bf0d57c96cfd3616a9d75afa06986b19c15",
+   "ship_rsd.tif": "3d2fc463162d7126f22901f590f9029f889643ba6d3dd23249df56600a16a377",
+   "ship_sd.tif": "92f023c4f292ef9ffbe509f81b425cb6add90e231000a2038ad84b1b20cccb89",
+   "ship_xtrack_frac.tif": "4a3afc36c4d8e4815646d8891e26804c8879079fefbfdabb11fad3be0402ec45"
+  },
+  "result": {
+   "pair_id": "EX1402L2__MGDS_31073",
+   "cruise": "EX1402L2",
+   "qa": {
+    "n_common_cells": 131701,
+    "median_offset_m": 0.0653,
+    "rms_m": 0.5779,
+    "robust_sigma_m": 0.4211,
+    "rms_over_median_s_lr": null,
+    "robust_sigma_over_median_s_lr": null,
+    "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+    "shift_argmin_cells": [
+     0.25,
+     -0.25
+    ],
+    "shift_surface_file": "qa_shift_surface.csv",
+    "sigma0_m": 0.4211,
+    "sigma_argmin_m": 0.3569,
+    "gain_m": 0.0642,
+    "registration_gate": {
+     "min_shift_cells": 0.5,
+     "min_gain_m": 0.1
+    },
+    "flags": []
+   },
+   "frame_offset": {
+    "applied": false,
+    "dx_m": 0.0,
+    "dy_m": 0.0,
+    "basis": "none",
+    "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+   },
+   "control_vs_v2": {
+    "ship_count": "v2 missing",
+    "ship_sd": "v2 missing",
+    "ship_rsd": "v2 missing",
+    "ship_xtrack_frac": "v2 missing",
+    "ship_beam_angle": "v2 missing",
+    "ship_mean_regrid": "v2 missing",
+    "ship_median_regrid": "v2 missing"
+   },
+   "median_rsd_over_sd": 0.8936282992362976,
+   "cells": 132361,
+   "beam_angle_method": "geometric",
+   "matches_lr_tif": true
+  }
+ },
+ "products_vs_existing": {
+  "ship_count": {
+   "what": "ship_count",
+   "n_cells": 10841,
+   "n_reference_valid": 10841,
+   "n_reference_valid_but_context_nan": 0,
+   "median_diff": 0.0,
+   "rms": 0.0,
+   "robust_sigma": 0.0,
+   "max_abs_diff": 0.0,
+   "n_nonzero_diff": 0,
+   "identical": true,
+   "frac_cells_count_differs": 0.0,
+   "sum_count_existing": 81923.0,
+   "sum_count_context_on_lr_cells": 81923.0
+  },
+  "ship_rsd": {
+   "what": "ship_rsd",
+   "n_cells": 10806,
+   "n_reference_valid": 10806,
+   "n_reference_valid_but_context_nan": 0,
+   "median_diff": 0.0,
+   "rms": 0.0,
+   "robust_sigma": 0.0,
+   "max_abs_diff": 0.0,
+   "n_nonzero_diff": 0,
+   "identical": true,
+   "median_diff_over_s_lr": 0.0,
+   "rms_over_s_lr": 0.0,
+   "robust_sigma_over_s_lr": 0.0,
+   "frac_abs_diff_gt_0p1_s_lr": 0.0
+  }
+ },
+ "consumer_side_override": {
+  "ship_xtrack_frac": "unavailable on the consumer side (CNN R05 ruling H2 / R04 H2: all-NaN where count >= 1); the acquisition products of the pair were not rebuilt"
+ },
+ "wall_s": 45.2,
+ "finished": "2026-10-09T21:39:29+00:00",
+ "status": "built",
+ "sha256sums": {
+  "n_files": 13,
+  "n_bad": 0,
+  "bad": []
+ }
+}

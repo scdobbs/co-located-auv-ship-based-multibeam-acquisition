@@ -1,0 +1,442 @@
+{
+ "pair_id": "FK151121__MGDS_22383",
+ "unit": "nu00",
+ "kind": "ncei_swath",
+ "lr_cruise": "FK151121",
+ "lr_doi": "None",
+ "started": "2026-10-09T21:38:47+00:00",
+ "host": "sh03-14n19.int",
+ "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45",
+ "directive": "ACQ-R05 2026-10-09",
+ "buffer_m": 5000.0,
+ "context_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/context_v1",
+ "lr_tif": {
+  "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/lr.tif",
+  "sha256": "f2f76c8a63be8b82d41a4eec1781f423e476a8ed75c449907ee22b1ca28b2d01",
+  "crs": "EPSG:32655",
+  "transform": [
+   65.91473776180867,
+   0.0,
+   255773.51452622074,
+   0.0,
+   -65.9147377618085,
+   2016417.2240305666
+  ],
+  "width": 67,
+  "height": 87,
+  "nodata": -9999.0,
+  "dtype": "float32"
+ },
+ "lattice": {
+  "crs": "EPSG:32655",
+  "transform": [
+   65.91473776180867,
+   0.0,
+   250698.07971856146,
+   0.0,
+   -65.9147377618085,
+   2021426.744100464
+  ],
+  "width": 221,
+  "height": 240,
+  "dx": 65.91473776180867,
+  "dy": 65.9147377618085,
+  "lr_offset_col": 77,
+  "lr_offset_row": 76,
+  "lr_width": 67,
+  "lr_height": 87,
+  "bounds": [
+   250698.07971856146,
+   2005607.20703763,
+   265265.23676392116,
+   2021426.744100464
+  ],
+  "buffer_m": 5000.0,
+  "footprint_area_km2": 25.514978690935543,
+  "buffered_area_km2": 205.736541201196
+ },
+ "lr_pixel_offset_in_context": {
+  "col": 77,
+  "row": 76
+ },
+ "source_lattice": {
+  "w": 144.07887819014192,
+  "s": 14.472591741557833,
+  "e": 144.8898446235211,
+  "n": 18.231191731234127,
+  "nx": 1308,
+  "ny": 6316,
+  "dx": 0.0006204792910322712,
+  "dy": 0.000595186063289991,
+  "src_crs": "OGC:CRS84",
+  "kind": "acq_r02_union_grd",
+  "cruise": "FK151121",
+  "grd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/FK151121__union.grd",
+  "grd_sha256": "753bef810f301163a1b50268648bbfd4d4e122af651d146f5bfbb685fbe05162",
+  "record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R02/grid/FK151121.json",
+  "cell_m": 66.26,
+  "how": "read from the persisted ACQ-R02 union grid FK151121__union.grd (mbgrid region 144.07887819014192/144.8898446235211/14.472591741557833/18.231191731234127)"
+ },
+ "source_lattice_verification": {
+  "match": true,
+  "pixel_size_rel_diff": 1.7763568394002505e-15,
+  "lr_offset_in_warped_px": [
+   1073.0,
+   28.000000000000878
+  ],
+  "warped_default": {
+   "transform": [
+    65.91473776180855,
+    0.0,
+    185047.00090780016,
+    0.0,
+    -65.91473776180855,
+    2018262.8366878973
+   ],
+   "width": 1393,
+   "height": 6330
+  }
+ },
+ "source_files": [
+  {
+   "name": "0177_20151206_220205_FK151121_EM302.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/FK151121/0177_20151206_220205_FK151121_EM302.all.mb58.gz",
+   "sha256": "3039a8f02393296898924cdd40039a85a63bbf13bd74b548a73a11560dbb7589",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/falkor/FK151121/multibeam/data/version1/MB/em302/0177_20151206_220205_FK151121_EM302.all.mb58.gz",
+   "size": 22442152,
+   "n_soundings": 133841
+  },
+  {
+   "name": "0178_20151206_230204_FK151121_EM302.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/FK151121/0178_20151206_230204_FK151121_EM302.all.mb58.gz",
+   "sha256": "b6e6088f79180b44b3246118179c85d5df951a50ae511657a41365d81035ec02",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/falkor/FK151121/multibeam/data/version1/MB/em302/0178_20151206_230204_FK151121_EM302.all.mb58.gz",
+   "size": 9490352,
+   "n_soundings": 58510
+  },
+  {
+   "name": "0179_20151207_122835_FK151121_EM302.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/FK151121/0179_20151207_122835_FK151121_EM302.all.mb58.gz",
+   "sha256": "40d02c53abedaec0454ddd51cf15fe6cfc144afd3aaf7079a01409a4cd90bb6f",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/falkor/FK151121/multibeam/data/version1/MB/em302/0179_20151207_122835_FK151121_EM302.all.mb58.gz",
+   "size": 1436010,
+   "n_soundings": 8562
+  },
+  {
+   "name": "0180_20151207_123224_FK151121_EM302.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/FK151121/0180_20151207_123224_FK151121_EM302.all.mb58.gz",
+   "sha256": "333a9cecb0f18cc7815e0a38ecdb26eddf8e2b92d4ac429bdd42771b3f4e837c",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/falkor/FK151121/multibeam/data/version1/MB/em302/0180_20151207_123224_FK151121_EM302.all.mb58.gz",
+   "size": 16186526,
+   "n_soundings": 100266
+  },
+  {
+   "name": "0181_20151208_185639_FK151121_EM302.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/FK151121/0181_20151208_185639_FK151121_EM302.all.mb58.gz",
+   "sha256": "8eed244c747ba3d78616eec3f938612c014a68adccacfd040929335d08ee77b6",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/falkor/FK151121/multibeam/data/version1/MB/em302/0181_20151208_185639_FK151121_EM302.all.mb58.gz",
+   "size": 8478049,
+   "n_soundings": 50356
+  },
+  {
+   "name": "0182_20151208_191916_FK151121_EM302.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/FK151121/0182_20151208_191916_FK151121_EM302.all.mb58.gz",
+   "sha256": "871b242007e4ed3fd78ae7d91274f801f988187aaa54b8d469550b35b7af08cb",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/falkor/FK151121/multibeam/data/version1/MB/em302/0182_20151208_191916_FK151121_EM302.all.mb58.gz",
+   "size": 22052811,
+   "n_soundings": 148541
+  },
+  {
+   "name": "0187_20151209_015959_FK151121_EM302.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/FK151121/0187_20151209_015959_FK151121_EM302.all.mb58.gz",
+   "sha256": "2865de3042e5b2689a871d885e03cc52a7dd3611e0150d93d09761101b78fa94",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/falkor/FK151121/multibeam/data/version1/MB/em302/0187_20151209_015959_FK151121_EM302.all.mb58.gz",
+   "size": 21942657,
+   "n_soundings": 146653
+  },
+  {
+   "name": "0188_20151209_025959_FK151121_EM302.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/FK151121/0188_20151209_025959_FK151121_EM302.all.mb58.gz",
+   "sha256": "4bd5cf541481a2781c3a2f4adbfa6a02894edae08bde338667fcf1edcf2b34e5",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/falkor/FK151121/multibeam/data/version1/MB/em302/0188_20151209_025959_FK151121_EM302.all.mb58.gz",
+   "size": 5637110,
+   "n_soundings": 37003
+  },
+  {
+   "name": "0190_20151209_213646_FK151121_EM302.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/FK151121/0190_20151209_213646_FK151121_EM302.all.mb58.gz",
+   "sha256": "27dd8802a41885563adebee23113b8161aaf42e44783b2a8719e3f9b95f50026",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/falkor/FK151121/multibeam/data/version1/MB/em302/0190_20151209_213646_FK151121_EM302.all.mb58.gz",
+   "size": 23021192,
+   "n_soundings": 136233
+  }
+ ],
+ "source_selection": {
+  "rule": "files with a sounding in a 0.1-degree cell touched by the mbgrid region (ACQ-R04 coverage pass)",
+  "n_selected": 9,
+  "n_cruise_files_on_oak": 274,
+  "coverage_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R05/sources/FK151121_coverage.json",
+  "unreadable_files_in_cruise": []
+ },
+ "gridding": {
+  "mb_format": 58,
+  "n_files": 9,
+  "decompress_s": 0.6,
+  "mbgrid_s": 4.6,
+  "mbgrid_attempts": 1,
+  "grd_vs_source_grd": {
+   "what": "context grd nodes vs ACQ-R02 union grd nodes (common nodes)",
+   "n_cells": 40515,
+   "n_reference_valid": 40515,
+   "n_reference_valid_but_context_nan": 0,
+   "median_diff": 0.0,
+   "rms": 0.14533481400378478,
+   "robust_sigma": 0.0,
+   "max_abs_diff": 10.59130859375,
+   "n_nonzero_diff": 595,
+   "identical": false,
+   "n_source_finite_context_nan": 0,
+   "n_context_finite_source_nan": 9,
+   "common_window_nodes": [
+    195,
+    257
+   ]
+  },
+  "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /lscratch/scdobbs/47141462/mbsystem_sandbox mbgrid -I datalist.mb-1 -O ctx_FK151121__MGDS_22383 -R 144.6323457177427/144.79118841624697/18.11572563495587/18.278806616297327 -E 0.0006204792910322712/0.000595186063289991/degrees -A2 -G3 -F1 -C0 -M",
+  "mbgrid_region": {
+   "R": "144.6323457177427/144.79118841624697/18.11572563495587/18.278806616297327",
+   "E": "0.0006204792910322712/0.000595186063289991/degrees",
+   "w": 144.6323457177427,
+   "s": 18.11572563495587,
+   "e": 144.79118841624697,
+   "n": 18.278806616297327,
+   "nx": 257,
+   "ny": 275,
+   "dx": 0.0006204792910322712,
+   "dy": 0.000595186063289991,
+   "node_offset_from_source": [
+    892,
+    6121
+   ],
+   "spacing_rel_err_after_mbgrid": [
+    -1.6431300764452317e-14,
+    6.661338147750939e-15
+   ],
+   "lonlat_box_unsnapped": [
+    144.63253932933756,
+    18.11598819689637,
+    144.790964679203,
+    18.278465530754254
+   ]
+  },
+  "grd_lattice_check": {
+   "nx": [
+    257,
+    257
+   ],
+   "ny": [
+    275,
+    275
+   ],
+   "dx_rel": -1.6431300764452317e-14,
+   "dy_rel": 6.661338147750939e-15,
+   "w_err_cells": 0.0,
+   "n_err_cells": 0.0,
+   "crs": "OGC:CRS84"
+  },
+  "grd_nodata": NaN,
+  "warp": {
+   "method": "harmonize._open (rioxarray, masked) + DataArray.rio.reproject(dst_crs=lr.tif CRS, transform=context lattice, shape=context shape, resampling=bilinear, nodata=-9999); -9999 and |z|>=99999 -> NaN; float32",
+   "development_chain_reference": "ACQ-R04 \u00a75.1 (harmonize._reproject bilinear nodata -9999, GDAL default output grid == lr.tif lattice, verified by lattice.verify_lattice)"
+  },
+  "persisted_grids_oak": {
+   "grd": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/FK151121__MGDS_22383__context_v1.grd",
+    "sha256": "52caaa0e14dc8b6b72523c05342b6813a912ed031cd24a8d615eb371a2cbe9ab"
+   },
+   "grd_num": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/FK151121__MGDS_22383__context_v1_num.grd",
+    "sha256": "d40a3b726685cb767771508fc538bc872f11a49431fb171211758f3ef8478fab"
+   },
+   "grd_sd": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/FK151121__MGDS_22383__context_v1_sd.grd",
+    "sha256": "8c3c69fc3422a0915dcb6e25ae9e16d1af3384c5c5d69ee88665c1ba0e8766ee"
+   }
+  }
+ },
+ "commands": [
+  "apptainer exec --bind /scratch,/home/groups,/oak /lscratch/scdobbs/47141462/mbsystem_sandbox mbgrid -I datalist.mb-1 -O ctx_FK151121__MGDS_22383 -R 144.6323457177427/144.79118841624697/18.11572563495587/18.278806616297327 -E 0.0006204792910322712/0.000595186063289991/degrees -A2 -G3 -F1 -C0 -M"
+ ],
+ "agreement": {
+  "what": "ctx_lr vs lr.tif on lr.tif valid cells",
+  "n_cells": 5819,
+  "n_reference_valid": 5819,
+  "n_reference_valid_but_context_nan": 0,
+  "median_diff": 0.000244140625,
+  "rms": 0.12276996350536053,
+  "robust_sigma": 0.058276025390625,
+  "max_abs_diff": 1.3720703125,
+  "n_nonzero_diff": 5795,
+  "identical": false,
+  "median_diff_over_s_lr": 1.7213587294987418e-05,
+  "rms_over_s_lr": 0.008656123838471958,
+  "robust_sigma_over_s_lr": 0.004108859188291284,
+  "frac_abs_diff_gt_0p1_s_lr": 0.0,
+  "median_s_lr_m": 14.183018380549505,
+  "s_lr_source": "median of 738 tile s_lr values, CNN repo R04 tiles_v1.parquet",
+  "gate": {
+   "robust_sigma_over_s_lr_max": 0.1,
+   "abs_median_max_m": 0.5
+  },
+  "flags": []
+ },
+ "coverage": {
+  "n_cells": 53040,
+  "n_valid": 46327,
+  "valid_fraction": 0.8734351432880845,
+  "valid_fraction_outside_lr_window": 0.8580203766071466,
+  "valid_fraction_in_lr_window": 0.9982844398696175,
+  "lr_valid_fraction": 0.9982844398696175
+ },
+ "outputs": {
+  "ctx_lr.tif": "02a53d22c95feb077a956e944c4b9862b52f1e9bde0f41293d190f679d94f3e0",
+  "ctx_lr_valid.tif": "2d244c2373b111a072be2f4837cae9015e5f2fd737d03a5a61e41cba5668c535"
+ },
+ "products": {
+  "wall_s": 4.1,
+  "nproc": 4,
+  "batch_files": 1,
+  "builder": "src.acq_r03.build_products_v2_1.build (unchanged)",
+  "staging_note": "products.json lr_tif_path points at the scratch staging copy of ctx_lr.tif (same bytes as context_v1/ctx_lr.tif)",
+  "available": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true
+  },
+  "flags": [],
+  "qa_vs_ctx_lr": {
+   "n_common_cells": 45921,
+   "median_offset_m": -0.1218,
+   "rms_m": 5.3074,
+   "robust_sigma_m": 3.2414,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.0,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 3.2414,
+   "sigma_argmin_m": 3.1358,
+   "gain_m": 0.1056,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1621
+   },
+   "flags": []
+  },
+  "matches_ctx_lr_grid": true,
+  "files": {
+   "products.json": "ed24101a64a0d847a4db1f937e0c7c4986d0c41c3b658e0acaf79f3c8f23015e",
+   "products_extra.json": "06aa48e5b7211b69298e278a13e9093fa0ba4dc1933134aabdf8a8c0eab5f120",
+   "qa_shift_surface.csv": "ac446343ff43a0bdbc8fd24497a792ab1da5b5ee95be739875df3488cf7f2ed0",
+   "ship_beam_angle.tif": "a36e98ac14dbbdd81f6689e9ebf0a7c00d4d7e157a0af20721db2beded6b6d3f",
+   "ship_count.tif": "c7716ff471a36d25a6bc970eaaec981077eb4830065ae8abd98bc518b778ab2f",
+   "ship_mean_regrid.tif": "fe6fd2d04d6662376fab02992eebc5c4acf33923bac78bbefbc681a9990b0b27",
+   "ship_median_regrid.tif": "eac2e1ff1d3e8cf9b70c912ddf60b8a775ba1a0d835b91b3784397742593fa5a",
+   "ship_rsd.tif": "536baa2c0aa10e80cd2324eeff47b4ed4ec71defe8205cbd7b3d4a52fa05720d",
+   "ship_sd.tif": "cbfd3e79d2efd028e8ca909206d420e8febf65c4e1f7ce5eeebe47f4c48a459c",
+   "ship_xtrack_frac.tif": "46dfe27598f245469784f6fd39c562bb6eccb8ed9fe120ed72548fdcd4e49ced"
+  },
+  "result": {
+   "pair_id": "FK151121__MGDS_22383",
+   "cruise": "FK151121",
+   "qa": {
+    "n_common_cells": 45921,
+    "median_offset_m": -0.1218,
+    "rms_m": 5.3074,
+    "robust_sigma_m": 3.2414,
+    "rms_over_median_s_lr": null,
+    "robust_sigma_over_median_s_lr": null,
+    "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+    "shift_argmin_cells": [
+     0.0,
+     -0.25
+    ],
+    "shift_surface_file": "qa_shift_surface.csv",
+    "sigma0_m": 3.2414,
+    "sigma_argmin_m": 3.1358,
+    "gain_m": 0.1056,
+    "registration_gate": {
+     "min_shift_cells": 0.5,
+     "min_gain_m": 0.1621
+    },
+    "flags": []
+   },
+   "frame_offset": {
+    "applied": false,
+    "dx_m": 0.0,
+    "dy_m": 0.0,
+    "basis": "none",
+    "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+   },
+   "control_vs_v2": {
+    "ship_count": "v2 missing",
+    "ship_sd": "v2 missing",
+    "ship_rsd": "v2 missing",
+    "ship_xtrack_frac": "v2 missing",
+    "ship_beam_angle": "v2 missing",
+    "ship_mean_regrid": "v2 missing",
+    "ship_median_regrid": "v2 missing"
+   },
+   "median_rsd_over_sd": 0.9377372860908508,
+   "cells": 46371,
+   "beam_angle_method": "launch_angle",
+   "matches_lr_tif": true
+  }
+ },
+ "products_vs_existing": {
+  "ship_count": {
+   "what": "ship_count",
+   "n_cells": 5827,
+   "n_reference_valid": 5827,
+   "n_reference_valid_but_context_nan": 0,
+   "median_diff": 0.0,
+   "rms": 0.0,
+   "robust_sigma": 0.0,
+   "max_abs_diff": 0.0,
+   "n_nonzero_diff": 0,
+   "identical": true,
+   "frac_cells_count_differs": 0.0,
+   "sum_count_existing": 65202.0,
+   "sum_count_context_on_lr_cells": 65202.0
+  },
+  "ship_rsd": {
+   "what": "ship_rsd",
+   "n_cells": 5778,
+   "n_reference_valid": 5778,
+   "n_reference_valid_but_context_nan": 0,
+   "median_diff": 0.0,
+   "rms": 0.0,
+   "robust_sigma": 0.0,
+   "max_abs_diff": 0.0,
+   "n_nonzero_diff": 0,
+   "identical": true,
+   "median_diff_over_s_lr": 0.0,
+   "rms_over_s_lr": 0.0,
+   "robust_sigma_over_s_lr": 0.0,
+   "frac_abs_diff_gt_0p1_s_lr": 0.0
+  }
+ },
+ "wall_s": 36.6,
+ "finished": "2026-10-09T21:39:20+00:00",
+ "status": "built",
+ "sha256sums": {
+  "n_files": 13,
+  "n_bad": 0,
+  "bad": []
+ }
+}

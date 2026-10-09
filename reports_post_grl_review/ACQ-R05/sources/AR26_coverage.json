@@ -1,0 +1,174 @@
+{
+ "cruise": "AR26",
+ "mb_format": 58,
+ "n_files": 10,
+ "soundings": 1970149,
+ "files_without_soundings": [
+  "9999.all.mb58.gz"
+ ],
+ "unreadable_files": [],
+ "unparsed_lines_dropped": 0,
+ "polar_soundings_dropped": 0,
+ "decompress_s": 0.7,
+ "coverage_s": 7.0,
+ "commands": {
+  "commands": [
+   "(cd /lscratch/scdobbs/acq_r05_sources/AR26 && apptainer exec --bind /scratch,/home/groups,/oak /lscratch/scdobbs/47135096/mbsystem_sandbox sh -c 'for f in <10 files>; do mblist -F58 -I $f -MA -OXYZ; done')"
+  ],
+  "attempts": [
+   {
+    "attempt": 1,
+    "files": 10,
+    "committed": 10,
+    "failed_mblist": [],
+    "rc": 0,
+    "ended": true,
+    "timed_out": false,
+    "wall_s": 7.0,
+    "stderr_tail": ""
+   }
+  ]
+ },
+ "files": {
+  "0000_20160207_155903_ShipName.all.mb58.gz": {
+   "n": 463814,
+   "bounds": [
+    -79.9594664429,
+    32.8607073322,
+    -79.9593906043,
+    32.8611387443
+   ],
+   "polar": 0,
+   "cells": [
+    -7999672
+   ]
+  },
+  "0000_20160207_162844_ShipName.all.mb58.gz": {
+   "n": 16165,
+   "bounds": [
+    -79.9594662413,
+    -7.26709e-05,
+    2.08817e-05,
+    32.8609808315
+   ],
+   "polar": 0,
+   "cells": [
+    -7999672,
+    -10001,
+    -1,
+    0
+   ]
+  },
+  "0000_20180106_191726_Armstrong.all.mb58.gz": {
+   "n": 665983,
+   "bounds": [
+    -70.6723260246,
+    41.5239941725,
+    -70.6720613438,
+    41.5240952932
+   ],
+   "polar": 0,
+   "cells": [
+    -7069585
+   ]
+  },
+  "0000_20180117_114252_Armstrong.all.mb58.gz": {
+   "n": 221116,
+   "bounds": [
+    -74.7289267942,
+    35.7137369659,
+    -74.6386262392,
+    35.7727591491
+   ],
+   "polar": 0,
+   "cells": [
+    -7479643,
+    -7469643
+   ]
+  },
+  "0001_20160207_162852_ShipName.all.mb58.gz": {
+   "n": 6155,
+   "bounds": [
+    -79.9594662143,
+    -7.2869e-05,
+    2.06164e-05,
+    32.8609785716
+   ],
+   "polar": 0,
+   "cells": [
+    -7999672,
+    -10001,
+    -1,
+    0
+   ]
+  },
+  "0001_20180106_191902_Armstrong.all.mb58.gz": {
+   "n": 207134,
+   "bounds": [
+    -70.6723241865,
+    -3.8886e-05,
+    2.82927e-05,
+    41.5240946479
+   ],
+   "polar": 0,
+   "cells": [
+    -7069585,
+    -10001,
+    -1
+   ]
+  },
+  "0001_20180117_121235_Armstrong.all.mb58.gz": {
+   "n": 194242,
+   "bounds": [
+    -74.6793312311,
+    35.7011340948,
+    -74.5619804317,
+    35.7702019144
+   ],
+   "polar": 0,
+   "cells": [
+    -7469643,
+    -7459643
+   ]
+  },
+  "0002_20160207_162856_ShipName.all.mb58.gz": {
+   "n": 3780,
+   "bounds": [
+    -79.9594662095,
+    -7.25826e-05,
+    2.10391e-05,
+    32.8609795364
+   ],
+   "polar": 0,
+   "cells": [
+    -7999672,
+    -10001,
+    -1,
+    0
+   ]
+  },
+  "0002_20180117_124237_Armstrong.all.mb58.gz": {
+   "n": 191760,
+   "bounds": [
+    -74.6485165127,
+    35.6992816174,
+    -74.5570772813,
+    35.7828261758
+   ],
+   "polar": 0,
+   "cells": [
+    -7469644,
+    -7469643,
+    -7459643
+   ]
+  },
+  "9999.all.mb58.gz": {
+   "n": 0,
+   "bounds": null,
+   "polar": 0,
+   "cells": []
+  }
+ },
+ "generated": "2026-10-09T20:30:45+00:00",
+ "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+}

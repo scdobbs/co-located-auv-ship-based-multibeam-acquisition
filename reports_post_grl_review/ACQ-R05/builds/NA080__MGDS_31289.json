@@ -1,0 +1,770 @@
+{
+ "pair_id": "NA080__MGDS_31289",
+ "unit": "lu13",
+ "kind": "ncei_swath",
+ "lr_cruise": "NA080",
+ "lr_doi": "None",
+ "started": "2026-10-09T21:38:40+00:00",
+ "host": "sh04-08n14.int",
+ "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45",
+ "directive": "ACQ-R05 2026-10-09",
+ "buffer_m": 5000.0,
+ "context_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/context_v1",
+ "lr_tif": {
+  "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/lr.tif",
+  "sha256": "965fe7636e100a2d2816c7910bb3b871ec503c8b5245512652f6a2f5647f0a16",
+  "crs": "EPSG:32610",
+  "transform": [
+   57.232042656679404,
+   0.0,
+   526230.2840281213,
+   0.0,
+   -57.23204265667993,
+   3942973.961409637
+  ],
+  "width": 201,
+  "height": 291,
+  "nodata": -9999.0,
+  "dtype": "float32"
+ },
+ "lattice": {
+  "crs": "EPSG:32610",
+  "transform": [
+   57.232042656679404,
+   0.0,
+   521251.09631699015,
+   0.0,
+   -57.23204265667993,
+   3948010.381163425
+  ],
+  "width": 376,
+  "height": 467,
+  "dx": 57.232042656679404,
+  "dy": 57.23204265667993,
+  "lr_offset_col": 87,
+  "lr_offset_row": 88,
+  "lr_width": 201,
+  "lr_height": 291,
+  "bounds": [
+   521251.09631699015,
+   3921283.0172427553,
+   542770.3443559016,
+   3948010.381163425
+  ],
+  "buffer_m": 5000.0,
+  "footprint_area_km2": 53.570912,
+  "buffered_area_km2": 422.0313428057678
+ },
+ "lr_pixel_offset_in_context": {
+  "col": 87,
+  "row": 88
+ },
+ "source_lattice": {
+  "w": -122.72133967410471,
+  "s": 35.470925881086174,
+  "e": -122.57240639051618,
+  "n": 35.63935189732911,
+  "nx": 236,
+  "ny": 328,
+  "dx": 0.0006337586535682277,
+  "dy": 0.0005150642698560627,
+  "src_crs": "OGC:CRS84",
+  "kind": "acq_r02_union_grd",
+  "cruise": "NA080",
+  "grd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/NA080__union.grd",
+  "grd_sha256": "814226109d16f1cd7083842cce096ccc5baafb861b5569124cb3749555d55103",
+  "record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R02/grid/NA080.json",
+  "cell_m": 57.33,
+  "how": "read from the persisted ACQ-R02 union grid NA080__union.grd (mbgrid region -122.72133967410471/-122.57240639051618/35.470925881086174/35.63935189732911)"
+ },
+ "source_lattice_verification": {
+  "match": true,
+  "pixel_size_rel_diff": 8.881784197001252e-16,
+  "lr_offset_in_warped_px": [
+   18.000000000000544,
+   18.999999999997637
+  ],
+  "warped_default": {
+   "transform": [
+    57.232042656679354,
+    0.0,
+    525200.107260301,
+    0.0,
+    -57.232042656679354,
+    3944061.3702201135
+   ],
+   "width": 238,
+   "height": 328
+  }
+ },
+ "source_files": [
+  {
+   "name": "0000_20170516_224523_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0000_20170516_224523_Nautilus.all.mb58.gz",
+   "sha256": "28eef660e5b1502cf373e04452a5d9e0ba800f65b91df907dde3b13136264892",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0000_20170516_224523_Nautilus.all.mb58.gz",
+   "size": 12552773,
+   "n_soundings": 113617
+  },
+  {
+   "name": "0001_20170516_232312_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0001_20170516_232312_Nautilus.all.mb58.gz",
+   "sha256": "2acf71ef04ad262084fa105d88e990097c8aaeeafeeef5c8b6aac6a5cc38986c",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0001_20170516_232312_Nautilus.all.mb58.gz",
+   "size": 6412321,
+   "n_soundings": 46490
+  },
+  {
+   "name": "0002_20170516_234020_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0002_20170516_234020_Nautilus.all.mb58.gz",
+   "sha256": "18181cb84a327a5b4b8482252ebcf91a3b79b22a93b45e98660b7bf9356a8392",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0002_20170516_234020_Nautilus.all.mb58.gz",
+   "size": 8711026,
+   "n_soundings": 81358
+  },
+  {
+   "name": "0003_20170517_000816_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0003_20170517_000816_Nautilus.all.mb58.gz",
+   "sha256": "35306afe1a405351637cc80c55ac752c9272d0bf642d51c1fbf8db8f924f5379",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0003_20170517_000816_Nautilus.all.mb58.gz",
+   "size": 6235585,
+   "n_soundings": 57076
+  },
+  {
+   "name": "0004_20170517_002723_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0004_20170517_002723_Nautilus.all.mb58.gz",
+   "sha256": "ececc9dac62a97225d76dd74ee9b5b4840619f3e512cf21b4d63c6e2a604cc48",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0004_20170517_002723_Nautilus.all.mb58.gz",
+   "size": 13208427,
+   "n_soundings": 118625
+  },
+  {
+   "name": "0005_20170517_010641_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0005_20170517_010641_Nautilus.all.mb58.gz",
+   "sha256": "6bd9e51a3c80d93a2c085372995bd4c015337ca28aae721d00fa7e4cb2a28893",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0005_20170517_010641_Nautilus.all.mb58.gz",
+   "size": 6753853,
+   "n_soundings": 44847
+  },
+  {
+   "name": "0006_20170517_012149_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0006_20170517_012149_Nautilus.all.mb58.gz",
+   "sha256": "dfc729bdd8f4ea096448c02eb6668b67f9c92e00468ec9940c9ab9123c55b883",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0006_20170517_012149_Nautilus.all.mb58.gz",
+   "size": 15827161,
+   "n_soundings": 147690
+  },
+  {
+   "name": "0007_20170517_021027_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0007_20170517_021027_Nautilus.all.mb58.gz",
+   "sha256": "f3db4b0aef782c21bc3112679635a6f2c90ef7148f39d7e35b5f41a1ca53b362",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0007_20170517_021027_Nautilus.all.mb58.gz",
+   "size": 7206094,
+   "n_soundings": 66809
+  },
+  {
+   "name": "0008_20170517_023222_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0008_20170517_023222_Nautilus.all.mb58.gz",
+   "sha256": "4fc2f6d65888d5dab4e8245392c42626dba26f1aad24c6c485f5a5047597cb4d",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0008_20170517_023222_Nautilus.all.mb58.gz",
+   "size": 20086358,
+   "n_soundings": 174835
+  },
+  {
+   "name": "0009_20170517_033224_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0009_20170517_033224_Nautilus.all.mb58.gz",
+   "sha256": "f38e6497f3e018d73e561345510fa313da7b434249a0cc0e8b9325dbe4c2101f",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0009_20170517_033224_Nautilus.all.mb58.gz",
+   "size": 420925,
+   "n_soundings": 3651
+  },
+  {
+   "name": "0010_20170517_033338_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0010_20170517_033338_Nautilus.all.mb58.gz",
+   "sha256": "b61350e509ffe355c4089e70612f5720f165fa231a5b4f76f9d9afa962ad1afd",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0010_20170517_033338_Nautilus.all.mb58.gz",
+   "size": 5910450,
+   "n_soundings": 48963
+  },
+  {
+   "name": "0011_20170517_034742_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0011_20170517_034742_Nautilus.all.mb58.gz",
+   "sha256": "a4f2a8167ce3138e14779fd6c10553e03dc4d131dd230503c1de0e740076b1fa",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0011_20170517_034742_Nautilus.all.mb58.gz",
+   "size": 6464441,
+   "n_soundings": 60532
+  },
+  {
+   "name": "0012_20170517_040821_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0012_20170517_040821_Nautilus.all.mb58.gz",
+   "sha256": "ef917e866d88f61e843331f9ff79f21b7db99efa9daebd6e4e28a1d22717deb0",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0012_20170517_040821_Nautilus.all.mb58.gz",
+   "size": 16447434,
+   "n_soundings": 151832
+  },
+  {
+   "name": "0013_20170517_050028_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0013_20170517_050028_Nautilus.all.mb58.gz",
+   "sha256": "678316ba6b92cacf8f83188361ef63c5fe7d1a2c6f51ea2d173822853f879ec0",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0013_20170517_050028_Nautilus.all.mb58.gz",
+   "size": 8952727,
+   "n_soundings": 82746
+  },
+  {
+   "name": "0014_20170517_052738_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0014_20170517_052738_Nautilus.all.mb58.gz",
+   "sha256": "863c72252a5694ed8d4f87a7bb0bbf947886433b2376ab467d66cd0f9d63e4db",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0014_20170517_052738_Nautilus.all.mb58.gz",
+   "size": 19926585,
+   "n_soundings": 173503
+  },
+  {
+   "name": "0015_20170517_062735_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0015_20170517_062735_Nautilus.all.mb58.gz",
+   "sha256": "8a02813922d2d0a8a7bfb0d7c67e8ac6574050ca08a8302282de5e433244233a",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0015_20170517_062735_Nautilus.all.mb58.gz",
+   "size": 12315060,
+   "n_soundings": 106055
+  },
+  {
+   "name": "0016_20170517_070123_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0016_20170517_070123_Nautilus.all.mb58.gz",
+   "sha256": "18c4808fcc2212eded35f34532459ae7c0a1f4ade3471163188a6badcb492929",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0016_20170517_070123_Nautilus.all.mb58.gz",
+   "size": 19408852,
+   "n_soundings": 178642
+  },
+  {
+   "name": "0017_20170517_080123_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0017_20170517_080123_Nautilus.all.mb58.gz",
+   "sha256": "468d8bb5b5482f563b8e320bc6408d2fcb60c11e13c34432420b9a3d66e2d7ea",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0017_20170517_080123_Nautilus.all.mb58.gz",
+   "size": 7322633,
+   "n_soundings": 69611
+  },
+  {
+   "name": "0018_20170517_082452_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0018_20170517_082452_Nautilus.all.mb58.gz",
+   "sha256": "116fac7c57eef621c634f221c4d46ed66383a4391be29be798527918ac8e16da",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0018_20170517_082452_Nautilus.all.mb58.gz",
+   "size": 6755223,
+   "n_soundings": 59658
+  },
+  {
+   "name": "0019_20170517_084504_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0019_20170517_084504_Nautilus.all.mb58.gz",
+   "sha256": "6cea8b2ce744dc9acd4ad72e6d442093a51cff3f90e3539ebcab68f2ad079da3",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0019_20170517_084504_Nautilus.all.mb58.gz",
+   "size": 20035612,
+   "n_soundings": 173702
+  },
+  {
+   "name": "0020_20170517_094506_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0020_20170517_094506_Nautilus.all.mb58.gz",
+   "sha256": "d34f8fcf89fde2ab50dccb608f99b4eaa3c7c48de112f37227daf58b62fc56fb",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0020_20170517_094506_Nautilus.all.mb58.gz",
+   "size": 2139164,
+   "n_soundings": 16669
+  },
+  {
+   "name": "0021_20170517_095135_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0021_20170517_095135_Nautilus.all.mb58.gz",
+   "sha256": "1c12083496a99f91701542f330f68832be93187c38a8497daa803e6b3368253d",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0021_20170517_095135_Nautilus.all.mb58.gz",
+   "size": 5139226,
+   "n_soundings": 41985
+  },
+  {
+   "name": "0022_20170517_100540_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0022_20170517_100540_Nautilus.all.mb58.gz",
+   "sha256": "9e58b239f40487e07d08f8e78512e35e4c03554cb8deb549083296aad5af5e93",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0022_20170517_100540_Nautilus.all.mb58.gz",
+   "size": 16050541,
+   "n_soundings": 145658
+  },
+  {
+   "name": "0023_20170517_105642_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0023_20170517_105642_Nautilus.all.mb58.gz",
+   "sha256": "b208465cd0bb1fad0d2847a76716a3131a37d0fd09ce855921e5a6b8d24b3f72",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0023_20170517_105642_Nautilus.all.mb58.gz",
+   "size": 6710709,
+   "n_soundings": 57057
+  },
+  {
+   "name": "0024_20170517_111643_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0024_20170517_111643_Nautilus.all.mb58.gz",
+   "sha256": "8502d58a9d909b5762585da479990704eee780b5e7e4438aba9a5432a88a270f",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0024_20170517_111643_Nautilus.all.mb58.gz",
+   "size": 11348800,
+   "n_soundings": 96901
+  },
+  {
+   "name": "0025_20170517_115111_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0025_20170517_115111_Nautilus.all.mb58.gz",
+   "sha256": "e19cdc7cfc0a683ef80b89d4f1cf69d24e881bcb706da64fb15ff4a9ae8881b0",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0025_20170517_115111_Nautilus.all.mb58.gz",
+   "size": 4146971,
+   "n_soundings": 36304
+  },
+  {
+   "name": "0026_20170517_120325_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0026_20170517_120325_Nautilus.all.mb58.gz",
+   "sha256": "fdfa630b839b6b6d2320d53aa46faa8b1f99933c0d304d906944eb6e211223a7",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0026_20170517_120325_Nautilus.all.mb58.gz",
+   "size": 5792402,
+   "n_soundings": 53305
+  },
+  {
+   "name": "0027_20170517_122200_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0027_20170517_122200_Nautilus.all.mb58.gz",
+   "sha256": "55edbd80ca075de9624573d457687c30598b9f126765df805b2c7d70a09728ed",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0027_20170517_122200_Nautilus.all.mb58.gz",
+   "size": 11508316,
+   "n_soundings": 106557
+  },
+  {
+   "name": "0028_20170517_125749_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0028_20170517_125749_Nautilus.all.mb58.gz",
+   "sha256": "c35786c60ab5c9e79f30eb562ac0fc903880e0108b03ecfb5f6cdf9534118a2b",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0028_20170517_125749_Nautilus.all.mb58.gz",
+   "size": 10481173,
+   "n_soundings": 97147
+  },
+  {
+   "name": "0029_20170517_133013_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0029_20170517_133013_Nautilus.all.mb58.gz",
+   "sha256": "49c2f3fe17f58f5d9a618fe4f3a31c90503465b70429161126dfa64f92a14da0",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0029_20170517_133013_Nautilus.all.mb58.gz",
+   "size": 5470073,
+   "n_soundings": 46474
+  },
+  {
+   "name": "0030_20170517_134616_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0030_20170517_134616_Nautilus.all.mb58.gz",
+   "sha256": "8d4196c7abef42122ba844ad4f71836f5c6690554d1f1650e1d1f3f532e861ae",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0030_20170517_134616_Nautilus.all.mb58.gz",
+   "size": 20281472,
+   "n_soundings": 175905
+  },
+  {
+   "name": "0031_20170517_144619_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0031_20170517_144619_Nautilus.all.mb58.gz",
+   "sha256": "1a60c0dc6b0e055b50fe8684235a434c3db797afed3ed0ba29b834a5df93c1ae",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0031_20170517_144619_Nautilus.all.mb58.gz",
+   "size": 235276,
+   "n_soundings": 2044
+  },
+  {
+   "name": "0032_20170517_144701_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0032_20170517_144701_Nautilus.all.mb58.gz",
+   "sha256": "2a36e1aab477a565b045ae717c47bd86eb2b11ca9df9b34e147b88efdfbd9cd1",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0032_20170517_144701_Nautilus.all.mb58.gz",
+   "size": 13676500,
+   "n_soundings": 116275
+  },
+  {
+   "name": "0033_20170517_152740_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0033_20170517_152740_Nautilus.all.mb58.gz",
+   "sha256": "cd45fa49dec942ca05d1db086d5e08edf0056e3d4b875d315a75d07550ba528e",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0033_20170517_152740_Nautilus.all.mb58.gz",
+   "size": 19636745,
+   "n_soundings": 171700
+  },
+  {
+   "name": "0034_20170517_162744_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0034_20170517_162744_Nautilus.all.mb58.gz",
+   "sha256": "fc0a58e1f4dcb5f96197d6f4112b60cfeaab4418e780d90205aa017dfda22680",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0034_20170517_162744_Nautilus.all.mb58.gz",
+   "size": 11810281,
+   "n_soundings": 101516
+  },
+  {
+   "name": "0035_20170517_170352_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0035_20170517_170352_Nautilus.all.mb58.gz",
+   "sha256": "4328f4a5a75e1aaf0a4069c5a3efed64878e3e3f74c2b5c7416553ed57232ae7",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0035_20170517_170352_Nautilus.all.mb58.gz",
+   "size": 5553935,
+   "n_soundings": 40803
+  },
+  {
+   "name": "0036_20170517_172004_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0036_20170517_172004_Nautilus.all.mb58.gz",
+   "sha256": "796ef8a458f1a5bb4b331cf68ad0dee376c01221545e02bb8dc60d744358d1e3",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0036_20170517_172004_Nautilus.all.mb58.gz",
+   "size": 20398309,
+   "n_soundings": 157369
+  },
+  {
+   "name": "0037_20170517_181959_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0037_20170517_181959_Nautilus.all.mb58.gz",
+   "sha256": "6423072a9b3192810b57faee08afa160e1dde49fc5566784fd7d874c2cea6d65",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0037_20170517_181959_Nautilus.all.mb58.gz",
+   "size": 12209881,
+   "n_soundings": 94566
+  },
+  {
+   "name": "0038_20170517_185613_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0038_20170517_185613_Nautilus.all.mb58.gz",
+   "sha256": "c8da0548fc4d4ec899cee900aa946553907e33a3da9fac386b581bdf018333db",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0038_20170517_185613_Nautilus.all.mb58.gz",
+   "size": 4191707,
+   "n_soundings": 35784
+  },
+  {
+   "name": "0039_20170517_190823_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0039_20170517_190823_Nautilus.all.mb58.gz",
+   "sha256": "547f49e2a69c3d06d8c9d8b7a30421be640c12118607f9dcfb8c37f0b2c6797a",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0039_20170517_190823_Nautilus.all.mb58.gz",
+   "size": 20031214,
+   "n_soundings": 173891
+  },
+  {
+   "name": "0040_20170517_200827_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0040_20170517_200827_Nautilus.all.mb58.gz",
+   "sha256": "b1a356e7cbf6a6b932a03697e882578b04cf5182adb7244629f271b621cc8ce3",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0040_20170517_200827_Nautilus.all.mb58.gz",
+   "size": 7552957,
+   "n_soundings": 60683
+  },
+  {
+   "name": "0041_20170517_203109_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0041_20170517_203109_Nautilus.all.mb58.gz",
+   "sha256": "11a9d3d41855c11b6291f63b9c2f2b97d413f1dae944815987443d7d22bfd9a0",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0041_20170517_203109_Nautilus.all.mb58.gz",
+   "size": 3414756,
+   "n_soundings": 16266
+  },
+  {
+   "name": "0042_20170517_204139_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0042_20170517_204139_Nautilus.all.mb58.gz",
+   "sha256": "cb9fa99c956c4f1fddd97af589a1bf40e76597b771bb1b6f19c390daa1aec5a8",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0042_20170517_204139_Nautilus.all.mb58.gz",
+   "size": 20288077,
+   "n_soundings": 118407
+  },
+  {
+   "name": "0043_20170517_214143_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0043_20170517_214143_Nautilus.all.mb58.gz",
+   "sha256": "99c3063f5691db8a8cf16f9bb6909efd1f2ac183c1542c99984f8d878c2aa1c8",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0043_20170517_214143_Nautilus.all.mb58.gz",
+   "size": 3158078,
+   "n_soundings": 9945
+  },
+  {
+   "name": "0044_20170517_215203_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0044_20170517_215203_Nautilus.all.mb58.gz",
+   "sha256": "bb5b8ab4aa518e3275689e6c736ecabcb1fc304743145f183b3b39d684670a7f",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0044_20170517_215203_Nautilus.all.mb58.gz",
+   "size": 5647715,
+   "n_soundings": 42734
+  },
+  {
+   "name": "0045_20170517_220755_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0045_20170517_220755_Nautilus.all.mb58.gz",
+   "sha256": "28234ca16739276638b1101a99629fdda166ac4ea56eeaa3c7226d0da7b0c975",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0045_20170517_220755_Nautilus.all.mb58.gz",
+   "size": 19932679,
+   "n_soundings": 178742
+  },
+  {
+   "name": "0046_20170517_230505_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0046_20170517_230505_Nautilus.all.mb58.gz",
+   "sha256": "1e23b3c377f43be6f2be2302ce25ff6906ca2115f8ad08c9a7f480a818faf36b",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0046_20170517_230505_Nautilus.all.mb58.gz",
+   "size": 6021329,
+   "n_soundings": 41820
+  },
+  {
+   "name": "0047_20170517_232254_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0047_20170517_232254_Nautilus.all.mb58.gz",
+   "sha256": "3cb003a59deae8c6bbba173de8cfee26daba33e54bc9ed3011639d121d76ee1c",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0047_20170517_232254_Nautilus.all.mb58.gz",
+   "size": 16138863,
+   "n_soundings": 66619
+  },
+  {
+   "name": "0048_20170518_001507_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0048_20170518_001507_Nautilus.all.mb58.gz",
+   "sha256": "7f0a0d727a49be952adcbc61af2469ddb32cb3780b5e129067dfe1afbd80a2be",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0048_20170518_001507_Nautilus.all.mb58.gz",
+   "size": 3423206,
+   "n_soundings": 29085
+  },
+  {
+   "name": "0049_20170518_002455_Nautilus.all.mb58.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/0049_20170518_002455_Nautilus.all.mb58.gz",
+   "sha256": "15f443488ddef1129a2b000cd829a1dcf0c7543a805cfa0cd5d85e91f9c31a8d",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/em302/0049_20170518_002455_Nautilus.all.mb58.gz",
+   "size": 12272182,
+   "n_soundings": 110015
+  }
+ ],
+ "source_selection": {
+  "rule": "files with a sounding in a 0.1-degree cell touched by the mbgrid region (ACQ-R04 coverage pass)",
+  "n_selected": 50,
+  "n_cruise_files_on_oak": 1033,
+  "coverage_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R05/sources/NA080_coverage.json",
+  "unreadable_files_in_cruise": []
+ },
+ "gridding": {
+  "mb_format": 58,
+  "n_files": 50,
+  "decompress_s": 1.5,
+  "mbgrid_s": 11.6,
+  "mbgrid_attempts": 1,
+  "grd_vs_source_grd": {
+   "what": "context grd nodes vs ACQ-R02 union grd nodes (common nodes)",
+   "n_cells": 77378,
+   "n_reference_valid": 77380,
+   "n_reference_valid_but_context_nan": 2,
+   "median_diff": 0.0,
+   "rms": 2.5976854699410508,
+   "robust_sigma": 0.0,
+   "max_abs_diff": 269.0390625,
+   "n_nonzero_diff": 16011,
+   "identical": false,
+   "n_source_finite_context_nan": 2,
+   "n_context_finite_source_nan": 13,
+   "common_window_nodes": [
+    328,
+    236
+   ]
+  },
+  "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /lscratch/scdobbs/47141458/mbsystem_sandbox mbgrid -I datalist.mb-1 -O ctx_NA080__MGDS_31289 -R -122.77711043561871/-122.5160018703486/35.42457009679913/35.685192617346296 -E 0.0006337586535682277/0.0005150642698560627/degrees -A2 -G3 -F1 -C0 -M",
+  "mbgrid_region": {
+   "R": "-122.77711043561871/-122.5160018703486/35.42457009679913/35.685192617346296",
+   "E": "0.0006337586535682277/0.0005150642698560627/degrees",
+   "w": -122.77711043561871,
+   "s": 35.42457009679913,
+   "e": -122.5160018703486,
+   "n": 35.685192617346296,
+   "nx": 413,
+   "ny": 507,
+   "dx": 0.0006337586535682277,
+   "dy": 0.0005150642698560627,
+   "node_offset_from_source": [
+    -88,
+    -90
+   ],
+   "spacing_rel_err_after_mbgrid": [
+    -1.3211653993039363e-14,
+    -6.772360450213455e-15
+   ],
+   "lonlat_box_unsnapped": [
+    -122.77691235313263,
+    35.42508278632801,
+    -122.51633814910343,
+    35.68472969830505
+   ]
+  },
+  "grd_lattice_check": {
+   "nx": [
+    413,
+    413
+   ],
+   "ny": [
+    507,
+    507
+   ],
+   "dx_rel": -1.3211653993039363e-14,
+   "dy_rel": -6.772360450213455e-15,
+   "w_err_cells": 0.0,
+   "n_err_cells": 0.0,
+   "crs": "OGC:CRS84"
+  },
+  "grd_nodata": NaN,
+  "warp": {
+   "method": "harmonize._open (rioxarray, masked) + DataArray.rio.reproject(dst_crs=lr.tif CRS, transform=context lattice, shape=context shape, resampling=bilinear, nodata=-9999); -9999 and |z|>=99999 -> NaN; float32",
+   "development_chain_reference": "ACQ-R04 \u00a75.1 (harmonize._reproject bilinear nodata -9999, GDAL default output grid == lr.tif lattice, verified by lattice.verify_lattice)"
+  },
+  "persisted_grids_oak": {
+   "grd": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/NA080__MGDS_31289__context_v1.grd",
+    "sha256": "c84a423466cb3375bb58b4406fb7d9e5c5562312ed6451a47ba136235af10db6"
+   },
+   "grd_num": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/NA080__MGDS_31289__context_v1_num.grd",
+    "sha256": "5b53607ed733197dc5b939b26c316e01313acef4718aa9593f7ea2c3179a941a"
+   },
+   "grd_sd": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/NA080__MGDS_31289__context_v1_sd.grd",
+    "sha256": "6241e1c1cdc8ebf3907d9cfffae6c51ab84a7dfec75e7068aa99064108b092c3"
+   }
+  }
+ },
+ "commands": [
+  "apptainer exec --bind /scratch,/home/groups,/oak /lscratch/scdobbs/47141458/mbsystem_sandbox mbgrid -I datalist.mb-1 -O ctx_NA080__MGDS_31289 -R -122.77711043561871/-122.5160018703486/35.42457009679913/35.685192617346296 -E 0.0006337586535682277/0.0005150642698560627/degrees -A2 -G3 -F1 -C0 -M"
+ ],
+ "agreement": {
+  "what": "ctx_lr vs lr.tif on lr.tif valid cells",
+  "n_cells": 16348,
+  "n_reference_valid": 16348,
+  "n_reference_valid_but_context_nan": 0,
+  "median_diff": -0.0615234375,
+  "rms": 1.1210782178899763,
+  "robust_sigma": 0.2939138671875,
+  "max_abs_diff": 12.198486328125,
+  "n_nonzero_diff": 16342,
+  "identical": false,
+  "median_diff_over_s_lr": -0.007863483703828568,
+  "rms_over_s_lr": 0.14328816228929017,
+  "robust_sigma_over_s_lr": 0.037565958582176755,
+  "frac_abs_diff_gt_0p1_s_lr": 0.1923782725715684,
+  "median_s_lr_m": 7.823941629082986,
+  "s_lr_source": "median of 3219 tile s_lr values, CNN repo R04 tiles_v1.parquet",
+  "gate": {
+   "robust_sigma_over_s_lr_max": 0.1,
+   "abs_median_max_m": 0.5
+  },
+  "flags": []
+ },
+ "coverage": {
+  "n_cells": 175592,
+  "n_valid": 149374,
+  "valid_fraction": 0.850687958449132,
+  "valid_fraction_outside_lr_window": 0.776107804374002,
+  "valid_fraction_in_lr_window": 1.0,
+  "lr_valid_fraction": 0.27949599083619703
+ },
+ "outputs": {
+  "ctx_lr.tif": "c3382fe2031bb0c9babfd9cd411170f9eb04a9d29b2ae8c35f8e82af140894a4",
+  "ctx_lr_valid.tif": "abc3fccc4dc50cbcb783a34f6149ed767a780252ee6196adc1943ccef23b404d"
+ },
+ "products": {
+  "wall_s": 14.8,
+  "nproc": 4,
+  "batch_files": 1,
+  "builder": "src.acq_r03.build_products_v2_1.build (unchanged)",
+  "staging_note": "products.json lr_tif_path points at the scratch staging copy of ctx_lr.tif (same bytes as context_v1/ctx_lr.tif)",
+  "available": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true
+  },
+  "flags": [],
+  "qa_vs_ctx_lr": {
+   "n_common_cells": 148304,
+   "median_offset_m": 0.251,
+   "rms_m": 16.9026,
+   "robust_sigma_m": 1.1623,
+   "rms_over_median_s_lr": null,
+   "robust_sigma_over_median_s_lr": null,
+   "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+   "shift_argmin_cells": [
+    0.0,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 1.1623,
+   "sigma_argmin_m": 0.9691,
+   "gain_m": 0.1932,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "matches_ctx_lr_grid": true,
+  "files": {
+   "products.json": "434a2fe935cc2d4a67c03b4bea69f81e83162d842b9d8e71654327ee420e32e8",
+   "products_extra.json": "9e9f7d6b3591ca398543847fe6493b015dc9c7c81e0f344f801465055e751c05",
+   "qa_shift_surface.csv": "4dedcae45d0cb688e3be2aaf13ad2c7868db5759bd42f4e9f0caa5f453820224",
+   "ship_beam_angle.tif": "b5a4a90ba129c4605646bf4af9c3c2677f3c7375e54b0c4ef5743d57f404335f",
+   "ship_count.tif": "0ac10d7b04ef799dcea5917bde2b61a20e0af5f3a029a94a00f9b3fa5def46de",
+   "ship_mean_regrid.tif": "3eeff142a8195e88e01ac5c46d1b96adc7cc699f43e017f8793de5401234d407",
+   "ship_median_regrid.tif": "ae1fdaab59bb2bc46fe0d641952082cb4a39da1770ecba3d990a36c9b9436703",
+   "ship_rsd.tif": "02f004c996e3b662ce01f77e363e9e0f14718f2bc8e06bc84f44f9c6fc09cf17",
+   "ship_sd.tif": "5519d3021bccea3f01753cd339800dc0c3a68121cea3f62a3db60b0b69f5ef1d",
+   "ship_xtrack_frac.tif": "e211eba8e50eacdda5e3bec76747ae482008cf5f5d6aa7c3c0a2b960eb8ac1b7"
+  },
+  "result": {
+   "pair_id": "NA080__MGDS_31289",
+   "cruise": "NA080",
+   "qa": {
+    "n_common_cells": 148304,
+    "median_offset_m": 0.251,
+    "rms_m": 16.9026,
+    "robust_sigma_m": 1.1623,
+    "rms_over_median_s_lr": null,
+    "robust_sigma_over_median_s_lr": null,
+    "s_lr_source": "none (new pair: no CNN-repo tile table yet)",
+    "shift_argmin_cells": [
+     0.0,
+     -0.25
+    ],
+    "shift_surface_file": "qa_shift_surface.csv",
+    "sigma0_m": 1.1623,
+    "sigma_argmin_m": 0.9691,
+    "gain_m": 0.1932,
+    "registration_gate": {
+     "min_shift_cells": 0.5,
+     "min_gain_m": 0.1
+    },
+    "flags": []
+   },
+   "frame_offset": {
+    "applied": false,
+    "dx_m": 0.0,
+    "dy_m": 0.0,
+    "basis": "none",
+    "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+   },
+   "control_vs_v2": {
+    "ship_count": "v2 missing",
+    "ship_sd": "v2 missing",
+    "ship_rsd": "v2 missing",
+    "ship_xtrack_frac": "v2 missing",
+    "ship_beam_angle": "v2 missing",
+    "ship_mean_regrid": "v2 missing",
+    "ship_median_regrid": "v2 missing"
+   },
+   "median_rsd_over_sd": 0.8058647513389587,
+   "cells": 149463,
+   "beam_angle_method": "launch_angle",
+   "matches_lr_tif": true
+  }
+ },
+ "products_vs_existing": {
+  "ship_count": {
+   "what": "ship_count",
+   "n_cells": 58491,
+   "n_reference_valid": 58491,
+   "n_reference_valid_but_context_nan": 0,
+   "median_diff": 0.0,
+   "rms": 0.0,
+   "robust_sigma": 0.0,
+   "max_abs_diff": 0.0,
+   "n_nonzero_diff": 0,
+   "identical": true,
+   "frac_cells_count_differs": 0.0,
+   "sum_count_existing": 2092332.0,
+   "sum_count_context_on_lr_cells": 2092332.0
+  },
+  "ship_rsd": {
+   "what": "ship_rsd",
+   "n_cells": 58491,
+   "n_reference_valid": 58491,
+   "n_reference_valid_but_context_nan": 0,
+   "median_diff": 0.0,
+   "rms": 0.0,
+   "robust_sigma": 0.0,
+   "max_abs_diff": 0.0,
+   "n_nonzero_diff": 0,
+   "identical": true,
+   "median_diff_over_s_lr": 0.0,
+   "rms_over_s_lr": 0.0,
+   "robust_sigma_over_s_lr": 0.0,
+   "frac_abs_diff_gt_0p1_s_lr": 0.0
+  }
+ },
+ "wall_s": 71.8,
+ "finished": "2026-10-09T21:39:31+00:00",
+ "status": "built",
+ "sha256sums": {
+  "n_files": 13,
+  "n_bad": 0,
+  "bad": []
+ }
+}

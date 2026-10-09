@@ -1,0 +1,74 @@
+{
+ "cruise": "AR26",
+ "oak_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/AR26",
+ "origin": "June stage B (A.5 nav subset rule)",
+ "fetch_mode": "whole",
+ "whole_gb": 0.2,
+ "subset_gb": 0.2,
+ "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/neil_armstrong/AR26/multibeam/data/version1/MB/",
+ "n_files_ncei_june": 44,
+ "n_files_on_oak": 10,
+ "n_files_manifest": 10,
+ "bytes_on_oak": 206480254,
+ "is_subset": false,
+ "pairs": [
+  "AR26__MGDS_31838"
+ ],
+ "started": "2026-10-09T20:30:32+00:00",
+ "host": "sh04-08n28.int",
+ "need": {
+  "pairs": {
+   "AR26__MGDS_31838": {
+    "region": {
+     "w": -74.75094573031762,
+     "s": 35.663765426231045,
+     "e": -74.56037056468239,
+     "n": 35.79639748674011,
+     "nx": 587,
+     "ny": 504
+    },
+    "median_depth_m": 1782.51318359375,
+    "nav_reach_m": 5347.53955078125
+   }
+  },
+  "region_union_bounds": [
+   -74.75094573031762,
+   35.663765426231045,
+   -74.56037056468239,
+   35.79639748674011
+  ],
+  "nav_union_bounds": [
+   -74.81012665715349,
+   35.61554971371474,
+   -74.50119066236617,
+   35.84461174846759
+  ]
+ },
+ "plan": {
+  "note": "whole cruise on OAK; nothing to fetch"
+ },
+ "coverage": {
+  "cruise": "AR26",
+  "mb_format": 58,
+  "n_files": 10,
+  "soundings": 1970149,
+  "files_without_soundings": [
+   "9999.all.mb58.gz"
+  ],
+  "unreadable_files": [],
+  "unparsed_lines_dropped": 0,
+  "polar_soundings_dropped": 0,
+  "decompress_s": 0.7,
+  "coverage_s": 7.0,
+  "generated": "2026-10-09T20:30:45+00:00",
+  "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+ },
+ "selection": {
+  "AR26__MGDS_31838": {
+   "n_files": 3
+  }
+ },
+ "wall_s": 13.0,
+ "finished": "2026-10-09T20:30:45+00:00",
+ "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+}

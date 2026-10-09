@@ -1,0 +1,72 @@
+{
+ "cruise": "EW0207",
+ "oak_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/EW0207",
+ "origin": "June stage B (A.5 nav subset rule)",
+ "fetch_mode": "whole",
+ "whole_gb": 1.3,
+ "subset_gb": 1.3,
+ "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/maurice_ewing/EW0207/multibeam/data/version1/MB/",
+ "n_files_ncei_june": 17312,
+ "n_files_on_oak": 4328,
+ "n_files_manifest": 4328,
+ "bytes_on_oak": 1394935966,
+ "is_subset": false,
+ "pairs": [
+  "EW0207__MGDS_32556"
+ ],
+ "started": "2026-10-09T20:30:34+00:00",
+ "host": "sh04-09n18.int",
+ "need": {
+  "pairs": {
+   "EW0207__MGDS_32556": {
+    "region": {
+     "w": -130.114087755955,
+     "s": 45.993116455419,
+     "e": -129.75760788270867,
+     "n": 46.28978132372601,
+     "nx": 349,
+     "ny": 417
+    },
+    "median_depth_m": 2057.989501953125,
+    "nav_reach_m": 6173.968505859375
+   }
+  },
+  "region_union_bounds": [
+   -130.114087755955,
+   45.993116455419,
+   -129.75760788270867,
+   46.28978132372601
+  ],
+  "nav_union_bounds": [
+   -130.19423314218534,
+   45.93755062801045,
+   -129.67745771768057,
+   46.34534374196523
+  ]
+ },
+ "plan": {
+  "note": "whole cruise on OAK; nothing to fetch"
+ },
+ "coverage": {
+  "cruise": "EW0207",
+  "mb_format": 183,
+  "n_files": 4328,
+  "soundings": 26951805,
+  "files_without_soundings": [],
+  "unreadable_files": [],
+  "unparsed_lines_dropped": 0,
+  "polar_soundings_dropped": 0,
+  "decompress_s": 22.8,
+  "coverage_s": 119.9,
+  "generated": "2026-10-09T20:33:12+00:00",
+  "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+ },
+ "selection": {
+  "EW0207__MGDS_32556": {
+   "n_files": 418
+  }
+ },
+ "wall_s": 161.0,
+ "finished": "2026-10-09T20:33:13+00:00",
+ "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+}

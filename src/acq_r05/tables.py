@@ -137,6 +137,20 @@ def main(argv=None):
         v = json.loads(pv.read_text())
         numbers["preservation"] = {k: v[k] for k in ("sha256", "n_rows", "n_built", "n_not_built", "n_sha_mismatch", "n_files_verified_total", "n_files_bad_total")}
         md(pd.DataFrame([{"pair_id": p, "files verified": r["n_files"], "bad": r["n_bad"]} for p, r in v["per_pair"].items()]), "preservation", "preserve_verify.json")
+    # 7b diagnostics: core vs edge ring; over-fetch
+    cr = R.REPORT_DIR / "agreement_core_vs_ring.json"
+    if cr.exists():
+        j = json.loads(cr.read_text())["pairs"]
+        md(pd.DataFrame([{"pair_id": p, "core n": v["core_eroded_10"]["n"], "core RMS m": f3(v["core_eroded_10"]["rms"]), "core robust σ m": f3(v["core_eroded_10"]["robust_sigma"]),
+                          "core max abs m": f3(v["core_eroded_10"]["max_abs"]), "core frac > 0.5 m": f3(v["core_eroded_10"]["frac_gt_0p5m"]), "ring n": v["ring"]["n"], "ring RMS m": f3(v["ring"]["rms"]),
+                          "ring robust σ m": f3(v["ring"]["robust_sigma"]), "ring max abs m": f3(v["ring"]["max_abs"]), "ring frac > 0.5 m": f3(v["ring"]["frac_gt_0p5m"])} for p, v in j.items()]),
+           "core_vs_ring", "agreement_core_vs_ring.json")
+    ov = R.REPORT_DIR / "overfetch_deletable_v1.json"
+    if ov.exists():
+        j = json.loads(ov.read_text())
+        md(pd.DataFrame([{"cruise": c, **v} for c, v in j["per_cruise"].items()]).drop(columns=["manifest_backup"]), "overfetch", "overfetch_deletable_v1.json")
+        numbers["overfetch"] = {"total_gb_not_selected": j["total_gb_not_selected"], "n_files_fetched": int(sum(v["n_fetched_by_acq_r05"] for v in j["per_cruise"].values())),
+                                "gb_fetched": round(sum(v["gb_fetched"] for v in j["per_cruise"].values()), 2), "n_not_selected": int(sum(v["n_not_selected"] for v in j["per_cruise"].values()))}
     # 8 failure ledger
     led = []
     for p in R.PAIRS_IN_SCOPE:

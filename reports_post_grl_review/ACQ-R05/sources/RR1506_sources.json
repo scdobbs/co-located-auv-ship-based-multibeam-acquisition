@@ -1,0 +1,72 @@
+{
+ "cruise": "RR1506",
+ "oak_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/RR1506",
+ "origin": "June stage B (A.5 nav subset rule)",
+ "fetch_mode": "whole",
+ "whole_gb": 3.82,
+ "subset_gb": 3.82,
+ "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/roger_revelle/RR1506/multibeam/data/version1/MB/",
+ "n_files_ncei_june": 760,
+ "n_files_on_oak": 190,
+ "n_files_manifest": 190,
+ "bytes_on_oak": 4097350543,
+ "is_subset": false,
+ "pairs": [
+  "RR1506__MGDS_29779"
+ ],
+ "started": "2026-10-09T20:30:35+00:00",
+ "host": "sh04-05n21.int",
+ "need": {
+  "pairs": {
+   "RR1506__MGDS_29779": {
+    "region": {
+     "w": -179.13320773424647,
+     "s": -31.203500589162097,
+     "e": -178.92444483770612,
+     "n": -30.9801380535575,
+     "nx": 982,
+     "ny": 1228
+    },
+    "median_depth_m": 1107.2783813476562,
+    "nav_reach_m": 3321.8351440429688
+   }
+  },
+  "region_union_bounds": [
+   -179.13320773424647,
+   -31.203500589162097,
+   -178.92444483770612,
+   -30.9801380535575
+  ],
+  "nav_union_bounds": [
+   -179.16805992670368,
+   -31.233460815215008,
+   -178.88958878684076,
+   -30.950176715748327
+  ]
+ },
+ "plan": {
+  "note": "whole cruise on OAK; nothing to fetch"
+ },
+ "coverage": {
+  "cruise": "RR1506",
+  "mb_format": 58,
+  "n_files": 190,
+  "soundings": 29109325,
+  "files_without_soundings": [],
+  "unreadable_files": [],
+  "unparsed_lines_dropped": 0,
+  "polar_soundings_dropped": 0,
+  "decompress_s": 12.8,
+  "coverage_s": 118.7,
+  "generated": "2026-10-09T20:32:57+00:00",
+  "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+ },
+ "selection": {
+  "RR1506__MGDS_29779": {
+   "n_files": 47
+  }
+ },
+ "wall_s": 143.6,
+ "finished": "2026-10-09T20:32:58+00:00",
+ "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+}

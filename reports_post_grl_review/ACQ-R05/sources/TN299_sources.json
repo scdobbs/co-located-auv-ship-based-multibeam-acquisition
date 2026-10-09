@@ -1,0 +1,91 @@
+{
+ "cruise": "TN299",
+ "oak_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/TN299",
+ "origin": "June stage B (A.5 nav subset rule)",
+ "fetch_mode": "subset",
+ "whole_gb": 38.17,
+ "subset_gb": 0.409,
+ "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/thomas_g._thompson/TN299/multibeam/data/version1/MB/",
+ "n_files_ncei_june": 2632,
+ "n_files_on_oak": 658,
+ "n_files_manifest": 658,
+ "bytes_on_oak": 40967481757,
+ "is_subset": true,
+ "pairs": [
+  "TN299__MGDS_27339",
+  "TN299__MGDS_31253"
+ ],
+ "started": "2026-10-09T20:56:18+00:00",
+ "host": "sh04-07n17.int",
+ "need": {
+  "pairs": {
+   "TN299__MGDS_27339": {
+    "region": {
+     "w": -126.88114780138883,
+     "s": 42.58091720639785,
+     "e": -126.6205839314744,
+     "n": 42.834165488528036,
+     "nx": 417,
+     "ny": 551
+    },
+    "median_depth_m": 3034.16259765625,
+    "nav_reach_m": 9102.48779296875
+   },
+   "TN299__MGDS_31253": {
+    "region": {
+     "w": -125.1695551938314,
+     "s": 44.41433334472544,
+     "e": -124.96809341031728,
+     "n": 44.558528636728354,
+     "nx": 435,
+     "ny": 437
+    },
+    "median_depth_m": 1086.9930419921875,
+    "nav_reach_m": 3260.9791259765625
+   }
+  },
+  "region_union_bounds": [
+   -126.88114780138883,
+   42.58091720639785,
+   -124.96809341031728,
+   44.558528636728354
+  ],
+  "nav_union_bounds": [
+   -126.99248522910193,
+   42.49897240337488,
+   -124.92704463026232,
+   44.58787711960428
+  ]
+ },
+ "plan": {
+  "note": "--no-fetch: no NCEI listing; coverage pass over the files already on OAK (fetch manifest complete)"
+ },
+ "coverage": {
+  "cruise": "TN299",
+  "mb_format": 58,
+  "n_files": 658,
+  "soundings": 343715910,
+  "files_without_soundings": [
+   "0155_20130708_231340_TGT.all.mb58.gz",
+   "0636_20130817_183644_TGT.all.mb58.gz"
+  ],
+  "unreadable_files": [],
+  "unparsed_lines_dropped": 0,
+  "polar_soundings_dropped": 0,
+  "decompress_s": 104.8,
+  "coverage_s": 1101.9,
+  "generated": "2026-10-09T21:16:33+00:00",
+  "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45"
+ },
+ "selection": {
+  "TN299__MGDS_27339": {
+   "n_files": 9
+  },
+  "TN299__MGDS_31253": {
+   "n_files": 74
+  }
+ },
+ "wall_s": 1218.3,
+ "finished": "2026-10-09T21:16:36+00:00",
+ "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45"
+}

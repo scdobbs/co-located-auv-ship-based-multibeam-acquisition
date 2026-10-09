@@ -1,0 +1,73 @@
+{
+ "cruise": "KM0923",
+ "oak_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/KM0923",
+ "origin": "ACQ-R02 fetch plan",
+ "fetch_mode": "whole",
+ "whole_gb": 0.78,
+ "subset_gb": 0.78,
+ "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/kilo_moana/KM0923/multibeam/data/version1/MB/",
+ "n_files_ncei": 229,
+ "n_files_planned": 229,
+ "n_files_on_oak": 229,
+ "n_files_manifest": 229,
+ "bytes_on_oak": 777495214,
+ "is_subset": false,
+ "pairs": [
+  "KM0923__MGDS_31429"
+ ],
+ "started": "2026-10-09T20:30:33+00:00",
+ "host": "sh04-07n17.int",
+ "need": {
+  "pairs": {
+   "KM0923__MGDS_31429": {
+    "region": {
+     "w": -155.25082957667138,
+     "s": 18.644402422616324,
+     "e": -155.04532089073092,
+     "n": 18.85071785200629,
+     "nx": 250,
+     "ny": 264
+    },
+    "median_depth_m": 4787.68701171875,
+    "nav_reach_m": 14363.06103515625
+   }
+  },
+  "region_union_bounds": [
+   -155.25082957667138,
+   18.644402422616324,
+   -155.04532089073092,
+   18.85071785200629
+  ],
+  "nav_union_bounds": [
+   -155.38707407192078,
+   18.51466250720646,
+   -154.90904893058638,
+   18.98045341261549
+  ]
+ },
+ "plan": {
+  "note": "whole cruise on OAK; nothing to fetch"
+ },
+ "coverage": {
+  "cruise": "KM0923",
+  "mb_format": 56,
+  "n_files": 229,
+  "soundings": 9803915,
+  "files_without_soundings": [],
+  "unreadable_files": [],
+  "unparsed_lines_dropped": 0,
+  "polar_soundings_dropped": 0,
+  "decompress_s": 3.7,
+  "coverage_s": 37.5,
+  "generated": "2026-10-09T20:31:15+00:00",
+  "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+ },
+ "selection": {
+  "KM0923__MGDS_31429": {
+   "n_files": 101
+  }
+ },
+ "wall_s": 42.4,
+ "finished": "2026-10-09T20:31:15+00:00",
+ "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+}

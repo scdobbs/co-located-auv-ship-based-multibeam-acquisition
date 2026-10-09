@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-09T20:01:34+00:00",
+ "generated": "2026-10-09T21:47:41+00:00",
  "fixed_input_sha256": {
   "pairs_v2_1.parquet": "f57f3d8f98b320b136549de300ccac58787129af658a1c62296bab16b6c2ac35",
   "pairs_v2_1_dropped.csv": "1f1bb181c63df8991ddc981c731bbf048a25ec56cb33435487b356d603073dab",
@@ -255,10 +255,10 @@
   ]
  },
  "builder_sha256": {
-  "src/acq_r05/build.py": "1efc8d579cc58211809446f338ed858c138f49981ea6ec2184a910ecf600c3ce",
+  "src/acq_r05/build.py": "c84b580705427358982e64c232e01660ff6b7816942d8535b80c385d3e7f2524",
   "src/acq_r05/lattice.py": "8bfd4e933d9b2abd040c6cb008073387fa9183d04f1623f049c41d5fbac12e06",
-  "src/acq_r05/sources.py": "b0451f3a2638d0b7b4a763f437685fa59635ef036bdd2d9371362041d37195b3",
+  "src/acq_r05/sources.py": "488d825699e14437bf6cf77c165c5025b7cfcd8740353cfb03e8bc892b3914d4",
   "src/acq_r05/common.py": "0f13f13f749ead915398c8abdd44502c0fa699c8f77e1f1c212335d05cca680e"
  },
- "code_commit": "add224f9a907d6142620cccc1fbdda2efd83298a"
+ "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45"
 }

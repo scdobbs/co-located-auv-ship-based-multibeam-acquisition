@@ -1,0 +1,97 @@
+{
+ "cruise": "FK181031",
+ "oak_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/FK181031",
+ "origin": "June stage B (A.5 nav subset rule)",
+ "fetch_mode": "subset",
+ "whole_gb": 10.8,
+ "subset_gb": 2.846,
+ "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/falkor/FK181031/multibeam/data/version1/MB/",
+ "n_files_ncei_june": 704,
+ "n_files_on_oak": 50,
+ "n_files_manifest": 50,
+ "bytes_on_oak": 3058390177,
+ "is_subset": true,
+ "pairs": [
+  "FK181031__MGDS_24618"
+ ],
+ "started": "2026-10-09T20:30:33+00:00",
+ "host": "sh04-07n18.int",
+ "need": {
+  "pairs": {
+   "FK181031__MGDS_24618": {
+    "region": {
+     "w": -108.9309686812398,
+     "s": 23.88704189257532,
+     "e": -108.75874239834083,
+     "n": 24.06249031575227,
+     "nx": 266,
+     "ny": 298
+    },
+    "median_depth_m": 3787.034423828125,
+    "nav_reach_m": 11361.103271484375
+   }
+  },
+  "region_union_bounds": [
+   -108.9309686812398,
+   23.88704189257532,
+   -108.75874239834083,
+   24.06249031575227
+  ],
+  "nav_union_bounds": [
+   -109.04266460899437,
+   23.784479230655574,
+   -108.64706392912554,
+   24.165049507163534
+  ]
+ },
+ "plan": {
+  "cruise": "FK181031",
+  "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/falkor/FK181031/multibeam/data/version1/MB/",
+  "n_files_ncei": 176,
+  "bytes_ncei": 11596634521,
+  "n_on_oak": 50,
+  "n_missing": 126,
+  "n_track_intersects": 30,
+  "n_no_nav_track": 0,
+  "n_track_outside": 96,
+  "bytes_track_intersects": 2459959296,
+  "bytes_no_nav_track": 0,
+  "rule": "nav track (.fnv) intersects the union of the pairs' context mbgrid regions buffered by max(2 km, 3 x median depth); files with no nav track are included (conservative)",
+  "name_collisions": []
+ },
+ "fetch": {
+  "n_planned": 30,
+  "n_ok": 30,
+  "n_failed": 0,
+  "n_added_to_manifest": 30,
+  "bytes": 2458564760,
+  "wall_s": 74.1,
+  "status_counts": {
+   "fetched": 30
+  },
+  "workers": 6,
+  "failed": []
+ },
+ "coverage": {
+  "cruise": "FK181031",
+  "mb_format": 58,
+  "n_files": 80,
+  "soundings": 11329561,
+  "files_without_soundings": [],
+  "unreadable_files": [],
+  "unparsed_lines_dropped": 0,
+  "polar_soundings_dropped": 0,
+  "decompress_s": 12.1,
+  "coverage_s": 58.5,
+  "generated": "2026-10-09T20:33:51+00:00",
+  "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+ },
+ "selection": {
+  "FK181031__MGDS_24618": {
+   "n_files": 60
+  }
+ },
+ "wall_s": 199.2,
+ "finished": "2026-10-09T20:33:52+00:00",
+ "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+}

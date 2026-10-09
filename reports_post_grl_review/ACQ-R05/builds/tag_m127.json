@@ -1,0 +1,179 @@
+{
+ "pair_id": "tag_m127",
+ "unit": "lu09",
+ "kind": "provider_grid",
+ "lr_cruise": "M127",
+ "lr_doi": "10.1594/PANGAEA.899408",
+ "started": "2026-10-09T21:39:11+00:00",
+ "host": "sh03-09n36.int",
+ "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45",
+ "directive": "ACQ-R05 2026-10-09",
+ "buffer_m": 5000.0,
+ "context_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/tag_m127/context_v1",
+ "lr_tif": {
+  "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/tag_m127/lr.tif",
+  "sha256": "d05d8ca192b8f5cd755ca6bab4728ece070e1534fb58b7b7905aa84397163612",
+  "crs": "EPSG:32623",
+  "transform": [
+   28.37585988549851,
+   0.0,
+   514831.97067917546,
+   0.0,
+   -28.375859885498706,
+   2896393.6117996983
+  ],
+  "width": 332,
+  "height": 337,
+  "nodata": -9999.0,
+  "dtype": "float64"
+ },
+ "lattice": {
+  "crs": "EPSG:32623",
+  "transform": [
+   28.37585988549851,
+   0.0,
+   509809.4434794422,
+   0.0,
+   -28.375859885498706,
+   2901416.1389994314
+  ],
+  "width": 685,
+  "height": 691,
+  "dx": 28.37585988549851,
+  "dy": 28.375859885498706,
+  "lr_offset_col": 177,
+  "lr_offset_row": 177,
+  "lr_width": 332,
+  "lr_height": 337,
+  "bounds": [
+   509809.4434794422,
+   2881808.4198185517,
+   529246.9075010087,
+   2901416.1389994314
+  ],
+  "buffer_m": 5000.0,
+  "footprint_area_km2": 90.03393483588106,
+  "buffered_area_km2": 358.22638842081506
+ },
+ "lr_pixel_offset_in_context": {
+  "col": 177,
+  "row": 177
+ },
+ "provider": {
+  "raw": {
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw/tag_m127/lr_10.1594_PANGAEA.899408_M127_EM122_bathymetry_WGS84_30m.tif",
+   "sha256": "34e972032dee68bc5a0f1fca29ae032d207922a1d14bebbd2d0d445591ea31ba",
+   "crs": "EPSG:4326",
+   "transform": [
+    0.00026969999999999913,
+    0.0,
+    -45.217994850000004,
+    0.0,
+    -0.0002697000000000003,
+    26.547539750000002
+   ],
+   "width": 3015,
+   "height": 2868,
+   "nodata": -99999.0,
+   "dtype": "float64"
+  },
+  "alignment": {
+   "warped_transform": [
+    28.37585988549858,
+    0.0,
+    478141.9838472258,
+    0.0,
+    -28.37585988549858,
+    2936460.3259580224
+   ],
+   "warped_shape": [
+    3024,
+    2873
+   ],
+   "pixel_size_rel_diff": [
+    -2.55351295663786e-15,
+    4.440892098500626e-15
+   ],
+   "context_origin_offset_px": [
+    1116.0000000000005,
+    1235.0000000000084
+   ],
+   "identity_reproject": false
+  },
+  "method": "harmonize._open (rioxarray masked) + harmonize._reproject(target_crs, bilinear, nodata -9999) exactly as harmonize_pair, then a CROP (no footprint clip) to the context lattice; NaN where the provider grid does not cover the buffer (\u00a72.2: no gridding of raw swath)",
+  "context_window_of_warped_grid": {
+   "rows": [
+    1235,
+    1926
+   ],
+   "cols": [
+    1116,
+    1801
+   ]
+  }
+ },
+ "source_files": [
+  {
+   "name": "lr_10.1594_PANGAEA.899408_M127_EM122_bathymetry_WGS84_30m.tif",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw/tag_m127/lr_10.1594_PANGAEA.899408_M127_EM122_bathymetry_WGS84_30m.tif",
+   "sha256": "34e972032dee68bc5a0f1fca29ae032d207922a1d14bebbd2d0d445591ea31ba"
+  }
+ ],
+ "commands": [],
+ "agreement": {
+  "what": "ctx_lr vs lr.tif on lr.tif valid cells",
+  "n_cells": 111884,
+  "n_reference_valid": 111884,
+  "n_reference_valid_but_context_nan": 0,
+  "median_diff": -1.2699956641881727e-08,
+  "rms": 7.039742893704931e-05,
+  "robust_sigma": 9.036416834169358e-05,
+  "max_abs_diff": 0.0002365614591326448,
+  "n_nonzero_diff": 111884,
+  "identical": true,
+  "median_diff_over_s_lr": -4.4018517399242657e-10,
+  "rms_over_s_lr": 2.440000810954196e-06,
+  "robust_sigma_over_s_lr": 3.132055351511471e-06,
+  "frac_abs_diff_gt_0p1_s_lr": 0.0,
+  "median_s_lr_m": 28.851395713069223,
+  "s_lr_source": "median of 778 tile s_lr values, CNN repo R04 tiles_v1.parquet",
+  "gate": {
+   "robust_sigma_over_s_lr_max": 0.1,
+   "abs_median_max_m": 0.5
+  },
+  "flags": []
+ },
+ "coverage": {
+  "n_cells": 473335,
+  "n_valid": 473335,
+  "valid_fraction": 1.0,
+  "valid_fraction_outside_lr_window": 1.0,
+  "valid_fraction_in_lr_window": 1.0,
+  "lr_valid_fraction": 1.0
+ },
+ "outputs": {
+  "ctx_lr.tif": "17ef2c99f1d068e8a5d3000fd65181b23216248185891c2599615b6cb187ecd0",
+  "ctx_lr_valid.tif": "33b1b5e426a163b15c6ae6301829e7b9f168bb6ad4f68c6df62823f731601041"
+ },
+ "products": {
+  "available": {
+   "ship_count": false,
+   "ship_sd": false,
+   "ship_rsd": false,
+   "ship_xtrack_frac": false,
+   "ship_beam_angle": false
+  },
+  "reason": "ACQ-R03 ruling R4: ship products masked (ship_products_usable=false); no context products",
+  "files": {
+   "products.json": "7d996fbb577b8b1e7e03ef9a938ad136bb34a9d064cda5b59a117ec3dea24aa3"
+  }
+ },
+ "wall_s": 9.1,
+ "finished": "2026-10-09T21:39:18+00:00",
+ "status": "built",
+ "sha256sums": {
+  "n_files": 4,
+  "n_bad": 0,
+  "bad": []
+ }
+}

@@ -1,0 +1,414 @@
+{
+ "pair_id": "EW9801__MGDS_31425",
+ "unit": "lu07",
+ "kind": "ncei_swath",
+ "lr_cruise": "EW9801",
+ "lr_doi": "NCEI/NOAA Bathymetry (public domain), cruise EW9801",
+ "started": "2026-10-09T21:38:58+00:00",
+ "host": "sh04-10n23.int",
+ "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45",
+ "directive": "ACQ-R05 2026-10-09",
+ "buffer_m": 5000.0,
+ "context_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EW9801__MGDS_31425/context_v1",
+ "lr_tif": {
+  "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EW9801__MGDS_31425/lr.tif",
+  "sha256": "6f4768973e496a8c842d84aa58709299ece608f2d90e7cf96819bcb6590dafee",
+  "crs": "EPSG:32605",
+  "transform": [
+   47.9986635720056,
+   0.0,
+   260753.03313848114,
+   0.0,
+   -47.998663572007594,
+   2094661.9788636076
+  ],
+  "width": 69,
+  "height": 97,
+  "nodata": -9999.0,
+  "dtype": "float32"
+ },
+ "lattice": {
+  "crs": "EPSG:32605",
+  "transform": [
+   47.9986635720056,
+   0.0,
+   255713.17346342056,
+   0.0,
+   -47.998663572007594,
+   2099701.8385386686
+  ],
+  "width": 279,
+  "height": 307,
+  "dx": 47.9986635720056,
+  "dy": 47.998663572007594,
+  "lr_offset_col": 105,
+  "lr_offset_row": 105,
+  "lr_width": 69,
+  "lr_height": 97,
+  "bounds": [
+   255713.17346342056,
+   2084966.2488220623,
+   269104.80060001014,
+   2099701.8385386686
+  ],
+  "buffer_m": 5000.0,
+  "footprint_area_km2": 15.619166148648652,
+  "buffered_area_km2": 174.21525601681023
+ },
+ "lr_pixel_offset_in_context": {
+  "col": 105,
+  "row": 105
+ },
+ "source_lattice": {
+  "w": -155.28087984955945,
+  "s": 18.884063973017945,
+  "e": -155.2308011986244,
+  "n": 18.939572195625672,
+  "nx": 111,
+  "ny": 129,
+  "dx": 0.00045526046304602955,
+  "dy": 0.0004336579891228709,
+  "dx_requested": 0.00045721813986779563,
+  "dy_requested": 0.0004325368307581747,
+  "src_crs": "OGC:CRS84",
+  "kind": "june_stage_c_full_union",
+  "cruise": "EW9801",
+  "live_hr": [
+   "MGDS:31425"
+  ],
+  "cell_m": 48.15,
+  "cell_rule": "achieved_cell_m",
+  "record": "reports/discovery/stage_c_full_measurements.json",
+  "tried": [
+   {
+    "cell_rule": "achieved_cell_m",
+    "cell_m": 48.15,
+    "nx": 111,
+    "ny": 129,
+    "match": true
+   }
+  ],
+  "how": "re-derived: stage_c_full.py:181-190 region = union of live HR footprints ['MGDS:31425'] +/- 1 km, cell = achieved_cell_m; grid itself purged from scratch"
+ },
+ "source_lattice_verification": {
+  "match": true,
+  "pixel_size_rel_diff": -2.55351295663786e-15,
+  "lr_offset_in_warped_px": [
+   22.000000000000053,
+   21.999999999998234
+  ],
+  "warped_default": {
+   "transform": [
+    47.99866357200572,
+    0.0,
+    259697.06253989702,
+    0.0,
+    -47.99866357200572,
+    2095717.9494621917
+   ],
+   "width": 113,
+   "height": 130
+  }
+ },
+ "source_files": [
+  {
+   "name": "9801hs.d033.mb21.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/EW9801/9801hs.d033.mb21.gz",
+   "sha256": "80bc8dba0ad4955fabdf9dba99bb57b16f4275e8d5d12bacd20d2b1d41a5e2c6",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/maurice_ewing/EW9801/multibeam/data/version1/MB/9801hs.d033.mb21.gz",
+   "size": 3747029,
+   "n_soundings": 338682
+  },
+  {
+   "name": "9801hs.d034.mb21.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/EW9801/9801hs.d034.mb21.gz",
+   "sha256": "f4b01a712ac3d6ad3c07c35ff639ac226822cf7f68503845d669e173a8dc19d3",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/maurice_ewing/EW9801/multibeam/data/version1/MB/9801hs.d034.mb21.gz",
+   "size": 3721135,
+   "n_soundings": 409048
+  },
+  {
+   "name": "9801hs.d036.mb21.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/EW9801/9801hs.d036.mb21.gz",
+   "sha256": "ecccecef43e2e02710d347580cd0647768315aa0525256aff39ab8d5931f4083",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/maurice_ewing/EW9801/multibeam/data/version1/MB/9801hs.d036.mb21.gz",
+   "size": 3519269,
+   "n_soundings": 339537
+  },
+  {
+   "name": "9801hs.d036_2.mb21.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/EW9801/9801hs.d036_2.mb21.gz",
+   "sha256": "70917f104ba37346a5fb93b72b6e2ca29a3e909e1d19af5c18f69d02896659eb",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/maurice_ewing/EW9801/multibeam/data/version1/MB/9801hs.d036_2.mb21.gz",
+   "size": 3397153,
+   "n_soundings": 327056
+  },
+  {
+   "name": "9801hs.d037.mb21.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/EW9801/9801hs.d037.mb21.gz",
+   "sha256": "b43a4a4f2de7f8fd32ba7cd22f78ae0a596ffae72b6049855fdbc0fc8aafd5a3",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/maurice_ewing/EW9801/multibeam/data/version1/MB/9801hs.d037.mb21.gz",
+   "size": 3935989,
+   "n_soundings": 414220
+  },
+  {
+   "name": "9801hs.d038.mb21.gz",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/EW9801/9801hs.d038.mb21.gz",
+   "sha256": "d805cf5c9829078de07d059dfbaf8a86d83304dba5f08070427af1ac34376549",
+   "url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/maurice_ewing/EW9801/multibeam/data/version1/MB/9801hs.d038.mb21.gz",
+   "size": 4239035,
+   "n_soundings": 447861
+  }
+ ],
+ "source_selection": {
+  "rule": "files with a sounding in a 0.1-degree cell touched by the mbgrid region (ACQ-R04 coverage pass)",
+  "n_selected": 6,
+  "n_cruise_files_on_oak": 25,
+  "coverage_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R05/sources/EW9801_coverage.json",
+  "unreadable_files_in_cruise": []
+ },
+ "gridding": {
+  "mb_format": 21,
+  "n_files": 6,
+  "decompress_s": 0.2,
+  "mbgrid_s": 2.2,
+  "mbgrid_attempts": 1,
+  "grd_vs_source_grd": null,
+  "mbgrid_command": "apptainer exec --bind /scratch,/home/groups,/oak /lscratch/scdobbs/47141434/mbsystem_sandbox mbgrid -I datalist.mb-1 -O ctx_EW9801__MGDS_31425 -R -155.33004797956843/-155.1816330686154/18.832892330301448/18.98597360046182 -E 0.00045526046304602955/0.0004336579891228709/degrees -A2 -G3 -F1 -C0 -M",
+  "mbgrid_region": {
+   "R": "-155.33004797956843/-155.1816330686154/18.832892330301448/18.98597360046182",
+   "E": "0.00045526046304602955/0.0004336579891228709/degrees",
+   "w": -155.33004797956843,
+   "s": 18.832892330301448,
+   "e": -155.1816330686154,
+   "n": 18.98597360046182,
+   "nx": 327,
+   "ny": 354,
+   "dx": 0.00045526046304602955,
+   "dy": 0.0004336579891228709,
+   "node_offset_from_source": [
+    -108,
+    -118
+   ],
+   "spacing_rel_err_after_mbgrid": [
+    1.1146639167236572e-13,
+    -1.7430501486614958e-14
+   ],
+   "lonlat_box_unsnapped": [
+    -155.32966698021738,
+    18.833235799115727,
+    -155.18182202381797,
+    18.985818919867103
+   ]
+  },
+  "grd_lattice_check": {
+   "nx": [
+    327,
+    327
+   ],
+   "ny": [
+    354,
+    354
+   ],
+   "dx_rel": 1.1146639167236572e-13,
+   "dy_rel": -1.7430501486614958e-14,
+   "w_err_cells": 0.0,
+   "n_err_cells": 0.0,
+   "crs": "OGC:CRS84"
+  },
+  "grd_nodata": NaN,
+  "warp": {
+   "method": "harmonize._open (rioxarray, masked) + DataArray.rio.reproject(dst_crs=lr.tif CRS, transform=context lattice, shape=context shape, resampling=bilinear, nodata=-9999); -9999 and |z|>=99999 -> NaN; float32",
+   "development_chain_reference": "ACQ-R04 \u00a75.1 (harmonize._reproject bilinear nodata -9999, GDAL default output grid == lr.tif lattice, verified by lattice.verify_lattice)"
+  },
+  "persisted_grids_oak": {
+   "grd": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/EW9801__MGDS_31425__context_v1.grd",
+    "sha256": "a6496ef315d2d772a10314166af0646c3b7132e936038661a5c67782a8ddf32c"
+   },
+   "grd_num": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/EW9801__MGDS_31425__context_v1_num.grd",
+    "sha256": "6fdda2cca152118d583306bc9c2228cd8ee9f09a2e616f8553da205fd50b8e6e"
+   },
+   "grd_sd": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/EW9801__MGDS_31425__context_v1_sd.grd",
+    "sha256": "d843f63295ad310466db7550c61eeea92586d5be6209c99c88aef91aac91260d"
+   }
+  }
+ },
+ "commands": [
+  "apptainer exec --bind /scratch,/home/groups,/oak /lscratch/scdobbs/47141434/mbsystem_sandbox mbgrid -I datalist.mb-1 -O ctx_EW9801__MGDS_31425 -R -155.33004797956843/-155.1816330686154/18.832892330301448/18.98597360046182 -E 0.00045526046304602955/0.0004336579891228709/degrees -A2 -G3 -F1 -C0 -M"
+ ],
+ "agreement": {
+  "what": "ctx_lr vs lr.tif on lr.tif valid cells",
+  "n_cells": 5467,
+  "n_reference_valid": 5479,
+  "n_reference_valid_but_context_nan": 12,
+  "median_diff": -0.0770263671875,
+  "rms": 0.3130541682199224,
+  "robust_sigma": 0.217539697265625,
+  "max_abs_diff": 4.2103271484375,
+  "n_nonzero_diff": 5407,
+  "identical": false,
+  "median_diff_over_s_lr": -0.0021346810356063614,
+  "rms_over_s_lr": 0.00867587061960051,
+  "robust_sigma_over_s_lr": 0.006028816925950507,
+  "frac_abs_diff_gt_0p1_s_lr": 0.00018291567587342235,
+  "median_s_lr_m": 36.08331451055425,
+  "s_lr_source": "median of 129 tile s_lr values, CNN repo R04 tiles_v1.parquet",
+  "gate": {
+   "robust_sigma_over_s_lr_max": 0.1,
+   "abs_median_max_m": 0.5
+  },
+  "flags": []
+ },
+ "coverage": {
+  "n_cells": 85653,
+  "n_valid": 44314,
+  "valid_fraction": 0.5173665837740651,
+  "valid_fraction_outside_lr_window": 0.49185663627152987,
+  "valid_fraction_in_lr_window": 0.8183176453010608,
+  "lr_valid_fraction": 0.8186164649633946
+ },
+ "outputs": {
+  "ctx_lr.tif": "6391e157dd6953f59ae48568ba10aa6b658682285a8df4f422552993633e4bff",
+  "ctx_lr_valid.tif": "b1216016632ff2ef59e611059f71d1a16b030acde8d379e05dae3fdc227dfb0c"
+ },
+ "products": {
+  "wall_s": 1.8,
+  "nproc": 4,
+  "batch_files": 1,
+  "builder": "src.acq_r03.build_products_v2_1.build (unchanged)",
+  "staging_note": "products.json lr_tif_path points at the scratch staging copy of ctx_lr.tif (same bytes as context_v1/ctx_lr.tif)",
+  "available": {
+   "ship_count": true,
+   "ship_sd": true,
+   "ship_rsd": true,
+   "ship_xtrack_frac": true,
+   "ship_beam_angle": true
+  },
+  "flags": [],
+  "qa_vs_ctx_lr": {
+   "n_common_cells": 37689,
+   "median_offset_m": 0.0,
+   "rms_m": 24.8187,
+   "robust_sigma_m": 5.2014,
+   "rms_over_median_s_lr": 0.689,
+   "robust_sigma_over_median_s_lr": 0.1444,
+   "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.0,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 5.2014,
+   "sigma_argmin_m": 4.7837,
+   "gain_m": 0.4177,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.2601
+   },
+   "flags": []
+  },
+  "matches_ctx_lr_grid": true,
+  "files": {
+   "products.json": "72e69def67a17ab2ad83ff5741aba84146ee9af2d1e9339059190ca37159f689",
+   "products_extra.json": "29a0e15657f2c82237340c3c680aad4eee937be14292c3fba68c44ffc98b98a5",
+   "qa_shift_surface.csv": "0dc33cde279a33da0d6010be056b68ad10bdb10b9f074d1bfdf25fd26c20327f",
+   "ship_beam_angle.tif": "8ca5938fb169f15788b472eb96d24bd544a73b715352ae3d755e1d4ceab7ceb3",
+   "ship_count.tif": "955b535bab78937f4d81644b5c77e8d9329c5c373300099d8838fd2297ac4543",
+   "ship_mean_regrid.tif": "5963f19d1110bc4f2a4d1e869d25548b01582cb0db2c78cdd9adebdccbfe39b4",
+   "ship_median_regrid.tif": "ca8e065377719a205a1d5187990bdc5f570d099f4d33624e49c4df831723b5a1",
+   "ship_rsd.tif": "418fc53d5f59d7418956c5b3c96dd57451ab8669db4d9ac977712042a09927a4",
+   "ship_sd.tif": "60307ff432fd88e1773fd2c9239e3ac8c84e397eaab67d87905d65c9ff5835b8",
+   "ship_xtrack_frac.tif": "969304c40e13810e04d158e067b0e8fb76069c0780a955f443b873f9136487ad"
+  },
+  "result": {
+   "pair_id": "EW9801__MGDS_31425",
+   "cruise": "EW9801",
+   "qa": {
+    "n_common_cells": 37689,
+    "median_offset_m": 0.0,
+    "rms_m": 24.8187,
+    "robust_sigma_m": 5.2014,
+    "rms_over_median_s_lr": 0.689,
+    "robust_sigma_over_median_s_lr": 0.1444,
+    "s_lr_source": "R03 patches_clean_expanded/patch_index.parquet",
+    "shift_argmin_cells": [
+     0.0,
+     -0.25
+    ],
+    "shift_surface_file": "qa_shift_surface.csv",
+    "sigma0_m": 5.2014,
+    "sigma_argmin_m": 4.7837,
+    "gain_m": 0.4177,
+    "registration_gate": {
+     "min_shift_cells": 0.5,
+     "min_gain_m": 0.2601
+    },
+    "flags": []
+   },
+   "frame_offset": {
+    "applied": false,
+    "dx_m": 0.0,
+    "dy_m": 0.0,
+    "basis": "none",
+    "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+   },
+   "control_vs_v2": {
+    "ship_count": "v2 missing",
+    "ship_sd": "v2 missing",
+    "ship_rsd": "v2 missing",
+    "ship_xtrack_frac": "v2 missing",
+    "ship_beam_angle": "v2 missing",
+    "ship_mean_regrid": "v2 missing",
+    "ship_median_regrid": "v2 missing"
+   },
+   "median_rsd_over_sd": 0.7742626070976257,
+   "cells": 44425,
+   "beam_angle_method": "geometric",
+   "matches_lr_tif": true
+  }
+ },
+ "products_vs_existing": {
+  "ship_count": {
+   "what": "ship_count",
+   "n_cells": 5465,
+   "n_reference_valid": 5465,
+   "n_reference_valid_but_context_nan": 0,
+   "median_diff": 0.0,
+   "rms": 0.0,
+   "robust_sigma": 0.0,
+   "max_abs_diff": 0.0,
+   "n_nonzero_diff": 0,
+   "identical": true,
+   "frac_cells_count_differs": 0.0,
+   "sum_count_existing": 21152.0,
+   "sum_count_context_on_lr_cells": 21152.0
+  },
+  "ship_rsd": {
+   "what": "ship_rsd",
+   "n_cells": 3402,
+   "n_reference_valid": 3402,
+   "n_reference_valid_but_context_nan": 0,
+   "median_diff": 0.0,
+   "rms": 0.0,
+   "robust_sigma": 0.0,
+   "max_abs_diff": 0.0,
+   "n_nonzero_diff": 0,
+   "identical": true,
+   "median_diff_over_s_lr": 0.0,
+   "rms_over_s_lr": 0.0,
+   "robust_sigma_over_s_lr": 0.0,
+   "frac_abs_diff_gt_0p1_s_lr": 0.0
+  }
+ },
+ "wall_s": 62.0,
+ "finished": "2026-10-09T21:39:52+00:00",
+ "status": "built",
+ "sha256sums": {
+  "n_files": 13,
+  "n_bad": 0,
+  "bad": []
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "cruise": "AT37-13",
+ "oak_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/AT37-13",
+ "origin": "June stage B (A.5 nav subset rule)",
+ "fetch_mode": "whole",
+ "whole_gb": 2.56,
+ "subset_gb": 2.56,
+ "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/atlantis/AT37-13/multibeam/data/version1/MB/",
+ "n_files_ncei_june": 320,
+ "n_files_on_oak": 80,
+ "n_files_manifest": 80,
+ "bytes_on_oak": 2743221643,
+ "is_subset": false,
+ "pairs": [
+  "AT37-13__MGDS_31199"
+ ],
+ "started": "2026-10-09T20:30:35+00:00",
+ "host": "sh04-06n21.int",
+ "need": {
+  "pairs": {
+   "AT37-13__MGDS_31199": {
+    "region": {
+     "w": -85.25564168648856,
+     "s": 8.727076006232968,
+     "e": -85.11830711689726,
+     "n": 8.858939807154883,
+     "nx": 651,
+     "ny": 633
+    },
+    "median_depth_m": 1793.7000732421875,
+    "nav_reach_m": 5381.1002197265625
+   }
+  },
+  "region_union_bounds": [
+   -85.25564168648856,
+   8.727076006232968,
+   -85.11830711689726,
+   8.858939807154883
+  ],
+  "nav_union_bounds": [
+   -85.30455858262115,
+   8.678424880605013,
+   -85.06939516676049,
+   8.90759048946557
+  ]
+ },
+ "plan": {
+  "note": "whole cruise on OAK; nothing to fetch"
+ },
+ "coverage": {
+  "cruise": "AT37-13",
+  "mb_format": 58,
+  "n_files": 80,
+  "soundings": 44793954,
+  "files_without_soundings": [
+   "9999.all.mb58.gz"
+  ],
+  "unreadable_files": [],
+  "unparsed_lines_dropped": 0,
+  "polar_soundings_dropped": 0,
+  "decompress_s": 9.3,
+  "coverage_s": 135.5,
+  "generated": "2026-10-09T20:33:13+00:00",
+  "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+ },
+ "selection": {
+  "AT37-13__MGDS_31199": {
+   "n_files": 24
+  }
+ },
+ "wall_s": 159.6,
+ "finished": "2026-10-09T20:33:14+00:00",
+ "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+}

@@ -1,0 +1,48 @@
+[
+ {
+  "pair_id": "AT37-13__MGDS_31199",
+  "cruise": "AT37-13",
+  "qa": {
+   "n_common_cells": 274868,
+   "median_offset_m": -0.0928,
+   "rms_m": 5.8563,
+   "robust_sigma_m": 1.956,
+   "rms_over_median_s_lr": 0.1708,
+   "robust_sigma_over_median_s_lr": 0.057,
+   "s_lr_source": "R02 patches_clean/patch_index.parquet",
+   "shift_argmin_cells": [
+    0.25,
+    -0.25
+   ],
+   "shift_surface_file": "qa_shift_surface.csv",
+   "sigma0_m": 1.956,
+   "sigma_argmin_m": 1.7853,
+   "gain_m": 0.1708,
+   "registration_gate": {
+    "min_shift_cells": 0.5,
+    "min_gain_m": 0.1
+   },
+   "flags": []
+  },
+  "frame_offset": {
+   "applied": false,
+   "dx_m": 0.0,
+   "dy_m": 0.0,
+   "basis": "none",
+   "evidence": "pair not in the ACQ-R03 \u00a72.2 header check (v2 argmin < 0.5 cell); no frame offset"
+  },
+  "control_vs_v2": {
+   "ship_count": "v2 missing",
+   "ship_sd": "v2 missing",
+   "ship_rsd": "v2 missing",
+   "ship_xtrack_frac": "v2 missing",
+   "ship_beam_angle": "v2 missing",
+   "ship_mean_regrid": "v2 missing",
+   "ship_median_regrid": "v2 missing"
+  },
+  "median_rsd_over_sd": 0.8289657235145569,
+  "cells": 281297,
+  "beam_angle_method": "launch_angle",
+  "matches_lr_tif": true
+ }
+]

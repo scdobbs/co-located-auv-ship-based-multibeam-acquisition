@@ -1,0 +1,24 @@
+{
+ "generated": "2026-10-09T21:45:04+00:00",
+ "note": "files listed as deletable are NOT deleted; the fetch manifests and SHA256SUMS on OAK include them (originals kept as *.pre_acq_r05_2026-10-09)",
+ "per_cruise": {
+  "NA080": {
+   "n_fetched_by_acq_r05": 982,
+   "gb_fetched": 37.46,
+   "n_selected_by_a_pair": 0,
+   "n_not_selected": 982,
+   "gb_not_selected": 37.46,
+   "manifest_backup": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080/fetch_manifest.json.pre_acq_r05_2026-10-09"
+  },
+  "TN299": {
+   "n_fetched_by_acq_r05": 646,
+   "gb_fetched": 40.53,
+   "n_selected_by_a_pair": 76,
+   "n_not_selected": 570,
+   "gb_not_selected": 34.46,
+   "manifest_backup": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/TN299/fetch_manifest.json.pre_acq_r05_2026-10-09"
+  }
+ },
+ "total_gb_not_selected": 71.92,
+ "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45"
+}

@@ -1,0 +1,88 @@
+{
+ "cruise": "NA080",
+ "oak_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080",
+ "origin": "June stage B (A.5 nav subset rule)",
+ "fetch_mode": "subset",
+ "whole_gb": 35.38,
+ "subset_gb": 0.489,
+ "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA080/multibeam/data/version1/MB/",
+ "n_files_ncei_june": 4132,
+ "n_files_on_oak": 1033,
+ "n_files_manifest": 1033,
+ "bytes_on_oak": 37989705986,
+ "is_subset": true,
+ "pairs": [
+  "NA080__MGDS_31290",
+  "NA080__MGDS_31289"
+ ],
+ "started": "2026-10-09T20:56:18+00:00",
+ "host": "sh04-07n17.int",
+ "need": {
+  "pairs": {
+   "NA080__MGDS_31290": {
+    "region": {
+     "w": -122.77732824167288,
+     "s": 35.42470755629053,
+     "e": -122.51575037053128,
+     "n": 35.6853070344457,
+     "nx": 414,
+     "ny": 506
+    },
+    "median_depth_m": 3315.8629150390625,
+    "nav_reach_m": 9947.588745117188
+   },
+   "NA080__MGDS_31289": {
+    "region": {
+     "w": -122.77711043561871,
+     "s": 35.42457009679913,
+     "e": -122.5160018703486,
+     "n": 35.685192617346296,
+     "nx": 413,
+     "ny": 507
+    },
+    "median_depth_m": 3315.8497314453125,
+    "nav_reach_m": 9947.549194335938
+   }
+  },
+  "region_union_bounds": [
+   -122.77732824167288,
+   35.42457009679913,
+   -122.51575037053128,
+   35.6853070344457
+  ],
+  "nav_union_bounds": [
+   -122.88726501457302,
+   35.33487474081265,
+   -122.40581651176907,
+   35.774997528258794
+  ]
+ },
+ "plan": {
+  "note": "--no-fetch: no NCEI listing; coverage pass over the files already on OAK (fetch manifest complete)"
+ },
+ "coverage": {
+  "cruise": "NA080",
+  "mb_format": 58,
+  "n_files": 1033,
+  "soundings": 696355689,
+  "files_without_soundings": [],
+  "unreadable_files": [],
+  "unparsed_lines_dropped": 0,
+  "polar_soundings_dropped": 0,
+  "decompress_s": 105.6,
+  "coverage_s": 2100.0,
+  "generated": "2026-10-09T21:33:10+00:00",
+  "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45"
+ },
+ "selection": {
+  "NA080__MGDS_31290": {
+   "n_files": 50
+  },
+  "NA080__MGDS_31289": {
+   "n_files": 50
+  }
+ },
+ "wall_s": 2215.5,
+ "finished": "2026-10-09T21:33:13+00:00",
+ "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45"
+}

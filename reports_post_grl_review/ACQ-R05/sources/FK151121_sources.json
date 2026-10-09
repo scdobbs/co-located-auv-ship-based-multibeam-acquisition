@@ -1,0 +1,75 @@
+{
+ "cruise": "FK151121",
+ "oak_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/FK151121",
+ "origin": "ACQ-R02 fetch plan",
+ "fetch_mode": "whole",
+ "whole_gb": 7.37,
+ "subset_gb": 7.37,
+ "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/falkor/FK151121/multibeam/data/version1/MB/",
+ "n_files_ncei": 274,
+ "n_files_planned": 274,
+ "n_files_on_oak": 274,
+ "n_files_manifest": 274,
+ "bytes_on_oak": 7365486805,
+ "is_subset": false,
+ "pairs": [
+  "FK151121__MGDS_22383"
+ ],
+ "started": "2026-10-09T20:30:32+00:00",
+ "host": "sh04-11n28.int",
+ "need": {
+  "pairs": {
+   "FK151121__MGDS_22383": {
+    "region": {
+     "w": 144.6323457177427,
+     "s": 18.11572563495587,
+     "e": 144.79118841624697,
+     "n": 18.278806616297327,
+     "nx": 257,
+     "ny": 275
+    },
+    "median_depth_m": 3780.714111328125,
+    "nav_reach_m": 11342.142333984375
+   }
+  },
+  "region_union_bounds": [
+   144.6323457177427,
+   18.11572563495587,
+   144.79118841624697,
+   18.278806616297327
+  ],
+  "nav_union_bounds": [
+   144.5251225425026,
+   18.013278042414566,
+   144.89842963900495,
+   18.38125159070736
+  ]
+ },
+ "plan": {
+  "note": "whole cruise on OAK; nothing to fetch"
+ },
+ "coverage": {
+  "cruise": "FK151121",
+  "mb_format": 58,
+  "n_files": 274,
+  "soundings": 90352445,
+  "files_without_soundings": [
+   "0007_20151123_052254_FK151121_EM710.all.mb58.gz"
+  ],
+  "unreadable_files": [],
+  "unparsed_lines_dropped": 0,
+  "polar_soundings_dropped": 0,
+  "decompress_s": 22.8,
+  "coverage_s": 303.3,
+  "generated": "2026-10-09T20:35:59+00:00",
+  "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+ },
+ "selection": {
+  "FK151121__MGDS_22383": {
+   "n_files": 9
+  }
+ },
+ "wall_s": 328.0,
+ "finished": "2026-10-09T20:36:00+00:00",
+ "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+}

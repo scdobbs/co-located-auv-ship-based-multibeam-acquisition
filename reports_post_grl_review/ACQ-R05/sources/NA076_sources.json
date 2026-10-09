@@ -1,0 +1,72 @@
+{
+ "cruise": "NA076",
+ "oak_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA076",
+ "origin": "June stage B (A.5 nav subset rule)",
+ "fetch_mode": "whole",
+ "whole_gb": 2.1,
+ "subset_gb": 2.1,
+ "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA076/multibeam/data/version2/MB/",
+ "n_files_ncei_june": 136,
+ "n_files_on_oak": 34,
+ "n_files_manifest": 34,
+ "bytes_on_oak": 2251275711,
+ "is_subset": false,
+ "pairs": [
+  "NA076__MGDS_32317"
+ ],
+ "started": "2026-10-09T20:30:35+00:00",
+ "host": "sh04-08n23.int",
+ "need": {
+  "pairs": {
+   "NA076__MGDS_32317": {
+    "region": {
+     "w": -118.73487507076553,
+     "s": 33.7330258042721,
+     "e": -118.560346007958,
+     "n": 33.86939511667235,
+     "nx": 1063,
+     "ny": 999
+    },
+    "median_depth_m": 866.5509033203125,
+    "nav_reach_m": 2599.6527099609375
+   }
+  },
+  "region_union_bounds": [
+   -118.73487507076553,
+   33.7330258042721,
+   -118.560346007958,
+   33.86939511667235
+  ],
+  "nav_union_bounds": [
+   -118.76297372066618,
+   33.70958472411886,
+   -118.53224537872458,
+   33.892835611213066
+  ]
+ },
+ "plan": {
+  "note": "whole cruise on OAK; nothing to fetch"
+ },
+ "coverage": {
+  "cruise": "NA076",
+  "mb_format": 121,
+  "n_files": 34,
+  "soundings": 62058421,
+  "files_without_soundings": [],
+  "unreadable_files": [],
+  "unparsed_lines_dropped": 0,
+  "polar_soundings_dropped": 0,
+  "decompress_s": 7.3,
+  "coverage_s": 176.4,
+  "generated": "2026-10-09T20:33:51+00:00",
+  "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+ },
+ "selection": {
+  "NA076__MGDS_32317": {
+   "n_files": 2
+  }
+ },
+ "wall_s": 197.1,
+ "finished": "2026-10-09T20:33:51+00:00",
+ "code_commit": "e0e915c916f5b4e840413ff565f1d313a34ca461"
+}

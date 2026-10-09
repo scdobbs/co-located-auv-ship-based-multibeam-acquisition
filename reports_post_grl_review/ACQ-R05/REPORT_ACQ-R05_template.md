@@ -9,19 +9,38 @@
 
 ## 1. Bottom line
 
-{{BOTTOM_LINE}}
+1. **Challenge findings and guard (CONFIRMED).** Guard self-test {{json:tables.json:guard.readers_blocked}}/{{json:tables.json:guard.readers_n}} readers blocked and {{json:tables.json:guard.builder_refused}}/{{json:tables.json:guard.builder_n}} builder refusals (`guard_selftest.json`); fixed-input hashes equal the directive's. Three findings carry weight (§1.1): the §3 expectation "identical if lattice and file set are reproduced" is CONTRADICTED by mbgrid itself; the NCEI per-cell file selection needs the files, so a nav prefilter was used and one transient NCEI listing failure turned it into a whole-cruise fetch (HOLD H-1); the June stage-C lattices were recovered from code and records and verified {{json:tables.json:lattice_verified}}/{{json:tables.json:n_ncei}} (`lattice_recovery.json`).
+2. **Files fetched (CONFIRMED).** Needed for the contexts: {{json:tables.json:fetch.n_files_fetched}} files, {{json:tables.json:fetch.gb_fetched}} GB (FK181031 30, TN399 2; `sources/<cruise>_fetch_plan.json`), {{json:tables.json:fetch.n_fetch_failed}} failures, {{json:tables.json:fetch.n_unreadable_files}} unreadable files. Over-fetched by the incident: {{json:tables.json:overfetch.n_files_fetched}} files, {{json:tables.json:overfetch.gb_fetched}} GB (NA080 + TN299 whole cruises), of which {{json:tables.json:overfetch.n_not_selected}} files / {{json:tables.json:overfetch.total_gb_not_selected}} GB are used by no pair (`overfetch_deletable_v1.json`; nothing deleted; HOLD H-1).
+3. **Pairs built (CONFIRMED).** {{json:tables.json:n_built}}/{{json:tables.json:n_pairs_in_scope}} context grids on OAK `<pair dir>/context_v1/` (`builds/<pair>.json`, `context_v1.parquet`); 0 failures (`failure_ledger_v1.csv`: {{json:tables.json:failure_ledger_rows}} rows). The whole run took seconds to minutes per pair (§5.1 pilot table, `tables/builds.md`).
+4. **§3 agreement (CONFIRMED).** Identical {{json:tables.json:agreement.n_identical}} (all 21 provider-grid pairs, max |diff| {{json:tables.json:agreement.max_abs_diff_m_provider}} m); within tolerance but not identical {{json:tables.json:agreement.n_within_tolerance_not_identical}} (largest robust σ / s_lr among them 0.049, NA090; largest |median| {{json:tables.json:agreement.max_abs_median_m}} m, AR26); flagged {{json:tables.json:agreement.n_flagged}}: {{json:tables.json:agreement.flagged}} (robust σ / s_lr {{json:tables.json:agreement.max_robust_sigma_over_s_lr}}, RMS {{json:tables.json:agreement.max_rms_m_ncei}} m; stays in the output; HOLD H-2) (`tables/agreement.md`, `context.json:agreement`).
+5. **Product agreement (CONFIRMED).** On lr.tif's cells the context `ship_count` equals the existing contract-v2.1 `ship_count` in every cell for {{json:tables.json:products.n_count_identical}}/{{json:tables.json:products.n_pairs}} NCEI pairs (max fraction of differing cells {{json:tables.json:products.max_count_frac_differing}}) and `ship_rsd` differs by at most {{json:tables.json:products.max_rsd_median_m}} m (`tables/products_agreement.md`).
+6. **§4 coverage (CONFIRMED).** Over {{json:tables.json:coverage.n_tiles}} tiles_v1.1 tiles: fraction of tiles whose window has ≥ 50 % valid context cells = {{json:tables.json:coverage.W16.frac_tiles_ge50_all}} (W = 16), {{json:tables.json:coverage.W32.frac_tiles_ge50_all}} (W = 32), {{json:tables.json:coverage.W64.frac_tiles_ge50_all}} (W = 64); worst pair {{json:tables.json:coverage.W64.min_pair_frac_tiles_ge50}} at W = 64; median valid fraction per window 1.0 at every W (`coverage_v1.json`, `tables/coverage_pairs.md`, `tables/coverage_units.md`).
+7. **Phase-4 readiness (CONFIRMED).** `python -m src.acq_r05.build --pair <id>` builds any manifest row's context (sources step first for an NCEI cruise); it refuses the sealed ids and `harmonized_confirmatory/` paths before any read (`guard_selftest.json:builder_refusals`); builder sha256 in §9 / `guard_selftest.json:builder_sha256`.
+8. **Preservation (CONFIRMED).** `context_v1.parquet` sha256 `{{json:tables.json:preservation.sha256}}`, {{json:tables.json:preservation.n_rows}} rows; {{json:tables.json:preservation.n_files_verified_total}} files re-verified against `SHA256SUMS` on OAK, {{json:tables.json:preservation.n_files_bad_total}} mismatches (`preserve_verify.json`); geographic context grids persisted on OAK `raw_lr_gridded/<pair>__context_v1*.grd`; code, report and a `CHANGE_LEDGER.md` row committed.
 
 ### 1.1 Challenge findings (§0 challenge clause)
 
-{{CHALLENGE}}
+1. **§3 "identical if the original lattice and file set were reproduced" — CONTRADICTED.** NA080__MGDS_31289's context used exactly the 50 files its ACQ-R02 union grid was built from, on the verified lattice, yet mbgrid's node values differ at 16,011 of 77,378 common nodes (node-level RMS 2.60 m, median 0, max 269 m; `builds/NA080__MGDS_31289.json:gridding.grd_vs_source_grd`) and the warped context differs from lr.tif inside the footprint (RMS 1.12 m, robust σ 0.29 m = 0.038 s_lr, 36 % of cells > 0.5 m; `tables/core_vs_ring.md` shows the differences throughout the core, not only at the edge). The same holds for the other ACQ-R02 pairs at a few hundred nodes each. mbgrid's output therefore depends on the `-R` region even with identical soundings and lattice; the mechanism was not pursued (§1.3). Part of the effect is edge-concentrated and consistent with ping selection by region (KM0923, NA090, AR26, TN299__MGDS_27339: core RMS 0.14–2.0 m vs ring RMS 1.7–4.3 m), i.e. the original footprint + 1 km regions dropped pings whose outer beams reach the footprint. R03's "about 1 m RMS between re-gridding and lr.tif" is CONFIRMED as the right order (NCEI pairs other than FK181031: RMS 0.006–4.3 m, robust σ 0.003–0.89 m, all within the gate).
+2. **§2.1.1 "identify every file with soundings within the context extent, using the ACQ-R04 per-0.1°-cell selection" is not executable before the files exist.** The per-cell selection needs each file's soundings. Files not on OAK were therefore prefiltered by their NCEI `.fnv` nav track against the context mbgrid regions buffered by max(2 km, 3 × median depth) (the A.5 / ACQ-R02 nav rule with the context extent), fetched, and only then selected exactly by cells. For NA080 and TN299 the listing of NCEI's `generated/` sub-directory (where the `.fnv` files live) failed transiently (`HTTPSConnectionPool` error, 2026-10-09 20:32 UTC, `logs/acq_r05_src_47134551_7.err`, `_9.err`); every missing file then counted as "no nav track", and the conservative include fetched the whole cruises (HOLD H-1). Since commit b039b83 a failed listing is fatal and a no-nav majority stops instead of fetching. The over-fetch had one benefit: the exact per-cell selection for NA080 and TN299 was then made from the complete cruises (NA080: none of the 982 new files has soundings in either context region; TN299: 76 of 646 do and were used by TN299__MGDS_31253).
+3. **§2.1.2 "record how the original lattice was recovered".** The June stage-C grids were purged from scratch; the lattice of each June lr.tif was re-derived from the gridding code and records (§3 table) and verified by reproducing lr.tif's UTM lattice; AT37-13 reproduces only with the unrounded cell 2·depth·tan(bw/2) (the record's 2-decimal `achieved_cell_m` changes the node count by one). All 18 verified. The "development warp" of §2.1.3 was run with an explicit output transform/shape (the context lattice), since the development chain's GDAL-default output grid is exactly lr.tif's lattice (verified) and the context must extend it.
+4. **A few lr.tif-valid cells are NaN in the context** (RR1506 91, EW0207 46, TN399__MGDS_30373 36, KM0923 27, EW9801 12, ≤ 6 elsewhere; `tables/agreement.md`): cells at the edge of lr.tif's coverage that mbgrid did not fill under the larger region (finding 1). They count as disagreement in `identical` but not in the gate statistics.
+5. **§7 "no run-time reads from $HOME or $GROUP_HOME".** Bulk I/O ran on OAK, scratch and node-local disk and the MB-System sandbox was staged to node-local disk; the repository code, the Python environment, the CNN repo's tile tables and the June footprint/catalog GeoPackages are small reads from $HOME, as in every previous directive. Stated, not changed.
+6. **§2.3 EW0207** has `ship_products_usable = false` in manifest v2.1 (ACQ-R03) but existing v2.1 rasters; its context products were built and compared like the other NCEI pairs (count identical). EX1402L2's consumer-side override is recorded in `context.json:consumer_side_override`; nothing was rebuilt.
+7. **§1.1 exclusion-zone claim CONFIRMED:** the context box extends 5 km from the footprint and the mbgrid region 1 km further, inside the 10 km pretraining exclusion distance.
 
 ### 1.2 HOLDs
 
-{{HOLDS}}
+- **H-1 (Steve): NA080 and TN299 whole cruises now on OAK.** The incident of finding 2 fetched {{json:tables.json:overfetch.n_files_fetched}} files / {{json:tables.json:overfetch.gb_fetched}} GB into `raw_lr_swath/NA080/` and `raw_lr_swath/TN299/`, byte-verified and recorded in the cruise fetch manifests and `SHA256SUMS` (originals kept as `*.pre_acq_r05_2026-10-09`). {{json:tables.json:overfetch.n_not_selected}} of them ({{json:tables.json:overfetch.total_gb_not_selected}} GB) are used by no pair (`overfetch_deletable_v1.csv`); OAK is at 81 %. Decision: keep (the pairs' own cruises, re-fetchable) or delete the unselected files and restore the backed-up manifests. Nothing was deleted.
+- **H-2 (Steve): FK181031__MGDS_24618 `ctx_disagrees`.** Robust σ 1.139 m = 0.48 × median s_lr (2.37 m), RMS 19.4 m, median 0.003 m, max |diff| 226 m, 64 % of cells > 0.1 s_lr, throughout the footprint (core RMS 19.9 m). Cause: 26 of the pair's 60 context source files are newly fetched (nav ∩ context) and carry 51 % of the soundings (4.24 M of 8.29 M); the June nav-subset (HR footprint + 4 km) had not fetched them, so the development lr.tif was gridded without half of the cruise's soundings over this footprint. No vertical offset (median 0.003 m). The pair stays in the output with the flag; the gridding was not tuned. Decision: accept the context grid as is (the CNN repo then sees a context whose footprint values differ from lr.tif), exclude the pair from the exploratory phase, or (outside this directive) re-grid the pair's lr.tif from the full file set.
+- **H-3 (Steve, lower priority): the mbgrid region dependence (finding 1).** It bounds how "identical" any re-gridding of a development pair can be (≈ 1 m RMS, cm-level robust σ) and it means the development lr.tif grids were built without pings whose nav lies > 1 km outside the footprint. No action is required for this directive (all other pairs pass the gate); the question is whether the Phase-4 context grids of the sealed units should be built with the same recipe (yes under the frozen code) and whether the mechanism should be established before Phase 4.
 
 ### 1.3 Not pursued
 
-{{NOT_PURSUED}}
+- Mechanism of mbgrid's region dependence at identical soundings and lattice (ping selection by nav position, footprint weighting, or floating-point placement).
+- Header inspection of FK181031's 26 newly fetched files (sonar, processing level) to explain H-2 beyond the sounding counts.
+- Re-gridding any development lr.tif over the context region (would change frozen development inputs).
+- Warp with an exact (non-approximated) coordinate transformer to separate warp from gridding differences.
+- Coverage statistics for windows larger than 64 cells or for the no-k / confirmatory pairs.
 
 ---
 
@@ -49,6 +68,12 @@ The context mbgrid region (`lattice.geo_region_for_context`): the context box in
 
 Subset cruises: {{json:tables.json:fetch.n_cruises_subset}}; files fetched {{json:tables.json:fetch.n_files_fetched}} ({{json:tables.json:fetch.gb_fetched}} GB; {{json:tables.json:fetch.n_files_added_to_manifests}} added to the cruise fetch manifests on OAK, originals kept as `*.pre_acq_r05_2026-10-09`); fetch failures {{json:tables.json:fetch.n_fetch_failed}}; files without a nav track included conservatively {{json:tables.json:fetch.n_no_nav_track_included}}; unreadable files (coverage pass, ledgered) {{json:tables.json:fetch.n_unreadable_files}}. Per-pair file sets: files with a sounding in a 0.1° cell touched by the pair's mbgrid region (ACQ-R04 `files_for_block` rule, from the coverage pass `sources/<cruise>_coverage.json`); listed with sha256 in each `context.json:source_files`.
 
+### 4.1 Incident: whole-cruise over-fetch of NA080 and TN299 (HOLD H-1)
+
+{{table:overfetch}}
+
+(The `sources` table shows these two cruises after the over-fetch; the first, cancelled run's records were not written. Fetch counts in §1 item 2 separate the needed fetches from the over-fetch.)
+
 ## 5. Context grids built (§2)
 
 {{table:builds}}
@@ -66,6 +91,12 @@ On lr.tif's valid cells, `ctx_lr.tif` at the recorded pixel offset minus `lr.tif
 {{table:agreement}}
 
 Pairs: {{json:tables.json:agreement.n_pairs}}; identical {{json:tables.json:agreement.n_identical}}; within tolerance but not identical {{json:tables.json:agreement.n_within_tolerance_not_identical}}; flagged {{json:tables.json:agreement.n_flagged}} ({{json:tables.json:agreement.flagged}}). Largest robust σ / s_lr {{json:tables.json:agreement.max_robust_sigma_over_s_lr}}; largest |median| {{json:tables.json:agreement.max_abs_median_m}} m.
+
+### 6.1 Diagnostic: core versus edge ring
+
+lr-valid mask eroded by 10 cells (core) against the 10-cell edge ring (`agreement_core_vs_ring.json`):
+
+{{table:core_vs_ring}}
 
 ## 7. Ship products on the context grid (§2.3, §3 products)
 

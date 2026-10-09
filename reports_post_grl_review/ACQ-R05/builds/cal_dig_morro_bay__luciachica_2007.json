@@ -1,0 +1,179 @@
+{
+ "pair_id": "cal_dig_morro_bay__luciachica_2007",
+ "unit": "lu12",
+ "kind": "provider_grid",
+ "lr_cruise": "Cal DIG I",
+ "lr_doi": "10.5066/P9QQZ27U",
+ "started": "2026-10-09T21:39:43+00:00",
+ "host": "sh02-10n68.int",
+ "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45",
+ "directive": "ACQ-R05 2026-10-09",
+ "buffer_m": 5000.0,
+ "context_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/luciachica_2007/context_v1",
+ "lr_tif": {
+  "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/luciachica_2007/lr.tif",
+  "sha256": "0a3181347cdda1c3ace6ef9724946015efbcad4f8e435f206f6b15de667ebcbc",
+  "crs": "EPSG:26910",
+  "transform": [
+   10.0,
+   0.0,
+   608356.1710075849,
+   0.0,
+   -10.0,
+   3956374.4777934803
+  ],
+  "width": 318,
+  "height": 218,
+  "nodata": -9999.0,
+  "dtype": "float32"
+ },
+ "lattice": {
+  "crs": "EPSG:26910",
+  "transform": [
+   10.0,
+   0.0,
+   603346.1710075849,
+   0.0,
+   -10.0,
+   3961374.4777934803
+  ],
+  "width": 1320,
+  "height": 1218,
+  "dx": 10.0,
+  "dy": 10.0,
+  "lr_offset_col": 501,
+  "lr_offset_row": 500,
+  "lr_width": 318,
+  "lr_height": 218,
+  "bounds": [
+   603346.1710075849,
+   3949194.4777934803,
+   616546.1710075849,
+   3961374.4777934803
+  ],
+  "buffer_m": 5000.0,
+  "footprint_area_km2": 3.2090666788302817,
+  "buffered_area_km2": 124.0198897954447
+ },
+ "lr_pixel_offset_in_context": {
+  "col": 501,
+  "row": 500
+ },
+ "provider": {
+  "raw": {
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw/cal_dig_morro_bay/lr_Cal_DIG_I_Bathymetry_10m_extracted/Cal_DIG_I_Bathymetry_10m.tif",
+   "sha256": "b330cfab0ec12d56aea72f84216ccb0c4d33bb9df500c65b01f39eaea3085237",
+   "crs": "EPSG:26910",
+   "transform": [
+    10.0,
+    0.0,
+    590576.1710075849,
+    0.0,
+    -10.0,
+    3973464.4777934803
+   ],
+   "width": 11208,
+   "height": 15184,
+   "nodata": -3.4028234663852886e+38,
+   "dtype": "float32"
+  },
+  "alignment": {
+   "warped_transform": [
+    10.0,
+    0.0,
+    590576.1710075849,
+    0.0,
+    -10.0,
+    3973464.4777934803
+   ],
+   "warped_shape": [
+    15184,
+    11208
+   ],
+   "pixel_size_rel_diff": [
+    0.0,
+    0.0
+   ],
+   "context_origin_offset_px": [
+    1277.0,
+    1209.0
+   ],
+   "identity_reproject": true
+  },
+  "method": "harmonize._open (rioxarray masked) + harmonize._reproject(target_crs, bilinear, nodata -9999) exactly as harmonize_pair, then a CROP (no footprint clip) to the context lattice; NaN where the provider grid does not cover the buffer (\u00a72.2: no gridding of raw swath)",
+  "context_window_of_warped_grid": {
+   "rows": [
+    1209,
+    2427
+   ],
+   "cols": [
+    1277,
+    2597
+   ]
+  }
+ },
+ "source_files": [
+  {
+   "name": "Cal_DIG_I_Bathymetry_10m.tif",
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw/cal_dig_morro_bay/lr_Cal_DIG_I_Bathymetry_10m_extracted/Cal_DIG_I_Bathymetry_10m.tif",
+   "sha256": "b330cfab0ec12d56aea72f84216ccb0c4d33bb9df500c65b01f39eaea3085237"
+  }
+ ],
+ "commands": [],
+ "agreement": {
+  "what": "ctx_lr vs lr.tif on lr.tif valid cells",
+  "n_cells": 32053,
+  "n_reference_valid": 32053,
+  "n_reference_valid_but_context_nan": 0,
+  "median_diff": 0.0,
+  "rms": 0.0,
+  "robust_sigma": 0.0,
+  "max_abs_diff": 0.0,
+  "n_nonzero_diff": 0,
+  "identical": true,
+  "median_diff_over_s_lr": 0.0,
+  "rms_over_s_lr": 0.0,
+  "robust_sigma_over_s_lr": 0.0,
+  "frac_abs_diff_gt_0p1_s_lr": 0.0,
+  "median_s_lr_m": 3.8706303321642337,
+  "s_lr_source": "median of 43 tile s_lr values, CNN repo R04 tiles_v1.parquet",
+  "gate": {
+   "robust_sigma_over_s_lr_max": 0.1,
+   "abs_median_max_m": 0.5
+  },
+  "flags": []
+ },
+ "coverage": {
+  "n_cells": 1607760,
+  "n_valid": 881588,
+  "valid_fraction": 0.5483330845399811,
+  "valid_fraction_outside_lr_window": 0.542230551027147,
+  "valid_fraction_in_lr_window": 0.6837603138884081,
+  "lr_valid_fraction": 0.4623651260746639
+ },
+ "outputs": {
+  "ctx_lr.tif": "58a51b12d40a607b67ff818ddd809b90f736e9c7dea75d6bc6227254b5a19473",
+  "ctx_lr_valid.tif": "c5e2a59f49bf6d8827d91be623afc4f3a06e844891283189cb91b2bbea95ef3c"
+ },
+ "products": {
+  "available": {
+   "ship_count": false,
+   "ship_sd": false,
+   "ship_rsd": false,
+   "ship_xtrack_frac": false,
+   "ship_beam_angle": false
+  },
+  "reason": "ship LR is a processed mosaic without retrievable per-beam soundings (NOS BAG); no swath products (ACQ-R01 / contract v2.1 \u00a75)",
+  "files": {
+   "products.json": "2eb1c394b678cd510cfda6e42b9a92f13fb484f11418d5b749154e9a7a98de6e"
+  }
+ },
+ "wall_s": 17.9,
+ "finished": "2026-10-09T21:39:59+00:00",
+ "status": "built",
+ "sha256sums": {
+  "n_files": 4,
+  "n_bad": 0,
+  "bad": []
+ }
+}

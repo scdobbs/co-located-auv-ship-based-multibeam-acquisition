@@ -1,0 +1,31 @@
+{
+ "generated": "2026-10-09T21:44:48+00:00",
+ "tiles_v1_1_sha256": "8ef139867613b6c9f2eeb2e13073ee5562ecda51b3cf6f5bb7d17fd73df023dc",
+ "windows": [
+  16,
+  32,
+  64
+ ],
+ "n_pairs_built": 39,
+ "n_pairs_not_built": 0,
+ "n_tiles": 26154,
+ "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45",
+ "W16": {
+  "frac_tiles_ge50_all": 0.99839412709337,
+  "median_valid_frac_all": 1.0,
+  "min_pair_frac_tiles_ge50": 0.9910813823857302,
+  "n_pairs_all_tiles_ge50": 36
+ },
+ "W32": {
+  "frac_tiles_ge50_all": 0.9982794218857536,
+  "median_valid_frac_all": 1.0,
+  "min_pair_frac_tiles_ge50": 0.9888517279821628,
+  "n_pairs_all_tiles_ge50": 36
+ },
+ "W64": {
+  "frac_tiles_ge50_all": 0.9980882465397263,
+  "median_valid_frac_all": 1.0,
+  "min_pair_frac_tiles_ge50": 0.9765886287625418,
+  "n_pairs_all_tiles_ge50": 35
+ }
+}

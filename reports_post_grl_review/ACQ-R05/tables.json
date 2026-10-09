@@ -1,0 +1,85 @@
+{
+ "generated": "2026-10-09T21:47:42+00:00",
+ "n_pairs_in_scope": 39,
+ "n_provider": 21,
+ "n_ncei": 18,
+ "guard": {
+  "readers_blocked": 24,
+  "readers_n": 24,
+  "builder_refused": 23,
+  "builder_n": 23,
+  "all_passed": true
+ },
+ "n_built": 39,
+ "n_not_built": 0,
+ "not_built": [],
+ "lattice_verified": 18,
+ "fetch": {
+  "n_cruises_subset": 4,
+  "n_files_fetched": 32,
+  "n_files_added_to_manifests": 32,
+  "gb_fetched": 2.512,
+  "n_fetch_failed": 0,
+  "n_no_nav_track_included": 0,
+  "n_unreadable_files": 0
+ },
+ "agreement": {
+  "n_pairs": 39,
+  "n_identical": 21,
+  "n_flagged": 1,
+  "n_within_tolerance_not_identical": 17,
+  "flagged": [
+   "FK181031__MGDS_24618"
+  ],
+  "max_rms_m_ncei": 19.417,
+  "max_robust_sigma_over_s_lr": 0.48,
+  "max_abs_median_m": 0.295,
+  "max_abs_diff_m_provider": 0.0
+ },
+ "products": {
+  "n_pairs": 18,
+  "n_count_identical": 18,
+  "max_count_frac_differing": 0.0,
+  "max_rsd_robust_sigma_over_s_lr": 0.0,
+  "max_rsd_median_m": 0.0
+ },
+ "coverage": {
+  "W16": {
+   "frac_tiles_ge50_all": 0.99839412709337,
+   "median_valid_frac_all": 1.0,
+   "min_pair_frac_tiles_ge50": 0.9910813823857302,
+   "n_pairs_all_tiles_ge50": 36
+  },
+  "W32": {
+   "frac_tiles_ge50_all": 0.9982794218857536,
+   "median_valid_frac_all": 1.0,
+   "min_pair_frac_tiles_ge50": 0.9888517279821628,
+   "n_pairs_all_tiles_ge50": 36
+  },
+  "W64": {
+   "frac_tiles_ge50_all": 0.9980882465397263,
+   "median_valid_frac_all": 1.0,
+   "min_pair_frac_tiles_ge50": 0.9765886287625418,
+   "n_pairs_all_tiles_ge50": 35
+  },
+  "n_tiles": 26154,
+  "n_pairs": 39
+ },
+ "preservation": {
+  "sha256": "d09a9faef2b3ce65bdcaf1ebe5628b1b3ee0f2e57de8b71ba1113e3744b6bfa2",
+  "n_rows": 39,
+  "n_built": 39,
+  "n_not_built": 0,
+  "n_sha_mismatch": 0,
+  "n_files_verified_total": 318,
+  "n_files_bad_total": 0
+ },
+ "overfetch": {
+  "total_gb_not_selected": 71.92,
+  "n_files_fetched": 1628,
+  "gb_fetched": 77.99,
+  "n_not_selected": 1552
+ },
+ "failure_ledger_rows": 0,
+ "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45"
+}
