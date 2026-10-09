@@ -151,6 +151,31 @@ def main(argv=None):
         md(pd.DataFrame([{"cruise": c, **v} for c, v in j["per_cruise"].items()]).drop(columns=["manifest_backup"]), "overfetch", "overfetch_deletable_v1.json")
         numbers["overfetch"] = {"total_gb_not_selected": j["total_gb_not_selected"], "n_files_fetched": int(sum(v["n_fetched_by_acq_r05"] for v in j["per_cruise"].values())),
                                 "gb_fetched": round(sum(v["gb_fetched"] for v in j["per_cruise"].values()), 2), "n_not_selected": int(sum(v["n_not_selected"] for v in j["per_cruise"].values()))}
+    # 7c rulings 2026-10-09: H-2 file inspection, H-1 deletion
+    h2 = R.REPORT_DIR / "h2_fk181031_files.csv"
+    if h2.exists():
+        d = pd.read_csv(h2)
+        g = d.groupby("origin").agg(files=("file", "size"), subdirs=("ncei_subdir", lambda x: ", ".join(sorted(set(x)))), formats=("mb_format", lambda x: ", ".join(sorted({f"mb{v}" for v in x}))),
+                                    sonar=("sonar_model", lambda x: "; ".join(sorted({str(v).split(" (")[0] for v in x}))), files_with_soundings_in_region=("n_soundings_in_region", lambda x: int((x.fillna(0) > 0).sum())),
+                                    soundings_in_region=("n_soundings_in_region", lambda x: int(x.fillna(0).sum())), depth_min_m=("depth_min_m", "min"), median_of_file_medians_m=("depth_median_m", "median"), depth_max_m=("depth_max_m", "max")).reset_index()
+        md(g.round(1), "h2_summary", "h2_fk181031_files.csv")
+        md(d[["file", "origin", "ncei_subdir", "mb_format", "sonar_model", "n_soundings_in_region", "depth_min_m", "depth_median_m", "depth_max_m"]].round(1), "h2_files", "h2_fk181031_files.csv")
+        j = json.loads((R.REPORT_DIR / "h2_fk181031.json").read_text())
+        numbers["h2"] = {"n_files": j["n_files"], "n_new": j["by_origin"]["newly fetched 2026-10-09 (nav ∩ context)"]["n"], "n_june": j["by_origin"]["June 2026 subset (nav ∩ HR footprint 4 km)"]["n"],
+                         "sonar_models_all": sorted({str(v).split(" (")[0] for v in d.sonar_model}), "subdirs_all": sorted(set(d.ncei_subdir)), "formats_all": sorted({f"mb{v}" for v in d.mb_format}),
+                         "new_soundings_in_region": j["by_origin"]["newly fetched 2026-10-09 (nav ∩ context)"]["n_soundings_in_region"], "june_soundings_in_region": j["by_origin"]["June 2026 subset (nav ∩ HR footprint 4 km)"]["n_soundings_in_region"],
+                         "new_files_with_soundings_in_region": int((d[d.origin.str.startswith("newly")].n_soundings_in_region.fillna(0) > 0).sum()),
+                         "new_depth_min_m": j["by_origin"]["newly fetched 2026-10-09 (nav ∩ context)"]["depth_min_m"], "june_depth_min_m": j["by_origin"]["June 2026 subset (nav ∩ HR footprint 4 km)"]["depth_min_m"],
+                         "new_median_of_medians_m": j["by_origin"]["newly fetched 2026-10-09 (nav ∩ context)"]["median_of_file_medians_m"], "june_median_of_medians_m": j["by_origin"]["June 2026 subset (nav ∩ HR footprint 4 km)"]["median_of_file_medians_m"],
+                         "lr_tif_median_depth_m": j["lr_tif_median_depth_m"]}
+    h1 = R.REPORT_DIR / "overfetch_deletion_2026-10-09.json"
+    if h1.exists():
+        j = json.loads(h1.read_text())
+        rows_ = [{"cruise": c, "deleted files": v["n_delete"], "deleted GB": v["gb_delete"], "kept (used by a pair)": v["n_keep"], "manifest files after": v["manifest_files_after"],
+                  "disk == manifest": v["verify"]["disk_eq_manifest"], "SHA256SUMS == manifest": v["verify"]["sums_eq_manifest"], "kept present with size": v["verify"]["kept_present_with_size"]} for c, v in j["cruises"].items()]
+        md(pd.DataFrame(rows_), "h1_deletion", "overfetch_deletion_2026-10-09.json")
+        numbers["h1"] = {"n_deleted": int(sum(v["n_delete"] for v in j["cruises"].values())), "gb_deleted": round(sum(v["gb_delete"] for v in j["cruises"].values()), 2),
+                         "n_kept": int(sum(v["n_keep"] for v in j["cruises"].values())), "all_verified": all(all(v["verify"][k] for k in ("disk_eq_manifest", "sums_eq_manifest", "kept_present_with_size")) for v in j["cruises"].values())}
     # 8 failure ledger
     led = []
     for p in R.PAIRS_IN_SCOPE:

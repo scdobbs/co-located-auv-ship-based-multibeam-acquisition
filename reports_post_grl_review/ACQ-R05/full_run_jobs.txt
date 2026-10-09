@@ -5,3 +5,4 @@ rerun sources NA080,TN299 (--no-fetch, coverage only): 47136663
 full builds (36 pairs, afterok 47136663 and 47134551_11 EX1402L2): 47136671
 first builds job 47134553 cancelled (dependency on cancelled tasks 47134551_7/_9)
 submitted 2026-10-09T20:53:19Z
+H-2 inspection job: 47144065 (2026-10-09T21:55:03Z)

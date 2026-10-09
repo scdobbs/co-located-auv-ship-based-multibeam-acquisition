@@ -129,3 +129,22 @@ The builder runs on any manifest row given its pair id (`python -m src.acq_r05.b
 ## 11. Failure ledger ({{json:tables.json:failure_ledger_rows}} rows)
 
 {{table:failure_ledger}}
+
+
+---
+
+## 12. Rulings of 2026-10-09 (steering) and their execution
+
+**H-1 — executed.** `src/acq_r05/h1_delete_overfetch.py` (dry run, then `--execute`): {{json:tables.json:h1.n_deleted}} files / {{json:tables.json:h1.gb_deleted}} GB deleted from OAK `raw_lr_swath/{NA080,TN299}/`; both fetch manifests and `SHA256SUMS` restored from `*.pre_acq_r05_2026-10-09` plus the {{json:tables.json:h1.n_kept}} TN299 files that TN299__MGDS_31253's context uses (kept, tagged in the manifest); every deleted file's name, size and sha256 is in `overfetch_deletion_2026-10-09.json`. Post-check (file set == manifest, SHA256SUMS == manifest, kept files present with their recorded size): all verified = {{json:tables.json:h1.all_verified}}. Ledger row added.
+
+{{table:h1_deletion}}
+
+**H-2 — checked; not a different sonar, therefore no HOLD under the ruling's criterion.** `src/acq_r05/h2_fk181031.py` (job 47144065; nothing rebuilt) inspected the pair's {{json:tables.json:h2.n_files}} context source files ({{json:tables.json:h2.n_new}} newly fetched, {{json:tables.json:h2.n_june}} June): NCEI sub-directory {{json:tables.json:h2.subdirs_all}} for all, format {{json:tables.json:h2.formats_all}} for all, sonar model from the Kongsberg datagram headers {{json:tables.json:h2.sonar_models_all}} for all 60 (2,000 datagrams read per file, one model each). Inside the context mbgrid region the June files hold {{json:tables.json:h2.june_soundings_in_region}} soundings and the new files {{json:tables.json:h2.new_soundings_in_region}} (14 %); only {{json:tables.json:h2.new_files_with_soundings_in_region}} of the 26 new files have any sounding in the region (the other 15 were selected by the 0.1° superset rule). The new lines are shallower: file-median depths {{json:tables.json:h2.new_median_of_medians_m}} m (median of file medians) and minimum {{json:tables.json:h2.new_depth_min_m}} m, against {{json:tables.json:h2.june_median_of_medians_m}} m and {{json:tables.json:h2.june_depth_min_m}} m for the June files; lr.tif's median depth is {{json:tables.json:h2.lr_tif_median_depth_m}} m. The `ctx_disagrees` flag therefore records a coverage difference within one sonar (shallower rim lines whose outer beams reach the footprint), not a sonar change. The decision on the pair (accept the context as flagged, or exclude it from the exploratory phase) stays with steering; the statistics are unchanged (robust σ 1.139 m = 0.48 s_lr, RMS 19.4 m, median 0.003 m).
+
+{{table:h2_summary}}
+
+Per file (`h2_fk181031_files.csv`):
+
+{{table:h2_files}}
+
+**H-3 — recorded.** The region dependence of the gridding chain is entered in `CHANGE_LEDGER.md` as a known property; no action; the Phase-4 context grids use the frozen builder (§9).

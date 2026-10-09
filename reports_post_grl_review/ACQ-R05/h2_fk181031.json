@@ -1,0 +1,43 @@
+{
+ "pair": "FK181031__MGDS_24618",
+ "region_wesn": [
+  -108.9309686812398,
+  -108.75874239834083,
+  23.88704189257532,
+  24.06249031575227
+ ],
+ "mblist_command": "apptainer exec --bind /scratch,/home/groups,/oak /lscratch/scdobbs/47144065/mbsystem_sandbox sh h2.sh",
+ "attempts": 1,
+ "n_files": 60,
+ "by_origin": {
+  "June 2026 subset (nav \u2229 HR footprint 4 km)": {
+   "n": 34,
+   "subdirs": {
+    "em302": 34
+   },
+   "sonar_models": {
+    "EM 302 (2000 dgrams)": 34
+   },
+   "n_soundings_in_region": 3332356,
+   "depth_min_m": 2327.3491,
+   "depth_max_m": 5682.3081,
+   "median_of_file_medians_m": 3660.57225
+  },
+  "newly fetched 2026-10-09 (nav \u2229 context)": {
+   "n": 26,
+   "subdirs": {
+    "em302": 26
+   },
+   "sonar_models": {
+    "EM 302 (2000 dgrams)": 26
+   },
+   "n_soundings_in_region": 546446,
+   "depth_min_m": 1996.4187,
+   "depth_max_m": 5330.4985,
+   "median_of_file_medians_m": 3259.4969499999997
+  }
+ },
+ "lr_tif_median_depth_m": 3787.034423828125,
+ "generated": "2026-10-09T21:59:51+00:00",
+ "code_commit": "3e01fada4c130e9ea22254923b8b537facdc1d8c"
+}

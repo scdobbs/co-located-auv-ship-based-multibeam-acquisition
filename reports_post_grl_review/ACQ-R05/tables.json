@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-09T21:47:42+00:00",
+ "generated": "2026-10-09T22:07:31+00:00",
  "n_pairs_in_scope": 39,
  "n_provider": 21,
  "n_ncei": 18,
@@ -80,6 +80,34 @@
   "gb_fetched": 77.99,
   "n_not_selected": 1552
  },
+ "h2": {
+  "n_files": 60,
+  "n_new": 26,
+  "n_june": 34,
+  "sonar_models_all": [
+   "EM 302"
+  ],
+  "subdirs_all": [
+   "em302"
+  ],
+  "formats_all": [
+   "mb58"
+  ],
+  "new_soundings_in_region": 546446,
+  "june_soundings_in_region": 3332356,
+  "new_files_with_soundings_in_region": 11,
+  "new_depth_min_m": 1996.4187,
+  "june_depth_min_m": 2327.3491,
+  "new_median_of_medians_m": 3259.4969499999997,
+  "june_median_of_medians_m": 3660.57225,
+  "lr_tif_median_depth_m": 3787.034423828125
+ },
+ "h1": {
+  "n_deleted": 1552,
+  "gb_deleted": 71.92,
+  "n_kept": 76,
+  "all_verified": true
+ },
  "failure_ledger_rows": 0,
- "code_commit": "b039b8393f09cbbfe88907ef15ce729ef58faa45"
+ "code_commit": "3e01fada4c130e9ea22254923b8b537facdc1d8c"
 }
