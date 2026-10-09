@@ -1,0 +1,16 @@
+# sh_quota before launch, 2026-10-09T20:01:34Z, sh04-ln07.stanford.edu
++---------------------------------------------------------------------------+
+| Disk usage for scdobbs (group: hilley)                                    |
++---------------------------------------------------------------------------+
+|    Directory |  volume /   limit [          use%] | inodes /  limit (use%)|
++---------------------------------------------------------------------------+
+          HOME |   7.3GB /  15.0GB [||||       48%] |      - /      - (  -%)
+    GROUP_HOME | 245.9GB /   1.0TB [||         24%] |      - /      - (  -%)
+       SCRATCH | 231.4GB / 100.0TB [            0%] | 208.0K /  20.0M (  1%)
+ GROUP_SCRATCH |   1.8TB / 100.0TB [            1%] | 977.7K /  20.0M (  4%)
+           OAK |  16.4TB /  20.0TB [||||||||   81%] | 267.4K /   3.0M (  8%)
++---------------------------------------------------------------------------+
+ WARNING: files on SCRATCH and GROUP_SCRATCH are automatically purged 90
+ days after their last content modification. Any attempt to work around or
+ circumvent the purge policy will result in immediate account termination.
++---------------------------------------------------------------------------+

@@ -1,0 +1,3153 @@
+{
+ "generated": "2026-10-09T19:55:52+00:00",
+ "code_commit": "add224f9a907d6142620cccc1fbdda2efd83298a",
+ "pairs": {
+  "RR1506__MGDS_29779": {
+   "unit": "lu00",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/RR1506__MGDS_29779/lr.tif",
+    "crs": "EPSG:32701",
+    "transform": [
+     20.21986038359872,
+     0.0,
+     302771.6486359177,
+     0.0,
+     -20.21986038359856,
+     6564649.005297569
+    ],
+    "width": 369,
+    "height": 613,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32701",
+    "transform": [
+     20.21986038359872,
+     0.0,
+     297757.1232607852,
+     0.0,
+     -20.21986038359856,
+     6569663.530672701
+    ],
+    "width": 865,
+    "height": 1109,
+    "dx": 20.21986038359872,
+    "dy": 20.21986038359856,
+    "lr_offset_col": 248,
+    "lr_offset_row": 248,
+    "lr_width": 369,
+    "lr_height": 613,
+    "bounds": [
+     297757.1232607852,
+     6547239.705507291,
+     315247.3024925981,
+     6569663.530672701
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 92.53941466088199,
+    "buffered_area_km2": 369.5805370184887
+   },
+   "source_lattice": {
+    "w": -179.0770268935873,
+    "s": -31.156170304518906,
+    "e": -178.98020006593606,
+    "n": -31.02746833820069,
+    "nx": 456,
+    "ny": 708,
+    "dx": 0.0002128062146180827,
+    "dy": 0.00018203955631996364,
+    "dx_requested": 0.0002126345837546769,
+    "dy_requested": 0.00018208767517067912,
+    "src_crs": "OGC:CRS84",
+    "kind": "june_stage_c_full_union",
+    "cruise": "RR1506",
+    "live_hr": [
+     "MGDS:29779"
+    ],
+    "cell_m": 20.27,
+    "cell_rule": "achieved_cell_m",
+    "record": "reports/discovery/stage_c_full_measurements.json",
+    "tried": [
+     {
+      "cell_rule": "achieved_cell_m",
+      "cell_m": 20.27,
+      "nx": 456,
+      "ny": 708,
+      "match": true
+     }
+    ],
+    "how": "re-derived: stage_c_full.py:181-190 region = union of live HR footprints ['MGDS:29779'] +/- 1 km, cell = achieved_cell_m; grid itself purged from scratch"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": -5.662137425588298e-15,
+    "lr_offset_in_warped_px": [
+     51.00000000000122,
+     51.000000000006985
+    ],
+    "warped_default": {
+     "transform": [
+      20.219860383598835,
+      0.0,
+      301740.4357563541,
+      0.0,
+      -20.219860383598835,
+      6565680.218177132
+     ],
+     "width": 471,
+     "height": 715
+    }
+   },
+   "context_region": {
+    "R": "-179.13320773424647/-178.92444483770612/-31.203500589162097/-30.9801380535575",
+    "E": "0.0002128062146180827/0.00018203955631996364/degrees",
+    "w": -179.13320773424647,
+    "s": -31.203500589162097,
+    "e": -178.92444483770612,
+    "n": -30.9801380535575,
+    "nx": 982,
+    "ny": 1228,
+    "dx": 0.0002128062146180827,
+    "dy": 0.00018203955631996364,
+    "node_offset_from_source": [
+     -264,
+     -260
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     5.040412531798211e-14,
+     7.105427357601002e-15
+    ],
+    "lonlat_box_unsnapped": [
+     -179.13299540750018,
+     -31.20332918987471,
+     -178.9244478875933,
+     -30.980273217946323
+    ]
+   }
+  },
+  "discol_so242_1": {
+   "unit": "lu02",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/discol_so242_1/lr.tif",
+    "crs": "EPSG:32716",
+    "transform": [
+     38.68463990469996,
+     0.0,
+     336460.1429884154,
+     0.0,
+     -38.68463990470325,
+     9220532.424814176
+    ],
+    "width": 213,
+    "height": 136,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32716",
+    "transform": [
+     38.68463990469996,
+     0.0,
+     331431.1398008044,
+     0.0,
+     -38.68463990470325,
+     9225561.428001788
+    ],
+    "width": 473,
+    "height": 396,
+    "dx": 38.68463990469996,
+    "dy": 38.68463990470325,
+    "lr_offset_col": 130,
+    "lr_offset_row": 130,
+    "lr_width": 213,
+    "lr_height": 136,
+    "bounds": [
+     331431.1398008044,
+     9210242.310599525,
+     349728.9744757275,
+     9225561.428001788
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 25.834320591125913,
+    "buffered_area_km2": 230.83425726764594
+   }
+  },
+  "AT37-13__MGDS_31199": {
+   "unit": "lu04",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT37-13__MGDS_31199/lr.tif",
+    "crs": "EPSG:32616",
+    "transform": [
+     23.226169145350468,
+     0.0,
+     697921.9921662887,
+     0.0,
+     -23.226169145350077,
+     973681.5409803226
+    ],
+    "width": 129,
+    "height": 106,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32616",
+    "transform": [
+     23.226169145350468,
+     0.0,
+     692905.139630893,
+     0.0,
+     -23.226169145350077,
+     978698.3935157183
+    ],
+    "width": 561,
+    "height": 538,
+    "dx": 23.226169145350468,
+    "dy": 23.226169145350077,
+    "lr_offset_col": 216,
+    "lr_offset_row": 216,
+    "lr_width": 129,
+    "lr_height": 106,
+    "bounds": [
+     692905.139630893,
+     966202.7145155199,
+     705935.0205214346,
+     978698.3935157183
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 7.350265889126511,
+    "buffered_area_km2": 140.24413548875904
+   },
+   "source_lattice": {
+    "w": -85.20958178468717,
+    "s": 8.77297796225009,
+    "e": -84.19816550063551,
+    "n": 9.134977479021483,
+    "nx": 4788,
+    "ny": 1736,
+    "dx": 0.00021128395321739352,
+    "dy": 0.00020864525462328112,
+    "dx_requested": 0.0002112763295107157,
+    "dy_requested": 0.00020870164779516752,
+    "src_crs": "OGC:CRS84",
+    "kind": "june_stage_c_full_union",
+    "cruise": "AT37-13",
+    "live_hr": [
+     "MGDS:31199"
+    ],
+    "cell_m": 23.232667432558046,
+    "cell_rule": "2*footprint_depth_m*tan(beamwidth/2)",
+    "record": "reports/discovery/stage_c_full_measurements.json",
+    "tried": [
+     {
+      "cell_rule": "achieved_cell_m",
+      "cell_m": 23.23,
+      "nx": 4789,
+      "ny": 1736,
+      "match": false
+     },
+     {
+      "cell_rule": "2*footprint_depth_m*tan(beamwidth/2)",
+      "cell_m": 23.232667432558046,
+      "nx": 4788,
+      "ny": 1736,
+      "match": true
+     }
+    ],
+    "how": "re-derived: stage_c_full.py:181-190 region = union of live HR footprints ['MGDS:31199'] +/- 1 km, cell = 2*footprint_depth_m*tan(beamwidth/2); grid itself purged from scratch"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": -1.9984014443252818e-14,
+    "lr_offset_in_warped_px": [
+     51.00000000000027,
+     1606.0000000000018
+    ],
+    "warped_default": {
+     "transform": [
+      23.226169145350934,
+      0.0,
+      696737.4575398758,
+      0.0,
+      -23.226169145350934,
+      1010982.7686277563
+     ],
+     "width": 4802,
+     "height": 1755
+    }
+   },
+   "context_region": {
+    "R": "-85.25564168648856/-85.11830711689726/8.727076006232968/8.858939807154883",
+    "E": "0.00021128395321739352/0.00020864525462328112/degrees",
+    "w": -85.25564168648856,
+    "s": 8.727076006232968,
+    "e": -85.11830711689726,
+    "n": 8.858939807154883,
+    "nx": 651,
+    "ny": 633,
+    "dx": 0.00021128395321739352,
+    "dy": 0.00020864525462328112,
+    "node_offset_from_source": [
+     -218,
+     -220
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     -1.9761969838327786e-14,
+     7.327471962526033e-15
+    ],
+    "lonlat_box_unsnapped": [
+     -85.25554672082347,
+     8.72725510787271,
+     -85.11839739225279,
+     8.858760127857183
+    ]
+   }
+  },
+  "TN399__MGDS_30373": {
+   "unit": "lu05",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN399__MGDS_30373/lr.tif",
+    "crs": "EPSG:32613",
+    "transform": [
+     44.175807673652244,
+     0.0,
+     573693.3117349324,
+     0.0,
+     -44.175807673651995,
+     1100265.742082839
+    ],
+    "width": 190,
+    "height": 582,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32613",
+    "transform": [
+     44.175807673652244,
+     0.0,
+     568657.269660136,
+     0.0,
+     -44.175807673651995,
+     1105301.7841576352
+    ],
+    "width": 418,
+    "height": 810,
+    "dx": 44.175807673652244,
+    "dy": 44.175807673651995,
+    "lr_offset_col": 114,
+    "lr_offset_row": 114,
+    "lr_width": 190,
+    "lr_height": 582,
+    "bounds": [
+     568657.269660136,
+     1069519.379941977,
+     587122.7572677226,
+     1105301.7841576352
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 216.234189849732,
+    "buffered_area_km2": 635.9255206039657
+   },
+   "source_lattice": {
+    "w": -104.33674814740442,
+    "s": 9.463853207133635,
+    "e": -104.22018681338243,
+    "n": 9.961529146219814,
+    "nx": 289,
+    "ny": 1247,
+    "dx": 0.00040472685424303774,
+    "dy": 0.0003994188917224548,
+    "dx_requested": 0.0004051971947314131,
+    "dy_requested": 0.00039938914840100616,
+    "src_crs": "OGC:CRS84",
+    "kind": "june_stage_c_full_union",
+    "cruise": "TN399",
+    "live_hr": [
+     "MGDS:30373",
+     "MGDS:31181"
+    ],
+    "cell_m": 44.46,
+    "cell_rule": "achieved_cell_m",
+    "record": "reports/discovery/stage_c_full_measurements.json",
+    "tried": [
+     {
+      "cell_rule": "achieved_cell_m",
+      "cell_m": 44.46,
+      "nx": 289,
+      "ny": 1247,
+      "match": true
+     }
+    ],
+    "how": "re-derived: stage_c_full.py:181-190 region = union of live HR footprints ['MGDS:30373', 'MGDS:31181'] +/- 1 km, cell = achieved_cell_m; grid itself purged from scratch"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": 2.220446049250313e-15,
+    "lr_offset_in_warped_px": [
+     22.999999999999467,
+     23.0000000000021
+    ],
+    "warped_default": {
+     "transform": [
+      44.175807673652145,
+      0.0,
+      572677.2681584384,
+      0.0,
+      -44.175807673652145,
+      1101281.785659333
+     ],
+     "width": 293,
+     "height": 1247
+    }
+   },
+   "context_region": {
+    "R": "-104.38329173564237/-104.19590320212784/9.665160328561752/10.007462318767896",
+    "E": "0.00040472685424303774/0.0003994188917224548/degrees",
+    "w": -104.38329173564237,
+    "s": 9.665160328561752,
+    "e": -104.19590320212784,
+    "n": 10.007462318767896,
+    "nx": 464,
+    "ny": 858,
+    "dx": 0.00040472685424303774,
+    "dy": 0.0003994188917224548,
+    "node_offset_from_source": [
+     -115,
+     504
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     5.084821452783217e-14,
+     -1.1102230246251565e-16
+    ],
+    "lonlat_box_unsnapped": [
+     -104.38328062020972,
+     9.665458074715518,
+     -104.19596348148606,
+     10.007392398925335
+    ]
+   }
+  },
+  "TN399__MGDS_33068": {
+   "unit": "lu05",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN399__MGDS_33068/lr.tif",
+    "crs": "EPSG:32613",
+    "transform": [
+     44.192893244464706,
+     0.0,
+     575727.1211968362,
+     0.0,
+     -44.19289324446456,
+     1089472.2746883803
+    ],
+    "width": 106,
+    "height": 75,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32613",
+    "transform": [
+     44.192893244464706,
+     0.0,
+     570689.1313669672,
+     0.0,
+     -44.19289324446456,
+     1094510.2645182493
+    ],
+    "width": 333,
+    "height": 302,
+    "dx": 44.192893244464706,
+    "dy": 44.19289324446456,
+    "lr_offset_col": 114,
+    "lr_offset_row": 114,
+    "lr_width": 106,
+    "lr_height": 75,
+    "bounds": [
+     570689.1313669672,
+     1081164.010758421,
+     585405.3648173739,
+     1094510.2645182493
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 15.436963177611696,
+    "buffered_area_km2": 173.64617286978182
+   },
+   "source_lattice": {
+    "w": -104.368708113573,
+    "s": 9.725586991040384,
+    "e": -104.22545858114951,
+    "n": 10.110128371957883,
+    "nx": 354,
+    "ny": 964,
+    "dx": 0.00040580604085976304,
+    "dy": 0.00039931607571910583,
+    "src_crs": "OGC:CRS84",
+    "kind": "acq_r02_union_grd",
+    "cruise": "TN399",
+    "grd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/TN399__union.grd",
+    "grd_sha256": "79af36756376320feab80fe2b6235925decfe7a565d7a5277235d2a5c100af79",
+    "record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R02/grid/TN399.json",
+    "cell_m": 44.46,
+    "how": "read from the persisted ACQ-R02 union grid TN399__union.grd (mbgrid region -104.368708113573/-104.22545858114951/9.725586991040384/10.110128371957883)"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": 1.7985612998927536e-14,
+    "lr_offset_in_warped_px": [
+     148.99999999999903,
+     638.9999999999991
+    ],
+    "warped_default": {
+     "transform": [
+      44.19289324446391,
+      0.0,
+      569142.3801034112,
+      0.0,
+      -44.19289324446391,
+      1117711.5334715927
+     ],
+     "width": 358,
+     "height": 964
+    }
+   },
+   "context_region": {
+    "R": "-104.36465005316441/-104.21166117576028/9.770709707596643/9.910071018022611",
+    "E": "0.00040580604085976304/0.00039931607571910583/degrees",
+    "w": -104.36465005316441,
+    "s": 9.770709707596643,
+    "e": -104.21166117576028,
+    "n": 9.910071018022611,
+    "nx": 378,
+    "ny": 350,
+    "dx": 0.00040580604085976304,
+    "dy": 0.00039931607571910583,
+    "node_offset_from_source": [
+     10,
+     113
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     -2.5202062658991053e-14,
+     4.440892098500626e-15
+    ],
+    "lonlat_box_unsnapped": [
+     -104.36455859312011,
+     9.770806541309868,
+     -104.21186338053934,
+     9.90975822333408
+    ]
+   }
+  },
+  "AT42-06__MGDS_5174": {
+   "unit": "lu05",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-06__MGDS_5174/lr.tif",
+    "crs": "EPSG:32613",
+    "transform": [
+     43.629383477218624,
+     0.0,
+     574773.980445615,
+     0.0,
+     -43.629383477217736,
+     1089294.6336015835
+    ],
+    "width": 124,
+    "height": 100,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32613",
+    "transform": [
+     43.629383477218624,
+     0.0,
+     569756.6013457349,
+     0.0,
+     -43.629383477217736,
+     1094312.0127014637
+    ],
+    "width": 354,
+    "height": 330,
+    "dx": 43.629383477218624,
+    "dy": 43.629383477217736,
+    "lr_offset_col": 115,
+    "lr_offset_row": 115,
+    "lr_width": 124,
+    "lr_height": 100,
+    "bounds": [
+     569756.6013457349,
+     1079914.3161539817,
+     585201.4030966703,
+     1094312.0127014637
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 23.59786008337104,
+    "buffered_area_km2": 199.71379989964757
+   },
+   "source_lattice": {
+    "w": -104.32697880410241,
+    "s": 9.461102546702016,
+    "e": -104.20730020185171,
+    "n": 9.862561730885282,
+    "nx": 300,
+    "ny": 1019,
+    "dx": 0.00040026288378160955,
+    "dy": 0.00039436069173208926,
+    "src_crs": "OGC:CRS84",
+    "kind": "acq_r02_union_grd",
+    "cruise": "AT42-06",
+    "grd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/AT42-06__union.grd",
+    "grd_sha256": "aa111eb7245e69022d237d820f2fd1e2a7a47aa552f4801192c03c5bcc39ab1f",
+    "record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R02/grid/AT42-06.json",
+    "cell_m": 43.91,
+    "how": "read from the persisted ACQ-R02 union grid AT42-06__union.grd (mbgrid region -104.32697880410241/-104.20730020185171/9.461102546702016/9.862561730885282)"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": 8.881784197001252e-16,
+    "lr_offset_in_warped_px": [
+     23.000000000000952,
+     23.999999999999368
+    ],
+    "warped_default": {
+     "transform": [
+      43.62938347721859,
+      0.0,
+      573770.504625639,
+      0.0,
+      -43.62938347721859,
+      1090341.7388050368
+     ],
+     "width": 304,
+     "height": 1019
+    }
+   },
+   "context_region": {
+    "R": "-104.37340929862107/-104.21370440799221/9.759239229651476/9.908307571126205",
+    "E": "0.00040026288378160955/0.00039436069173208926/degrees",
+    "w": -104.37340929862107,
+    "s": 9.759239229651476,
+    "e": -104.21370440799221,
+    "n": 9.908307571126205,
+    "nx": 400,
+    "ny": 379,
+    "dx": 0.00040026288378160955,
+    "dy": 0.00039436069173208926,
+    "node_offset_from_source": [
+     -116,
+     756
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     -1.8984813721090177e-14,
+     -3.9968028886505635e-15
+    ],
+    "lonlat_box_unsnapped": [
+     -104.37308253229853,
+     9.759508733451542,
+     -104.21372808283054,
+     9.90798143314797
+    ]
+   }
+  },
+  "ccz_so268_1": {
+   "unit": "lu06",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/ccz_so268_1/lr.tif",
+    "crs": "EPSG:32611",
+    "transform": [
+     50.0,
+     0.0,
+     495500.0,
+     0.0,
+     -50.0,
+     1320450.0
+    ],
+    "width": 101,
+    "height": 92,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32611",
+    "transform": [
+     50.0,
+     0.0,
+     490500.0,
+     0.0,
+     -50.0,
+     1325450.0
+    ],
+    "width": 301,
+    "height": 293,
+    "dx": 50.0,
+    "dy": 50.0,
+    "lr_offset_col": 100,
+    "lr_offset_row": 100,
+    "lr_width": 101,
+    "lr_height": 92,
+    "bounds": [
+     490500.0,
+     1310800.0,
+     505550.0,
+     1325450.0
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 10.860939,
+    "buffered_area_km2": 158.17759935648598
+   }
+  },
+  "EW9801__MGDS_31425": {
+   "unit": "lu07",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EW9801__MGDS_31425/lr.tif",
+    "crs": "EPSG:32605",
+    "transform": [
+     47.9986635720056,
+     0.0,
+     260753.03313848114,
+     0.0,
+     -47.998663572007594,
+     2094661.9788636076
+    ],
+    "width": 69,
+    "height": 97,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32605",
+    "transform": [
+     47.9986635720056,
+     0.0,
+     255713.17346342056,
+     0.0,
+     -47.998663572007594,
+     2099701.8385386686
+    ],
+    "width": 279,
+    "height": 307,
+    "dx": 47.9986635720056,
+    "dy": 47.998663572007594,
+    "lr_offset_col": 105,
+    "lr_offset_row": 105,
+    "lr_width": 69,
+    "lr_height": 97,
+    "bounds": [
+     255713.17346342056,
+     2084966.2488220623,
+     269104.80060001014,
+     2099701.8385386686
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 15.619166148648652,
+    "buffered_area_km2": 174.21525601681023
+   },
+   "source_lattice": {
+    "w": -155.28087984955945,
+    "s": 18.884063973017945,
+    "e": -155.2308011986244,
+    "n": 18.939572195625672,
+    "nx": 111,
+    "ny": 129,
+    "dx": 0.00045526046304602955,
+    "dy": 0.0004336579891228709,
+    "dx_requested": 0.00045721813986779563,
+    "dy_requested": 0.0004325368307581747,
+    "src_crs": "OGC:CRS84",
+    "kind": "june_stage_c_full_union",
+    "cruise": "EW9801",
+    "live_hr": [
+     "MGDS:31425"
+    ],
+    "cell_m": 48.15,
+    "cell_rule": "achieved_cell_m",
+    "record": "reports/discovery/stage_c_full_measurements.json",
+    "tried": [
+     {
+      "cell_rule": "achieved_cell_m",
+      "cell_m": 48.15,
+      "nx": 111,
+      "ny": 129,
+      "match": true
+     }
+    ],
+    "how": "re-derived: stage_c_full.py:181-190 region = union of live HR footprints ['MGDS:31425'] +/- 1 km, cell = achieved_cell_m; grid itself purged from scratch"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": -2.55351295663786e-15,
+    "lr_offset_in_warped_px": [
+     22.000000000000053,
+     21.999999999998234
+    ],
+    "warped_default": {
+     "transform": [
+      47.99866357200572,
+      0.0,
+      259697.06253989702,
+      0.0,
+      -47.99866357200572,
+      2095717.9494621917
+     ],
+     "width": 113,
+     "height": 130
+    }
+   },
+   "context_region": {
+    "R": "-155.33004797956843/-155.1816330686154/18.832892330301448/18.98597360046182",
+    "E": "0.00045526046304602955/0.0004336579891228709/degrees",
+    "w": -155.33004797956843,
+    "s": 18.832892330301448,
+    "e": -155.1816330686154,
+    "n": 18.98597360046182,
+    "nx": 327,
+    "ny": 354,
+    "dx": 0.00045526046304602955,
+    "dy": 0.0004336579891228709,
+    "node_offset_from_source": [
+     -108,
+     -118
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     1.1146639167236572e-13,
+     -1.7430501486614958e-14
+    ],
+    "lonlat_box_unsnapped": [
+     -155.32966698021738,
+     18.833235799115727,
+     -155.18182202381797,
+     18.985818919867103
+    ]
+   }
+  },
+  "KM0923__MGDS_31429": {
+   "unit": "lu07",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/KM0923__MGDS_31429/lr.tif",
+    "crs": "EPSG:32605",
+    "transform": [
+     86.94193394143312,
+     0.0,
+     268930.4405996436,
+     0.0,
+     -86.9419339414326,
+     2079451.7288441244
+    ],
+    "width": 106,
+    "height": 120,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32605",
+    "transform": [
+     86.94193394143312,
+     0.0,
+     263887.8084310405,
+     0.0,
+     -86.9419339414326,
+     2084494.3610127275
+    ],
+    "width": 222,
+    "height": 236,
+    "dx": 86.94193394143312,
+    "dy": 86.9419339414326,
+    "lr_offset_col": 58,
+    "lr_offset_row": 58,
+    "lr_width": 106,
+    "lr_height": 120,
+    "bounds": [
+     263887.8084310405,
+     2063976.0646025494,
+     283188.9177660387,
+     2084494.3610127275
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 95.91237286827891,
+    "buffered_area_km2": 370.5515851042897
+   },
+   "source_lattice": {
+    "w": -155.2004840752964,
+    "s": 18.692255050725784,
+    "e": -155.0956663921059,
+    "n": 18.80286522389683,
+    "nx": 128,
+    "ny": 142,
+    "dx": 0.0008253360881142038,
+    "dy": 0.0007844693132698349,
+    "src_crs": "OGC:CRS84",
+    "kind": "acq_r02_union_grd",
+    "cruise": "KM0923",
+    "grd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/KM0923__union.grd",
+    "grd_sha256": "2459ba67c49c5a738a428ada23a6e692c44031e716329ef4d2174aa2422708de",
+    "record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R02/grid/KM0923.json",
+    "cell_m": 87.25,
+    "how": "read from the persisted ACQ-R02 union grid KM0923__union.grd (mbgrid region -155.2004840752964/-155.0956663921059/18.692255050725784/18.80286522389683)"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": 5.329070518200751e-15,
+    "lr_offset_in_warped_px": [
+     11.999999999999737,
+     11.999999999999067
+    ],
+    "warped_default": {
+     "transform": [
+      86.94193394143267,
+      0.0,
+      267887.13739234646,
+      0.0,
+      -86.94193394143267,
+      2080495.0320514215
+     ],
+     "width": 130,
+     "height": 143
+    }
+   },
+   "context_region": {
+    "R": "-155.25082957667138/-155.04532089073092/18.644402422616324/18.85071785200629",
+    "E": "0.0008253360881142038/0.0007844693132698349/degrees",
+    "w": -155.25082957667138,
+    "s": 18.644402422616324,
+    "e": -155.04532089073092,
+    "n": 18.85071785200629,
+    "nx": 250,
+    "ny": 264,
+    "dx": 0.0008253360881142038,
+    "dy": 0.0007844693132698349,
+    "node_offset_from_source": [
+     -61,
+     -61
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     1.0458300891968975e-13,
+     2.886579864025407e-15
+    ],
+    "lonlat_box_unsnapped": [
+     -155.25023176120007,
+     18.644622776385376,
+     -155.04593414861932,
+     18.850002100331608
+    ]
+   }
+  },
+  "FK181031__MGDS_24618": {
+   "unit": "lu08",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK181031__MGDS_24618/lr.tif",
+    "crs": "EPSG:32612",
+    "transform": [
+     65.71027585290004,
+     0.0,
+     716757.2367717336,
+     0.0,
+     -65.71027585289897,
+     2656627.772279772
+    ],
+    "width": 78,
+    "height": 107,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32612",
+    "transform": [
+     65.71027585290004,
+     0.0,
+     711697.5455310603,
+     0.0,
+     -65.71027585289897,
+     2661687.4635204454
+    ],
+    "width": 231,
+    "height": 261,
+    "dx": 65.71027585290004,
+    "dy": 65.71027585289897,
+    "lr_offset_col": 77,
+    "lr_offset_row": 77,
+    "lr_width": 78,
+    "lr_height": 107,
+    "bounds": [
+     711697.5455310603,
+     2644537.0815228387,
+     726876.6192530802,
+     2661687.4635204454
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 36.09763299389532,
+    "buffered_area_km2": 236.2226490338611
+   },
+   "source_lattice": {
+    "w": -108.87897584111936,
+    "s": 23.934300727101096,
+    "e": -108.81008532795977,
+    "n": 24.015231481226493,
+    "nx": 107,
+    "ny": 138,
+    "dx": 0.0006499105015055414,
+    "dy": 0.0005907354315722422,
+    "dx_requested": 0.0006478835394753293,
+    "dy_requested": 0.0005919870643190802,
+    "src_crs": "OGC:CRS84",
+    "kind": "june_stage_c_pilot_per_hr",
+    "cruise": "FK181031",
+    "gridded_hr": "MGDS:24620",
+    "cell_m": 65.9,
+    "cell_rule": "est_cell_m",
+    "record": "reports/discovery/stage_c_pilot_measurements.json",
+    "how": "re-derived: stage_c_pilot.grid_pair region = A6 footprint bbox of MGDS:24620 +/- 1 km, cell = est_cell_m 65.9; grid itself purged from scratch"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": -5.218048215738236e-15,
+    "lr_offset_in_warped_px": [
+     15.999999999999893,
+     16.000000000001663
+    ],
+    "warped_default": {
+     "transform": [
+      65.71027585290038,
+      0.0,
+      715705.8723580872,
+      0.0,
+      -65.71027585290038,
+      2657679.1366934185
+     ],
+     "width": 110,
+     "height": 139
+    }
+   },
+   "context_region": {
+    "R": "-108.9309686812398/-108.75874239834083/23.88704189257532/24.06249031575227",
+    "E": "0.0006499105015055414/0.0005907354315722422/degrees",
+    "w": -108.9309686812398,
+    "s": 23.88704189257532,
+    "e": -108.75874239834083,
+    "n": 24.06249031575227,
+    "nx": 266,
+    "ny": 298,
+    "dx": 0.0006499105015055414,
+    "dy": 0.0005907354315722422,
+    "node_offset_from_source": [
+     -80,
+     -80
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     4.1300296516055823e-14,
+     -2.020605904817785e-14
+    ],
+    "lonlat_box_unsnapped": [
+     -108.93040752142589,
+     23.887349895050537,
+     -108.7590665148175,
+     24.06220865447272
+    ]
+   }
+  },
+  "tag_m127": {
+   "unit": "lu09",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/tag_m127/lr.tif",
+    "crs": "EPSG:32623",
+    "transform": [
+     28.37585988549851,
+     0.0,
+     514831.97067917546,
+     0.0,
+     -28.375859885498706,
+     2896393.6117996983
+    ],
+    "width": 332,
+    "height": 337,
+    "nodata": -9999.0,
+    "dtype": "float64"
+   },
+   "context": {
+    "crs": "EPSG:32623",
+    "transform": [
+     28.37585988549851,
+     0.0,
+     509809.4434794422,
+     0.0,
+     -28.375859885498706,
+     2901416.1389994314
+    ],
+    "width": 685,
+    "height": 691,
+    "dx": 28.37585988549851,
+    "dy": 28.375859885498706,
+    "lr_offset_col": 177,
+    "lr_offset_row": 177,
+    "lr_width": 332,
+    "lr_height": 337,
+    "bounds": [
+     509809.4434794422,
+     2881808.4198185517,
+     529246.9075010087,
+     2901416.1389994314
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 90.03393483588106,
+    "buffered_area_km2": 358.22638842081506
+   }
+  },
+  "NA090__MGDS_31212": {
+   "unit": "lu10",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA090__MGDS_31212/lr.tif",
+    "crs": "EPSG:32612",
+    "transform": [
+     32.0264658695154,
+     0.0,
+     460820.91024539596,
+     0.0,
+     -32.02646586952062,
+     3033276.5929276994
+    ],
+    "width": 79,
+    "height": 79,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32612",
+    "transform": [
+     32.0264658695154,
+     0.0,
+     455792.75510388205,
+     0.0,
+     -32.02646586952062,
+     3038304.748069214
+    ],
+    "width": 393,
+    "height": 392,
+    "dx": 32.0264658695154,
+    "dy": 32.02646586952062,
+    "lr_offset_col": 157,
+    "lr_offset_row": 157,
+    "lr_width": 79,
+    "lr_height": 79,
+    "bounds": [
+     455792.75510388205,
+     3025750.373448362,
+     468379.1561906016,
+     3038304.748069214
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 6.415272302858374,
+    "buffered_area_km2": 135.4859454809595
+   },
+   "source_lattice": {
+    "w": -111.40614566649813,
+    "s": 27.390761057472567,
+    "e": -111.36098463507753,
+    "n": 27.431125729688414,
+    "nx": 140,
+    "ny": 141,
+    "dx": 0.00032489950662305765,
+    "dy": 0.0002883190872560551,
+    "dx_requested": 0.00032533300140232907,
+    "dy_requested": 0.00028880704275961196,
+    "src_crs": "OGC:CRS84",
+    "kind": "june_stage_c_full_union",
+    "cruise": "NA090",
+    "live_hr": [
+     "MGDS:31212"
+    ],
+    "cell_m": 32.15,
+    "cell_rule": "achieved_cell_m",
+    "record": "reports/discovery/stage_c_full_measurements.json",
+    "tried": [
+     {
+      "cell_rule": "achieved_cell_m",
+      "cell_m": 32.15,
+      "nx": 140,
+      "ny": 141,
+      "match": true
+     }
+    ],
+    "how": "re-derived: stage_c_full.py:181-190 region = union of live HR footprints ['MGDS:31212'] +/- 1 km, cell = achieved_cell_m; grid itself purged from scratch"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": -1.1546319456101628e-14,
+    "lr_offset_in_warped_px": [
+     31.000000000000412,
+     30.999999999993143
+    ],
+    "warped_default": {
+     "transform": [
+      32.02646586951577,
+      0.0,
+      459828.08980344096,
+      0.0,
+      -32.02646586951577,
+      3034269.413369654
+     ],
+     "width": 141,
+     "height": 141
+    }
+   },
+   "context_region": {
+    "R": "-111.4578046880512/-111.30932561352446/27.34520664168611/27.476968464562127",
+    "E": "0.00032489950662305765/0.0002883190872560551/degrees",
+    "w": -111.4578046880512,
+    "s": 27.34520664168611,
+    "e": -111.30932561352446,
+    "n": 27.476968464562127,
+    "nx": 458,
+    "ny": 458,
+    "dx": 0.00032489950662305765,
+    "dy": 0.0002883190872560551,
+    "node_offset_from_source": [
+     -159,
+     -158
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     -2.7533531010703882e-14,
+     -1.4099832412739488e-14
+    ],
+    "lonlat_box_unsnapped": [
+     -111.45755136701679,
+     27.345253001072418,
+     -111.30959841851895,
+     27.476908504786646
+    ]
+   }
+  },
+  "NA076__MGDS_32317": {
+   "unit": "lu11",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA076__MGDS_32317/lr.tif",
+    "crs": "EPSG:32611",
+    "transform": [
+     15.19119504966446,
+     0.0,
+     345519.6088683868,
+     0.0,
+     -15.191195049665613,
+     3742781.6803113376
+    ],
+    "width": 258,
+    "height": 190,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32611",
+    "transform": [
+     15.19119504966446,
+     0.0,
+     340521.7056970472,
+     0.0,
+     -15.191195049665613,
+     3747779.5834826776
+    ],
+    "width": 917,
+    "height": 849,
+    "dx": 15.19119504966446,
+    "dy": 15.191195049665613,
+    "lr_offset_col": 329,
+    "lr_offset_row": 329,
+    "lr_width": 258,
+    "lr_height": 190,
+    "bounds": [
+     340521.7056970472,
+     3734882.2588855117,
+     354452.0315575895,
+     3747779.5834826776
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 11.316515274724326,
+    "buffered_area_km2": 157.79045674316734
+   },
+   "source_lattice": {
+    "w": -118.67932815623733,
+    "s": 33.77948428745455,
+    "e": -118.6158929224862,
+    "n": 33.8229366334899,
+    "nx": 387,
+    "ny": 319,
+    "dx": 0.00016433998381123292,
+    "dy": 0.00013664259759544575,
+    "dx_requested": 0.00016431742689948604,
+    "dy_requested": 0.00013654329859863457,
+    "src_crs": "OGC:CRS84",
+    "kind": "june_stage_c_full_union",
+    "cruise": "NA076",
+    "live_hr": [
+     "MGDS:32321"
+    ],
+    "cell_m": 15.2,
+    "cell_rule": "achieved_cell_m",
+    "record": "reports/discovery/stage_c_full_measurements.json",
+    "tried": [
+     {
+      "cell_rule": "achieved_cell_m",
+      "cell_m": 15.2,
+      "nx": 387,
+      "ny": 319,
+      "match": true
+     }
+    ],
+    "how": "re-derived: stage_c_full.py:181-190 region = union of live HR footprints ['MGDS:32321'] +/- 1 km, cell = achieved_cell_m; grid itself purged from scratch"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": -3.1086244689504383e-15,
+    "lr_offset_in_warped_px": [
+     67.00000000000027,
+     66.99999999999643
+    ],
+    "warped_default": {
+     "transform": [
+      15.191195049664508,
+      0.0,
+      344501.79880005924,
+      0.0,
+      -15.191195049664508,
+      3743799.490379665
+     ],
+     "width": 393,
+     "height": 324
+    }
+   },
+   "context_region": {
+    "R": "-118.73487507076553/-118.560346007958/33.7330258042721/33.86939511667235",
+    "E": "0.00016433998381123292/0.00013664259759544575/degrees",
+    "w": -118.73487507076553,
+    "s": 33.7330258042721,
+    "e": -118.560346007958,
+    "n": 33.86939511667235,
+    "nx": 1063,
+    "ny": 999,
+    "dx": 0.00016433998381123292,
+    "dy": 0.00013664259759544575,
+    "node_offset_from_source": [
+     -338,
+     -340
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     -3.963496197911809e-14,
+     -4.973799150320701e-14
+    ],
+    "lonlat_box_unsnapped": [
+     -118.73478360930518,
+     33.73302666634508,
+     -118.56050000957494,
+     33.869277879437725
+    ]
+   }
+  },
+  "cal_dig_morro_bay__20180426m2_Channel1000": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180426m2_Channel1000/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     627246.1710075849,
+     0.0,
+     -10.0,
+     3925854.4777934803
+    ],
+    "width": 443,
+    "height": 527,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     622236.1710075849,
+     0.0,
+     -10.0,
+     3930864.4777934803
+    ],
+    "width": 1444,
+    "height": 1528,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 501,
+    "lr_offset_row": 501,
+    "lr_width": 443,
+    "lr_height": 527,
+    "bounds": [
+     622236.1710075849,
+     3915584.4777934803,
+     636676.1710075849,
+     3930864.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 12.9342,
+    "buffered_area_km2": 163.5668030951084
+   }
+  },
+  "cal_dig_morro_bay__20180427m1_Channel700": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180427m1_Channel700/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     635106.1710075849,
+     0.0,
+     -10.0,
+     3929934.4777934803
+    ],
+    "width": 470,
+    "height": 440,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     630096.1710075849,
+     0.0,
+     -10.0,
+     3934944.4777934803
+    ],
+    "width": 1471,
+    "height": 1441,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 501,
+    "lr_offset_row": 501,
+    "lr_width": 470,
+    "lr_height": 440,
+    "bounds": [
+     630096.1710075849,
+     3920534.4777934803,
+     644806.1710075849,
+     3934944.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 9.568608,
+    "buffered_area_km2": 156.1617699287154
+   }
+  },
+  "cal_dig_morro_bay__20180427m3_PockmarkNorth": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180427m3_PockmarkNorth/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     622176.1710075849,
+     0.0,
+     -10.0,
+     3933264.4777934803
+    ],
+    "width": 335,
+    "height": 348,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     617176.1710075849,
+     0.0,
+     -10.0,
+     3938264.4777934803
+    ],
+    "width": 1336,
+    "height": 1348,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 500,
+    "lr_offset_row": 500,
+    "lr_width": 335,
+    "lr_height": 348,
+    "bounds": [
+     617176.1710075849,
+     3924784.4777934803,
+     630536.1710075849,
+     3938264.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 6.101452,
+    "buffered_area_km2": 134.50885382361304
+   }
+  },
+  "cal_dig_morro_bay__20180428m1_Cable": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20180428m1_Cable/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     639566.1710075849,
+     0.0,
+     -10.0,
+     3915654.4777934803
+    ],
+    "width": 1936,
+    "height": 209,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     634566.1710075849,
+     0.0,
+     -10.0,
+     3920664.4777934803
+    ],
+    "width": 2936,
+    "height": 1210,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 500,
+    "lr_offset_row": 501,
+    "lr_width": 1936,
+    "lr_height": 209,
+    "bounds": [
+     634566.1710075849,
+     3908564.4777934803,
+     663926.1710075849,
+     3920664.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 7.69998,
+    "buffered_area_km2": 299.53139094258734
+   }
+  },
+  "cal_dig_morro_bay__201804_LuciaChica2m": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/201804_LuciaChica2m/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     607606.1710075849,
+     0.0,
+     -10.0,
+     3958164.4777934803
+    ],
+    "width": 706,
+    "height": 705,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     602596.1710075849,
+     0.0,
+     -10.0,
+     3963174.4777934803
+    ],
+    "width": 1708,
+    "height": 1707,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 501,
+    "lr_offset_row": 501,
+    "lr_width": 706,
+    "lr_height": 705,
+    "bounds": [
+     602596.1710075849,
+     3946104.4777934803,
+     619676.1710075849,
+     3963174.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 12.76192425603687,
+    "buffered_area_km2": 203.17357529417941
+   }
+  },
+  "cal_dig_morro_bay__20190314m4_LuciaChica970m": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190314m4_LuciaChica970m/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     608956.1710075849,
+     0.0,
+     -10.0,
+     3956364.4777934803
+    ],
+    "width": 375,
+    "height": 307,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     603956.1710075849,
+     0.0,
+     -10.0,
+     3961364.4777934803
+    ],
+    "width": 1376,
+    "height": 1308,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 500,
+    "lr_offset_row": 500,
+    "lr_width": 375,
+    "lr_height": 307,
+    "bounds": [
+     603956.1710075849,
+     3948284.4777934803,
+     617716.1710075849,
+     3961364.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 4.572280781013239,
+    "buffered_area_km2": 134.21882274638372
+   }
+  },
+  "cal_dig_morro_bay__20190315m1_HeadlessCanyon": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190315m1_HeadlessCanyon/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     633036.1710075849,
+     0.0,
+     -10.0,
+     3876164.4777934803
+    ],
+    "width": 716,
+    "height": 266,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     628036.1710075849,
+     0.0,
+     -10.0,
+     3881164.4777934803
+    ],
+    "width": 1716,
+    "height": 1267,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 500,
+    "lr_offset_row": 500,
+    "lr_width": 716,
+    "lr_height": 266,
+    "bounds": [
+     628036.1710075849,
+     3868494.4777934803,
+     645196.1710075849,
+     3881164.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 12.080304,
+    "buffered_area_km2": 180.9317689677403
+   }
+  },
+  "cal_dig_morro_bay__20190316m1_BankTop": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190316m1_BankTop/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     644986.1710075849,
+     0.0,
+     -10.0,
+     3873144.4777934803
+    ],
+    "width": 849,
+    "height": 504,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     639976.1710075849,
+     0.0,
+     -10.0,
+     3878154.4777934803
+    ],
+    "width": 1850,
+    "height": 1506,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 501,
+    "lr_offset_row": 501,
+    "lr_width": 849,
+    "lr_height": 504,
+    "bounds": [
+     639976.1710075849,
+     3863094.4777934803,
+     658476.1710075849,
+     3878154.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 15.192376,
+    "buffered_area_km2": 198.9500278146259
+   }
+  },
+  "cal_dig_morro_bay__20190317m1_1000mGully": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190317m1_1000mGully/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     628246.1710075849,
+     0.0,
+     -10.0,
+     3929074.4777934803
+    ],
+    "width": 549,
+    "height": 605,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     623236.1710075849,
+     0.0,
+     -10.0,
+     3934074.4777934803
+    ],
+    "width": 1551,
+    "height": 1606,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 501,
+    "lr_offset_row": 500,
+    "lr_width": 549,
+    "lr_height": 605,
+    "bounds": [
+     623236.1710075849,
+     3918014.4777934803,
+     638746.1710075849,
+     3934074.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 10.629348,
+    "buffered_area_km2": 180.77350114525262
+   }
+  },
+  "cal_dig_morro_bay__20190317m2_600mGully": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190317m2_600mGully/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     631446.1710075849,
+     0.0,
+     -10.0,
+     3933524.4777934803
+    ],
+    "width": 1166,
+    "height": 872,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     626446.1710075849,
+     0.0,
+     -10.0,
+     3938534.4777934803
+    ],
+    "width": 2166,
+    "height": 1874,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 500,
+    "lr_offset_row": 501,
+    "lr_width": 1166,
+    "lr_height": 872,
+    "bounds": [
+     626446.1710075849,
+     3919794.4777934803,
+     648106.1710075849,
+     3938534.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 13.150204,
+    "buffered_area_km2": 253.65037291276047
+   }
+  },
+  "cal_dig_morro_bay__20190318m2_Transect601060m": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190318m2_Transect601060m/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     602726.1710075849,
+     0.0,
+     -10.0,
+     3946084.4777934803
+    ],
+    "width": 3230,
+    "height": 1519,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     597726.1710075849,
+     0.0,
+     -10.0,
+     3951084.4777934803
+    ],
+    "width": 4231,
+    "height": 2520,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 500,
+    "lr_offset_row": 500,
+    "lr_width": 3230,
+    "lr_height": 1519,
+    "bounds": [
+     597726.1710075849,
+     3925884.4777934803,
+     640036.1710075849,
+     3951084.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 10.98604,
+    "buffered_area_km2": 473.9476944514454
+   }
+  },
+  "cal_dig_morro_bay__20190510m1_BankFlankHoles": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190510m1_BankFlankHoles/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     640016.1710075849,
+     0.0,
+     -10.0,
+     3908124.4777934803
+    ],
+    "width": 516,
+    "height": 332,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     635006.1710075849,
+     0.0,
+     -10.0,
+     3913134.4777934803
+    ],
+    "width": 1517,
+    "height": 1334,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 501,
+    "lr_offset_row": 501,
+    "lr_width": 516,
+    "lr_height": 332,
+    "bounds": [
+     635006.1710075849,
+     3899794.4777934803,
+     650176.1710075849,
+     3913134.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 12.667596,
+    "buffered_area_km2": 168.90057832547592
+   }
+  },
+  "cal_dig_morro_bay__20190510m2_BankFlankIncipCh": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190510m2_BankFlankIncipCh/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     643326.1710075849,
+     0.0,
+     -10.0,
+     3898834.4777934803
+    ],
+    "width": 319,
+    "height": 630,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     638316.1710075849,
+     0.0,
+     -10.0,
+     3903834.4777934803
+    ],
+    "width": 1321,
+    "height": 1630,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 501,
+    "lr_offset_row": 500,
+    "lr_width": 319,
+    "lr_height": 630,
+    "bounds": [
+     638316.1710075849,
+     3887534.4777934803,
+     651526.1710075849,
+     3903834.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 12.338772,
+    "buffered_area_km2": 173.4536523711818
+   }
+  },
+  "cal_dig_morro_bay__20190511m1_6thHeadlessCany": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190511m1_6thHeadlessCany/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     630976.1710075849,
+     0.0,
+     -10.0,
+     3881924.4777934803
+    ],
+    "width": 653,
+    "height": 400,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     625966.1710075849,
+     0.0,
+     -10.0,
+     3886934.4777934803
+    ],
+    "width": 1655,
+    "height": 1402,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 501,
+    "lr_offset_row": 501,
+    "lr_width": 653,
+    "lr_height": 400,
+    "bounds": [
+     625966.1710075849,
+     3872914.4777934803,
+     642516.1710075849,
+     3886934.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 14.12026,
+    "buffered_area_km2": 179.49838093702786
+   }
+  },
+  "cal_dig_morro_bay__20190511m2_BankTopEofCanyon3": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/20190511m2_BankTopEofCanyon3/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     639436.1710075849,
+     0.0,
+     -10.0,
+     3876924.4777934803
+    ],
+    "width": 856,
+    "height": 272,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     634426.1710075849,
+     0.0,
+     -10.0,
+     3881924.4777934803
+    ],
+    "width": 1858,
+    "height": 1272,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 501,
+    "lr_offset_row": 500,
+    "lr_width": 856,
+    "lr_height": 272,
+    "bounds": [
+     634426.1710075849,
+     3869204.4777934803,
+     653006.1710075849,
+     3881924.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 14.485204,
+    "buffered_area_km2": 195.2236841133436
+   }
+  },
+  "cal_dig_morro_bay__basin_flank": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/basin_flank/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     634766.1710075849,
+     0.0,
+     -10.0,
+     3914244.4777934803
+    ],
+    "width": 503,
+    "height": 385,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     629756.1710075849,
+     0.0,
+     -10.0,
+     3919244.4777934803
+    ],
+    "width": 1504,
+    "height": 1385,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 501,
+    "lr_offset_row": 500,
+    "lr_width": 503,
+    "lr_height": 385,
+    "bounds": [
+     629756.1710075849,
+     3905394.4777934803,
+     644796.1710075849,
+     3919244.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 4.502512,
+    "buffered_area_km2": 152.57640576423782
+   }
+  },
+  "cal_dig_morro_bay__luciachica_2007": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/luciachica_2007/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     608356.1710075849,
+     0.0,
+     -10.0,
+     3956374.4777934803
+    ],
+    "width": 318,
+    "height": 218,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     603346.1710075849,
+     0.0,
+     -10.0,
+     3961374.4777934803
+    ],
+    "width": 1320,
+    "height": 1218,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 501,
+    "lr_offset_row": 500,
+    "lr_width": 318,
+    "lr_height": 218,
+    "bounds": [
+     603346.1710075849,
+     3949194.4777934803,
+     616546.1710075849,
+     3961374.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 3.2090666788302817,
+    "buffered_area_km2": 124.0198897954447
+   }
+  },
+  "cal_dig_morro_bay__pockmark_south": {
+   "unit": "lu12",
+   "kind": "provider",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/cal_dig_morro_bay/pockmark_south/lr.tif",
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     632656.1710075849,
+     0.0,
+     -10.0,
+     3918414.4777934803
+    ],
+    "width": 375,
+    "height": 459,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:26910",
+    "transform": [
+     10.0,
+     0.0,
+     627636.1710075849,
+     0.0,
+     -10.0,
+     3923424.4777934803
+    ],
+    "width": 1378,
+    "height": 1460,
+    "dx": 10.0,
+    "dy": 10.0,
+    "lr_offset_col": 502,
+    "lr_offset_row": 501,
+    "lr_width": 375,
+    "lr_height": 459,
+    "bounds": [
+     627636.1710075849,
+     3908824.4777934803,
+     641416.1710075849,
+     3923424.4777934803
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 9.200148,
+    "buffered_area_km2": 151.74462350921493
+   }
+  },
+  "NA080__MGDS_31290": {
+   "unit": "lu13",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31290/lr.tif",
+    "crs": "EPSG:32610",
+    "transform": [
+     57.2930908743959,
+     0.0,
+     526265.793365251,
+     0.0,
+     -57.29309087439504,
+     3942977.54611445
+    ],
+    "width": 200,
+    "height": 291,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32610",
+    "transform": [
+     57.2930908743959,
+     0.0,
+     521224.0013683042,
+     0.0,
+     -57.29309087439504,
+     3948019.3381113964
+    ],
+    "width": 376,
+    "height": 467,
+    "dx": 57.2930908743959,
+    "dy": 57.29309087439504,
+    "lr_offset_col": 88,
+    "lr_offset_row": 88,
+    "lr_width": 200,
+    "lr_height": 291,
+    "bounds": [
+     521224.0013683042,
+     3921263.464673054,
+     542766.2035370771,
+     3948019.3381113964
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 53.570912,
+    "buffered_area_km2": 422.0313428057678
+   },
+   "source_lattice": {
+    "w": -122.72159252094536,
+    "s": 35.47063498907431,
+    "e": -122.56831928894472,
+    "n": 35.639379601661915,
+    "nx": 243,
+    "ny": 328,
+    "dx": 0.000633360462812575,
+    "dy": 0.0005160385706042881,
+    "dx_requested": 0.0006343493664770668,
+    "dy_requested": 0.0005160797700323392,
+    "src_crs": "OGC:CRS84",
+    "kind": "june_stage_c_full_union",
+    "cruise": "NA080",
+    "live_hr": [
+     "MGDS:31290",
+     "MGDS:31291"
+    ],
+    "cell_m": 57.45,
+    "cell_rule": "achieved_cell_m",
+    "record": "reports/discovery/stage_c_full_measurements.json",
+    "tried": [
+     {
+      "cell_rule": "achieved_cell_m",
+      "cell_m": 57.45,
+      "nx": 243,
+      "ny": 328,
+      "match": true
+     }
+    ],
+    "how": "re-derived: stage_c_full.py:181-190 region = union of live HR footprints ['MGDS:31290', 'MGDS:31291'] +/- 1 km, cell = achieved_cell_m; grid itself purged from scratch"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": -9.992007221626409e-16,
+    "lr_offset_in_warped_px": [
+     19.000000000000217,
+     19.00000000000225
+    ],
+    "warped_default": {
+     "transform": [
+      57.29309087439596,
+      0.0,
+      525177.2246386375,
+      0.0,
+      -57.29309087439596,
+      3944066.1148410635
+     ],
+     "width": 245,
+     "height": 329
+    }
+   },
+   "context_region": {
+    "R": "-122.77732824167288/-122.51575037053128/35.42470755629053/35.6853070344457",
+    "E": "0.000633360462812575/0.0005160385706042881/degrees",
+    "w": -122.77732824167288,
+    "s": 35.42470755629053,
+    "e": -122.51575037053128,
+    "n": 35.6853070344457,
+    "nx": 414,
+    "ny": 506,
+    "dx": 0.000633360462812575,
+    "dy": 0.0005160385706042881,
+    "node_offset_from_source": [
+     -88,
+     -89
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     1.3766765505351941e-14,
+     2.2870594307278225e-14
+    ],
+    "lonlat_box_unsnapped": [
+     -122.77721136687299,
+     35.424906668827504,
+     -122.5163834349566,
+     35.68481104090661
+    ]
+   }
+  },
+  "NA080__MGDS_31289": {
+   "unit": "lu13",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/lr.tif",
+    "crs": "EPSG:32610",
+    "transform": [
+     57.232042656679404,
+     0.0,
+     526230.2840281213,
+     0.0,
+     -57.23204265667993,
+     3942973.961409637
+    ],
+    "width": 201,
+    "height": 291,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32610",
+    "transform": [
+     57.232042656679404,
+     0.0,
+     521251.09631699015,
+     0.0,
+     -57.23204265667993,
+     3948010.381163425
+    ],
+    "width": 376,
+    "height": 467,
+    "dx": 57.232042656679404,
+    "dy": 57.23204265667993,
+    "lr_offset_col": 87,
+    "lr_offset_row": 88,
+    "lr_width": 201,
+    "lr_height": 291,
+    "bounds": [
+     521251.09631699015,
+     3921283.0172427553,
+     542770.3443559016,
+     3948010.381163425
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 53.570912,
+    "buffered_area_km2": 422.0313428057678
+   },
+   "source_lattice": {
+    "w": -122.72133967410471,
+    "s": 35.470925881086174,
+    "e": -122.57240639051618,
+    "n": 35.63935189732911,
+    "nx": 236,
+    "ny": 328,
+    "dx": 0.0006337586535682277,
+    "dy": 0.0005150642698560627,
+    "src_crs": "OGC:CRS84",
+    "kind": "acq_r02_union_grd",
+    "cruise": "NA080",
+    "grd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/NA080__union.grd",
+    "grd_sha256": "814226109d16f1cd7083842cce096ccc5baafb861b5569124cb3749555d55103",
+    "record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R02/grid/NA080.json",
+    "cell_m": 57.33,
+    "how": "read from the persisted ACQ-R02 union grid NA080__union.grd (mbgrid region -122.72133967410471/-122.57240639051618/35.470925881086174/35.63935189732911)"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": 8.881784197001252e-16,
+    "lr_offset_in_warped_px": [
+     18.000000000000544,
+     18.999999999997637
+    ],
+    "warped_default": {
+     "transform": [
+      57.232042656679354,
+      0.0,
+      525200.107260301,
+      0.0,
+      -57.232042656679354,
+      3944061.3702201135
+     ],
+     "width": 238,
+     "height": 328
+    }
+   },
+   "context_region": {
+    "R": "-122.77711043561871/-122.5160018703486/35.42457009679913/35.685192617346296",
+    "E": "0.0006337586535682277/0.0005150642698560627/degrees",
+    "w": -122.77711043561871,
+    "s": 35.42457009679913,
+    "e": -122.5160018703486,
+    "n": 35.685192617346296,
+    "nx": 413,
+    "ny": 507,
+    "dx": 0.0006337586535682277,
+    "dy": 0.0005150642698560627,
+    "node_offset_from_source": [
+     -88,
+     -90
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     -1.3211653993039363e-14,
+     -6.772360450213455e-15
+    ],
+    "lonlat_box_unsnapped": [
+     -122.77691235313263,
+     35.42508278632801,
+     -122.51633814910343,
+     35.68472969830505
+    ]
+   }
+  },
+  "AR26__MGDS_31838": {
+   "unit": "lu14",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AR26__MGDS_31838/lr.tif",
+    "crs": "EPSG:32618",
+    "transform": [
+     29.361984074294078,
+     0.0,
+     528587.3052988182,
+     0.0,
+     -29.361984074297737,
+     3955361.8177592196
+    ],
+    "width": 174,
+    "height": 88,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32618",
+    "transform": [
+     29.361984074294078,
+     0.0,
+     523566.40602211386,
+     0.0,
+     -29.361984074297737,
+     3960382.7170359246
+    ],
+    "width": 516,
+    "height": 430,
+    "dx": 29.361984074294078,
+    "dy": 29.361984074297737,
+    "lr_offset_col": 171,
+    "lr_offset_row": 171,
+    "lr_width": 174,
+    "lr_height": 88,
+    "bounds": [
+     523566.40602211386,
+     3947757.0638839765,
+     538717.1898044496,
+     3960382.7170359246
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 13.267871932998085,
+    "buffered_area_km2": 168.81944236112784
+   },
+   "source_lattice": {
+    "w": -74.69500899228134,
+    "s": 35.70964609925009,
+    "e": -74.61630730271867,
+    "n": 35.750780495749915,
+    "nx": 243,
+    "ny": 157,
+    "dx": 0.0003252135932342056,
+    "dy": 0.00026368202884505184,
+    "dx_requested": 0.00032534046707121967,
+    "dy_requested": 0.000264103485447359,
+    "src_crs": "OGC:CRS84",
+    "kind": "june_stage_c_pilot_per_hr",
+    "cruise": "AR26",
+    "gridded_hr": "MGDS:31838",
+    "cell_m": 29.4,
+    "cell_rule": "est_cell_m",
+    "record": "reports/discovery/stage_c_pilot_measurements.json",
+    "how": "re-derived: stage_c_pilot.grid_pair region = A6 footprint bbox of MGDS:31838 +/- 1 km, cell = est_cell_m 29.4; grid itself purged from scratch"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": -1.4432899320127035e-15,
+    "lr_offset_in_warped_px": [
+     35.000000000001485,
+     34.999999999993555
+    ],
+    "warped_default": {
+     "transform": [
+      29.36198407429412,
+      0.0,
+      527559.6358562178,
+      0.0,
+      -29.36198407429412,
+      3956389.4872018197
+     ],
+     "width": 244,
+     "height": 157
+    }
+   },
+   "context_region": {
+    "R": "-74.75094573031762/-74.56037056468239/35.663765426231045/35.79639748674011",
+    "E": "0.0003252135932342056/0.00026368202884505184/degrees",
+    "w": -74.75094573031762,
+    "s": 35.663765426231045,
+    "e": -74.56037056468239,
+    "n": 35.79639748674011,
+    "nx": 587,
+    "ny": 504,
+    "dx": 0.0003252135932342056,
+    "dy": 0.00026368202884505184,
+    "node_offset_from_source": [
+     -172,
+     -174
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     -3.452793606584237e-14,
+     4.596323321948148e-14
+    ],
+    "lonlat_box_unsnapped": [
+     -74.75065756058744,
+     35.66394841284906,
+     -74.56050383339831,
+     35.79622921055599
+    ]
+   }
+  },
+  "TN299__MGDS_27339": {
+   "unit": "lu15",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN299__MGDS_27339/lr.tif",
+    "crs": "EPSG:32609",
+    "transform": [
+     51.19724565255037,
+     0.0,
+     679885.0551179388,
+     0.0,
+     -51.19724565255071,
+     4738581.992842216
+    ],
+    "width": 168,
+    "height": 304,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32609",
+    "transform": [
+     51.19724565255037,
+     0.0,
+     674867.7250439889,
+     0.0,
+     -51.19724565255071,
+     4743599.322916166
+    ],
+    "width": 364,
+    "height": 500,
+    "dx": 51.19724565255037,
+    "dy": 51.19724565255071,
+    "lr_offset_col": 98,
+    "lr_offset_row": 98,
+    "lr_width": 168,
+    "lr_height": 304,
+    "bounds": [
+     674867.7250439889,
+     4718000.7000898905,
+     693503.5224615172,
+     4743599.322916166
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 34.988657,
+    "buffered_area_km2": 311.7383236444166
+   },
+   "source_lattice": {
+    "w": -126.8178859002798,
+    "s": 42.629264605713615,
+    "e": -126.68447218803996,
+    "n": 42.786738992056385,
+    "nx": 214,
+    "ny": 343,
+    "dx": 0.000626355456525085,
+    "dy": 0.0004604514220548827,
+    "dx_requested": 0.0006271382235719205,
+    "dy_requested": 0.0004608336327703917,
+    "src_crs": "OGC:CRS84",
+    "kind": "june_stage_c_pilot_per_hr",
+    "cruise": "TN299",
+    "gridded_hr": "MGDS:27339",
+    "cell_m": 51.3,
+    "cell_rule": "est_cell_m",
+    "record": "reports/discovery/stage_c_pilot_measurements.json",
+    "how": "re-derived: stage_c_pilot.grid_pair region = A6 footprint bbox of MGDS:27339 +/- 1 km, cell = est_cell_m 51.3; grid itself purged from scratch"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": -2.220446049250313e-15,
+    "lr_offset_in_warped_px": [
+     27.999999999999954,
+     22.999999999997282
+    ],
+    "warped_default": {
+     "transform": [
+      51.197245652550485,
+      0.0,
+      678451.5322396674,
+      0.0,
+      -51.197245652550485,
+      4739759.529492225
+     ],
+     "width": 224,
+     "height": 348
+    }
+   },
+   "context_region": {
+    "R": "-126.88114780138883/-126.6205839314744/42.58091720639785/42.834165488528036",
+    "E": "0.000626355456525085/0.0004604514220548827/degrees",
+    "w": -126.88114780138883,
+    "s": 42.58091720639785,
+    "e": -126.6205839314744,
+    "n": 42.834165488528036,
+    "nx": 417,
+    "ny": 551,
+    "dx": 0.000626355456525085,
+    "dy": 0.0004604514220548827,
+    "node_offset_from_source": [
+     -101,
+     -105
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     -1.2212453270876722e-15,
+     5.551115123125783e-15
+    ],
+    "lonlat_box_unsnapped": [
+     -126.88082916914539,
+     42.58118054866335,
+     -126.62067350329129,
+     42.83396514200909
+    ]
+   }
+  },
+  "TN299__MGDS_31253": {
+   "unit": "lu15",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN299__MGDS_31253/lr.tif",
+    "crs": "EPSG:32610",
+    "transform": [
+     36.83530675588516,
+     0.0,
+     333704.38583590364,
+     0.0,
+     -36.83530675588156,
+     4929796.005233633
+    ],
+    "width": 98,
+    "height": 98,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32610",
+    "transform": [
+     36.83530675588516,
+     0.0,
+     328694.78411710326,
+     0.0,
+     -36.83530675588156,
+     4934805.6069524335
+    ],
+    "width": 370,
+    "height": 370,
+    "dx": 36.83530675588516,
+    "dy": 36.83530675588156,
+    "lr_offset_col": 136,
+    "lr_offset_row": 136,
+    "lr_width": 98,
+    "lr_height": 98,
+    "bounds": [
+     328694.78411710326,
+     4921176.543452757,
+     342323.8476167808,
+     4934805.6069524335
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 12.95115678741516,
+    "buffered_area_km2": 163.3405253041377
+   },
+   "source_lattice": {
+    "w": -125.10317492875647,
+    "s": 44.46162675471722,
+    "e": -125.03400947773434,
+    "n": 44.511235226736574,
+    "nx": 150,
+    "ny": 151,
+    "dx": 0.00046419765786664285,
+    "dy": 0.0003307231467956721,
+    "dx_requested": 0.0004633738481051833,
+    "dy_requested": 0.00033057851239669424,
+    "src_crs": "OGC:CRS84",
+    "kind": "june_stage_c_pilot_per_hr",
+    "cruise": "TN299",
+    "gridded_hr": "MGDS:31256",
+    "cell_m": 36.8,
+    "cell_rule": "est_cell_m",
+    "record": "reports/discovery/stage_c_pilot_measurements.json",
+    "how": "re-derived: stage_c_pilot.grid_pair region = A6 footprint bbox of MGDS:31256 +/- 1 km, cell = est_cell_m 36.8; grid itself purged from scratch"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": -1.099120794378905e-14,
+    "lr_offset_in_warped_px": [
+     28.000000000000767,
+     28.00000000001025
+    ],
+    "warped_default": {
+     "transform": [
+      36.83530675588557,
+      0.0,
+      332672.9972467388,
+      0.0,
+      -36.83530675588557,
+      4930827.3938227985
+     ],
+     "width": 154,
+     "height": 154
+    }
+   },
+   "context_region": {
+    "R": "-125.1695551938314/-124.96809341031728/44.41433334472544/44.558528636728354",
+    "E": "0.00046419765786664285/0.0003307231467956721/degrees",
+    "w": -125.1695551938314,
+    "s": 44.41433334472544,
+    "e": -124.96809341031728,
+    "n": 44.558528636728354,
+    "nx": 435,
+    "ny": 437,
+    "dx": 0.00046419765786664285,
+    "dy": 0.0003307231467956721,
+    "node_offset_from_source": [
+     -143,
+     -143
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     -1.7541523789077473e-14,
+     -4.551914400963142e-15
+    ],
+    "lonlat_box_unsnapped": [
+     -125.16913097962828,
+     44.41462820492734,
+     -124.96832377832148,
+     44.55831671046032
+    ]
+   }
+  },
+  "FK151121__MGDS_22383": {
+   "unit": "nu00",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/lr.tif",
+    "crs": "EPSG:32655",
+    "transform": [
+     65.91473776180867,
+     0.0,
+     255773.51452622074,
+     0.0,
+     -65.9147377618085,
+     2016417.2240305666
+    ],
+    "width": 67,
+    "height": 87,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32655",
+    "transform": [
+     65.91473776180867,
+     0.0,
+     250698.07971856146,
+     0.0,
+     -65.9147377618085,
+     2021426.744100464
+    ],
+    "width": 221,
+    "height": 240,
+    "dx": 65.91473776180867,
+    "dy": 65.9147377618085,
+    "lr_offset_col": 77,
+    "lr_offset_row": 76,
+    "lr_width": 67,
+    "lr_height": 87,
+    "bounds": [
+     250698.07971856146,
+     2005607.20703763,
+     265265.23676392116,
+     2021426.744100464
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 25.514978690935543,
+    "buffered_area_km2": 205.736541201196
+   },
+   "source_lattice": {
+    "w": 144.07887819014192,
+    "s": 14.472591741557833,
+    "e": 144.8898446235211,
+    "n": 18.231191731234127,
+    "nx": 1308,
+    "ny": 6316,
+    "dx": 0.0006204792910322712,
+    "dy": 0.000595186063289991,
+    "src_crs": "OGC:CRS84",
+    "kind": "acq_r02_union_grd",
+    "cruise": "FK151121",
+    "grd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/FK151121__union.grd",
+    "grd_sha256": "753bef810f301163a1b50268648bbfd4d4e122af651d146f5bfbb685fbe05162",
+    "record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R02/grid/FK151121.json",
+    "cell_m": 66.26,
+    "how": "read from the persisted ACQ-R02 union grid FK151121__union.grd (mbgrid region 144.07887819014192/144.8898446235211/14.472591741557833/18.231191731234127)"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": 1.7763568394002505e-15,
+    "lr_offset_in_warped_px": [
+     1073.0,
+     28.000000000000878
+    ],
+    "warped_default": {
+     "transform": [
+      65.91473776180855,
+      0.0,
+      185047.00090780016,
+      0.0,
+      -65.91473776180855,
+      2018262.8366878973
+     ],
+     "width": 1393,
+     "height": 6330
+    }
+   },
+   "context_region": {
+    "R": "144.6323457177427/144.79118841624697/18.11572563495587/18.278806616297327",
+    "E": "0.0006204792910322712/0.000595186063289991/degrees",
+    "w": 144.6323457177427,
+    "s": 18.11572563495587,
+    "e": 144.79118841624697,
+    "n": 18.278806616297327,
+    "nx": 257,
+    "ny": 275,
+    "dx": 0.0006204792910322712,
+    "dy": 0.000595186063289991,
+    "node_offset_from_source": [
+     892,
+     6121
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     -1.6431300764452317e-14,
+     6.661338147750939e-15
+    ],
+    "lonlat_box_unsnapped": [
+     144.63253932933756,
+     18.11598819689637,
+     144.790964679203,
+     18.278465530754254
+    ]
+   }
+  },
+  "EX1402L2__MGDS_31073": {
+   "unit": "vu02",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EX1402L2__MGDS_31073/lr.tif",
+    "crs": "EPSG:32615",
+    "transform": [
+     16.369802493311575,
+     0.0,
+     674194.1032025177,
+     0.0,
+     -16.369802493311685,
+     3072611.755354435
+    ],
+    "width": 102,
+    "height": 171,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32615",
+    "transform": [
+     16.369802493311575,
+     0.0,
+     669184.9436395643,
+     0.0,
+     -16.369802493311685,
+     3077620.9149173885
+    ],
+    "width": 714,
+    "height": 783,
+    "dx": 16.369802493311575,
+    "dy": 16.369802493311685,
+    "lr_offset_col": 306,
+    "lr_offset_row": 306,
+    "lr_width": 102,
+    "lr_height": 171,
+    "bounds": [
+     669184.9436395643,
+     3064803.3595651253,
+     680872.9826197888,
+     3077620.9149173885
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 4.655027335427779,
+    "buffered_area_km2": 127.68671856689762
+   },
+   "source_lattice": {
+    "w": -92.83270238284456,
+    "s": 27.06851387925009,
+    "e": -87.99068894715543,
+    "n": 29.18072005374991,
+    "nx": 29047,
+    "ny": 14368,
+    "dx": 0.00016670155738102063,
+    "dy": 0.00014701790036192788,
+    "src_crs": "OGC:CRS84",
+    "kind": "acq_r02_union_grd",
+    "cruise": "EX1402L2",
+    "grd": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/EX1402L2__union.grd",
+    "grd_sha256": "adad618ae2ca23dff4790a8450432e4c47e011b3fff2b07d316b67e80f1d4490",
+    "record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R02/grid/EX1402L2.json",
+    "cell_m": 16.37,
+    "how": "read from the persisted ACQ-R02 union grid EX1402L2__union.grd (mbgrid region -92.83270238284456/-87.99068894715543/27.06851387925009/29.18072005374991)"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": -4.729550084903167e-14,
+    "lr_offset_in_warped_px": [
+     9648.0,
+     10129.000000000007
+    ],
+    "warped_default": {
+     "transform": [
+      16.36980249331235,
+      0.0,
+      516258.24874704017,
+      0.0,
+      -16.36980249331235,
+      3238421.484809196
+     ],
+     "width": 29372,
+     "height": 14930
+    }
+   },
+   "context_region": {
+    "R": "-91.2943804113325/-91.15351759534553/27.68628309657091/27.821539564903887",
+    "E": "0.00016670155738102063/0.00014701790036192788/degrees",
+    "w": -91.2943804113325,
+    "s": 27.68628309657091,
+    "e": -91.15351759534553,
+    "n": 27.821539564903887,
+    "nx": 846,
+    "ny": 921,
+    "dx": 0.00016670155738102063,
+    "dy": 0.00014701790036192788,
+    "node_offset_from_source": [
+     9228,
+     4202
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     8.215650382226158e-15,
+     1.7319479184152442e-14
+    ],
+    "lonlat_box_unsnapped": [
+     -91.29436115367253,
+     27.68638457739284,
+     -91.15363311876706,
+     27.8215297450869
+    ]
+   }
+  },
+  "EW0207__MGDS_32556": {
+   "unit": "lu16",
+   "kind": "ncei_swath",
+   "lr": {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/EW0207__MGDS_32556/lr.tif",
+    "crs": "EPSG:32609",
+    "transform": [
+     79.27958217502838,
+     0.0,
+     420317.27669573354,
+     0.0,
+     -79.27958217502757,
+     5120418.433777464
+    ],
+    "width": 188,
+    "height": 258,
+    "nodata": -9999.0,
+    "dtype": "float32"
+   },
+   "context": {
+    "crs": "EPSG:32609",
+    "transform": [
+     79.27958217502838,
+     0.0,
+     415243.3834365317,
+     0.0,
+     -79.27958217502757,
+     5125492.327036666
+    ],
+    "width": 316,
+    "height": 386,
+    "dx": 79.27958217502838,
+    "dy": 79.27958217502757,
+    "lr_offset_col": 64,
+    "lr_offset_row": 64,
+    "lr_width": 188,
+    "lr_height": 258,
+    "bounds": [
+     415243.3834365317,
+     5094890.408317105,
+     440295.73140384065,
+     5125492.327036666
+    ],
+    "buffer_m": 5000.0,
+    "footprint_area_km2": 305.8486375958194,
+    "buffered_area_km2": 738.476620624682
+   },
+   "source_lattice": {
+    "w": -130.2749134458966,
+    "s": 45.49106821674559,
+    "e": -129.82726486943497,
+    "n": 46.24200116464772,
+    "nx": 438,
+    "ny": 1054,
+    "dx": 0.00102436745185728,
+    "dy": 0.0007131367026610912,
+    "dx_requested": 0.0010243087335517433,
+    "dy_requested": 0.0007132590729428675,
+    "src_crs": "OGC:CRS84",
+    "kind": "june_stage_c_full_union",
+    "cruise": "EW0207",
+    "live_hr": [
+     "MGDS:32558"
+    ],
+    "cell_m": 79.4,
+    "cell_rule": "achieved_cell_m",
+    "record": "reports/discovery/stage_c_full_measurements.json",
+    "tried": [
+     {
+      "cell_rule": "achieved_cell_m",
+      "cell_m": 79.4,
+      "nx": 438,
+      "ny": 1054,
+      "match": true
+     }
+    ],
+    "how": "re-derived: stage_c_full.py:181-190 region = union of live HR footprints ['MGDS:32558'] +/- 1 km, cell = achieved_cell_m; grid itself purged from scratch"
+   },
+   "verification": {
+    "match": true,
+    "pixel_size_rel_diff": -6.661338147750939e-16,
+    "lr_offset_in_warped_px": [
+     251.99999999999997,
+     17.00000000000306
+    ],
+    "warped_default": {
+     "transform": [
+      79.27958217502844,
+      0.0,
+      400338.8219876264,
+      0.0,
+      -79.27958217502844,
+      5121766.186674439
+     ],
+     "width": 453,
+     "height": 1059
+    }
+   },
+   "context_region": {
+    "R": "-130.114087755955/-129.75760788270867/45.993116455419/46.28978132372601",
+    "E": "0.00102436745185728/0.0007131367026610912/degrees",
+    "w": -130.114087755955,
+    "s": 45.993116455419,
+    "e": -129.75760788270867,
+    "n": 46.28978132372601,
+    "nx": 349,
+    "ny": 417,
+    "dx": 0.00102436745185728,
+    "dy": 0.0007131367026610912,
+    "node_offset_from_source": [
+     157,
+     704
+    ],
+    "spacing_rel_err_after_mbgrid": [
+     2.6645352591003757e-14,
+     -6.8833827526759706e-15
+    ],
+    "lonlat_box_unsnapped": [
+     -130.11307432448248,
+     45.99336104946605,
+     -129.7581562460913,
+     46.289363978767085
+    ]
+   }
+  }
+ },
+ "n_ncei_lattice_verified": 18,
+ "n_ncei": 18
+}

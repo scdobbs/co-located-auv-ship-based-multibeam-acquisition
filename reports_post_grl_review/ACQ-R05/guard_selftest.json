@@ -1,0 +1,264 @@
+{
+ "generated": "2026-10-09T20:01:34+00:00",
+ "fixed_input_sha256": {
+  "pairs_v2_1.parquet": "f57f3d8f98b320b136549de300ccac58787129af658a1c62296bab16b6c2ac35",
+  "pairs_v2_1_dropped.csv": "1f1bb181c63df8991ddc981c731bbf048a25ec56cb33435487b356d603073dab",
+  "tiles_v1_1.parquet": "8ef139867613b6c9f2eeb2e13073ee5562ecda51b3cf6f5bb7d17fd73df023dc"
+ },
+ "all_passed": true,
+ "control": "control read ok",
+ "reader_checks": {
+  "n": 24,
+  "n_blocked": 24,
+  "checks": [
+   {
+    "target": "lockbox:AT42-03__MGDS_32007",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox:AT42-03__MGDS_32007",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox:AT42-03__MGDS_32007",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox:AT42-03__MGDS_32007",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox:AT42-03__MGDS_32007",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox:AT42-03__MGDS_32007",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox:TN159__MGDS_21981",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox:TN159__MGDS_21981",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox:TN159__MGDS_21981",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox:TN159__MGDS_21981",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox:TN159__MGDS_21981",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox:TN159__MGDS_21981",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:nu01a",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:nu01a",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:nu01a",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:nu01a",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:nu01a",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:nu01a",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:root",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:root",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:root",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:root",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:root",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:root",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   }
+  ]
+ },
+ "builder_refusals": {
+  "n": 23,
+  "n_refused": 23,
+  "checks": [
+   {
+    "case": "lockbox pair",
+    "pair_or_path": "AT42-03__MGDS_32007",
+    "result": "refused"
+   },
+   {
+    "case": "lockbox pair",
+    "pair_or_path": "TN159__MGDS_21981",
+    "result": "refused"
+   },
+   {
+    "case": "confirmatory pair",
+    "pair_or_path": "KN182L03__MGDS_30193",
+    "result": "refused"
+   },
+   {
+    "case": "confirmatory pair",
+    "pair_or_path": "RC2511__MGDS_32239",
+    "result": "refused"
+   },
+   {
+    "case": "confirmatory pair",
+    "pair_or_path": "SUM1004__MGDS_33090",
+    "result": "refused"
+   },
+   {
+    "case": "confirmatory path",
+    "pair_or_path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu03/SUM1004__MGDS_33090",
+    "result": "refused"
+   },
+   {
+    "case": "no-k pair (out of scope)",
+    "pair_or_path": "KIWI10RR__MGDS_24499",
+    "result": "refused"
+   },
+   {
+    "case": "dropped pair (out of scope)",
+    "pair_or_path": "AT37-05__MGDS_24043",
+    "result": "refused"
+   },
+   {
+    "case": "common.context_dir",
+    "pair_or_path": "AT42-03__MGDS_32007",
+    "result": "refused"
+   },
+   {
+    "case": "common.context_dir",
+    "pair_or_path": "TN159__MGDS_21981",
+    "result": "refused"
+   },
+   {
+    "case": "common.context_dir",
+    "pair_or_path": "KN182L03__MGDS_30193",
+    "result": "refused"
+   },
+   {
+    "case": "common.context_dir",
+    "pair_or_path": "RC2511__MGDS_32239",
+    "result": "refused"
+   },
+   {
+    "case": "common.context_dir",
+    "pair_or_path": "SUM1004__MGDS_33090",
+    "result": "refused"
+   },
+   {
+    "case": "common.pair_dir",
+    "pair_or_path": "AT42-03__MGDS_32007",
+    "result": "refused"
+   },
+   {
+    "case": "common.pair_dir",
+    "pair_or_path": "TN159__MGDS_21981",
+    "result": "refused"
+   },
+   {
+    "case": "common.pair_dir",
+    "pair_or_path": "KN182L03__MGDS_30193",
+    "result": "refused"
+   },
+   {
+    "case": "common.pair_dir",
+    "pair_or_path": "RC2511__MGDS_32239",
+    "result": "refused"
+   },
+   {
+    "case": "common.pair_dir",
+    "pair_or_path": "SUM1004__MGDS_33090",
+    "result": "refused"
+   },
+   {
+    "case": "common.refuse_sealed_path",
+    "pair_or_path": "AT42-03__MGDS_32007",
+    "result": "refused"
+   },
+   {
+    "case": "common.refuse_sealed_path",
+    "pair_or_path": "TN159__MGDS_21981",
+    "result": "refused"
+   },
+   {
+    "case": "common.refuse_sealed_path",
+    "pair_or_path": "KN182L03__MGDS_30193",
+    "result": "refused"
+   },
+   {
+    "case": "common.refuse_sealed_path",
+    "pair_or_path": "RC2511__MGDS_32239",
+    "result": "refused"
+   },
+   {
+    "case": "common.refuse_sealed_path",
+    "pair_or_path": "SUM1004__MGDS_33090",
+    "result": "refused"
+   }
+  ]
+ },
+ "builder_sha256": {
+  "src/acq_r05/build.py": "1efc8d579cc58211809446f338ed858c138f49981ea6ec2184a910ecf600c3ce",
+  "src/acq_r05/lattice.py": "8bfd4e933d9b2abd040c6cb008073387fa9183d04f1623f049c41d5fbac12e06",
+  "src/acq_r05/sources.py": "b0451f3a2638d0b7b4a763f437685fa59635ef036bdd2d9371362041d37195b3",
+  "src/acq_r05/common.py": "0f13f13f749ead915398c8abdd44502c0fa699c8f77e1f1c212335d05cca680e"
+ },
+ "code_commit": "add224f9a907d6142620cccc1fbdda2efd83298a"
+}
