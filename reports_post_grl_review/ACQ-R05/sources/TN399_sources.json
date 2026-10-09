@@ -1,0 +1,118 @@
+{
+ "cruise": "TN399",
+ "oak_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/TN399",
+ "origin": "June stage B (A.5 nav subset rule)",
+ "fetch_mode": "subset",
+ "whole_gb": 20.63,
+ "subset_gb": 0.161,
+ "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/thomas_g._thompson/TN399/multibeam/data/version1/MB/",
+ "n_files_ncei_june": 3692,
+ "n_files_on_oak": 10,
+ "n_files_manifest": 10,
+ "bytes_on_oak": 171233503,
+ "is_subset": true,
+ "pairs": [
+  "TN399__MGDS_30373",
+  "TN399__MGDS_33068"
+ ],
+ "started": "2026-10-09T20:16:06+00:00",
+ "host": "sh04-10n31.int",
+ "need": {
+  "pairs": {
+   "TN399__MGDS_30373": {
+    "region": {
+     "w": -104.38329173564237,
+     "s": 9.665160328561752,
+     "e": -104.19590320212784,
+     "n": 10.007462318767896,
+     "nx": 464,
+     "ny": 858
+    },
+    "median_depth_m": 2587.8050537109375,
+    "nav_reach_m": 7763.4151611328125
+   },
+   "TN399__MGDS_33068": {
+    "region": {
+     "w": -104.36465005316441,
+     "s": 9.770709707596643,
+     "e": -104.21166117576028,
+     "n": 9.910071018022611,
+     "nx": 378,
+     "ny": 350
+    },
+    "median_depth_m": 2533.80322265625,
+    "nav_reach_m": 7601.40966796875
+   }
+  },
+  "region_union_bounds": [
+   -104.38329173564237,
+   9.665160328561752,
+   -104.19590320212784,
+   10.007462318767896
+  ],
+  "nav_union_bounds": [
+   -104.4541267713403,
+   9.594945992555754,
+   -104.12507203031976,
+   10.07767495558591
+  ]
+ },
+ "plan": {
+  "cruise": "TN399",
+  "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/thomas_g._thompson/TN399/multibeam/data/version1/MB/",
+  "n_files_ncei": 923,
+  "bytes_ncei": 22147862529,
+  "n_on_oak": 10,
+  "n_missing": 913,
+  "n_track_intersects": 2,
+  "n_no_nav_track": 0,
+  "n_track_outside": 911,
+  "bytes_track_intersects": 53477376,
+  "bytes_no_nav_track": 0,
+  "rule": "nav track (.fnv) intersects the union of the pairs' context mbgrid regions buffered by max(2 km, 3 x median depth); files with no nav track are included (conservative)",
+  "name_collisions": []
+ },
+ "fetch": {
+  "n_planned": 2,
+  "n_ok": 2,
+  "n_failed": 0,
+  "n_added_to_manifest": 2,
+  "bytes": 53408911,
+  "wall_s": 5.2,
+  "status_counts": {
+   "fetched": 2
+  },
+  "workers": 6,
+  "failed": []
+ },
+ "coverage": {
+  "cruise": "TN399",
+  "mb_format": 58,
+  "n_files": 12,
+  "soundings": 886471,
+  "files_without_soundings": [
+   "0340_20220129_153014_TGT.all.mb58.gz",
+   "0341_20220129_153332_TGT.all.mb58.gz",
+   "0342_20220129_154647_TGT.all.mb58.gz",
+   "9999_220227093205_tmp.all.mb58.gz"
+  ],
+  "unreadable_files": [],
+  "unparsed_lines_dropped": 0,
+  "polar_soundings_dropped": 0,
+  "decompress_s": 0.6,
+  "coverage_s": 4.0,
+  "generated": "2026-10-09T20:17:48+00:00",
+  "code_commit": "e3aa4021465d0be3e45ce3a131781eec06f96717"
+ },
+ "selection": {
+  "TN399__MGDS_30373": {
+   "n_files": 8
+  },
+  "TN399__MGDS_33068": {
+   "n_files": 6
+  }
+ },
+ "wall_s": 102.0,
+ "finished": "2026-10-09T20:17:48+00:00",
+ "code_commit": "e3aa4021465d0be3e45ce3a131781eec06f96717"
+}

@@ -1,0 +1,74 @@
+{
+ "cruise": "NA090",
+ "oak_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA090",
+ "origin": "June stage B (A.5 nav subset rule)",
+ "fetch_mode": "whole",
+ "whole_gb": 0.62,
+ "subset_gb": 0.62,
+ "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/nautilus/NA090/multibeam/data/version1/MB/",
+ "n_files_ncei_june": 188,
+ "n_files_on_oak": 47,
+ "n_files_manifest": 47,
+ "bytes_on_oak": 665916425,
+ "is_subset": false,
+ "pairs": [
+  "NA090__MGDS_31212"
+ ],
+ "started": "2026-10-09T20:16:06+00:00",
+ "host": "sh04-10n31.int",
+ "need": {
+  "pairs": {
+   "NA090__MGDS_31212": {
+    "region": {
+     "w": -111.4578046880512,
+     "s": 27.34520664168611,
+     "e": -111.30932561352446,
+     "n": 27.476968464562127,
+     "nx": 458,
+     "ny": 458
+    },
+    "median_depth_m": 1854.9947509765625,
+    "nav_reach_m": 5564.9842529296875
+   }
+  },
+  "region_union_bounds": [
+   -111.4578046880512,
+   27.34520664168611,
+   -111.30932561352446,
+   27.476968464562127
+  ],
+  "nav_union_bounds": [
+   -111.51413272774268,
+   27.29496552385198,
+   -111.2529965071915,
+   27.52720827260857
+  ]
+ },
+ "plan": {
+  "note": "whole cruise on OAK; nothing to fetch"
+ },
+ "coverage": {
+  "cruise": "NA090",
+  "mb_format": 58,
+  "n_files": 47,
+  "soundings": 9860388,
+  "files_without_soundings": [
+   "0003_20171021_144007_Nautilus.all.mb58.gz"
+  ],
+  "unreadable_files": [],
+  "unparsed_lines_dropped": 0,
+  "polar_soundings_dropped": 0,
+  "decompress_s": 2.3,
+  "coverage_s": 32.8,
+  "generated": "2026-10-09T20:16:45+00:00",
+  "code_commit": "e3aa4021465d0be3e45ce3a131781eec06f96717"
+ },
+ "selection": {
+  "NA090__MGDS_31212": {
+   "n_files": 30
+  }
+ },
+ "wall_s": 39.8,
+ "finished": "2026-10-09T20:16:45+00:00",
+ "code_commit": "e3aa4021465d0be3e45ce3a131781eec06f96717"
+}

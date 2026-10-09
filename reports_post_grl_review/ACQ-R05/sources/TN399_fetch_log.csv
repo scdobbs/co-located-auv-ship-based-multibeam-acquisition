@@ -1,0 +1,3 @@
+cruise,filename,url,advertised,kind,head_content_length,http_status,status,received,sha256,gzip_ok
+TN399,0094_20220122_160105_TGT.all.mb58.gz,https://data.ngdc.noaa.gov/platforms/ocean/ships/thomas_g._thompson/TN399/multibeam/data/version1/MB/em302/0094_20220122_160105_TGT.all.mb58.gz,26214400,swath,26669377,200,fetched,26669377,aad7269e8701d927d187e6b055ea08762316ca17db1b204ecf90185357ee068f,True
+TN399,0101_20220122_193104_TGT.all.mb58.gz,https://data.ngdc.noaa.gov/platforms/ocean/ships/thomas_g._thompson/TN399/multibeam/data/version1/MB/em302/0101_20220122_193104_TGT.all.mb58.gz,27262976,swath,26739534,200,fetched,26739534,07e1bf9a927c148f48909adb560ef5ceb590ade5ad8839a99b953291ff2bdcc3,True

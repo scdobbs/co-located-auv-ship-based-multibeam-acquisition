@@ -151,7 +151,28 @@ def grid_ncei(pid: str, ctx: dict, src: dict, region: dict, files: list[str], wd
             if dst.exists():
                 dst.chmod(0o644)
             shutil.copyfile(s_, dst); R.chmod_ro(dst); persisted[f"grd{suf}"] = {"path": str(dst), "sha256": R.sha256_file(dst)}
-    rec = {"mb_format": fmt, "n_files": len(files), "decompress_s": round(dec_s, 1), "mbgrid_s": round(grid_s, 1), "mbgrid_attempts": attempts,
+    # diagnostic for pairs whose source grid survives (ACQ-R02): node-by-node comparison of the context grid with the
+    # original union grid on the common nodes (same lattice by construction) — separates mbgrid differences (file set,
+    # region edge) from warp differences in the §3 statistics
+    grd_vs_src = None
+    if src.get("kind") == "acq_r02_union_grd":
+        with rasterio.open(src["grd"]) as ds:
+            sa = ds.read(1).astype("float64"); snd = ds.nodata; s_e = ds.transform.e
+        i0, j0 = region["node_offset_from_source"]                  # context node (0,0) = source node (i0, j0) (j0 counted from the south)
+        ca = arr.astype("float64")
+        for a_, nd in ((sa, snd), (ca, gnd)):
+            if nd is not None and np.isfinite(nd):
+                a_[a_ == nd] = np.nan
+            a_[np.abs(a_) >= 99999.0] = np.nan
+        ca_su = ca[::-1] if gt.e < 0 else ca; sa_su = sa[::-1] if s_e < 0 else sa     # both south-up, row j = node j from the south
+        srow0, scol0 = max(0, j0), max(0, i0); crow0, ccol0 = max(0, -j0), max(0, -i0)
+        h = min(sa_su.shape[0] - srow0, ca_su.shape[0] - crow0); w = min(sa_su.shape[1] - scol0, ca_su.shape[1] - ccol0)
+        if h > 0 and w > 0:
+            A = ca_su[crow0:crow0 + h, ccol0:ccol0 + w]; Bm = sa_su[srow0:srow0 + h, scol0:scol0 + w]
+            st = diff_stats(A, Bm, None, "context grd nodes vs ACQ-R02 union grd nodes (common nodes)")
+            st["n_source_finite_context_nan"] = int((np.isfinite(Bm) & ~np.isfinite(A)).sum()); st["n_context_finite_source_nan"] = int((np.isfinite(A) & ~np.isfinite(Bm)).sum())
+            st["common_window_nodes"] = [int(h), int(w)]; grd_vs_src = st
+    rec = {"mb_format": fmt, "n_files": len(files), "decompress_s": round(dec_s, 1), "mbgrid_s": round(grid_s, 1), "mbgrid_attempts": attempts, "grd_vs_source_grd": grd_vs_src,
            "mbgrid_command": cmdline, "mbgrid_region": region, "grd_lattice_check": lat_check, "grd_nodata": gnd,
            "warp": {"method": "harmonize._open (rioxarray, masked) + DataArray.rio.reproject(dst_crs=lr.tif CRS, transform=context lattice, shape=context shape, resampling=bilinear, nodata=-9999); -9999 and |z|>=99999 -> NaN; float32",
                     "development_chain_reference": "ACQ-R04 §5.1 (harmonize._reproject bilinear nodata -9999, GDAL default output grid == lr.tif lattice, verified by lattice.verify_lattice)"},
