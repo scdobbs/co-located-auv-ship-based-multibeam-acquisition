@@ -20,8 +20,12 @@ from src.acq_r04 import common as R4
 REPO = C.REPO
 OAK = C.OAK
 SCR = C.SCRATCH_DATA
-REPORT_DIR = REPO / "reports_post_grl_review" / "ACQ-R06"
+REPORT_DIR_R06 = REPO / "reports_post_grl_review" / "ACQ-R06"      # ACQ-R06 outputs (read-only here)
+REPORT_DIR = REPO / "reports_post_grl_review" / "ACQ-R06b"         # the current directive's outputs
 REHEARSAL_DIR = REPORT_DIR / "rehearsal"
+REHEARSAL_DIR_R06 = REPORT_DIR_R06 / "rehearsal"
+OAK_R06_REHEARSAL = OAK / "acq_r06_rehearsal"
+SHA_OAK_R06_SUMS = "18cf21b9abd64938ecb03b090c4c4f95c732e77af388cd7630f3d317fba9f3c9"
 R02 = REPO / "reports_post_grl_review" / "ACQ-R02"
 R03 = REPO / "reports_post_grl_review" / "ACQ-R03"
 
@@ -59,8 +63,10 @@ REHEARSAL10 = ["TN399__MGDS_33068", "AT42-06__MGDS_5174", "EW9801__MGDS_31425", 
                "FK151121__MGDS_22383", "KM0923__MGDS_31429", "RR1506__MGDS_29779", "EX1202L2__MGDS_20815", "2009_Amundsen__MGDS_30047"]
 assert not any(p in SEALED5 for p in REHEARSAL10)
 
-# Part A step 3: pairs whose k is fixed by a prior record and never re-swept by this step (the two lockbox pairs).
-PRIOR_K_PAIRS = tuple(C.LOCKBOX)
+# ACQ-R06b A1 (rulings H-1 / H-3): a pair takes its prior (June) values iff its manifest v2.1 designation is this.
+PRIOR_VALUE_DESIGNATION = "lockbox"
+# ACQ-R06b A2: the cruises whose fetch phase4 mode admits (lock 5 asserts the triggered set equals this).
+LOCKBOX_FETCH_SET = frozenset(C.LOCKBOX_LR_CRUISES)
 
 # Part C1: the contract-v2.1 flags that make ship products unusable.
 CONTRACT_V21_FLAGS = ("registration_shift", "vertical_offset", "insufficient_overlap")
@@ -94,13 +100,46 @@ def write_json(path: Path, obj, mode: int = 0o444) -> Path:
 
 
 def check_fixed_inputs() -> dict:
-    """§0.2: manifest v2.1, its dropped list and contract v2.1; stop if any differs."""
+    """§0.2: manifest v2.1, its dropped list, contract v2.1, the June records and (ACQ-R06b) the ACQ-R06 rehearsal
+    SHA256SUMS on OAK; stop if any differs."""
     got = R4.check_fixed_inputs()
     c = sha256_file(CONTRACT_V21)
     if c != SHA_CONTRACT_V21:
         raise SystemExit(f"FIXED INPUT CHANGED: INTERFACE_CONTRACT_v2.1.md sha256 {c} != {SHA_CONTRACT_V21}")
     got["INTERFACE_CONTRACT_v2.1.md"] = c
+    got["stage_c2c_sweep.json"] = sha256_file(JUNE_C2C_SWEEP)
+    got["stage_b_file_plan_2026-06-22.csv"] = sha256_file(JUNE_FILE_PLAN)
+    s = OAK_R06_REHEARSAL / "SHA256SUMS"
+    if s.exists():
+        h = sha256_file(s)
+        if h != SHA_OAK_R06_SUMS:
+            raise SystemExit(f"FIXED INPUT CHANGED: acq_r06_rehearsal/SHA256SUMS sha256 {h} != {SHA_OAK_R06_SUMS}")
+        got["acq_r06_rehearsal/SHA256SUMS"] = h
     return got
+
+
+_JUNE_SWEEP = None
+
+
+def june_sweep_record() -> dict:
+    """pair_id -> entry of the June C2c sweep record (reports/discovery/stage_c2c_sweep.json)."""
+    global _JUNE_SWEEP
+    if _JUNE_SWEEP is None:
+        j = json.loads(JUNE_C2C_SWEEP.read_text())
+        _JUNE_SWEEP = {r["pair_id"]: r for r in j.get("pairs", []) if isinstance(r, dict) and "pair_id" in r}
+    return _JUNE_SWEEP
+
+
+def june_plan_cruises(plan_csv=None) -> set:
+    """Cruises with swath rows in the June file plan."""
+    import csv
+    with open(plan_csv or JUNE_FILE_PLAN) as f:
+        return {r["cruise"] for r in csv.DictReader(f) if r.get("kind") == "swath"}
+
+
+def oak_swath_listing() -> set:
+    """Names in OAK raw_lr_swath/ (the root listing only; no sealed directory is entered)."""
+    return {p.name for p in C.RAW_SWATH_OAK.iterdir()}
 
 
 _MANIFEST = None

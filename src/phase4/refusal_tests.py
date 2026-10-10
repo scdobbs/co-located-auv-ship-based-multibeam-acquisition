@@ -98,9 +98,43 @@ def main(argv=None):
                 sup.unlink()
         # 7 positive control: every lock satisfiable -> the script reaches the allowance and stops on the safety net
         results.append(run_case("7 positive control (all locks pass -> allowance reached -> safety net)", base + ["--signoff", str(signoff_ok), "--freeze-record", str(fr_ok)], SAFETY, expect_type=SafetyStop))
+        # 10 (ACQ-R06b) the fetch trigger set is not exactly {AT42-03, TN159}: harness listing in which AT42-03 is present
+        real_listing = P.oak_swath_listing
+        P.oak_swath_listing = lambda: real_listing() | {"AT42-03"}
+        try:
+            results.append(run_case("10 fetch trigger set != {AT42-03, TN159} (harness listing holds AT42-03)", base + ["--signoff", str(signoff_ok), "--freeze-record", str(fr_ok)], "LOCK 5 fetch trigger"))
+        finally:
+            P.oak_swath_listing = real_listing
+        # 11 (ACQ-R06b) a confirmatory cruise directory count differs from its fetch manifest (harness counts; the allowance
+        #    replaced by a recording no-op so that the preflight runs on canned numbers; run_pair fenced by the safety net)
+        real_cnt, real_man, real_run = S.swath_count_on_disk, S.manifest_swath_count, S.run_pair
+        C.install_phase4_allowance = lambda tokens, reason: ()
+        S.swath_count_on_disk = lambda d: 27; S.manifest_swath_count = lambda d: 28
+        S.run_pair = lambda *a_, **k_: (_ for _ in ()).throw(SafetyStop(SAFETY + " (run_pair)"))
+        try:
+            results.append(run_case("11 confirmatory cruise directory count != fetch manifest (harness 27 vs 28)", base + ["--signoff", str(signoff_ok), "--freeze-record", str(fr_ok)],
+                                    "KN182L03__MGDS_30193: KN182L03 holds 27 swath files but its fetch manifest lists 28", expect_type=S.StopRun))
+        finally:
+            S.swath_count_on_disk, S.manifest_swath_count, S.run_pair = real_cnt, real_man, real_run
+            C.install_phase4_allowance = _no_allowance
+        # 12 (ACQ-R06b) the A1 consistency check fails: harness June record with a different lr_native (rehearsal mode, RR1506 relabelled lockbox)
+        old_m, old_j = P._MANIFEST, P._JUNE_SWEEP
+        try:
+            df = P.manifest().copy(); df.loc[df.pair_id == "RR1506__MGDS_29779", "designation"] = "lockbox"; P._MANIFEST = df
+            P._JUNE_SWEEP = {**P.june_sweep_record(), "RR1506__MGDS_29779": {**P.june_sweep_record()["RR1506__MGDS_29779"], "lr_native_m": 21.0}}
+            results.append(run_case("12 A1 consistency check fails (harness June record lr_native 21.0 vs manifest 20.3) -> C4 stop", ["--mode", "rehearsal", "--run-tag", "refusal12", "--pairs", "RR1506__MGDS_29779"],
+                                    "RR1506__MGDS_29779: A1 consistency check failed", expect_type=S.StopRun))
+            results[-1]["supplement_written"] = (P.REHEARSAL_DIR / "supplement_rehearsal_refusal12.parquet").exists()
+            results[-1]["passed"] = results[-1]["passed"] and not results[-1]["supplement_written"]
+        finally:
+            P._MANIFEST, P._JUNE_SWEEP = old_m, old_j
     finally:
         C.install_phase4_allowance = orig_allow
         shutil.rmtree(tmp, ignore_errors=True)
+    # 13 (ACQ-R06b) the guard still blocks every sealed target afterwards
+    g = __import__("src.phase4.guard_selftest", fromlist=["run"]).run(write=False)
+    results.append({"test": "13 guard blocks every sealed target after the suite", "argv": "", "expected": "all blocked", "raised": f"{g['reader_checks']['n_blocked']}/{g['reader_checks']['n']} blocked",
+                    "message": json.dumps(g["controls"]), "allowance_after": list(C.phase4_allowance()), "passed": bool(g["all_passed"])})
     # 8 rule C2 / C4 classifier and rule C1 on synthetic inputs (the data-tied builder-failure path is not reachable on the rehearsal pairs)
     cases = [("ValueError cannot infer MB format", ValueError("cannot infer MB format for x.bin"), True),
              ("mblist non-zero rc on the file", RuntimeError("P: 2 mblist call(s) failed or timed out ([{'file': 'a', 'n_rows': 0, 'rc': 3, 'stderr': 'MBIO Error: format'}]); not writing"), True),

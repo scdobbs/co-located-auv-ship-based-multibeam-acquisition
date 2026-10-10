@@ -36,15 +36,15 @@ def lookup(fname, keypath):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(); ap.add_argument("--date", default="2026-10-10")
+    ap = argparse.ArgumentParser(); ap.add_argument("--date", default="2026-10-10"); ap.add_argument("--name", default="ACQ-R06b")
     a = ap.parse_args(argv)
-    t = (P.REPORT_DIR / "REPORT_ACQ-R06_template.md").read_text()
+    t = (P.REPORT_DIR / f"REPORT_{a.name}_template.md").read_text()
     t = re.sub(r"\{\{table:([\w\-]+)\}\}", lambda m: (P.REPORT_DIR / "tables" / f"{m.group(1)}.md").read_text().strip(), t)
     t = re.sub(r"\{\{json:([\w\-.]+?\.json):([\w.\-/ ]+?)\}\}", lambda m: lookup(m.group(1), m.group(2)), t)
     left = re.findall(r"\{\{[^}]+\}\}", t)
     if left:
         raise SystemExit(f"unresolved placeholders: {left}")
-    out = P.REPORT_DIR / f"REPORT_ACQ-R06_{a.date}.md"
+    out = P.REPORT_DIR / f"REPORT_{a.name}_{a.date}.md"
     out.write_text(t)
     print(out, len(t.splitlines()), "lines")
     return 0

@@ -226,6 +226,9 @@ def assert_no_lockbox(pair_ids):
 
 def assert_no_lockbox_cruise(cruises):
     bad = [c for c in cruises if c in LOCKBOX_LR_CRUISES]
+    # ACQ-R06b §A2: the unchanged fetcher (fetch_swath.main) asserts this; in phase4 mode, after the locks, the
+    # allowance names raw_lr_swath/<cruise> for the sealed cruises and the lockbox fetch may proceed.
+    bad = [c for c in bad if f"raw_lr_swath/{c}" not in _PHASE4_ALLOW]
     if bad:
         raise PermissionError(f"LOCKBOX GUARD (ACQ-R01 §0): cruise list contains lockbox LR cruises {bad}")
     return list(cruises)

@@ -1,0 +1,419 @@
+{
+ "generated": "2026-10-10T19:52:50+00:00",
+ "host": "sh04-05n29.int",
+ "root": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r06b_harness",
+ "code_commit": "762a3e8f2d2368ef1ab26fc6bd7084ef3f8d82ee",
+ "b3": {
+  "rr1506": {
+   "hr_native_res_m": 0.992,
+   "lr_native_res_m": 20.3,
+   "values_source": "manifest v2.1 row (prior June values; ACQ-R06b A1, rulings H-1/H-3)",
+   "max_recoverable_k": 8,
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "no_spectrum",
+    "32": "no_spectrum"
+   },
+   "k_source": "June C2c sweep record reports/discovery/stage_c2c_sweep.json (prior value; ACQ-R06b A1)",
+   "swept": false,
+   "consistency_check": {
+    "june_sweep_lr_native_m": 20.3,
+    "manifest_lr_native_res_m": 20.3,
+    "precision_dp": 1,
+    "equal": true
+   },
+   "row_hr": 0.992,
+   "row_lr": 20.3,
+   "row_k": 8.0,
+   "june_k": 8,
+   "june_per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "no_spectrum",
+    "32": "no_spectrum"
+   },
+   "products": "built",
+   "ledger": [
+    {
+     "pair_id": "RR1506__MGDS_29779",
+     "item": "inputs",
+     "status": "read",
+     "reason": "hr.tif, lr.tif, 3 masks"
+    },
+    {
+     "pair_id": "RR1506__MGDS_29779",
+     "item": "c2a",
+     "status": "prior values kept (no C2a)",
+     "reason": "manifest v2.1 row (prior June values; ACQ-R06b A1, rulings H-1/H-3)"
+    },
+    {
+     "pair_id": "RR1506__MGDS_29779",
+     "item": "sweep",
+     "status": "not run (prior k kept)",
+     "reason": "k=8 from June C2c sweep record reports/discovery/stage_c2c_sweep.json (prior value; ACQ-R06b A1)"
+    },
+    {
+     "pair_id": "RR1506__MGDS_29779",
+     "item": "products",
+     "status": "built",
+     "reason": "190 files read; flags []"
+    },
+    {
+     "pair_id": "RR1506__MGDS_29779",
+     "item": "write",
+     "status": "written, mode restored",
+     "reason": "12 files; dir 0o2770 -> 0o2770 -> 0o2770"
+    }
+   ],
+   "pass": true
+  },
+  "lockbox_consistency": {
+   "AT42-03__MGDS_32007": {
+    "manifest_lr_native_res_m": 19.7,
+    "june_sweep_lr_native_m": 19.7,
+    "precision_dp": 1,
+    "equal": true,
+    "manifest_hr_native_res_m": 0.989,
+    "june_k": 4,
+    "june_per_k": {
+     "2": "recoverable_signal",
+     "4": "recoverable_signal",
+     "8": "roughness_only",
+     "16": "no_spectrum",
+     "32": "no_spectrum"
+    },
+    "designation": "lockbox"
+   },
+   "TN159__MGDS_21981": {
+    "manifest_lr_native_res_m": 41.0,
+    "june_sweep_lr_native_m": 41.0,
+    "precision_dp": 1,
+    "equal": true,
+    "manifest_hr_native_res_m": 0.991,
+    "june_k": 4,
+    "june_per_k": {
+     "2": "recoverable_signal",
+     "4": "recoverable_signal",
+     "8": "no_spectrum",
+     "16": "no_spectrum",
+     "32": "no_spectrum"
+    },
+    "designation": "lockbox"
+   }
+  },
+  "lockbox_consistency_pass": true,
+  "inconsistent_record_stop": {
+   "result": "StopRun: RR1506__MGDS_29779: A1 consistency check failed: June sweep record lr_native_m 21.0 != manifest lr_native_res_m 20.3 (rule C4)",
+   "pass": true,
+   "outputs_written": []
+  }
+ },
+ "b4": {
+  "as_found_2770": {
+   "dir_mode_set": "0o2770",
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": "0o2770",
+    "restored": true
+   },
+   "dir_mode_now": "0o2770",
+   "pre_existing_unchanged": true,
+   "pre_existing": {
+    "hr.tif": {
+     "sha256": "e3d370275855d97cbac7c004a36cd05ffe3199facf27c80aa5c961480564a92b",
+     "mode": "0o444"
+    },
+    "lr.tif": {
+     "sha256": "f2f76c8a63be8b82d41a4eec1781f423e476a8ed75c449907ee22b1ca28b2d01",
+     "mode": "0o444"
+    },
+    "hr_valid.tif": {
+     "sha256": "3e9c8a636e9b825472f8ba9d4fac1002b8d69e0f5e2ef05689f832e0795017b3",
+     "mode": "0o444"
+    },
+    "lr_valid.tif": {
+     "sha256": "6f5fce6c7e7367733e35ba873afffe233dedda99cd5ea655d30ebdca5094945b",
+     "mode": "0o444"
+    },
+    "joint_valid.tif": {
+     "sha256": "8e8840c1bfa442b4808ebd149300010d55d1fb9d04c8bc3bc85571d1687c8f94",
+     "mode": "0o444"
+    },
+    "footprint.geojson": {
+     "sha256": "53c28bead1d576b58e4197dad3d0faf136f8b15ff563200a0cdc7efa33459bd6",
+     "mode": "0o444"
+    }
+   },
+   "products_bit_identical_to_r06": {
+    "ship_count": true,
+    "ship_sd": true,
+    "ship_rsd": true,
+    "ship_xtrack_frac": true,
+    "ship_beam_angle": true,
+    "ship_mean_regrid": true,
+    "ship_median_regrid": true,
+    "reference": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/full/harmonized/FK151121__MGDS_22383/ship_products_v2_1"
+   },
+   "new_modes": {
+    "products.json": "0o444",
+    "products_extra.json": "0o444",
+    "qa_shift_surface.csv": "0o444",
+    "ship_beam_angle.tif": "0o444",
+    "ship_count.tif": "0o444",
+    "ship_mean_regrid.tif": "0o444",
+    "ship_median_regrid.tif": "0o444",
+    "ship_rsd.tif": "0o444",
+    "ship_sd.tif": "0o444",
+    "ship_xtrack_frac.tif": "0o444",
+    "ship_products_v2_1": "0o555",
+    "step1_record.json": "0o444",
+    "sweep_record.json": "0o444"
+   },
+   "summary": {
+    "lr_native_res_m": 65.99,
+    "max_recoverable_k": 16,
+    "products": "built",
+    "flags": [],
+    "ship_products_usable": true
+   },
+   "pass": true
+  },
+  "no_owner_write_0550": {
+   "dir_mode_set": "0o550",
+   "write_path": {
+    "mode_before": "0o550",
+    "mode_opened": "0o750",
+    "mode_after": "0o550",
+    "restored": true
+   },
+   "dir_mode_now": "0o550",
+   "pre_existing_unchanged": true,
+   "pre_existing": {
+    "hr.tif": {
+     "sha256": "e3d370275855d97cbac7c004a36cd05ffe3199facf27c80aa5c961480564a92b",
+     "mode": "0o444"
+    },
+    "lr.tif": {
+     "sha256": "f2f76c8a63be8b82d41a4eec1781f423e476a8ed75c449907ee22b1ca28b2d01",
+     "mode": "0o444"
+    },
+    "hr_valid.tif": {
+     "sha256": "3e9c8a636e9b825472f8ba9d4fac1002b8d69e0f5e2ef05689f832e0795017b3",
+     "mode": "0o444"
+    },
+    "lr_valid.tif": {
+     "sha256": "6f5fce6c7e7367733e35ba873afffe233dedda99cd5ea655d30ebdca5094945b",
+     "mode": "0o444"
+    },
+    "joint_valid.tif": {
+     "sha256": "8e8840c1bfa442b4808ebd149300010d55d1fb9d04c8bc3bc85571d1687c8f94",
+     "mode": "0o444"
+    },
+    "footprint.geojson": {
+     "sha256": "53c28bead1d576b58e4197dad3d0faf136f8b15ff563200a0cdc7efa33459bd6",
+     "mode": "0o444"
+    }
+   },
+   "products_bit_identical_to_r06": {
+    "ship_count": true,
+    "ship_sd": true,
+    "ship_rsd": true,
+    "ship_xtrack_frac": true,
+    "ship_beam_angle": true,
+    "ship_mean_regrid": true,
+    "ship_median_regrid": true,
+    "reference": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/full/harmonized/FK151121__MGDS_22383/ship_products_v2_1"
+   },
+   "new_modes": {
+    "products.json": "0o444",
+    "products_extra.json": "0o444",
+    "qa_shift_surface.csv": "0o444",
+    "ship_beam_angle.tif": "0o444",
+    "ship_count.tif": "0o444",
+    "ship_mean_regrid.tif": "0o444",
+    "ship_median_regrid.tif": "0o444",
+    "ship_rsd.tif": "0o444",
+    "ship_sd.tif": "0o444",
+    "ship_xtrack_frac.tif": "0o444",
+    "ship_products_v2_1": "0o555",
+    "step1_record.json": "0o444",
+    "sweep_record.json": "0o444"
+   },
+   "summary": {
+    "lr_native_res_m": 65.99,
+    "max_recoverable_k": 16,
+    "products": "built",
+    "flags": [],
+    "ship_products_usable": true
+   },
+   "pass": true
+  },
+  "blocked": {
+   "result": "StopRun: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r06b_harness/b4/blocked/harmonized/FK151121__MGDS_22383: write path failed (rule C4): PermissionError: harness: write blocked on /scrat",
+   "outputs_in_pair_dir": [
+    "footprint.geojson",
+    "hr.tif",
+    "hr_valid.tif",
+    "joint_valid.tif",
+    "lr.tif",
+    "lr_valid.tif"
+   ],
+   "pass": true
+  }
+ },
+ "b2": {
+  "trigger_rehearsal_pairs": {},
+  "trigger_whole_manifest_lockbox_rule": {
+   "AT42-03": [
+    "AT42-03__MGDS_32007"
+   ],
+   "TN159": [
+    "TN159__MGDS_21981"
+   ]
+  },
+  "absent_from_oak_and_in_june_plan_any_designation": [
+   "AT42-03",
+   "KIWI10RR",
+   "TN159",
+   "TN268"
+  ],
+  "triggered_phase4_list_records_only": {
+   "AT42-03": [
+    "AT42-03__MGDS_32007"
+   ],
+   "TN159": [
+    "TN159__MGDS_21981"
+   ]
+  },
+  "fetch": {
+   "cruise": "EW9801",
+   "cruise_dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r06b_harness/b2/raw_lr_swath/EW9801",
+   "plan_csv": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports/discovery/stage_b_file_plan_2026-06-22.csv",
+   "rc": 0,
+   "n_planned": 25,
+   "n_ok": 25,
+   "n_failed": 0,
+   "complete": true,
+   "wall_s": 4.7,
+   "fetcher": "src/acq_r01/fetch_swath.py main --plan-csv (unchanged)",
+   "reason": null
+  },
+  "compare": {
+   "n_oak": 25,
+   "n_fetched": 25,
+   "same_names": true,
+   "n_byte_identical": 25,
+   "differing": [],
+   "modes_0444": true,
+   "manifest_sha_matches_oak_manifest": true,
+   "sha256sums_present": true
+  },
+  "b2_pass": true,
+  "failure_branch": {
+   "pairs_run": [
+    "EW9801__MGDS_31425",
+    "TN399__MGDS_33068"
+   ],
+   "ew9801": {
+    "values_source": "manifest v2.1 row (prior June values; ACQ-R06b A1, rulings H-1/H-3)",
+    "max_recoverable_k": 2,
+    "k_source": "June C2c sweep record reports/discovery/stage_c2c_sweep.json (prior value; ACQ-R06b A1)",
+    "fetch": {
+     "n_ok": 24,
+     "n_planned": 25,
+     "complete": false,
+     "reason": "lockbox fetch incomplete (24 of 25 files)"
+    },
+    "products": "unavailable",
+    "products_reason": "lockbox fetch incomplete (24 of 25 files)",
+    "ship_products_usable": false
+   },
+   "tn399_continued": {
+    "products": "built",
+    "max_recoverable_k": 16,
+    "ship_products_usable": true
+   },
+   "ledger": [
+    {
+     "pair_id": "EW9801__MGDS_31425",
+     "item": "inputs",
+     "status": "read",
+     "reason": "hr.tif, lr.tif, 3 masks"
+    },
+    {
+     "pair_id": "EW9801__MGDS_31425",
+     "item": "c2a",
+     "status": "prior values kept (no C2a)",
+     "reason": "manifest v2.1 row (prior June values; ACQ-R06b A1, rulings H-1/H-3)"
+    },
+    {
+     "pair_id": "EW9801__MGDS_31425",
+     "item": "sweep",
+     "status": "not run (prior k kept)",
+     "reason": "k=2 from June C2c sweep record reports/discovery/stage_c2c_sweep.json (prior value; ACQ-R06b A1)"
+    },
+    {
+     "pair_id": "EW9801__MGDS_31425",
+     "item": "fetch",
+     "status": "incomplete",
+     "reason": "24 of 25 files (rc 1)"
+    },
+    {
+     "pair_id": "EW9801__MGDS_31425",
+     "item": "products",
+     "status": "unavailable",
+     "reason": "lockbox fetch incomplete (24 of 25 files)"
+    },
+    {
+     "pair_id": "EW9801__MGDS_31425",
+     "item": "write",
+     "status": "written, mode restored",
+     "reason": "3 files; dir 0o2770 -> 0o2770 -> 0o2770"
+    },
+    {
+     "pair_id": "TN399__MGDS_33068",
+     "item": "inputs",
+     "status": "read",
+     "reason": "hr.tif, lr.tif, 3 masks"
+    },
+    {
+     "pair_id": "TN399__MGDS_33068",
+     "item": "c2a",
+     "status": "computed",
+     "reason": "ACQ-R02 grid record grid/TN399.json:sonar"
+    },
+    {
+     "pair_id": "TN399__MGDS_33068",
+     "item": "sweep",
+     "status": "ok",
+     "reason": "k=16"
+    },
+    {
+     "pair_id": "TN399__MGDS_33068",
+     "item": "products",
+     "status": "built",
+     "reason": "12 files read; flags []"
+    },
+    {
+     "pair_id": "TN399__MGDS_33068",
+     "item": "write",
+     "status": "written, mode restored",
+     "reason": "12 files; dir 0o2770 -> 0o2770 -> 0o2770"
+    }
+   ],
+   "products_json_reason": "lockbox fetch incomplete (24 of 25 files)",
+   "pass": true
+  },
+  "scratch_fetch_deleted": {
+   "n_gz_files": 49,
+   "bytes": 145618134,
+   "remaining_gz": 0
+  }
+ },
+ "all_passed": true,
+ "wall_s": 286.7
+}

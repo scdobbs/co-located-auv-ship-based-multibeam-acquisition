@@ -1,0 +1,11 @@
+{
+ "generated": "2026-10-10T19:58:57+00:00",
+ "destination": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/acq_r06b_rehearsal",
+ "n_files": 197,
+ "n_bad": 0,
+ "bad": [],
+ "sha256sums": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/acq_r06b_rehearsal/SHA256SUMS",
+ "sha256sums_sha256": "02ef96b4a92f4b1f0d5390319ed11e5558b55f41064a846a523e337c7718e722",
+ "bytes": 119583961,
+ "code_commit": "762a3e8f2d2368ef1ab26fc6bd7084ef3f8d82ee"
+}

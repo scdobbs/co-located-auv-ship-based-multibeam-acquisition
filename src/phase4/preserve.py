@@ -16,7 +16,7 @@ from pathlib import Path
 from src.acq_r01 import common as C
 from src.phase4 import common as P
 
-DEST = C.OAK / "acq_r06_rehearsal"
+DEST = C.OAK / "acq_r06_rehearsal"          # ACQ-R06 default; ACQ-R06b passes --dest-name acq_r06b_rehearsal
 
 
 def copy_tree(src: Path, dst: Path, sums: dict, prefix: str):
@@ -32,8 +32,12 @@ def copy_tree(src: Path, dst: Path, sums: dict, prefix: str):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(); ap.add_argument("--run-tag", default="full")
+    global DEST
+    ap = argparse.ArgumentParser(); ap.add_argument("--run-tag", default="full"); ap.add_argument("--dest-name", default=None)
+    ap.add_argument("--extra-tree", action="append", default=[], help="additional scratch directory to copy (e.g. the harness root)")
     a = ap.parse_args(argv)
+    if a.dest_name:
+        DEST = C.OAK / a.dest_name
     run = json.loads((P.REHEARSAL_DIR / f"step1_run_rehearsal_{a.run_tag}.json").read_text())
     src_root = Path(run["out_root"])
     if not str(src_root).startswith(str(P.SCRATCH_ROOT)):
@@ -43,6 +47,11 @@ def main(argv=None):
     DEST.mkdir(exist_ok=True)
     sums = {}
     copy_tree(src_root, DEST / "rehearsal_outputs" / a.run_tag, sums, f"rehearsal_outputs/{a.run_tag}")
+    for t in a.extra_tree:
+        t = Path(t)
+        for p in t.rglob("*"):
+            C._check_sealed(p)
+        copy_tree(t, DEST / "rehearsal_outputs" / t.name, sums, f"rehearsal_outputs/{t.name}")
     rec_dir = DEST / "records"
     for p in sorted(P.REPORT_DIR.glob("*")):
         if p.is_file() and (p.suffix in (".json", ".csv", ".txt", ".md")):

@@ -1,0 +1,5 @@
+47267083 r06b 2026-10-10T19:49:37Z sbatch/acq_r06b/rehearsal.sbatch TAG=r06b NPROC=6
+47267085 harness 2026-10-10T19:49:37Z sbatch/acq_r06b/harness.sbatch
+47267083 47267085 cancelled 2026-10-10T19:50:25Z: resubmitted after the write-path C4 edit
+47267164 r06b 2026-10-10T19:50:51Z sbatch/acq_r06b/rehearsal.sbatch TAG=r06b NPROC=6 (final code)
+47267170 harness 2026-10-10T19:50:51Z sbatch/acq_r06b/harness.sbatch (final code)

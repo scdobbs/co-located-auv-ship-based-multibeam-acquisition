@@ -1,0 +1,1191 @@
+{
+ "generated": "2026-10-10T19:58:18+00:00",
+ "new_run": "r06b",
+ "old_run": "full",
+ "n_pairs": 10,
+ "n_pass": 10,
+ "all_pass": true,
+ "n_spacings_k_equal": 10,
+ "n_products_built": 8,
+ "n_rasters_bit_identical": 8,
+ "n_qa_equal": 8,
+ "differing_columns_union": [],
+ "n_rows_with_differing_columns": 0,
+ "wall_s_new": 294.3,
+ "wall_s_old": 286.8,
+ "supplement_sha256_new": "297e0a0e6d88b6e7fa6965822b6beefe1b2201bf25df8bf3849f4576b053b516",
+ "supplement_sha256_old": "297e0a0e6d88b6e7fa6965822b6beefe1b2201bf25df8bf3849f4576b053b516",
+ "pairs": [
+  {
+   "pair_id": "TN399__MGDS_33068",
+   "spacings_k": {
+    "hr_native_res_m": {
+     "r06b": 1.0,
+     "r06": 1.0,
+     "equal": true
+    },
+    "lr_native_res_m": {
+     "r06b": 44.22,
+     "r06": 44.22,
+     "equal": true
+    },
+    "max_recoverable_k": {
+     "r06b": 16,
+     "r06": 16,
+     "equal": true
+    },
+    "status": {
+     "r06b": "ok",
+     "r06": "ok",
+     "equal": true
+    },
+    "per_k": {
+     "r06b": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "recoverable_signal",
+      "16": "recoverable_signal",
+      "32": "no_spectrum"
+     },
+     "r06": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "recoverable_signal",
+      "16": "recoverable_signal",
+      "32": "no_spectrum"
+     },
+     "equal": true
+    }
+   },
+   "spacings_k_equal": true,
+   "products": {
+    "built_both": true,
+    "rasters_bit_identical": {
+     "ship_count": true,
+     "ship_sd": true,
+     "ship_rsd": true,
+     "ship_xtrack_frac": true,
+     "ship_beam_angle": true,
+     "ship_mean_regrid": true,
+     "ship_median_regrid": true
+    },
+    "all_rasters_bit_identical": true,
+    "qa": {
+     "n_common_cells": {
+      "r06b": 7763,
+      "r06": 7763,
+      "equal": true
+     },
+     "median_offset_m": {
+      "r06b": 0.085,
+      "r06": 0.085,
+      "equal": true
+     },
+     "rms_m": {
+      "r06b": 2.6037,
+      "r06": 2.6037,
+      "equal": true
+     },
+     "robust_sigma_m": {
+      "r06b": 0.6287,
+      "r06": 0.6287,
+      "equal": true
+     },
+     "rms_over_median_s_lr": {
+      "r06b": null,
+      "r06": null,
+      "equal": true
+     },
+     "robust_sigma_over_median_s_lr": {
+      "r06b": null,
+      "r06": null,
+      "equal": true
+     },
+     "sigma0_m": {
+      "r06b": 0.6287,
+      "r06": 0.6287,
+      "equal": true
+     },
+     "sigma_argmin_m": {
+      "r06b": 0.5656,
+      "r06": 0.5656,
+      "equal": true
+     },
+     "gain_m": {
+      "r06b": 0.0632,
+      "r06": 0.0632,
+      "equal": true
+     },
+     "shift_argmin_cells": {
+      "r06b": [
+       0.0,
+       -0.25
+      ],
+      "r06": [
+       0.0,
+       -0.25
+      ],
+      "equal": true
+     },
+     "flags": {
+      "r06b": [],
+      "r06": [],
+      "equal": true
+     }
+    },
+    "qa_all_equal": true,
+    "files_same": true
+   },
+   "supplement": {
+    "n_columns": 63,
+    "n_differing": 0,
+    "differing": []
+   },
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": null,
+    "restored": null
+   },
+   "pass": true
+  },
+  {
+   "pair_id": "AT42-06__MGDS_5174",
+   "spacings_k": {
+    "hr_native_res_m": {
+     "r06b": 4.987,
+     "r06": 4.987,
+     "equal": true
+    },
+    "lr_native_res_m": {
+     "r06b": 44.5,
+     "r06": 44.5,
+     "equal": true
+    },
+    "max_recoverable_k": {
+     "r06b": 2,
+     "r06": 2,
+     "equal": true
+    },
+    "status": {
+     "r06b": "ok",
+     "r06": "ok",
+     "equal": true
+    },
+    "per_k": {
+     "r06b": {
+      "2": "recoverable_signal",
+      "4": "no_spectrum",
+      "8": "no_spectrum",
+      "16": "no_spectrum",
+      "32": "no_spectrum"
+     },
+     "r06": {
+      "2": "recoverable_signal",
+      "4": "no_spectrum",
+      "8": "no_spectrum",
+      "16": "no_spectrum",
+      "32": "no_spectrum"
+     },
+     "equal": true
+    }
+   },
+   "spacings_k_equal": true,
+   "products": {
+    "built_both": true,
+    "rasters_bit_identical": {
+     "ship_count": true,
+     "ship_sd": true,
+     "ship_rsd": true,
+     "ship_xtrack_frac": true,
+     "ship_beam_angle": true,
+     "ship_mean_regrid": true,
+     "ship_median_regrid": true
+    },
+    "all_rasters_bit_identical": true,
+    "qa": {
+     "n_common_cells": {
+      "r06b": 12202,
+      "r06": 12202,
+      "equal": true
+     },
+     "median_offset_m": {
+      "r06b": 0.0353,
+      "r06": 0.0353,
+      "equal": true
+     },
+     "rms_m": {
+      "r06b": 1.6943,
+      "r06": 1.6943,
+      "equal": true
+     },
+     "robust_sigma_m": {
+      "r06b": 0.9473,
+      "r06": 0.9473,
+      "equal": true
+     },
+     "rms_over_median_s_lr": {
+      "r06b": null,
+      "r06": null,
+      "equal": true
+     },
+     "robust_sigma_over_median_s_lr": {
+      "r06b": null,
+      "r06": null,
+      "equal": true
+     },
+     "sigma0_m": {
+      "r06b": 0.9473,
+      "r06": 0.9473,
+      "equal": true
+     },
+     "sigma_argmin_m": {
+      "r06b": 0.769,
+      "r06": 0.769,
+      "equal": true
+     },
+     "gain_m": {
+      "r06b": 0.1783,
+      "r06": 0.1783,
+      "equal": true
+     },
+     "shift_argmin_cells": {
+      "r06b": [
+       0.0,
+       0.25
+      ],
+      "r06": [
+       0.0,
+       0.25
+      ],
+      "equal": true
+     },
+     "flags": {
+      "r06b": [],
+      "r06": [],
+      "equal": true
+     }
+    },
+    "qa_all_equal": true,
+    "files_same": true
+   },
+   "supplement": {
+    "n_columns": 63,
+    "n_differing": 0,
+    "differing": []
+   },
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": null,
+    "restored": null
+   },
+   "pass": true
+  },
+  {
+   "pair_id": "EW9801__MGDS_31425",
+   "spacings_k": {
+    "hr_native_res_m": {
+     "r06b": 2.067,
+     "r06": 2.067,
+     "equal": true
+    },
+    "lr_native_res_m": {
+     "r06b": 48.18,
+     "r06": 48.18,
+     "equal": true
+    },
+    "max_recoverable_k": {
+     "r06b": 8,
+     "r06": 8,
+     "equal": true
+    },
+    "status": {
+     "r06b": "ok",
+     "r06": "ok",
+     "equal": true
+    },
+    "per_k": {
+     "r06b": {
+      "2": "recoverable_signal",
+      "4": "roughness_only",
+      "8": "recoverable_signal",
+      "16": "no_spectrum",
+      "32": "no_spectrum"
+     },
+     "r06": {
+      "2": "recoverable_signal",
+      "4": "roughness_only",
+      "8": "recoverable_signal",
+      "16": "no_spectrum",
+      "32": "no_spectrum"
+     },
+     "equal": true
+    }
+   },
+   "spacings_k_equal": true,
+   "products": {
+    "built_both": true,
+    "rasters_bit_identical": {
+     "ship_count": true,
+     "ship_sd": true,
+     "ship_rsd": true,
+     "ship_xtrack_frac": true,
+     "ship_beam_angle": true,
+     "ship_mean_regrid": true,
+     "ship_median_regrid": true
+    },
+    "all_rasters_bit_identical": true,
+    "qa": {
+     "n_common_cells": {
+      "r06b": 5255,
+      "r06": 5255,
+      "equal": true
+     },
+     "median_offset_m": {
+      "r06b": 0.1276,
+      "r06": 0.1276,
+      "equal": true
+     },
+     "rms_m": {
+      "r06b": 8.7734,
+      "r06": 8.7734,
+      "equal": true
+     },
+     "robust_sigma_m": {
+      "r06b": 4.7803,
+      "r06": 4.7803,
+      "equal": true
+     },
+     "rms_over_median_s_lr": {
+      "r06b": 0.2436,
+      "r06": 0.2436,
+      "equal": true
+     },
+     "robust_sigma_over_median_s_lr": {
+      "r06b": 0.1327,
+      "r06": 0.1327,
+      "equal": true
+     },
+     "sigma0_m": {
+      "r06b": 4.7803,
+      "r06": 4.7803,
+      "equal": true
+     },
+     "sigma_argmin_m": {
+      "r06b": 4.1392,
+      "r06": 4.1392,
+      "equal": true
+     },
+     "gain_m": {
+      "r06b": 0.641,
+      "r06": 0.641,
+      "equal": true
+     },
+     "shift_argmin_cells": {
+      "r06b": [
+       -0.25,
+       -0.25
+      ],
+      "r06": [
+       -0.25,
+       -0.25
+      ],
+      "equal": true
+     },
+     "flags": {
+      "r06b": [],
+      "r06": [],
+      "equal": true
+     }
+    },
+    "qa_all_equal": true,
+    "files_same": true
+   },
+   "supplement": {
+    "n_columns": 63,
+    "n_differing": 0,
+    "differing": []
+   },
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": null,
+    "restored": null
+   },
+   "pass": true
+  },
+  {
+   "pair_id": "NA076__MGDS_32317",
+   "spacings_k": {
+    "hr_native_res_m": {
+     "r06b": 1.057,
+     "r06": 1.057,
+     "equal": true
+    },
+    "lr_native_res_m": {
+     "r06b": 15.19,
+     "r06": 15.19,
+     "equal": true
+    },
+    "max_recoverable_k": {
+     "r06b": 4,
+     "r06": 4,
+     "equal": true
+    },
+    "status": {
+     "r06b": "ok",
+     "r06": "ok",
+     "equal": true
+    },
+    "per_k": {
+     "r06b": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "no_spectrum",
+      "16": "no_spectrum",
+      "32": "no_spectrum"
+     },
+     "r06": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "no_spectrum",
+      "16": "no_spectrum",
+      "32": "no_spectrum"
+     },
+     "equal": true
+    }
+   },
+   "spacings_k_equal": true,
+   "products": {
+    "built_both": true,
+    "rasters_bit_identical": {
+     "ship_count": true,
+     "ship_sd": true,
+     "ship_rsd": true,
+     "ship_xtrack_frac": true,
+     "ship_beam_angle": true,
+     "ship_mean_regrid": true,
+     "ship_median_regrid": true
+    },
+    "all_rasters_bit_identical": true,
+    "qa": {
+     "n_common_cells": {
+      "r06b": 23613,
+      "r06": 23613,
+      "equal": true
+     },
+     "median_offset_m": {
+      "r06b": 0.0271,
+      "r06": 0.0271,
+      "equal": true
+     },
+     "rms_m": {
+      "r06b": 0.5061,
+      "r06": 0.5061,
+      "equal": true
+     },
+     "robust_sigma_m": {
+      "r06b": 0.4211,
+      "r06": 0.4211,
+      "equal": true
+     },
+     "rms_over_median_s_lr": {
+      "r06b": 0.2261,
+      "r06": 0.2261,
+      "equal": true
+     },
+     "robust_sigma_over_median_s_lr": {
+      "r06b": 0.1882,
+      "r06": 0.1882,
+      "equal": true
+     },
+     "sigma0_m": {
+      "r06b": 0.4211,
+      "r06": 0.4211,
+      "equal": true
+     },
+     "sigma_argmin_m": {
+      "r06b": 0.2759,
+      "r06": 0.2759,
+      "equal": true
+     },
+     "gain_m": {
+      "r06b": 0.1453,
+      "r06": 0.1453,
+      "equal": true
+     },
+     "shift_argmin_cells": {
+      "r06b": [
+       0.25,
+       -0.25
+      ],
+      "r06": [
+       0.25,
+       -0.25
+      ],
+      "equal": true
+     },
+     "flags": {
+      "r06b": [],
+      "r06": [],
+      "equal": true
+     }
+    },
+    "qa_all_equal": true,
+    "files_same": true
+   },
+   "supplement": {
+    "n_columns": 63,
+    "n_differing": 0,
+    "differing": []
+   },
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": null,
+    "restored": null
+   },
+   "pass": true
+  },
+  {
+   "pair_id": "EX1402L2__MGDS_31073",
+   "spacings_k": {
+    "hr_native_res_m": {
+     "r06b": 1.0,
+     "r06": 1.0,
+     "equal": true
+    },
+    "lr_native_res_m": {
+     "r06b": 16.37,
+     "r06": 16.37,
+     "equal": true
+    },
+    "max_recoverable_k": {
+     "r06b": 4,
+     "r06": 4,
+     "equal": true
+    },
+    "status": {
+     "r06b": "ok",
+     "r06": "ok",
+     "equal": true
+    },
+    "per_k": {
+     "r06b": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "no_spectrum",
+      "16": "no_spectrum",
+      "32": "no_spectrum"
+     },
+     "r06": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "no_spectrum",
+      "16": "no_spectrum",
+      "32": "no_spectrum"
+     },
+     "equal": true
+    }
+   },
+   "spacings_k_equal": true,
+   "products": {
+    "built_both": true,
+    "rasters_bit_identical": {
+     "ship_count": true,
+     "ship_sd": true,
+     "ship_rsd": true,
+     "ship_xtrack_frac": true,
+     "ship_beam_angle": true,
+     "ship_mean_regrid": true,
+     "ship_median_regrid": true
+    },
+    "all_rasters_bit_identical": true,
+    "qa": {
+     "n_common_cells": {
+      "r06b": 10834,
+      "r06": 10834,
+      "equal": true
+     },
+     "median_offset_m": {
+      "r06b": 0.0499,
+      "r06": 0.0499,
+      "equal": true
+     },
+     "rms_m": {
+      "r06b": 0.4795,
+      "r06": 0.4795,
+      "equal": true
+     },
+     "robust_sigma_m": {
+      "r06b": 0.3644,
+      "r06": 0.3644,
+      "equal": true
+     },
+     "rms_over_median_s_lr": {
+      "r06b": null,
+      "r06": null,
+      "equal": true
+     },
+     "robust_sigma_over_median_s_lr": {
+      "r06b": null,
+      "r06": null,
+      "equal": true
+     },
+     "sigma0_m": {
+      "r06b": 0.3644,
+      "r06": 0.3644,
+      "equal": true
+     },
+     "sigma_argmin_m": {
+      "r06b": 0.3377,
+      "r06": 0.3377,
+      "equal": true
+     },
+     "gain_m": {
+      "r06b": 0.0267,
+      "r06": 0.0267,
+      "equal": true
+     },
+     "shift_argmin_cells": {
+      "r06b": [
+       0.0,
+       -0.25
+      ],
+      "r06": [
+       0.0,
+       -0.25
+      ],
+      "equal": true
+     },
+     "flags": {
+      "r06b": [],
+      "r06": [],
+      "equal": true
+     }
+    },
+    "qa_all_equal": true,
+    "files_same": true
+   },
+   "supplement": {
+    "n_columns": 63,
+    "n_differing": 0,
+    "differing": []
+   },
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": null,
+    "restored": null
+   },
+   "pass": true
+  },
+  {
+   "pair_id": "FK151121__MGDS_22383",
+   "spacings_k": {
+    "hr_native_res_m": {
+     "r06b": 1.0,
+     "r06": 1.0,
+     "equal": true
+    },
+    "lr_native_res_m": {
+     "r06b": 65.99,
+     "r06": 65.99,
+     "equal": true
+    },
+    "max_recoverable_k": {
+     "r06b": 16,
+     "r06": 16,
+     "equal": true
+    },
+    "status": {
+     "r06b": "ok",
+     "r06": "ok",
+     "equal": true
+    },
+    "per_k": {
+     "r06b": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "recoverable_signal",
+      "16": "recoverable_signal",
+      "32": "no_spectrum"
+     },
+     "r06": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "recoverable_signal",
+      "16": "recoverable_signal",
+      "32": "no_spectrum"
+     },
+     "equal": true
+    }
+   },
+   "spacings_k_equal": true,
+   "products": {
+    "built_both": true,
+    "rasters_bit_identical": {
+     "ship_count": true,
+     "ship_sd": true,
+     "ship_rsd": true,
+     "ship_xtrack_frac": true,
+     "ship_beam_angle": true,
+     "ship_mean_regrid": true,
+     "ship_median_regrid": true
+    },
+    "all_rasters_bit_identical": true,
+    "qa": {
+     "n_common_cells": {
+      "r06b": 5818,
+      "r06": 5818,
+      "equal": true
+     },
+     "median_offset_m": {
+      "r06b": -0.0752,
+      "r06": -0.0752,
+      "equal": true
+     },
+     "rms_m": {
+      "r06b": 4.8581,
+      "r06": 4.8581,
+      "equal": true
+     },
+     "robust_sigma_m": {
+      "r06b": 3.2207,
+      "r06": 3.2207,
+      "equal": true
+     },
+     "rms_over_median_s_lr": {
+      "r06b": null,
+      "r06": null,
+      "equal": true
+     },
+     "robust_sigma_over_median_s_lr": {
+      "r06b": null,
+      "r06": null,
+      "equal": true
+     },
+     "sigma0_m": {
+      "r06b": 3.2207,
+      "r06": 3.2207,
+      "equal": true
+     },
+     "sigma_argmin_m": {
+      "r06b": 3.0194,
+      "r06": 3.0194,
+      "equal": true
+     },
+     "gain_m": {
+      "r06b": 0.2014,
+      "r06": 0.2014,
+      "equal": true
+     },
+     "shift_argmin_cells": {
+      "r06b": [
+       0.0,
+       -0.25
+      ],
+      "r06": [
+       0.0,
+       -0.25
+      ],
+      "equal": true
+     },
+     "flags": {
+      "r06b": [],
+      "r06": [],
+      "equal": true
+     }
+    },
+    "qa_all_equal": true,
+    "files_same": true
+   },
+   "supplement": {
+    "n_columns": 63,
+    "n_differing": 0,
+    "differing": []
+   },
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": null,
+    "restored": null
+   },
+   "pass": true
+  },
+  {
+   "pair_id": "KM0923__MGDS_31429",
+   "spacings_k": {
+    "hr_native_res_m": {
+     "r06b": 2.054,
+     "r06": 2.054,
+     "equal": true
+    },
+    "lr_native_res_m": {
+     "r06b": 86.94,
+     "r06": 86.94,
+     "equal": true
+    },
+    "max_recoverable_k": {
+     "r06b": 16,
+     "r06": 16,
+     "equal": true
+    },
+    "status": {
+     "r06b": "ok",
+     "r06": "ok",
+     "equal": true
+    },
+    "per_k": {
+     "r06b": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "recoverable_signal",
+      "16": "recoverable_signal",
+      "32": "no_spectrum"
+     },
+     "r06": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "recoverable_signal",
+      "16": "recoverable_signal",
+      "32": "no_spectrum"
+     },
+     "equal": true
+    }
+   },
+   "spacings_k_equal": true,
+   "products": {
+    "built_both": true,
+    "rasters_bit_identical": {
+     "ship_count": true,
+     "ship_sd": true,
+     "ship_rsd": true,
+     "ship_xtrack_frac": true,
+     "ship_beam_angle": true,
+     "ship_mean_regrid": true,
+     "ship_median_regrid": true
+    },
+    "all_rasters_bit_identical": true,
+    "qa": {
+     "n_common_cells": {
+      "r06b": 9079,
+      "r06": 9079,
+      "equal": true
+     },
+     "median_offset_m": {
+      "r06b": 0.0591,
+      "r06": 0.0591,
+      "equal": true
+     },
+     "rms_m": {
+      "r06b": 10.9605,
+      "r06": 10.9605,
+      "equal": true
+     },
+     "robust_sigma_m": {
+      "r06b": 4.7888,
+      "r06": 4.7888,
+      "equal": true
+     },
+     "rms_over_median_s_lr": {
+      "r06b": null,
+      "r06": null,
+      "equal": true
+     },
+     "robust_sigma_over_median_s_lr": {
+      "r06b": null,
+      "r06": null,
+      "equal": true
+     },
+     "sigma0_m": {
+      "r06b": 4.7888,
+      "r06": 4.7888,
+      "equal": true
+     },
+     "sigma_argmin_m": {
+      "r06b": 4.1727,
+      "r06": 4.1727,
+      "equal": true
+     },
+     "gain_m": {
+      "r06b": 0.6161,
+      "r06": 0.6161,
+      "equal": true
+     },
+     "shift_argmin_cells": {
+      "r06b": [
+       -0.25,
+       0.25
+      ],
+      "r06": [
+       -0.25,
+       0.25
+      ],
+      "equal": true
+     },
+     "flags": {
+      "r06b": [],
+      "r06": [],
+      "equal": true
+     }
+    },
+    "qa_all_equal": true,
+    "files_same": true
+   },
+   "supplement": {
+    "n_columns": 63,
+    "n_differing": 0,
+    "differing": []
+   },
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": null,
+    "restored": null
+   },
+   "pass": true
+  },
+  {
+   "pair_id": "RR1506__MGDS_29779",
+   "spacings_k": {
+    "hr_native_res_m": {
+     "r06b": 1.0,
+     "r06": 1.0,
+     "equal": true
+    },
+    "lr_native_res_m": {
+     "r06b": 28.99,
+     "r06": 28.99,
+     "equal": true
+    },
+    "max_recoverable_k": {
+     "r06b": 8,
+     "r06": 8,
+     "equal": true
+    },
+    "status": {
+     "r06b": "ok",
+     "r06": "ok",
+     "equal": true
+    },
+    "per_k": {
+     "r06b": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "recoverable_signal",
+      "16": "no_spectrum",
+      "32": "no_spectrum"
+     },
+     "r06": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "recoverable_signal",
+      "16": "no_spectrum",
+      "32": "no_spectrum"
+     },
+     "equal": true
+    }
+   },
+   "spacings_k_equal": true,
+   "products": {
+    "built_both": true,
+    "rasters_bit_identical": {
+     "ship_count": true,
+     "ship_sd": true,
+     "ship_rsd": true,
+     "ship_xtrack_frac": true,
+     "ship_beam_angle": true,
+     "ship_mean_regrid": true,
+     "ship_median_regrid": true
+    },
+    "all_rasters_bit_identical": true,
+    "qa": {
+     "n_common_cells": {
+      "r06b": 202705,
+      "r06": 202705,
+      "equal": true
+     },
+     "median_offset_m": {
+      "r06b": 0.0933,
+      "r06": 0.0933,
+      "equal": true
+     },
+     "rms_m": {
+      "r06b": 3.7426,
+      "r06": 3.7426,
+      "equal": true
+     },
+     "robust_sigma_m": {
+      "r06b": 1.1711,
+      "r06": 1.1711,
+      "equal": true
+     },
+     "rms_over_median_s_lr": {
+      "r06b": 0.2529,
+      "r06": 0.2529,
+      "equal": true
+     },
+     "robust_sigma_over_median_s_lr": {
+      "r06b": 0.0792,
+      "r06": 0.0792,
+      "equal": true
+     },
+     "sigma0_m": {
+      "r06b": 1.1711,
+      "r06": 1.1711,
+      "equal": true
+     },
+     "sigma_argmin_m": {
+      "r06b": 1.1711,
+      "r06": 1.1711,
+      "equal": true
+     },
+     "gain_m": {
+      "r06b": 0.0,
+      "r06": 0.0,
+      "equal": true
+     },
+     "shift_argmin_cells": {
+      "r06b": [
+       0.0,
+       0.0
+      ],
+      "r06": [
+       0.0,
+       0.0
+      ],
+      "equal": true
+     },
+     "flags": {
+      "r06b": [],
+      "r06": [],
+      "equal": true
+     }
+    },
+    "qa_all_equal": true,
+    "files_same": true
+   },
+   "supplement": {
+    "n_columns": 63,
+    "n_differing": 0,
+    "differing": []
+   },
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": null,
+    "restored": null
+   },
+   "pass": true
+  },
+  {
+   "pair_id": "EX1202L2__MGDS_20815",
+   "spacings_k": {
+    "hr_native_res_m": {
+     "r06b": 1.047,
+     "r06": 1.047,
+     "equal": true
+    },
+    "lr_native_res_m": {
+     "r06b": 23.7,
+     "r06": 23.7,
+     "equal": true
+    },
+    "max_recoverable_k": {
+     "r06b": null,
+     "r06": null,
+     "equal": true
+    },
+    "status": {
+     "r06b": "no_curve",
+     "r06": "no_curve",
+     "equal": true
+    },
+    "per_k": {
+     "r06b": null,
+     "r06": null,
+     "equal": true
+    }
+   },
+   "spacings_k_equal": true,
+   "products": {
+    "built_both": true,
+    "note": "no products in both runs"
+   },
+   "supplement": {
+    "n_columns": 63,
+    "n_differing": 0,
+    "differing": []
+   },
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": null,
+    "restored": null
+   },
+   "pass": true
+  },
+  {
+   "pair_id": "2009_Amundsen__MGDS_30047",
+   "spacings_k": {
+    "hr_native_res_m": {
+     "r06b": 1.485,
+     "r06": 1.485,
+     "equal": true
+    },
+    "lr_native_res_m": {
+     "r06b": 4.87,
+     "r06": 4.87,
+     "equal": true
+    },
+    "max_recoverable_k": {
+     "r06b": null,
+     "r06": null,
+     "equal": true
+    },
+    "status": {
+     "r06b": "ok",
+     "r06": "ok",
+     "equal": true
+    },
+    "per_k": {
+     "r06b": {
+      "2": "no_spectrum",
+      "4": "no_spectrum",
+      "8": "no_spectrum",
+      "16": "no_spectrum",
+      "32": "no_spectrum"
+     },
+     "r06": {
+      "2": "no_spectrum",
+      "4": "no_spectrum",
+      "8": "no_spectrum",
+      "16": "no_spectrum",
+      "32": "no_spectrum"
+     },
+     "equal": true
+    }
+   },
+   "spacings_k_equal": true,
+   "products": {
+    "built_both": true,
+    "note": "no products in both runs"
+   },
+   "supplement": {
+    "n_columns": 63,
+    "n_differing": 0,
+    "differing": []
+   },
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": null,
+    "restored": null
+   },
+   "pass": true
+  }
+ ],
+ "code_commit": "762a3e8f2d2368ef1ab26fc6bd7084ef3f8d82ee"
+}
