@@ -1,0 +1,2 @@
+47262648 full 2026-10-10T19:14:45Z sbatch/acq_r06/rehearsal.sbatch TAG=full NPROC=6
+47263641 full 2026-10-10T19:22:31Z sbatch/acq_r06/rehearsal.sbatch TAG=full NPROC=6 (re-run after the pair_id fix; 47262648 stopped at the supplement)

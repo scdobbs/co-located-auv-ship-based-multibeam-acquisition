@@ -1,0 +1,532 @@
+{
+ "generated": "2026-10-10T19:17:03+00:00",
+ "sealed_pairs": [
+  {
+   "pair_id": "KN182L03__MGDS_30193",
+   "set": "confirmatory",
+   "unit": "nu01a",
+   "lr_cruise": "KN182L03",
+   "harmonized_path": "harmonized_confirmatory/nu01a/KN182L03__MGDS_30193",
+   "manifest": {
+    "hr_native_res_m": null,
+    "lr_native_res_m": null,
+    "res_ratio": null,
+    "max_recoverable_k": null,
+    "k_sweep_status": null,
+    "ship_products_usable": null,
+    "products_v2_1_flags": null,
+    "qa_status": "pass (QGIS, rulings R6)",
+    "coreg_status": null,
+    "horiz_offset_m": null,
+    "lr_sonar": null,
+    "harmonized_path_hr": null,
+    "harmonized_path_lr": null,
+    "hr_valid": null,
+    "lr_valid": null,
+    "joint_valid": null,
+    "target_crs": null
+   },
+   "harmonize_record": {
+    "status": "harmonized_confirmatory (sealed: pass/fail, shift, counts only)",
+    "hr_res_m": 1.0,
+    "lr_native": null,
+    "k_sweep": null,
+    "coreg": {
+     "dx_m": -34.0,
+     "dy_m": -34.0,
+     "dz_m": -30.76,
+     "offset_m": 48.08,
+     "n": 66786,
+     "pass": false
+    },
+    "qa_pass": false,
+    "n_valid_tiles_256": 166,
+    "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu01a/KN182L03__MGDS_30193",
+    "target_crs": "EPSG:32623",
+    "hr_tiles_used": 40
+   },
+   "grid_record": {
+    "n_files": 28,
+    "format": 41,
+    "sonar": "SeaBeam 2112",
+    "beamwidth_deg": 2.0,
+    "beamwidth_key": "seabeam 2112",
+    "footprint_depth_m": 2956.9,
+    "cell_m": 103.23,
+    "grid_depth_median": -2999.1,
+    "mode": "raw"
+   },
+   "june_c2a_record": null,
+   "june_c2c_sweep": null,
+   "c2a_inputs_the_step_will_use": {
+    "sonar": "SeaBeam 2112",
+    "sonar_source": "ACQ-R02 grid record grid/KN182L03.json:sonar",
+    "beamwidth_deg": 2.0,
+    "beamwidth_key": "seabeam 2112",
+    "depth": "median of all valid cells of the harmonized lr.tif (read at the sealed step)",
+    "posting": "lr.tif pixel size (read at the sealed step)"
+   },
+   "k_rule_at_the_sealed_step": "sweep run (stage_c2c_recalibrate.sweep)",
+   "raw_swath_dir_present_in_oak_listing": true
+  },
+  {
+   "pair_id": "RC2511__MGDS_32239",
+   "set": "confirmatory",
+   "unit": "nu01b",
+   "lr_cruise": "RC2511",
+   "harmonized_path": "harmonized_confirmatory/nu01b/RC2511__MGDS_32239",
+   "manifest": {
+    "hr_native_res_m": null,
+    "lr_native_res_m": null,
+    "res_ratio": null,
+    "max_recoverable_k": null,
+    "k_sweep_status": null,
+    "ship_products_usable": null,
+    "products_v2_1_flags": null,
+    "qa_status": "pass",
+    "coreg_status": null,
+    "horiz_offset_m": null,
+    "lr_sonar": null,
+    "harmonized_path_hr": null,
+    "harmonized_path_lr": null,
+    "hr_valid": null,
+    "lr_valid": null,
+    "joint_valid": null,
+    "target_crs": null
+   },
+   "harmonize_record": {
+    "status": "harmonized_confirmatory (sealed: pass/fail, shift, counts only)",
+    "hr_res_m": 1.037,
+    "lr_native": null,
+    "k_sweep": null,
+    "coreg": {
+     "dx_m": -23.78,
+     "dy_m": -8.22,
+     "dz_m": 0.02,
+     "offset_m": 25.16,
+     "n": 42694,
+     "pass": true
+    },
+    "qa_pass": true,
+    "n_valid_tiles_256": 800,
+    "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu01b/RC2511__MGDS_32239",
+    "target_crs": "EPSG:32623",
+    "hr_tiles_used": 3
+   },
+   "grid_record": {
+    "n_files": 107,
+    "format": 15,
+    "sonar": "SeaBeam",
+    "beamwidth_deg": 2.0,
+    "beamwidth_key": "seabeam",
+    "footprint_depth_m": 3585.0,
+    "cell_m": 125.15,
+    "grid_depth_median": -3752.4,
+    "mode": "raw"
+   },
+   "june_c2a_record": null,
+   "june_c2c_sweep": null,
+   "c2a_inputs_the_step_will_use": {
+    "sonar": "SeaBeam",
+    "sonar_source": "ACQ-R02 grid record grid/RC2511.json:sonar",
+    "beamwidth_deg": 2.0,
+    "beamwidth_key": "seabeam",
+    "depth": "median of all valid cells of the harmonized lr.tif (read at the sealed step)",
+    "posting": "lr.tif pixel size (read at the sealed step)"
+   },
+   "k_rule_at_the_sealed_step": "sweep run (stage_c2c_recalibrate.sweep)",
+   "raw_swath_dir_present_in_oak_listing": true
+  },
+  {
+   "pair_id": "SUM1004__MGDS_33090",
+   "set": "confirmatory",
+   "unit": "nu03",
+   "lr_cruise": "SUM1004",
+   "harmonized_path": "harmonized_confirmatory/nu03/SUM1004__MGDS_33090",
+   "manifest": {
+    "hr_native_res_m": null,
+    "lr_native_res_m": null,
+    "res_ratio": null,
+    "max_recoverable_k": null,
+    "k_sweep_status": null,
+    "ship_products_usable": null,
+    "products_v2_1_flags": null,
+    "qa_status": "pass (QGIS, rulings R6)",
+    "coreg_status": null,
+    "horiz_offset_m": null,
+    "lr_sonar": null,
+    "harmonized_path_hr": null,
+    "harmonized_path_lr": null,
+    "hr_valid": null,
+    "lr_valid": null,
+    "joint_valid": null,
+    "target_crs": null
+   },
+   "harmonize_record": {
+    "status": "harmonized_confirmatory (sealed: pass/fail, shift, counts only)",
+    "hr_res_m": 1.0,
+    "lr_native": null,
+    "k_sweep": null,
+    "coreg": {
+     "dx_m": 32.01,
+     "dy_m": -34.0,
+     "dz_m": -11.56,
+     "offset_m": 46.7,
+     "n": 59100,
+     "pass": false
+    },
+    "qa_pass": false,
+    "n_valid_tiles_256": 80,
+    "out_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu03/SUM1004__MGDS_33090",
+    "target_crs": "EPSG:32655",
+    "hr_tiles_used": 1
+   },
+   "grid_record": {
+    "n_files": 222,
+    "format": 121,
+    "sonar": "None",
+    "beamwidth_deg": 1.5,
+    "beamwidth_key": "default",
+    "footprint_depth_m": 5757.7,
+    "cell_m": 150.74,
+    "grid_depth_median": -5758.3,
+    "mode": "raw"
+   },
+   "june_c2a_record": null,
+   "june_c2c_sweep": null,
+   "c2a_inputs_the_step_will_use": {
+    "sonar": "None",
+    "sonar_source": "ACQ-R02 grid record grid/SUM1004.json:sonar",
+    "beamwidth_deg": 1.5,
+    "beamwidth_key": "default",
+    "depth": "median of all valid cells of the harmonized lr.tif (read at the sealed step)",
+    "posting": "lr.tif pixel size (read at the sealed step)"
+   },
+   "k_rule_at_the_sealed_step": "sweep run (stage_c2c_recalibrate.sweep)",
+   "raw_swath_dir_present_in_oak_listing": true
+  },
+  {
+   "pair_id": "AT42-03__MGDS_32007",
+   "set": "lockbox",
+   "unit": "lu03",
+   "lr_cruise": "AT42-03",
+   "harmonized_path": "harmonized/AT42-03__MGDS_32007",
+   "manifest": {
+    "hr_native_res_m": 0.989,
+    "lr_native_res_m": 19.7,
+    "res_ratio": 19.92,
+    "max_recoverable_k": null,
+    "k_sweep_status": null,
+    "ship_products_usable": null,
+    "products_v2_1_flags": null,
+    "qa_status": null,
+    "coreg_status": "QGIS_R3_approved; PSR=3.52; offset=6.4m",
+    "horiz_offset_m": 6.4,
+    "lr_sonar": "Kongsberg EM (.all)",
+    "harmonized_path_hr": "harmonized/AT42-03__MGDS_32007/hr.tif",
+    "harmonized_path_lr": "harmonized/AT42-03__MGDS_32007/lr.tif",
+    "hr_valid": "harmonized/AT42-03__MGDS_32007/hr_valid.tif",
+    "lr_valid": "harmonized/AT42-03__MGDS_32007/lr_valid.tif",
+    "joint_valid": "harmonized/AT42-03__MGDS_32007/joint_valid.tif",
+    "target_crs": "EPSG:32616"
+   },
+   "harmonize_record": null,
+   "grid_record": null,
+   "june_c2a_record": {
+    "sonar": "Kongsberg EM (.all)",
+    "beamwidth_deg": 1.0,
+    "depth_m": 948.0,
+    "documented_footprint_m": 16.5,
+    "grid_posting_m": 19.7,
+    "case": "A_ok (posting~footprint)"
+   },
+   "june_c2c_sweep": {
+    "status": "ok",
+    "lr_native_m": 19.7,
+    "max_recoverable_k": 4
+   },
+   "c2a_inputs_the_step_will_use": {
+    "sonar": "Kongsberg EM (.all)",
+    "sonar_source": "manifest v2.1 lr_sonar (no ACQ-R02 grid record for this cruise)",
+    "beamwidth_deg": 1.5,
+    "beamwidth_key": "default",
+    "depth": "median of all valid cells of the harmonized lr.tif (read at the sealed step)",
+    "posting": "lr.tif pixel size (read at the sealed step)"
+   },
+   "k_rule_at_the_sealed_step": "prior k kept, no sweep: June C2c sweep record reports/discovery/stage_c2c_sweep.json (manifest v2.1 row holds no k) (k=4)",
+   "raw_swath_dir_present_in_oak_listing": false
+  },
+  {
+   "pair_id": "TN159__MGDS_21981",
+   "set": "lockbox",
+   "unit": "lu17",
+   "lr_cruise": "TN159",
+   "harmonized_path": "harmonized/TN159__MGDS_21981",
+   "manifest": {
+    "hr_native_res_m": 0.991,
+    "lr_native_res_m": 41.0,
+    "res_ratio": 41.37,
+    "max_recoverable_k": null,
+    "k_sweep_status": null,
+    "ship_products_usable": null,
+    "products_v2_1_flags": null,
+    "qa_status": null,
+    "coreg_status": "QGIS_R3_approved; PSR=5.2; offset=44.79m",
+    "horiz_offset_m": 44.79,
+    "lr_sonar": "Simrad EM (.all) / 20030729",
+    "harmonized_path_hr": "harmonized/TN159__MGDS_21981/hr.tif",
+    "harmonized_path_lr": "harmonized/TN159__MGDS_21981/lr.tif",
+    "hr_valid": "harmonized/TN159__MGDS_21981/hr_valid.tif",
+    "lr_valid": "harmonized/TN159__MGDS_21981/lr_valid.tif",
+    "joint_valid": "harmonized/TN159__MGDS_21981/joint_valid.tif",
+    "target_crs": "EPSG:32609"
+   },
+   "harmonize_record": null,
+   "grid_record": null,
+   "june_c2a_record": {
+    "sonar": "Simrad EM (.all)",
+    "beamwidth_deg": 1.0,
+    "depth_m": 2179.0,
+    "documented_footprint_m": 38.0,
+    "grid_posting_m": 41.0,
+    "case": "A_ok (posting~footprint)"
+   },
+   "june_c2c_sweep": {
+    "status": "ok",
+    "lr_native_m": 41.0,
+    "max_recoverable_k": 4
+   },
+   "c2a_inputs_the_step_will_use": {
+    "sonar": "Simrad EM (.all) / 20030729",
+    "sonar_source": "manifest v2.1 lr_sonar (no ACQ-R02 grid record for this cruise)",
+    "beamwidth_deg": 1.5,
+    "beamwidth_key": "default",
+    "depth": "median of all valid cells of the harmonized lr.tif (read at the sealed step)",
+    "posting": "lr.tif pixel size (read at the sealed step)"
+   },
+   "k_rule_at_the_sealed_step": "prior k kept, no sweep: June C2c sweep record reports/discovery/stage_c2c_sweep.json (manifest v2.1 row holds no k) (k=4)",
+   "raw_swath_dir_present_in_oak_listing": false
+  }
+ ],
+ "lockbox_fetch_plan": {
+  "AT42-03": {
+   "plan_exists": true,
+   "n_swath_files": 116,
+   "swath_advertised_gb": 4.641,
+   "n_nav_files": 116,
+   "nav_advertised_gb": 0.0417,
+   "ncei_sonar_subdirs": [
+    "em122"
+   ],
+   "fetch_list_row": {
+    "live_HR": "MGDS:32007",
+    "fetch_mode": "whole",
+    "whole_GB": "4.32",
+    "subset_GB": "4.32",
+    "reason": "small cruise (<10 GB)"
+   },
+   "source_csv": "reports/discovery/stage_b_file_plan_2026-06-22.csv",
+   "on_oak_raw_lr_swath_listing": false
+  },
+  "TN159": {
+   "plan_exists": true,
+   "n_swath_files": 37,
+   "swath_advertised_gb": 0.861,
+   "n_nav_files": 37,
+   "nav_advertised_gb": 0.0103,
+   "ncei_sonar_subdirs": [
+    "MB"
+   ],
+   "fetch_list_row": {
+    "live_HR": "MGDS:21986;MGDS:21998;MGDS:21981",
+    "fetch_mode": "whole",
+    "whole_GB": "0.8",
+    "subset_GB": "0.8",
+    "reason": "small cruise (<10 GB)"
+   },
+   "source_csv": "reports/discovery/stage_b_file_plan_2026-06-22.csv",
+   "on_oak_raw_lr_swath_listing": false
+  }
+ },
+ "builder_formats": {
+  "confirmatory": {
+   "KN182L03": {
+    "mb_format": 41,
+    "sonar": "SeaBeam 2112",
+    "n_files": 28,
+    "beamwidth_deg": 2.0,
+    "beamwidth_key": "seabeam 2112",
+    "builder_run_on_format_development": [],
+    "builder_run_on_format_acq_r04_corpus": {
+     "n_cruises": 32,
+     "n_blocks": 7648,
+     "n_blocks_products_available": 7648,
+     "n_blocks_products_usable": 6832
+    },
+    "ever_run": true
+   },
+   "RC2511": {
+    "mb_format": 15,
+    "sonar": "SeaBeam",
+    "n_files": 107,
+    "beamwidth_deg": 2.0,
+    "beamwidth_key": "seabeam",
+    "builder_run_on_format_development": [],
+    "builder_run_on_format_acq_r04_corpus": {
+     "n_cruises": 23,
+     "n_blocks": 256,
+     "n_blocks_products_available": 256,
+     "n_blocks_products_usable": 250
+    },
+    "ever_run": true
+   },
+   "SUM1004": {
+    "mb_format": 121,
+    "sonar": "None",
+    "n_files": 222,
+    "beamwidth_deg": 1.5,
+    "beamwidth_key": "default",
+    "builder_run_on_format_development": [
+     "NA076__MGDS_32317"
+    ],
+    "builder_run_on_format_acq_r04_corpus": {
+     "n_cruises": 17,
+     "n_blocks": 3079,
+     "n_blocks_products_available": 3079,
+     "n_blocks_products_usable": 2889
+    },
+    "ever_run": true
+   }
+  },
+  "development_formats": {
+   "21": [
+    "EW9801__MGDS_31425"
+   ],
+   "56": [
+    "KM0923__MGDS_31429"
+   ],
+   "58": [
+    "2009_Amundsen__MGDS_30046",
+    "2009_Amundsen__MGDS_30047",
+    "AR26__MGDS_31838",
+    "AT37-05__MGDS_24043",
+    "AT37-13__MGDS_31199",
+    "AT42-06__MGDS_5174",
+    "FK151121__MGDS_22383",
+    "FK181031__MGDS_24618",
+    "NA080__MGDS_31289",
+    "NA080__MGDS_31290",
+    "NA090__MGDS_31212",
+    "PANGAEA_864677__PANGAEA_889317",
+    "RR1506__MGDS_29779",
+    "TN299__MGDS_27339",
+    "TN299__MGDS_31253",
+    "TN399__MGDS_30373",
+    "TN399__MGDS_33068",
+    "ccz_so268_1",
+    "discol_so242_1",
+    "tag_m127",
+    "2009_Amundsen__MGDS_30046"
+   ],
+   "121": [
+    "NA076__MGDS_32317"
+   ],
+   "162": [
+    "EX1202L2__MGDS_20815"
+   ],
+   "163": [
+    "EX1402L2__MGDS_31073"
+   ],
+   "183": [
+    "EW0207__MGDS_32556"
+   ]
+  },
+  "corpus_formats": {
+   "15": {
+    "n_cruises": 23,
+    "n_blocks": 256,
+    "n_blocks_products_available": 256,
+    "n_blocks_products_usable": 250
+   },
+   "21": {
+    "n_cruises": 16,
+    "n_blocks": 2654,
+    "n_blocks_products_available": 2654,
+    "n_blocks_products_usable": 2487
+   },
+   "24": {
+    "n_cruises": 2,
+    "n_blocks": 293,
+    "n_blocks_products_available": 293,
+    "n_blocks_products_usable": 286
+   },
+   "32": {
+    "n_cruises": 12,
+    "n_blocks": 4379,
+    "n_blocks_products_available": 4379,
+    "n_blocks_products_usable": 3959
+   },
+   "41": {
+    "n_cruises": 32,
+    "n_blocks": 7648,
+    "n_blocks_products_available": 7648,
+    "n_blocks_products_usable": 6832
+   },
+   "43": {
+    "n_cruises": 3,
+    "n_blocks": 594,
+    "n_blocks_products_available": 594,
+    "n_blocks_products_usable": 518
+   },
+   "56": {
+    "n_cruises": 31,
+    "n_blocks": 4814,
+    "n_blocks_products_available": 4814,
+    "n_blocks_products_usable": 4582
+   },
+   "57": {
+    "n_cruises": 8,
+    "n_blocks": 961,
+    "n_blocks_products_available": 961,
+    "n_blocks_products_usable": 939
+   },
+   "58": {
+    "n_cruises": 93,
+    "n_blocks": 22651,
+    "n_blocks_products_available": 22651,
+    "n_blocks_products_usable": 21346
+   },
+   "92": {
+    "n_cruises": 1,
+    "n_blocks": 22,
+    "n_blocks_products_available": 22,
+    "n_blocks_products_usable": 22
+   },
+   "94": {
+    "n_cruises": 8,
+    "n_blocks": 1704,
+    "n_blocks_products_available": 1704,
+    "n_blocks_products_usable": 1588
+   },
+   "121": {
+    "n_cruises": 17,
+    "n_blocks": 3079,
+    "n_blocks_products_available": 3079,
+    "n_blocks_products_usable": 2889
+   },
+   "163": {
+    "n_cruises": 1,
+    "n_blocks": 93,
+    "n_blocks_products_available": 93,
+    "n_blocks_products_usable": 93
+   },
+   "183": {
+    "n_cruises": 8,
+    "n_blocks": 2174,
+    "n_blocks_products_available": 2174,
+    "n_blocks_products_usable": 1776
+   }
+  }
+ },
+ "code_commit": "016f88ea84fe2e136dc7a8359c86ae2d0abaead7"
+}

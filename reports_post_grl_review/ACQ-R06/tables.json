@@ -1,0 +1,162 @@
+{
+ "generated": "2026-10-10T19:33:29+00:00",
+ "code_commit": "016f88ea84fe2e136dc7a8359c86ae2d0abaead7",
+ "run_tag": "full",
+ "run_job": "47263641",
+ "guard": {
+  "readers_blocked": 84,
+  "readers_n": 84,
+  "all_passed": true,
+  "extension": "ACQ-R06: raw_lr_swath/<cruise> blocked for the sealed LR cruises AT42-03, TN159, KN182L03, RC2511, SUM1004",
+  "guard_sha256": "8dee043244e1f3b4a8bd3d82d5c07ffd9cdf0c984fe7e2db392b8002ae915548"
+ },
+ "refusal": {
+  "n_tests": 25,
+  "n_passed": 25,
+  "all_passed": true
+ },
+ "fixed_inputs": {
+  "pairs_v2_1.parquet": "f57f3d8f98b320b136549de300ccac58787129af658a1c62296bab16b6c2ac35",
+  "pairs_v2_1_dropped.csv": "1f1bb181c63df8991ddc981c731bbf048a25ec56cb33435487b356d603073dab",
+  "INTERFACE_CONTRACT_v2.1.md": "0b4aadaf61fb04213ae18771d2a58532f39e9d49b5152ab64738d188a7e18fcb"
+ },
+ "cpu_models": [
+  "AMD EPYC 8224P 24-Core Processor"
+ ],
+ "wall_s_total": 286.8,
+ "host": "sh04-06n21.int",
+ "n_pairs": 10,
+ "n_hr_identical": 7,
+ "n_lr_identical": 7,
+ "n_k_identical": 9,
+ "n_status_identical": 10,
+ "mismatches": [
+  "EW9801__MGDS_31425",
+  "RR1506__MGDS_29779",
+  "2009_Amundsen__MGDS_30047"
+ ],
+ "n_mismatches": 3,
+ "acq_r02_pairs": {
+  "n": 7,
+  "n_lr_identical": 6,
+  "n_k_identical": 7,
+  "n_hr_identical": 7,
+  "mismatches": [
+   "2009_Amundsen__MGDS_30047"
+  ]
+ },
+ "june_pairs": {
+  "n": 3,
+  "ids": [
+   "EW9801__MGDS_31425",
+   "NA076__MGDS_32317",
+   "RR1506__MGDS_29779"
+  ],
+  "n_lr_identical": 1,
+  "n_k_identical": 2,
+  "n_hr_identical": 0
+ },
+ "products": {
+  "n_products_built": 8,
+  "n_products_rasters_within_1e-6": 8,
+  "n_products_bit_identical": 8,
+  "n_products_qa_within_1e-6": 8,
+  "n_products_flags_identical": 8,
+  "n_products_files_same": 7,
+  "products_not_matching": [
+   "TN399__MGDS_33068"
+  ]
+ },
+ "rows": {
+  "n_columns": 63,
+  "n_usable_identical": 8,
+  "differing_columns_union": [
+   "hr_native_res_m",
+   "lr_native_res_m",
+   "manifest_version",
+   "max_recoverable_k",
+   "notes",
+   "products_v2_1_flags",
+   "res_ratio",
+   "ship_products_usable",
+   "ship_products_usable_reason"
+  ]
+ },
+ "c1": {
+  "n_rows": 45,
+  "n_agree": 45,
+  "n_disagree": 0,
+  "n_recorded_null": 0
+ },
+ "sealed": {
+  "lockbox_plan": {
+   "AT42-03": {
+    "n_swath_files": 116,
+    "gb": 4.641,
+    "on_oak": false
+   },
+   "TN159": {
+    "n_swath_files": 37,
+    "gb": 0.861,
+    "on_oak": false
+   }
+  },
+  "formats": {
+   "KN182L03": {
+    "fmt": 41,
+    "ever_run": true,
+    "corpus_blocks": 7648
+   },
+   "RC2511": {
+    "fmt": 15,
+    "ever_run": true,
+    "corpus_blocks": 256
+   },
+   "SUM1004": {
+    "fmt": 121,
+    "ever_run": true,
+    "corpus_blocks": 3079
+   }
+  },
+  "lockbox_k_manifest": {
+   "AT42-03__MGDS_32007": null,
+   "TN159__MGDS_21981": null
+  },
+  "lockbox_k_june": {
+   "AT42-03__MGDS_32007": 4,
+   "TN159__MGDS_21981": 4
+  },
+  "lockbox_bw_default": {
+   "AT42-03__MGDS_32007": 1.5,
+   "TN159__MGDS_21981": 1.5
+  }
+ },
+ "ledger": {
+  "n": 40,
+  "n_not_built": 2,
+  "n_failed": 0
+ },
+ "freeze": {
+  "status": "candidate (not tagged)",
+  "n_files": 20,
+  "sealed_step1_sha256": "1a518c7c81839b9e9e612f7f7a0f1a4c00e0a23f6ad1c5c547ff2d438c186944",
+  "commit": "016f88ea84fe2e136dc7a8359c86ae2d0abaead7",
+  "mbsystem": "5.8.2beta06",
+  "container_digest": "sha256:106f502d9f97ee0e9f5d889726320d1ae73a95fb102069e357a0bb0b35b39668",
+  "sandbox_tar_sha256": "ec8c3f17bf223ff267e3321c2bb284a8203db232fa5b76032065b93b96703ee4",
+  "record_file": "freeze_record_candidate.json",
+  "record_sha256": "d9de53064e8ff5bce58899d1e9eb071c4a5d6dbc3525e0fc8cc9a9b51d332e7a"
+ },
+ "supplement": {
+  "path": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06/rehearsal/supplement_rehearsal_full.parquet",
+  "sha256": "297e0a0e6d88b6e7fa6965822b6beefe1b2201bf25df8bf3849f4576b053b516",
+  "n_rows": 10
+ },
+ "preserve": {
+  "destination": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/acq_r06_rehearsal",
+  "n_files": 136,
+  "n_bad": 0,
+  "sha256sums_sha256": "18cf21b9abd64938ecb03b090c4c4f95c732e77af388cd7630f3d317fba9f3c9",
+  "bytes": 6921455
+ }
+}

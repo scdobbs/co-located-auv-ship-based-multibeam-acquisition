@@ -15,6 +15,7 @@ import builtins
 import hashlib
 import json
 import os
+import re
 import subprocess
 from pathlib import Path
 
@@ -23,6 +24,9 @@ from pathlib import Path
 # --------------------------------------------------------------------------- #
 LOCKBOX = ("AT42-03__MGDS_32007", "TN159__MGDS_21981")
 LOCKBOX_LR_CRUISES = ("AT42-03", "TN159")
+# ACQ-R06 §0.2: the raw swath directories of the sealed LR cruises (lockbox + confirmatory) are blocked too.
+CONFIRMATORY_LR_CRUISES = ("KN182L03", "RC2511", "SUM1004")
+SEALED_LR_CRUISES = LOCKBOX_LR_CRUISES + CONFIRMATORY_LR_CRUISES
 
 REPO = Path(__file__).resolve().parents[2]
 OAK = Path("/oak/stanford/groups/hilley/auv_ship_colocated_bathy")
@@ -96,7 +100,9 @@ assert len(PAIRS_IN_SCOPE) == 34, len(PAIRS_IN_SCOPE)
 assert not any(p in LOCKBOX for p in PAIRS_IN_SCOPE)
 
 
-def _check(path):
+def _check_sealed(path):
+    """Raise PermissionError for any path that names sealed data (lockbox pair ids, harmonized_confirmatory/,
+    the raw swath of a sealed LR cruise)."""
     try:
         s = os.fspath(path) if not isinstance(path, int) else ""
     except TypeError:
@@ -105,9 +111,49 @@ def _check(path):
         if l in str(s):
             raise PermissionError(f"LOCKBOX GUARD (ACQ-R01 §0): refusing to open {s}")
     # ACQ-R04 §0.2: confirmatory outputs are sealed until Phase 4; nothing under harmonized_confirmatory/ is opened.
-    if "harmonized_confirmatory" in str(s).replace("\\", "/").split("/"):
+    u = str(s).replace("\\", "/")
+    if "harmonized_confirmatory" in u.split("/"):
         raise PermissionError(f"CONFIRMATORY GUARD (ACQ-R04 §0.2): refusing to open {s}")
+    # ACQ-R06 §0.2: the raw swath of every sealed LR cruise (lockbox and confirmatory) is blocked as well.
+    for c in SEALED_LR_CRUISES:
+        if re.search(r"raw_lr_swath/" + re.escape(c) + r"(/|$)", u):
+            raise PermissionError(f"SEALED SWATH GUARD (ACQ-R06 §0.2): refusing to open {s} (raw swath of sealed LR cruise {c})")
     return path
+
+
+def _check(path):
+    """Guard entry: every patched reader calls this.  A sealed path is refused unless the Phase 4 allowance
+    (ACQ-R06 Part A, `--mode phase4` of src/phase4/sealed_step1.py, installed only after the sign-off,
+    freeze-record, pair-list and single-run locks have passed) names it explicitly."""
+    try:
+        _check_sealed(path)
+    except PermissionError:
+        try:
+            s = str(os.fspath(path)) if not isinstance(path, int) else ""
+        except TypeError:
+            s = str(path)
+        if _PHASE4_ALLOW and any(t in s for t in _PHASE4_ALLOW):
+            return path
+        raise
+    return path
+
+
+_PHASE4_ALLOW: tuple = ()
+
+
+def install_phase4_allowance(tokens, reason: str) -> tuple:
+    """ACQ-R06 Part A: admit sealed paths containing one of `tokens` (the five sealed pair ids,
+    'harmonized_confirmatory', 'raw_lr_swath/<sealed cruise>').  Called once, by sealed_step1.py in phase4
+    mode, after all its locks; the reason string must say so.  Never called in rehearsal mode."""
+    global _PHASE4_ALLOW
+    if not str(reason).startswith("ACQ-R06 phase4 locks passed"):
+        raise PermissionError("phase4 allowance refused: the reason must state that the phase4 locks passed")
+    _PHASE4_ALLOW = tuple(str(t) for t in tokens)
+    return _PHASE4_ALLOW
+
+
+def phase4_allowance() -> tuple:
+    return _PHASE4_ALLOW
 
 
 _installed = False

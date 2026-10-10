@@ -1,0 +1,243 @@
+{
+ "generated": "2026-10-10T19:27:31+00:00",
+ "n_tests": 25,
+ "n_passed": 25,
+ "all_passed": true,
+ "allowance_after_suite": [],
+ "guard_selftest_after": {
+  "all_passed": true,
+  "controls": {
+   "manifest v2.1": "control read ok",
+   "development cruise fetch manifest (TN399)": "control read ok"
+  }
+ },
+ "safety_net": "C.install_phase4_allowance replaced by a raising function for the suite; restored afterwards",
+ "tests": [
+  {
+   "test": "1 no sign-off file",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/absent.md --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/freeze_ok.json",
+   "expected": "Refusal: LOCK 1 sign-off\u2026",
+   "raised": "Refusal",
+   "message": "LOCK 1 sign-off: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/absent.md does not exist",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "1b sign-off arguments absent",
+   "argv": "--mode phase4 --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/freeze_ok.json",
+   "expected": "Refusal: LOCK 1 sign-off\u2026",
+   "raised": "Refusal",
+   "message": "LOCK 1 sign-off: --signoff and --prereg-sha256 are required in phase4 mode",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "2 wrong pre-registration sha256",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/signoff_wrong.md --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/freeze_ok.json",
+   "expected": "Refusal: LOCK 1 sign-off\u2026",
+   "raised": "Refusal",
+   "message": "LOCK 1 sign-off: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/signoff_wrong.md does not hold the pre-registration sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "3 changed code file (src/acq_r01/common.py hash differs)",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/signoff_ok.md --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/freeze_changed.json",
+   "expected": "Refusal: LOCK 2 freeze record\u2026",
+   "raised": "Refusal",
+   "message": "LOCK 2 freeze record: 1 file(s) differ from freeze_changed.json: [('src/acq_r01/common.py', '000000000000', '8dee043244e1')]",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "3b loaded module absent from the freeze record",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/signoff_ok.md --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/freeze_missing_entry.json",
+   "expected": "Refusal: LOCK 2 freeze record\u2026",
+   "raised": "Refusal",
+   "message": "LOCK 2 freeze record: loaded repo modules not in freeze_missing_entry.json: ['src/discovery/stage_c2c_recalibrate.py']",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "3c freeze record file absent",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/signoff_ok.md --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/absent.json",
+   "expected": "Refusal: LOCK 2 freeze record\u2026",
+   "raised": "Refusal",
+   "message": "LOCK 2 freeze record: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/absent.json does not exist",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "4 development pair in the list",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/signoff_ok.md --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/freeze_ok.json --pairs KN182L03__MGDS_30193,RC2511__MGDS_32239,SUM1004__MGDS_33090,AT42-03__MGDS_32007,TN159__MGDS_21981,FK151121__MGDS_22383",
+   "expected": "Refusal: pair list:\u2026",
+   "raised": "Refusal",
+   "message": "pair list: ['FK151121__MGDS_22383'] not in the phase4 pair list ['KN182L03__MGDS_30193', 'RC2511__MGDS_32239', 'SUM1004__MGDS_33090', 'AT42-03__MGDS_32007', 'TN159__MGDS_21981']",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "4b development pair instead of a sealed pair",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/signoff_ok.md --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/freeze_ok.json --pairs KN182L03__MGDS_30193,RC2511__MGDS_32239,SUM1004__MGDS_33090,AT42-03__MGDS_32007,FK151121__MGDS_22383",
+   "expected": "Refusal: pair list:\u2026",
+   "raised": "Refusal",
+   "message": "pair list: ['FK151121__MGDS_22383'] not in the phase4 pair list ['KN182L03__MGDS_30193', 'RC2511__MGDS_32239', 'SUM1004__MGDS_33090', 'AT42-03__MGDS_32007', 'TN159__MGDS_21981']",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "5 missing sealed pair (four of five)",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/signoff_ok.md --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/freeze_ok.json --pairs KN182L03__MGDS_30193,RC2511__MGDS_32239,SUM1004__MGDS_33090,AT42-03__MGDS_32007",
+   "expected": "Refusal: LOCK 3 pair list\u2026",
+   "raised": "Refusal",
+   "message": "LOCK 3 pair list: must be exactly the five sealed pairs ['AT42-03__MGDS_32007', 'KN182L03__MGDS_30193', 'RC2511__MGDS_32239', 'SUM1004__MGDS_33090', 'TN159__MGDS_21981']; got ['AT42-03__MGDS_32007', 'KN182L03__MGDS_30193', 'RC2511__MGDS_32239', 'SUM1004__MGDS_33090']",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "5b --run-tag given in phase4 mode",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/signoff_ok.md --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/freeze_ok.json --run-tag x",
+   "expected": "Refusal: LOCK 3 pair list\u2026",
+   "raised": "Refusal",
+   "message": "LOCK 3 pair list: --run-tag is not accepted in phase4 mode (outputs go to the pairs' own directories); got 'x'",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "6 supplement already exists",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/signoff_ok.md --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/freeze_ok.json",
+   "expected": "Refusal: LOCK 4 single run\u2026",
+   "raised": "Refusal",
+   "message": "LOCK 4 single run: /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_phase4_sealed.parquet already exists (sha256 252ba82bf416a4b1c08a2eef4a2a08548187824166f7e87aa1a99f4bef90b11b); there is one run",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "7 positive control (all locks pass -> allowance reached -> safety net)",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/signoff_ok.md --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_79i3b7cf/freeze_ok.json",
+   "expected": "SafetyStop: TEST SAFETY NET: the phase4 allowance was reached\u2026",
+   "raised": "SafetyStop",
+   "message": "TEST SAFETY NET: the phase4 allowance was reached (tokens 11, reason 'ACQ-R06 phase4 locks passed: sign-off, freeze record, pair list, single run')",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "8 rule C2 classifier: ValueError cannot infer MB format",
+   "argv": "",
+   "expected": "data_tied=True",
+   "raised": "data_tied=True",
+   "message": "unsupported_format: cannot infer MB format for x.bin",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "8 rule C2 classifier: mblist non-zero rc on the file",
+   "argv": "",
+   "expected": "data_tied=True",
+   "raised": "data_tied=True",
+   "message": "mblist_failed_on_file (MB-System non-zero on the swath file): P: 2 mblist call(s) failed or timed out ([{'file': 'a', 'n_rows': 0, 'rc': 3, 'stderr': 'MBIO Erro",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "8 rule C2 classifier: mblist container timeout",
+   "argv": "",
+   "expected": "data_tied=False",
+   "raised": "data_tied=False",
+   "message": "mblist failed by container timeout / start failure (not data-tied): P: 1 mblist call(s) failed or timed out ([{'file': 'a', 'rc': -9, 'stderr': 'mblist/containe",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "8 rule C2 classifier: mblist container start failure rc 255",
+   "argv": "",
+   "expected": "data_tied=False",
+   "raised": "data_tied=False",
+   "message": "mblist failed by container timeout / start failure (not data-tied): P: 1 mblist call(s) failed or timed out ([{'file': 'a', 'rc': 255, 'stderr': ''}])",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "8 rule C2 classifier: fetch incomplete",
+   "argv": "",
+   "expected": "data_tied=False",
+   "raised": "data_tied=False",
+   "message": "RuntimeError: X: fetch incomplete",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "8 rule C2 classifier: missing swath directory",
+   "argv": "",
+   "expected": "data_tied=False",
+   "raised": "data_tied=False",
+   "message": "FileNotFoundError: raw_lr_swath/X",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "8 rule C2 classifier: assertion inside the builder",
+   "argv": "",
+   "expected": "data_tied=False",
+   "raised": "data_tied=False",
+   "message": "AssertionError: median count != bin count",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "9 rule C1: no products (no k)",
+   "argv": "",
+   "expected": "usable=False",
+   "raised": "usable=False",
+   "message": "no products (no k)",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "9 rule C1: unavailable",
+   "argv": "",
+   "expected": "usable=False",
+   "raised": "usable=False",
+   "message": "products unavailable: no soundings",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "9 rule C1: available, no flags",
+   "argv": "",
+   "expected": "usable=True",
+   "raised": "usable=True",
+   "message": "available, no contract-v2.1 flags (rule C1)",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "9 rule C1: available, registration_shift",
+   "argv": "",
+   "expected": "usable=False",
+   "raised": "usable=False",
+   "message": "flagged: registration_shift (contract v2.1, rule C1)",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "9 rule C1: available, vertical_offset",
+   "argv": "",
+   "expected": "usable=False",
+   "raised": "usable=False",
+   "message": "flagged: vertical_offset (contract v2.1, rule C1)",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "9 rule C1: available, insufficient_overlap",
+   "argv": "",
+   "expected": "usable=False",
+   "raised": "usable=False",
+   "message": "flagged: insufficient_overlap (contract v2.1, rule C1)",
+   "allowance_after": [],
+   "passed": true
+  }
+ ],
+ "code_commit": "016f88ea84fe2e136dc7a8359c86ae2d0abaead7"
+}

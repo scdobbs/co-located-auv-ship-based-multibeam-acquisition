@@ -1,0 +1,2170 @@
+{
+ "generated": "2026-10-10T19:29:50+00:00",
+ "run_tag": "full",
+ "run_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06/rehearsal/step1_run_rehearsal_full.json",
+ "n_pairs": 10,
+ "n_hr_identical": 7,
+ "n_lr_identical": 7,
+ "n_k_identical": 9,
+ "n_status_identical": 10,
+ "mismatches": [
+  "EW9801__MGDS_31425",
+  "RR1506__MGDS_29779",
+  "2009_Amundsen__MGDS_30047"
+ ],
+ "n_products_built": 8,
+ "n_products_rasters_within_1e-6": 8,
+ "n_products_bit_identical": 8,
+ "n_products_qa_within_1e-6": 8,
+ "n_products_flags_identical": 8,
+ "n_products_files_same": 7,
+ "products_not_matching": [
+  "TN399__MGDS_33068"
+ ],
+ "n_usable_identical": 8,
+ "supplement_sha256": "297e0a0e6d88b6e7fa6965822b6beefe1b2201bf25df8bf3849f4576b053b516",
+ "cpu_models": [
+  "AMD EPYC 8224P 24-Core Processor"
+ ],
+ "wall_s_total": 286.8,
+ "pairs": [
+  {
+   "pair_id": "TN399__MGDS_33068",
+   "unit": "lu05",
+   "designation": "development (joins existing unit)",
+   "wall_s": 2.9,
+   "cpu_model": "AMD EPYC 8224P 24-Core Processor",
+   "host": "sh04-06n21.int",
+   "spacings": [
+    {
+     "quantity": "hr_native_res_m",
+     "computed": 1.0,
+     "manifest": 1.0,
+     "identical": true,
+     "diff": 0.0,
+     "manifest_ndp": 1
+    },
+    {
+     "quantity": "lr_native_res_m",
+     "computed": 44.22,
+     "manifest": 44.22,
+     "identical": true,
+     "diff": 0.0,
+     "manifest_ndp": 2
+    }
+   ],
+   "c2a": {
+    "beam_footprint_m": 44.22,
+    "posting_m": 44.19,
+    "depth_m": 2533.8,
+    "depth_basis": "median of all valid cells of the harmonized lr.tif (harmonize_new.py)",
+    "beamwidth_deg": 1.0,
+    "beamwidth_key": "em302",
+    "sonar": "Kongsberg EM302",
+    "sonar_source": "ACQ-R02 grid record grid/TN399.json:sonar"
+   },
+   "k": {
+    "computed": 16,
+    "manifest": 16,
+    "identical": true,
+    "status_computed": "ok",
+    "status_manifest": "ok",
+    "status_identical": true,
+    "k_source": "stage_c2c_recalibrate.sweep (this run)",
+    "per_k": {
+     "2": "recoverable_signal",
+     "4": "recoverable_signal",
+     "8": "recoverable_signal",
+     "16": "recoverable_signal",
+     "32": "no_spectrum"
+    }
+   },
+   "products": {
+    "built": true,
+    "rasters": {
+     "ship_count": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_sd": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_rsd": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_xtrack_frac": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_beam_angle": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_mean_regrid": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_median_regrid": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     }
+    },
+    "all_rasters_nan_identical": true,
+    "all_rasters_within_1e-6": true,
+    "max_abs_diff_over_rasters": 0.0,
+    "all_rasters_bit_identical": true,
+    "qa": {
+     "n_common_cells": {
+      "existing": 7763,
+      "rehearsal": 7763,
+      "within_1e-6": true
+     },
+     "median_offset_m": {
+      "existing": 0.085,
+      "rehearsal": 0.085,
+      "within_1e-6": true
+     },
+     "rms_m": {
+      "existing": 2.6037,
+      "rehearsal": 2.6037,
+      "within_1e-6": true
+     },
+     "robust_sigma_m": {
+      "existing": 0.6287,
+      "rehearsal": 0.6287,
+      "within_1e-6": true
+     },
+     "rms_over_median_s_lr": {
+      "existing": null,
+      "rehearsal": null,
+      "within_1e-6": true
+     },
+     "robust_sigma_over_median_s_lr": {
+      "existing": null,
+      "rehearsal": null,
+      "within_1e-6": true
+     },
+     "sigma0_m": {
+      "existing": 0.6287,
+      "rehearsal": 0.6287,
+      "within_1e-6": true
+     },
+     "sigma_argmin_m": {
+      "existing": 0.5656,
+      "rehearsal": 0.5656,
+      "within_1e-6": true
+     },
+     "gain_m": {
+      "existing": 0.0632,
+      "rehearsal": 0.0632,
+      "within_1e-6": true
+     },
+     "shift_argmin_cells": {
+      "existing": [
+       0.0,
+       -0.25
+      ],
+      "rehearsal": [
+       0.0,
+       -0.25
+      ],
+      "within_1e-6": true
+     }
+    },
+    "qa_all_within_1e-6": true,
+    "flags_existing": [],
+    "flags_rehearsal": [],
+    "flags_identical": true,
+    "s_lr_source_existing": "none (new pair: no CNN-repo tile table yet)",
+    "s_lr_source_rehearsal": "none (new pair: no CNN-repo tile table yet)",
+    "files": {
+     "n_existing": 10,
+     "n_rehearsal": 12,
+     "same": false,
+     "lost": [],
+     "added": [
+      "0094_20220122_160105_TGT.all.mb58.gz",
+      "0101_20220122_193104_TGT.all.mb58.gz"
+     ],
+     "n_read_rc0": 12,
+     "n_listed": 12
+    },
+    "mb_format": {
+     "existing": 58,
+     "rehearsal": 58
+    },
+    "beam_angle_method": {
+     "existing": "launch_angle",
+     "rehearsal": "launch_angle"
+    },
+    "wall_s_products": 1.7,
+    "nproc": 6,
+    "batch_files": 1
+   },
+   "row": {
+    "n_columns": 63,
+    "n_identical": 60,
+    "differing": [
+     {
+      "column": "notes",
+      "identical": false,
+      "manifest": "ACQ-R02 \u00a76 R01; joint 3.088 km2, 46 tiles; HR cruise AT50-21",
+      "supplement": "ACQ-R02 \u00a76 R01; joint 3.088 km2, 46 tiles; HR cruise AT50-21 | ACQ-R06 step1 (re"
+     },
+     {
+      "column": "ship_products_usable_reason",
+      "identical": false,
+      "manifest": "available, no v2.1 flags",
+      "supplement": "available, no contract-v2.1 flags (rule C1)"
+     },
+     {
+      "column": "manifest_version",
+      "identical": false,
+      "manifest": "2.1",
+      "supplement": "2.1+phase4_step1"
+     }
+    ],
+    "filled_columns": []
+   },
+   "usable": {
+    "computed": true,
+    "reason": "available, no contract-v2.1 flags (rule C1)",
+    "manifest": true,
+    "identical": true
+   },
+   "mismatch_k_or_lr_native": false
+  },
+  {
+   "pair_id": "AT42-06__MGDS_5174",
+   "unit": "lu05",
+   "designation": "development (ruling H1)",
+   "wall_s": 14.3,
+   "cpu_model": "AMD EPYC 8224P 24-Core Processor",
+   "host": "sh04-06n21.int",
+   "spacings": [
+    {
+     "quantity": "hr_native_res_m",
+     "computed": 4.987,
+     "manifest": 4.987,
+     "identical": true,
+     "diff": 0.0,
+     "manifest_ndp": 3
+    },
+    {
+     "quantity": "lr_native_res_m",
+     "computed": 44.5,
+     "manifest": 44.5,
+     "identical": true,
+     "diff": 0.0,
+     "manifest_ndp": 1
+    }
+   ],
+   "c2a": {
+    "beam_footprint_m": 44.5,
+    "posting_m": 43.63,
+    "depth_m": 2549.7,
+    "depth_basis": "median of all valid cells of the harmonized lr.tif (harmonize_new.py)",
+    "beamwidth_deg": 1.0,
+    "beamwidth_key": "em122",
+    "sonar": "Kongsberg EM122",
+    "sonar_source": "ACQ-R02 grid record grid/AT42-06.json:sonar"
+   },
+   "k": {
+    "computed": 2,
+    "manifest": 2,
+    "identical": true,
+    "status_computed": "ok",
+    "status_manifest": "ok",
+    "status_identical": true,
+    "k_source": "stage_c2c_recalibrate.sweep (this run)",
+    "per_k": {
+     "2": "recoverable_signal",
+     "4": "no_spectrum",
+     "8": "no_spectrum",
+     "16": "no_spectrum",
+     "32": "no_spectrum"
+    }
+   },
+   "products": {
+    "built": true,
+    "rasters": {
+     "ship_count": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_sd": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_rsd": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_xtrack_frac": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_beam_angle": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_mean_regrid": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_median_regrid": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     }
+    },
+    "all_rasters_nan_identical": true,
+    "all_rasters_within_1e-6": true,
+    "max_abs_diff_over_rasters": 0.0,
+    "all_rasters_bit_identical": true,
+    "qa": {
+     "n_common_cells": {
+      "existing": 12202,
+      "rehearsal": 12202,
+      "within_1e-6": true
+     },
+     "median_offset_m": {
+      "existing": 0.0353,
+      "rehearsal": 0.0353,
+      "within_1e-6": true
+     },
+     "rms_m": {
+      "existing": 1.6943,
+      "rehearsal": 1.6943,
+      "within_1e-6": true
+     },
+     "robust_sigma_m": {
+      "existing": 0.9473,
+      "rehearsal": 0.9473,
+      "within_1e-6": true
+     },
+     "rms_over_median_s_lr": {
+      "existing": null,
+      "rehearsal": null,
+      "within_1e-6": true
+     },
+     "robust_sigma_over_median_s_lr": {
+      "existing": null,
+      "rehearsal": null,
+      "within_1e-6": true
+     },
+     "sigma0_m": {
+      "existing": 0.9473,
+      "rehearsal": 0.9473,
+      "within_1e-6": true
+     },
+     "sigma_argmin_m": {
+      "existing": 0.769,
+      "rehearsal": 0.769,
+      "within_1e-6": true
+     },
+     "gain_m": {
+      "existing": 0.1783,
+      "rehearsal": 0.1783,
+      "within_1e-6": true
+     },
+     "shift_argmin_cells": {
+      "existing": [
+       0.0,
+       0.25
+      ],
+      "rehearsal": [
+       0.0,
+       0.25
+      ],
+      "within_1e-6": true
+     }
+    },
+    "qa_all_within_1e-6": true,
+    "flags_existing": [],
+    "flags_rehearsal": [],
+    "flags_identical": true,
+    "s_lr_source_existing": "none (new pair: no CNN-repo tile table yet)",
+    "s_lr_source_rehearsal": "none (new pair: no CNN-repo tile table yet)",
+    "files": {
+     "n_existing": 90,
+     "n_rehearsal": 90,
+     "same": true,
+     "lost": [],
+     "added": [],
+     "n_read_rc0": 90,
+     "n_listed": 90
+    },
+    "mb_format": {
+     "existing": 58,
+     "rehearsal": 58
+    },
+    "beam_angle_method": {
+     "existing": "launch_angle",
+     "rehearsal": "launch_angle"
+    },
+    "wall_s_products": 13.7,
+    "nproc": 6,
+    "batch_files": 1
+   },
+   "row": {
+    "n_columns": 63,
+    "n_identical": 60,
+    "differing": [
+     {
+      "column": "notes",
+      "identical": false,
+      "manifest": "ACQ-R02 \u00a76 H1; joint 8.267 km2, 4 tiles; HR cruise AT07-04 | location: EPR 9\u00b0N (",
+      "supplement": "ACQ-R02 \u00a76 H1; joint 8.267 km2, 4 tiles; HR cruise AT07-04 | location: EPR 9\u00b0N ("
+     },
+     {
+      "column": "ship_products_usable_reason",
+      "identical": false,
+      "manifest": "available, no v2.1 flags",
+      "supplement": "available, no contract-v2.1 flags (rule C1)"
+     },
+     {
+      "column": "manifest_version",
+      "identical": false,
+      "manifest": "2.1",
+      "supplement": "2.1+phase4_step1"
+     }
+    ],
+    "filled_columns": []
+   },
+   "usable": {
+    "computed": true,
+    "reason": "available, no contract-v2.1 flags (rule C1)",
+    "manifest": true,
+    "identical": true
+   },
+   "mismatch_k_or_lr_native": false
+  },
+  {
+   "pair_id": "EW9801__MGDS_31425",
+   "unit": "lu07",
+   "designation": "development",
+   "wall_s": 2.6,
+   "cpu_model": "AMD EPYC 8224P 24-Core Processor",
+   "host": "sh04-06n21.int",
+   "spacings": [
+    {
+     "quantity": "hr_native_res_m",
+     "computed": 2.067,
+     "manifest": 1.982,
+     "identical": false,
+     "diff": 0.085,
+     "manifest_ndp": 3
+    },
+    {
+     "quantity": "lr_native_res_m",
+     "computed": 48.18,
+     "manifest": 50.4,
+     "identical": false,
+     "diff": -2.22,
+     "manifest_ndp": 1
+    }
+   ],
+   "c2a": {
+    "beam_footprint_m": 48.18,
+    "posting_m": 48.0,
+    "depth_m": 1200.0,
+    "depth_basis": "median of all valid cells of the harmonized lr.tif (harmonize_new.py)",
+    "beamwidth_deg": 2.3,
+    "beamwidth_key": "hydrosweep",
+    "sonar": "Atlas Hydrosweep DS",
+    "sonar_source": "manifest v2.1 lr_sonar (no ACQ-R02 grid record for this cruise)"
+   },
+   "k": {
+    "computed": 8,
+    "manifest": 2,
+    "identical": false,
+    "status_computed": "ok",
+    "status_manifest": "ok",
+    "status_identical": true,
+    "k_source": "stage_c2c_recalibrate.sweep (this run)",
+    "per_k": {
+     "2": "recoverable_signal",
+     "4": "roughness_only",
+     "8": "recoverable_signal",
+     "16": "no_spectrum",
+     "32": "no_spectrum"
+    }
+   },
+   "products": {
+    "built": true,
+    "rasters": {
+     "ship_count": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_sd": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_rsd": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_xtrack_frac": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_beam_angle": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_mean_regrid": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_median_regrid": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     }
+    },
+    "all_rasters_nan_identical": true,
+    "all_rasters_within_1e-6": true,
+    "max_abs_diff_over_rasters": 0.0,
+    "all_rasters_bit_identical": true,
+    "qa": {
+     "n_common_cells": {
+      "existing": 5255,
+      "rehearsal": 5255,
+      "within_1e-6": true
+     },
+     "median_offset_m": {
+      "existing": 0.1276,
+      "rehearsal": 0.1276,
+      "within_1e-6": true
+     },
+     "rms_m": {
+      "existing": 8.7734,
+      "rehearsal": 8.7734,
+      "within_1e-6": true
+     },
+     "robust_sigma_m": {
+      "existing": 4.7803,
+      "rehearsal": 4.7803,
+      "within_1e-6": true
+     },
+     "rms_over_median_s_lr": {
+      "existing": 0.2436,
+      "rehearsal": 0.2436,
+      "within_1e-6": true
+     },
+     "robust_sigma_over_median_s_lr": {
+      "existing": 0.1327,
+      "rehearsal": 0.1327,
+      "within_1e-6": true
+     },
+     "sigma0_m": {
+      "existing": 4.7803,
+      "rehearsal": 4.7803,
+      "within_1e-6": true
+     },
+     "sigma_argmin_m": {
+      "existing": 4.1392,
+      "rehearsal": 4.1392,
+      "within_1e-6": true
+     },
+     "gain_m": {
+      "existing": 0.641,
+      "rehearsal": 0.641,
+      "within_1e-6": true
+     },
+     "shift_argmin_cells": {
+      "existing": [
+       -0.25,
+       -0.25
+      ],
+      "rehearsal": [
+       -0.25,
+       -0.25
+      ],
+      "within_1e-6": true
+     }
+    },
+    "qa_all_within_1e-6": true,
+    "flags_existing": [],
+    "flags_rehearsal": [],
+    "flags_identical": true,
+    "s_lr_source_existing": "R03 patches_clean_expanded/patch_index.parquet",
+    "s_lr_source_rehearsal": "R03 patches_clean_expanded/patch_index.parquet",
+    "files": {
+     "n_existing": 25,
+     "n_rehearsal": 25,
+     "same": true,
+     "lost": [],
+     "added": [],
+     "n_read_rc0": 25,
+     "n_listed": 25
+    },
+    "mb_format": {
+     "existing": 21,
+     "rehearsal": 21
+    },
+    "beam_angle_method": {
+     "existing": "geometric",
+     "rehearsal": "geometric"
+    },
+    "wall_s_products": 2.0,
+    "nproc": 6,
+    "batch_files": 1
+   },
+   "row": {
+    "n_columns": 63,
+    "n_identical": 56,
+    "differing": [
+     {
+      "column": "hr_native_res_m",
+      "identical": false,
+      "manifest": 1.982,
+      "supplement": 2.067
+     },
+     {
+      "column": "lr_native_res_m",
+      "identical": false,
+      "manifest": 50.4,
+      "supplement": 48.18
+     },
+     {
+      "column": "res_ratio",
+      "identical": false,
+      "manifest": 25.43,
+      "supplement": 23.31
+     },
+     {
+      "column": "notes",
+      "identical": false,
+      "manifest": "LR_ship_cruise=EW9801 (R/V Maurice Ewing, Atlas Hydrosweep DS); HR_AUV=TN293/Loi",
+      "supplement": "LR_ship_cruise=EW9801 (R/V Maurice Ewing, Atlas Hydrosweep DS); HR_AUV=TN293/Loi"
+     },
+     {
+      "column": "max_recoverable_k",
+      "identical": false,
+      "manifest": 2.0,
+      "supplement": 8.0
+     },
+     {
+      "column": "ship_products_usable_reason",
+      "identical": false,
+      "manifest": "available, no v2.1 flags",
+      "supplement": "available, no contract-v2.1 flags (rule C1)"
+     },
+     {
+      "column": "manifest_version",
+      "identical": false,
+      "manifest": "2.1",
+      "supplement": "2.1+phase4_step1"
+     }
+    ],
+    "filled_columns": []
+   },
+   "usable": {
+    "computed": true,
+    "reason": "available, no contract-v2.1 flags (rule C1)",
+    "manifest": true,
+    "identical": true
+   },
+   "mismatch_k_or_lr_native": true
+  },
+  {
+   "pair_id": "NA076__MGDS_32317",
+   "unit": "lu11",
+   "designation": "development",
+   "wall_s": 19.1,
+   "cpu_model": "AMD EPYC 8224P 24-Core Processor",
+   "host": "sh04-06n21.int",
+   "spacings": [
+    {
+     "quantity": "hr_native_res_m",
+     "computed": 1.057,
+     "manifest": 1.0,
+     "identical": false,
+     "diff": 0.057,
+     "manifest_ndp": 1
+    },
+    {
+     "quantity": "lr_native_res_m",
+     "computed": 15.19,
+     "manifest": 15.2,
+     "identical": true,
+     "diff": -0.01,
+     "manifest_ndp": 1
+    }
+   ],
+   "c2a": {
+    "beam_footprint_m": 15.12,
+    "posting_m": 15.19,
+    "depth_m": 866.6,
+    "depth_basis": "median of all valid cells of the harmonized lr.tif (harmonize_new.py)",
+    "beamwidth_deg": 1.0,
+    "beamwidth_key": "em302",
+    "sonar": "Kongsberg EM302",
+    "sonar_source": "manifest v2.1 lr_sonar (no ACQ-R02 grid record for this cruise)"
+   },
+   "k": {
+    "computed": 4,
+    "manifest": 4,
+    "identical": true,
+    "status_computed": "ok",
+    "status_manifest": "ok",
+    "status_identical": true,
+    "k_source": "stage_c2c_recalibrate.sweep (this run)",
+    "per_k": {
+     "2": "recoverable_signal",
+     "4": "recoverable_signal",
+     "8": "no_spectrum",
+     "16": "no_spectrum",
+     "32": "no_spectrum"
+    }
+   },
+   "products": {
+    "built": true,
+    "rasters": {
+     "ship_count": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_sd": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_rsd": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_xtrack_frac": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_beam_angle": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_mean_regrid": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_median_regrid": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     }
+    },
+    "all_rasters_nan_identical": true,
+    "all_rasters_within_1e-6": true,
+    "max_abs_diff_over_rasters": 0.0,
+    "all_rasters_bit_identical": true,
+    "qa": {
+     "n_common_cells": {
+      "existing": 23613,
+      "rehearsal": 23613,
+      "within_1e-6": true
+     },
+     "median_offset_m": {
+      "existing": 0.0271,
+      "rehearsal": 0.0271,
+      "within_1e-6": true
+     },
+     "rms_m": {
+      "existing": 0.5061,
+      "rehearsal": 0.5061,
+      "within_1e-6": true
+     },
+     "robust_sigma_m": {
+      "existing": 0.4211,
+      "rehearsal": 0.4211,
+      "within_1e-6": true
+     },
+     "rms_over_median_s_lr": {
+      "existing": 0.2261,
+      "rehearsal": 0.2261,
+      "within_1e-6": true
+     },
+     "robust_sigma_over_median_s_lr": {
+      "existing": 0.1882,
+      "rehearsal": 0.1882,
+      "within_1e-6": true
+     },
+     "sigma0_m": {
+      "existing": 0.4211,
+      "rehearsal": 0.4211,
+      "within_1e-6": true
+     },
+     "sigma_argmin_m": {
+      "existing": 0.2759,
+      "rehearsal": 0.2759,
+      "within_1e-6": true
+     },
+     "gain_m": {
+      "existing": 0.1453,
+      "rehearsal": 0.1453,
+      "within_1e-6": true
+     },
+     "shift_argmin_cells": {
+      "existing": [
+       0.25,
+       -0.25
+      ],
+      "rehearsal": [
+       0.25,
+       -0.25
+      ],
+      "within_1e-6": true
+     }
+    },
+    "qa_all_within_1e-6": true,
+    "flags_existing": [],
+    "flags_rehearsal": [],
+    "flags_identical": true,
+    "s_lr_source_existing": "R03 patches_clean_expanded/patch_index.parquet",
+    "s_lr_source_rehearsal": "R03 patches_clean_expanded/patch_index.parquet",
+    "files": {
+     "n_existing": 34,
+     "n_rehearsal": 34,
+     "same": true,
+     "lost": [],
+     "added": [],
+     "n_read_rc0": 34,
+     "n_listed": 34
+    },
+    "mb_format": {
+     "existing": 121,
+     "rehearsal": 121
+    },
+    "beam_angle_method": {
+     "existing": "launch_angle",
+     "rehearsal": "launch_angle"
+    },
+    "wall_s_products": 16.4,
+    "nproc": 6,
+    "batch_files": 1
+   },
+   "row": {
+    "n_columns": 63,
+    "n_identical": 57,
+    "differing": [
+     {
+      "column": "hr_native_res_m",
+      "identical": false,
+      "manifest": 1.0,
+      "supplement": 1.057
+     },
+     {
+      "column": "lr_native_res_m",
+      "identical": false,
+      "manifest": 15.2,
+      "supplement": 15.19
+     },
+     {
+      "column": "res_ratio",
+      "identical": false,
+      "manifest": 15.2,
+      "supplement": 14.37
+     },
+     {
+      "column": "notes",
+      "identical": false,
+      "manifest": "C1 float recovery; LR_ship_cruise=NA076 (E/V Nautilus, Kongsberg EM302, LR_acq=2",
+      "supplement": "C1 float recovery; LR_ship_cruise=NA076 (E/V Nautilus, Kongsberg EM302, LR_acq=2"
+     },
+     {
+      "column": "ship_products_usable_reason",
+      "identical": false,
+      "manifest": "available, no v2.1 flags",
+      "supplement": "available, no contract-v2.1 flags (rule C1)"
+     },
+     {
+      "column": "manifest_version",
+      "identical": false,
+      "manifest": "2.1",
+      "supplement": "2.1+phase4_step1"
+     }
+    ],
+    "filled_columns": []
+   },
+   "usable": {
+    "computed": true,
+    "reason": "available, no contract-v2.1 flags (rule C1)",
+    "manifest": true,
+    "identical": true
+   },
+   "mismatch_k_or_lr_native": false
+  },
+  {
+   "pair_id": "EX1402L2__MGDS_31073",
+   "unit": "vu02",
+   "designation": "development (ruling H1)",
+   "wall_s": 142.8,
+   "cpu_model": "AMD EPYC 8224P 24-Core Processor",
+   "host": "sh04-06n21.int",
+   "spacings": [
+    {
+     "quantity": "hr_native_res_m",
+     "computed": 1.0,
+     "manifest": 1.0,
+     "identical": true,
+     "diff": 0.0,
+     "manifest_ndp": 1
+    },
+    {
+     "quantity": "lr_native_res_m",
+     "computed": 16.37,
+     "manifest": 16.37,
+     "identical": true,
+     "diff": 0.0,
+     "manifest_ndp": 2
+    }
+   ],
+   "c2a": {
+    "beam_footprint_m": 8.94,
+    "posting_m": 16.37,
+    "depth_m": 512.1,
+    "depth_basis": "median of all valid cells of the harmonized lr.tif (harmonize_new.py)",
+    "beamwidth_deg": 1.0,
+    "beamwidth_key": "em302",
+    "sonar": "Kongsberg EM302",
+    "sonar_source": "ACQ-R02 grid record grid/EX1402L2.json:sonar"
+   },
+   "k": {
+    "computed": 4,
+    "manifest": 4,
+    "identical": true,
+    "status_computed": "ok",
+    "status_manifest": "ok",
+    "status_identical": true,
+    "k_source": "stage_c2c_recalibrate.sweep (this run)",
+    "per_k": {
+     "2": "recoverable_signal",
+     "4": "recoverable_signal",
+     "8": "no_spectrum",
+     "16": "no_spectrum",
+     "32": "no_spectrum"
+    }
+   },
+   "products": {
+    "built": true,
+    "rasters": {
+     "ship_count": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_sd": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_rsd": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_xtrack_frac": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_beam_angle": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_mean_regrid": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_median_regrid": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     }
+    },
+    "all_rasters_nan_identical": true,
+    "all_rasters_within_1e-6": true,
+    "max_abs_diff_over_rasters": 0.0,
+    "all_rasters_bit_identical": true,
+    "qa": {
+     "n_common_cells": {
+      "existing": 10834,
+      "rehearsal": 10834,
+      "within_1e-6": true
+     },
+     "median_offset_m": {
+      "existing": 0.0499,
+      "rehearsal": 0.0499,
+      "within_1e-6": true
+     },
+     "rms_m": {
+      "existing": 0.4795,
+      "rehearsal": 0.4795,
+      "within_1e-6": true
+     },
+     "robust_sigma_m": {
+      "existing": 0.3644,
+      "rehearsal": 0.3644,
+      "within_1e-6": true
+     },
+     "rms_over_median_s_lr": {
+      "existing": null,
+      "rehearsal": null,
+      "within_1e-6": true
+     },
+     "robust_sigma_over_median_s_lr": {
+      "existing": null,
+      "rehearsal": null,
+      "within_1e-6": true
+     },
+     "sigma0_m": {
+      "existing": 0.3644,
+      "rehearsal": 0.3644,
+      "within_1e-6": true
+     },
+     "sigma_argmin_m": {
+      "existing": 0.3377,
+      "rehearsal": 0.3377,
+      "within_1e-6": true
+     },
+     "gain_m": {
+      "existing": 0.0267,
+      "rehearsal": 0.0267,
+      "within_1e-6": true
+     },
+     "shift_argmin_cells": {
+      "existing": [
+       0.0,
+       -0.25
+      ],
+      "rehearsal": [
+       0.0,
+       -0.25
+      ],
+      "within_1e-6": true
+     }
+    },
+    "qa_all_within_1e-6": true,
+    "flags_existing": [],
+    "flags_rehearsal": [],
+    "flags_identical": true,
+    "s_lr_source_existing": "none (new pair: no CNN-repo tile table yet)",
+    "s_lr_source_rehearsal": "none (new pair: no CNN-repo tile table yet)",
+    "files": {
+     "n_existing": 311,
+     "n_rehearsal": 311,
+     "same": true,
+     "lost": [],
+     "added": [],
+     "n_read_rc0": 311,
+     "n_listed": 311
+    },
+    "mb_format": {
+     "existing": 163,
+     "rehearsal": 163
+    },
+    "beam_angle_method": {
+     "existing": "geometric",
+     "rehearsal": "geometric"
+    },
+    "wall_s_products": 141.8,
+    "nproc": 6,
+    "batch_files": 1
+   },
+   "row": {
+    "n_columns": 63,
+    "n_identical": 60,
+    "differing": [
+     {
+      "column": "notes",
+      "identical": false,
+      "manifest": "ACQ-R02 \u00a76 H1; joint 1.832 km2, 27 tiles; HR cruise AT26-14",
+      "supplement": "ACQ-R02 \u00a76 H1; joint 1.832 km2, 27 tiles; HR cruise AT26-14 | ACQ-R06 step1 (reh"
+     },
+     {
+      "column": "ship_products_usable_reason",
+      "identical": false,
+      "manifest": "available, no v2.1 flags",
+      "supplement": "available, no contract-v2.1 flags (rule C1)"
+     },
+     {
+      "column": "manifest_version",
+      "identical": false,
+      "manifest": "2.1",
+      "supplement": "2.1+phase4_step1"
+     }
+    ],
+    "filled_columns": []
+   },
+   "usable": {
+    "computed": true,
+    "reason": "available, no contract-v2.1 flags (rule C1)",
+    "manifest": true,
+    "identical": true
+   },
+   "mismatch_k_or_lr_native": false
+  },
+  {
+   "pair_id": "FK151121__MGDS_22383",
+   "unit": "nu00",
+   "designation": "development",
+   "wall_s": 50.0,
+   "cpu_model": "AMD EPYC 8224P 24-Core Processor",
+   "host": "sh04-06n21.int",
+   "spacings": [
+    {
+     "quantity": "hr_native_res_m",
+     "computed": 1.0,
+     "manifest": 1.0,
+     "identical": true,
+     "diff": 0.0,
+     "manifest_ndp": 1
+    },
+    {
+     "quantity": "lr_native_res_m",
+     "computed": 65.99,
+     "manifest": 65.99,
+     "identical": true,
+     "diff": 0.0,
+     "manifest_ndp": 2
+    }
+   ],
+   "c2a": {
+    "beam_footprint_m": 65.99,
+    "posting_m": 65.91,
+    "depth_m": 3780.7,
+    "depth_basis": "median of all valid cells of the harmonized lr.tif (harmonize_new.py)",
+    "beamwidth_deg": 1.0,
+    "beamwidth_key": "em302",
+    "sonar": "Kongsberg EM302; EM710",
+    "sonar_source": "ACQ-R02 grid record grid/FK151121.json:sonar"
+   },
+   "k": {
+    "computed": 16,
+    "manifest": 16,
+    "identical": true,
+    "status_computed": "ok",
+    "status_manifest": "ok",
+    "status_identical": true,
+    "k_source": "stage_c2c_recalibrate.sweep (this run)",
+    "per_k": {
+     "2": "recoverable_signal",
+     "4": "recoverable_signal",
+     "8": "recoverable_signal",
+     "16": "recoverable_signal",
+     "32": "no_spectrum"
+    }
+   },
+   "products": {
+    "built": true,
+    "rasters": {
+     "ship_count": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_sd": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_rsd": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_xtrack_frac": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_beam_angle": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_mean_regrid": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_median_regrid": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     }
+    },
+    "all_rasters_nan_identical": true,
+    "all_rasters_within_1e-6": true,
+    "max_abs_diff_over_rasters": 0.0,
+    "all_rasters_bit_identical": true,
+    "qa": {
+     "n_common_cells": {
+      "existing": 5818,
+      "rehearsal": 5818,
+      "within_1e-6": true
+     },
+     "median_offset_m": {
+      "existing": -0.0752,
+      "rehearsal": -0.0752,
+      "within_1e-6": true
+     },
+     "rms_m": {
+      "existing": 4.8581,
+      "rehearsal": 4.8581,
+      "within_1e-6": true
+     },
+     "robust_sigma_m": {
+      "existing": 3.2207,
+      "rehearsal": 3.2207,
+      "within_1e-6": true
+     },
+     "rms_over_median_s_lr": {
+      "existing": null,
+      "rehearsal": null,
+      "within_1e-6": true
+     },
+     "robust_sigma_over_median_s_lr": {
+      "existing": null,
+      "rehearsal": null,
+      "within_1e-6": true
+     },
+     "sigma0_m": {
+      "existing": 3.2207,
+      "rehearsal": 3.2207,
+      "within_1e-6": true
+     },
+     "sigma_argmin_m": {
+      "existing": 3.0194,
+      "rehearsal": 3.0194,
+      "within_1e-6": true
+     },
+     "gain_m": {
+      "existing": 0.2014,
+      "rehearsal": 0.2014,
+      "within_1e-6": true
+     },
+     "shift_argmin_cells": {
+      "existing": [
+       0.0,
+       -0.25
+      ],
+      "rehearsal": [
+       0.0,
+       -0.25
+      ],
+      "within_1e-6": true
+     }
+    },
+    "qa_all_within_1e-6": true,
+    "flags_existing": [],
+    "flags_rehearsal": [],
+    "flags_identical": true,
+    "s_lr_source_existing": "none (new pair: no CNN-repo tile table yet)",
+    "s_lr_source_rehearsal": "none (new pair: no CNN-repo tile table yet)",
+    "files": {
+     "n_existing": 274,
+     "n_rehearsal": 274,
+     "same": true,
+     "lost": [],
+     "added": [],
+     "n_read_rc0": 274,
+     "n_listed": 274
+    },
+    "mb_format": {
+     "existing": 58,
+     "rehearsal": 58
+    },
+    "beam_angle_method": {
+     "existing": "launch_angle",
+     "rehearsal": "launch_angle"
+    },
+    "wall_s_products": 48.7,
+    "nproc": 6,
+    "batch_files": 1
+   },
+   "row": {
+    "n_columns": 63,
+    "n_identical": 60,
+    "differing": [
+     {
+      "column": "notes",
+      "identical": false,
+      "manifest": "ACQ-R02 \u00a76 R01; joint 12.117 km2, 184 tiles; HR cruise FK151121",
+      "supplement": "ACQ-R02 \u00a76 R01; joint 12.117 km2, 184 tiles; HR cruise FK151121 | ACQ-R06 step1 "
+     },
+     {
+      "column": "ship_products_usable_reason",
+      "identical": false,
+      "manifest": "available, no v2.1 flags",
+      "supplement": "available, no contract-v2.1 flags (rule C1)"
+     },
+     {
+      "column": "manifest_version",
+      "identical": false,
+      "manifest": "2.1",
+      "supplement": "2.1+phase4_step1"
+     }
+    ],
+    "filled_columns": []
+   },
+   "usable": {
+    "computed": true,
+    "reason": "available, no contract-v2.1 flags (rule C1)",
+    "manifest": true,
+    "identical": true
+   },
+   "mismatch_k_or_lr_native": false
+  },
+  {
+   "pair_id": "KM0923__MGDS_31429",
+   "unit": "lu07",
+   "designation": "development (joins existing unit)",
+   "wall_s": 16.6,
+   "cpu_model": "AMD EPYC 8224P 24-Core Processor",
+   "host": "sh04-06n21.int",
+   "spacings": [
+    {
+     "quantity": "hr_native_res_m",
+     "computed": 2.054,
+     "manifest": 2.054,
+     "identical": true,
+     "diff": 0.0,
+     "manifest_ndp": 3
+    },
+    {
+     "quantity": "lr_native_res_m",
+     "computed": 86.94,
+     "manifest": 86.94,
+     "identical": true,
+     "diff": 0.0,
+     "manifest_ndp": 2
+    }
+   ],
+   "c2a": {
+    "beam_footprint_m": 83.56,
+    "posting_m": 86.94,
+    "depth_m": 4787.7,
+    "depth_basis": "median of all valid cells of the harmonized lr.tif (harmonize_new.py)",
+    "beamwidth_deg": 1.0,
+    "beamwidth_key": "em120",
+    "sonar": "Simrad EM120",
+    "sonar_source": "ACQ-R02 grid record grid/KM0923.json:sonar"
+   },
+   "k": {
+    "computed": 16,
+    "manifest": 16,
+    "identical": true,
+    "status_computed": "ok",
+    "status_manifest": "ok",
+    "status_identical": true,
+    "k_source": "stage_c2c_recalibrate.sweep (this run)",
+    "per_k": {
+     "2": "recoverable_signal",
+     "4": "recoverable_signal",
+     "8": "recoverable_signal",
+     "16": "recoverable_signal",
+     "32": "no_spectrum"
+    }
+   },
+   "products": {
+    "built": true,
+    "rasters": {
+     "ship_count": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_sd": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_rsd": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_xtrack_frac": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_beam_angle": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_mean_regrid": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_median_regrid": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     }
+    },
+    "all_rasters_nan_identical": true,
+    "all_rasters_within_1e-6": true,
+    "max_abs_diff_over_rasters": 0.0,
+    "all_rasters_bit_identical": true,
+    "qa": {
+     "n_common_cells": {
+      "existing": 9079,
+      "rehearsal": 9079,
+      "within_1e-6": true
+     },
+     "median_offset_m": {
+      "existing": 0.0591,
+      "rehearsal": 0.0591,
+      "within_1e-6": true
+     },
+     "rms_m": {
+      "existing": 10.9605,
+      "rehearsal": 10.9605,
+      "within_1e-6": true
+     },
+     "robust_sigma_m": {
+      "existing": 4.7888,
+      "rehearsal": 4.7888,
+      "within_1e-6": true
+     },
+     "rms_over_median_s_lr": {
+      "existing": null,
+      "rehearsal": null,
+      "within_1e-6": true
+     },
+     "robust_sigma_over_median_s_lr": {
+      "existing": null,
+      "rehearsal": null,
+      "within_1e-6": true
+     },
+     "sigma0_m": {
+      "existing": 4.7888,
+      "rehearsal": 4.7888,
+      "within_1e-6": true
+     },
+     "sigma_argmin_m": {
+      "existing": 4.1727,
+      "rehearsal": 4.1727,
+      "within_1e-6": true
+     },
+     "gain_m": {
+      "existing": 0.6161,
+      "rehearsal": 0.6161,
+      "within_1e-6": true
+     },
+     "shift_argmin_cells": {
+      "existing": [
+       -0.25,
+       0.25
+      ],
+      "rehearsal": [
+       -0.25,
+       0.25
+      ],
+      "within_1e-6": true
+     }
+    },
+    "qa_all_within_1e-6": true,
+    "flags_existing": [],
+    "flags_rehearsal": [],
+    "flags_identical": true,
+    "s_lr_source_existing": "none (new pair: no CNN-repo tile table yet)",
+    "s_lr_source_rehearsal": "none (new pair: no CNN-repo tile table yet)",
+    "files": {
+     "n_existing": 229,
+     "n_rehearsal": 229,
+     "same": true,
+     "lost": [],
+     "added": [],
+     "n_read_rc0": 229,
+     "n_listed": 229
+    },
+    "mb_format": {
+     "existing": 56,
+     "rehearsal": 56
+    },
+    "beam_angle_method": {
+     "existing": "launch_angle",
+     "rehearsal": "launch_angle"
+    },
+    "wall_s_products": 15.2,
+    "nproc": 6,
+    "batch_files": 1
+   },
+   "row": {
+    "n_columns": 63,
+    "n_identical": 60,
+    "differing": [
+     {
+      "column": "notes",
+      "identical": false,
+      "manifest": "ACQ-R02 \u00a76 R01; joint 15.517 km2, 57 tiles; HR cruise TN293",
+      "supplement": "ACQ-R02 \u00a76 R01; joint 15.517 km2, 57 tiles; HR cruise TN293 | ACQ-R06 step1 (reh"
+     },
+     {
+      "column": "ship_products_usable_reason",
+      "identical": false,
+      "manifest": "available, no v2.1 flags",
+      "supplement": "available, no contract-v2.1 flags (rule C1)"
+     },
+     {
+      "column": "manifest_version",
+      "identical": false,
+      "manifest": "2.1",
+      "supplement": "2.1+phase4_step1"
+     }
+    ],
+    "filled_columns": []
+   },
+   "usable": {
+    "computed": true,
+    "reason": "available, no contract-v2.1 flags (rule C1)",
+    "manifest": true,
+    "identical": true
+   },
+   "mismatch_k_or_lr_native": false
+  },
+  {
+   "pair_id": "RR1506__MGDS_29779",
+   "unit": "lu00",
+   "designation": "development",
+   "wall_s": 32.3,
+   "cpu_model": "AMD EPYC 8224P 24-Core Processor",
+   "host": "sh04-06n21.int",
+   "spacings": [
+    {
+     "quantity": "hr_native_res_m",
+     "computed": 1.0,
+     "manifest": 0.992,
+     "identical": false,
+     "diff": 0.008,
+     "manifest_ndp": 3
+    },
+    {
+     "quantity": "lr_native_res_m",
+     "computed": 28.99,
+     "manifest": 20.3,
+     "identical": false,
+     "diff": 8.69,
+     "manifest_ndp": 1
+    }
+   ],
+   "c2a": {
+    "beam_footprint_m": 28.99,
+    "posting_m": 20.22,
+    "depth_m": 1107.3,
+    "depth_basis": "median of all valid cells of the harmonized lr.tif (harmonize_new.py)",
+    "beamwidth_deg": 1.5,
+    "beamwidth_key": "default",
+    "sonar": "Kongsberg EM (.all) / 20150413",
+    "sonar_source": "manifest v2.1 lr_sonar (no ACQ-R02 grid record for this cruise)"
+   },
+   "k": {
+    "computed": 8,
+    "manifest": 8,
+    "identical": true,
+    "status_computed": "ok",
+    "status_manifest": "ok",
+    "status_identical": true,
+    "k_source": "stage_c2c_recalibrate.sweep (this run)",
+    "per_k": {
+     "2": "recoverable_signal",
+     "4": "recoverable_signal",
+     "8": "recoverable_signal",
+     "16": "no_spectrum",
+     "32": "no_spectrum"
+    }
+   },
+   "products": {
+    "built": true,
+    "rasters": {
+     "ship_count": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_sd": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_rsd": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_xtrack_frac": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_beam_angle": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_mean_regrid": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     },
+     "ship_median_regrid": {
+      "identical_grid": true,
+      "nan_identical": true,
+      "n_nan_mismatch": 0,
+      "max_abs_diff": 0.0,
+      "within_1e-6": true,
+      "bit_identical": true
+     }
+    },
+    "all_rasters_nan_identical": true,
+    "all_rasters_within_1e-6": true,
+    "max_abs_diff_over_rasters": 0.0,
+    "all_rasters_bit_identical": true,
+    "qa": {
+     "n_common_cells": {
+      "existing": 202705,
+      "rehearsal": 202705,
+      "within_1e-6": true
+     },
+     "median_offset_m": {
+      "existing": 0.0933,
+      "rehearsal": 0.0933,
+      "within_1e-6": true
+     },
+     "rms_m": {
+      "existing": 3.7426,
+      "rehearsal": 3.7426,
+      "within_1e-6": true
+     },
+     "robust_sigma_m": {
+      "existing": 1.1711,
+      "rehearsal": 1.1711,
+      "within_1e-6": true
+     },
+     "rms_over_median_s_lr": {
+      "existing": 0.2529,
+      "rehearsal": 0.2529,
+      "within_1e-6": true
+     },
+     "robust_sigma_over_median_s_lr": {
+      "existing": 0.0792,
+      "rehearsal": 0.0792,
+      "within_1e-6": true
+     },
+     "sigma0_m": {
+      "existing": 1.1711,
+      "rehearsal": 1.1711,
+      "within_1e-6": true
+     },
+     "sigma_argmin_m": {
+      "existing": 1.1711,
+      "rehearsal": 1.1711,
+      "within_1e-6": true
+     },
+     "gain_m": {
+      "existing": 0.0,
+      "rehearsal": 0.0,
+      "within_1e-6": true
+     },
+     "shift_argmin_cells": {
+      "existing": [
+       0.0,
+       0.0
+      ],
+      "rehearsal": [
+       0.0,
+       0.0
+      ],
+      "within_1e-6": true
+     }
+    },
+    "qa_all_within_1e-6": true,
+    "flags_existing": [],
+    "flags_rehearsal": [],
+    "flags_identical": true,
+    "s_lr_source_existing": "R02 patches_clean/patch_index.parquet",
+    "s_lr_source_rehearsal": "R02 patches_clean/patch_index.parquet",
+    "files": {
+     "n_existing": 190,
+     "n_rehearsal": 190,
+     "same": true,
+     "lost": [],
+     "added": [],
+     "n_read_rc0": 190,
+     "n_listed": 190
+    },
+    "mb_format": {
+     "existing": 58,
+     "rehearsal": 58
+    },
+    "beam_angle_method": {
+     "existing": "launch_angle",
+     "rehearsal": "launch_angle"
+    },
+    "wall_s_products": 29.4,
+    "nproc": 6,
+    "batch_files": 1
+   },
+   "row": {
+    "n_columns": 63,
+    "n_identical": 57,
+    "differing": [
+     {
+      "column": "hr_native_res_m",
+      "identical": false,
+      "manifest": 0.992,
+      "supplement": 1.0
+     },
+     {
+      "column": "lr_native_res_m",
+      "identical": false,
+      "manifest": 20.3,
+      "supplement": 28.99
+     },
+     {
+      "column": "res_ratio",
+      "identical": false,
+      "manifest": 20.46,
+      "supplement": 28.99
+     },
+     {
+      "column": "notes",
+      "identical": false,
+      "manifest": "LR_ship_cruise=RR1506 (R/V Roger Revelle, Kongsberg EM (.all) / 20150413); HR_AU",
+      "supplement": "LR_ship_cruise=RR1506 (R/V Roger Revelle, Kongsberg EM (.all) / 20150413); HR_AU"
+     },
+     {
+      "column": "ship_products_usable_reason",
+      "identical": false,
+      "manifest": "available, no v2.1 flags",
+      "supplement": "available, no contract-v2.1 flags (rule C1)"
+     },
+     {
+      "column": "manifest_version",
+      "identical": false,
+      "manifest": "2.1",
+      "supplement": "2.1+phase4_step1"
+     }
+    ],
+    "filled_columns": []
+   },
+   "usable": {
+    "computed": true,
+    "reason": "available, no contract-v2.1 flags (rule C1)",
+    "manifest": true,
+    "identical": true
+   },
+   "mismatch_k_or_lr_native": true
+  },
+  {
+   "pair_id": "EX1202L2__MGDS_20815",
+   "unit": "vu00",
+   "designation": "development (ruling H1)",
+   "wall_s": 0.6,
+   "cpu_model": "AMD EPYC 8224P 24-Core Processor",
+   "host": "sh04-06n21.int",
+   "spacings": [
+    {
+     "quantity": "hr_native_res_m",
+     "computed": 1.047,
+     "manifest": 1.047,
+     "identical": true,
+     "diff": 0.0,
+     "manifest_ndp": 3
+    },
+    {
+     "quantity": "lr_native_res_m",
+     "computed": 23.7,
+     "manifest": 23.7,
+     "identical": true,
+     "diff": 0.0,
+     "manifest_ndp": 1
+    }
+   ],
+   "c2a": {
+    "beam_footprint_m": 23.7,
+    "posting_m": 23.59,
+    "depth_m": 1358.0,
+    "depth_basis": "median of all valid cells of the harmonized lr.tif (harmonize_new.py)",
+    "beamwidth_deg": 1.0,
+    "beamwidth_key": "em302",
+    "sonar": "Simrad EM302",
+    "sonar_source": "ACQ-R02 grid record grid/EX1202L2.json:sonar"
+   },
+   "k": {
+    "computed": null,
+    "manifest": null,
+    "identical": true,
+    "status_computed": "no_curve",
+    "status_manifest": "no_curve",
+    "status_identical": true,
+    "k_source": "stage_c2c_recalibrate.sweep (this run)",
+    "per_k": null
+   },
+   "products": {
+    "built": false,
+    "note": "no k: nothing built (rule C3)",
+    "existing_products_on_oak": true,
+    "comparison": "reports no k"
+   },
+   "row": {
+    "n_columns": 63,
+    "n_identical": 58,
+    "differing": [
+     {
+      "column": "notes",
+      "identical": false,
+      "manifest": "ACQ-R02 \u00a76 H1; joint 3.644 km2, 53 tiles; HR cruise AT18-03",
+      "supplement": "ACQ-R02 \u00a76 H1; joint 3.644 km2, 53 tiles; HR cruise AT18-03 | ACQ-R06 step1 (reh"
+     },
+     {
+      "column": "ship_products_usable",
+      "identical": false,
+      "manifest": true,
+      "supplement": "False"
+     },
+     {
+      "column": "ship_products_usable_reason",
+      "identical": false,
+      "manifest": "available, no v2.1 flags",
+      "supplement": "no products (no k)"
+     },
+     {
+      "column": "products_v2_1_flags",
+      "identical": false,
+      "manifest": "",
+      "supplement": null
+     },
+     {
+      "column": "manifest_version",
+      "identical": false,
+      "manifest": "2.1",
+      "supplement": "2.1+phase4_step1"
+     }
+    ],
+    "filled_columns": []
+   },
+   "usable": {
+    "computed": false,
+    "reason": "no products (no k)",
+    "manifest": true,
+    "identical": false
+   },
+   "mismatch_k_or_lr_native": false
+  },
+  {
+   "pair_id": "2009_Amundsen__MGDS_30047",
+   "unit": "lu18",
+   "designation": "development (joins existing unit)",
+   "wall_s": 4.9,
+   "cpu_model": "AMD EPYC 8224P 24-Core Processor",
+   "host": "sh04-06n21.int",
+   "spacings": [
+    {
+     "quantity": "hr_native_res_m",
+     "computed": 1.485,
+     "manifest": 1.485,
+     "identical": true,
+     "diff": 0.0,
+     "manifest_ndp": 3
+    },
+    {
+     "quantity": "lr_native_res_m",
+     "computed": 4.87,
+     "manifest": 3.91,
+     "identical": false,
+     "diff": 0.96,
+     "manifest_ndp": 2
+    }
+   ],
+   "c2a": {
+    "beam_footprint_m": 4.87,
+    "posting_m": 2.92,
+    "depth_m": 279.2,
+    "depth_basis": "median of all valid cells of the harmonized lr.tif (harmonize_new.py)",
+    "beamwidth_deg": 1.0,
+    "beamwidth_key": "em302",
+    "sonar": "Kongsberg EM302",
+    "sonar_source": "ACQ-R02 grid record grid/2009_Amundsen.json:sonar"
+   },
+   "k": {
+    "computed": null,
+    "manifest": null,
+    "identical": true,
+    "status_computed": "ok",
+    "status_manifest": "ok",
+    "status_identical": true,
+    "k_source": "stage_c2c_recalibrate.sweep (this run)",
+    "per_k": {
+     "2": "no_spectrum",
+     "4": "no_spectrum",
+     "8": "no_spectrum",
+     "16": "no_spectrum",
+     "32": "no_spectrum"
+    }
+   },
+   "products": {
+    "built": false,
+    "note": "no k: nothing built (rule C3)",
+    "existing_products_on_oak": true,
+    "comparison": "reports no k"
+   },
+   "row": {
+    "n_columns": 63,
+    "n_identical": 56,
+    "differing": [
+     {
+      "column": "lr_native_res_m",
+      "identical": false,
+      "manifest": 3.91,
+      "supplement": 4.87
+     },
+     {
+      "column": "res_ratio",
+      "identical": false,
+      "manifest": 2.63,
+      "supplement": 3.28
+     },
+     {
+      "column": "notes",
+      "identical": false,
+      "manifest": "ACQ-R02 \u00a76 R01; joint 29.896 km2, 201 tiles; HR cruise nan | R5: lr_native 3.91 ",
+      "supplement": "ACQ-R02 \u00a76 R01; joint 29.896 km2, 201 tiles; HR cruise nan | R5: lr_native 3.91 "
+     },
+     {
+      "column": "ship_products_usable",
+      "identical": false,
+      "manifest": true,
+      "supplement": "False"
+     },
+     {
+      "column": "ship_products_usable_reason",
+      "identical": false,
+      "manifest": "available, no v2.1 flags",
+      "supplement": "no products (no k)"
+     },
+     {
+      "column": "products_v2_1_flags",
+      "identical": false,
+      "manifest": "",
+      "supplement": null
+     },
+     {
+      "column": "manifest_version",
+      "identical": false,
+      "manifest": "2.1",
+      "supplement": "2.1+phase4_step1"
+     }
+    ],
+    "filled_columns": []
+   },
+   "usable": {
+    "computed": false,
+    "reason": "no products (no k)",
+    "manifest": true,
+    "identical": false
+   },
+   "mismatch_k_or_lr_native": true
+  }
+ ],
+ "code_commit": "016f88ea84fe2e136dc7a8359c86ae2d0abaead7"
+}
