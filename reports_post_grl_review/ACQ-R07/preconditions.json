@@ -1,0 +1,187 @@
+{
+ "directive": "ACQ-R07",
+ "checked_at": "2026-10-11T23:49:52+00:00",
+ "host": "sh04-ln08.stanford.edu",
+ "cnn_repo_toplevel": "/home/users/scdobbs/GAN_Bathymetry_Project",
+ "cnn_head": "8555ad3639cd43eb1259c1b6df03656f828bf8b2",
+ "p1_signoff": {
+  "path": "/home/users/scdobbs/GAN_Bathymetry_Project/grl_reviews-and-prompt-reports/directives_and_reports/R11/SIGNOFF_phase4_prereg_v2.md",
+  "exists": true,
+  "sha256": "f1317c50d565a35a69154b6418b0f3ee0cf6db070e514c76d2512afcee685be8",
+  "holds_prereg_sha256": true,
+  "git_status_short": "?? grl_reviews-and-prompt-reports/directives_and_reports/R11/SIGNOFF_phase4_prereg_v2.md",
+  "commits_touching_file": [],
+  "tracked": false,
+  "verdict": "CONTRADICTED: file exists and holds the sha256 but is untracked (??) in the CNN repo; no commit holds it"
+ },
+ "p2_prereg": {
+  "path": "/home/users/scdobbs/GAN_Bathymetry_Project/grl_reviews-and-prompt-reports/directives_and_reports/R11/PREREG_phase4_v2.md",
+  "sha256_working_tree": "9795db3b22d6c54f7a85618dbaccafa054e88487b33236a7b2083ecb8c605979",
+  "tag": "phase4-prereg-v2",
+  "tag_object_type": "tag",
+  "tag_commit": "8524d06960d58a35ca6f8097374a24cc407c5f52",
+  "sha256_at_tag": "9795db3b22d6c54f7a85618dbaccafa054e88487b33236a7b2083ecb8c605979",
+  "git_status_short": "",
+  "commits_after_tag": [
+   "8555ad3 R11: record the R11 commit hash and the preservation job in the report"
+  ],
+  "verdict": "CONFIRMED"
+ },
+ "p3_frozen_code": {
+  "freeze_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json",
+  "freeze_record_sha256": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
+  "expected": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
+  "n_files": 21,
+  "mismatches": [],
+  "git_status_frozen_files": "",
+  "tag_phase4_acq_freeze_commit": "041d83b44da27358ac424d86b6d68e8c50ac2966",
+  "acq_head": "041d83b44da27358ac424d86b6d68e8c50ac2966",
+  "git_status_whole_tree": [
+   "?? reports_post_grl_review/ACQ-R07/",
+   "?? reports_post_grl_review/ACQ-R07_directive_phase4_sealed_step1_2026-10-11.md"
+  ],
+  "files": {
+   "src/__init__.py": {
+    "recorded": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "working_tree": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "src/acq_r01/__init__.py": {
+    "recorded": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "working_tree": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "src/acq_r01/build_products.py": {
+    "recorded": "d35a767368b7613ad7b958beaa7feb3d61308821e09a43e81d9d60ad1ee6a215",
+    "working_tree": "d35a767368b7613ad7b958beaa7feb3d61308821e09a43e81d9d60ad1ee6a215"
+   },
+   "src/acq_r01/build_products_v2.py": {
+    "recorded": "6c4de57fa67075d6620c52989ccd5bd717504e722e28a607701b5da813028d09",
+    "working_tree": "6c4de57fa67075d6620c52989ccd5bd717504e722e28a607701b5da813028d09"
+   },
+   "src/acq_r01/common.py": {
+    "recorded": "96a1e09e09ace8d3fe53637a00e25ae2d7b3931fc06d88abf57007dab6abf701",
+    "working_tree": "96a1e09e09ace8d3fe53637a00e25ae2d7b3931fc06d88abf57007dab6abf701"
+   },
+   "src/acq_r01/fetch_swath.py": {
+    "recorded": "1aed5b4950517f121fb0c4cbe3b550ab26486f454211f2463df5587937f76c80",
+    "working_tree": "1aed5b4950517f121fb0c4cbe3b550ab26486f454211f2463df5587937f76c80"
+   },
+   "src/acq_r01/grid_lr.py": {
+    "recorded": "847e7098049a6a00826e54c8497bd5fe730f969fa943cde263718249cf0603f8",
+    "working_tree": "847e7098049a6a00826e54c8497bd5fe730f969fa943cde263718249cf0603f8"
+   },
+   "src/acq_r03/__init__.py": {
+    "recorded": "0a1b9776af437985ebd243540a3d780b52971b71990f0b7d8c6aa14ffe2b070b",
+    "working_tree": "0a1b9776af437985ebd243540a3d780b52971b71990f0b7d8c6aa14ffe2b070b"
+   },
+   "src/acq_r03/build_products_v2_1.py": {
+    "recorded": "295a51ecfb679df0182c6f24149c04b3b657640957f741c8d1c41eda1cf8a861",
+    "working_tree": "295a51ecfb679df0182c6f24149c04b3b657640957f741c8d1c41eda1cf8a861"
+   },
+   "src/acq_r03/common.py": {
+    "recorded": "e4c16eb5319d8a72def6a75d1e23c382a4392eab6017554755758e8c92e950ee",
+    "working_tree": "e4c16eb5319d8a72def6a75d1e23c382a4392eab6017554755758e8c92e950ee"
+   },
+   "src/acq_r04/__init__.py": {
+    "recorded": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "working_tree": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+   },
+   "src/acq_r04/common.py": {
+    "recorded": "69216c8084bccb648e1a6b8625374d367f9d5eb470cfe9ef2ae4df76a62e6f83",
+    "working_tree": "69216c8084bccb648e1a6b8625374d367f9d5eb470cfe9ef2ae4df76a62e6f83"
+   },
+   "src/discovery/__init__.py": {
+    "recorded": "6ed80c07c0341bbc17d50a0fe5aacbac7cfddda32e6c12b2563ac0a5ee0a21b9",
+    "working_tree": "6ed80c07c0341bbc17d50a0fe5aacbac7cfddda32e6c12b2563ac0a5ee0a21b9"
+   },
+   "src/discovery/stage_c2c_recalibrate.py": {
+    "recorded": "ee6f6d7a07e71e7c148e0c60a486c39883388c339bc9bf041b8dbc52c2bb339c",
+    "working_tree": "ee6f6d7a07e71e7c148e0c60a486c39883388c339bc9bf041b8dbc52c2bb339c"
+   },
+   "src/discovery/stage_c5_spectral.py": {
+    "recorded": "b7f6f919e0e9cbc1425bb5bb773333d71fc855ed16b3ad9bc04bf90dca839575",
+    "working_tree": "b7f6f919e0e9cbc1425bb5bb773333d71fc855ed16b3ad9bc04bf90dca839575"
+   },
+   "src/discovery/validated_anchor.py": {
+    "recorded": "5cc366ada1b9143fa811c7414136efe3dffd12c7b43abfbd62eb9d3e424378a6",
+    "working_tree": "5cc366ada1b9143fa811c7414136efe3dffd12c7b43abfbd62eb9d3e424378a6"
+   },
+   "src/phase4/__init__.py": {
+    "recorded": "7aadba3d6268ce1be6eeb3a1993ae3a2c5e7ae716f3f5bb355e6a04ad4e4e0ce",
+    "working_tree": "7aadba3d6268ce1be6eeb3a1993ae3a2c5e7ae716f3f5bb355e6a04ad4e4e0ce"
+   },
+   "src/phase4/common.py": {
+    "recorded": "5c5c887274bf7d0b8ce79134676854850472ad5b1c6da6e6f7aa754440bb9756",
+    "working_tree": "5c5c887274bf7d0b8ce79134676854850472ad5b1c6da6e6f7aa754440bb9756"
+   },
+   "src/phase4/freeze.py": {
+    "recorded": "2878d99098525e957095c1284ff9d0ee38af1c62bf4c4f60e970c7e4d9db5903",
+    "working_tree": "2878d99098525e957095c1284ff9d0ee38af1c62bf4c4f60e970c7e4d9db5903"
+   },
+   "src/phase4/guard_selftest.py": {
+    "recorded": "ad564fd9281ce98f13add1489fcbc89e88c440dcd7e5c490ba7236a3a851d788",
+    "working_tree": "ad564fd9281ce98f13add1489fcbc89e88c440dcd7e5c490ba7236a3a851d788"
+   },
+   "src/phase4/sealed_step1.py": {
+    "recorded": "bd773cb77eaff1786efe48c8d92210d69a90f885545cd00a07af9b35cd8753c1",
+    "working_tree": "bd773cb77eaff1786efe48c8d92210d69a90f885545cd00a07af9b35cd8753c1"
+   }
+  },
+  "verdict": "CONFIRMED"
+ },
+ "p4_single_run": {
+  "supplement": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_phase4_sealed.parquet",
+  "exists": false,
+  "verdict": "CONFIRMED"
+ },
+ "p5_fixed_inputs": {
+  "files": {
+   "manifest/pairs_v2_1.parquet": {
+    "expected": "f57f3d8f98b320b136549de300ccac58787129af658a1c62296bab16b6c2ac35",
+    "got": "f57f3d8f98b320b136549de300ccac58787129af658a1c62296bab16b6c2ac35",
+    "equal": true
+   },
+   "manifest/pairs_v2_1_dropped.csv": {
+    "expected": "1f1bb181c63df8991ddc981c731bbf048a25ec56cb33435487b356d603073dab",
+    "got": "1f1bb181c63df8991ddc981c731bbf048a25ec56cb33435487b356d603073dab",
+    "equal": true
+   },
+   "reports_post_grl_review/INTERFACE_CONTRACT_v2.1.md": {
+    "expected": "0b4aadaf61fb04213ae18771d2a58532f39e9d49b5152ab64738d188a7e18fcb",
+    "got": "0b4aadaf61fb04213ae18771d2a58532f39e9d49b5152ab64738d188a7e18fcb",
+    "equal": true
+   },
+   "reports/discovery/stage_c2c_sweep.json": {
+    "expected": "7a7c2434b278384825eb7842a704701f609eae3c3e4d4ec99cbb7beea6c3f2a3",
+    "got": "7a7c2434b278384825eb7842a704701f609eae3c3e4d4ec99cbb7beea6c3f2a3",
+    "equal": true
+   },
+   "reports/discovery/stage_b_file_plan_2026-06-22.csv": {
+    "expected": "c458cab2b19493df48acdf3086a49f5890c1939864112e645b5de503f6ba9875",
+    "got": "c458cab2b19493df48acdf3086a49f5890c1939864112e645b5de503f6ba9875",
+    "equal": true
+   },
+   "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/acq_r06_rehearsal/SHA256SUMS": {
+    "expected": "18cf21b9abd64938ecb03b090c4c4f95c732e77af388cd7630f3d317fba9f3c9",
+    "got": "18cf21b9abd64938ecb03b090c4c4f95c732e77af388cd7630f3d317fba9f3c9",
+    "equal": true
+   }
+  },
+  "verdict": "CONFIRMED"
+ },
+ "p6_guard": {
+  "precheck_file": "reports_post_grl_review/ACQ-R07/guard_selftest_precheck.json",
+  "all_passed": true,
+  "n": 84,
+  "n_blocked": 84,
+  "note": "pre-check on the login node; the self-test immediately before the run did not happen because the run was not started (precondition 1)"
+ },
+ "finding_existing_run_record_path": {
+  "path": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json",
+  "sha256": "f6dd1bc7b0f74f9957f01ff92549fa0dc0d840ad7cd26017ccaa34e06e0463cf",
+  "status": "stopped (rule C4)",
+  "error": "KN182L03__MGDS_30193: KN182L03 holds 27 swath files but its fetch manifest lists 28 (rule C4)",
+  "note": "the frozen step writes its phase4 run record to this same path (sealed_step1.write_run_record: P.REPORT_DIR/step1_run_phase4_run.json) and would overwrite this refusal-test-11 artifact (committed at 041d83b)"
+ },
+ "run_started": false,
+ "stop_reason": "precondition 1 failed (sign-off not committed in the CNN repo); directive \u00a71: any failure stops the directive before the step is started"
+}
