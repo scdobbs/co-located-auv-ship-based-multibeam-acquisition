@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-12T01:16:46+00:00",
- "code_commit": "98b4d24baaafe72fdd3f1394ff0f9fcd35c49ccd",
+ "generated": "2026-10-12T01:29:42+00:00",
+ "code_commit": "c010b9eee2ae9d390005b3c94b7d02aedd8c07c0",
  "frozen": {
   "n_files": 21,
   "n_changed": 0,
@@ -126,8 +126,8 @@
   "all_pass": true,
   "deviation": {
    "deviation_note": "/home/users/scdobbs/GAN_Bathymetry_Project/grl_reviews-and-prompt-reports/directives_and_reports/R11/DEVIATION_phase4_01.md",
-   "sha256": "0be2ae81a219be2d755d811f1c9ce25e46d6d3f70dbab06a92b866591206e3d9",
-   "commit": "be23809ca736282701f1aefddf8fe482abe5fe7b",
+   "sha256": "962fd19cd9b3b13dc14ba1e1d37a7860515fb8b7168b33732cbaafe77eb95894",
+   "commit": "84fd9a189f1505dd30f6a92a6045b8ff9767a2d8",
    "repo": "/home/users/scdobbs/GAN_Bathymetry_Project"
   }
  },
@@ -138,6 +138,82 @@
    "TN159__MGDS_21981": true
   },
   "generated": "2026-10-12T01:06:07+00:00"
+ },
+ "f3": {
+  "status": "complete",
+  "wall_s": 38.9,
+  "host": "sh04-12n30.int",
+  "cpu_model": "AMD EPYC 8224P 24-Core Processor",
+  "started": "2026-10-12T01:23:07+00:00",
+  "finished": "2026-10-12T01:23:46+00:00",
+  "code_commit": "c010b9eee2ae9d390005b3c94b7d02aedd8c07c0",
+  "record_sha256": "fb1e07b24681e8b7b15dec3b232ea78266c6c7cd82ae64518e82b76ae99dcc07",
+  "supplement": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_phase4_sealed.parquet",
+  "supplement_sha256": "6968e04554ddeef3c335587d602cb5fab2185db32b46cbd152475a919eb59206",
+  "n_rows": 5,
+  "ids_ok": true,
+  "freeze_record_sha256": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
+  "completion_freeze_record_sha256": "b581e538115dd4859cd6175a131fb4214c800d3b9a5ba6c0321d234530a58182",
+  "prior_run_record_sha256": "7cc5b46d437a72976027f8e7ca9b0f31a8b9eeb5161928c67fce41f87127ce2b",
+  "deviation_commit": "84fd9a189f1505dd30f6a92a6045b8ff9767a2d8",
+  "deviation_sha256": "962fd19cd9b3b13dc14ba1e1d37a7860515fb8b7168b33732cbaafe77eb95894",
+  "finished_pairs": [
+   "KN182L03__MGDS_30193",
+   "RC2511__MGDS_32239",
+   "SUM1004__MGDS_33090",
+   "AT42-03__MGDS_32007"
+  ],
+  "pending_pairs": [
+   "TN159__MGDS_21981"
+  ],
+  "fetch_trigger": {
+   "TN159": [
+    "TN159__MGDS_21981"
+   ]
+  },
+  "guard": {
+   "n": 84,
+   "n_blocked": 84
+  },
+  "allowance_n": 11,
+  "tn159": {
+   "fetch": {
+    "n_planned": 37,
+    "n_ok": 37,
+    "n_failed": 0,
+    "rc": 0,
+    "complete": true,
+    "wall_s": 28.8,
+    "fetcher": "src/acq_r01/fetch_swath.py main --plan-csv (unchanged)",
+    "plan_csv": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports/discovery/stage_b_file_plan_2026-06-22.csv"
+   },
+   "gb": 0.864,
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": "0o2770",
+    "restored": true
+   },
+   "n_files_written": 11,
+   "products": {
+    "available": true,
+    "n_files_listed": 37,
+    "n_files_read": 37,
+    "n_files_rc0": 37,
+    "flags": [],
+    "mb_format": 56,
+    "wall_s": 7.1,
+    "builder": "src/acq_r03/build_products_v2_1.py build (unchanged)"
+   }
+  },
+  "preservation": {
+   "n_files": 13,
+   "n_ok": 13,
+   "n_failed": 0,
+   "sha256sums_sha256": "244eaa7ab3467c311ea41d2ff2a641a6f83885217a3a42dd2977bfd12251f458",
+   "destination": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase4/acq_step1"
+  },
+  "cnn_ledger_line": "Phase 4 step 1 supplement: `manifest/pairs_phase4_sealed.parquet` (acquisition repo) \u2014 sha256 `6968e04554ddeef3c335587d602cb5fab2185db32b46cbd152475a919eb59206`; completion run record `reports_post_grl_review/ACQ-R06b/step1_run_phase4_completion.json` sha256 `fb1e07b24681e8b7b15dec3b232ea78266c6c7cd82ae64518e82b76ae99dcc07`"
  },
  "guard": {
   "refusal_after_n": "84/84 blocked"

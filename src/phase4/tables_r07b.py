@@ -110,6 +110,44 @@ def main(argv=None):
         f2 = json.loads((D / "f2_metadata_fix.json").read_text())
         md(pd.DataFrame([{"pair_id": k, "ls -ld before": f2["ls_ld_before"][k].split(" /oak")[0], "ls -ld after": f2["ls_ld_after"][k].split(" /oak")[0], "os.stat after": json.dumps(f2["os_stat_after"][k])} for k in f2["ls_ld_before"]]), "f2_metadata_fix", "f2_metadata_fix.json")
         out["f2"] = {"lock8_pass": f2["lock8_pass"], "group_before_was_nobody": f2["group_before_was_nobody"], "generated": f2["generated"]}
+    # Part F3 (the completion run), when its record exists
+    crec = P.REPORT_DIR / "step1_run_phase4_completion.json"
+    if crec.exists():
+        cr = json.loads(crec.read_text()); sup = pd.read_parquet(cr["supplement"]).set_index("pair_id")
+        rows = []
+        for pid in cr["pairs"]:
+            s_ = cr["per_pair"][pid]; hr, lr = s_["hr_native_res_m"], s_["lr_native_res_m"]
+            rows.append({"pair_id": pid, "designation": s_["designation"], "hr_native_res_m (source)": f"{hr} ({'C2a, ACQ-R07 run' if s_['values_source'].startswith('C2a') else 'manifest row, June prior'})", "lr_native_res_m": lr,
+                         "res_ratio": sup.loc[pid, "res_ratio"], "k (source)": f"{s_['max_recoverable_k']} ({'sweep, ACQ-R07 run' if 'this run' in s_['k_source'] else 'June C2c record'})", "status": s_["k_sweep_status"],
+                         "per-k verdicts": "; ".join(f"{k}: {v}" for k, v in (s_["per_k"] or {}).items()), "cells across (min 3.88)": round(256 * hr / lr, 2), "products": s_["products"], "flags": ", ".join(s_["flags"] or []) or "none",
+                         "ship_products_usable (reason)": f"{bool(sup.loc[pid, 'ship_products_usable'])} ({sup.loc[pid, 'ship_products_usable_reason']})", "provenance": s_["provenance"]})
+        md(pd.DataFrame(rows), "f3_per_pair", "ACQ-R06b/step1_run_phase4_completion.json per_pair + manifest/pairs_phase4_sealed.parquet")
+        t = json.loads((D / "f3_tn159_writes.json").read_text())
+        md(pd.DataFrame([{"item": k, "value": v} for k, v in {"fetch planned / fetched / failed": f"{t['fetch']['n_planned']} / {t['fetch']['n_ok']} / {t['fetch']['n_failed']}", "fetch rc / wall s / GB": f"{t['fetch']['rc']} / {t['fetch']['wall_s']} / {t['fetch_gb']}",
+                          "fetcher": t["fetch"]["fetcher"], "swath files listed / read / rc 0": f"{t['products']['n_files_listed']} / {t['products']['n_files_read']} / {t['products']['n_files_rc0']}", "mb_format": t["products"]["mb_format"],
+                          "products wall s": t["products"]["wall_s"], "flags": ", ".join(t["products"]["flags"] or []) or "none", "usable (reason)": f"{t['usable']} ({t['usable_reason']})",
+                          "dir mode before -> opened -> after (restored)": (lambda w: f"{w['mode_before']} -> {w['mode_opened']} -> {w['mode_after']} ({w['restored']})")(cr["per_pair"][t["pair_id"]]["write_path"]),
+                          "step1_record.json / sweep_record.json sha256": f"{t['step1_record_sha256']} / {t['sweep_record_sha256']}", "pair wall s": t["wall_s"]}.items()]), "f3_tn159", "f3_tn159_writes.json")
+        md(pd.DataFrame([{"file": k, "sha256": v} for k, v in t["files_written"].items()]), "f3_tn159_files", "f3_tn159_writes.json (TN159 step1_record.json write_path.files)")
+        vr = []
+        for pid, v in cr["verification"].items():
+            mh = v["mode_history"]
+            vr.append({"pair_id": pid, "listed files verified": f"{v['n_files_ok']} / {v['n_files_listed']}", "step1_record sha256": v["step1_record_sha256"][:16], "sweep_record sha256": v["sweep_record_sha256"][:16],
+                       "cross-check vs ACQ-R07 record": ("equal" if v["crosscheck"]["equal"] else "DIFFERS") + (" (per_pair + ledger)" if v["crosscheck"]["per_pair_present"] else " (ledger only)"),
+                       "usable derived (source)": f"{v['usable']['derived']} ({v['usable']['source']})", "fetcher side-files": "; ".join(f"{k} {x[:12]}" for k, x in v["fetcher_side_files"].items()) or "none",
+                       "mode: record before -> opened; stop; now": f"{mh['record_before']} -> {mh['record_opened']}; {mh['stop_after'] or '-'}; {mh['now']['mode']} {mh['now']['group']}"})
+        md(pd.DataFrame(vr), "f3_verification", "ACQ-R06b/step1_run_phase4_completion.json verification")
+        lk = [{"lock": k, "key values": json.dumps({kk: (vv[:16] + "…" if isinstance(vv, str) and len(vv) == 64 else vv) for kk, vv in v.items() if kk in ("signoff_sha256", "prereg_sha256", "freeze_record_sha256", "completion_freeze_record_sha256", "n_files", "n_loaded_checked", "prior_run_record_sha256", "status", "sha256", "commit", "pairs", "supplement", "completion_record")} if isinstance(v, dict) and k != "lock8_lockbox_metadata" else ({kk: f"{vv['mode']} {vv['group']}" for kk, vv in v.items()} if k == "lock8_lockbox_metadata" else v), default=str)[:220]} for k, v in cr["locks"].items()]
+        md(pd.DataFrame(lk), "f3_locks", "ACQ-R06b/step1_run_phase4_completion.json locks")
+        pv = json.loads((D / "preserve_verify.json").read_text())
+        md(pd.DataFrame([{"entry": e.split("  ")[1], "sha256": e.split("  ")[0][:16]} for e in pv["entries"]]), "f3_preservation", "preserve_verify.json")
+        out["f3"] = {"status": cr["status"], "wall_s": cr["wall_s"], "host": cr["host"], "cpu_model": cr["cpu_model"], "started": cr["started"], "finished": cr["finished"], "code_commit": cr["code_commit"],
+                     "record_sha256": P.sha256_file(crec), "supplement": cr["supplement"], "supplement_sha256": cr["supplement_sha256"], "n_rows": cr["n_rows"], "ids_ok": sorted(cr["supplement_pair_ids"]) == sorted(P.SEALED_PAIRS),
+                     "freeze_record_sha256": cr["freeze_record_sha256"], "completion_freeze_record_sha256": cr["completion_freeze_record_sha256"], "prior_run_record_sha256": cr["prior_run_record_sha256"],
+                     "deviation_commit": cr["deviation_note"]["commit"], "deviation_sha256": cr["deviation_note"]["sha256"], "finished_pairs": cr["finished_pairs"], "pending_pairs": cr["pending_pairs"], "fetch_trigger": cr["fetch_trigger"],
+                     "guard": cr["guard_selftest"]["reader_checks"], "allowance_n": len(cr["allowance"]), "tn159": {"fetch": t["fetch"], "gb": t["fetch_gb"], "write_path": cr["per_pair"][t["pair_id"]]["write_path"], "n_files_written": len(t["files_written"]), "products": t["products"]},
+                     "preservation": {"n_files": pv["n_files"], "n_ok": pv["n_ok"], "n_failed": pv["n_failed"], "sha256sums_sha256": pv["sha256sums_sha256"], "destination": pv["destination"]},
+                     "cnn_ledger_line": f"Phase 4 step 1 supplement: `manifest/pairs_phase4_sealed.parquet` (acquisition repo) — sha256 `{cr['supplement_sha256']}`; completion run record `reports_post_grl_review/ACQ-R06b/step1_run_phase4_completion.json` sha256 `{P.sha256_file(crec)}`"}
     # guard
     g = json.loads((D / "harness_r07b.json").read_text())
     out["guard"] = {"refusal_after_n": R["tests"][-1]["raised"]}

@@ -30,8 +30,8 @@
  },
  "lock5": {
   "deviation_note": "/home/users/scdobbs/GAN_Bathymetry_Project/grl_reviews-and-prompt-reports/directives_and_reports/R11/DEVIATION_phase4_01.md",
-  "sha256": "0be2ae81a219be2d755d811f1c9ce25e46d6d3f70dbab06a92b866591206e3d9",
-  "commit": "be23809ca736282701f1aefddf8fe482abe5fe7b",
+  "sha256": "962fd19cd9b3b13dc14ba1e1d37a7860515fb8b7168b33732cbaafe77eb95894",
+  "commit": "84fd9a189f1505dd30f6a92a6045b8ff9767a2d8",
   "repo": "/home/users/scdobbs/GAN_Bathymetry_Project"
  },
  "lock6": {
@@ -62,5 +62,5 @@
   }
  },
  "allowance_installed": [],
- "note": "dry check on the login node through the completion's own lock functions after the lock-5 fix, the re-freeze and the F2 metadata fix; lock 5 here checks the v1 note committed in the CNN repo (be23809), whose [x]/[y] cite the superseded freeze"
+ "note": "F1 dry check on the login node through the completion's own lock functions, after H-1 (a): lock 5 against deviation note v2 committed in the CNN repo"
 }

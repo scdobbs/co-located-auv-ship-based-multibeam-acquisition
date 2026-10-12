@@ -1,0 +1,33 @@
+host=sh04-12n30.int job=47438599 commit=c010b9eee2ae9d390005b3c94b7d02aedd8c07c0 freeze_tag=041d83b44da27358ac424d86b6d68e8c50ac2966 complete_tag_v2=c010b9eee2ae9d390005b3c94b7d02aedd8c07c0 start=2026-10-12T01:22:44Z
+model name	: AMD EPYC 8224P 24-Core Processor
+SIGNOFF_phase4_prereg_v2.md commit=18e513979b0255d7e414d40f4466dcdc46f0081e sha256=f1317c50d565a35a69154b6418b0f3ee0cf6db070e514c76d2512afcee685be8
+DEVIATION_phase4_01.md commit=84fd9a189f1505dd30f6a92a6045b8ff9767a2d8 sha256=962fd19cd9b3b13dc14ba1e1d37a7860515fb8b7168b33732cbaafe77eb95894
+sandbox staged: /lscratch/scdobbs/47438599/mbsystem_sandbox (tar sha256 ec8c3f17bf223ff267e3321c2bb284a8203db232fa5b76032065b93b96703ee4)
+/dev/nvme1n1p1  3.5T  5.5G  3.5T   1% /lscratch
+guard 84 / 84 all_passed True
+CMD: python -m src.phase4.sealed_step1_complete --mode phase4 --signoff /home/users/scdobbs/GAN_Bathymetry_Project/grl_reviews-and-prompt-reports/directives_and_reports/R11/SIGNOFF_phase4_prereg_v2.md --prereg-sha256 9795db3b22d6c54f7a85618dbaccafa054e88487b33236a7b2083ecb8c605979
+{
+ "cruises": {
+  "TN159": {
+   "n_planned": 37,
+   "n_ok": 37,
+   "n_failed": 0,
+   "gb": 0.864,
+   "complete": true
+  }
+ },
+ "total_gb": 0.864,
+ "wall_s": 28.8,
+ "status_counts": {
+  "fetched": 37
+ },
+ "generated": "2026-10-12T01:23:38.771331+00:00"
+}
+PAIR {"pair_id": "TN159__MGDS_21981", "designation": "lockbox", "hr_native_res_m": 0.991, "lr_native_res_m": 41.0, "values_source": "manifest v2.1 row (prior June values; ACQ-R06b A1, rulings H-1/H-3)", "max_recoverable_k": 4, "k_sweep_status": "ok", "k_source": "June C2c sweep record reports/discovery/stage_c2c_sweep.json (prior value; ACQ-R06b A1)", "fetch": {"n_ok": 37, "n_planned": 37, "complete": true, "reason": null}, "products": "built", "products_reason": null, "flags": [], "ship_products_usable": true, "wall_s": 36.5, "write_path": {"mode_before": "0o2770", "mode_opened": "0o2770", "mode_after": "0o2770", "restored": true}}
+KN182L03__MGDS_30193           hr     1.0 m  lr  128.42 m  k None  ok         products none        flags None  usable False  [record (not recomputed)]
+RC2511__MGDS_32239             hr   1.037 m  lr  124.62 m  k   32  ok         products built       flags ['vertical_offset']  usable False  [record (not recomputed)]
+SUM1004__MGDS_33090            hr     1.0 m  lr  150.77 m  k   32  ok         products built       flags []  usable True  [record (not recomputed)]
+AT42-03__MGDS_32007            hr   0.989 m  lr    19.7 m  k    4  ok         products built       flags []  usable True  [record (not recomputed)]
+TN159__MGDS_21981              hr   0.991 m  lr    41.0 m  k    4  ok         products built       flags []  usable True  [computed by the completion run]
+supplement /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_phase4_sealed.parquet (5 rows, sha256 6968e04554ddeef3…); run record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_completion.json; wall 38.9 s
+completion exit=0 end=2026-10-12T01:23:46Z

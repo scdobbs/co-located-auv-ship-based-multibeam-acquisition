@@ -5,7 +5,7 @@
 | lock2 | ok | {"freeze_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json", "freeze_record_sha2 |
 | lock3 | ok | {"completion_freeze_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/completion_freeze_record.json |
 | lock4 | ok | {"prior_run_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json", "prior_ru |
-| lock5 | ok | {"deviation_note": "/home/users/scdobbs/GAN_Bathymetry_Project/grl_reviews-and-prompt-reports/directives_and_reports/R11/DEVIATION_phase4_01.md", "sha256": "0be |
+| lock5 | ok | {"deviation_note": "/home/users/scdobbs/GAN_Bathymetry_Project/grl_reviews-and-prompt-reports/directives_and_reports/R11/DEVIATION_phase4_01.md", "sha256": "962 |
 | lock6 | ok | {"pairs": ["AT42-03__MGDS_32007", "KN182L03__MGDS_30193", "RC2511__MGDS_32239", "SUM1004__MGDS_33090", "TN159__MGDS_21981"]} |
 | lock7 | ok | {"supplement": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_phase4_sealed.parquet", "completion_record": "/home/users/scd |
 | lock8 | ok | {"AT42-03__MGDS_32007": {"dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007", "mode": "0o2770", "owner": "scdobbs", "gr |

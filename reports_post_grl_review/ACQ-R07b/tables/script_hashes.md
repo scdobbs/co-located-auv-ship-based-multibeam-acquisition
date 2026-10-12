@@ -5,7 +5,7 @@
 | src/phase4/harness_r07b.py | 46b96706e831d241 | new: B1 stand-ins, uninterrupted / stopped (setgid injection) / fix / completion, the four checks |
 | src/phase4/refusal_tests_r07b.py | 861a490161146dc7 | new: B2 refusal tests + positive control + finished-pair file tests |
 | src/phase4/freeze_r07b.py | f740312248c5e46b | new: completion freeze record |
-| src/phase4/tables_r07b.py | e6d0120857307929 | new: these tables + deviation template |
+| src/phase4/tables_r07b.py | 5a46f626ff15cf4c | new: these tables + deviation template |
 | src/phase4/report.py | 7105749d410fe40b | --dir argument (not frozen) |
 | sbatch/acq_r07b/harness.sbatch | 1f2e2ef70d59c8ab | new: B1+B2 driver |
 | sbatch/acq_r07b/completion.sbatch | bb733ce1348b6f52 | new: Part F driver (prepared, not submitted) |

@@ -1,0 +1,24 @@
+{
+ "generated": "2026-10-12T01:27:58+00:00",
+ "destination": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase4/acq_step1",
+ "n_files": 13,
+ "n_ok": 13,
+ "n_failed": 0,
+ "sha256sums_sha256": "244eaa7ab3467c311ea41d2ff2a641a6f83885217a3a42dd2977bfd12251f458",
+ "entries": [
+  "8a03dade3bffd997e659019aaa6efd8048b494e7f1c7ca5c8757015e28f374ae  AT42-03__MGDS_32007/step1_record.json",
+  "4fdcf2da0afc1f421121e9ee2da91622ce10cfb68d4518abf8641535106c4b29  AT42-03__MGDS_32007/sweep_record.json",
+  "a0959c1359282b33a2670d19b3a62092c610958394af7158b48e2d829f85364e  KN182L03__MGDS_30193/step1_record.json",
+  "d84dcee35c41cb5a46a60a939cdbf99700702ca8085ea1d17167db29ddbc9e5e  KN182L03__MGDS_30193/sweep_record.json",
+  "6968e04554ddeef3c335587d602cb5fab2185db32b46cbd152475a919eb59206  pairs_phase4_sealed.parquet",
+  "977b5568fb81216ba8dbff39864bff0447dd160125a04372270b9c2f2dd708c6  RC2511__MGDS_32239/step1_record.json",
+  "2717af57789149a2876e770039f94730380ff9f99a12ff23455a1f26a799559b  RC2511__MGDS_32239/sweep_record.json",
+  "fb1e07b24681e8b7b15dec3b232ea78266c6c7cd82ae64518e82b76ae99dcc07  step1_run_phase4_completion.json",
+  "7cc5b46d437a72976027f8e7ca9b0f31a8b9eeb5161928c67fce41f87127ce2b  step1_run_phase4_run.json",
+  "912026194d354e768dd9f74cdeb421537eaa64d5c7bd75a684247128b74771e8  SUM1004__MGDS_33090/step1_record.json",
+  "00a8549f07ee299b6d095312e089f3d8d2e8546be01b6574e708a2808825af51  SUM1004__MGDS_33090/sweep_record.json",
+  "52ec5bee29393bc3bc4006eb4881c094b1c55d19237b61d0e7f3ef0727c3c06a  TN159__MGDS_21981/step1_record.json",
+  "d964b5064b55f1dfbcdfc186dca26def1d1ab7cb1a02a1a758ca4b929d6c1ffe  TN159__MGDS_21981/sweep_record.json"
+ ],
+ "method": "shell cp from the pairs' directories and the repo; sha256sum -c at the destination; files 0444"
+}

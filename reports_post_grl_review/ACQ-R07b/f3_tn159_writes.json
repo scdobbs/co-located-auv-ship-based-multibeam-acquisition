@@ -1,0 +1,61 @@
+{
+ "pair_id": "TN159__MGDS_21981",
+ "source": "OAK phase4/acq_step1/TN159__MGDS_21981/step1_record.json (the completion's copy) + job_47438599.out fetcher summary",
+ "fetch": {
+  "n_planned": 37,
+  "n_ok": 37,
+  "n_failed": 0,
+  "rc": 0,
+  "complete": true,
+  "wall_s": 28.8,
+  "fetcher": "src/acq_r01/fetch_swath.py main --plan-csv (unchanged)",
+  "plan_csv": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports/discovery/stage_b_file_plan_2026-06-22.csv"
+ },
+ "fetch_gb": 0.864,
+ "fetch_status_counts": {
+  "fetched": 37
+ },
+ "products": {
+  "available": true,
+  "n_files_listed": 37,
+  "n_files_read": 37,
+  "n_files_rc0": 37,
+  "flags": [],
+  "mb_format": 56,
+  "wall_s": 7.1,
+  "builder": "src/acq_r03/build_products_v2_1.py build (unchanged)"
+ },
+ "write_path": {
+  "mode_before": "0o2770",
+  "mode_opened": "0o2770",
+  "mode_after": null,
+  "restored": null
+ },
+ "files_written": {
+  "ship_products_v2_1/products.json": "838adc49ddb930649fbd20fe49a7335f4cf8425442b16770d2ae5727678108d1",
+  "ship_products_v2_1/products_extra.json": "918054f1a2a06bfe91eb96511188331205cd133585192bfa453576a0047da269",
+  "ship_products_v2_1/qa_shift_surface.csv": "5fdda216a3e54af02e252935d1ac8b6e6e08e7ab5545c74fc444abc37c57beaa",
+  "ship_products_v2_1/ship_beam_angle.tif": "44ab40d3df7503aa2147341a52194f6f9c815ea94e67f0b06a8f60c79ddc571f",
+  "ship_products_v2_1/ship_count.tif": "7a83cdfa5bedf75ed891762b492457ee93c45426963b2c67f20fadcae7c5bb24",
+  "ship_products_v2_1/ship_mean_regrid.tif": "9981fd7ccdd0906c3875b9d6b3f743225563e9b331d034f937254df326e3f4f7",
+  "ship_products_v2_1/ship_median_regrid.tif": "30c0506fbb9701c9af0480c7f41cd03d0887d89fbe32f755addc9156b6ebb7b3",
+  "ship_products_v2_1/ship_rsd.tif": "3b81c2226f06e97409270c6104467a259f97c3be53747dafa8e230f8f6ad1446",
+  "ship_products_v2_1/ship_sd.tif": "118084286ded4e8af5b439a396dd1bbe5b106679f40fc0e49eaba940823ea41d",
+  "ship_products_v2_1/ship_xtrack_frac.tif": "c3a32e5ebaab0fe9b64df42e2b9ea565d13888c653fbd32d4606d1f916b14dff",
+  "sweep_record.json": "d964b5064b55f1dfbcdfc186dca26def1d1ab7cb1a02a1a758ca4b929d6c1ffe"
+ },
+ "step1_record_sha256": "52ec5bee29393bc3bc4006eb4881c094b1c55d19237b61d0e7f3ef0727c3c06a",
+ "sweep_record_sha256": "d964b5064b55f1dfbcdfc186dca26def1d1ab7cb1a02a1a758ca4b929d6c1ffe",
+ "inputs_read": [
+  "hr.tif",
+  "lr.tif",
+  "hr_valid.tif",
+  "lr_valid.tif",
+  "joint_valid.tif"
+ ],
+ "c2a_source": "manifest v2.1 row (prior June values; ACQ-R06b A1, rulings H-1/H-3)",
+ "k_source": "June C2c sweep record reports/discovery/stage_c2c_sweep.json (prior value; ACQ-R06b A1)",
+ "usable": true,
+ "usable_reason": "available, no contract-v2.1 flags (rule C1)",
+ "wall_s": 36.5
+}
