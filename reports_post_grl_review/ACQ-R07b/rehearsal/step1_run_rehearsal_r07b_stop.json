@@ -10,14 +10,14 @@
   "EW9801__MGDS_31425"
  ],
  "out_root": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop",
- "started": "2026-10-12T00:56:45+00:00",
- "host": "sh04-05n26.int",
+ "started": "2026-10-12T01:10:21+00:00",
+ "host": "sh04-06n19.int",
  "cpu_model": "AMD EPYC 8224P 24-Core Processor",
- "code_commit": "f7d9be9db2e31988dedcd0396650c58a11eb8c5f",
+ "code_commit": "98b4d24baaafe72fdd3f1394ff0f9fcd35c49ccd",
  "nproc": 6,
  "batch_files": 1,
  "mbsystem": "5.8.2beta06",
- "sandbox": "/lscratch/scdobbs/47437053/mbsystem_sandbox",
+ "sandbox": "/lscratch/scdobbs/47437898/mbsystem_sandbox",
  "container_digest": "sha256:106f502d9f97ee0e9f5d889726320d1ae73a95fb102069e357a0bb0b35b39668",
  "fixed_input_sha256": {
   "pairs_v2_1.parquet": "f57f3d8f98b320b136549de300ccac58787129af658a1c62296bab16b6c2ac35",
@@ -28,7 +28,7 @@
   "acq_r06_rehearsal/SHA256SUMS": "18cf21b9abd64938ecb03b090c4c4f95c732e77af388cd7630f3d317fba9f3c9"
  },
  "guard_selftest": {
-  "generated": "2026-10-12T00:56:46+00:00",
+  "generated": "2026-10-12T01:10:21+00:00",
   "all_passed": true,
   "controls": {
    "manifest v2.1": "control read ok",
@@ -37,7 +37,7 @@
   "phase4_allowance_installed": [],
   "guard_extension": "ACQ-R06: raw_lr_swath/<cruise> blocked for the sealed LR cruises AT42-03, TN159, KN182L03, RC2511, SUM1004",
   "guard_sha256": "96a1e09e09ace8d3fe53637a00e25ae2d7b3931fc06d88abf57007dab6abf701",
-  "code_commit": "f7d9be9db2e31988dedcd0396650c58a11eb8c5f",
+  "code_commit": "98b4d24baaafe72fdd3f1394ff0f9fcd35c49ccd",
   "reader_checks": {
    "n": 84,
    "n_blocked": 84
@@ -215,7 +215,7 @@
    "products_reason": null,
    "flags": [],
    "ship_products_usable": true,
-   "wall_s": 2.6,
+   "wall_s": 2.5,
    "write_path": {
     "mode_before": "0o2770",
     "mode_opened": "0o2770",
@@ -244,7 +244,7 @@
    "products_reason": null,
    "flags": [],
    "ship_products_usable": true,
-   "wall_s": 53.3,
+   "wall_s": 49.7,
    "write_path": {
     "mode_before": "0o2770",
     "mode_opened": "0o2770",
@@ -273,7 +273,7 @@
    "products_reason": null,
    "flags": [],
    "ship_products_usable": true,
-   "wall_s": 17.6,
+   "wall_s": 16.2,
    "write_path": {
     "mode_before": "0o2770",
     "mode_opened": "0o2770",
@@ -282,5 +282,5 @@
    }
   }
  },
- "wall_s": 108.6
+ "wall_s": 97.6
 }

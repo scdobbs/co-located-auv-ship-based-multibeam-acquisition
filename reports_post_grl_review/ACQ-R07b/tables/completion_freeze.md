@@ -2,5 +2,5 @@
 | file | sha256 |
 |---|---|
 | src/phase4/harness_r07b.py | 46b96706e831d24172f437b4a991ec4805fa7aef75d6bda2294b9f7896734238 |
-| src/phase4/refusal_tests_r07b.py | 3e2250e57990c84bf6a5147d960b5b321a4e0c41731ad892da586790804faff4 |
-| src/phase4/sealed_step1_complete.py | 6c49a66a9fdf9b2156a13b10b315a71975e12791f909c5d6118e2a4f5dd255f0 |
+| src/phase4/refusal_tests_r07b.py | 861a490161146dc74c1408df1484f6e5a9a82e647f337d831a03237a764689e7 |
+| src/phase4/sealed_step1_complete.py | 860e5d598ae222db9c82f27da688dc093455adf10bef9b2502d56cb18a30e706 |

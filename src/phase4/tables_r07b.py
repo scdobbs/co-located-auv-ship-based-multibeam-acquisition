@@ -101,13 +101,27 @@ def main(argv=None):
     (D / "lockbox_metadata_precheck.json").write_text(json.dumps({"generated": P.utc_now(), "method": "os.stat on the directory (nothing opened or listed)", "dirs": meta}, indent=1))
     md(pd.DataFrame([{"pair_id": k, **v} for k, v in meta.items()]), "lockbox_metadata", "lockbox_metadata_precheck.json (os.stat only)")
     out["lockbox_metadata"] = meta
+    # Part F state (F1 dry-check of the locks, F2 metadata fix), when present
+    if (D / "f1_preconditions.json").exists():
+        f1 = json.loads((D / "f1_preconditions.json").read_text())
+        md(pd.DataFrame([{"lock": k, "result": ("refused: " + v if isinstance(v, str) else "ok"), "detail": (v if isinstance(v, str) else json.dumps(v, default=str))[:160]} for k, v in f1.items() if k.startswith("lock")]), "f1_locks", "f1_preconditions.json")
+        out["f1"] = {k: (not isinstance(v, str)) for k, v in f1.items() if k.startswith("lock")}; out["f1"]["all_pass"] = all(out["f1"].values()); out["f1"]["deviation"] = f1.get("lock5")
+    if (D / "f2_metadata_fix.json").exists():
+        f2 = json.loads((D / "f2_metadata_fix.json").read_text())
+        md(pd.DataFrame([{"pair_id": k, "ls -ld before": f2["ls_ld_before"][k].split(" /oak")[0], "ls -ld after": f2["ls_ld_after"][k].split(" /oak")[0], "os.stat after": json.dumps(f2["os_stat_after"][k])} for k in f2["ls_ld_before"]]), "f2_metadata_fix", "f2_metadata_fix.json")
+        out["f2"] = {"lock8_pass": f2["lock8_pass"], "group_before_was_nobody": f2["group_before_was_nobody"], "generated": f2["generated"]}
     # guard
     g = json.loads((D / "harness_r07b.json").read_text())
     out["guard"] = {"refusal_after_n": R["tests"][-1]["raised"]}
     (D / "tables.json").write_text(json.dumps(out, indent=1, default=str))
     # Part C: the deviation note, rendered with [x] / [y]
     x = F["files"]["src/phase4/sealed_step1_complete.py"] if F else "[x]"; y = P.sha256_file(SC.COMPLETION_FREEZE_RECORD) if F else "[y]"
-    (D / "DEVIATION_phase4_01_TEMPLATE.md").write_text(DEVIATION.replace("[x]", x).replace("[y]", y))
+    target = D / "DEVIATION_phase4_01_TEMPLATE.md"
+    if target.exists() and "Signed: ____" not in target.read_text().split("Signed:")[-1][:12]:   # v1 was signed in place: never overwrite it
+        target = D / "DEVIATION_phase4_01_TEMPLATE_v2.md"
+    target.write_text(DEVIATION.replace("[x]", x).replace("[y]", y))
+    out["deviation_rendered_to"] = str(target)
+    (D / "tables.json").write_text(json.dumps(out, indent=1, default=str))
     print(json.dumps({k: v for k, v in out.items() if k in ("frozen", "refusal", "freeze")}, default=str)[:800]); print("b1 all_passed", out["b1"]["all_passed"])
     return 0
 
@@ -134,7 +148,7 @@ DEVIATION = """# DEVIATION_phase4_01 — Phase 4 step 1 stopped and was complete
    recomputed.
 2. The two lockbox directories were changed to group `oak_hilley` and mode 2770. No file inside them was touched.
 3. A completion script (`src/phase4/sealed_step1_complete.py`, sha256 [x]; completion freeze record sha256 [y]; tag
-   `phase4-acq-complete`), rehearsed in ACQ-R07b, did three things:
+   `phase4-acq-complete-v2`), rehearsed in ACQ-R07b, did three things:
    - it read the four pairs from their records, after verifying every file hash;
    - it ran the frozen per-pair code on TN159;
    - it wrote the five-row supplement with the frozen row writer.

@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-12T01:00:58+00:00",
- "code_commit": "f7d9be9db2e31988dedcd0396650c58a11eb8c5f",
+ "generated": "2026-10-12T01:16:46+00:00",
+ "code_commit": "98b4d24baaafe72fdd3f1394ff0f9fcd35c49ccd",
  "frozen": {
   "n_files": 21,
   "n_changed": 0,
@@ -18,17 +18,17 @@
   "order_as_given": true,
   "inject_pair": "RR1506__MGDS_29779",
   "all_passed": true,
-  "wall_s": 231.3,
-  "ref_wall_s": 114.9,
-  "stop_wall_s": 108.6,
-  "completion_wall_s": 7.4,
+  "wall_s": 236.8,
+  "ref_wall_s": 128.9,
+  "stop_wall_s": 97.6,
+  "completion_wall_s": 9.7,
   "stop_error": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/RR1506__MGDS_29779: directory mode not restored (before 0o2770, after 0o770) (rule C4)",
   "stop_form": true,
   "fix_before": "0o770",
   "fix_after": "0o2770",
   "completion_status": "complete",
   "n_rows": 5,
-  "host": "sh04-05n26.int",
+  "host": "sh04-06n19.int",
   "cpu_model": "AMD EPYC 8224P 24-Core Processor",
   "scratch_fetch_deleted": {
    "n_gz_files": 50,
@@ -56,7 +56,7 @@
   "not_recomputed_pass": true,
   "checks_all_pass": true,
   "ref_supplement_sha256": "24e39073093ae8731c568667dc8eebba83a5edb6b1d24a752111419bbc12ed09",
-  "completed_supplement_sha256": "9482a9c4651f43404d643e0fdc6463287530cef413773de84f24a8d09d9b32e2",
+  "completed_supplement_sha256": "27b8f794e5e2f133fbd128f58ebaef3fa48f8519bf629b38a1964ab765e1b32b",
   "volatile_keys": [
    "commands",
    "cpu_model",
@@ -82,16 +82,16 @@
   ]
  },
  "refusal": {
-  "n_tests": 20,
-  "n_passed": 20,
+  "n_tests": 21,
+  "n_passed": 21,
   "all_passed": true,
   "allowance_after": [],
   "guard_after": true
  },
  "freeze": {
-  "record_sha256": "9b84a378000c49b1cc191f33e6641e237d02e5eb6a2c87477307aafaa89d9b57",
+  "record_sha256": "b581e538115dd4859cd6175a131fb4214c800d3b9a5ba6c0321d234530a58182",
   "n_files": 3,
-  "completion_script_sha256": "6c49a66a9fdf9b2156a13b10b315a71975e12791f909c5d6118e2a4f5dd255f0",
+  "completion_script_sha256": "860e5d598ae222db9c82f27da688dc093455adf10bef9b2502d56cb18a30e706",
   "loaded_not_in_frozen": [
    "src/phase4/harness_r07b.py",
    "src/phase4/sealed_step1_complete.py"
@@ -103,18 +103,44 @@
  "lockbox_metadata": {
   "AT42-03__MGDS_32007": {
    "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007",
-   "mode": "0o770",
+   "mode": "0o2770",
    "owner": "scdobbs",
-   "group": "nobody"
+   "group": "oak_hilley"
   },
   "TN159__MGDS_21981": {
    "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981",
    "mode": "0o2770",
    "owner": "scdobbs",
-   "group": "nobody"
+   "group": "oak_hilley"
   }
+ },
+ "f1": {
+  "lock1": true,
+  "lock2": true,
+  "lock3": true,
+  "lock4": true,
+  "lock5": true,
+  "lock6": true,
+  "lock7": true,
+  "lock8": true,
+  "all_pass": true,
+  "deviation": {
+   "deviation_note": "/home/users/scdobbs/GAN_Bathymetry_Project/grl_reviews-and-prompt-reports/directives_and_reports/R11/DEVIATION_phase4_01.md",
+   "sha256": "0be2ae81a219be2d755d811f1c9ce25e46d6d3f70dbab06a92b866591206e3d9",
+   "commit": "be23809ca736282701f1aefddf8fe482abe5fe7b",
+   "repo": "/home/users/scdobbs/GAN_Bathymetry_Project"
+  }
+ },
+ "f2": {
+  "lock8_pass": true,
+  "group_before_was_nobody": {
+   "AT42-03__MGDS_32007": true,
+   "TN159__MGDS_21981": true
+  },
+  "generated": "2026-10-12T01:06:07+00:00"
  },
  "guard": {
   "refusal_after_n": "84/84 blocked"
- }
+ },
+ "deviation_rendered_to": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/DEVIATION_phase4_01_TEMPLATE_v2.md"
 }

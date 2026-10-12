@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-12T00:58:46+00:00",
- "n_tests": 20,
- "n_passed": 20,
+ "generated": "2026-10-12T01:12:13+00:00",
+ "n_tests": 21,
+ "n_passed": 21,
  "all_passed": true,
  "allowance_after_suite": [],
  "guard_selftest_after": {
@@ -19,25 +19,25 @@
  "tests": [
   {
    "test": "1 without the sign-off",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/absent.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_ok.md",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/absent.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_ok.md",
    "expected": "Refusal: LOCK 1 sign-off\u2026",
    "raised": "Refusal",
-   "message": "LOCK 1 sign-off: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/absent.md does not exist",
+   "message": "LOCK 1 sign-off: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/absent.md does not exist",
    "allowance_after": [],
    "passed": true
   },
   {
    "test": "1b wrong pre-registration sha256 in the sign-off",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_wrong.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_ok.md",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_wrong.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_ok.md",
    "expected": "Refusal: LOCK 1 sign-off\u2026",
    "raised": "Refusal",
-   "message": "LOCK 1 sign-off: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_wrong.md does not hold the pre-registration sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "message": "LOCK 1 sign-off: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_wrong.md does not hold the pre-registration sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
    "allowance_after": [],
    "passed": true
   },
   {
    "test": "2 changed frozen file (freeze record with another hash for src/acq_r01/common.py -> record sha256 differs)",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_ok.md --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/freeze_changed.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_ok.md",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_ok.md --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/freeze_changed.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_ok.md",
    "expected": "Refusal: LOCK 2 frozen code\u2026",
    "raised": "Refusal",
    "message": "LOCK 2 frozen code: freeze_changed.json sha256 3b59e281a41fe3c636e62089b9971e6187329b71ddec34c491c076050afe325f != 331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
@@ -46,25 +46,25 @@
   },
   {
    "test": "2b frozen freeze record absent",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_ok.md --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/absent.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_ok.md",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_ok.md --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/absent.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_ok.md",
    "expected": "Refusal: LOCK 2 frozen code\u2026",
    "raised": "Refusal",
-   "message": "LOCK 2 frozen code: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/absent.json does not exist",
+   "message": "LOCK 2 frozen code: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/absent.json does not exist",
    "allowance_after": [],
    "passed": true
   },
   {
    "test": "3 changed completion file (hash altered)",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/completion_altered.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_ok.md",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/completion_altered.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_ok.md",
    "expected": "Refusal: LOCK 3 completion code\u2026",
    "raised": "Refusal",
-   "message": "LOCK 3 completion code: 1 file(s) differ from completion_altered.json: [('src/phase4/sealed_step1_complete.py', '000000000000', '6c49a66a9fdf')]",
+   "message": "LOCK 3 completion code: 1 file(s) differ from completion_altered.json: [('src/phase4/sealed_step1_complete.py', '000000000000', '860e5d598ae2')]",
    "allowance_after": [],
    "passed": true
   },
   {
    "test": "3b loaded completion module unlisted in both records",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/completion_unlisted.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_ok.md",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/completion_unlisted.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_ok.md",
    "expected": "Refusal: LOCK 3 completion code\u2026",
    "raised": "Refusal",
    "message": "LOCK 3 completion code: loaded repo modules in neither freeze record: ['src/phase4/refusal_tests_r07b.py']",
@@ -73,16 +73,16 @@
   },
   {
    "test": "3c completion freeze record absent",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/absent.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_ok.md",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/absent.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_ok.md",
    "expected": "Refusal: LOCK 3 completion code\u2026",
    "raised": "Refusal",
-   "message": "LOCK 3 completion code: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/absent.json does not exist",
+   "message": "LOCK 3 completion code: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/absent.json does not exist",
    "allowance_after": [],
    "passed": true
   },
   {
    "test": "4 prior run record of another sha256",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/completion_ok.json --prior-run-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/prior_other.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_ok.md",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/completion_ok.json --prior-run-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/prior_other.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_ok.md",
    "expected": "Refusal: LOCK 4 prior run\u2026",
    "raised": "Refusal",
    "message": "LOCK 4 prior run: prior_other.json sha256 238b6f3a8c2d348bde50794106873dc71ef8692b0717298d8d33492b4750c9a2 != 7cc5b46d437a72976027f8e7ca9b0f31a8b9eeb5161928c67fce41f87127ce2b",
@@ -91,16 +91,16 @@
   },
   {
    "test": "5 without the deviation note",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/absent.md",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/absent.md",
    "expected": "Refusal: LOCK 5 deviation note\u2026",
    "raised": "Refusal",
-   "message": "LOCK 5 deviation note: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/absent.md does not exist",
+   "message": "LOCK 5 deviation note: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/absent.md does not exist",
    "allowance_after": [],
    "passed": true
   },
   {
    "test": "5b deviation note missing the prior-run hash",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_one_hash.md",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_one_hash.md",
    "expected": "Refusal: LOCK 5 deviation note\u2026",
    "raised": "Refusal",
    "message": "LOCK 5 deviation note: DEVIATION_one_hash.md lacks ['7cc5b46d437a72976027f8e7ca9b0f31a8b9eeb5161928c67fce41f87127ce2b']",
@@ -109,16 +109,25 @@
   },
   {
    "test": "5c deviation note with both hashes but not committed (temp file outside any repo)",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_ok.md",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_ok.md",
    "expected": "Refusal: LOCK 5 deviation note\u2026",
    "raised": "Refusal",
-   "message": "LOCK 5 deviation note: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_ok.md is not committed (tracked False, commit None, clean None, head blob == file False)",
+   "message": "LOCK 5 deviation note: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_ok.md is not committed (tracked False, commit None, clean None, head blob == file False)",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "5d lock 5 passes on a committed note (acquisition repo's signed template, unpatched git check)",
+   "argv": "",
+   "expected": "commit returned",
+   "raised": "ok",
+   "message": "{\"deviation_note\": \"/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/DEVIATION_phase4_01_TEMPLATE.md\", \"sha256\": \"0be2ae81a219be2d755d811f1c9ce25e46d6d3f70dbab06a92b866591206e3d9\", \"commit\": \"98b4d24baaafe72fdd3f1394ff0f9fcd35c49ccd\", \"repo\": \"/hom",
    "allowance_after": [],
    "passed": true
   },
   {
    "test": "6 development pair in the list",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_ok.md --pairs KN182L03__MGDS_30193,RC2511__MGDS_32239,SUM1004__MGDS_33090,AT42-03__MGDS_32007,TN159__MGDS_21981,FK151121__MGDS_22383",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_ok.md --pairs KN182L03__MGDS_30193,RC2511__MGDS_32239,SUM1004__MGDS_33090,AT42-03__MGDS_32007,TN159__MGDS_21981,FK151121__MGDS_22383",
    "expected": "Refusal: pair list:\u2026",
    "raised": "Refusal",
    "message": "pair list: ['FK151121__MGDS_22383'] not in the phase4 pair list ['KN182L03__MGDS_30193', 'RC2511__MGDS_32239', 'SUM1004__MGDS_33090', 'AT42-03__MGDS_32007', 'TN159__MGDS_21981']",
@@ -127,7 +136,7 @@
   },
   {
    "test": "6b four sealed pairs only",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_ok.md --pairs KN182L03__MGDS_30193,RC2511__MGDS_32239,SUM1004__MGDS_33090,AT42-03__MGDS_32007",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_ok.md --pairs KN182L03__MGDS_30193,RC2511__MGDS_32239,SUM1004__MGDS_33090,AT42-03__MGDS_32007",
    "expected": "Refusal: LOCK 3 pair list\u2026",
    "raised": "Refusal",
    "message": "LOCK 3 pair list: must be exactly the five sealed pairs ['AT42-03__MGDS_32007', 'KN182L03__MGDS_30193', 'RC2511__MGDS_32239', 'SUM1004__MGDS_33090', 'TN159__MGDS_21981']; got ['AT42-03__MGDS_32007', 'KN182L03__MGDS_30193', 'RC2511__MGDS_32239', 'SUM1004__MGDS_33090']",
@@ -136,7 +145,7 @@
   },
   {
    "test": "7 the supplement exists",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_ok.md",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_ok.md",
    "expected": "Refusal: LOCK 4 single run\u2026",
    "raised": "Refusal",
    "message": "LOCK 4 single run: /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_phase4_sealed.parquet already exists (sha256 252ba82bf416a4b1c08a2eef4a2a08548187824166f7e87aa1a99f4bef90b11b); there is one run",
@@ -145,7 +154,7 @@
   },
   {
    "test": "7b a complete completion record exists",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_ok.md",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_ok.md",
    "expected": "Refusal: LOCK 7 single completion\u2026",
    "raised": "Refusal",
    "message": "LOCK 7 single completion: /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_completion.json exists with status complete (sha256 c268051c3df326fa8e56c37446305faae70f4eb27872ff8fdc4aa55c8fddc425)",
@@ -154,7 +163,7 @@
   },
   {
    "test": "8 a lockbox directory not oak_hilley / 2770 (harness listing: nobody, 0o770)",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_ok.md",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_ok.md",
    "expected": "Refusal: LOCK 8 lockbox metadata\u2026",
    "raised": "Refusal",
    "message": "LOCK 8 lockbox metadata: expected group oak_hilley mode 0o2770; got {'AT42-03__MGDS_32007': {'dir': 'dummy/AT42-03__MGDS_32007', 'mode': '0o2770', 'owner': 'scdobbs', 'group': 'nobody'}, 'TN159__MGDS_21981': {'dir': 'dummy/TN159__MGDS_21981', 'mode': '0o770', 'owner': 'scdobbs', 'group': 'nobody'}}",
@@ -163,7 +172,7 @@
   },
   {
    "test": "9 positive control (all locks satisfied by dummies -> allowance reached -> safety net)",
-   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/DEVIATION_ok.md",
+   "argv": "--mode phase4 --prereg-sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/signoff_ok.md --freeze-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json --completion-freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/completion_ok.json --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json --deviation-note /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_a6dt8t_q/DEVIATION_ok.md",
    "expected": "SafetyStop: TEST SAFETY NET: the phase4 allowance was reached\u2026",
    "raised": "SafetyStop",
    "message": "TEST SAFETY NET: the phase4 allowance was reached (tokens 11, reason 'ACQ-R06 phase4 locks passed: sign-off, frozen code, completion code, prior run, deviation note, pair list, single completion, lockbox metadata (ACQ-R07b completion)')",
@@ -202,5 +211,5 @@
    "passed": true
   }
  ],
- "code_commit": "f7d9be9db2e31988dedcd0396650c58a11eb8c5f"
+ "code_commit": "98b4d24baaafe72fdd3f1394ff0f9fcd35c49ccd"
 }

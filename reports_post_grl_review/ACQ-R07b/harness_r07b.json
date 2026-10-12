@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-12T00:54:50+00:00",
- "host": "sh04-05n26.int",
+ "generated": "2026-10-12T01:08:11+00:00",
+ "host": "sh04-06n19.int",
  "cpu_model": "AMD EPYC 8224P 24-Core Processor",
- "code_commit": "f7d9be9db2e31988dedcd0396650c58a11eb8c5f",
+ "code_commit": "98b4d24baaafe72fdd3f1394ff0f9fcd35c49ccd",
  "order": [
   "TN399__MGDS_33068",
   "FK151121__MGDS_22383",
@@ -30,7 +30,7 @@
   "tag": "r07b_ref",
   "root": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_ref",
   "argv": "--mode rehearsal --run-tag r07b_ref --pairs TN399__MGDS_33068,FK151121__MGDS_22383,KM0923__MGDS_31429,RR1506__MGDS_29779,EW9801__MGDS_31425 --nproc 6 --batch-files 1",
-  "wall_s": 114.9,
+  "wall_s": 128.9,
   "injected_chmod_calls": [],
   "run_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/step1_run_rehearsal_r07b_ref.json",
   "supplement_exists": true,
@@ -49,7 +49,7 @@
   "tag": "r07b_stop",
   "root": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop",
   "argv": "--mode rehearsal --run-tag r07b_stop --pairs TN399__MGDS_33068,FK151121__MGDS_22383,KM0923__MGDS_31429,RR1506__MGDS_29779,EW9801__MGDS_31425 --nproc 6 --batch-files 1",
-  "wall_s": 108.6,
+  "wall_s": 97.6,
   "injected_chmod_calls": [
    {
     "requested": "0o2770",
@@ -100,7 +100,7 @@
   "returned": 0,
   "stopped": null,
   "argv": "--mode rehearsal --run-tag r07b_stop --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/step1_run_rehearsal_r07b_stop.json --pairs TN399__MGDS_33068,FK151121__MGDS_22383,KM0923__MGDS_31429,RR1506__MGDS_29779,EW9801__MGDS_31425 --nproc 6 --batch-files 1",
-  "wall_s": 7.4,
+  "wall_s": 9.7,
   "run_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/step1_run_rehearsal_r07b_stop_completion.json",
   "status": "complete",
   "supplement": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/supplement_rehearsal_r07b_stop_completion.parquet",
@@ -410,5 +410,5 @@
   "bytes": 148374198
  },
  "all_passed": true,
- "wall_s": 231.3
+ "wall_s": 236.8
 }

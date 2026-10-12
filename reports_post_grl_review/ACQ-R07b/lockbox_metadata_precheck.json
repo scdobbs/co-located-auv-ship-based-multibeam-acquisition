@@ -1,18 +1,18 @@
 {
- "generated": "2026-10-12T01:01:00+00:00",
+ "generated": "2026-10-12T01:16:46+00:00",
  "method": "os.stat on the directory (nothing opened or listed)",
  "dirs": {
   "AT42-03__MGDS_32007": {
    "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007",
-   "mode": "0o770",
+   "mode": "0o2770",
    "owner": "scdobbs",
-   "group": "nobody"
+   "group": "oak_hilley"
   },
   "TN159__MGDS_21981": {
    "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981",
    "mode": "0o2770",
    "owner": "scdobbs",
-   "group": "nobody"
+   "group": "oak_hilley"
   }
  }
 }

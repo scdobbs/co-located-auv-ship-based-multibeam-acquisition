@@ -104,6 +104,14 @@ def main(argv=None):
         results.append(run_case("5b deviation note missing the prior-run hash", full(note=note_one), "LOCK 5 deviation note"))
         SC.deviation_commit = orig_commit
         results.append(run_case("5c deviation note with both hashes but not committed (temp file outside any repo)", full(), "LOCK 5 deviation note"))
+        # 5d lock 5 on a genuinely committed file (this repo's signed template holds both hashes): the git check must pass (unpatched)
+        try:
+            g5 = SC.lock_deviation_note(SC.REPORT_DIR_R07B / "DEVIATION_phase4_01_TEMPLATE.md")
+            results.append({"test": "5d lock 5 passes on a committed note (acquisition repo's signed template, unpatched git check)", "argv": "", "expected": "commit returned",
+                            "raised": "ok", "message": json.dumps(g5)[:300], "allowance_after": list(C.phase4_allowance()), "passed": bool(g5.get("commit")) and C.phase4_allowance() == ()})
+        except BaseException as e:   # noqa: BLE001
+            results.append({"test": "5d lock 5 passes on a committed note (acquisition repo's signed template, unpatched git check)", "argv": "", "expected": "commit returned",
+                            "raised": type(e).__name__, "message": str(e)[:300], "allowance_after": list(C.phase4_allowance()), "passed": False})
         SC.deviation_commit = ok_commit
         results.append(run_case("6 development pair in the list", full(more=["--pairs", ",".join(P.SEALED_PAIRS) + ",FK151121__MGDS_22383"]), "pair list:"))
         results.append(run_case("6b four sealed pairs only", full(more=["--pairs", ",".join(list(P.SEALED_PAIRS)[:4])]), "LOCK 3 pair list"))

@@ -12,14 +12,14 @@
   "EW9801__MGDS_31425"
  ],
  "out_root": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop",
- "started": "2026-10-12T00:58:34+00:00",
- "host": "sh04-05n26.int",
+ "started": "2026-10-12T01:11:58+00:00",
+ "host": "sh04-06n19.int",
  "cpu_model": "AMD EPYC 8224P 24-Core Processor",
- "code_commit": "f7d9be9db2e31988dedcd0396650c58a11eb8c5f",
+ "code_commit": "98b4d24baaafe72fdd3f1394ff0f9fcd35c49ccd",
  "nproc": 6,
  "batch_files": 1,
  "mbsystem": "5.8.2beta06",
- "sandbox": "/lscratch/scdobbs/47437053/mbsystem_sandbox",
+ "sandbox": "/lscratch/scdobbs/47437898/mbsystem_sandbox",
  "container_digest": "sha256:106f502d9f97ee0e9f5d889726320d1ae73a95fb102069e357a0bb0b35b39668",
  "fixed_input_sha256": {
   "pairs_v2_1.parquet": "f57f3d8f98b320b136549de300ccac58787129af658a1c62296bab16b6c2ac35",
@@ -30,7 +30,7 @@
   "acq_r06_rehearsal/SHA256SUMS": "18cf21b9abd64938ecb03b090c4c4f95c732e77af388cd7630f3d317fba9f3c9"
  },
  "guard_selftest": {
-  "generated": "2026-10-12T00:58:34+00:00",
+  "generated": "2026-10-12T01:11:58+00:00",
   "all_passed": true,
   "controls": {
    "manifest v2.1": "control read ok",
@@ -39,16 +39,16 @@
   "phase4_allowance_installed": [],
   "guard_extension": "ACQ-R06: raw_lr_swath/<cruise> blocked for the sealed LR cruises AT42-03, TN159, KN182L03, RC2511, SUM1004",
   "guard_sha256": "96a1e09e09ace8d3fe53637a00e25ae2d7b3931fc06d88abf57007dab6abf701",
-  "code_commit": "f7d9be9db2e31988dedcd0396650c58a11eb8c5f",
+  "code_commit": "98b4d24baaafe72fdd3f1394ff0f9fcd35c49ccd",
   "reader_checks": {
    "n": 84,
    "n_blocked": 84
   }
  },
- "prior_run_record_sha256": "34c576668afeac0714da8a8bae066030ba323734b84fa1df9602307062049e60",
+ "prior_run_record_sha256": "29fc494aedaf3f53a324e6998304ebc2800a1070ec71de74f3ba97601d238999",
  "prior_run_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/step1_run_rehearsal_r07b_stop.json",
  "freeze_record_sha256": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
- "completion_freeze_record_sha256": null,
+ "completion_freeze_record_sha256": "9b84a378000c49b1cc191f33e6641e237d02e5eb6a2c87477307aafaa89d9b57",
  "prior_run": {
   "status": "stopped (rule C4)",
   "error": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/RR1506__MGDS_29779: directory mode not restored (before 0o2770, after 0o770) (rule C4)",
@@ -57,8 +57,8 @@
    "FK151121__MGDS_22383",
    "KM0923__MGDS_31429"
   ],
-  "host": "sh04-05n26.int",
-  "started": "2026-10-12T00:56:45+00:00"
+  "host": "sh04-06n19.int",
+  "started": "2026-10-12T01:10:21+00:00"
  },
  "finished_pairs": [
   "TN399__MGDS_33068",
@@ -97,11 +97,11 @@
   "src/phase4/guard_selftest.py": "ad564fd9281ce98f13add1489fcbc89e88c440dcd7e5c490ba7236a3a851d788",
   "src/phase4/harness_r07b.py": "46b96706e831d24172f437b4a991ec4805fa7aef75d6bda2294b9f7896734238",
   "src/phase4/sealed_step1.py": "bd773cb77eaff1786efe48c8d92210d69a90f885545cd00a07af9b35cd8753c1",
-  "src/phase4/sealed_step1_complete.py": "6c49a66a9fdf9b2156a13b10b315a71975e12791f909c5d6118e2a4f5dd255f0"
+  "src/phase4/sealed_step1_complete.py": "860e5d598ae222db9c82f27da688dc093455adf10bef9b2502d56cb18a30e706"
  },
  "status": "complete",
  "supplement": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/supplement_rehearsal_r07b_stop_completion.parquet",
- "supplement_sha256": "9482a9c4651f43404d643e0fdc6463287530cef413773de84f24a8d09d9b32e2",
+ "supplement_sha256": "27b8f794e5e2f133fbd128f58ebaef3fa48f8519bf629b38a1964ab765e1b32b",
  "n_rows": 5,
  "supplement_pair_ids": [
   "TN399__MGDS_33068",
@@ -139,7 +139,7 @@
    "products_reason": null,
    "flags": [],
    "ship_products_usable": true,
-   "wall_s": 2.6,
+   "wall_s": 2.5,
    "provenance": "record (not recomputed)",
    "write_path": {
     "mode_before": "0o2770",
@@ -182,7 +182,7 @@
    "products_reason": null,
    "flags": [],
    "ship_products_usable": true,
-   "wall_s": 53.3,
+   "wall_s": 49.7,
    "provenance": "record (not recomputed)",
    "write_path": {
     "mode_before": "0o2770",
@@ -225,7 +225,7 @@
    "products_reason": null,
    "flags": [],
    "ship_products_usable": true,
-   "wall_s": 17.6,
+   "wall_s": 16.2,
    "provenance": "record (not recomputed)",
    "write_path": {
     "mode_before": "0o2770",
@@ -268,7 +268,7 @@
    "products_reason": null,
    "flags": [],
    "ship_products_usable": true,
-   "wall_s": 30.4,
+   "wall_s": 28.9,
    "provenance": "record (not recomputed)",
    "write_path": {
     "mode_before": "0o2770",
@@ -316,7 +316,7 @@
    "products_reason": null,
    "flags": [],
    "ship_products_usable": true,
-   "wall_s": 6.9,
+   "wall_s": 8.8,
    "write_path": {
     "mode_before": "0o2770",
     "mode_opened": "0o2770",
@@ -330,17 +330,17 @@
   "TN399__MGDS_33068": {
    "pair_id": "TN399__MGDS_33068",
    "out_dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/TN399__MGDS_33068",
-   "step1_record_sha256": "e24370b03fe1309786b90908d71dc230458fa6e6b1da8d8af264c71a7623e033",
+   "step1_record_sha256": "ab2c4125d85a4f94bedd983cc5d1bdcd5285b3cb9ac7774d9750484a188e4ca8",
    "sweep_record_sha256": "0b448459f54145cb1baf71d222240e48adfad787131bd14d9b7171fda7d69b9a",
    "files": {
     "ship_products_v2_1/products.json": {
-     "recorded": "b179b499840abd4a3d0cc7c8a706519c7d10c52610690d8003cd1ced35a5a106",
-     "got": "b179b499840abd4a3d0cc7c8a706519c7d10c52610690d8003cd1ced35a5a106",
+     "recorded": "cb972ee418b8b447f72ea59044912ab7126e2b5cb481ca46b5fdec709fa98aaf",
+     "got": "cb972ee418b8b447f72ea59044912ab7126e2b5cb481ca46b5fdec709fa98aaf",
      "equal": true
     },
     "ship_products_v2_1/products_extra.json": {
-     "recorded": "520720195845421252d604c41d3d8fa318d2a3a376a332d71699b7f615a04bbe",
-     "got": "520720195845421252d604c41d3d8fa318d2a3a376a332d71699b7f615a04bbe",
+     "recorded": "b7ceb760907a1b2e3eb3a0ffc8d306e1e5c026d30488b6e627cc5897e97b8e81",
+     "got": "b7ceb760907a1b2e3eb3a0ffc8d306e1e5c026d30488b6e627cc5897e97b8e81",
      "equal": true
     },
     "ship_products_v2_1/qa_shift_surface.csv": {
@@ -519,17 +519,17 @@
   "FK151121__MGDS_22383": {
    "pair_id": "FK151121__MGDS_22383",
    "out_dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/FK151121__MGDS_22383",
-   "step1_record_sha256": "8184842098a821b96b889f7d8f76e62b8bd93262cb817d94907aed7e7ab9a508",
+   "step1_record_sha256": "4f9c283ccd5582fccbf49ee0ce220963e446b072e84ac8513326738c4cc77484",
    "sweep_record_sha256": "ebdc323fbc1082be22ff370a1c226e7eb4928c062f9eab4927de5f00082e2e6c",
    "files": {
     "ship_products_v2_1/products.json": {
-     "recorded": "9d805fcbd796d80bbb0f56fa304a3cb8b4d668e52169d7e9dacce2bfcc6f60ee",
-     "got": "9d805fcbd796d80bbb0f56fa304a3cb8b4d668e52169d7e9dacce2bfcc6f60ee",
+     "recorded": "9f2270bb9c8a6581810fb111437314300c08719914c40ff60a03149e49e3761e",
+     "got": "9f2270bb9c8a6581810fb111437314300c08719914c40ff60a03149e49e3761e",
      "equal": true
     },
     "ship_products_v2_1/products_extra.json": {
-     "recorded": "ecfa7b46edc5b77f4d97b55a11b690440dc4f7e93b95c3057cd657acffec9e51",
-     "got": "ecfa7b46edc5b77f4d97b55a11b690440dc4f7e93b95c3057cd657acffec9e51",
+     "recorded": "187eb1361fb61b06a28e0422e5c384a83fe62547c20c8b2a8b6d7fcab8ee0b27",
+     "got": "187eb1361fb61b06a28e0422e5c384a83fe62547c20c8b2a8b6d7fcab8ee0b27",
      "equal": true
     },
     "ship_products_v2_1/qa_shift_surface.csv": {
@@ -708,17 +708,17 @@
   "KM0923__MGDS_31429": {
    "pair_id": "KM0923__MGDS_31429",
    "out_dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/KM0923__MGDS_31429",
-   "step1_record_sha256": "c1bf350ee71cfbbd46b124ca225b3ef0089d093f8127da6fa1393a15f01f46fd",
+   "step1_record_sha256": "28781b3dac0f572ffd6377430fccab438c05953133747211f075b4f814e4a8b2",
    "sweep_record_sha256": "1a5bccc0904dd148c0c7625c7858eddfe680f5735303d58cfbae1ce01859e1c3",
    "files": {
     "ship_products_v2_1/products.json": {
-     "recorded": "e0a83acc190da7f8f02c4bff005af388987d1bbf178f99318299daf8c158c29e",
-     "got": "e0a83acc190da7f8f02c4bff005af388987d1bbf178f99318299daf8c158c29e",
+     "recorded": "0a12ba4c26f9ce268a1d4dfc6cb9909fad0c704c3547496b9ccb0757bae2869c",
+     "got": "0a12ba4c26f9ce268a1d4dfc6cb9909fad0c704c3547496b9ccb0757bae2869c",
      "equal": true
     },
     "ship_products_v2_1/products_extra.json": {
-     "recorded": "f88dc921c06fd9500b5643f109fd34cd890dd1dc0f138d122650fefd31d55f6f",
-     "got": "f88dc921c06fd9500b5643f109fd34cd890dd1dc0f138d122650fefd31d55f6f",
+     "recorded": "010bdbfb354bac6f2d2f27e3df6445174d24cc4b4f01ed762b6dcbacfb654735",
+     "got": "010bdbfb354bac6f2d2f27e3df6445174d24cc4b4f01ed762b6dcbacfb654735",
      "equal": true
     },
     "ship_products_v2_1/qa_shift_surface.csv": {
@@ -897,17 +897,17 @@
   "RR1506__MGDS_29779": {
    "pair_id": "RR1506__MGDS_29779",
    "out_dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/RR1506__MGDS_29779",
-   "step1_record_sha256": "2607c6f76988099d2f29042567001ed68c2c0c96cd5a6e33406ebbf7d8669667",
+   "step1_record_sha256": "c22248ef36aaca4c2f7ba4e7e0562c6fddf46c97e312e48ae6dc1dc3163ae0eb",
    "sweep_record_sha256": "c1ad54dda24b8b5f2fc0807c9eb7d1e80a4d867107e6f82be53c195fbe17c477",
    "files": {
     "ship_products_v2_1/products.json": {
-     "recorded": "5c832ec904eca47b56d188a3d0fca45ba6eecbdd968f27ca9340e89a85e3007d",
-     "got": "5c832ec904eca47b56d188a3d0fca45ba6eecbdd968f27ca9340e89a85e3007d",
+     "recorded": "4d3a83ba0968a3e475c7e4c6d5161dd2335e93697ffbb6abd02518b26857bba6",
+     "got": "4d3a83ba0968a3e475c7e4c6d5161dd2335e93697ffbb6abd02518b26857bba6",
      "equal": true
     },
     "ship_products_v2_1/products_extra.json": {
-     "recorded": "85bd66490b074b0637437434913ec0c39fb3b0079e035e2f63aa5f166d9b4eca",
-     "got": "85bd66490b074b0637437434913ec0c39fb3b0079e035e2f63aa5f166d9b4eca",
+     "recorded": "efa7fdd53ad1cbc221e374a184980d2f2da8fd041d622d2fea3909c92711d54a",
+     "got": "efa7fdd53ad1cbc221e374a184980d2f2da8fd041d622d2fea3909c92711d54a",
      "equal": true
     },
     "ship_products_v2_1/qa_shift_surface.csv": {
@@ -1026,7 +1026,7 @@
    "pair_id": "TN399__MGDS_33068",
    "item": "record",
    "status": "read",
-   "reason": "step1_record.json e24370b03fe1, sweep_record.json 0b448459f541"
+   "reason": "step1_record.json ab2c4125d85a, sweep_record.json 0b448459f541"
   },
   {
    "pair_id": "TN399__MGDS_33068",
@@ -1056,7 +1056,7 @@
    "pair_id": "FK151121__MGDS_22383",
    "item": "record",
    "status": "read",
-   "reason": "step1_record.json 8184842098a8, sweep_record.json ebdc323fbc10"
+   "reason": "step1_record.json 4f9c283ccd55, sweep_record.json ebdc323fbc10"
   },
   {
    "pair_id": "FK151121__MGDS_22383",
@@ -1086,7 +1086,7 @@
    "pair_id": "KM0923__MGDS_31429",
    "item": "record",
    "status": "read",
-   "reason": "step1_record.json c1bf350ee71c, sweep_record.json 1a5bccc0904d"
+   "reason": "step1_record.json 28781b3dac0f, sweep_record.json 1a5bccc0904d"
   },
   {
    "pair_id": "KM0923__MGDS_31429",
@@ -1116,7 +1116,7 @@
    "pair_id": "RR1506__MGDS_29779",
    "item": "record",
    "status": "read",
-   "reason": "step1_record.json 2607c6f76988, sweep_record.json c1ad54dda24b"
+   "reason": "step1_record.json c22248ef36aa, sweep_record.json c1ad54dda24b"
   },
   {
    "pair_id": "RR1506__MGDS_29779",
@@ -1179,6 +1179,6 @@
    "reason": "12 files; dir 0o2770 -> 0o2770 -> 0o2770"
   }
  ],
- "wall_s": 7.4,
- "finished": "2026-10-12T00:58:42+00:00"
+ "wall_s": 9.7,
+ "finished": "2026-10-12T01:12:08+00:00"
 }

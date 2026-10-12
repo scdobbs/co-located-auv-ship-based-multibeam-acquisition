@@ -1,0 +1,66 @@
+{
+ "lock1": {
+  "signoff": "/home/users/scdobbs/GAN_Bathymetry_Project/grl_reviews-and-prompt-reports/directives_and_reports/R11/SIGNOFF_phase4_prereg_v2.md",
+  "prereg_sha256": "9795db3b22d6c54f7a85618dbaccafa054e88487b33236a7b2083ecb8c605979",
+  "signoff_sha256": "f1317c50d565a35a69154b6418b0f3ee0cf6db070e514c76d2512afcee685be8"
+ },
+ "lock2": {
+  "freeze_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json",
+  "freeze_record_sha256": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
+  "n_files": 21
+ },
+ "lock3": {
+  "completion_freeze_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/completion_freeze_record.json",
+  "completion_freeze_record_sha256": "b581e538115dd4859cd6175a131fb4214c800d3b9a5ba6c0321d234530a58182",
+  "n_files": 3,
+  "n_loaded_checked": 21
+ },
+ "lock4": {
+  "prior_run_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json",
+  "prior_run_record_sha256": "7cc5b46d437a72976027f8e7ca9b0f31a8b9eeb5161928c67fce41f87127ce2b",
+  "status": "stopped (rule C4)",
+  "error": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007: directory mode not restored (before 0o2770, after 0o770) (rule C4)",
+  "pairs_done": [
+   "KN182L03__MGDS_30193",
+   "RC2511__MGDS_32239",
+   "SUM1004__MGDS_33090"
+  ],
+  "job_host": "sh02-06n09.int",
+  "started": "2026-10-12T00:02:18+00:00"
+ },
+ "lock5": {
+  "deviation_note": "/home/users/scdobbs/GAN_Bathymetry_Project/grl_reviews-and-prompt-reports/directives_and_reports/R11/DEVIATION_phase4_01.md",
+  "sha256": "0be2ae81a219be2d755d811f1c9ce25e46d6d3f70dbab06a92b866591206e3d9",
+  "commit": "be23809ca736282701f1aefddf8fe482abe5fe7b",
+  "repo": "/home/users/scdobbs/GAN_Bathymetry_Project"
+ },
+ "lock6": {
+  "pairs": [
+   "AT42-03__MGDS_32007",
+   "KN182L03__MGDS_30193",
+   "RC2511__MGDS_32239",
+   "SUM1004__MGDS_33090",
+   "TN159__MGDS_21981"
+  ]
+ },
+ "lock7": {
+  "supplement": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_phase4_sealed.parquet",
+  "completion_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_completion.json"
+ },
+ "lock8": {
+  "AT42-03__MGDS_32007": {
+   "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007",
+   "mode": "0o2770",
+   "owner": "scdobbs",
+   "group": "oak_hilley"
+  },
+  "TN159__MGDS_21981": {
+   "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981",
+   "mode": "0o2770",
+   "owner": "scdobbs",
+   "group": "oak_hilley"
+  }
+ },
+ "allowance_installed": [],
+ "note": "dry check on the login node through the completion's own lock functions after the lock-5 fix, the re-freeze and the F2 metadata fix; lock 5 here checks the v1 note committed in the CNN repo (be23809), whose [x]/[y] cite the superseded freeze"
+}

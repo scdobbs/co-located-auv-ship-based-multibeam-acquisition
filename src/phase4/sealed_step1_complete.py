@@ -147,13 +147,14 @@ def lock_prior_run(prior: dict) -> dict:
 
 def deviation_commit(path: Path) -> dict:
     """The note's git state in the repository that holds it: tracked, clean, and the HEAD blob equal to the file."""
-    def git(*args):
-        r = subprocess.run(["git", *args], cwd=str(path.parent), capture_output=True, text=True)
+    def git(*args, cwd=None):
+        r = subprocess.run(["git", *args], cwd=str(cwd or path.parent), capture_output=True, text=True)
         return r.returncode, r.stdout.strip()
     rc, top = git("rev-parse", "--show-toplevel")
     if rc != 0:
         return {"tracked": False, "reason": "not inside a git repository"}
     rel = str(path.resolve().relative_to(Path(top).resolve()))
+    git = (lambda _g: (lambda *a: _g(*a, cwd=top)))(git)            # every pathspec below is toplevel-relative: run from the toplevel
     rc_t, _ = git("ls-files", "--error-unmatch", rel)
     _, commit = git("log", "-1", "--format=%H", "--", rel)
     _, status = git("status", "--short", "--", rel)

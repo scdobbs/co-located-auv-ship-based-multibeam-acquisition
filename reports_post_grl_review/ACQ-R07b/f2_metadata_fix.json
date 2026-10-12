@@ -1,0 +1,45 @@
+{
+ "generated": "2026-10-12T01:06:07+00:00",
+ "ruling": "R2: chgrp oak_hilley + chmod 2770 on the directory only (not recursive)",
+ "ls_ld_before": {
+  "AT42-03__MGDS_32007": "drwxrwx---+ 4 scdobbs nobody 4096 Oct 11 17:07 /oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007",
+  "TN159__MGDS_21981": "drwxrws---+ 3 scdobbs nobody 4096 Jun 26 21:48 /oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981"
+ },
+ "ls_ld_after": {
+  "AT42-03__MGDS_32007": "drwxrws---+ 4 scdobbs oak_hilley 4096 Oct 11 17:07 /oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007",
+  "TN159__MGDS_21981": "drwxrws---+ 3 scdobbs oak_hilley 4096 Jun 26 21:48 /oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981"
+ },
+ "group_before_was_nobody": {
+  "AT42-03__MGDS_32007": true,
+  "TN159__MGDS_21981": true
+ },
+ "os_stat_after": {
+  "AT42-03__MGDS_32007": {
+   "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007",
+   "mode": "0o2770",
+   "owner": "scdobbs",
+   "group": "oak_hilley"
+  },
+  "TN159__MGDS_21981": {
+   "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981",
+   "mode": "0o2770",
+   "owner": "scdobbs",
+   "group": "oak_hilley"
+  }
+ },
+ "lock8_after_fix": {
+  "AT42-03__MGDS_32007": {
+   "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007",
+   "mode": "0o2770",
+   "owner": "scdobbs",
+   "group": "oak_hilley"
+  },
+  "TN159__MGDS_21981": {
+   "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981",
+   "mode": "0o2770",
+   "owner": "scdobbs",
+   "group": "oak_hilley"
+  }
+ },
+ "lock8_pass": true
+}

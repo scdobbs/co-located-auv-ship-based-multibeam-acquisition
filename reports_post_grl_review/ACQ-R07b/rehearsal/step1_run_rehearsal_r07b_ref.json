@@ -10,14 +10,14 @@
   "EW9801__MGDS_31425"
  ],
  "out_root": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_ref",
- "started": "2026-10-12T00:54:51+00:00",
- "host": "sh04-05n26.int",
+ "started": "2026-10-12T01:08:12+00:00",
+ "host": "sh04-06n19.int",
  "cpu_model": "AMD EPYC 8224P 24-Core Processor",
- "code_commit": "f7d9be9db2e31988dedcd0396650c58a11eb8c5f",
+ "code_commit": "98b4d24baaafe72fdd3f1394ff0f9fcd35c49ccd",
  "nproc": 6,
  "batch_files": 1,
  "mbsystem": "5.8.2beta06",
- "sandbox": "/lscratch/scdobbs/47437053/mbsystem_sandbox",
+ "sandbox": "/lscratch/scdobbs/47437898/mbsystem_sandbox",
  "container_digest": "sha256:106f502d9f97ee0e9f5d889726320d1ae73a95fb102069e357a0bb0b35b39668",
  "fixed_input_sha256": {
   "pairs_v2_1.parquet": "f57f3d8f98b320b136549de300ccac58787129af658a1c62296bab16b6c2ac35",
@@ -28,7 +28,7 @@
   "acq_r06_rehearsal/SHA256SUMS": "18cf21b9abd64938ecb03b090c4c4f95c732e77af388cd7630f3d317fba9f3c9"
  },
  "guard_selftest": {
-  "generated": "2026-10-12T00:54:51+00:00",
+  "generated": "2026-10-12T01:08:12+00:00",
   "all_passed": true,
   "controls": {
    "manifest v2.1": "control read ok",
@@ -37,7 +37,7 @@
   "phase4_allowance_installed": [],
   "guard_extension": "ACQ-R06: raw_lr_swath/<cruise> blocked for the sealed LR cruises AT42-03, TN159, KN182L03, RC2511, SUM1004",
   "guard_sha256": "96a1e09e09ace8d3fe53637a00e25ae2d7b3931fc06d88abf57007dab6abf701",
-  "code_commit": "f7d9be9db2e31988dedcd0396650c58a11eb8c5f",
+  "code_commit": "98b4d24baaafe72fdd3f1394ff0f9fcd35c49ccd",
   "reader_checks": {
    "n": 84,
    "n_blocked": 84
@@ -92,7 +92,7 @@
   "src/phase4/guard_selftest.py": "ad564fd9281ce98f13add1489fcbc89e88c440dcd7e5c490ba7236a3a851d788",
   "src/phase4/harness_r07b.py": "46b96706e831d24172f437b4a991ec4805fa7aef75d6bda2294b9f7896734238",
   "src/phase4/sealed_step1.py": "bd773cb77eaff1786efe48c8d92210d69a90f885545cd00a07af9b35cd8753c1",
-  "src/phase4/sealed_step1_complete.py": "6c49a66a9fdf9b2156a13b10b315a71975e12791f909c5d6118e2a4f5dd255f0"
+  "src/phase4/sealed_step1_complete.py": "860e5d598ae222db9c82f27da688dc093455adf10bef9b2502d56cb18a30e706"
  },
  "status": "complete",
  "supplement": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/supplement_rehearsal_r07b_ref.parquet",
@@ -127,7 +127,7 @@
    "products_reason": null,
    "flags": [],
    "ship_products_usable": true,
-   "wall_s": 2.7,
+   "wall_s": 23.9,
    "write_path": {
     "mode_before": "0o2770",
     "mode_opened": "0o2770",
@@ -156,7 +156,7 @@
    "products_reason": null,
    "flags": [],
    "ship_products_usable": true,
-   "wall_s": 51.7,
+   "wall_s": 50.5,
    "write_path": {
     "mode_before": "0o2770",
     "mode_opened": "0o2770",
@@ -185,7 +185,7 @@
    "products_reason": null,
    "flags": [],
    "ship_products_usable": true,
-   "wall_s": 17.6,
+   "wall_s": 16.7,
    "write_path": {
     "mode_before": "0o2770",
     "mode_opened": "0o2770",
@@ -214,7 +214,7 @@
    "products_reason": null,
    "flags": [],
    "ship_products_usable": true,
-   "wall_s": 30.5,
+   "wall_s": 29.4,
    "write_path": {
     "mode_before": "0o2770",
     "mode_opened": "0o2770",
@@ -248,7 +248,7 @@
    "products_reason": null,
    "flags": [],
    "ship_products_usable": true,
-   "wall_s": 10.4,
+   "wall_s": 7.0,
    "write_path": {
     "mode_before": "0o2770",
     "mode_opened": "0o2770",
@@ -415,6 +415,6 @@
    "reason": "12 files; dir 0o2770 -> 0o2770 -> 0o2770"
   }
  ],
- "wall_s": 114.9,
- "finished": "2026-10-12T00:56:45+00:00"
+ "wall_s": 128.9,
+ "finished": "2026-10-12T01:10:20+00:00"
 }

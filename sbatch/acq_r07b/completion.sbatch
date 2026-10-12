@@ -16,7 +16,7 @@ R11=grl_reviews-and-prompt-reports/directives_and_reports/R11
 PREREG=9795db3b22d6c54f7a85618dbaccafa054e88487b33236a7b2083ecb8c605979
 PY=/home/users/scdobbs/bathy_diffusion_env/bin/python
 cd $ACQ
-echo "host=$(hostname) job=$SLURM_JOB_ID commit=$(git rev-parse HEAD) freeze_tag=$(git rev-parse phase4-acq-freeze^{commit}) complete_tag=$(git rev-parse phase4-acq-complete^{commit} 2>/dev/null) start=$(date -u +%FT%TZ)"
+echo "host=$(hostname) job=$SLURM_JOB_ID commit=$(git rev-parse HEAD) freeze_tag=$(git rev-parse phase4-acq-freeze^{commit}) complete_tag_v2=$(git rev-parse phase4-acq-complete-v2^{commit} 2>/dev/null) start=$(date -u +%FT%TZ)"
 grep -m1 "model name" /proc/cpuinfo
 for f in SIGNOFF_phase4_prereg_v2.md DEVIATION_phase4_01.md; do
   (cd $CNN && git ls-files --error-unmatch $R11/$f >/dev/null 2>&1) || { echo "PRECONDITION FAILED: $f not tracked in the CNN repo"; exit 3; }
