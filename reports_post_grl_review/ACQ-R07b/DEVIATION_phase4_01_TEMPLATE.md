@@ -35,4 +35,4 @@ value of any confirmatory pair. The order of operations in B3 from step 2 on.
 in REPORT_ACQ-R07: spacings, k and per-k verdicts, product status and flags, and cells across the window. No
 amplitude, tile, figure, prediction or score existed.
 
-Signed: ______________________   Date: __________
+Signed: ______Stephen Cole Dobbs________________   Date: __10/11/2026________
