@@ -1,0 +1,95 @@
+{
+ "generated": "2026-10-12T19:20:28+00:00",
+ "python": "3.12.1",
+ "dont_write_bytecode": true,
+ "guard": {
+  "n_blocked": 702,
+  "probes": 702,
+  "n_readers": 13,
+  "n_sealed_paths": 54,
+  "n_tokens": 37
+ },
+ "phase4_common_sha256": "ef70653f7398c059c5dd9fcd68b30fa67fac1b4a6d34f53ee12e5e27497e04e1",
+ "call": "load_acq_run_record('6968e045\u2026')",
+ "passed": true,
+ "returned_path": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_citation.json",
+ "returned_sha256": "6e51efd61f36f92066ff91de2749cdd7ce85192c6f8d20611c1a3de45ffa431e",
+ "returned_keys": [
+  "candidates",
+  "code_commit",
+  "freeze_record_sha256",
+  "mode",
+  "path",
+  "per_pair",
+  "sha256",
+  "status",
+  "supplement_sha256"
+ ],
+ "fields_present": {
+  "path": true,
+  "sha256": true,
+  "status": true,
+  "mode": true,
+  "freeze_record_sha256": true,
+  "supplement_sha256": true,
+  "code_commit": true,
+  "per_pair": true,
+  "candidates": true
+ },
+ "per_pair_pairs": [
+  "AT42-03__MGDS_32007",
+  "KN182L03__MGDS_30193",
+  "RC2511__MGDS_32239",
+  "SUM1004__MGDS_33090",
+  "TN159__MGDS_21981"
+ ],
+ "per_pair_fields_for_k_provenance": {
+  "KN182L03__MGDS_30193": {
+   "max_recoverable_k": true,
+   "per_k": true,
+   "k_source": true,
+   "values_source": true
+  },
+  "RC2511__MGDS_32239": {
+   "max_recoverable_k": true,
+   "per_k": true,
+   "k_source": true,
+   "values_source": true
+  },
+  "SUM1004__MGDS_33090": {
+   "max_recoverable_k": true,
+   "per_k": true,
+   "k_source": true,
+   "values_source": true
+  },
+  "AT42-03__MGDS_32007": {
+   "max_recoverable_k": true,
+   "per_k": true,
+   "k_source": true,
+   "values_source": true
+  },
+  "TN159__MGDS_21981": {
+   "max_recoverable_k": true,
+   "per_k": true,
+   "k_source": true,
+   "values_source": true
+  }
+ },
+ "candidates": [
+  {
+   "path": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_citation.json",
+   "status": "complete",
+   "mode": "phase4",
+   "freeze_record_sha256": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
+   "supplement_sha256": "6968e04554ddeef3c335587d602cb5fab2185db32b46cbd152475a919eb59206",
+   "accepted": true
+  }
+ ],
+ "returned_scalar_values": {
+  "status": "complete",
+  "mode": "phase4",
+  "freeze_record_sha256": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
+  "supplement_sha256": "6968e04554ddeef3c335587d602cb5fab2185db32b46cbd152475a919eb59206",
+  "code_commit": "c010b9eee2ae9d390005b3c94b7d02aedd8c07c0"
+ }
+}

@@ -1,0 +1,140 @@
+{
+ "generated": "2026-10-12T19:18:53+00:00",
+ "host": "sh04-ln03.stanford.edu",
+ "git_commit": "4d8627ce0572795cb7f7535a917c71eb74dfba00",
+ "script_sha256": "9545896b0a9bdfc10fff97b15545fe9928b98a4f2a792cd599135e01c6cea87d",
+ "fixed_inputs": {
+  "pairs_v2_1.parquet": "f57f3d8f98b320b136549de300ccac58787129af658a1c62296bab16b6c2ac35",
+  "pairs_v2_1_dropped.csv": "1f1bb181c63df8991ddc981c731bbf048a25ec56cb33435487b356d603073dab",
+  "INTERFACE_CONTRACT_v2.1.md": "0b4aadaf61fb04213ae18771d2a58532f39e9d49b5152ab64738d188a7e18fcb",
+  "stage_c2c_sweep.json": "7a7c2434b278384825eb7842a704701f609eae3c3e4d4ec99cbb7beea6c3f2a3",
+  "stage_b_file_plan_2026-06-22.csv": "c458cab2b19493df48acdf3086a49f5890c1939864112e645b5de503f6ba9875",
+  "acq_r06_rehearsal/SHA256SUMS": "18cf21b9abd64938ecb03b090c4c4f95c732e77af388cd7630f3d317fba9f3c9"
+ },
+ "guard_selftest": {
+  "all_passed": true,
+  "n": 84,
+  "n_blocked": 84,
+  "allowance": []
+ },
+ "pinned": {
+  "reports_post_grl_review/ACQ-R06b/freeze_record.json": {
+   "expected": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
+   "got": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
+   "equal": true
+  },
+  "reports_post_grl_review/ACQ-R06b/step1_run_phase4_completion.json": {
+   "expected": "fb1e07b24681e8b7b15dec3b232ea78266c6c7cd82ae64518e82b76ae99dcc07",
+   "got": "fb1e07b24681e8b7b15dec3b232ea78266c6c7cd82ae64518e82b76ae99dcc07",
+   "equal": true
+  },
+  "manifest/pairs_phase4_sealed.parquet": {
+   "expected": "6968e04554ddeef3c335587d602cb5fab2185db32b46cbd152475a919eb59206",
+   "got": "6968e04554ddeef3c335587d602cb5fab2185db32b46cbd152475a919eb59206",
+   "equal": true
+  },
+  "reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json": {
+   "expected": "7cc5b46d437a72976027f8e7ca9b0f31a8b9eeb5161928c67fce41f87127ce2b",
+   "got": "7cc5b46d437a72976027f8e7ca9b0f31a8b9eeb5161928c67fce41f87127ce2b",
+   "equal": true
+  },
+  "src/phase4/sealed_step1_complete.py": {
+   "expected": "860e5d598ae222db9c82f27da688dc093455adf10bef9b2502d56cb18a30e706",
+   "got": "860e5d598ae222db9c82f27da688dc093455adf10bef9b2502d56cb18a30e706",
+   "equal": true
+  },
+  "reports_post_grl_review/ACQ-R07b/completion_freeze_record.json": {
+   "expected": "b581e538115dd4859cd6175a131fb4214c800d3b9a5ba6c0321d234530a58182",
+   "got": "b581e538115dd4859cd6175a131fb4214c800d3b9a5ba6c0321d234530a58182",
+   "equal": true
+  }
+ },
+ "cnn_scripts": {
+  "phase4_common.py": {
+   "b6": "ef70653f7398c059c5dd9fcd68b30fa67fac1b4a6d34f53ee12e5e27497e04e1",
+   "got": "ef70653f7398c059c5dd9fcd68b30fa67fac1b4a6d34f53ee12e5e27497e04e1",
+   "equal": true,
+   "git_status": "",
+   "clean": true
+  },
+  "phase4_build.py": {
+   "b6": "98370164406f1c75a8c76ea342432644d896d89bc5e6548c68b0ff65ec0b46d5",
+   "got": "98370164406f1c75a8c76ea342432644d896d89bc5e6548c68b0ff65ec0b46d5",
+   "equal": true,
+   "git_status": "",
+   "clean": true
+  },
+  "phase4_figures.py": {
+   "b6": "44e87590d247b67cf27f02ef0761af39a9a522af385c35b10bd0ce25b8551052",
+   "got": "44e87590d247b67cf27f02ef0761af39a9a522af385c35b10bd0ce25b8551052",
+   "equal": true,
+   "git_status": "",
+   "clean": true
+  },
+  "phase4_predict.py": {
+   "b6": "7267a9c85579565044088c931a60c6dd88d12cdacf68d92795bf6b323ed01315",
+   "got": "7267a9c85579565044088c931a60c6dd88d12cdacf68d92795bf6b323ed01315",
+   "equal": true,
+   "git_status": "",
+   "clean": true
+  },
+  "phase4_score.py": {
+   "b6": "9aefb6ff7f67eef2a066478949786fa597af920a048fe34b3d3c8d0545a1382f",
+   "got": "9aefb6ff7f67eef2a066478949786fa597af920a048fe34b3d3c8d0545a1382f",
+   "equal": true,
+   "git_status": "",
+   "clean": true
+  }
+ },
+ "r06b_before": {
+  "REPORT_ACQ-R06b_2026-10-10.md": "96fff224f15adef37181276c503979bb75e2775f4d674f2060046bf61df927b8",
+  "REPORT_ACQ-R06b_template.md": "9a469302133ef3b5756c426be680f03b5f92645754118da4d2560edd2f8544ab",
+  "freeze_record.json": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
+  "guard_selftest.json": "143c7e46557225901cd0ac4e7633043d76ef2fc487741a5e52293a60485be258",
+  "harness_r06b.json": "9d6802283a715670197cb49159c907d77a651e7f05a38f8f3a0eada53c6a3235",
+  "jobs.txt": "25b00ce078300ca3ca47563429c67b496707aa69a1c4887ddc6e6884aba88d32",
+  "preserve_verify.json": "4a9dfce371640f71f428997a28d6ed880a97a35648506c1c764b1f9c0e08e983",
+  "refusal_tests.json": "3936cc76e24ea9df065ded049c098dd922e1d6d6849961f35ee2a7153e145e89",
+  "sha_before.txt": "663131e8fb767e275c8544ea47b16e8daf1605a9423abfc533ba490b3c14e91c",
+  "step1_run_phase4_completion.json": "fb1e07b24681e8b7b15dec3b232ea78266c6c7cd82ae64518e82b76ae99dcc07",
+  "step1_run_phase4_run.json": "7cc5b46d437a72976027f8e7ca9b0f31a8b9eeb5161928c67fce41f87127ce2b",
+  "tables.json": "25115174d82e93e9a8953caac4e66587361d7af3410fe5b8c4235eeb053698a5"
+ },
+ "must_hold": {
+  "top_level_fields_equal": true,
+  "n_top_level_compared": 41,
+  "locks_entries_equal": true,
+  "n_locks_compared": 10,
+  "added_top_level_keys": [
+   "cites",
+   "produced_by",
+   "purpose",
+   "record_type"
+  ],
+  "added_locks_keys": [
+   "lock2_freeze_record"
+  ],
+  "only_expected_keys_added": true,
+  "citation_value": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
+  "r06b_unchanged": true,
+  "r06b_after": {
+   "REPORT_ACQ-R06b_2026-10-10.md": "96fff224f15adef37181276c503979bb75e2775f4d674f2060046bf61df927b8",
+   "REPORT_ACQ-R06b_template.md": "9a469302133ef3b5756c426be680f03b5f92645754118da4d2560edd2f8544ab",
+   "freeze_record.json": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
+   "guard_selftest.json": "143c7e46557225901cd0ac4e7633043d76ef2fc487741a5e52293a60485be258",
+   "harness_r06b.json": "9d6802283a715670197cb49159c907d77a651e7f05a38f8f3a0eada53c6a3235",
+   "jobs.txt": "25b00ce078300ca3ca47563429c67b496707aa69a1c4887ddc6e6884aba88d32",
+   "preserve_verify.json": "4a9dfce371640f71f428997a28d6ed880a97a35648506c1c764b1f9c0e08e983",
+   "refusal_tests.json": "3936cc76e24ea9df065ded049c098dd922e1d6d6849961f35ee2a7153e145e89",
+   "sha_before.txt": "663131e8fb767e275c8544ea47b16e8daf1605a9423abfc533ba490b3c14e91c",
+   "step1_run_phase4_completion.json": "fb1e07b24681e8b7b15dec3b232ea78266c6c7cd82ae64518e82b76ae99dcc07",
+   "step1_run_phase4_run.json": "7cc5b46d437a72976027f8e7ca9b0f31a8b9eeb5161928c67fce41f87127ce2b",
+   "tables.json": "25115174d82e93e9a8953caac4e66587361d7af3410fe5b8c4235eeb053698a5"
+  }
+ },
+ "output": {
+  "path": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/step1_run_phase4_citation.json",
+  "sha256": "6e51efd61f36f92066ff91de2749cdd7ce85192c6f8d20611c1a3de45ffa431e",
+  "mode": "0o444"
+ }
+}
