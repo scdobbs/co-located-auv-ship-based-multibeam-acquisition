@@ -1,0 +1,50 @@
+2026-10-11 17:54:51,978 INFO [TN399] TN399__MGDS_33068: 12 files, 12 tasks, frame offset applied=False (0.00, 0.00) m
+2026-10-11 17:54:53,773 INFO [TN399] TN399__MGDS_33068: cells=7820 flags=[] argmin=[0.0, -0.25] gain=0.0632 ctrl={'ship_count': 'v2 missing', 'ship_sd': 'v2 missing', 'ship_rsd': 'v2 missing', 'ship_xtrack_frac': 'v2 missing', 'ship_beam_angle': 'v2 missing', 'ship_mean_regrid': 'v2 missing', 'ship_median_regrid': 'v2 missing'}
+2026-10-11 17:54:55,339 INFO [FK151121] FK151121__MGDS_22383: 274 files, 274 tasks, frame offset applied=False (0.00, 0.00) m
+2026-10-11 17:55:45,828 INFO [FK151121] FK151121__MGDS_22383: cells=5827 flags=[] argmin=[0.0, -0.25] gain=0.2014 ctrl={'ship_count': 'v2 missing', 'ship_sd': 'v2 missing', 'ship_rsd': 'v2 missing', 'ship_xtrack_frac': 'v2 missing', 'ship_beam_angle': 'v2 missing', 'ship_mean_regrid': 'v2 missing', 'ship_median_regrid': 'v2 missing'}
+2026-10-11 17:55:46,823 INFO [KM0923] KM0923__MGDS_31429: 229 files, 229 tasks, frame offset applied=False (0.00, 0.00) m
+2026-10-11 17:56:03,488 INFO [KM0923] KM0923__MGDS_31429: cells=10353 flags=[] argmin=[-0.25, 0.25] gain=0.6161 ctrl={'ship_count': 'v2 missing', 'ship_sd': 'v2 missing', 'ship_rsd': 'v2 missing', 'ship_xtrack_frac': 'v2 missing', 'ship_beam_angle': 'v2 missing', 'ship_mean_regrid': 'v2 missing', 'ship_median_regrid': 'v2 missing'}
+2026-10-11 17:56:04,186 INFO [RR1506] RR1506__MGDS_29779: 190 files, 190 tasks, frame offset applied=False (0.00, 0.00) m
+2026-10-11 17:56:34,522 INFO [RR1506] RR1506__MGDS_29779: cells=204734 flags=[] argmin=[0.0, 0.0] gain=0.0 ctrl={'ship_count': 'v2 missing', 'ship_sd': 'v2 missing', 'ship_rsd': 'v2 missing', 'ship_xtrack_frac': 'v2 missing', 'ship_beam_angle': 'v2 missing', 'ship_mean_regrid': 'v2 missing', 'ship_median_regrid': 'v2 missing'}
+2026-10-11 17:56:34,809 INFO plan: 25 swath files, 0.07 GB advertised, cruises=['EW9801']
+2026-10-11 17:56:42,942 INFO   25/25 done (0.1 GB so far, 8 s)
+2026-10-11 17:56:42,971 INFO [EW9801] EW9801__MGDS_31425: 25 files, 25 tasks, frame offset applied=False (0.00, 0.00) m
+2026-10-11 17:56:45,043 INFO [EW9801] EW9801__MGDS_31425: cells=5465 flags=[] argmin=[-0.25, -0.25] gain=0.641 ctrl={'ship_count': 'v2 missing', 'ship_sd': 'v2 missing', 'ship_rsd': 'v2 missing', 'ship_xtrack_frac': 'v2 missing', 'ship_beam_angle': 'v2 missing', 'ship_mean_regrid': 'v2 missing', 'ship_median_regrid': 'v2 missing'}
+2026-10-11 17:56:46,880 INFO [TN399] TN399__MGDS_33068: 12 files, 12 tasks, frame offset applied=False (0.00, 0.00) m
+2026-10-11 17:56:48,668 INFO [TN399] TN399__MGDS_33068: cells=7820 flags=[] argmin=[0.0, -0.25] gain=0.0632 ctrl={'ship_count': 'v2 missing', 'ship_sd': 'v2 missing', 'ship_rsd': 'v2 missing', 'ship_xtrack_frac': 'v2 missing', 'ship_beam_angle': 'v2 missing', 'ship_mean_regrid': 'v2 missing', 'ship_median_regrid': 'v2 missing'}
+2026-10-11 17:56:49,926 INFO [FK151121] FK151121__MGDS_22383: 274 files, 274 tasks, frame offset applied=False (0.00, 0.00) m
+2026-10-11 17:57:42,048 INFO [FK151121] FK151121__MGDS_22383: cells=5827 flags=[] argmin=[0.0, -0.25] gain=0.2014 ctrl={'ship_count': 'v2 missing', 'ship_sd': 'v2 missing', 'ship_rsd': 'v2 missing', 'ship_xtrack_frac': 'v2 missing', 'ship_beam_angle': 'v2 missing', 'ship_mean_regrid': 'v2 missing', 'ship_median_regrid': 'v2 missing'}
+2026-10-11 17:57:43,193 INFO [KM0923] KM0923__MGDS_31429: 229 files, 229 tasks, frame offset applied=False (0.00, 0.00) m
+2026-10-11 17:57:59,792 INFO [KM0923] KM0923__MGDS_31429: cells=10353 flags=[] argmin=[-0.25, 0.25] gain=0.6161 ctrl={'ship_count': 'v2 missing', 'ship_sd': 'v2 missing', 'ship_rsd': 'v2 missing', 'ship_xtrack_frac': 'v2 missing', 'ship_beam_angle': 'v2 missing', 'ship_mean_regrid': 'v2 missing', 'ship_median_regrid': 'v2 missing'}
+2026-10-11 17:58:04,197 INFO [RR1506] RR1506__MGDS_29779: 190 files, 190 tasks, frame offset applied=False (0.00, 0.00) m
+2026-10-11 17:58:34,436 INFO [RR1506] RR1506__MGDS_29779: cells=204734 flags=[] argmin=[0.0, 0.0] gain=0.0 ctrl={'ship_count': 'v2 missing', 'ship_sd': 'v2 missing', 'ship_rsd': 'v2 missing', 'ship_xtrack_frac': 'v2 missing', 'ship_beam_angle': 'v2 missing', 'ship_mean_regrid': 'v2 missing', 'ship_median_regrid': 'v2 missing'}
+2026-10-11 17:58:34,563 ERROR STOP (rule C4): /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/RR1506__MGDS_29779: directory mode not restored (before 0o2770, after 0o770) (rule C4)
+2026-10-11 17:58:34,843 INFO plan: 25 swath files, 0.07 GB advertised, cruises=['EW9801']
+2026-10-11 17:58:39,455 INFO   25/25 done (0.1 GB so far, 5 s)
+2026-10-11 17:58:39,479 INFO [EW9801] EW9801__MGDS_31425: 25 files, 25 tasks, frame offset applied=False (0.00, 0.00) m
+2026-10-11 17:58:41,595 INFO [EW9801] EW9801__MGDS_31425: cells=5465 flags=[] argmin=[-0.25, -0.25] gain=0.641 ctrl={'ship_count': 'v2 missing', 'ship_sd': 'v2 missing', 'ship_rsd': 'v2 missing', 'ship_xtrack_frac': 'v2 missing', 'ship_beam_angle': 'v2 missing', 'ship_mean_regrid': 'v2 missing', 'ship_median_regrid': 'v2 missing'}
+	Command being timed: "/home/users/scdobbs/bathy_diffusion_env/bin/python -m src.phase4.harness_r07b"
+	User time (seconds): 791.67
+	System time (seconds): 132.82
+	Percent of CPU this job got: 391%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:56.36
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 696812
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 263229
+	Minor (reclaiming a frame) page faults: 37183010
+	Voluntary context switches: 4732574
+	Involuntary context switches: 579214
+	Swaps: 0
+	File system inputs: 78939560
+	File system outputs: 87043176
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+2026-10-11 17:58:45,894 ERROR STOP (rule C4): TN399__MGDS_33068: sweep_record.json differs from the sweep in step1_record.json (rule C4)
+2026-10-11 17:58:46,299 ERROR STOP (rule C4): TN399__MGDS_33068: ship_products_v2_1/ship_count.tif missing (recorded 1d5b05846c39, got MISSING) (rule C4)

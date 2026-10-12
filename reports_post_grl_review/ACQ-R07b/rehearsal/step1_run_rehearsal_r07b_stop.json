@@ -1,0 +1,286 @@
+{
+ "directive": "ACQ-R06b",
+ "mode": "rehearsal",
+ "run_tag": "r07b_stop",
+ "pairs": [
+  "TN399__MGDS_33068",
+  "FK151121__MGDS_22383",
+  "KM0923__MGDS_31429",
+  "RR1506__MGDS_29779",
+  "EW9801__MGDS_31425"
+ ],
+ "out_root": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop",
+ "started": "2026-10-12T00:56:45+00:00",
+ "host": "sh04-05n26.int",
+ "cpu_model": "AMD EPYC 8224P 24-Core Processor",
+ "code_commit": "f7d9be9db2e31988dedcd0396650c58a11eb8c5f",
+ "nproc": 6,
+ "batch_files": 1,
+ "mbsystem": "5.8.2beta06",
+ "sandbox": "/lscratch/scdobbs/47437053/mbsystem_sandbox",
+ "container_digest": "sha256:106f502d9f97ee0e9f5d889726320d1ae73a95fb102069e357a0bb0b35b39668",
+ "fixed_input_sha256": {
+  "pairs_v2_1.parquet": "f57f3d8f98b320b136549de300ccac58787129af658a1c62296bab16b6c2ac35",
+  "pairs_v2_1_dropped.csv": "1f1bb181c63df8991ddc981c731bbf048a25ec56cb33435487b356d603073dab",
+  "INTERFACE_CONTRACT_v2.1.md": "0b4aadaf61fb04213ae18771d2a58532f39e9d49b5152ab64738d188a7e18fcb",
+  "stage_c2c_sweep.json": "7a7c2434b278384825eb7842a704701f609eae3c3e4d4ec99cbb7beea6c3f2a3",
+  "stage_b_file_plan_2026-06-22.csv": "c458cab2b19493df48acdf3086a49f5890c1939864112e645b5de503f6ba9875",
+  "acq_r06_rehearsal/SHA256SUMS": "18cf21b9abd64938ecb03b090c4c4f95c732e77af388cd7630f3d317fba9f3c9"
+ },
+ "guard_selftest": {
+  "generated": "2026-10-12T00:56:46+00:00",
+  "all_passed": true,
+  "controls": {
+   "manifest v2.1": "control read ok",
+   "development cruise fetch manifest (TN399)": "control read ok"
+  },
+  "phase4_allowance_installed": [],
+  "guard_extension": "ACQ-R06: raw_lr_swath/<cruise> blocked for the sealed LR cruises AT42-03, TN159, KN182L03, RC2511, SUM1004",
+  "guard_sha256": "96a1e09e09ace8d3fe53637a00e25ae2d7b3931fc06d88abf57007dab6abf701",
+  "code_commit": "f7d9be9db2e31988dedcd0396650c58a11eb8c5f",
+  "reader_checks": {
+   "n": 84,
+   "n_blocked": 84
+  }
+ },
+ "fetch_trigger": {
+  "EW9801": [
+   "EW9801__MGDS_31425"
+  ]
+ },
+ "swath_preflight": {
+  "TN399": {
+   "n_disk": 12,
+   "n_manifest": 12,
+   "equal": true
+  },
+  "FK151121": {
+   "n_disk": 274,
+   "n_manifest": 274,
+   "equal": true
+  },
+  "KM0923": {
+   "n_disk": 229,
+   "n_manifest": 229,
+   "equal": true
+  },
+  "RR1506": {
+   "n_disk": 190,
+   "n_manifest": 190,
+   "equal": true
+  }
+ },
+ "status": "stopped (rule C4)",
+ "error": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/RR1506__MGDS_29779: directory mode not restored (before 0o2770, after 0o770) (rule C4)",
+ "ledger": [
+  {
+   "pair_id": "TN399__MGDS_33068",
+   "item": "inputs",
+   "status": "read",
+   "reason": "hr.tif, lr.tif, 3 masks"
+  },
+  {
+   "pair_id": "TN399__MGDS_33068",
+   "item": "c2a",
+   "status": "computed",
+   "reason": "ACQ-R02 grid record grid/TN399.json:sonar"
+  },
+  {
+   "pair_id": "TN399__MGDS_33068",
+   "item": "sweep",
+   "status": "ok",
+   "reason": "k=16"
+  },
+  {
+   "pair_id": "TN399__MGDS_33068",
+   "item": "products",
+   "status": "built",
+   "reason": "12 files read; flags []"
+  },
+  {
+   "pair_id": "TN399__MGDS_33068",
+   "item": "write",
+   "status": "written, mode restored",
+   "reason": "12 files; dir 0o2770 -> 0o2770 -> 0o2770"
+  },
+  {
+   "pair_id": "FK151121__MGDS_22383",
+   "item": "inputs",
+   "status": "read",
+   "reason": "hr.tif, lr.tif, 3 masks"
+  },
+  {
+   "pair_id": "FK151121__MGDS_22383",
+   "item": "c2a",
+   "status": "computed",
+   "reason": "ACQ-R02 grid record grid/FK151121.json:sonar"
+  },
+  {
+   "pair_id": "FK151121__MGDS_22383",
+   "item": "sweep",
+   "status": "ok",
+   "reason": "k=16"
+  },
+  {
+   "pair_id": "FK151121__MGDS_22383",
+   "item": "products",
+   "status": "built",
+   "reason": "274 files read; flags []"
+  },
+  {
+   "pair_id": "FK151121__MGDS_22383",
+   "item": "write",
+   "status": "written, mode restored",
+   "reason": "12 files; dir 0o2770 -> 0o2770 -> 0o2770"
+  },
+  {
+   "pair_id": "KM0923__MGDS_31429",
+   "item": "inputs",
+   "status": "read",
+   "reason": "hr.tif, lr.tif, 3 masks"
+  },
+  {
+   "pair_id": "KM0923__MGDS_31429",
+   "item": "c2a",
+   "status": "computed",
+   "reason": "ACQ-R02 grid record grid/KM0923.json:sonar"
+  },
+  {
+   "pair_id": "KM0923__MGDS_31429",
+   "item": "sweep",
+   "status": "ok",
+   "reason": "k=16"
+  },
+  {
+   "pair_id": "KM0923__MGDS_31429",
+   "item": "products",
+   "status": "built",
+   "reason": "229 files read; flags []"
+  },
+  {
+   "pair_id": "KM0923__MGDS_31429",
+   "item": "write",
+   "status": "written, mode restored",
+   "reason": "12 files; dir 0o2770 -> 0o2770 -> 0o2770"
+  },
+  {
+   "pair_id": "RR1506__MGDS_29779",
+   "item": "inputs",
+   "status": "read",
+   "reason": "hr.tif, lr.tif, 3 masks"
+  },
+  {
+   "pair_id": "RR1506__MGDS_29779",
+   "item": "c2a",
+   "status": "prior values kept (no C2a)",
+   "reason": "manifest v2.1 row (prior June values; ACQ-R06b A1, rulings H-1/H-3)"
+  },
+  {
+   "pair_id": "RR1506__MGDS_29779",
+   "item": "sweep",
+   "status": "not run (prior k kept)",
+   "reason": "k=8 from June C2c sweep record reports/discovery/stage_c2c_sweep.json (prior value; ACQ-R06b A1)"
+  },
+  {
+   "pair_id": "RR1506__MGDS_29779",
+   "item": "products",
+   "status": "built",
+   "reason": "190 files read; flags []"
+  }
+ ],
+ "pairs_done": [
+  "TN399__MGDS_33068",
+  "FK151121__MGDS_22383",
+  "KM0923__MGDS_31429"
+ ],
+ "per_pair": {
+  "TN399__MGDS_33068": {
+   "pair_id": "TN399__MGDS_33068",
+   "designation": "development (joins existing unit)",
+   "hr_native_res_m": 1.0,
+   "lr_native_res_m": 44.22,
+   "values_source": "C2a rule computed by this step",
+   "max_recoverable_k": 16,
+   "k_sweep_status": "ok",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "recoverable_signal",
+    "32": "no_spectrum"
+   },
+   "fetch": null,
+   "products": "built",
+   "products_reason": null,
+   "flags": [],
+   "ship_products_usable": true,
+   "wall_s": 2.6,
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": "0o2770",
+    "restored": true
+   }
+  },
+  "FK151121__MGDS_22383": {
+   "pair_id": "FK151121__MGDS_22383",
+   "designation": "development",
+   "hr_native_res_m": 1.0,
+   "lr_native_res_m": 65.99,
+   "values_source": "C2a rule computed by this step",
+   "max_recoverable_k": 16,
+   "k_sweep_status": "ok",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "recoverable_signal",
+    "32": "no_spectrum"
+   },
+   "fetch": null,
+   "products": "built",
+   "products_reason": null,
+   "flags": [],
+   "ship_products_usable": true,
+   "wall_s": 53.3,
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": "0o2770",
+    "restored": true
+   }
+  },
+  "KM0923__MGDS_31429": {
+   "pair_id": "KM0923__MGDS_31429",
+   "designation": "development (joins existing unit)",
+   "hr_native_res_m": 2.054,
+   "lr_native_res_m": 86.94,
+   "values_source": "C2a rule computed by this step",
+   "max_recoverable_k": 16,
+   "k_sweep_status": "ok",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "recoverable_signal",
+    "32": "no_spectrum"
+   },
+   "fetch": null,
+   "products": "built",
+   "products_reason": null,
+   "flags": [],
+   "ship_products_usable": true,
+   "wall_s": 17.6,
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": "0o2770",
+    "restored": true
+   }
+  }
+ },
+ "wall_s": 108.6
+}

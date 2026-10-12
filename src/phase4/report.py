@@ -14,8 +14,11 @@ import sys
 from src.phase4 import common as P
 
 
+DIR = P.REPORT_DIR
+
+
 def lookup(fname, keypath):
-    obj = json.loads((P.REPORT_DIR / fname).read_text())
+    obj = json.loads((DIR / fname).read_text())
     rest = keypath
     while rest:
         if isinstance(obj, dict) and rest in obj:            # keys may contain dots or slashes (file names): longest match first
@@ -36,15 +39,19 @@ def lookup(fname, keypath):
 
 
 def main(argv=None):
+    global DIR
     ap = argparse.ArgumentParser(); ap.add_argument("--date", default="2026-10-10"); ap.add_argument("--name", default="ACQ-R06b")
+    ap.add_argument("--dir", default=None, help="report directory name under reports_post_grl_review (default: the ACQ-R06b dir)")
     a = ap.parse_args(argv)
-    t = (P.REPORT_DIR / f"REPORT_{a.name}_template.md").read_text()
-    t = re.sub(r"\{\{table:([\w\-]+)\}\}", lambda m: (P.REPORT_DIR / "tables" / f"{m.group(1)}.md").read_text().strip(), t)
+    if a.dir:
+        DIR = P.REPO / "reports_post_grl_review" / a.dir
+    t = (DIR / f"REPORT_{a.name}_template.md").read_text()
+    t = re.sub(r"\{\{table:([\w\-]+)\}\}", lambda m: (DIR / "tables" / f"{m.group(1)}.md").read_text().strip(), t)
     t = re.sub(r"\{\{json:([\w\-.]+?\.json):([\w.\-/ ]+?)\}\}", lambda m: lookup(m.group(1), m.group(2)), t)
     left = re.findall(r"\{\{[^}]+\}\}", t)
     if left:
         raise SystemExit(f"unresolved placeholders: {left}")
-    out = P.REPORT_DIR / f"REPORT_{a.name}_{a.date}.md"
+    out = DIR / f"REPORT_{a.name}_{a.date}.md"
     out.write_text(t)
     print(out, len(t.splitlines()), "lines")
     return 0

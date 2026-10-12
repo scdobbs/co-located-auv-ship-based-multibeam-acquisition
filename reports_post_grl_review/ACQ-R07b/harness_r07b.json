@@ -1,0 +1,414 @@
+{
+ "generated": "2026-10-12T00:54:50+00:00",
+ "host": "sh04-05n26.int",
+ "cpu_model": "AMD EPYC 8224P 24-Core Processor",
+ "code_commit": "f7d9be9db2e31988dedcd0396650c58a11eb8c5f",
+ "order": [
+  "TN399__MGDS_33068",
+  "FK151121__MGDS_22383",
+  "KM0923__MGDS_31429",
+  "RR1506__MGDS_29779",
+  "EW9801__MGDS_31425"
+ ],
+ "inject_pair": "RR1506__MGDS_29779",
+ "nproc": 6,
+ "batch_files": 1,
+ "patches": {
+  "REHEARSAL_DIR": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal",
+  "supplement": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/supplement_rehearsal.parquet",
+  "relabelled_lockbox": [
+   "RR1506__MGDS_29779",
+   "EW9801__MGDS_31425"
+  ],
+  "listing_minus": [
+   "EW9801"
+  ]
+ },
+ "ref": {
+  "returned": 0,
+  "stopped": null,
+  "tag": "r07b_ref",
+  "root": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_ref",
+  "argv": "--mode rehearsal --run-tag r07b_ref --pairs TN399__MGDS_33068,FK151121__MGDS_22383,KM0923__MGDS_31429,RR1506__MGDS_29779,EW9801__MGDS_31425 --nproc 6 --batch-files 1",
+  "wall_s": 114.9,
+  "injected_chmod_calls": [],
+  "run_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/step1_run_rehearsal_r07b_ref.json",
+  "supplement_exists": true,
+  "pass": true
+ },
+ "processing_order": [
+  "TN399__MGDS_33068",
+  "FK151121__MGDS_22383",
+  "KM0923__MGDS_31429",
+  "RR1506__MGDS_29779",
+  "EW9801__MGDS_31425"
+ ],
+ "stop": {
+  "returned": null,
+  "stopped": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/RR1506__MGDS_29779: directory mode not restored (before 0o2770, after 0o770) (rule C4)",
+  "tag": "r07b_stop",
+  "root": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop",
+  "argv": "--mode rehearsal --run-tag r07b_stop --pairs TN399__MGDS_33068,FK151121__MGDS_22383,KM0923__MGDS_31429,RR1506__MGDS_29779,EW9801__MGDS_31425 --nproc 6 --batch-files 1",
+  "wall_s": 108.6,
+  "injected_chmod_calls": [
+   {
+    "requested": "0o2770",
+    "applied": "0o770"
+   },
+   {
+    "requested": "0o2770",
+    "applied": "0o770"
+   }
+  ],
+  "run_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/step1_run_rehearsal_r07b_stop.json",
+  "supplement_exists": false,
+  "status": "stopped (rule C4)",
+  "error": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/RR1506__MGDS_29779: directory mode not restored (before 0o2770, after 0o770) (rule C4)",
+  "pairs_done": [
+   "TN399__MGDS_33068",
+   "FK151121__MGDS_22383",
+   "KM0923__MGDS_31429"
+  ],
+  "outputs_present": {
+   "TN399__MGDS_33068": 12,
+   "FK151121__MGDS_22383": 12,
+   "KM0923__MGDS_31429": 12,
+   "RR1506__MGDS_29779": 12,
+   "EW9801__MGDS_31425": 0
+  },
+  "inject_dir_mode_after_stop": "0o770",
+  "message_form_as_acq_r07": true,
+  "pass": true
+ },
+ "fix": {
+  "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/RR1506__MGDS_29779",
+  "before": {
+   "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/RR1506__MGDS_29779",
+   "mode": "0o770",
+   "owner": "scdobbs",
+   "group": "hilley"
+  },
+  "after": {
+   "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/RR1506__MGDS_29779",
+   "mode": "0o2770",
+   "owner": "scdobbs",
+   "group": "hilley"
+  },
+  "pass": true
+ },
+ "completion": {
+  "returned": 0,
+  "stopped": null,
+  "argv": "--mode rehearsal --run-tag r07b_stop --prior-run-record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/step1_run_rehearsal_r07b_stop.json --pairs TN399__MGDS_33068,FK151121__MGDS_22383,KM0923__MGDS_31429,RR1506__MGDS_29779,EW9801__MGDS_31425 --nproc 6 --batch-files 1",
+  "wall_s": 7.4,
+  "run_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/step1_run_rehearsal_r07b_stop_completion.json",
+  "status": "complete",
+  "supplement": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/supplement_rehearsal_r07b_stop_completion.parquet",
+  "finished_pairs": [
+   "TN399__MGDS_33068",
+   "FK151121__MGDS_22383",
+   "KM0923__MGDS_31429",
+   "RR1506__MGDS_29779"
+  ],
+  "pending_pairs": [
+   "EW9801__MGDS_31425"
+  ],
+  "n_rows": 5,
+  "error": null
+ },
+ "checks": {
+  "supplement": {
+   "ref": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/supplement_rehearsal_r07b_ref.parquet",
+   "completed": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/supplement_rehearsal_r07b_stop_completion.parquet",
+   "same_columns": true,
+   "same_ids": true,
+   "order_ref": [
+    "TN399__MGDS_33068",
+    "FK151121__MGDS_22383",
+    "KM0923__MGDS_31429",
+    "RR1506__MGDS_29779",
+    "EW9801__MGDS_31425"
+   ],
+   "order_completed": [
+    "TN399__MGDS_33068",
+    "FK151121__MGDS_22383",
+    "KM0923__MGDS_31429",
+    "RR1506__MGDS_29779",
+    "EW9801__MGDS_31425"
+   ],
+   "rows": {
+    "TN399__MGDS_33068": {
+     "differing": [
+      "notes"
+     ],
+     "unexplained": []
+    },
+    "FK151121__MGDS_22383": {
+     "differing": [
+      "notes"
+     ],
+     "unexplained": []
+    },
+    "KM0923__MGDS_31429": {
+     "differing": [
+      "notes"
+     ],
+     "unexplained": []
+    },
+    "RR1506__MGDS_29779": {
+     "differing": [
+      "notes"
+     ],
+     "unexplained": []
+    },
+    "EW9801__MGDS_31425": {
+     "differing": [
+      "notes"
+     ],
+     "unexplained": []
+    }
+   },
+   "differing_union": [
+    "notes"
+   ],
+   "pass": true,
+   "allowed_differences": [
+    "notes"
+   ]
+  },
+  "per_pair": {
+   "keys": [
+    "hr_native_res_m",
+    "lr_native_res_m",
+    "values_source",
+    "max_recoverable_k",
+    "k_sweep_status",
+    "k_source",
+    "per_k",
+    "products",
+    "flags",
+    "ship_products_usable",
+    "designation",
+    "fetch",
+    "products_reason"
+   ],
+   "excluded": [
+    "wall_s",
+    "write_path",
+    "provenance",
+    "mode_history",
+    "usable_reason"
+   ],
+   "pairs": {
+    "TN399__MGDS_33068": {
+     "equal": true,
+     "differing": {}
+    },
+    "FK151121__MGDS_22383": {
+     "equal": true,
+     "differing": {}
+    },
+    "KM0923__MGDS_31429": {
+     "equal": true,
+     "differing": {}
+    },
+    "RR1506__MGDS_29779": {
+     "equal": true,
+     "differing": {}
+    },
+    "EW9801__MGDS_31425": {
+     "equal": true,
+     "differing": {}
+    }
+   },
+   "pass": true
+  },
+  "outputs": {
+   "TN399__MGDS_33068": {
+    "pair_id": "TN399__MGDS_33068",
+    "n_files_ref": 12,
+    "n_files_completed": 12,
+    "same_names": true,
+    "byte_identical": [
+     "ship_products_v2_1/qa_shift_surface.csv",
+     "ship_products_v2_1/ship_beam_angle.tif",
+     "ship_products_v2_1/ship_count.tif",
+     "ship_products_v2_1/ship_mean_regrid.tif",
+     "ship_products_v2_1/ship_median_regrid.tif",
+     "ship_products_v2_1/ship_rsd.tif",
+     "ship_products_v2_1/ship_sd.tif",
+     "ship_products_v2_1/ship_xtrack_frac.tif"
+    ],
+    "semantic_equal": [
+     "ship_products_v2_1/products.json",
+     "ship_products_v2_1/products_extra.json",
+     "step1_record.json",
+     "sweep_record.json"
+    ],
+    "differing": {},
+    "pass": true
+   },
+   "FK151121__MGDS_22383": {
+    "pair_id": "FK151121__MGDS_22383",
+    "n_files_ref": 12,
+    "n_files_completed": 12,
+    "same_names": true,
+    "byte_identical": [
+     "ship_products_v2_1/qa_shift_surface.csv",
+     "ship_products_v2_1/ship_beam_angle.tif",
+     "ship_products_v2_1/ship_count.tif",
+     "ship_products_v2_1/ship_mean_regrid.tif",
+     "ship_products_v2_1/ship_median_regrid.tif",
+     "ship_products_v2_1/ship_rsd.tif",
+     "ship_products_v2_1/ship_sd.tif",
+     "ship_products_v2_1/ship_xtrack_frac.tif"
+    ],
+    "semantic_equal": [
+     "ship_products_v2_1/products.json",
+     "ship_products_v2_1/products_extra.json",
+     "step1_record.json",
+     "sweep_record.json"
+    ],
+    "differing": {},
+    "pass": true
+   },
+   "KM0923__MGDS_31429": {
+    "pair_id": "KM0923__MGDS_31429",
+    "n_files_ref": 12,
+    "n_files_completed": 12,
+    "same_names": true,
+    "byte_identical": [
+     "ship_products_v2_1/qa_shift_surface.csv",
+     "ship_products_v2_1/ship_beam_angle.tif",
+     "ship_products_v2_1/ship_count.tif",
+     "ship_products_v2_1/ship_mean_regrid.tif",
+     "ship_products_v2_1/ship_median_regrid.tif",
+     "ship_products_v2_1/ship_rsd.tif",
+     "ship_products_v2_1/ship_sd.tif",
+     "ship_products_v2_1/ship_xtrack_frac.tif"
+    ],
+    "semantic_equal": [
+     "ship_products_v2_1/products.json",
+     "ship_products_v2_1/products_extra.json",
+     "step1_record.json",
+     "sweep_record.json"
+    ],
+    "differing": {},
+    "pass": true
+   },
+   "RR1506__MGDS_29779": {
+    "pair_id": "RR1506__MGDS_29779",
+    "n_files_ref": 12,
+    "n_files_completed": 12,
+    "same_names": true,
+    "byte_identical": [
+     "ship_products_v2_1/qa_shift_surface.csv",
+     "ship_products_v2_1/ship_beam_angle.tif",
+     "ship_products_v2_1/ship_count.tif",
+     "ship_products_v2_1/ship_mean_regrid.tif",
+     "ship_products_v2_1/ship_median_regrid.tif",
+     "ship_products_v2_1/ship_rsd.tif",
+     "ship_products_v2_1/ship_sd.tif",
+     "ship_products_v2_1/ship_xtrack_frac.tif"
+    ],
+    "semantic_equal": [
+     "ship_products_v2_1/products.json",
+     "ship_products_v2_1/products_extra.json",
+     "step1_record.json",
+     "sweep_record.json"
+    ],
+    "differing": {},
+    "pass": true
+   },
+   "EW9801__MGDS_31425": {
+    "pair_id": "EW9801__MGDS_31425",
+    "n_files_ref": 14,
+    "n_files_completed": 14,
+    "same_names": true,
+    "byte_identical": [
+     "ship_products_v2_1/qa_shift_surface.csv",
+     "ship_products_v2_1/ship_beam_angle.tif",
+     "ship_products_v2_1/ship_count.tif",
+     "ship_products_v2_1/ship_mean_regrid.tif",
+     "ship_products_v2_1/ship_median_regrid.tif",
+     "ship_products_v2_1/ship_rsd.tif",
+     "ship_products_v2_1/ship_sd.tif",
+     "ship_products_v2_1/ship_xtrack_frac.tif"
+    ],
+    "semantic_equal": [
+     "fetch_swath_log_stage_b_file_plan_2026-06-22.csv",
+     "fetch_swath_summary_stage_b_file_plan_2026-06-22.json",
+     "ship_products_v2_1/products.json",
+     "ship_products_v2_1/products_extra.json",
+     "step1_record.json",
+     "sweep_record.json"
+    ],
+    "differing": {},
+    "pass": true
+   }
+  },
+  "outputs_pass": true,
+  "not_recomputed": {
+   "finished": [
+    "TN399__MGDS_33068",
+    "FK151121__MGDS_22383",
+    "KM0923__MGDS_31429",
+    "RR1506__MGDS_29779"
+   ],
+   "pairs": {
+    "TN399__MGDS_33068": {
+     "ledger_items": [
+      "record",
+      "files",
+      "crosscheck",
+      "usable",
+      "row"
+     ],
+     "forbidden_present": [],
+     "provenance": "record (not recomputed)"
+    },
+    "FK151121__MGDS_22383": {
+     "ledger_items": [
+      "record",
+      "files",
+      "crosscheck",
+      "usable",
+      "row"
+     ],
+     "forbidden_present": [],
+     "provenance": "record (not recomputed)"
+    },
+    "KM0923__MGDS_31429": {
+     "ledger_items": [
+      "record",
+      "files",
+      "crosscheck",
+      "usable",
+      "row"
+     ],
+     "forbidden_present": [],
+     "provenance": "record (not recomputed)"
+    },
+    "RR1506__MGDS_29779": {
+     "ledger_items": [
+      "record",
+      "files",
+      "crosscheck",
+      "usable",
+      "row"
+     ],
+     "forbidden_present": [],
+     "provenance": "record (not recomputed)"
+    }
+   },
+   "pass": true
+  },
+  "all_pass": true
+ },
+ "scratch_fetch_deleted": {
+  "n_gz_files": 50,
+  "bytes": 148374198
+ },
+ "all_passed": true,
+ "wall_s": 231.3
+}

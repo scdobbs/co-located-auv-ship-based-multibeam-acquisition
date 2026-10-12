@@ -1,0 +1,24 @@
+{
+ "directive": "ACQ-R07b",
+ "generated": "2026-10-12T01:00:57+00:00",
+ "status": "frozen",
+ "entry_script": "src/phase4/sealed_step1_complete.py",
+ "files": {
+  "src/phase4/harness_r07b.py": "46b96706e831d24172f437b4a991ec4805fa7aef75d6bda2294b9f7896734238",
+  "src/phase4/refusal_tests_r07b.py": "3e2250e57990c84bf6a5147d960b5b321a4e0c41731ad892da586790804faff4",
+  "src/phase4/sealed_step1_complete.py": "6c49a66a9fdf9b2156a13b10b315a71975e12791f909c5d6118e2a4f5dd255f0"
+ },
+ "frozen_record": {
+  "path": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json",
+  "sha256": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb"
+ },
+ "b1_completion_run_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/step1_run_rehearsal_r07b_stop_completion.json",
+ "loaded_not_in_frozen_record": [
+  "src/phase4/harness_r07b.py",
+  "src/phase4/sealed_step1_complete.py"
+ ],
+ "files_changed_since_b1": {},
+ "commit": "f7d9be9db2e31988dedcd0396650c58a11eb8c5f",
+ "python": "3.12.1",
+ "n_files": 3
+}

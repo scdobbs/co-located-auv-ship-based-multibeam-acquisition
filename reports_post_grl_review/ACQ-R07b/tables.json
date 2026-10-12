@@ -1,0 +1,120 @@
+{
+ "generated": "2026-10-12T01:00:58+00:00",
+ "code_commit": "f7d9be9db2e31988dedcd0396650c58a11eb8c5f",
+ "frozen": {
+  "n_files": 21,
+  "n_changed": 0,
+  "changed": [],
+  "record_sha256": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb"
+ },
+ "b1": {
+  "order": [
+   "TN399__MGDS_33068",
+   "FK151121__MGDS_22383",
+   "KM0923__MGDS_31429",
+   "RR1506__MGDS_29779",
+   "EW9801__MGDS_31425"
+  ],
+  "order_as_given": true,
+  "inject_pair": "RR1506__MGDS_29779",
+  "all_passed": true,
+  "wall_s": 231.3,
+  "ref_wall_s": 114.9,
+  "stop_wall_s": 108.6,
+  "completion_wall_s": 7.4,
+  "stop_error": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/RR1506__MGDS_29779: directory mode not restored (before 0o2770, after 0o770) (rule C4)",
+  "stop_form": true,
+  "fix_before": "0o770",
+  "fix_after": "0o2770",
+  "completion_status": "complete",
+  "n_rows": 5,
+  "host": "sh04-05n26.int",
+  "cpu_model": "AMD EPYC 8224P 24-Core Processor",
+  "scratch_fetch_deleted": {
+   "n_gz_files": 50,
+   "bytes": 148374198
+  },
+  "injected_chmod_calls": [
+   {
+    "requested": "0o2770",
+    "applied": "0o770"
+   },
+   {
+    "requested": "0o2770",
+    "applied": "0o770"
+   }
+  ],
+  "supplement_pass": true,
+  "supplement_differing_union": [
+   "notes"
+  ],
+  "per_pair_pass": true,
+  "outputs_pass": true,
+  "n_byte_identical": 40,
+  "n_semantic_equal": 22,
+  "n_differing": 0,
+  "not_recomputed_pass": true,
+  "checks_all_pass": true,
+  "ref_supplement_sha256": "24e39073093ae8731c568667dc8eebba83a5edb6b1d24a752111419bbc12ed09",
+  "completed_supplement_sha256": "9482a9c4651f43404d643e0fdc6463287530cef413773de84f24a8d09d9b32e2",
+  "volatile_keys": [
+   "commands",
+   "cpu_model",
+   "created",
+   "cruise_dir",
+   "fetched_at",
+   "finished",
+   "generated",
+   "host",
+   "lr_tif_path",
+   "lr_tif_source",
+   "mode_history",
+   "notes",
+   "out_dir",
+   "plan_csv",
+   "provenance",
+   "row_filled_columns",
+   "staged_dir",
+   "started",
+   "wall",
+   "wall_s",
+   "write_path"
+  ]
+ },
+ "refusal": {
+  "n_tests": 20,
+  "n_passed": 20,
+  "all_passed": true,
+  "allowance_after": [],
+  "guard_after": true
+ },
+ "freeze": {
+  "record_sha256": "9b84a378000c49b1cc191f33e6641e237d02e5eb6a2c87477307aafaa89d9b57",
+  "n_files": 3,
+  "completion_script_sha256": "6c49a66a9fdf9b2156a13b10b315a71975e12791f909c5d6118e2a4f5dd255f0",
+  "loaded_not_in_frozen": [
+   "src/phase4/harness_r07b.py",
+   "src/phase4/sealed_step1_complete.py"
+  ],
+  "frozen_record_sha256": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
+  "changed_since_b1": {},
+  "status": "frozen"
+ },
+ "lockbox_metadata": {
+  "AT42-03__MGDS_32007": {
+   "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007",
+   "mode": "0o770",
+   "owner": "scdobbs",
+   "group": "nobody"
+  },
+  "TN159__MGDS_21981": {
+   "dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981",
+   "mode": "0o2770",
+   "owner": "scdobbs",
+   "group": "nobody"
+  }
+ },
+ "guard": {
+  "refusal_after_n": "84/84 blocked"
+ }
+}

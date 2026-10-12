@@ -1,0 +1,82 @@
+sandbox staged: /lscratch/scdobbs/47437053/mbsystem_sandbox (tar sha256 ec8c3f17bf223ff267e3321c2bb284a8203db232fa5b76032065b93b96703ee4)
+host=sh04-05n26.int job=47437053 commit=f7d9be9
+model name	: AMD EPYC 8224P 24-Core Processor
+PAIR {"pair_id": "TN399__MGDS_33068", "designation": "development (joins existing unit)", "hr_native_res_m": 1.0, "lr_native_res_m": 44.22, "values_source": "C2a rule computed by this step", "max_recoverable_k": 16, "k_sweep_status": "ok", "k_source": "stage_c2c_recalibrate.sweep (this run)", "fetch": null, "products": "built", "products_reason": null, "flags": [], "ship_products_usable": true, "wall_s": 2.7, "write_path": {"mode_before": "0o2770", "mode_opened": "0o2770", "mode_after": "0o2770", "restored": true}}
+PAIR {"pair_id": "FK151121__MGDS_22383", "designation": "development", "hr_native_res_m": 1.0, "lr_native_res_m": 65.99, "values_source": "C2a rule computed by this step", "max_recoverable_k": 16, "k_sweep_status": "ok", "k_source": "stage_c2c_recalibrate.sweep (this run)", "fetch": null, "products": "built", "products_reason": null, "flags": [], "ship_products_usable": true, "wall_s": 51.7, "write_path": {"mode_before": "0o2770", "mode_opened": "0o2770", "mode_after": "0o2770", "restored": true}}
+PAIR {"pair_id": "KM0923__MGDS_31429", "designation": "development (joins existing unit)", "hr_native_res_m": 2.054, "lr_native_res_m": 86.94, "values_source": "C2a rule computed by this step", "max_recoverable_k": 16, "k_sweep_status": "ok", "k_source": "stage_c2c_recalibrate.sweep (this run)", "fetch": null, "products": "built", "products_reason": null, "flags": [], "ship_products_usable": true, "wall_s": 17.6, "write_path": {"mode_before": "0o2770", "mode_opened": "0o2770", "mode_after": "0o2770", "restored": true}}
+PAIR {"pair_id": "RR1506__MGDS_29779", "designation": "lockbox", "hr_native_res_m": 0.992, "lr_native_res_m": 20.3, "values_source": "manifest v2.1 row (prior June values; ACQ-R06b A1, rulings H-1/H-3)", "max_recoverable_k": 8, "k_sweep_status": "ok", "k_source": "June C2c sweep record reports/discovery/stage_c2c_sweep.json (prior value; ACQ-R06b A1)", "fetch": null, "products": "built", "products_reason": null, "flags": [], "ship_products_usable": true, "wall_s": 30.5, "write_path": {"mode_before": "0o2770", "mode_opened": "0o2770", "mode_after": "0o2770", "restored": true}}
+{
+ "cruises": {
+  "EW9801": {
+   "n_planned": 25,
+   "n_ok": 25,
+   "n_failed": 0,
+   "gb": 0.074,
+   "complete": true
+  }
+ },
+ "total_gb": 0.074,
+ "wall_s": 8.1,
+ "status_counts": {
+  "fetched": 25
+ },
+ "generated": "2026-10-12T00:56:42.959703+00:00"
+}
+PAIR {"pair_id": "EW9801__MGDS_31425", "designation": "lockbox", "hr_native_res_m": 1.982, "lr_native_res_m": 50.4, "values_source": "manifest v2.1 row (prior June values; ACQ-R06b A1, rulings H-1/H-3)", "max_recoverable_k": 2, "k_sweep_status": "ok", "k_source": "June C2c sweep record reports/discovery/stage_c2c_sweep.json (prior value; ACQ-R06b A1)", "fetch": {"n_ok": 25, "n_planned": 25, "complete": true, "reason": null}, "products": "built", "products_reason": null, "flags": [], "ship_products_usable": true, "wall_s": 10.4, "write_path": {"mode_before": "0o2770", "mode_opened": "0o2770", "mode_after": "0o2770", "restored": true}}
+TN399__MGDS_33068              hr     1.0 m  lr   44.22 m  k   16  ok         products built       flags []  usable True
+FK151121__MGDS_22383           hr     1.0 m  lr   65.99 m  k   16  ok         products built       flags []  usable True
+KM0923__MGDS_31429             hr   2.054 m  lr   86.94 m  k   16  ok         products built       flags []  usable True
+RR1506__MGDS_29779             hr   0.992 m  lr    20.3 m  k    8  ok         products built       flags []  usable True
+EW9801__MGDS_31425             hr   1.982 m  lr    50.4 m  k    2  ok         products built       flags []  usable True
+supplement /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/supplement_rehearsal_r07b_ref.parquet (5 rows, sha256 24e39073093ae873…); wall 114.9 s
+PAIR {"pair_id": "TN399__MGDS_33068", "designation": "development (joins existing unit)", "hr_native_res_m": 1.0, "lr_native_res_m": 44.22, "values_source": "C2a rule computed by this step", "max_recoverable_k": 16, "k_sweep_status": "ok", "k_source": "stage_c2c_recalibrate.sweep (this run)", "fetch": null, "products": "built", "products_reason": null, "flags": [], "ship_products_usable": true, "wall_s": 2.6, "write_path": {"mode_before": "0o2770", "mode_opened": "0o2770", "mode_after": "0o2770", "restored": true}}
+PAIR {"pair_id": "FK151121__MGDS_22383", "designation": "development", "hr_native_res_m": 1.0, "lr_native_res_m": 65.99, "values_source": "C2a rule computed by this step", "max_recoverable_k": 16, "k_sweep_status": "ok", "k_source": "stage_c2c_recalibrate.sweep (this run)", "fetch": null, "products": "built", "products_reason": null, "flags": [], "ship_products_usable": true, "wall_s": 53.3, "write_path": {"mode_before": "0o2770", "mode_opened": "0o2770", "mode_after": "0o2770", "restored": true}}
+PAIR {"pair_id": "KM0923__MGDS_31429", "designation": "development (joins existing unit)", "hr_native_res_m": 2.054, "lr_native_res_m": 86.94, "values_source": "C2a rule computed by this step", "max_recoverable_k": 16, "k_sweep_status": "ok", "k_source": "stage_c2c_recalibrate.sweep (this run)", "fetch": null, "products": "built", "products_reason": null, "flags": [], "ship_products_usable": true, "wall_s": 17.6, "write_path": {"mode_before": "0o2770", "mode_opened": "0o2770", "mode_after": "0o2770", "restored": true}}
+{
+ "cruises": {
+  "EW9801": {
+   "n_planned": 25,
+   "n_ok": 25,
+   "n_failed": 0,
+   "gb": 0.074,
+   "complete": true
+  }
+ },
+ "total_gb": 0.074,
+ "wall_s": 4.6,
+ "status_counts": {
+  "fetched": 25
+ },
+ "generated": "2026-10-12T00:58:39.467212+00:00"
+}
+PAIR {"pair_id": "EW9801__MGDS_31425", "designation": "lockbox", "hr_native_res_m": 1.982, "lr_native_res_m": 50.4, "values_source": "manifest v2.1 row (prior June values; ACQ-R06b A1, rulings H-1/H-3)", "max_recoverable_k": 2, "k_sweep_status": "ok", "k_source": "June C2c sweep record reports/discovery/stage_c2c_sweep.json (prior value; ACQ-R06b A1)", "fetch": {"n_ok": 25, "n_planned": 25, "complete": true, "reason": null}, "products": "built", "products_reason": null, "flags": [], "ship_products_usable": true, "wall_s": 6.9, "write_path": {"mode_before": "0o2770", "mode_opened": "0o2770", "mode_after": "0o2770", "restored": true}}
+TN399__MGDS_33068              hr     1.0 m  lr   44.22 m  k   16  ok         products built       flags []  usable True  [record (not recomputed)]
+FK151121__MGDS_22383           hr     1.0 m  lr   65.99 m  k   16  ok         products built       flags []  usable True  [record (not recomputed)]
+KM0923__MGDS_31429             hr   2.054 m  lr   86.94 m  k   16  ok         products built       flags []  usable True  [record (not recomputed)]
+RR1506__MGDS_29779             hr   0.992 m  lr    20.3 m  k    8  ok         products built       flags []  usable True  [record (not recomputed)]
+EW9801__MGDS_31425             hr   1.982 m  lr    50.4 m  k    2  ok         products built       flags []  usable True  [computed by the completion run]
+supplement /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/supplement_rehearsal_r07b_stop_completion.parquet (5 rows, sha256 9482a9c4651f4340…); run record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/step1_run_rehearsal_r07b_stop_completion.json; wall 7.4 s
+B1: {'ref': True, 'stop': True, 'fix': True, 'completion': 'complete', 'checks': {'supplement': True, 'per_pair': True, 'outputs': None, 'outputs_pass': True, 'not_recomputed': True, 'all_pass': True}} all_passed True wall 231.3
+harness exit=0
+PASS 1 without the sign-off -> Refusal LOCK 1 sign-off: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/ab
+PASS 1b wrong pre-registration sha256 in the sign-off -> Refusal LOCK 1 sign-off: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4/si
+PASS 2 changed frozen file (freeze record with another hash for src/acq_r01/common.py -> record sha256 differs) -> Refusal LOCK 2 frozen code: freeze_changed.json sha256 3b59e281a41fe3c636e62089b9971e6187329b71ddec34c491c076050afe325
+PASS 2b frozen freeze record absent -> Refusal LOCK 2 frozen code: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_qfi4
+PASS 3 changed completion file (hash altered) -> Refusal LOCK 3 completion code: 1 file(s) differ from completion_altered.json: [('src/phase4/sealed_step1_complete.py'
+PASS 3b loaded completion module unlisted in both records -> Refusal LOCK 3 completion code: loaded repo modules in neither freeze record: ['src/phase4/refusal_tests_r07b.py']
+PASS 3c completion freeze record absent -> Refusal LOCK 3 completion code: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_
+PASS 4 prior run record of another sha256 -> Refusal LOCK 4 prior run: prior_other.json sha256 238b6f3a8c2d348bde50794106873dc71ef8692b0717298d8d33492b4750c9a2 != 
+PASS 5 without the deviation note -> Refusal LOCK 5 deviation note: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_q
+PASS 5b deviation note missing the prior-run hash -> Refusal LOCK 5 deviation note: DEVIATION_one_hash.md lacks ['7cc5b46d437a72976027f8e7ca9b0f31a8b9eeb5161928c67fce41f87
+PASS 5c deviation note with both hashes but not committed (temp file outside any repo) -> Refusal LOCK 5 deviation note: /scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r07b_refusal_fhn_q
+PASS 6 development pair in the list -> Refusal pair list: ['FK151121__MGDS_22383'] not in the phase4 pair list ['KN182L03__MGDS_30193', 'RC2511__MGDS_32239',
+PASS 6b four sealed pairs only -> Refusal LOCK 3 pair list: must be exactly the five sealed pairs ['AT42-03__MGDS_32007', 'KN182L03__MGDS_30193', 'RC251
+PASS 7 the supplement exists -> Refusal LOCK 4 single run: /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_phase4_s
+PASS 7b a complete completion record exists -> Refusal LOCK 7 single completion: /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl
+PASS 8 a lockbox directory not oak_hilley / 2770 (harness listing: nobody, 0o770) -> Refusal LOCK 8 lockbox metadata: expected group oak_hilley mode 0o2770; got {'AT42-03__MGDS_32007': {'dir': 'dummy/AT4
+PASS 9 positive control (all locks satisfied by dummies -> allowance reached -> safety net) -> SafetyStop TEST SAFETY NET: the phase4 allowance was reached (tokens 11, reason 'ACQ-R06 phase4 locks passed: sign-off, f
+PASS 10 finished pair: listed output file altered (sweep_record.json) -> StopRun TN399__MGDS_33068: sweep_record.json differs from the sweep in step1_record.json (rule C4)
+PASS 10b finished pair: listed output file missing (ship_count.tif) -> StopRun TN399__MGDS_33068: ship_products_v2_1/ship_count.tif missing (recorded 1d5b05846c39, got MISSING) (rule C4)
+PASS 11 guard blocks every sealed target after the suite -> 84/84 blocked {"manifest v2.1": "control read ok", "development cruise fetch manifest (TN399)": "control read ok"}
+refusal tests: 20/20 passed; allowance after suite []
+refusal exit=0

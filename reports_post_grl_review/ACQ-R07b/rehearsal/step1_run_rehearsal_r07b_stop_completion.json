@@ -1,0 +1,1184 @@
+{
+ "directive": "ACQ-R07b",
+ "entry": "src/phase4/sealed_step1_complete.py",
+ "mode": "rehearsal",
+ "run_tag": "r07b_stop",
+ "record_tag": "r07b_stop_completion",
+ "pairs": [
+  "TN399__MGDS_33068",
+  "FK151121__MGDS_22383",
+  "KM0923__MGDS_31429",
+  "RR1506__MGDS_29779",
+  "EW9801__MGDS_31425"
+ ],
+ "out_root": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop",
+ "started": "2026-10-12T00:58:34+00:00",
+ "host": "sh04-05n26.int",
+ "cpu_model": "AMD EPYC 8224P 24-Core Processor",
+ "code_commit": "f7d9be9db2e31988dedcd0396650c58a11eb8c5f",
+ "nproc": 6,
+ "batch_files": 1,
+ "mbsystem": "5.8.2beta06",
+ "sandbox": "/lscratch/scdobbs/47437053/mbsystem_sandbox",
+ "container_digest": "sha256:106f502d9f97ee0e9f5d889726320d1ae73a95fb102069e357a0bb0b35b39668",
+ "fixed_input_sha256": {
+  "pairs_v2_1.parquet": "f57f3d8f98b320b136549de300ccac58787129af658a1c62296bab16b6c2ac35",
+  "pairs_v2_1_dropped.csv": "1f1bb181c63df8991ddc981c731bbf048a25ec56cb33435487b356d603073dab",
+  "INTERFACE_CONTRACT_v2.1.md": "0b4aadaf61fb04213ae18771d2a58532f39e9d49b5152ab64738d188a7e18fcb",
+  "stage_c2c_sweep.json": "7a7c2434b278384825eb7842a704701f609eae3c3e4d4ec99cbb7beea6c3f2a3",
+  "stage_b_file_plan_2026-06-22.csv": "c458cab2b19493df48acdf3086a49f5890c1939864112e645b5de503f6ba9875",
+  "acq_r06_rehearsal/SHA256SUMS": "18cf21b9abd64938ecb03b090c4c4f95c732e77af388cd7630f3d317fba9f3c9"
+ },
+ "guard_selftest": {
+  "generated": "2026-10-12T00:58:34+00:00",
+  "all_passed": true,
+  "controls": {
+   "manifest v2.1": "control read ok",
+   "development cruise fetch manifest (TN399)": "control read ok"
+  },
+  "phase4_allowance_installed": [],
+  "guard_extension": "ACQ-R06: raw_lr_swath/<cruise> blocked for the sealed LR cruises AT42-03, TN159, KN182L03, RC2511, SUM1004",
+  "guard_sha256": "96a1e09e09ace8d3fe53637a00e25ae2d7b3931fc06d88abf57007dab6abf701",
+  "code_commit": "f7d9be9db2e31988dedcd0396650c58a11eb8c5f",
+  "reader_checks": {
+   "n": 84,
+   "n_blocked": 84
+  }
+ },
+ "prior_run_record_sha256": "34c576668afeac0714da8a8bae066030ba323734b84fa1df9602307062049e60",
+ "prior_run_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/step1_run_rehearsal_r07b_stop.json",
+ "freeze_record_sha256": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
+ "completion_freeze_record_sha256": null,
+ "prior_run": {
+  "status": "stopped (rule C4)",
+  "error": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/RR1506__MGDS_29779: directory mode not restored (before 0o2770, after 0o770) (rule C4)",
+  "pairs_done": [
+   "TN399__MGDS_33068",
+   "FK151121__MGDS_22383",
+   "KM0923__MGDS_31429"
+  ],
+  "host": "sh04-05n26.int",
+  "started": "2026-10-12T00:56:45+00:00"
+ },
+ "finished_pairs": [
+  "TN399__MGDS_33068",
+  "FK151121__MGDS_22383",
+  "KM0923__MGDS_31429",
+  "RR1506__MGDS_29779"
+ ],
+ "pending_pairs": [
+  "EW9801__MGDS_31425"
+ ],
+ "fetch_trigger": {
+  "EW9801": [
+   "EW9801__MGDS_31425"
+  ]
+ },
+ "swath_preflight": {},
+ "loaded_repo_files": {
+  "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/acq_r01/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/acq_r01/build_products.py": "d35a767368b7613ad7b958beaa7feb3d61308821e09a43e81d9d60ad1ee6a215",
+  "src/acq_r01/build_products_v2.py": "6c4de57fa67075d6620c52989ccd5bd717504e722e28a607701b5da813028d09",
+  "src/acq_r01/common.py": "96a1e09e09ace8d3fe53637a00e25ae2d7b3931fc06d88abf57007dab6abf701",
+  "src/acq_r01/fetch_swath.py": "1aed5b4950517f121fb0c4cbe3b550ab26486f454211f2463df5587937f76c80",
+  "src/acq_r01/grid_lr.py": "847e7098049a6a00826e54c8497bd5fe730f969fa943cde263718249cf0603f8",
+  "src/acq_r03/__init__.py": "0a1b9776af437985ebd243540a3d780b52971b71990f0b7d8c6aa14ffe2b070b",
+  "src/acq_r03/build_products_v2_1.py": "295a51ecfb679df0182c6f24149c04b3b657640957f741c8d1c41eda1cf8a861",
+  "src/acq_r03/common.py": "e4c16eb5319d8a72def6a75d1e23c382a4392eab6017554755758e8c92e950ee",
+  "src/acq_r04/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/acq_r04/common.py": "69216c8084bccb648e1a6b8625374d367f9d5eb470cfe9ef2ae4df76a62e6f83",
+  "src/discovery/__init__.py": "6ed80c07c0341bbc17d50a0fe5aacbac7cfddda32e6c12b2563ac0a5ee0a21b9",
+  "src/discovery/stage_c2c_recalibrate.py": "ee6f6d7a07e71e7c148e0c60a486c39883388c339bc9bf041b8dbc52c2bb339c",
+  "src/discovery/stage_c5_spectral.py": "b7f6f919e0e9cbc1425bb5bb773333d71fc855ed16b3ad9bc04bf90dca839575",
+  "src/discovery/validated_anchor.py": "5cc366ada1b9143fa811c7414136efe3dffd12c7b43abfbd62eb9d3e424378a6",
+  "src/phase4/__init__.py": "7aadba3d6268ce1be6eeb3a1993ae3a2c5e7ae716f3f5bb355e6a04ad4e4e0ce",
+  "src/phase4/common.py": "5c5c887274bf7d0b8ce79134676854850472ad5b1c6da6e6f7aa754440bb9756",
+  "src/phase4/guard_selftest.py": "ad564fd9281ce98f13add1489fcbc89e88c440dcd7e5c490ba7236a3a851d788",
+  "src/phase4/harness_r07b.py": "46b96706e831d24172f437b4a991ec4805fa7aef75d6bda2294b9f7896734238",
+  "src/phase4/sealed_step1.py": "bd773cb77eaff1786efe48c8d92210d69a90f885545cd00a07af9b35cd8753c1",
+  "src/phase4/sealed_step1_complete.py": "6c49a66a9fdf9b2156a13b10b315a71975e12791f909c5d6118e2a4f5dd255f0"
+ },
+ "status": "complete",
+ "supplement": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R07b/rehearsal/supplement_rehearsal_r07b_stop_completion.parquet",
+ "supplement_sha256": "9482a9c4651f43404d643e0fdc6463287530cef413773de84f24a8d09d9b32e2",
+ "n_rows": 5,
+ "supplement_pair_ids": [
+  "TN399__MGDS_33068",
+  "FK151121__MGDS_22383",
+  "KM0923__MGDS_31429",
+  "RR1506__MGDS_29779",
+  "EW9801__MGDS_31425"
+ ],
+ "pairs_done": [
+  "TN399__MGDS_33068",
+  "FK151121__MGDS_22383",
+  "KM0923__MGDS_31429",
+  "RR1506__MGDS_29779",
+  "EW9801__MGDS_31425"
+ ],
+ "per_pair": {
+  "TN399__MGDS_33068": {
+   "pair_id": "TN399__MGDS_33068",
+   "designation": "development (joins existing unit)",
+   "hr_native_res_m": 1.0,
+   "lr_native_res_m": 44.22,
+   "values_source": "C2a rule computed by this step",
+   "max_recoverable_k": 16,
+   "k_sweep_status": "ok",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "recoverable_signal",
+    "32": "no_spectrum"
+   },
+   "fetch": null,
+   "products": "built",
+   "products_reason": null,
+   "flags": [],
+   "ship_products_usable": true,
+   "wall_s": 2.6,
+   "provenance": "record (not recomputed)",
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": null,
+    "restored": null
+   },
+   "mode_history": {
+    "record_before": "0o2770",
+    "record_opened": "0o2770",
+    "record_after": null,
+    "stop_after": null,
+    "now": {
+     "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/TN399__MGDS_33068",
+     "mode": "0o2770",
+     "owner": "scdobbs",
+     "group": "hilley"
+    }
+   },
+   "usable_reason": "available, no contract-v2.1 flags (rule C1)"
+  },
+  "FK151121__MGDS_22383": {
+   "pair_id": "FK151121__MGDS_22383",
+   "designation": "development",
+   "hr_native_res_m": 1.0,
+   "lr_native_res_m": 65.99,
+   "values_source": "C2a rule computed by this step",
+   "max_recoverable_k": 16,
+   "k_sweep_status": "ok",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "recoverable_signal",
+    "32": "no_spectrum"
+   },
+   "fetch": null,
+   "products": "built",
+   "products_reason": null,
+   "flags": [],
+   "ship_products_usable": true,
+   "wall_s": 53.3,
+   "provenance": "record (not recomputed)",
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": null,
+    "restored": null
+   },
+   "mode_history": {
+    "record_before": "0o2770",
+    "record_opened": "0o2770",
+    "record_after": null,
+    "stop_after": null,
+    "now": {
+     "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/FK151121__MGDS_22383",
+     "mode": "0o2770",
+     "owner": "scdobbs",
+     "group": "hilley"
+    }
+   },
+   "usable_reason": "available, no contract-v2.1 flags (rule C1)"
+  },
+  "KM0923__MGDS_31429": {
+   "pair_id": "KM0923__MGDS_31429",
+   "designation": "development (joins existing unit)",
+   "hr_native_res_m": 2.054,
+   "lr_native_res_m": 86.94,
+   "values_source": "C2a rule computed by this step",
+   "max_recoverable_k": 16,
+   "k_sweep_status": "ok",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "recoverable_signal",
+    "32": "no_spectrum"
+   },
+   "fetch": null,
+   "products": "built",
+   "products_reason": null,
+   "flags": [],
+   "ship_products_usable": true,
+   "wall_s": 17.6,
+   "provenance": "record (not recomputed)",
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": null,
+    "restored": null
+   },
+   "mode_history": {
+    "record_before": "0o2770",
+    "record_opened": "0o2770",
+    "record_after": null,
+    "stop_after": null,
+    "now": {
+     "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/KM0923__MGDS_31429",
+     "mode": "0o2770",
+     "owner": "scdobbs",
+     "group": "hilley"
+    }
+   },
+   "usable_reason": "available, no contract-v2.1 flags (rule C1)"
+  },
+  "RR1506__MGDS_29779": {
+   "pair_id": "RR1506__MGDS_29779",
+   "designation": "lockbox",
+   "hr_native_res_m": 0.992,
+   "lr_native_res_m": 20.3,
+   "values_source": "manifest v2.1 row (prior June values; ACQ-R06b A1, rulings H-1/H-3)",
+   "max_recoverable_k": 8,
+   "k_sweep_status": "ok",
+   "k_source": "June C2c sweep record reports/discovery/stage_c2c_sweep.json (prior value; ACQ-R06b A1)",
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "no_spectrum",
+    "32": "no_spectrum"
+   },
+   "fetch": null,
+   "products": "built",
+   "products_reason": null,
+   "flags": [],
+   "ship_products_usable": true,
+   "wall_s": 30.4,
+   "provenance": "record (not recomputed)",
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o770",
+    "mode_after": null,
+    "restored": null
+   },
+   "mode_history": {
+    "record_before": "0o2770",
+    "record_opened": "0o770",
+    "record_after": null,
+    "stop_after": "0o770",
+    "now": {
+     "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/RR1506__MGDS_29779",
+     "mode": "0o2770",
+     "owner": "scdobbs",
+     "group": "hilley"
+    }
+   },
+   "usable_reason": "available, no contract-v2.1 flags (rule C1)"
+  },
+  "EW9801__MGDS_31425": {
+   "pair_id": "EW9801__MGDS_31425",
+   "designation": "lockbox",
+   "hr_native_res_m": 1.982,
+   "lr_native_res_m": 50.4,
+   "values_source": "manifest v2.1 row (prior June values; ACQ-R06b A1, rulings H-1/H-3)",
+   "max_recoverable_k": 2,
+   "k_sweep_status": "ok",
+   "k_source": "June C2c sweep record reports/discovery/stage_c2c_sweep.json (prior value; ACQ-R06b A1)",
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "roughness_only",
+    "8": "roughness_only",
+    "16": "no_spectrum",
+    "32": "no_spectrum"
+   },
+   "fetch": {
+    "n_ok": 25,
+    "n_planned": 25,
+    "complete": true,
+    "reason": null
+   },
+   "products": "built",
+   "products_reason": null,
+   "flags": [],
+   "ship_products_usable": true,
+   "wall_s": 6.9,
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": "0o2770",
+    "restored": true
+   },
+   "provenance": "computed by the completion run"
+  }
+ },
+ "verification": {
+  "TN399__MGDS_33068": {
+   "pair_id": "TN399__MGDS_33068",
+   "out_dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/TN399__MGDS_33068",
+   "step1_record_sha256": "e24370b03fe1309786b90908d71dc230458fa6e6b1da8d8af264c71a7623e033",
+   "sweep_record_sha256": "0b448459f54145cb1baf71d222240e48adfad787131bd14d9b7171fda7d69b9a",
+   "files": {
+    "ship_products_v2_1/products.json": {
+     "recorded": "b179b499840abd4a3d0cc7c8a706519c7d10c52610690d8003cd1ced35a5a106",
+     "got": "b179b499840abd4a3d0cc7c8a706519c7d10c52610690d8003cd1ced35a5a106",
+     "equal": true
+    },
+    "ship_products_v2_1/products_extra.json": {
+     "recorded": "520720195845421252d604c41d3d8fa318d2a3a376a332d71699b7f615a04bbe",
+     "got": "520720195845421252d604c41d3d8fa318d2a3a376a332d71699b7f615a04bbe",
+     "equal": true
+    },
+    "ship_products_v2_1/qa_shift_surface.csv": {
+     "recorded": "1bfb934d491fffa929f777e9a8f0706bcacb31788fb5851613f340f602466121",
+     "got": "1bfb934d491fffa929f777e9a8f0706bcacb31788fb5851613f340f602466121",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_beam_angle.tif": {
+     "recorded": "409b3ea544f1ef87f02c48ad97801f60efcc6c7fea44a31563ed6bf1d8cfb99d",
+     "got": "409b3ea544f1ef87f02c48ad97801f60efcc6c7fea44a31563ed6bf1d8cfb99d",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_count.tif": {
+     "recorded": "1d5b05846c393f67195a8329209174aea1695df509c00722b5186da623b54bca",
+     "got": "1d5b05846c393f67195a8329209174aea1695df509c00722b5186da623b54bca",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_mean_regrid.tif": {
+     "recorded": "c84ed8e92c8a2860621ce55908d10c0d75ac62d74c0f73d88aabd5fa014c09e0",
+     "got": "c84ed8e92c8a2860621ce55908d10c0d75ac62d74c0f73d88aabd5fa014c09e0",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_median_regrid.tif": {
+     "recorded": "717fedbed54eeb2d2878c38c5cb606d100daef7e729743e3606d91cf3d788b23",
+     "got": "717fedbed54eeb2d2878c38c5cb606d100daef7e729743e3606d91cf3d788b23",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_rsd.tif": {
+     "recorded": "f72bdb890a8f04f768ff4cb6ed795a4d8f59f7af0b8d12da34d0e6def022a302",
+     "got": "f72bdb890a8f04f768ff4cb6ed795a4d8f59f7af0b8d12da34d0e6def022a302",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_sd.tif": {
+     "recorded": "dd6b2f452d4264253c5d1c3be999a423558ba7c6c81ffefd34a7df54189fedb9",
+     "got": "dd6b2f452d4264253c5d1c3be999a423558ba7c6c81ffefd34a7df54189fedb9",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_xtrack_frac.tif": {
+     "recorded": "4e8f542d48588cfffcc4818e0d46120b7d06ccc764276c907d03bdb5e8f03841",
+     "got": "4e8f542d48588cfffcc4818e0d46120b7d06ccc764276c907d03bdb5e8f03841",
+     "equal": true
+    },
+    "sweep_record.json": {
+     "recorded": "0b448459f54145cb1baf71d222240e48adfad787131bd14d9b7171fda7d69b9a",
+     "got": "0b448459f54145cb1baf71d222240e48adfad787131bd14d9b7171fda7d69b9a",
+     "equal": true
+    }
+   },
+   "n_files_listed": 11,
+   "n_files_ok": 11,
+   "fetcher_side_files": {},
+   "crosscheck": {
+    "per_pair_present": true,
+    "per_pair": {
+     "hr_native_res_m": {
+      "record": 1.0,
+      "prior": 1.0,
+      "equal": true
+     },
+     "lr_native_res_m": {
+      "record": 44.22,
+      "prior": 44.22,
+      "equal": true
+     },
+     "values_source": {
+      "record": "C2a rule computed by this step",
+      "prior": "C2a rule computed by this step",
+      "equal": true
+     },
+     "max_recoverable_k": {
+      "record": 16,
+      "prior": 16,
+      "equal": true
+     },
+     "k_sweep_status": {
+      "record": "ok",
+      "prior": "ok",
+      "equal": true
+     },
+     "k_source": {
+      "record": "stage_c2c_recalibrate.sweep (this run)",
+      "prior": "stage_c2c_recalibrate.sweep (this run)",
+      "equal": true
+     },
+     "per_k": {
+      "record": {
+       "2": "recoverable_signal",
+       "4": "recoverable_signal",
+       "8": "recoverable_signal",
+       "16": "recoverable_signal",
+       "32": "no_spectrum"
+      },
+      "prior": {
+       "2": "recoverable_signal",
+       "4": "recoverable_signal",
+       "8": "recoverable_signal",
+       "16": "recoverable_signal",
+       "32": "no_spectrum"
+      },
+      "equal": true
+     },
+     "products": {
+      "record": "built",
+      "prior": "built",
+      "equal": true
+     },
+     "flags": {
+      "record": [],
+      "prior": [],
+      "equal": true
+     },
+     "ship_products_usable": {
+      "record": true,
+      "prior": true,
+      "equal": true
+     }
+    },
+    "ledger": {
+     "c2a": {
+      "record": [
+       "computed",
+       "ACQ-R02 grid record grid/TN399.json:sonar"
+      ],
+      "prior": [
+       "computed",
+       "ACQ-R02 grid record grid/TN399.json:sonar"
+      ],
+      "equal": true
+     },
+     "sweep": {
+      "record": [
+       "ok",
+       "k=16"
+      ],
+      "prior": [
+       "ok",
+       "k=16"
+      ],
+      "equal": true
+     },
+     "products": {
+      "record": [
+       "built",
+       "12 files read; flags []"
+      ],
+      "prior": [
+       "built",
+       "12 files read; flags []"
+      ],
+      "equal": true
+     }
+    },
+    "equal": true
+   },
+   "usable": {
+    "derived": true,
+    "reason": "available, no contract-v2.1 flags (rule C1)",
+    "source": "step1_record.json products (available, flags)",
+    "record_usable": true,
+    "record_reason": "available, no contract-v2.1 flags (rule C1)",
+    "equal_to_record": true
+   },
+   "mode_history": {
+    "record_before": "0o2770",
+    "record_opened": "0o2770",
+    "record_after": null,
+    "stop_after": null,
+    "now": {
+     "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/TN399__MGDS_33068",
+     "mode": "0o2770",
+     "owner": "scdobbs",
+     "group": "hilley"
+    }
+   }
+  },
+  "FK151121__MGDS_22383": {
+   "pair_id": "FK151121__MGDS_22383",
+   "out_dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/FK151121__MGDS_22383",
+   "step1_record_sha256": "8184842098a821b96b889f7d8f76e62b8bd93262cb817d94907aed7e7ab9a508",
+   "sweep_record_sha256": "ebdc323fbc1082be22ff370a1c226e7eb4928c062f9eab4927de5f00082e2e6c",
+   "files": {
+    "ship_products_v2_1/products.json": {
+     "recorded": "9d805fcbd796d80bbb0f56fa304a3cb8b4d668e52169d7e9dacce2bfcc6f60ee",
+     "got": "9d805fcbd796d80bbb0f56fa304a3cb8b4d668e52169d7e9dacce2bfcc6f60ee",
+     "equal": true
+    },
+    "ship_products_v2_1/products_extra.json": {
+     "recorded": "ecfa7b46edc5b77f4d97b55a11b690440dc4f7e93b95c3057cd657acffec9e51",
+     "got": "ecfa7b46edc5b77f4d97b55a11b690440dc4f7e93b95c3057cd657acffec9e51",
+     "equal": true
+    },
+    "ship_products_v2_1/qa_shift_surface.csv": {
+     "recorded": "ca91f761b4932a3a8dc1467c513ac82c884d5824fd747c53d13653c8a6651545",
+     "got": "ca91f761b4932a3a8dc1467c513ac82c884d5824fd747c53d13653c8a6651545",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_beam_angle.tif": {
+     "recorded": "f6dc10703572f0757094d0ebcfcf021c784e80d6f7ce0babb9dc23926e23aa82",
+     "got": "f6dc10703572f0757094d0ebcfcf021c784e80d6f7ce0babb9dc23926e23aa82",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_count.tif": {
+     "recorded": "14a8c6a7bfbc7fb4e4d8437d234ee32b48609975f741030c379251c69fbe0c11",
+     "got": "14a8c6a7bfbc7fb4e4d8437d234ee32b48609975f741030c379251c69fbe0c11",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_mean_regrid.tif": {
+     "recorded": "8fb9e070824ce5875297c6e59e1f7b42a339d7ad0a0aaa78ed143e4dbdf14589",
+     "got": "8fb9e070824ce5875297c6e59e1f7b42a339d7ad0a0aaa78ed143e4dbdf14589",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_median_regrid.tif": {
+     "recorded": "a7cd610c2ab81ed1db2fe7934567057f0ff8e95958557e882ad4b06eff26bf71",
+     "got": "a7cd610c2ab81ed1db2fe7934567057f0ff8e95958557e882ad4b06eff26bf71",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_rsd.tif": {
+     "recorded": "ef2a8a44145ea3031d84ca4e0a9198623e3d32d4e3ff2b061740ecce35e69dfa",
+     "got": "ef2a8a44145ea3031d84ca4e0a9198623e3d32d4e3ff2b061740ecce35e69dfa",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_sd.tif": {
+     "recorded": "b9cf8e036c246444bd03ac9ff69bda08ca11067080010b9acd14d0fa9829b18d",
+     "got": "b9cf8e036c246444bd03ac9ff69bda08ca11067080010b9acd14d0fa9829b18d",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_xtrack_frac.tif": {
+     "recorded": "774d4e41bb36507c076ad748256649e673a7bbbfa227ba313aed28f7f902ab11",
+     "got": "774d4e41bb36507c076ad748256649e673a7bbbfa227ba313aed28f7f902ab11",
+     "equal": true
+    },
+    "sweep_record.json": {
+     "recorded": "ebdc323fbc1082be22ff370a1c226e7eb4928c062f9eab4927de5f00082e2e6c",
+     "got": "ebdc323fbc1082be22ff370a1c226e7eb4928c062f9eab4927de5f00082e2e6c",
+     "equal": true
+    }
+   },
+   "n_files_listed": 11,
+   "n_files_ok": 11,
+   "fetcher_side_files": {},
+   "crosscheck": {
+    "per_pair_present": true,
+    "per_pair": {
+     "hr_native_res_m": {
+      "record": 1.0,
+      "prior": 1.0,
+      "equal": true
+     },
+     "lr_native_res_m": {
+      "record": 65.99,
+      "prior": 65.99,
+      "equal": true
+     },
+     "values_source": {
+      "record": "C2a rule computed by this step",
+      "prior": "C2a rule computed by this step",
+      "equal": true
+     },
+     "max_recoverable_k": {
+      "record": 16,
+      "prior": 16,
+      "equal": true
+     },
+     "k_sweep_status": {
+      "record": "ok",
+      "prior": "ok",
+      "equal": true
+     },
+     "k_source": {
+      "record": "stage_c2c_recalibrate.sweep (this run)",
+      "prior": "stage_c2c_recalibrate.sweep (this run)",
+      "equal": true
+     },
+     "per_k": {
+      "record": {
+       "2": "recoverable_signal",
+       "4": "recoverable_signal",
+       "8": "recoverable_signal",
+       "16": "recoverable_signal",
+       "32": "no_spectrum"
+      },
+      "prior": {
+       "2": "recoverable_signal",
+       "4": "recoverable_signal",
+       "8": "recoverable_signal",
+       "16": "recoverable_signal",
+       "32": "no_spectrum"
+      },
+      "equal": true
+     },
+     "products": {
+      "record": "built",
+      "prior": "built",
+      "equal": true
+     },
+     "flags": {
+      "record": [],
+      "prior": [],
+      "equal": true
+     },
+     "ship_products_usable": {
+      "record": true,
+      "prior": true,
+      "equal": true
+     }
+    },
+    "ledger": {
+     "c2a": {
+      "record": [
+       "computed",
+       "ACQ-R02 grid record grid/FK151121.json:sonar"
+      ],
+      "prior": [
+       "computed",
+       "ACQ-R02 grid record grid/FK151121.json:sonar"
+      ],
+      "equal": true
+     },
+     "sweep": {
+      "record": [
+       "ok",
+       "k=16"
+      ],
+      "prior": [
+       "ok",
+       "k=16"
+      ],
+      "equal": true
+     },
+     "products": {
+      "record": [
+       "built",
+       "274 files read; flags []"
+      ],
+      "prior": [
+       "built",
+       "274 files read; flags []"
+      ],
+      "equal": true
+     }
+    },
+    "equal": true
+   },
+   "usable": {
+    "derived": true,
+    "reason": "available, no contract-v2.1 flags (rule C1)",
+    "source": "step1_record.json products (available, flags)",
+    "record_usable": true,
+    "record_reason": "available, no contract-v2.1 flags (rule C1)",
+    "equal_to_record": true
+   },
+   "mode_history": {
+    "record_before": "0o2770",
+    "record_opened": "0o2770",
+    "record_after": null,
+    "stop_after": null,
+    "now": {
+     "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/FK151121__MGDS_22383",
+     "mode": "0o2770",
+     "owner": "scdobbs",
+     "group": "hilley"
+    }
+   }
+  },
+  "KM0923__MGDS_31429": {
+   "pair_id": "KM0923__MGDS_31429",
+   "out_dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/KM0923__MGDS_31429",
+   "step1_record_sha256": "c1bf350ee71cfbbd46b124ca225b3ef0089d093f8127da6fa1393a15f01f46fd",
+   "sweep_record_sha256": "1a5bccc0904dd148c0c7625c7858eddfe680f5735303d58cfbae1ce01859e1c3",
+   "files": {
+    "ship_products_v2_1/products.json": {
+     "recorded": "e0a83acc190da7f8f02c4bff005af388987d1bbf178f99318299daf8c158c29e",
+     "got": "e0a83acc190da7f8f02c4bff005af388987d1bbf178f99318299daf8c158c29e",
+     "equal": true
+    },
+    "ship_products_v2_1/products_extra.json": {
+     "recorded": "f88dc921c06fd9500b5643f109fd34cd890dd1dc0f138d122650fefd31d55f6f",
+     "got": "f88dc921c06fd9500b5643f109fd34cd890dd1dc0f138d122650fefd31d55f6f",
+     "equal": true
+    },
+    "ship_products_v2_1/qa_shift_surface.csv": {
+     "recorded": "24958eb89312f7d2a8204bbf2c7172257c2df6fd77478dd8ea6fbb65405f7ffc",
+     "got": "24958eb89312f7d2a8204bbf2c7172257c2df6fd77478dd8ea6fbb65405f7ffc",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_beam_angle.tif": {
+     "recorded": "90e8f72153a73d16a04a30444510788a3a1c380f5a1084629bc8411036626ba5",
+     "got": "90e8f72153a73d16a04a30444510788a3a1c380f5a1084629bc8411036626ba5",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_count.tif": {
+     "recorded": "cdee937cedd0decd07b0f9ea100a50a033339911c8cb378e7e684b08bf6b32b2",
+     "got": "cdee937cedd0decd07b0f9ea100a50a033339911c8cb378e7e684b08bf6b32b2",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_mean_regrid.tif": {
+     "recorded": "ffe04b875a75707b24195855086cedbd691d1045497b0218fe6433ae017c4ae9",
+     "got": "ffe04b875a75707b24195855086cedbd691d1045497b0218fe6433ae017c4ae9",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_median_regrid.tif": {
+     "recorded": "bfabcea816ebc1a7f9129113f27c2bc7150e50ef47cd56c74d07323c812d6449",
+     "got": "bfabcea816ebc1a7f9129113f27c2bc7150e50ef47cd56c74d07323c812d6449",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_rsd.tif": {
+     "recorded": "d547137187ed9f9604cb2c66132553b26dc3e072aaeb1ec37145ea45a6e8552b",
+     "got": "d547137187ed9f9604cb2c66132553b26dc3e072aaeb1ec37145ea45a6e8552b",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_sd.tif": {
+     "recorded": "fe335b74dee59c9160ac39eac59ed35153010291f0d6067e7287f5fbf1096e20",
+     "got": "fe335b74dee59c9160ac39eac59ed35153010291f0d6067e7287f5fbf1096e20",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_xtrack_frac.tif": {
+     "recorded": "b8aa1adc8ff4eeeea18f0fde69ac326e0b38ecaa51bd87b323331cb93d665f92",
+     "got": "b8aa1adc8ff4eeeea18f0fde69ac326e0b38ecaa51bd87b323331cb93d665f92",
+     "equal": true
+    },
+    "sweep_record.json": {
+     "recorded": "1a5bccc0904dd148c0c7625c7858eddfe680f5735303d58cfbae1ce01859e1c3",
+     "got": "1a5bccc0904dd148c0c7625c7858eddfe680f5735303d58cfbae1ce01859e1c3",
+     "equal": true
+    }
+   },
+   "n_files_listed": 11,
+   "n_files_ok": 11,
+   "fetcher_side_files": {},
+   "crosscheck": {
+    "per_pair_present": true,
+    "per_pair": {
+     "hr_native_res_m": {
+      "record": 2.054,
+      "prior": 2.054,
+      "equal": true
+     },
+     "lr_native_res_m": {
+      "record": 86.94,
+      "prior": 86.94,
+      "equal": true
+     },
+     "values_source": {
+      "record": "C2a rule computed by this step",
+      "prior": "C2a rule computed by this step",
+      "equal": true
+     },
+     "max_recoverable_k": {
+      "record": 16,
+      "prior": 16,
+      "equal": true
+     },
+     "k_sweep_status": {
+      "record": "ok",
+      "prior": "ok",
+      "equal": true
+     },
+     "k_source": {
+      "record": "stage_c2c_recalibrate.sweep (this run)",
+      "prior": "stage_c2c_recalibrate.sweep (this run)",
+      "equal": true
+     },
+     "per_k": {
+      "record": {
+       "2": "recoverable_signal",
+       "4": "recoverable_signal",
+       "8": "recoverable_signal",
+       "16": "recoverable_signal",
+       "32": "no_spectrum"
+      },
+      "prior": {
+       "2": "recoverable_signal",
+       "4": "recoverable_signal",
+       "8": "recoverable_signal",
+       "16": "recoverable_signal",
+       "32": "no_spectrum"
+      },
+      "equal": true
+     },
+     "products": {
+      "record": "built",
+      "prior": "built",
+      "equal": true
+     },
+     "flags": {
+      "record": [],
+      "prior": [],
+      "equal": true
+     },
+     "ship_products_usable": {
+      "record": true,
+      "prior": true,
+      "equal": true
+     }
+    },
+    "ledger": {
+     "c2a": {
+      "record": [
+       "computed",
+       "ACQ-R02 grid record grid/KM0923.json:sonar"
+      ],
+      "prior": [
+       "computed",
+       "ACQ-R02 grid record grid/KM0923.json:sonar"
+      ],
+      "equal": true
+     },
+     "sweep": {
+      "record": [
+       "ok",
+       "k=16"
+      ],
+      "prior": [
+       "ok",
+       "k=16"
+      ],
+      "equal": true
+     },
+     "products": {
+      "record": [
+       "built",
+       "229 files read; flags []"
+      ],
+      "prior": [
+       "built",
+       "229 files read; flags []"
+      ],
+      "equal": true
+     }
+    },
+    "equal": true
+   },
+   "usable": {
+    "derived": true,
+    "reason": "available, no contract-v2.1 flags (rule C1)",
+    "source": "step1_record.json products (available, flags)",
+    "record_usable": true,
+    "record_reason": "available, no contract-v2.1 flags (rule C1)",
+    "equal_to_record": true
+   },
+   "mode_history": {
+    "record_before": "0o2770",
+    "record_opened": "0o2770",
+    "record_after": null,
+    "stop_after": null,
+    "now": {
+     "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/KM0923__MGDS_31429",
+     "mode": "0o2770",
+     "owner": "scdobbs",
+     "group": "hilley"
+    }
+   }
+  },
+  "RR1506__MGDS_29779": {
+   "pair_id": "RR1506__MGDS_29779",
+   "out_dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/RR1506__MGDS_29779",
+   "step1_record_sha256": "2607c6f76988099d2f29042567001ed68c2c0c96cd5a6e33406ebbf7d8669667",
+   "sweep_record_sha256": "c1ad54dda24b8b5f2fc0807c9eb7d1e80a4d867107e6f82be53c195fbe17c477",
+   "files": {
+    "ship_products_v2_1/products.json": {
+     "recorded": "5c832ec904eca47b56d188a3d0fca45ba6eecbdd968f27ca9340e89a85e3007d",
+     "got": "5c832ec904eca47b56d188a3d0fca45ba6eecbdd968f27ca9340e89a85e3007d",
+     "equal": true
+    },
+    "ship_products_v2_1/products_extra.json": {
+     "recorded": "85bd66490b074b0637437434913ec0c39fb3b0079e035e2f63aa5f166d9b4eca",
+     "got": "85bd66490b074b0637437434913ec0c39fb3b0079e035e2f63aa5f166d9b4eca",
+     "equal": true
+    },
+    "ship_products_v2_1/qa_shift_surface.csv": {
+     "recorded": "ca8297238917bbbac8647f1a29c10c5df4e6664b3fca377cadcd7260c755795d",
+     "got": "ca8297238917bbbac8647f1a29c10c5df4e6664b3fca377cadcd7260c755795d",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_beam_angle.tif": {
+     "recorded": "7da1abf0d4267e62eabba4648871f6da0a23c2b4759bf1dc1676fdf6e4fd3c5f",
+     "got": "7da1abf0d4267e62eabba4648871f6da0a23c2b4759bf1dc1676fdf6e4fd3c5f",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_count.tif": {
+     "recorded": "d1de54065fb76197c2398d4b3fdfda6639c9fd7879f9812bed86c1028a89e37a",
+     "got": "d1de54065fb76197c2398d4b3fdfda6639c9fd7879f9812bed86c1028a89e37a",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_mean_regrid.tif": {
+     "recorded": "06425d8e7cd264cee5d77c462af56683e99ba16a52c3ec393aea54c24a8f898a",
+     "got": "06425d8e7cd264cee5d77c462af56683e99ba16a52c3ec393aea54c24a8f898a",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_median_regrid.tif": {
+     "recorded": "71973c7e2163bce1ef92aabb6f354fa974f15a9907c6eb79e8b09103d05beace",
+     "got": "71973c7e2163bce1ef92aabb6f354fa974f15a9907c6eb79e8b09103d05beace",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_rsd.tif": {
+     "recorded": "f4fa591a0b909cc2b248046076e558782e283e1d2b21f285d58fe5e9ab6bed98",
+     "got": "f4fa591a0b909cc2b248046076e558782e283e1d2b21f285d58fe5e9ab6bed98",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_sd.tif": {
+     "recorded": "3f4d84aa6b380d98a8e62e606c4a2b6af7802199534a582ddbe72d59bd9c5bad",
+     "got": "3f4d84aa6b380d98a8e62e606c4a2b6af7802199534a582ddbe72d59bd9c5bad",
+     "equal": true
+    },
+    "ship_products_v2_1/ship_xtrack_frac.tif": {
+     "recorded": "983f2cb611a6e8adbd1c812c60af6158ab9bf5bfc3a40edcf73a6ff217790841",
+     "got": "983f2cb611a6e8adbd1c812c60af6158ab9bf5bfc3a40edcf73a6ff217790841",
+     "equal": true
+    },
+    "sweep_record.json": {
+     "recorded": "c1ad54dda24b8b5f2fc0807c9eb7d1e80a4d867107e6f82be53c195fbe17c477",
+     "got": "c1ad54dda24b8b5f2fc0807c9eb7d1e80a4d867107e6f82be53c195fbe17c477",
+     "equal": true
+    }
+   },
+   "n_files_listed": 11,
+   "n_files_ok": 11,
+   "fetcher_side_files": {},
+   "crosscheck": {
+    "per_pair_present": false,
+    "per_pair": {},
+    "ledger": {
+     "c2a": {
+      "record": [
+       "prior values kept (no C2a)",
+       "manifest v2.1 row (prior June values; ACQ-R06b A1, rulings H-1/H-3)"
+      ],
+      "prior": [
+       "prior values kept (no C2a)",
+       "manifest v2.1 row (prior June values; ACQ-R06b A1, rulings H-1/H-3)"
+      ],
+      "equal": true
+     },
+     "sweep": {
+      "record": [
+       "not run (prior k kept)",
+       "k=8 from June C2c sweep record reports/discovery/stage_c2c_sweep.json (prior value; ACQ-R06b A1)"
+      ],
+      "prior": [
+       "not run (prior k kept)",
+       "k=8 from June C2c sweep record reports/discovery/stage_c2c_sweep.json (prior value; ACQ-R06b A1)"
+      ],
+      "equal": true
+     },
+     "products": {
+      "record": [
+       "built",
+       "190 files read; flags []"
+      ],
+      "prior": [
+       "built",
+       "190 files read; flags []"
+      ],
+      "equal": true
+     }
+    },
+    "equal": true
+   },
+   "usable": {
+    "derived": true,
+    "reason": "available, no contract-v2.1 flags (rule C1)",
+    "source": "ship_products_v2_1/products.json (available flags, qa_vs_lr_tif.flags)",
+    "record_usable": true,
+    "record_reason": "available, no contract-v2.1 flags (rule C1)",
+    "equal_to_record": true
+   },
+   "mode_history": {
+    "record_before": "0o2770",
+    "record_opened": "0o770",
+    "record_after": null,
+    "stop_after": "0o770",
+    "now": {
+     "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/r07b_stop/harmonized/RR1506__MGDS_29779",
+     "mode": "0o2770",
+     "owner": "scdobbs",
+     "group": "hilley"
+    }
+   }
+  }
+ },
+ "ledger": [
+  {
+   "pair_id": "TN399__MGDS_33068",
+   "item": "record",
+   "status": "read",
+   "reason": "step1_record.json e24370b03fe1, sweep_record.json 0b448459f541"
+  },
+  {
+   "pair_id": "TN399__MGDS_33068",
+   "item": "files",
+   "status": "verified",
+   "reason": "11 of 11 listed files at their sha256"
+  },
+  {
+   "pair_id": "TN399__MGDS_33068",
+   "item": "crosscheck",
+   "status": "equal",
+   "reason": "per_pair present; ledger items ['c2a', 'products', 'sweep']"
+  },
+  {
+   "pair_id": "TN399__MGDS_33068",
+   "item": "usable",
+   "status": "True",
+   "reason": "available, no contract-v2.1 flags (rule C1) [from step1_record.json products (available, flags)]"
+  },
+  {
+   "pair_id": "TN399__MGDS_33068",
+   "item": "row",
+   "status": "rebuilt",
+   "reason": "frozen supplement_row on the record; provenance appended to notes"
+  },
+  {
+   "pair_id": "FK151121__MGDS_22383",
+   "item": "record",
+   "status": "read",
+   "reason": "step1_record.json 8184842098a8, sweep_record.json ebdc323fbc10"
+  },
+  {
+   "pair_id": "FK151121__MGDS_22383",
+   "item": "files",
+   "status": "verified",
+   "reason": "11 of 11 listed files at their sha256"
+  },
+  {
+   "pair_id": "FK151121__MGDS_22383",
+   "item": "crosscheck",
+   "status": "equal",
+   "reason": "per_pair present; ledger items ['c2a', 'products', 'sweep']"
+  },
+  {
+   "pair_id": "FK151121__MGDS_22383",
+   "item": "usable",
+   "status": "True",
+   "reason": "available, no contract-v2.1 flags (rule C1) [from step1_record.json products (available, flags)]"
+  },
+  {
+   "pair_id": "FK151121__MGDS_22383",
+   "item": "row",
+   "status": "rebuilt",
+   "reason": "frozen supplement_row on the record; provenance appended to notes"
+  },
+  {
+   "pair_id": "KM0923__MGDS_31429",
+   "item": "record",
+   "status": "read",
+   "reason": "step1_record.json c1bf350ee71c, sweep_record.json 1a5bccc0904d"
+  },
+  {
+   "pair_id": "KM0923__MGDS_31429",
+   "item": "files",
+   "status": "verified",
+   "reason": "11 of 11 listed files at their sha256"
+  },
+  {
+   "pair_id": "KM0923__MGDS_31429",
+   "item": "crosscheck",
+   "status": "equal",
+   "reason": "per_pair present; ledger items ['c2a', 'products', 'sweep']"
+  },
+  {
+   "pair_id": "KM0923__MGDS_31429",
+   "item": "usable",
+   "status": "True",
+   "reason": "available, no contract-v2.1 flags (rule C1) [from step1_record.json products (available, flags)]"
+  },
+  {
+   "pair_id": "KM0923__MGDS_31429",
+   "item": "row",
+   "status": "rebuilt",
+   "reason": "frozen supplement_row on the record; provenance appended to notes"
+  },
+  {
+   "pair_id": "RR1506__MGDS_29779",
+   "item": "record",
+   "status": "read",
+   "reason": "step1_record.json 2607c6f76988, sweep_record.json c1ad54dda24b"
+  },
+  {
+   "pair_id": "RR1506__MGDS_29779",
+   "item": "files",
+   "status": "verified",
+   "reason": "11 of 11 listed files at their sha256"
+  },
+  {
+   "pair_id": "RR1506__MGDS_29779",
+   "item": "crosscheck",
+   "status": "equal",
+   "reason": "per_pair absent; ledger items ['c2a', 'products', 'sweep']"
+  },
+  {
+   "pair_id": "RR1506__MGDS_29779",
+   "item": "usable",
+   "status": "True",
+   "reason": "available, no contract-v2.1 flags (rule C1) [from ship_products_v2_1/products.json (available flags, qa_vs_lr_tif.flags)]"
+  },
+  {
+   "pair_id": "RR1506__MGDS_29779",
+   "item": "row",
+   "status": "rebuilt",
+   "reason": "frozen supplement_row on the record; provenance appended to notes"
+  },
+  {
+   "pair_id": "EW9801__MGDS_31425",
+   "item": "inputs",
+   "status": "read",
+   "reason": "hr.tif, lr.tif, 3 masks"
+  },
+  {
+   "pair_id": "EW9801__MGDS_31425",
+   "item": "c2a",
+   "status": "prior values kept (no C2a)",
+   "reason": "manifest v2.1 row (prior June values; ACQ-R06b A1, rulings H-1/H-3)"
+  },
+  {
+   "pair_id": "EW9801__MGDS_31425",
+   "item": "sweep",
+   "status": "not run (prior k kept)",
+   "reason": "k=2 from June C2c sweep record reports/discovery/stage_c2c_sweep.json (prior value; ACQ-R06b A1)"
+  },
+  {
+   "pair_id": "EW9801__MGDS_31425",
+   "item": "fetch",
+   "status": "complete",
+   "reason": "25 of 25 files (rc 0)"
+  },
+  {
+   "pair_id": "EW9801__MGDS_31425",
+   "item": "products",
+   "status": "built",
+   "reason": "25 files read; flags []"
+  },
+  {
+   "pair_id": "EW9801__MGDS_31425",
+   "item": "write",
+   "status": "written, mode restored",
+   "reason": "12 files; dir 0o2770 -> 0o2770 -> 0o2770"
+  }
+ ],
+ "wall_s": 7.4,
+ "finished": "2026-10-12T00:58:42+00:00"
+}
