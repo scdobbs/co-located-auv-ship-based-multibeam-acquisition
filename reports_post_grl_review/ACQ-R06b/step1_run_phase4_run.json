@@ -10,14 +10,14 @@
   "TN159__MGDS_21981"
  ],
  "out_root": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy",
- "started": "2026-10-10T19:50:32+00:00",
- "host": "sh03-ln08.stanford.edu",
- "cpu_model": "AMD EPYC 7502 32-Core Processor",
- "code_commit": "762a3e8f2d2368ef1ab26fc6bd7084ef3f8d82ee",
+ "started": "2026-10-12T00:02:18+00:00",
+ "host": "sh02-06n09.int",
+ "cpu_model": "Intel(R) Xeon(R) Gold 5118 CPU @ 2.30GHz",
+ "code_commit": "9a386ca79c8c43b72641c4d772f17620941ae906",
  "nproc": 6,
  "batch_files": 1,
  "mbsystem": "5.8.2beta06",
- "sandbox": "/home/groups/hilley/containers/mbsystem_sandbox",
+ "sandbox": "/lscratch/scdobbs/47434040/mbsystem_sandbox",
  "container_digest": "sha256:106f502d9f97ee0e9f5d889726320d1ae73a95fb102069e357a0bb0b35b39668",
  "fixed_input_sha256": {
   "pairs_v2_1.parquet": "f57f3d8f98b320b136549de300ccac58787129af658a1c62296bab16b6c2ac35",
@@ -28,7 +28,7 @@
   "acq_r06_rehearsal/SHA256SUMS": "18cf21b9abd64938ecb03b090c4c4f95c732e77af388cd7630f3d317fba9f3c9"
  },
  "guard_selftest": {
-  "generated": "2026-10-10T19:50:32+00:00",
+  "generated": "2026-10-12T00:02:18+00:00",
   "all_passed": true,
   "controls": {
    "manifest v2.1": "control read ok",
@@ -37,7 +37,7 @@
   "phase4_allowance_installed": [],
   "guard_extension": "ACQ-R06: raw_lr_swath/<cruise> blocked for the sealed LR cruises AT42-03, TN159, KN182L03, RC2511, SUM1004",
   "guard_sha256": "96a1e09e09ace8d3fe53637a00e25ae2d7b3931fc06d88abf57007dab6abf701",
-  "code_commit": "762a3e8f2d2368ef1ab26fc6bd7084ef3f8d82ee",
+  "code_commit": "9a386ca79c8c43b72641c4d772f17620941ae906",
   "reader_checks": {
    "n": 84,
    "n_blocked": 84
@@ -45,15 +45,15 @@
  },
  "locks": {
   "lock1_signoff": {
-   "signoff": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_g7usiu0h/signoff_ok.md",
-   "prereg_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-   "signoff_sha256": "988747d6fdbdc8ca9730a7a13ca1ab15ca16a594b4df803f944857e741c15b62"
+   "signoff": "/home/users/scdobbs/GAN_Bathymetry_Project/grl_reviews-and-prompt-reports/directives_and_reports/R11/SIGNOFF_phase4_prereg_v2.md",
+   "prereg_sha256": "9795db3b22d6c54f7a85618dbaccafa054e88487b33236a7b2083ecb8c605979",
+   "signoff_sha256": "f1317c50d565a35a69154b6418b0f3ee0cf6db070e514c76d2512afcee685be8"
   },
   "lock2_freeze_record": {
-   "freeze_record": "/scratch/groups/hilley/auv_ship_colocated_bathy/phase4_rehearsal/acq_r06_refusal_g7usiu0h/freeze_ok.json",
-   "freeze_record_sha256": "6feeabb829bcfc10c780985a1032f08ee5ebe9008752c7dc9c35b960da3a53fe",
+   "freeze_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R06b/freeze_record.json",
+   "freeze_record_sha256": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
    "n_files": 21,
-   "n_loaded_checked": 21
+   "n_loaded_checked": 20
   },
   "lock3_pair_list": {
    "pairs": [
@@ -78,7 +78,19 @@
    }
   }
  },
- "allowance": [],
+ "allowance": [
+  "KN182L03__MGDS_30193",
+  "RC2511__MGDS_32239",
+  "SUM1004__MGDS_33090",
+  "AT42-03__MGDS_32007",
+  "TN159__MGDS_21981",
+  "harmonized_confirmatory",
+  "raw_lr_swath/AT42-03",
+  "raw_lr_swath/TN159",
+  "raw_lr_swath/KN182L03",
+  "raw_lr_swath/RC2511",
+  "raw_lr_swath/SUM1004"
+ ],
  "fetch_trigger": {
   "AT42-03": [
    "AT42-03__MGDS_32007"
@@ -87,10 +99,242 @@
    "TN159__MGDS_21981"
   ]
  },
+ "swath_preflight": {
+  "KN182L03": {
+   "n_disk": 28,
+   "n_manifest": 28,
+   "equal": true
+  },
+  "RC2511": {
+   "n_disk": 107,
+   "n_manifest": 107,
+   "equal": true
+  },
+  "SUM1004": {
+   "n_disk": 222,
+   "n_manifest": 222,
+   "equal": true
+  }
+ },
  "status": "stopped (rule C4)",
- "error": "KN182L03__MGDS_30193: KN182L03 holds 27 swath files but its fetch manifest lists 28 (rule C4)",
- "ledger": [],
- "pairs_done": [],
- "per_pair": {},
- "wall_s": 0.3
+ "error": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007: directory mode not restored (before 0o2770, after 0o770) (rule C4)",
+ "ledger": [
+  {
+   "pair_id": "KN182L03__MGDS_30193",
+   "item": "inputs",
+   "status": "read",
+   "reason": "hr.tif, lr.tif, 3 masks"
+  },
+  {
+   "pair_id": "KN182L03__MGDS_30193",
+   "item": "c2a",
+   "status": "computed",
+   "reason": "ACQ-R02 grid record grid/KN182L03.json:sonar"
+  },
+  {
+   "pair_id": "KN182L03__MGDS_30193",
+   "item": "sweep",
+   "status": "ok",
+   "reason": "k=None"
+  },
+  {
+   "pair_id": "KN182L03__MGDS_30193",
+   "item": "products",
+   "status": "not built",
+   "reason": "no k (k_sweep_status ok; rule C3)"
+  },
+  {
+   "pair_id": "KN182L03__MGDS_30193",
+   "item": "write",
+   "status": "written, mode restored",
+   "reason": "2 files; dir 0o2770 -> 0o2770 -> 0o2770"
+  },
+  {
+   "pair_id": "RC2511__MGDS_32239",
+   "item": "inputs",
+   "status": "read",
+   "reason": "hr.tif, lr.tif, 3 masks"
+  },
+  {
+   "pair_id": "RC2511__MGDS_32239",
+   "item": "c2a",
+   "status": "computed",
+   "reason": "ACQ-R02 grid record grid/RC2511.json:sonar"
+  },
+  {
+   "pair_id": "RC2511__MGDS_32239",
+   "item": "sweep",
+   "status": "ok",
+   "reason": "k=32"
+  },
+  {
+   "pair_id": "RC2511__MGDS_32239",
+   "item": "products",
+   "status": "built",
+   "reason": "107 files read; flags ['vertical_offset']"
+  },
+  {
+   "pair_id": "RC2511__MGDS_32239",
+   "item": "write",
+   "status": "written, mode restored",
+   "reason": "12 files; dir 0o2770 -> 0o2770 -> 0o2770"
+  },
+  {
+   "pair_id": "SUM1004__MGDS_33090",
+   "item": "inputs",
+   "status": "read",
+   "reason": "hr.tif, lr.tif, 3 masks"
+  },
+  {
+   "pair_id": "SUM1004__MGDS_33090",
+   "item": "c2a",
+   "status": "computed",
+   "reason": "ACQ-R02 grid record grid/SUM1004.json:sonar"
+  },
+  {
+   "pair_id": "SUM1004__MGDS_33090",
+   "item": "sweep",
+   "status": "ok",
+   "reason": "k=32"
+  },
+  {
+   "pair_id": "SUM1004__MGDS_33090",
+   "item": "products",
+   "status": "built",
+   "reason": "222 files read; flags []"
+  },
+  {
+   "pair_id": "SUM1004__MGDS_33090",
+   "item": "write",
+   "status": "written, mode restored",
+   "reason": "12 files; dir 0o2770 -> 0o2770 -> 0o2770"
+  },
+  {
+   "pair_id": "AT42-03__MGDS_32007",
+   "item": "inputs",
+   "status": "read",
+   "reason": "hr.tif, lr.tif, 3 masks"
+  },
+  {
+   "pair_id": "AT42-03__MGDS_32007",
+   "item": "c2a",
+   "status": "prior values kept (no C2a)",
+   "reason": "manifest v2.1 row (prior June values; ACQ-R06b A1, rulings H-1/H-3)"
+  },
+  {
+   "pair_id": "AT42-03__MGDS_32007",
+   "item": "sweep",
+   "status": "not run (prior k kept)",
+   "reason": "k=4 from June C2c sweep record reports/discovery/stage_c2c_sweep.json (prior value; ACQ-R06b A1)"
+  },
+  {
+   "pair_id": "AT42-03__MGDS_32007",
+   "item": "fetch",
+   "status": "complete",
+   "reason": "116 of 116 files (rc 0)"
+  },
+  {
+   "pair_id": "AT42-03__MGDS_32007",
+   "item": "products",
+   "status": "built",
+   "reason": "116 files read; flags []"
+  }
+ ],
+ "pairs_done": [
+  "KN182L03__MGDS_30193",
+  "RC2511__MGDS_32239",
+  "SUM1004__MGDS_33090"
+ ],
+ "per_pair": {
+  "KN182L03__MGDS_30193": {
+   "pair_id": "KN182L03__MGDS_30193",
+   "designation": "confirmatory",
+   "hr_native_res_m": 1.0,
+   "lr_native_res_m": 128.42,
+   "values_source": "C2a rule computed by this step",
+   "max_recoverable_k": null,
+   "k_sweep_status": "ok",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "per_k": {
+    "2": "circular_leak",
+    "4": "circular_leak",
+    "8": "circular_leak",
+    "16": "circular_leak",
+    "32": "circular_leak"
+   },
+   "fetch": null,
+   "products": "none",
+   "products_reason": null,
+   "flags": null,
+   "ship_products_usable": false,
+   "wall_s": 3.9,
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": "0o2770",
+    "restored": true
+   }
+  },
+  "RC2511__MGDS_32239": {
+   "pair_id": "RC2511__MGDS_32239",
+   "designation": "confirmatory",
+   "hr_native_res_m": 1.037,
+   "lr_native_res_m": 124.62,
+   "values_source": "C2a rule computed by this step",
+   "max_recoverable_k": 32,
+   "k_sweep_status": "ok",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "recoverable_signal",
+    "32": "recoverable_signal"
+   },
+   "fetch": null,
+   "products": "built",
+   "products_reason": null,
+   "flags": [
+    "vertical_offset"
+   ],
+   "ship_products_usable": false,
+   "wall_s": 29.0,
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": "0o2770",
+    "restored": true
+   }
+  },
+  "SUM1004__MGDS_33090": {
+   "pair_id": "SUM1004__MGDS_33090",
+   "designation": "confirmatory",
+   "hr_native_res_m": 1.0,
+   "lr_native_res_m": 150.77,
+   "values_source": "C2a rule computed by this step",
+   "max_recoverable_k": 32,
+   "k_sweep_status": "ok",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "recoverable_signal",
+    "32": "recoverable_signal"
+   },
+   "fetch": null,
+   "products": "built",
+   "products_reason": null,
+   "flags": [],
+   "ship_products_usable": true,
+   "wall_s": 42.4,
+   "write_path": {
+    "mode_before": "0o2770",
+    "mode_opened": "0o2770",
+    "mode_after": "0o2770",
+    "restored": true
+   }
+  }
+ },
+ "wall_s": 311.6
 }

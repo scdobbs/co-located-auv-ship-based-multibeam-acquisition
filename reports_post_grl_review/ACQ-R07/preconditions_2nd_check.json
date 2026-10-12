@@ -1,0 +1,540 @@
+{
+ "directive": "ACQ-R07 second check (after Steve committed the sign-off)",
+ "checked_at": "2026-10-12T00:12:55+00:00",
+ "p1_signoff": {
+  "sha256": "f1317c50d565a35a69154b6418b0f3ee0cf6db070e514c76d2512afcee685be8",
+  "tracked": true,
+  "commit": "18e513979b0255d7e414d40f4466dcdc46f0081e",
+  "commit_date": "2026-10-11 16:57:03 -0700",
+  "cnn_head": "18e513979b0255d7e414d40f4466dcdc46f0081e",
+  "git_status_short": "",
+  "holds_prereg_sha256": true,
+  "verdict": "CONFIRMED"
+ },
+ "p3_freeze_record_sha256": "331c94f01d7d1a2e52fb969c5fb1872aae2cd2ed249a3757b99e9d217b3ac0cb",
+ "p3_mismatches": [],
+ "p3_acq_head_at_submit": "9a386ca79c8c43b72641c4d772f17620941ae906",
+ "p4_supplement_existed_before_run": false,
+ "p6_guard_in_job": {
+  "n": 84,
+  "n_blocked": 84,
+  "checks": [
+   {
+    "target": "lockbox pair:AT42-03__MGDS_32007",
+    "reader": "builtins.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007/lr.tif",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox pair:AT42-03__MGDS_32007",
+    "reader": "rasterio.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007/lr.tif",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox pair:AT42-03__MGDS_32007",
+    "reader": "numpy.load",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007/lr.tif",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox pair:AT42-03__MGDS_32007",
+    "reader": "geopandas.read_file",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007/lr.tif",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox pair:AT42-03__MGDS_32007",
+    "reader": "pyogrio.read_dataframe",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007/lr.tif",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox pair:AT42-03__MGDS_32007",
+    "reader": "pandas.read_parquet",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/AT42-03__MGDS_32007/lr.tif",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox pair:TN159__MGDS_21981",
+    "reader": "builtins.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981/lr.tif",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox pair:TN159__MGDS_21981",
+    "reader": "rasterio.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981/lr.tif",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox pair:TN159__MGDS_21981",
+    "reader": "numpy.load",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981/lr.tif",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox pair:TN159__MGDS_21981",
+    "reader": "geopandas.read_file",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981/lr.tif",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox pair:TN159__MGDS_21981",
+    "reader": "pyogrio.read_dataframe",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981/lr.tif",
+    "result": "blocked"
+   },
+   {
+    "target": "lockbox pair:TN159__MGDS_21981",
+    "reader": "pandas.read_parquet",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/TN159__MGDS_21981/lr.tif",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:nu01a",
+    "reader": "builtins.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu01a/KN182L03__MGDS_30193/footprint.geojson",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:nu01a",
+    "reader": "rasterio.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu01a/KN182L03__MGDS_30193/footprint.geojson",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:nu01a",
+    "reader": "numpy.load",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu01a/KN182L03__MGDS_30193/footprint.geojson",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:nu01a",
+    "reader": "geopandas.read_file",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu01a/KN182L03__MGDS_30193/footprint.geojson",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:nu01a",
+    "reader": "pyogrio.read_dataframe",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu01a/KN182L03__MGDS_30193/footprint.geojson",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:nu01a",
+    "reader": "pandas.read_parquet",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory/nu01a/KN182L03__MGDS_30193/footprint.geojson",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:root",
+    "reader": "builtins.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:root",
+    "reader": "rasterio.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:root",
+    "reader": "numpy.load",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:root",
+    "reader": "geopandas.read_file",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:root",
+    "reader": "pyogrio.read_dataframe",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory",
+    "result": "blocked"
+   },
+   {
+    "target": "confirmatory:root",
+    "reader": "pandas.read_parquet",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized_confirmatory",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:AT42-03",
+    "reader": "builtins.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/AT42-03/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:AT42-03",
+    "reader": "rasterio.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/AT42-03/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:AT42-03",
+    "reader": "numpy.load",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/AT42-03/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:AT42-03",
+    "reader": "geopandas.read_file",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/AT42-03/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:AT42-03",
+    "reader": "pyogrio.read_dataframe",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/AT42-03/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:AT42-03",
+    "reader": "pandas.read_parquet",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/AT42-03/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:AT42-03",
+    "reader": "builtins.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/AT42-03",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:AT42-03",
+    "reader": "rasterio.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/AT42-03",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:AT42-03",
+    "reader": "numpy.load",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/AT42-03",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:AT42-03",
+    "reader": "geopandas.read_file",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/AT42-03",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:AT42-03",
+    "reader": "pyogrio.read_dataframe",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/AT42-03",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:AT42-03",
+    "reader": "pandas.read_parquet",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/AT42-03",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:TN159",
+    "reader": "builtins.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/TN159/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:TN159",
+    "reader": "rasterio.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/TN159/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:TN159",
+    "reader": "numpy.load",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/TN159/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:TN159",
+    "reader": "geopandas.read_file",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/TN159/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:TN159",
+    "reader": "pyogrio.read_dataframe",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/TN159/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:TN159",
+    "reader": "pandas.read_parquet",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/TN159/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:TN159",
+    "reader": "builtins.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/TN159",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:TN159",
+    "reader": "rasterio.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/TN159",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:TN159",
+    "reader": "numpy.load",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/TN159",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:TN159",
+    "reader": "geopandas.read_file",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/TN159",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:TN159",
+    "reader": "pyogrio.read_dataframe",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/TN159",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:TN159",
+    "reader": "pandas.read_parquet",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/TN159",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:KN182L03",
+    "reader": "builtins.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/KN182L03/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:KN182L03",
+    "reader": "rasterio.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/KN182L03/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:KN182L03",
+    "reader": "numpy.load",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/KN182L03/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:KN182L03",
+    "reader": "geopandas.read_file",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/KN182L03/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:KN182L03",
+    "reader": "pyogrio.read_dataframe",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/KN182L03/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:KN182L03",
+    "reader": "pandas.read_parquet",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/KN182L03/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:KN182L03",
+    "reader": "builtins.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/KN182L03",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:KN182L03",
+    "reader": "rasterio.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/KN182L03",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:KN182L03",
+    "reader": "numpy.load",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/KN182L03",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:KN182L03",
+    "reader": "geopandas.read_file",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/KN182L03",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:KN182L03",
+    "reader": "pyogrio.read_dataframe",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/KN182L03",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:KN182L03",
+    "reader": "pandas.read_parquet",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/KN182L03",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:RC2511",
+    "reader": "builtins.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/RC2511/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:RC2511",
+    "reader": "rasterio.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/RC2511/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:RC2511",
+    "reader": "numpy.load",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/RC2511/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:RC2511",
+    "reader": "geopandas.read_file",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/RC2511/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:RC2511",
+    "reader": "pyogrio.read_dataframe",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/RC2511/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:RC2511",
+    "reader": "pandas.read_parquet",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/RC2511/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:RC2511",
+    "reader": "builtins.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/RC2511",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:RC2511",
+    "reader": "rasterio.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/RC2511",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:RC2511",
+    "reader": "numpy.load",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/RC2511",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:RC2511",
+    "reader": "geopandas.read_file",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/RC2511",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:RC2511",
+    "reader": "pyogrio.read_dataframe",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/RC2511",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:RC2511",
+    "reader": "pandas.read_parquet",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/RC2511",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:SUM1004",
+    "reader": "builtins.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/SUM1004/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:SUM1004",
+    "reader": "rasterio.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/SUM1004/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:SUM1004",
+    "reader": "numpy.load",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/SUM1004/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:SUM1004",
+    "reader": "geopandas.read_file",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/SUM1004/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:SUM1004",
+    "reader": "pyogrio.read_dataframe",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/SUM1004/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath:SUM1004",
+    "reader": "pandas.read_parquet",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/SUM1004/fetch_manifest.json",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:SUM1004",
+    "reader": "builtins.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/SUM1004",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:SUM1004",
+    "reader": "rasterio.open",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/SUM1004",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:SUM1004",
+    "reader": "numpy.load",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/SUM1004",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:SUM1004",
+    "reader": "geopandas.read_file",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/SUM1004",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:SUM1004",
+    "reader": "pyogrio.read_dataframe",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/SUM1004",
+    "result": "blocked"
+   },
+   {
+    "target": "sealed swath dir:SUM1004",
+    "reader": "pandas.read_parquet",
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/SUM1004",
+    "result": "blocked"
+   }
+  ]
+ },
+ "job": {
+  "id": 47434040,
+  "node": "sh02-06n09",
+  "cpu": "Intel(R) Xeon(R) Gold 5118 CPU @ 2.30GHz",
+  "submitted_driver": "sbatch/acq_r07/step1.sbatch",
+  "driver_sha256": "face7fec0cf06e2eeed2c98c8b72bf0c310317be2fb39309cea213d8ee948526"
+ },
+ "run_record": {
+  "path": "reports_post_grl_review/ACQ-R06b/step1_run_phase4_run.json",
+  "sha256": "7cc5b46d437a72976027f8e7ca9b0f31a8b9eeb5161928c67fce41f87127ce2b"
+ },
+ "guard_selftest_json_sha256": "e61069ea94e8f2eb141ec6e464403ed5b50369eb407e6c394c7210c62d07c95b"
+}
