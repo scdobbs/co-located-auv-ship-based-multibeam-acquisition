@@ -139,6 +139,25 @@ def guard_tests() -> list:
     return out
 
 
+def check_tests() -> list:
+    """ACQ-R11b: the datum check in the key check and in eligibility (pure function calls, no data)."""
+    from src.phase5 import chain_p5 as CH
+    out = []
+    hits = P.forbidden_keys({"datum_check": {"v95": 1.0, "V95_rel": 0.1}, "ok": True})
+    out.append({"test": "B1 forbidden-key check catches v95 keys", "expected": "2 hits", "got": f"{len(hits)} hits", "passed": len(hits) == 2})
+    q_ok = {"coreg_estimated": True, "offset_within_30m": True, "overlap_ge_1km2": True, "tiles_gt_0": True}
+    c2a = {"hr_res_m_unrounded": 1.0, "lr_native_res_m": 20.0}; sw = {"max_recoverable_k": 8, "status": "ok"}
+    e1 = CH.eligibility({"qa_pass": True, "qa_components": q_ok, "datum_check": {"vertical_consistent": False, "computed": True, "why": "above the calibrated bound"}}, c2a, sw, None)
+    out.append({"test": "B2 datum check fails -> not eligible, reason 'vertical datum', coreg_pass false", "expected": "vertical datum", "got": e1["eligibility_reason"],
+                "passed": (not e1["eligible"]) and (not e1["coreg_pass"]) and e1["eligibility_reason"].startswith("vertical datum") and "co-registration" not in e1["eligibility_reason"]})
+    e2 = CH.eligibility({"qa_pass": False, "qa_components": dict(q_ok, offset_within_30m=False), "datum_check": {"vertical_consistent": True, "computed": True, "why": ""}}, c2a, sw, None)
+    out.append({"test": "B3 qa fails, datum passes -> reason 'co-registration' only", "expected": "co-registration", "got": e2["eligibility_reason"],
+                "passed": (not e2["eligible"]) and e2["eligibility_reason"].startswith("co-registration") and "vertical datum" not in e2["eligibility_reason"]})
+    e3 = CH.eligibility({"qa_pass": True, "qa_components": q_ok, "datum_check": {"vertical_consistent": True, "computed": True, "why": ""}}, c2a, sw, None)
+    out.append({"test": "B4 both pass -> eligible, coreg_pass true", "expected": "eligible", "got": e3["status"], "passed": e3["eligible"] and e3["coreg_pass"]})
+    return out
+
+
 def main(argv=None):
     real_install = S.GP.install_phase5_allowance
     S.GP.install_phase5_allowance = _no_allowance
@@ -147,7 +166,7 @@ def main(argv=None):
             locks = lock_tests(Path(td))
     finally:
         S.GP.install_phase5_allowance = real_install
-    guards = guard_tests()
+    guards = guard_tests() + check_tests()
     allp = all(r["passed"] for r in locks + guards)
     rec = {"generated": P.utc_now(), "code_commit": P.git_commit(), "host": P.hostname(), "n_lock_tests": len(locks), "n_guard_tests": len(guards),
            "n_passed": sum(r["passed"] for r in locks + guards), "all_passed": allp, "lock_tests": locks, "guard_tests": guards}

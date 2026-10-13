@@ -8,6 +8,8 @@ fixed paths (harmonize_new.GRIDDED -> the run's gridded directory, harmonize_new
 stage_c2c_recalibrate.pair_dir -> the site's directory, acq_r03.common.REPORT_DIR -> the work directory), as the
 development driver and the Phase 4 step did.  Not reproduced: the R3 QC figure (no image in Phase 5), hr_p50 and the
 co-registration residual MAD (no depth statistic or amplitude is written), the H1 processed-grid cross-check.
+ACQ-R11b: after the masks, the vertical-datum check (vcheck_p5.gate, threshold common_p5.T_G) keeps only a boolean; its
+value is never written, printed or logged.  coreg_pass = qa_pass AND the datum check (eligibility below).
 """
 from __future__ import annotations
 
@@ -41,7 +43,10 @@ from src.discovery import stage_c2c_recalibrate as C2C
 from src.discovery import stage_c5_spectral        # noqa: F401  (chain)
 from src.phase4 import sealed_step1 as S4            # frozen Phase 4 rules: usable_rule (C1), classify_builder_error (C2), counts
 from src.phase5 import common_p5 as P
+from src.phase5 import vcheck_p5 as VC
 
+if P.sha256_file(P.REPO / P.VCHECK_REL) != P.VCHECK_SHA:
+    raise ImportError(f"{P.VCHECK_REL} is not the byte copy of src/acq_r11/vcheck.py (sha256 {P.VCHECK_SHA})")
 log = logging.getLogger("acq_r09.chain")
 FILL = HN.FILL
 
@@ -257,6 +262,9 @@ def harmonize(site: dict, kept_raw: list, gridded_dir: Path, out_dir: Path, tmp:
           "coreg_estimated": bool(rec["coreg"].get("estimated"))}
     rec["qa_components"] = qa
     rec["qa_pass"] = bool(rec["coreg"].get("pass") and rec.get("overlap_km2", 0) >= 1.0 and n_tiles_ok > 0)     # harmonize_new.py line 352
+    # ACQ-R11b vertical-datum check on the files just written (booleans only leave vcheck_p5.gate)
+    rec["datum_check"] = VC.gate(out_dir / "hr.tif", out_dir / "lr.tif", out_dir / "joint_valid.tif", P.T_G)
+    rec["datum_check"]["threshold_name"] = "T_G (common_p5)"
     return rec
 
 
@@ -356,19 +364,24 @@ def products(site: dict, out_dir: Path, cruise_dir: Path, nproc: int, batch_file
 # --------------------------------------------------------------------------- #
 def eligibility(harm: dict | None, c2a_rec: dict | None, sweep_rec: dict | None, fail: str | None) -> dict:
     reasons = []
-    coreg_pass = bool(harm and harm.get("qa_pass"))
+    qa_pass = bool(harm and harm.get("qa_pass"))
+    dc = (harm or {}).get("datum_check") or {}
+    datum_ok = bool(dc.get("vertical_consistent"))
+    coreg_pass = bool(qa_pass and datum_ok)                 # ACQ-R11b: qa_pass AND G <= T_G (line check: fallback, not applied)
     if fail:
         reasons.append(fail)
-    if harm and not coreg_pass:
+    if harm and not qa_pass:
         q = harm.get("qa_components", {})
         if not q.get("coreg_estimated"):
-            reasons.append("co-registration could not be estimated")
+            reasons.append("co-registration: could not be estimated")
         elif not q.get("offset_within_30m"):
-            reasons.append("co-registration offset above the 30 m development bound")
+            reasons.append("co-registration: offset above the 30 m development bound")
         if not q.get("overlap_ge_1km2"):
-            reasons.append("overlap below 1 km2")
+            reasons.append("co-registration: overlap below 1 km2")
         if not q.get("tiles_gt_0"):
-            reasons.append("no 256-px tile with >= 50 % joint-valid cells")
+            reasons.append("co-registration: no 256-px tile with >= 50 % joint-valid cells")
+    if harm and not datum_ok:
+        reasons.append("vertical datum: " + ("HR-ship vertical consistency above the calibrated bound T_G" if dc.get("computed") else (dc.get("why") or "not computable")))
     k = (sweep_rec or {}).get("max_recoverable_k")
     k_ok = k is not None
     if sweep_rec is not None and not k_ok:
@@ -383,10 +396,12 @@ def eligibility(harm: dict | None, c2a_rec: dict | None, sweep_rec: dict | None,
             reasons.append(f"HR spacing {c2a_rec['hr_res_m_unrounded']:.4f} m outside {P.HR_MIN}-{P.HR_MAX} m")
     cells_ok = cells is not None and P.CELLS_MIN <= cells <= P.CELLS_MAX
     eligible = bool(coreg_pass and k_ok and cells_ok and hr_ok and not fail)
-    return {"coreg_pass": coreg_pass, "k_recoverable": bool(k_ok), "cells_across": (round(cells, 6) if cells is not None else None), "cells_in_range": bool(cells_ok),
+    return {"coreg_pass": coreg_pass, "qa_pass": qa_pass, "vertical_datum_ok": datum_ok, "line_check": "not applied (ACQ-R11b fallback; ship line-to-line inconsistency unchecked)",
+            "k_recoverable": bool(k_ok), "cells_across": (round(cells, 6) if cells is not None else None), "cells_in_range": bool(cells_ok),
             "hr_res_in_range": bool(hr_ok), "eligible": eligible, "eligibility_reason": "" if eligible else "; ".join(dict.fromkeys(reasons)) or "not testable",
             "status": "eligible (C1 set at step 1)" if eligible else "not testable",
-            "definitions": {"coreg_pass": "harmonize_new qa_pass: offset <= 30 m, overlap >= 1 km2, >= 1 256-px tile with >= 50 % joint-valid cells",
+            "definitions": {"coreg_pass": "harmonize_new qa_pass (offset <= 30 m, overlap >= 1 km2, >= 1 256-px tile with >= 50 % joint-valid cells) "
+                                          "AND the vertical-datum check (ACQ-R11b: V95_rel <= T_G = 0.200712)",
                             "k_recoverable": "stage_c2c_recalibrate.sweep max_recoverable_k is not None",
                             "cells_across": "256 x |hr.tif pixel| (unrounded) / lr_native_res_m, in [3.88, 51.2]",
                             "hr_res_in_range": "0.985 <= |hr.tif pixel| (unrounded) <= 4.99 m"}}

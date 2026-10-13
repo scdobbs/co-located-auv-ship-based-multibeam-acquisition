@@ -270,7 +270,8 @@ def per_pair_entry(rec: dict) -> dict:
             "products": ("built" if (pr and pr.get("available")) else ("unavailable" if pr else "none")),
             "products_reason": (pr or {}).get("reason") or (pr or {}).get("unavailable_reason"), "flags": (pr or {}).get("flags"),
             "ship_products_usable": rec["usable"], "usable_reason": rec["usable_reason"],
-            "coreg_pass": el["coreg_pass"], "qa_components": h.get("qa_components"), "n_valid_tiles_256": h.get("n_valid_tiles_256"),
+            "coreg_pass": el["coreg_pass"], "qa_components": h.get("qa_components"), "vertical_datum_ok": el.get("vertical_datum_ok"),
+            "n_valid_tiles_256": h.get("n_valid_tiles_256"),
             "k_recoverable": el["k_recoverable"], "cells_across": el["cells_across"], "hr_res_in_range": el["hr_res_in_range"],
             "eligible": el["eligible"], "eligibility_reason": el["eligibility_reason"], "status": el["status"],
             "hr_grids": {"n_files": sel.get("n_files"), "n_grids_read": sel.get("n_grids_read"), "group_m": (sel.get("resolution_group") or {}).get("chosen"),
@@ -371,10 +372,10 @@ def main(argv=None):
     out_root = Path(cfg["out_root"]) / a.run_tag if (a.mode == "rehearsal") else Path(cfg["out_root"])
     work_root = Path(os.environ.get("L_SCRATCH", "/tmp")) / "acq_p5" / (a.run_tag or "phase5")
     tag = a.run_tag if a.mode == "rehearsal" else time.strftime("%Y%m%dT%H%M%SZ", time.gmtime())
-    run = {"directive": "ACQ-R09 code (Phase 5 step 1)", "mode": a.mode, "run_tag": tag, "sites": requested, "site_list": {"path": str(sl), "sha256": P.sha256_file(sl)},
+    run = {"directive": "ACQ-R09 code + ACQ-R11b vertical-datum check (Phase 5 step 1)", "mode": a.mode, "run_tag": tag, "sites": requested, "site_list": {"path": str(sl), "sha256": P.sha256_file(sl)},
            "out_root": str(out_root), "work_root": str(work_root), "sealed_root": str(cfg["sealed_root"]), "fetch": cfg["fetch"], "started": P.utc_now(),
            "host": P.hostname(), "cpu_model": P.cpu_model(), "code_commit": P.git_commit(), "nproc": a.nproc, "batch_files": a.batch_files,
-           "mbsystem": C.MBSYSTEM_VERSION, "sandbox": C.SANDBOX, "container_digest": C.CONTAINER_DIGEST, "rulings": ["S1", "S2", "S3"]}
+           "mbsystem": C.MBSYSTEM_VERSION, "sandbox": C.SANDBOX, "container_digest": C.CONTAINER_DIGEST, "rulings": ["S1", "S2", "S3", "ACQ-R11b fallback: datum check T_G, line check not applied"]}
     run["fixed_input_sha256"] = P.check_fixed_inputs()
     # guard self-tests first (Phase 4 reader checks + the Phase 5 admission rules on the real names), before any allowance
     g4 = G4.run(write=False)

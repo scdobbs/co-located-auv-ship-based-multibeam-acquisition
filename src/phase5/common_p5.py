@@ -13,6 +13,12 @@ Steve's rulings of 2026-10-13 (ACQ-R09, recorded in the report):
       that they are mosaicked with the rule order as priority; an undated grid counts as a tie (larger valid area decides);
   S3  the current grid_lr (grid_region) is used; FK151121's development grid predates it, so the rehearsal isolates that
       pair by re-gridding it on its recorded development region in a separate harness.
+
+ACQ-R11b (2026-10-13; Steve's rulings: ACQ-R10 H-1 option (b) with the fallback approved in advance; keep 3.88):
+  the line check could not be calibrated (2 of 38 accepted pairs computable, fewer than 10), so the fallback applies:
+  the vertical-datum check alone (src/phase5/vcheck_p5.py, a byte copy of src/acq_r11/vcheck.py) with T_G below;
+  ship line-to-line inconsistency is unchecked.  coreg_pass = qa_pass AND G <= T_G.  New run-time records and
+  rehearsal outputs go to ACQ-R11b (the ACQ-R09 records and freeze record stay as they are).
 """
 from __future__ import annotations
 
@@ -30,10 +36,12 @@ REPO = C.REPO
 OAK = C.OAK
 SCR = C.SCRATCH_DATA
 RPG = REPO / "reports_post_grl_review"
-REPORT_DIR = RPG / "ACQ-R09"
+R09_DIR = RPG / "ACQ-R09"                                        # spec and record contract (ACQ-R09; unchanged)
+REPORT_DIR = RPG / "ACQ-R11b"                                    # ACQ-R11b: refusal tests, preservation, freeze candidate
 REHEARSAL_DIR = REPORT_DIR / "rehearsal"
 PHASE5_DIR = RPG / "PHASE5"                                      # phase5-mode run records and the freeze record
-FREEZE_RECORD = PHASE5_DIR / "freeze_record_phase5.json"
+FREEZE_RECORD_V1 = PHASE5_DIR / "freeze_record_phase5.json"      # ACQ-R09 freeze (superseded, kept)
+FREEZE_RECORD = PHASE5_DIR / "freeze_record_phase5_v2.json"      # ACQ-R11b freeze
 SITE_LIST = REPO / "inputs" / "phase5_sites.csv"
 SITE_LIST_REL = "inputs/phase5_sites.csv"
 ENTRY_REL = "src/phase5/sealed_step1_p5.py"
@@ -42,8 +50,8 @@ SUPPLEMENT_PHASE4 = REPO / "manifest" / "pairs_phase4_sealed.parquet"         # 
 SHA_SUPPLEMENT_PHASE4 = "6968e04554ddeef3c335587d602cb5fab2185db32b46cbd152475a919eb59206"
 
 # rehearsal layout (scratch only)
-SCRATCH_ROOT = SCR / "ACQ-R09"
-MOCK_ROOT = SCRATCH_ROOT / "mock" / C.SEALED_CANDIDATES_V3_DIRNAME           # .../ACQ-R09/mock/sealed_candidates_v3/<id>/
+SCRATCH_ROOT = SCR / "ACQ-R11b"
+MOCK_ROOT = SCRATCH_ROOT / "mock" / C.SEALED_CANDIDATES_V3_DIRNAME           # .../ACQ-R11b/mock/sealed_candidates_v3/<id>/
 MOCK_SITE_LIST = REHEARSAL_DIR / "mock_sites.csv"
 REHEARSAL_OUT = SCRATCH_ROOT / "rehearsal"
 
@@ -51,11 +59,13 @@ REHEARSAL_OUT = SCRATCH_ROOT / "rehearsal"
 C2C_CALIBRATION = REPO / "reports" / "discovery" / "stage_c2c_calibration.json"
 CONTRACT_V21 = RPG / "INTERFACE_CONTRACT_v2.1.md"
 R08B_MEASURED = RPG / "ACQ-R08b" / "candidates_measured.csv"                   # one rounded depth per site (fetch-plan buffer only)
+VCHECK_CALIBRATION = RPG / "ACQ-R11b" / "vcheck_calibration_v2.csv"            # ACQ-R11b calibration table (development data only)
 FIXED = {
     "reports/discovery/stage_c2c_calibration.json": (C2C_CALIBRATION, "7e68bdadfcdb5dd1c5ad4040ad6a5edf5226fcd9223e6824ae1c21472c01778a"),
     "reports_post_grl_review/INTERFACE_CONTRACT_v2.1.md": (CONTRACT_V21, "0b4aadaf61fb04213ae18771d2a58532f39e9d49b5152ab64738d188a7e18fcb"),
     "manifest/pairs_phase4_sealed.parquet": (SUPPLEMENT_PHASE4, SHA_SUPPLEMENT_PHASE4),
     "reports_post_grl_review/ACQ-R08b/candidates_measured.csv": (R08B_MEASURED, "fbd2e03d9cdbe65420fbd98cb772dd1af5ef855951307e9c5b0d4c98b1607b37"),
+    "reports_post_grl_review/ACQ-R11b/vcheck_calibration_v2.csv": (VCHECK_CALIBRATION, "41973318d9ac55cffc7baa3f57a359da2538f2fd0a7a3a952d39770a14b7d8b2"),
 }
 
 # spec §3.2.1 / §3.3 constants (fixed now)
@@ -66,12 +76,20 @@ GROUP_COVER = 0.80                           # finest group whose valid area >= 
 OVERLAP_FRAC = 0.50                          # ruling S2
 USBL_BOUND_M = 30.0                          # development QA (src/acq_r01/harmonize_new.py USBL_BOUND_M, ACQ-R03 R2)
 MIN_OVERLAP_KM2 = 1.0                        # development QA (harmonize_pair min_overlap_area_km2 and qa_pass)
+# ACQ-R11b vertical-datum check: T_G = 3 x max V95_rel over the 45 development-designated v2.1 rows (0.066904,
+# 2009_Amundsen__MGDS_30047) = 0.200712; calibration table reports_post_grl_review/ACQ-R11b/vcheck_calibration_v2.csv
+# sha256 41973318d9ac55cffc7baa3f57a359da2538f2fd0a7a3a952d39770a14b7d8b2 (statistic src/acq_r11/vcheck.py 5a2c65d4…).
+T_G = 0.200712
+VCHECK_REL = "src/phase5/vcheck_p5.py"
+VCHECK_SHA = "5a2c65d4e50286945dc04eb66b4f8f965beee93c65a9967c15da017fdaf52a44"   # byte copy of src/acq_r11/vcheck.py
+# Line check (ACQ-R11b §1.2): not implemented (fallback, §0.2); ship line-to-line inconsistency is unchecked.
 KS = (2, 4, 8, 16, 32)
 FETCH_WORKERS = 6
 LICENSE_MGDS = "MGDS default CC-BY-NC-SA (ACQ-R08b ruling R3)"
 
 # Keys that must never appear in a Phase 5 record written by this code (no depth statistic, amplitude or residual).
-FORBIDDEN_KEY_PARTS = ("depth", "median", "mad", "rms", "sigma", "p50", "p05", "p95", "amplitude", "residual", "mean_z", "std")
+FORBIDDEN_KEY_PARTS = ("depth", "median", "mad", "rms", "sigma", "p50", "p05", "p95", "amplitude", "residual", "mean_z", "std",
+                       "v95", "datum_value", "line_offset")       # ACQ-R11b: the datum/line statistics never appear as keys
 
 
 def utc_now() -> str:

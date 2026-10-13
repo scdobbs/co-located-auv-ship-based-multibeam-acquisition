@@ -1,0 +1,27 @@
+{
+ "directive": "ACQ-R11b \u00a72",
+ "generated": "2026-10-13T23:15:05+00:00",
+ "G_source": {
+  "table": "reports_post_grl_review/ACQ-R11/vcheck_calibration.csv",
+  "sha256": "b7f3732d9830d24911de0f17380082fc887a5f02bba20767090a65e34898c711",
+  "statistic": "src/acq_r11/vcheck.py",
+  "statistic_sha256": "5a2c65d4e50286945dc04eb66b4f8f965beee93c65a9967c15da017fdaf52a44"
+ },
+ "T_G_rule": "3 x max(V95_rel over the 45 development-designated rows, accepted and info)",
+ "G_max_development": 0.066904,
+ "G_max_development_pair": "2009_Amundsen__MGDS_30047",
+ "T_G": 0.200712,
+ "checks": {
+  "NR07-1_above_T_G": true,
+  "all_45_development_below_T_G": true,
+  "AT37-05_above_T_G": false
+ },
+ "T_L_rule": "2 x max(L over the accepted pairs where L is computable)",
+ "n_accepted_L_computable": 2,
+ "min_computable_required": 10,
+ "fallback_applied": true,
+ "T_L": null,
+ "fallback_basis": "\u00a72.3: fewer than 10 accepted pairs have a computable L -> \u00a70.2 fallback (Steve, approved in advance): datum check only; ship line-to-line inconsistency unchecked for v3.1",
+ "table": "reports_post_grl_review/ACQ-R11b/vcheck_calibration_v2.csv",
+ "table_sha256": "41973318d9ac55cffc7baa3f57a359da2538f2fd0a7a3a952d39770a14b7d8b2"
+}

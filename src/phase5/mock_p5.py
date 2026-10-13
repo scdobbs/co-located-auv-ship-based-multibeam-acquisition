@@ -34,6 +34,9 @@ DEV = [("FK151121 development pair", "MGDS:22383", "FK151121", "Kongsberg EM302;
        ("NA080 development pair", "MGDS:31289", "NA080", "Kongsberg EM302", 2017),
        ("KM0923 development pair", "MGDS:31429", "KM0923", "Simrad EM120", 2009)]
 MOCK_REPEAT = ("Mock repeat survey (KM0923 HR copies)", "MOCK:R09repeat", "KM0923", "Simrad EM120", 2009)
+# ACQ-R11b §4.2 positive control (known-bad, development data): NR07-1 / MGDS:31813 (ACQ-R02 H2 depth-incompatible);
+# sonar as the ACQ-R02 grid record, ship cruise year 2007.  AT37-05 is not a control (line check not applied: fallback).
+POSCTRL = [("NR07-1 known-bad positive control", "MGDS:31813", "NR07-1", "Simrad EM120", 2007)]
 REPEAT_SRC = RAW_HR / "MGDS_31429" / "sent_shdeep2m.asc.gz"
 REPEAT_A = "mockrepeat_shdeep_20060615_2m.asc.gz"
 REPEAT_B = "mockrepeat_shdeep_20090615_2m_sub.asc.gz"
@@ -62,7 +65,7 @@ def main(argv=None):
             p.chmod(0o755 if p.is_dir() else 0o644)
         shutil.rmtree(root)
     root.mkdir(parents=True)
-    toks = [P.token(r[1]) for r in DEV + [MOCK_REPEAT]] + ["MGDS_99999"]
+    toks = [P.token(r[1]) for r in DEV + POSCTRL + [MOCK_REPEAT]] + ["MGDS_99999"]
     GP.install_phase5_allowance(toks, root, [], reason="ACQ-R09 rehearsal (mock root, development data): mock layout builder")
     try:
         return _build(root)
@@ -72,7 +75,7 @@ def main(argv=None):
 
 def _build(root: Path):
     copies = []
-    for name, hid, cruise, sonar, year in DEV:
+    for name, hid, cruise, sonar, year in DEV + POSCTRL:
         src_dir = RAW_HR / hid.replace(":", "_"); dst = root / P.token(hid); dst.mkdir()
         man = json.loads((src_dir / "download_manifest.json").read_text())
         for f in man["files"]:
@@ -98,7 +101,7 @@ def _build(root: Path):
                {"src": str(REPEAT_SRC), "dst": str(rep / REPEAT_B), "sha256": P.sha256_file(rep / REPEAT_B), "link": False, "note": "rows/cols 15-85 % crop, date 2009-06-15 in the name"}]
     decoy = root / "MGDS_99999"; decoy.mkdir()
     (decoy / "decoy.grd").write_text("decoy: not in any site list\n")
-    rows = [dict(zip(("site_name", "hr_id", "ship_cruise", "sonar", "year"), r)) for r in DEV + [MOCK_REPEAT]]
+    rows = [dict(zip(("site_name", "hr_id", "ship_cruise", "sonar", "year"), r)) for r in DEV + [MOCK_REPEAT] + POSCTRL]
     P.MOCK_SITE_LIST.parent.mkdir(parents=True, exist_ok=True)
     with open(P.MOCK_SITE_LIST, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["site_name", "hr_id", "ship_cruise", "sonar", "year"]); w.writeheader(); w.writerows(rows)
