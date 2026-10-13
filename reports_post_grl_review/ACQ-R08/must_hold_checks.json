@@ -1,0 +1,45 @@
+{
+  "1_no_bathymetry_opened": {
+    "guard_installed": true,
+    "raster_open_attempts_refused": 2,
+    "data_url_requests_refused": 5,
+    "network_request_kinds": {
+      "catalog API (MGDS FileServer)": 6,
+      "catalog API (PANGAEA Elasticsearch)": 228,
+      "catalog API (DataCite REST)": 29,
+      "catalog API (USGS ScienceBase)": 7,
+      "footprint query (NCEI ArcGIS multibeam footprints)": 16,
+      "catalog API (NCEI Geoportal OpenSearch)": 194,
+      "ISO / JSON record (NCEI Geoportal item)": 503,
+      "file listing (NCEI autoindex)": 51
+    },
+    "non_metadata_kinds_present": []
+  },
+  "2_every_excluded_has_reason_pool_a": {
+    "excluded": 85,
+    "with_reason": 85,
+    "not_eligible": 68,
+    "not_eligible_with_reason": 68
+  },
+  "3_in_range_have_named_cruise_pool_a": {
+    "in_range": 3,
+    "with_lr_cruise": 3,
+    "with_raw_swath": 3
+  },
+  "2_every_excluded_has_reason_pool_b": {
+    "excluded": 34,
+    "with_reason": 34,
+    "not_eligible": 15067,
+    "not_eligible_with_reason": 15067
+  },
+  "3_in_range_have_named_cruise_pool_b": {
+    "in_range": 0,
+    "with_lr_cruise": 0,
+    "with_raw_swath": 0
+  },
+  "4_no_designation": {
+    "designation_files_written": false,
+    "seed_used": null,
+    "split_written": false
+  }
+}

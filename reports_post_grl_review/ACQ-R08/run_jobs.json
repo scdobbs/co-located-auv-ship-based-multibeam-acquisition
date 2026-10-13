@@ -1,0 +1,14 @@
+{
+  "note": "Every job ran sbatch/acq_r08/inventory.sbatch (normal partition) or the same module via srun on the dev partition; catalog caches persisted between attempts under $GROUP_SCRATCH discovery_cache/acq_r08_2026-10-12/. Earlier attempts failed on code defects found by the runs (NCEI page size, NaN handling, non-string sonar, blank MGDS cruise ids); their partial outputs were overwritten by the later runs.",
+  "jobs": [
+    {"job": 47599033, "pools": "c,a,b", "outcome": "pool_c ok; pool_a failed (NCEI footprint layer returns HTTP 500 to 2,000-feature pages); pool_b failed on the same pull", "harvests_cached": "MGDS, PANGAEA, DataCite, ScienceBase, NOS OpenSearch (194 pages)"},
+    {"job": 47602596, "pools": "c,a,b", "outcome": "NCEI pulled (500/page); pool_a and pool_b failed on a NaN tile estimate"},
+    {"job": 47608009, "pools": "c,a,b", "outcome": "pool_c, pool_a, pool_b complete; Pool B outputs final (nos_records.csv, candidates.csv, funnel.json); Pool A later superseded"},
+    {"job": 47610497, "pools": "a", "outcome": "pool_a failed (NaN sonar string from PANGAEA ship candidates)"},
+    {"job": 47611482, "pools": "a", "outcome": "pool_a complete (LR chosen by best status); superseded (depth-mean fallback)"},
+    {"job": 47636305, "pools": "a", "outcome": "pool_a complete; superseded (MGDS cruise ids blank → rule 5 never fired)"},
+    {"job": 47636817, "pools": "a (srun, dev)", "outcome": "pool_a complete with cruise ids parsed from titles; superseded (Venere acquisition cruise)"},
+    {"job": 47636932, "pools": "a (srun, dev)", "outcome": "FINAL Pool A: hr_records.csv, candidates.csv, funnel.json, hr_footprints.gpkg"}
+  ],
+  "report_assembly": "src.acq_r08.report + src.acq_r08.finalize_report on the login node (reads the pool CSV/JSON outputs only)"
+}

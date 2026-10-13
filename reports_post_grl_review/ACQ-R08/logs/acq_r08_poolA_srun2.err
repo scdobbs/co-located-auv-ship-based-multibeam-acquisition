@@ -1,0 +1,150 @@
+srun: job 47636932 queued and waiting for resources
+srun: job 47636932 has been allocated resources
+2026-10-13 03:21:44,980 INFO cache hit: /scratch/groups/hilley/auv_ship_colocated_bathy/discovery_cache/acq_r08_2026-10-12/mgds/mgds_AUV_Bathymetry_data_set.xml
+2026-10-13 03:21:45,040 INFO cache hit: /scratch/groups/hilley/auv_ship_colocated_bathy/discovery_cache/acq_r08_2026-10-12/mgds/mgds_AUV_Bathymetry_geoms.xml
+2026-10-13 03:21:45,236 INFO MGDS 31322 (Maps of Processed Near-Bottom AUV Bathymetry acquired during) skipped: no footprint
+2026-10-13 03:21:45,238 INFO MGDS 24369 (Maps of Near-Bottom Bathymetry Data from the Alarcon Rise Sp) skipped: no footprint
+2026-10-13 03:21:45,239 INFO MGDS 21414 (Processed Near-bottom Multibeam Sonar and Sidescan Sonar Ima) skipped: no footprint
+2026-10-13 03:21:45,240 INFO MGDS 30194 (Processed near-bottom Sentry AUV bathymetry data (PNG images) skipped: no footprint
+2026-10-13 03:21:45,240 INFO MGDS 30199 (Processed near-bottom bathymetry images (PNG format) for sur) skipped: no footprint
+2026-10-13 03:21:45,247 INFO MGDS 21459 (Processed near bottom Multibeam Sonar Images from the Pacifi) skipped: no footprint
+2026-10-13 03:21:45,247 INFO MGDS 9064 (Processed Near-bottom Bathymetry Data (ASCII format) derived) skipped: no footprint
+2026-10-13 03:21:45,248 INFO MGDS 8915 (Processed near-bottom Scanning Altimetric Sonar Data (ASCII ) skipped: no footprint
+2026-10-13 03:21:45,248 INFO MGDS 31431 (Loihi Seamount (Hawaii), Shinkai Deep and FeMO hydrothermal ) skipped: no footprint
+2026-10-13 03:21:45,248 INFO MGDS 31428 (Loihi Seamount (Hawaii), summit and FeMO hydrothermal vents ) skipped: no footprint
+2026-10-13 03:21:45,248 INFO MGDS 24368 (GeoTIFF Images of Gridded Near-Bottom Bathymetry from the Al) skipped: no footprint
+2026-10-13 03:21:45,249 INFO MGDS 30086 (Processed near-bottom Sentry AUV bathymetry data (PNG images) skipped: no footprint
+2026-10-13 03:21:45,272 INFO MGDS 31060 (Sentry processed EM2040 near-bottom bathymetry images (PDF f) skipped: no footprint
+2026-10-13 03:21:45,275 INFO MGDS 6899 (Processed Near-bottom Bathymetry Grids (NetCDF:GMT format) d) skipped: no footprint
+2026-10-13 03:21:45,278 INFO MGDS 21467 (Processed near bottom Multibeam Sonar Images from the Santa ) skipped: no footprint
+2026-10-13 03:21:45,278 INFO MGDS 30093 (Processed bathymetry images (PNG format) for survey areas 1 ) skipped: no footprint
+2026-10-13 03:21:45,278 INFO MGDS 31182 (Maps of Processed Near-Bottom AUV Bathymetry (EM2040) acquir) skipped: no footprint
+2026-10-13 03:21:45,278 INFO MGDS 31194 (Maps of Processed Near-Bottom AUV Bathymetry from the Southw) skipped: no footprint
+2026-10-13 03:21:45,281 INFO MGDS 31209 (Processed Near-Bottom Bathymetry Maps acquired during R/V At) skipped: no footprint
+2026-10-13 03:21:45,282 INFO MGDS 32231 (MBARI Mapping AUV near-bottom bathymetry and navigation trac) skipped: no footprint
+2026-10-13 03:21:45,314 INFO MGDS 31853 (Maps of Processed Near-Bottom AUV Bathymetry acquired during) skipped: no footprint
+2026-10-13 03:21:45,314 INFO MGDS 31861 (Maps of Processed Near-Bottom AUV Bathymetry acquired during) skipped: no footprint
+2026-10-13 03:21:45,315 INFO MGDS 31948 (Maps of Processed Near-Bottom AUV Bathymetry from the Califo) skipped: no footprint
+2026-10-13 03:21:45,315 INFO MGDS 31955 (Maps of Processed Near-Bottom AUV Bathymetry from the Dorado) skipped: no footprint
+2026-10-13 03:21:45,316 INFO MGDS 31871 (Processed Near-Bottom AUV Bathymetry Data from the Kermadec ) skipped: no footprint
+2026-10-13 03:21:45,316 INFO MGDS 31204 (Maps of Processed Near-Bottom AUV Bathymetry acquired during) skipped: no footprint
+2026-10-13 03:21:45,316 INFO MGDS 31213 (Maps of Processed Near-Bottom AUV Bathymetry (EM2040) acquir) skipped: no footprint
+2026-10-13 03:21:45,317 INFO MGDS 32209 (Maps of Processed Near-Bottom AUV Bathymetry from the Guayma) skipped: no footprint
+2026-10-13 03:21:45,321 INFO MGDS 31820 (Maps of Processed Near-Bottom AUV Bathymetry from the Galapa) skipped: no footprint
+2026-10-13 03:21:45,321 INFO MGDS 31832 (Maps of Processed Near-Bottom AUV Bathymetry from the Easter) skipped: no footprint
+2026-10-13 03:21:45,321 INFO MGDS 31825 (Maps of Processed Near-Bottom AUV Bathymetry from the Pito D) skipped: no footprint
+2026-10-13 03:21:45,321 INFO MGDS 32009 (Maps of Processed Near-Bottom AUV Bathymetry from the Centra) skipped: no footprint
+2026-10-13 03:21:45,321 INFO MGDS 31717 (Maps of processed bathymetry data with AUV navigation track ) skipped: no footprint
+2026-10-13 03:21:45,325 INFO MGDS 31189 (Maps of Processed Near-Bottom AUV Bathymetry (EM2040) from A) skipped: no footprint
+2026-10-13 03:21:45,330 INFO MGDS 31200 (Maps of Processed Near-Bottom AUV Bathymetry from the Costa ) skipped: no footprint
+2026-10-13 03:21:45,331 INFO MGDS 31815 (Maps of Processed Near-Bottom AUV Bathymetry from the Gulf o) skipped: no footprint
+2026-10-13 03:21:45,332 INFO MGDS 31839 (Maps of Processed Near-Bottom AUV Bathymetry from the Easter) skipped: no footprint
+2026-10-13 03:21:45,333 INFO MGDS 31849 (Maps of Processed Near-Bottom AUV Bathymetry from the Juan d) skipped: no footprint
+2026-10-13 03:21:45,333 INFO MGDS 31676 (Maps of Processed Near-Bottom AUV Bathymetry acquired during) skipped: no footprint
+2026-10-13 03:21:45,334 INFO MGDS 33082 (Maps of Processed Near-Bottom AUV Bathymetry (EM2040) from t) skipped: no footprint
+2026-10-13 03:21:45,337 INFO MGDS 32819 (Maps of processed bathymetry data with AUV navigation track ) skipped: no footprint
+2026-10-13 03:21:45,337 INFO MGDS 32829 (Maps of processed bathymetry data with AUV navigation track ) skipped: no footprint
+2026-10-13 03:21:45,342 INFO MGDS 33069 (Maps of Processed Near-Bottom AUV Bathymetry (EM2040) from t) skipped: no footprint
+2026-10-13 03:21:45,343 INFO MGDS 33091 (Maps of Processed Near-Bottom AUV Bathymetry (EM2040) from t) skipped: no footprint
+2026-10-13 03:21:45,343 INFO MGDS harvest: 142 records
+2026-10-13 03:21:45,353 INFO MGDS AUV: 142 records
+2026-10-13 03:21:45,354 INFO cache hit: /scratch/groups/hilley/auv_ship_colocated_bathy/discovery_cache/acq_r08_2026-10-12/mgds/mgds_ROV_Bathymetry_data_set.xml
+2026-10-13 03:21:45,363 INFO cache hit: /scratch/groups/hilley/auv_ship_colocated_bathy/discovery_cache/acq_r08_2026-10-12/mgds/mgds_ROV_Bathymetry_geoms.xml
+2026-10-13 03:21:45,433 INFO MGDS 7575 (Processed Near-bottom Multibeam Sonar Data (SD format) from ) skipped: no footprint
+2026-10-13 03:21:45,438 INFO MGDS 14 (Processed submersible Multibeam Sonar Data from the Lau Back) skipped: no footprint
+2026-10-13 03:21:45,439 INFO MGDS 14429 (Processed multibeam sonar bathymetry images and Jason II ROV) skipped: no footprint
+2026-10-13 03:21:45,439 INFO MGDS 32488 (ROV-mounted high-resolution laser scan data acquired at vert) skipped: no footprint
+2026-10-13 03:21:45,445 INFO MGDS 20007 (Near-bottom bathymetry data (2m resolution) from the Hess De) skipped: no footprint
+2026-10-13 03:21:45,448 INFO MGDS 31809 (Processed Near-Bottom Acoustic Backscatter, Bathymetry and G) skipped: no footprint
+2026-10-13 03:21:45,448 INFO MGDS harvest: 25 records
+2026-10-13 03:21:45,450 INFO MGDS ROV: 25 records
+2026-10-13 03:21:45,450 INFO cache hit: /scratch/groups/hilley/auv_ship_colocated_bathy/discovery_cache/acq_r08_2026-10-12/mgds/mgds_HOV_Bathymetry_data_set.xml
+2026-10-13 03:21:45,461 INFO cache hit: /scratch/groups/hilley/auv_ship_colocated_bathy/discovery_cache/acq_r08_2026-10-12/mgds/mgds_HOV_Bathymetry_geoms.xml
+2026-10-13 03:21:45,495 INFO MGDS 7793 (Processed Near-bottom Bathymetry Data (ASCII format) derived) skipped: no footprint
+2026-10-13 03:21:45,495 INFO MGDS 6207 (Processed Near-bottom Bathymetry Data (ASCII format) derived) skipped: no footprint
+2026-10-13 03:21:45,496 INFO MGDS 6206 (Processed Near-bottom Bathymetry Data (ASCII format) derived) skipped: no footprint
+2026-10-13 03:21:45,496 INFO MGDS 6209 (Processed Near-bottom Bathymetry Data (ASCII format) derived) skipped: no footprint
+2026-10-13 03:21:45,496 INFO MGDS 6313 (Processed Near-bottom Bathymetry Data (ASCII format) derived) skipped: no footprint
+2026-10-13 03:21:45,497 INFO MGDS 7641 (Processed Near-bottom Bathymetry Data (ASCII format) derived) skipped: no footprint
+2026-10-13 03:21:45,499 INFO MGDS 6208 (Processed Near-bottom Bathymetry Data (ASCII format) derived) skipped: no footprint
+2026-10-13 03:21:45,500 INFO MGDS 32861 (Raw Near-Bottom HOV Bathymetry Data from the Juan de Fuca Sp) skipped: no footprint
+2026-10-13 03:21:45,500 INFO MGDS 32858 (Raw Near-Bottom HOV Bathymetry Data from the Gulf of America) skipped: no footprint
+2026-10-13 03:21:45,500 INFO MGDS 32859 (Raw Near-Bottom HOV Bathymetry Data from the Gulf of America) skipped: no footprint
+2026-10-13 03:21:45,500 INFO MGDS 32860 (Raw Near-Bottom HOV Bathymetry Data from the Juan de Fuca Sp) skipped: no footprint
+2026-10-13 03:21:45,500 INFO MGDS 32866 (Raw Near-Bottom HOV Bathymetry Data from the Gulf of America) skipped: no footprint
+2026-10-13 03:21:45,500 INFO MGDS 32857 (Raw Near-Bottom HOV Bathymetry Data from the Gulf of America) skipped: no footprint
+2026-10-13 03:21:45,500 INFO MGDS harvest: 14 records
+2026-10-13 03:21:45,501 INFO MGDS HOV: 14 records
+2026-10-13 03:21:45,627 INFO Created 181 records
+2026-10-13 03:21:48,503 INFO MGDS total 181 (4s)
+2026-10-13 03:21:48,516 INFO AUV query '"AUV" bathymetry' -> 2496 (cum 2496)
+2026-10-13 03:21:48,517 INFO AUV query '"AUV Abyss"' -> 104 (cum 2496)
+2026-10-13 03:21:48,529 INFO AUV query '"AUV ABYSS" bathymetry' -> 2414 (cum 2496)
+2026-10-13 03:21:48,531 INFO AUV query '"MARUM-SEAL"' -> 7 (cum 2496)
+2026-10-13 03:21:48,532 INFO AUV query '"AUV SEAL"' -> 16 (cum 2496)
+2026-10-13 03:21:48,543 INFO AUV query '"REMUS" bathymetry' -> 2360 (cum 2511)
+2026-10-13 03:21:48,555 INFO AUV query '"HUGIN" bathymetry' -> 2328 (cum 2519)
+2026-10-13 03:21:48,567 INFO AUV query '"Sentry" bathymetry' -> 2316 (cum 2519)
+2026-10-13 03:21:48,579 INFO AUV query '"AsterX" bathymetry' -> 2316 (cum 2519)
+2026-10-13 03:21:48,581 INFO AUV query '"Girona 500"' -> 0 (cum 2519)
+2026-10-13 03:21:48,593 INFO AUV query '"autonomous underwater vehicle" bathymetry' -> 2470 (cum 2522)
+2026-10-13 03:21:48,646 INFO AUV query 'AUV multibeam processed data' -> 10000 (cum 10629)
+2026-10-13 03:21:48,649 INFO AUV query 'AUV "working area dataset"' -> 381 (cum 10636)
+2026-10-13 03:21:48,662 INFO AUV query '"near-bottom" bathymetry AUV' -> 2672 (cum 10808)
+2026-10-13 03:21:48,664 INFO AUV query 'AUV "high resolution bathymetry"' -> 267 (cum 10808)
+2026-10-13 03:21:48,666 INFO AUV query '"Kongsberg EM 2040" AUV' -> 247 (cum 10808)
+2026-10-13 03:21:48,677 INFO AUV query '"SeaBat" AUV bathymetry' -> 2498 (cum 10809)
+2026-10-13 03:21:48,710 INFO ship query '"with links to raw data files" multibeam' -> 2475 (cum 2475)
+2026-10-13 03:21:48,714 INFO ship query '"multibeam bathymetry raw data"' -> 655 (cum 2475)
+2026-10-13 03:21:48,718 INFO ship query '"Raw multibeam" EM122' -> 717 (cum 2478)
+2026-10-13 03:21:48,784 INFO ship query '"raw data" EM120' -> 10000 (cum 11025)
+2026-10-13 03:21:48,823 INFO ship query '"raw data" EM710' -> 10000 (cum 11025)
+2026-10-13 03:21:48,867 INFO ship query '"raw data" EM302' -> 10000 (cum 11037)
+2026-10-13 03:21:48,909 INFO ship query '"raw data" EM304' -> 10000 (cum 11041)
+2026-10-13 03:21:48,950 INFO ship query '"raw data" EM124' -> 10000 (cum 11041)
+2026-10-13 03:21:48,991 INFO ship query '"raw data" Hydrosweep' -> 10000 (cum 11056)
+2026-10-13 03:21:49,032 INFO ship query '"swath sonar" bathymetry raw' -> 10000 (cum 12999)
+2026-10-13 03:21:49,042 INFO ship query '"Multibeam bathymetry processed data" Kongsberg' -> 1607 (cum 13105)
+2026-10-13 03:21:49,047 INFO ship query '"working area dataset" EM122' -> 648 (cum 13143)
+/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/src/acq_r01/pangaea_discovery.py:131: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  is_auv = df.title.fillna("").str.contains(AUV_RE) | df.method.fillna("").str.contains(AUV_RE) | df.basis.fillna("").str.contains(AUV_RE)
+/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/src/acq_r01/pangaea_discovery.py:133: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  excl = df.title.fillna("").str.contains(HR_EXCL_RE)
+/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/src/acq_r01/pangaea_discovery.py:154: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  keep = (t.str.contains(SHIP_SONAR_RE) & ~t.str.contains(AUV_RE) & ~t.str.contains(COMPOSITE_RE) & ~t.str.contains(SHIP_EXCL_RE)
+2026-10-13 03:21:49,715 INFO PANGAEA AUV 11 ship 1108
+2026-10-13 03:21:50,395 INFO DataCite hits 870 -> 24 near-bottom grid datasets
+2026-10-13 03:21:50,401 INFO ScienceBase items 1
+2026-10-13 03:21:53,626 INFO NCEI footprints 3885
+2026-10-13 03:21:53,632 INFO collapsed 1 siblings under MGDS:31282 (Near-bottom ROV LiDAR bathymetry grid (netCDF format) from t)
+2026-10-13 03:21:53,634 INFO collapsed 1 siblings under MGDS:31278 (Near-bottom ROV multibeam bathymetry grid (netCDF format) fr)
+2026-10-13 03:21:53,635 INFO collapsed 1 siblings under MGDS:32320 (Santa Monica 800 m Mound MBARI Low Altitude Survey System ne)
+2026-10-13 03:21:53,636 INFO collapsed 1 siblings under MGDS:8500 (Processed Near-bottom Multibeam Sonar Data (SD format) from )
+2026-10-13 03:21:53,638 INFO collapsed 1 siblings under MGDS:32239 (MBARI Mapping AUV near-bottom processed swath bathymetry gri)
+2026-10-13 03:21:53,642 INFO collapsed 2 siblings under MGDS:30830 (Pescadero Basin (Gulf of California) 2018 MBARI AUV missions)
+2026-10-13 03:21:53,644 INFO collapsed 1 siblings under MGDS:30047 (Processed bathymetry data (ESRI ASCII grids) acquired near-b)
+2026-10-13 03:21:53,646 INFO collapsed 2 siblings under MGDS:30368 (Escanaba Trough (Gorda Ridge) AUV near-bottom processed swat)
+2026-10-13 03:21:53,647 INFO collapsed 1 siblings under MGDS:27339 (North Gorda near-bottom processed swath bathymetry gridded d)
+2026-10-13 03:21:53,649 INFO collapsed 1 siblings under MGDS:31289 (Near-bottom AUV multibeam bathymetry grid (netCDF format) fr)
+2026-10-13 03:21:53,651 INFO collapsed 1 siblings under MGDS:24619 (Near-Bottom Bathymetry Data (grid in ASCII raster format) fr)
+2026-10-13 03:21:53,654 INFO collapsed 2 siblings under MGDS:32321 (Santa Monica 800 m Mound MBARI Mapping AUV near-bottom proce)
+2026-10-13 03:21:53,656 INFO collapsed 1 siblings under MGDS:31753 (Processed bathymetry data (netCDF grids) from the continenta)
+2026-10-13 03:21:53,658 INFO collapsed 1 siblings under MGDS:24367 (Processed Gridded Near-Bottom Bathymetry Data (ArcASCII form)
+2026-10-13 03:21:53,659 INFO collapsed 1 siblings under MGDS:31280 (Near-bottom ROV multibeam bathymetry image (GeoTIFF format) )
+2026-10-13 03:21:53,661 INFO collapsed 3 siblings under MGDS:30272 (Processed bathymetry data (ESRI ASCII grids) acquired near-b)
+2026-10-13 03:21:53,668 INFO collapsed 1 siblings under MGDS:30273 (Processed bathymetry data (GeoTIFF images) acquired near-bot)
+2026-10-13 03:21:53,693 INFO collapsed 1 siblings under MGDS:5139 (Processed Near-bottom Bathymetry Data (ASCII format) derived)
+2026-10-13 03:21:53,695 INFO collapsed 1 siblings under MGDS:1598 (Processed Near-bottom Bathymetry Data (ASCII format) derived)
+2026-10-13 03:21:53,697 INFO collapsed 1 siblings under MGDS:5105 (Processed Near-bottom Bathymetry Data (ASCII format) derived)
+2026-10-13 03:21:53,699 INFO collapsed 1 siblings under MGDS:32556 (Gridded near-bottom bathymetry data (netCDF format, 1-m reso)
+2026-10-13 03:21:53,701 INFO collapsed 1 siblings under MGDS:30219 (Preliminary 1-meter resolution bathymetric model (ESRI ASCII)
+2026-10-13 03:21:53,709 INFO collapsed 1 siblings under MGDS:31949 (Processed Gridded Near-Bottom AUV Bathymetry Data (ASCII:ESR)
+2026-10-13 03:21:53,711 INFO collapsed 1 siblings under MGDS:31954 (Processed Gridded Near-Bottom AUV Bathymetry Data from the D)
+2026-10-13 03:21:53,713 INFO collapsed 1 siblings under MGDS:32007 (Processed Gridded Near-Bottom AUV Bathymetry Data from the C)
+2026-10-13 03:21:53,717 INFO collapsed 1 siblings under MGDS:31073 (Processed Gridded Near-Bottom Bathymetry Data acquired durin)
+2026-10-13 03:21:53,721 INFO collapsed 1 siblings under MGDS:31429 (Loihi Seamount (Hawaii), Shinkai Deep and FeMO hydrothermal )
+2026-10-13 03:21:53,722 INFO collapsed 1 siblings under MGDS:31425 (Loihi Seamount (Hawaii), summit and Pele's Pit, Sentry AUV n)
+2026-10-13 03:21:53,725 INFO collapsed 2 siblings under MGDS:24485 (Processed Near-Bottom AUV Sentry Bathymetric Sonar Maps (Geo)
+2026-10-13 03:21:53,726 INFO dedupe: 181 -> 146 HR records
+2026-10-13 03:21:56,392 INFO Created 182 records
+2026-10-13 03:22:06,094 INFO Created 75 records

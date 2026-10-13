@@ -1,0 +1,30 @@
+{
+  "records_found_nos_surveys": 16784,
+  "geoportal_index_total_for_query": 19323,
+  "not_eligible": 15067,
+  "not_eligible_breakdown": {
+    "no BAG product in the record": 14421,
+    "BAG present but resolution not in the file name": 523,
+    "BAG coarser than 4 m": 116,
+    "no bounding box": 7
+  },
+  "bag_4m_or_finer": 1717,
+  "excluded_rule_1": 2,
+  "excluded_rule_2": 1,
+  "excluded_rule_3": 0,
+  "excluded_rule_4": 0,
+  "excluded_rule_5": 31,
+  "screened_under_s3": 1683,
+  "in_range": 0,
+  "outside_range": 1282,
+  "uncertain": 401,
+  "no_ship_cruise_over_survey": 846,
+  "tiles_below_300": 225,
+  "with_independent_lr": 837,
+  "with_independent_lr_and_tiles_ge_300": 612,
+  "plausible_under_hssd_band": 0,
+  "iso_records_checked": 400,
+  "within_50km_flagged": 37,
+  "elapsed_s": 727,
+  "generated": "2026-10-13T04:22:05+00:00"
+}

@@ -1,0 +1,101 @@
+host=sh04-01n17.int job=47608009 start=2026-10-13T04:05:27Z
+=== Pool C (records only) ===
+{
+ "rows": 117,
+ "distinct_hr": 97,
+ "by_run": {
+  "June 2026": 60,
+  "June 2026 (stage A gate)": 25,
+  "Sept 2026 (ACQ-R01 gate)": 9,
+  "Sept 2026 (ACQ-R02 verification)": 9,
+  "Sept 2026 (manifest v2.1 dropped)": 9,
+  "Sept 2026 (ACQ-R02 PANGAEA discovery)": 3,
+  "Sept 2026 (manifest v2 dropped)": 2
+ },
+ "still_applies": {
+  "yes": 76,
+  "n/a (now in manifest v2.1)": 18,
+  "no": 14,
+  "superseded": 8,
+  "re-check": 1
+ },
+ "rescreen_ids": [
+  "MGDS:24043",
+  "MGDS:24424",
+  "MGDS:24619",
+  "MGDS:30085",
+  "MGDS:30092",
+  "MGDS:30198",
+  "MGDS:30832",
+  "MGDS:31203",
+  "MGDS:31954",
+  "MGDS:32208"
+ ],
+ "generated": "2026-10-13T04:05:39+00:00"
+}
+pool_c exit=0
+=== Pool A (catalog harvest + screen) ===
+{
+ "records_found": 182,
+ "not_a_grid_or_non_bathy": 68,
+ "excluded_rule_1": 79,
+ "excluded_rule_2": 3,
+ "excluded_rule_3": 0,
+ "excluded_rule_4": 0,
+ "excluded_rule_5": 0,
+ "screened_under_s3": 32,
+ "in_range": 0,
+ "outside_range": 23,
+ "uncertain": 9,
+ "outside_by_condition": {
+  "hr_res_m # outside #\u2013#": 12,
+  "cells_across_est # outside #\u2013#": 8,
+  "tiles_est # < #": 7,
+  "no independent ship cruise with raw swath over the footprint": 5,
+  "not releasable (restricted)": 3,
+  "tiles_est # < # even on the bbox upper bound": 1
+ },
+ "uncertain_by_field": {
+  "overlap/tiles are a bbox upper bound (true footprint needs download)": 6,
+  "hr_res_m needs download (not in catalog record)": 3,
+  "lr_est_m": 3,
+  "tiles_est": 3
+ }
+}
+pool_a exit=0
+=== Pool B (NOS BAG surveys) ===
+{
+ "records_found_nos_surveys": 16784,
+ "geoportal_index_total_for_query": 19323,
+ "not_eligible": 15067,
+ "not_eligible_breakdown": {
+  "no BAG product in the record": 14421,
+  "BAG present but resolution not in the file name": 523,
+  "BAG coarser than 4 m": 116,
+  "no bounding box": 7
+ },
+ "bag_4m_or_finer": 1717,
+ "excluded_rule_1": 2,
+ "excluded_rule_2": 1,
+ "excluded_rule_3": 0,
+ "excluded_rule_4": 0,
+ "excluded_rule_5": 31,
+ "screened_under_s3": 1683,
+ "in_range": 0,
+ "outside_range": 1282,
+ "uncertain": 401,
+ "no_ship_cruise_over_survey": 846,
+ "tiles_below_300": 225,
+ "with_independent_lr": 837,
+ "with_independent_lr_and_tiles_ge_300": 612,
+ "plausible_under_hssd_band": 0,
+ "iso_records_checked": 400,
+ "within_50km_flagged": 37,
+ "elapsed_s": 727,
+ "generated": "2026-10-13T04:22:05+00:00"
+}
+pool_b exit=0
+=== report draft ===
+draft written; placeholders <<BULLETS>> <<SUMMARY>> <<EXPOSURE>> <<HOLDS>> to be filled from the results
+report exit=0
+end=2026-10-13T04:22:07Z exit=0

@@ -1,0 +1,34 @@
+{
+  "installed": true,
+  "probes": [
+    {
+      "probe": "rasterio.open",
+      "blocked": true
+    },
+    {
+      "probe": "numpy.load",
+      "blocked": true
+    },
+    {
+      "probe": "requests.get .tif",
+      "blocked": true
+    },
+    {
+      "probe": "requests.get .bag",
+      "blocked": true
+    },
+    {
+      "probe": "requests.get .mb58.gz",
+      "blocked": true
+    },
+    {
+      "probe": "requests.get .png",
+      "blocked": true
+    },
+    {
+      "probe": "requests.get .zip",
+      "blocked": true
+    }
+  ],
+  "all_blocked": true
+}

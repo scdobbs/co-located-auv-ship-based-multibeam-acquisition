@@ -1,0 +1,33 @@
+{
+  "rows": 117,
+  "distinct_hr": 97,
+  "by_run": {
+    "June 2026": 60,
+    "June 2026 (stage A gate)": 25,
+    "Sept 2026 (ACQ-R01 gate)": 9,
+    "Sept 2026 (ACQ-R02 verification)": 9,
+    "Sept 2026 (manifest v2.1 dropped)": 9,
+    "Sept 2026 (ACQ-R02 PANGAEA discovery)": 3,
+    "Sept 2026 (manifest v2 dropped)": 2
+  },
+  "still_applies": {
+    "yes": 76,
+    "n/a (now in manifest v2.1)": 18,
+    "no": 14,
+    "superseded": 8,
+    "re-check": 1
+  },
+  "rescreen_ids": [
+    "MGDS:24043",
+    "MGDS:24424",
+    "MGDS:24619",
+    "MGDS:30085",
+    "MGDS:30092",
+    "MGDS:30198",
+    "MGDS:30832",
+    "MGDS:31203",
+    "MGDS:31954",
+    "MGDS:32208"
+  ],
+  "generated": "2026-10-13T04:05:39+00:00"
+}

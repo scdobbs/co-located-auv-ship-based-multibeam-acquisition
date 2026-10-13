@@ -60,18 +60,20 @@ def _fetch_xml(params: dict[str, Any], cache_path: Path | None = None) -> bytes:
     return r.content
 
 
-def fetch_data_sets(cache_dir: Path) -> ET.Element:
+def fetch_data_sets(cache_dir: Path, platform_type: str = "AUV") -> ET.Element:
+    # ACQ-R08 (2026-10-12): optional platform_type (default unchanged = "AUV"); ROV / HOV near-bottom grids
+    # are harvested into their own cache files.
     body = _fetch_xml(
-        {"platform_type": "AUV", "data_type": "Bathymetry", "format": "data_set"},
-        cache_dir / "mgds_AUV_Bathymetry_data_set.xml",
+        {"platform_type": platform_type, "data_type": "Bathymetry", "format": "data_set"},
+        cache_dir / f"mgds_{platform_type}_Bathymetry_data_set.xml",
     )
     return ET.fromstring(body)
 
 
-def fetch_geoms(cache_dir: Path) -> ET.Element:
+def fetch_geoms(cache_dir: Path, platform_type: str = "AUV") -> ET.Element:
     body = _fetch_xml(
-        {"platform_type": "AUV", "data_type": "Bathymetry", "format": "geoms"},
-        cache_dir / "mgds_AUV_Bathymetry_geoms.xml",
+        {"platform_type": platform_type, "data_type": "Bathymetry", "format": "geoms"},
+        cache_dir / f"mgds_{platform_type}_Bathymetry_geoms.xml",
     )
     return ET.fromstring(body)
 
@@ -154,13 +156,14 @@ class _DatasetAgg:
     file_max_z: list[float] = field(default_factory=list)
 
 
-def harvest(cache_dir: Path) -> list[HRRecord]:
+def harvest(cache_dir: Path, platform_type: str = "AUV") -> list[HRRecord]:
     """Run a full MGDS AUV-bathymetry harvest and return HRRecord objects.
 
     Idempotent: API responses are cached under ``cache_dir/mgds_*.xml``.
+    ACQ-R08: ``platform_type`` (default "AUV", unchanged behaviour) may be "ROV" or "HOV".
     """
-    data_sets_root = fetch_data_sets(cache_dir)
-    geoms_root = fetch_geoms(cache_dir)
+    data_sets_root = fetch_data_sets(cache_dir, platform_type)
+    geoms_root = fetch_geoms(cache_dir, platform_type)
 
     # Index dataset-level info by data_set_uid
     aggs: dict[str, _DatasetAgg] = {}
@@ -262,7 +265,7 @@ def harvest(cache_dir: Path) -> list[HRRecord]:
             source_uid=uid,
             title=agg.title,
             platform=_parse_auv_platform(agg.description, agg.platform),
-            platform_type="AUV",
+            platform_type=platform_type,
             sonar=sonar,
             native_res_m=float(native_res) if native_res else None,
             native_crs=next(iter(agg.native_crs_set), "") if agg.native_crs_set else "",

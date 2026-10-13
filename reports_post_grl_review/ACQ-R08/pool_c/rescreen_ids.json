@@ -1,0 +1,12 @@
+{
+  "MGDS:24043": "June 2026 (stage A gate): stage-A tier excluded: ratio 50.0 > 40.0 (super-resolution not meaningful)",
+  "MGDS:32208": "Sept 2026 (ACQ-R01 gate): gate_excluded: ratio 100.1 > 40.0 (super-resolution not meaningful)",
+  "MGDS:24424": "June 2026 (stage A gate): stage-A tier excluded: ratio 100.0 > 40.0 (super-resolution not meaningful)",
+  "MGDS:30832": "June 2026 (stage A gate): stage-A tier excluded: ratio 60.0 > 40.0 (super-resolution not meaningful)",
+  "MGDS:30198": "June 2026 (stage A gate): stage-A tier excluded: ratio 100.0 > 40.0 (super-resolution not meaningful)",
+  "MGDS:31203": "Sept 2026 (ACQ-R01 gate): gate_excluded: ratio 50.0 > 40.0 (super-resolution not meaningful)",
+  "MGDS:30085": "Sept 2026 (ACQ-R01 gate): gate_excluded: ratio 50.0 > 40.0 (super-resolution not meaningful)",
+  "MGDS:30092": "June 2026 (stage A gate): stage-A tier excluded: ratio 100.0 > 40.0 (super-resolution not meaningful)",
+  "MGDS:31954": "Sept 2026 (ACQ-R01 gate): gate_excluded: ratio 50.0 > 40.0 (super-resolution not meaningful)",
+  "MGDS:24619": "Sept 2026 (ACQ-R01 gate): gate_excluded: ratio 60.0 > 40.0 (super-resolution not meaningful)"
+}

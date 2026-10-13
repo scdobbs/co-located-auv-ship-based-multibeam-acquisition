@@ -1,0 +1,334 @@
+{
+  "BODC": {
+    "records_found": 2,
+    "not_a_grid_or_non_bathy": 0,
+    "not_eligible_breakdown": {},
+    "excluded_rule_1": 0,
+    "excluded_rule_2": 0,
+    "excluded_rule_3": 0,
+    "excluded_rule_4": 0,
+    "excluded_rule_5": 0,
+    "screened_under_s3": 2,
+    "in_range": 0,
+    "outside_range": 0,
+    "uncertain": 2,
+    "outside_by_condition": {},
+    "uncertain_by_field": {
+      "hr_res_m needs download (not in catalog record)": 2,
+      "lr_est_m": 2,
+      "tiles_est": 2
+    },
+    "within_50km_flagged": 0
+  },
+  "MGDS": {
+    "records_found": 146,
+    "not_a_grid_or_non_bathy": 49,
+    "not_eligible_breakdown": {
+      "render only (image GeoTIFF / map), no elevation grid sibling": 30,
+      "non-bathymetry product (sidescan / sub-bottom / magnetics)": 19
+    },
+    "excluded_rule_1": 72,
+    "excluded_rule_2": 2,
+    "excluded_rule_3": 0,
+    "excluded_rule_4": 0,
+    "excluded_rule_5": 2,
+    "screened_under_s3": 21,
+    "in_range": 3,
+    "outside_range": 11,
+    "uncertain": 7,
+    "outside_by_condition": {
+      "tiles_est # < #": 7,
+      "cells_across_est # outside #\u2013#": 6,
+      "hr_res_m # outside #\u2013# (applied \u2265 #)": 6
+    },
+    "uncertain_by_field": {
+      "overlap/tiles are a bbox upper bound (true footprint needs download)": 6,
+      "hr_res_m needs download (not in catalog record)": 1,
+      "lr_est_m": 1,
+      "tiles_est": 1
+    },
+    "within_50km_flagged": 1
+  },
+  "PANGAEA": {
+    "records_found": 11,
+    "not_a_grid_or_non_bathy": 2,
+    "not_eligible_breakdown": {
+      "raw swath / soundings only (no gridded product in the record)": 2
+    },
+    "excluded_rule_1": 6,
+    "excluded_rule_2": 0,
+    "excluded_rule_3": 0,
+    "excluded_rule_4": 0,
+    "excluded_rule_5": 1,
+    "screened_under_s3": 2,
+    "in_range": 0,
+    "outside_range": 1,
+    "uncertain": 1,
+    "outside_by_condition": {
+      "no independent ship cruise with raw swath over the footprint": 1
+    },
+    "uncertain_by_field": {
+      "lr_est_m": 1,
+      "overlap/tiles are a bbox upper bound (true footprint needs download)": 1
+    },
+    "within_50km_flagged": 0
+  },
+  "SEANOE": {
+    "records_found": 6,
+    "not_a_grid_or_non_bathy": 0,
+    "not_eligible_breakdown": {},
+    "excluded_rule_1": 1,
+    "excluded_rule_2": 1,
+    "excluded_rule_3": 0,
+    "excluded_rule_4": 0,
+    "excluded_rule_5": 0,
+    "screened_under_s3": 4,
+    "in_range": 0,
+    "outside_range": 3,
+    "uncertain": 1,
+    "outside_by_condition": {
+      "no independent ship cruise with raw swath over the footprint": 2,
+      "hr_res_m # outside #\u2013# (applied \u2265 #)": 1,
+      "tiles_est # < # even on the bbox upper bound": 1
+    },
+    "uncertain_by_field": {
+      "hr_res_m needs download (not in catalog record)": 1,
+      "tiles_est": 1
+    },
+    "within_50km_flagged": 0
+  },
+  "ScienceBase": {
+    "records_found": 1,
+    "not_a_grid_or_non_bathy": 1,
+    "not_eligible_breakdown": {
+      "no footprint in the catalog record": 1
+    },
+    "excluded_rule_1": 0,
+    "excluded_rule_2": 0,
+    "excluded_rule_3": 0,
+    "excluded_rule_4": 0,
+    "excluded_rule_5": 0,
+    "screened_under_s3": 0,
+    "in_range": 0,
+    "outside_range": 0,
+    "uncertain": 0,
+    "outside_by_condition": {},
+    "uncertain_by_field": {},
+    "within_50km_flagged": 0
+  },
+  "USGS": {
+    "records_found": 2,
+    "not_a_grid_or_non_bathy": 2,
+    "not_eligible_breakdown": {
+      "no footprint in the catalog record": 2
+    },
+    "excluded_rule_1": 0,
+    "excluded_rule_2": 0,
+    "excluded_rule_3": 0,
+    "excluded_rule_4": 0,
+    "excluded_rule_5": 0,
+    "screened_under_s3": 0,
+    "in_range": 0,
+    "outside_range": 0,
+    "uncertain": 0,
+    "outside_by_condition": {},
+    "uncertain_by_field": {},
+    "within_50km_flagged": 0
+  },
+  "other (Arctic Data Center)": {
+    "records_found": 1,
+    "not_a_grid_or_non_bathy": 1,
+    "not_eligible_breakdown": {
+      "no footprint in the catalog record": 1
+    },
+    "excluded_rule_1": 0,
+    "excluded_rule_2": 0,
+    "excluded_rule_3": 0,
+    "excluded_rule_4": 0,
+    "excluded_rule_5": 0,
+    "screened_under_s3": 0,
+    "in_range": 0,
+    "outside_range": 0,
+    "uncertain": 0,
+    "outside_by_condition": {},
+    "uncertain_by_field": {},
+    "within_50km_flagged": 0
+  },
+  "other (Borealis)": {
+    "records_found": 1,
+    "not_a_grid_or_non_bathy": 1,
+    "not_eligible_breakdown": {
+      "no footprint in the catalog record": 1
+    },
+    "excluded_rule_1": 0,
+    "excluded_rule_2": 0,
+    "excluded_rule_3": 0,
+    "excluded_rule_4": 0,
+    "excluded_rule_5": 0,
+    "screened_under_s3": 0,
+    "in_range": 0,
+    "outside_range": 0,
+    "uncertain": 0,
+    "outside_by_condition": {},
+    "uncertain_by_field": {},
+    "within_50km_flagged": 0
+  },
+  "other (CSIC - Instituto de Ciencias del Mar (ICM))": {
+    "records_found": 1,
+    "not_a_grid_or_non_bathy": 1,
+    "not_eligible_breakdown": {
+      "no footprint in the catalog record": 1
+    },
+    "excluded_rule_1": 0,
+    "excluded_rule_2": 0,
+    "excluded_rule_3": 0,
+    "excluded_rule_4": 0,
+    "excluded_rule_5": 0,
+    "screened_under_s3": 0,
+    "in_range": 0,
+    "outside_range": 0,
+    "uncertain": 0,
+    "outside_by_condition": {},
+    "uncertain_by_field": {},
+    "within_50km_flagged": 0
+  },
+  "other (CSIRO)": {
+    "records_found": 1,
+    "not_a_grid_or_non_bathy": 1,
+    "not_eligible_breakdown": {
+      "no footprint in the catalog record": 1
+    },
+    "excluded_rule_1": 0,
+    "excluded_rule_2": 0,
+    "excluded_rule_3": 0,
+    "excluded_rule_4": 0,
+    "excluded_rule_5": 0,
+    "screened_under_s3": 0,
+    "in_range": 0,
+    "outside_range": 0,
+    "uncertain": 0,
+    "outside_by_condition": {},
+    "uncertain_by_field": {},
+    "within_50km_flagged": 0
+  },
+  "other (Commonwealth of Australia (Geoscience Australia))": {
+    "records_found": 3,
+    "not_a_grid_or_non_bathy": 3,
+    "not_eligible_breakdown": {
+      "no footprint in the catalog record": 3
+    },
+    "excluded_rule_1": 0,
+    "excluded_rule_2": 0,
+    "excluded_rule_3": 0,
+    "excluded_rule_4": 0,
+    "excluded_rule_5": 0,
+    "screened_under_s3": 0,
+    "in_range": 0,
+    "outside_range": 0,
+    "uncertain": 0,
+    "outside_by_condition": {},
+    "uncertain_by_field": {},
+    "within_50km_flagged": 0
+  },
+  "other (Mendeley)": {
+    "records_found": 3,
+    "not_a_grid_or_non_bathy": 3,
+    "not_eligible_breakdown": {
+      "no footprint in the catalog record": 3
+    },
+    "excluded_rule_1": 0,
+    "excluded_rule_2": 0,
+    "excluded_rule_3": 0,
+    "excluded_rule_4": 0,
+    "excluded_rule_5": 0,
+    "screened_under_s3": 0,
+    "in_range": 0,
+    "outside_range": 0,
+    "uncertain": 0,
+    "outside_by_condition": {},
+    "uncertain_by_field": {},
+    "within_50km_flagged": 0
+  },
+  "other (Zenodo)": {
+    "records_found": 2,
+    "not_a_grid_or_non_bathy": 2,
+    "not_eligible_breakdown": {
+      "no footprint in the catalog record": 2
+    },
+    "excluded_rule_1": 0,
+    "excluded_rule_2": 0,
+    "excluded_rule_3": 0,
+    "excluded_rule_4": 0,
+    "excluded_rule_5": 0,
+    "screened_under_s3": 0,
+    "in_range": 0,
+    "outside_range": 0,
+    "uncertain": 0,
+    "outside_by_condition": {},
+    "uncertain_by_field": {},
+    "within_50km_flagged": 0
+  },
+  "other (figshare)": {
+    "records_found": 2,
+    "not_a_grid_or_non_bathy": 2,
+    "not_eligible_breakdown": {
+      "no footprint in the catalog record": 2
+    },
+    "excluded_rule_1": 0,
+    "excluded_rule_2": 0,
+    "excluded_rule_3": 0,
+    "excluded_rule_4": 0,
+    "excluded_rule_5": 0,
+    "screened_under_s3": 0,
+    "in_range": 0,
+    "outside_range": 0,
+    "uncertain": 0,
+    "outside_by_condition": {},
+    "uncertain_by_field": {},
+    "within_50km_flagged": 0
+  },
+  "TOTAL": {
+    "records_found": 182,
+    "not_a_grid_or_non_bathy": 68,
+    "excluded_rule_1": 79,
+    "excluded_rule_2": 3,
+    "excluded_rule_3": 0,
+    "excluded_rule_4": 0,
+    "excluded_rule_5": 3,
+    "screened_under_s3": 29,
+    "in_range": 3,
+    "outside_range": 15,
+    "uncertain": 11,
+    "outside_by_condition": {
+      "tiles_est # < #": 7,
+      "hr_res_m # outside #\u2013# (applied \u2265 #)": 7,
+      "cells_across_est # outside #\u2013#": 6,
+      "no independent ship cruise with raw swath over the footprint": 3,
+      "tiles_est # < # even on the bbox upper bound": 1
+    },
+    "uncertain_by_field": {
+      "overlap/tiles are a bbox upper bound (true footprint needs download)": 7,
+      "hr_res_m needs download (not in catalog record)": 4,
+      "lr_est_m": 4,
+      "tiles_est": 4
+    }
+  },
+  "_harvest": {
+    "mgds_records": 181,
+    "mgds_by_platform_type": {
+      "AUV": 142,
+      "ROV": 25,
+      "HOV": 14
+    },
+    "pangaea_auv_hits": 10809,
+    "pangaea_auv_bathymetry_datasets": 11,
+    "pangaea_ship_hits": 13143,
+    "pangaea_ship_datasets": 1108,
+    "datacite_hits": 870,
+    "datacite_near_bottom_grid_datasets": 24,
+    "sciencebase_items": 1,
+    "ncei_footprints": 3885,
+    "generated": "2026-10-13T10:22:39+00:00",
+    "elapsed_s": 54
+  }
+}

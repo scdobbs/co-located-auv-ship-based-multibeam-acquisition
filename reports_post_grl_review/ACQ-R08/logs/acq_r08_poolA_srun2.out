@@ -1,0 +1,27 @@
+host=sh04-18n31.int job=47636932
+{
+ "records_found": 182,
+ "not_a_grid_or_non_bathy": 68,
+ "excluded_rule_1": 79,
+ "excluded_rule_2": 3,
+ "excluded_rule_3": 0,
+ "excluded_rule_4": 0,
+ "excluded_rule_5": 3,
+ "screened_under_s3": 29,
+ "in_range": 3,
+ "outside_range": 15,
+ "uncertain": 11,
+ "outside_by_condition": {
+  "tiles_est # < #": 7,
+  "hr_res_m # outside #\u2013# (applied \u2265 #)": 7,
+  "cells_across_est # outside #\u2013#": 6,
+  "no independent ship cruise with raw swath over the footprint": 3,
+  "tiles_est # < # even on the bbox upper bound": 1
+ },
+ "uncertain_by_field": {
+  "overlap/tiles are a bbox upper bound (true footprint needs download)": 7,
+  "hr_res_m needs download (not in catalog record)": 4,
+  "lr_est_m": 4,
+  "tiles_est": 4
+ }
+}

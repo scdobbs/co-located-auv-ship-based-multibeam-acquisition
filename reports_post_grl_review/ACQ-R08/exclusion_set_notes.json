@@ -1,0 +1,20 @@
+{
+  "footprint_sources": {
+    "OAK harmonized/<pair>/footprint.geojson": 45,
+    "ACQ-R01 discovery hr_catalog (MGDS catalog footprint; lockbox dir never opened)": 2,
+    "ACQ-R02 verification hr_footprints.gpkg (sealed dir never opened)": 3,
+    "ACQ-R02 verification hr_footprints.gpkg": 5,
+    "ACQ-R01 hr_catalog (catalog bbox)": 8,
+    "ACQ-R02 PANGAEA discovery record (ES bbox)": 2,
+    "OAK harmonized/<pair>/footprint.geojson (dropped pair, unsealed)": 9,
+    "convex hull of the 20 Cal DIG pair footprints + 25 km": 1
+  },
+  "missing": [],
+  "n_by_kind": {
+    "manifest_v2_1": 45,
+    "rejected_sept": 24,
+    "confirmatory": 3,
+    "lockbox": 2,
+    "cal_dig_area": 1
+  }
+}
