@@ -2,7 +2,7 @@
 
 For every pair of a (rehearsal, development-data) run record that has harmonized files, the statistic is recomputed in
 memory (vcheck_p5.statistic) and its printed forms (repr and 4-8 significant digits / fixed decimals of V95 and V95_rel)
-are searched for in: the run record, the supplement (every cell as text), every text file under the pair directories
+are searched for as whole numbers (not inside a longer number such as a coordinate) in: the run record, the supplement (every cell as text), every text file under the pair directories
 (json, geojson, csv, md, txt), the rehearsal directory's records, and the job logs given with --logs.  Also: no record key
 holds a forbidden part (common_p5.forbidden_keys, incl. "v95"), and vcheck_p5.gate returns only booleans and words.
 Only counts, file names and the format kind of a hit are written, never a value.
@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -61,8 +62,10 @@ def main(argv=None):
             gate_keys.add("FLOAT VALUE RETURNED")
         del s
     hits = [{"file": fn, "pair": pid, "statistic": name, "format": kind}
-            for fn, t in texts.items() for pid, name, kind, f in pats if f in t]
-    key_hits = P.forbidden_keys(rr) + [h for fn, t in texts.items() if fn.endswith("site_record.json") for h in P.forbidden_keys(json.loads(t))]
+            for fn, t in texts.items() for pid, name, kind, f in pats if re.search(r"(?<![0-9.])" + re.escape(f) + r"(?![0-9])", t)]
+    # site records: every key except the "files" map (its keys are file names, e.g. the v2.1 product ship_median_regrid.tif)
+    key_hits = P.forbidden_keys(rr) + [h for fn, t in texts.items() if fn.endswith("site_record.json")
+                                       for h in P.forbidden_keys({k: v for k, v in json.loads(t).items() if k != "files"})]
     ok_gate = gate_keys <= {"vertical_consistent", "computed", "why"}
     res = {"generated": P.utc_now(), "run_record": str(rr_path), "run_record_sha256": P.sha256_file(rr_path), "n_pairs_checked": n_pairs,
            "n_patterns": len(pats), "n_files_scanned": len(texts), "files_scanned": sorted(texts), "value_hits": hits, "forbidden_key_hits": key_hits,
