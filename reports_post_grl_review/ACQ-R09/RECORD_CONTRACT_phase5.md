@@ -85,3 +85,9 @@ cells_across double, hr_res_in_range bool, eligible bool, eligibility_reason str
 must compare the first 64 columns and accept exactly these six extra ones.  Path columns (`harmonized_path*`, masks, `footprint_wkt`) are relative to OAK's root as in
 the v2.1 rows (`phase5/harmonized/<pair id>/hr.tif`); rehearsal rows hold absolute scratch paths; `row_status` needs `harmonized_path_hr`, `harmonized_path_lr`,
 `lr_native_res_m` (present for every site that was harmonized).  `depth_min_m`/`depth_max_m` are null (no depth statistic).
+
+## 5. Notes for R16 (from the ACQ-R09 rehearsal)
+
+- The extracted lock's refusal messages keep the word "phase4"; only the glob and the mode test are parameterised.
+- `vertical_offset` (contract v2.1) uses its 0.5 m fallback threshold for every Phase 5 site (no CNN s_lr exists for them), as for the Phase 4 sealed pairs.
+- Rehearsal record for the dress rehearsal: `ACQ-R09/rehearsal/step1_run_rehearsal_r09.json` (cites freeze record `67695831…d1d9d1`).
