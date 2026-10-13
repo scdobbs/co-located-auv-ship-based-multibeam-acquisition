@@ -1,0 +1,54 @@
+{
+ "directive": "ACQ-R11 \u00a72",
+ "generated": "2026-10-13T23:03:10+00:00",
+ "statistic_module": "src/phase5/vcheck_p5.py",
+ "statistic_module_sha256": "5a2c65d4e50286945dc04eb66b4f8f965beee93c65a9967c15da017fdaf52a44",
+ "rule": "T = 2 x max(V95_rel over the accepted set); separation iff every available known-bad V95_rel > T",
+ "n_accepted": 38,
+ "n_accepted_ok": 38,
+ "accepted_V95_rel": {
+  "min": 0.0004992479517621569,
+  "median": 0.0035990244803799617,
+  "max": 0.03274796117910313,
+  "argmax": "EW9801__MGDS_31425"
+ },
+ "T": 0.06549592235820625,
+ "known_bad": [
+  {
+   "pair_id": "AT37-05__MGDS_24043",
+   "status": "ok",
+   "V95_m": 68.1185,
+   "V95_rel": 0.027343163535433177,
+   "why": null,
+   "above_T": false
+  },
+  {
+   "pair_id": "NR07-1__MGDS_31813",
+   "status": "ok",
+   "V95_m": 918.9739,
+   "V95_rel": 0.37802361913478755,
+   "why": null,
+   "above_T": true
+  },
+  {
+   "pair_id": "NR07-1__MGDS_31814",
+   "status": "ok",
+   "V95_m": 906.5924,
+   "V95_rel": 0.39351815925968064,
+   "why": null,
+   "above_T": true
+  },
+  {
+   "pair_id": "MGLN06MV__MGDS_17700",
+   "status": "COULD NOT CHECK",
+   "V95_m": null,
+   "V95_rel": null,
+   "why": "missing ['hr.tif', 'lr.tif', 'joint_valid.tif']; no ship grid/swath on disk to rebuild without a network fetch",
+   "above_T": null
+  }
+ ],
+ "n_known_bad_available": 3,
+ "separation": false,
+ "table": "reports_post_grl_review/ACQ-R11/vcheck_calibration.csv",
+ "table_sha256": "b7f3732d9830d24911de0f17380082fc887a5f02bba20767090a65e34898c711"
+}
