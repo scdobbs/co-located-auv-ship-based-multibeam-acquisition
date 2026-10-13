@@ -1,0 +1,460 @@
+{
+ "generated": "2026-10-13T18:55:53+00:00",
+ "code_commit": "5cc1a64d724bf566681689728eacf32b2a3abd94",
+ "host": "sh04-18n32.int",
+ "n_lock_tests": 19,
+ "n_guard_tests": 41,
+ "n_passed": 60,
+ "all_passed": true,
+ "lock_tests": [
+  {
+   "test": "L1a no sign-off",
+   "argv": "--mode phase5",
+   "expected": "Refusal: LOCK 1 sign-off: --signoff and --prereg-sha256 are required",
+   "raised": "Refusal",
+   "message": "LOCK 1 sign-off: --signoff and --prereg-sha256 are required in phase5 mode",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "L1b malformed sha256",
+   "argv": "--mode phase5 --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/signoff.md --prereg-sha256 xyz",
+   "expected": "Refusal: LOCK 1 sign-off: --prereg-sha256 is not a sha256",
+   "raised": "Refusal",
+   "message": "LOCK 1 sign-off: --prereg-sha256 is not a sha256 hex digest: 'xyz'",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "L1c sign-off file missing",
+   "argv": "--mode phase5 --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/none.md --prereg-sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "expected": "Refusal: does not exist",
+   "raised": "Refusal",
+   "message": "LOCK 1 sign-off: /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/none.md does not exist",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "L1d sign-off without the v3 sha256",
+   "argv": "--mode phase5 --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/signoff_bad.md --prereg-sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "expected": "Refusal: does not hold the pre-registration v3 sha256",
+   "raised": "Refusal",
+   "message": "LOCK 1 sign-off: /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/signoff_bad.md does not hold the pre-registration v3 sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "L2a freeze record missing",
+   "argv": "--mode phase5 --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/signoff.md --prereg-sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/nofreeze.json",
+   "expected": "Refusal: LOCK 2 freeze record",
+   "raised": "Refusal",
+   "message": "LOCK 2 freeze record: /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/nofreeze.json does not exist",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "L2b no entry for the entry script",
+   "argv": "--mode phase5 --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/signoff.md --prereg-sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/freeze_noentry.json",
+   "expected": "Refusal: has no entry for src/phase5/sealed_step1_p5.py",
+   "raised": "Refusal",
+   "message": "LOCK 2 freeze record: /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/freeze_noentry.json has no entry for src/phase5/sealed_step1_p5.py",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "L2c no entry for the site list",
+   "argv": "--mode phase5 --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/signoff.md --prereg-sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/freeze_nosites.json",
+   "expected": "Refusal: has no entry for inputs/phase5_sites.csv",
+   "raised": "Refusal",
+   "message": "LOCK 2 freeze record: /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/freeze_nosites.json has no entry for inputs/phase5_sites.csv",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "L2d a file differs",
+   "argv": "--mode phase5 --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/signoff.md --prereg-sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/freeze_alt.json",
+   "expected": "Refusal: file(s) differ",
+   "raised": "Refusal",
+   "message": "LOCK 2 freeze record: 1 file(s) differ from freeze_alt.json: [('src/phase5/chain_p5.py', '000000000000', '03d782483258')]",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "L2e a loaded module is not in the record",
+   "argv": "--mode phase5 --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/signoff.md --prereg-sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/freeze_noload.json",
+   "expected": "Refusal: loaded repo modules not in",
+   "raised": "Refusal",
+   "message": "LOCK 2 freeze record: loaded repo modules not in freeze_noload.json: ['src/phase5/hr_select.py']",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "L3a a site not in the site list",
+   "argv": "--mode phase5 --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/signoff.md --prereg-sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/freeze_ok.json --sites MGDS:18210,MGDS:30368,MGDS:24756,MGDS:22436,MGDS:21415,MGDS:31675,MGDS:31860,MGDS:31954,MGDS:31811",
+   "expected": "Refusal: SITE LIST:",
+   "raised": "Refusal",
+   "message": "SITE LIST: ['MGDS:31811'] not in the site list /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/inputs/phase5_sites.csv (['MGDS:18210', 'MGDS:30368', 'MGDS:24756', 'MGDS:22436', 'MGDS:21415', 'MGDS:31675', 'MGDS:31860', 'MGDS:31954'])",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "L3b a subset of the site list",
+   "argv": "--mode phase5 --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/signoff.md --prereg-sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/freeze_ok.json --sites MGDS:18210",
+   "expected": "Refusal: LOCK 3 site list: the run must cover exactly",
+   "raised": "Refusal",
+   "message": "LOCK 3 site list: the run must cover exactly the 8 sites of inputs/phase5_sites.csv; got ['MGDS:18210']",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "L3c another site list",
+   "argv": "--mode phase5 --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/signoff.md --prereg-sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/freeze_ok.json --site-list /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/other_sites.csv",
+   "expected": "Refusal: LOCK 3 site list: phase5 mode reads",
+   "raised": "Refusal",
+   "message": "LOCK 3 site list: phase5 mode reads inputs/phase5_sites.csv only; got --site-list /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/other_sites.csv",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "L3d a run tag",
+   "argv": "--mode phase5 --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/signoff.md --prereg-sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/freeze_ok.json --run-tag x",
+   "expected": "Refusal: LOCK 3 site list: --run-tag is not accepted",
+   "raised": "Refusal",
+   "message": "LOCK 3 site list: --run-tag is not accepted in phase5 mode (outputs go to the fixed phase5 root); got 'x'",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "L4a supplement exists",
+   "argv": "--mode phase5 --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/signoff.md --prereg-sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/freeze_ok.json",
+   "expected": "Refusal: LOCK 4 single run: ",
+   "raised": "Refusal",
+   "message": "LOCK 4 single run: /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/pairs_phase5_sealed.parquet already exists (sha256 b5a2c96250612366ea272ffac6d9744aaf4b45aacd96aa7cfcb931ee3b558259); there is one completed run",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "L4b a complete phase5 run record exists",
+   "argv": "--mode phase5 --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/signoff.md --prereg-sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/freeze_ok.json",
+   "expected": "Refusal: a complete phase5 run record exists",
+   "raised": "Refusal",
+   "message": "LOCK 4 single run: a complete phase5 run record exists: ['/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/records/step1_run_phase5_20261101T000000Z.json']",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "L4c only a stopped run record: not refused (reaches the allowance)",
+   "argv": "--mode phase5 --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/signoff.md --prereg-sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/freeze_ok.json",
+   "expected": "SafetyStop: TEST SAFETY NET: the Phase 5 allowance was reached",
+   "raised": "SafetyStop",
+   "message": "TEST SAFETY NET: the Phase 5 allowance was reached (8 tokens, reason 'ACQ-R09 phase5 locks passed: sign-off, freeze record, site list, single run')",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "P0 positive control: every lock satisfiable",
+   "argv": "--mode phase5 --signoff /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/signoff.md --prereg-sha256 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb --freeze-record /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/tmpdch1iay9/freeze_ok.json",
+   "expected": "SafetyStop: TEST SAFETY NET: the Phase 5 allowance was reached",
+   "raised": "SafetyStop",
+   "message": "TEST SAFETY NET: the Phase 5 allowance was reached (8 tokens, reason 'ACQ-R09 phase5 locks passed: sign-off, freeze record, site list, single run')",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "R1 rehearsal: site not in the mock list",
+   "argv": "--mode rehearsal --run-tag t --sites MGDS:18210",
+   "expected": "Refusal: SITE LIST:",
+   "raised": "Refusal",
+   "message": "SITE LIST: ['MGDS:18210'] not in the site list /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R09/rehearsal/mock_sites.csv (['MGDS:22383', 'MGDS:31289', 'MGDS:31429', 'MOCK:R09repeat'])",
+   "allowance_after": [],
+   "passed": true
+  },
+  {
+   "test": "R2 rehearsal: no run tag",
+   "argv": "--mode rehearsal",
+   "expected": "Refusal: rehearsal: --run-tag is required",
+   "raised": "Refusal",
+   "message": "rehearsal: --run-tag is required",
+   "allowance_after": [],
+   "passed": true
+  }
+ ],
+ "guard_tests": [
+  {
+   "test": "G1 mock path refused before admission (builtins.open)",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true
+  },
+  {
+   "test": "G1b mock path refused before admission (rasterio.open)",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true
+  },
+  {
+   "test": "G2 allowance with a wrong reason is refused",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true
+  },
+  {
+   "test": "G3 allowance refused while a Phase 4 allowance is installed",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true
+  },
+  {
+   "test": "G4 mock id admitted after the allowance (builtins.open)",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true
+  },
+  {
+   "test": "G5 non-admitted mock id (decoy MGDS_99999) still refused",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true
+  },
+  {
+   "test": "G6 real sealed site refused under the mock allowance (string)",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true
+  },
+  {
+   "test": "G7 lockbox path refused under the allowance (string)",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true
+  },
+  {
+   "test": "G8 mock path refused again after removal",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true
+  },
+  {
+   "test": "G9 real site file MGDS_18210",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry040ppp_1m.grd.gz"
+  },
+  {
+   "test": "G9 real site dir MGDS_18210",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210"
+  },
+  {
+   "test": "G9 real site dir MGDS_30368",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_30368"
+  },
+  {
+   "test": "G9 real site dir MGDS_24756",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756"
+  },
+  {
+   "test": "G9 real site dir MGDS_22436",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436"
+  },
+  {
+   "test": "G9 real site dir MGDS_21415",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415"
+  },
+  {
+   "test": "G9 real site dir MGDS_31675",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675"
+  },
+  {
+   "test": "G9 real site dir MGDS_31860",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860"
+  },
+  {
+   "test": "G9 real site dir MGDS_31954",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954"
+  },
+  {
+   "test": "G9 real non-admitted id MGDS_31811",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry039_2x2_post.grd.gz"
+  },
+  {
+   "test": "G9 real non-admitted id PANGAEA_958275",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/PANGAEA_958275/x.tif"
+  },
+  {
+   "test": "G9 real non-admitted id SEANOE_55744",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/SEANOE_55744/57399.zip"
+  },
+  {
+   "test": "G9 real root itself",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3"
+  },
+  {
+   "test": "G9 real root file",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/SHA256SUMS"
+  },
+  {
+   "test": "G9 traversal to a non-admitted id",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/../MGDS_31811/x.grd"
+  },
+  {
+   "test": "G9 OAK raw_hr September copy",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true,
+   "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_30368/MAUV_NESCA_All_Topo_1m.grd"
+  },
+  {
+   "test": "G9 lockbox id with an admitted token",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/refusal_test_out/harmonized/MGDS_18210__AT42-03__MGDS_32007/lr.tif"
+  },
+  {
+   "test": "G9 output root, admitted token",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/refusal_test_out/harmonized/X__MGDS_18210/hr.tif"
+  },
+  {
+   "test": "G9 output root, non-admitted token",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/refusal_test_out/harmonized/X__MGDS_31811/hr.tif"
+  },
+  {
+   "test": "G9 work root, admitted token",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/refusal_test_work/X__MGDS_18210/tile0.tif"
+  },
+  {
+   "test": "G9 admitted token outside the roots",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true,
+   "path": "/tmp/MGDS_18210/copy.tif"
+  },
+  {
+   "test": "G9 mock root under the real allowance",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/mock/sealed_candidates_v3/MGDS_22383/f.grd"
+  },
+  {
+   "test": "G9 GDAL driver prefix",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true,
+   "path": "NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry041pp_1m.grd"
+  },
+  {
+   "test": "G9 mock id file MGDS_22383",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/mock/sealed_candidates_v3/MGDS_22383/f.grd.gz"
+  },
+  {
+   "test": "G9 mock id file MGDS_31289",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/mock/sealed_candidates_v3/MGDS_31289/f.grd.gz"
+  },
+  {
+   "test": "G9 mock id file MGDS_31429",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/mock/sealed_candidates_v3/MGDS_31429/f.grd.gz"
+  },
+  {
+   "test": "G9 mock id file MOCK_R09repeat",
+   "expected": "admitted",
+   "got": "admitted",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/mock/sealed_candidates_v3/MOCK_R09repeat/f.grd.gz"
+  },
+  {
+   "test": "G9 mock non-admitted decoy id",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/mock/sealed_candidates_v3/MGDS_99999/f.grd.gz"
+  },
+  {
+   "test": "G9 mock root itself",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R09/mock/sealed_candidates_v3"
+  },
+  {
+   "test": "G9 real site under the mock allowance",
+   "expected": "refused",
+   "got": "refused",
+   "passed": true,
+   "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/x.grd.gz"
+  },
+  {
+   "test": "G10 reader refusals before any allowance (self-test)",
+   "expected": "all blocked",
+   "got": "276/276",
+   "passed": true
+  },
+  {
+   "test": "G11 everything refused after removal (self-test)",
+   "expected": "all blocked",
+   "got": "{'n': 46, 'all_blocked': True}",
+   "passed": true
+  }
+ ]
+}

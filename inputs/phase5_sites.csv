@@ -1,0 +1,9 @@
+site_name,hr_id,ship_cruise,sonar,year
+Galápagos Spreading Center,MGDS:18210,TN188,Simrad EM300,2005
+Escanaba Trough,MGDS:30368,Escanaba,Simrad EM300,1998
+Monterey Canyon,MGDS:24756,Monterey,Simrad EM300,1998
+Mid-Atlantic Ridge 16.5°N,MGDS:22436,KN161L04,SeaBeam 2112,2000
+La Jolla Canyon,MGDS:21415,MV1209,Kongsberg EM122,2012
+Bermuda,MGDS:31675,KN173L02,SeaBeam 2112,2003
+Chile margin,MGDS:31860,MV1003,Simrad EM122,2010
+Dorado Outcrop,MGDS:31954,AT26-24,Kongsberg EM122,2014
