@@ -1,6 +1,9 @@
 {
  "dest": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/acq_archive/ACQ-R08b",
  "copied": [
+  "network_log.jsonl"
+ ],
+ "skipped_existing": [
   "REPORT_ACQ-R08b_2026-10-13.md",
   "SHA256SUMS_candidates",
   "download_manifest.json",
@@ -10,7 +13,6 @@
   "must_hold_checks.json",
   "guard_selftest.json",
   "guard_log.jsonl",
-  "network_log.jsonl",
   "run_jobs.json",
   "footprints/fp_MGDS-18210.geojson",
   "footprints/fp_MGDS-21415.geojson",
@@ -38,10 +40,9 @@
   "logs/acq_r08b_run5.err",
   "logs/acq_r08b_run5.out"
  ],
- "skipped_existing": [],
  "n_files": 36,
  "sha256sum_check_rc": 0,
  "stderr": "",
- "sha256sums_sha256": "31135ab3a639cc875b3586e86c66d6652aeb7e288e5bca57fefcc996a846a438",
- "verified_at": "2026-10-13T16:57:48+00:00"
+ "sha256sums_sha256": "ddf09f1e84b9b149563044a63c57f46813b7c9acb8078925cfdbb3af76e42cf0",
+ "verified_at": "2026-10-13T17:05:39+00:00"
 }
