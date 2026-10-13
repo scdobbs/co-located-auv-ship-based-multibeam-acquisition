@@ -1,0 +1,7 @@
+{"t": "2026-10-13T15:50:50+00:00", "event": "selftest", "probes": 222, "blocked": 222, "all_blocked": true, "control_opened": true}
+{"t": "2026-10-13T15:50:50+00:00", "event": "allowance_installed", "script": "download.py", "tokens": ["sealed_candidates_v3"], "pid": 22261}
+{"t": "2026-10-13T15:53:59+00:00", "event": "allowance_installed", "script": "measure.py", "tokens": ["sealed_candidates_v3"], "pid": 22825}
+{"t": "2026-10-13T16:03:25+00:00", "event": "allowance_installed", "script": "measure.py", "tokens": ["sealed_candidates_v3"], "pid": 24670}
+{"t": "2026-10-13T16:31:21+00:00", "event": "allowance_installed", "script": "measure.py", "tokens": ["sealed_candidates_v3"], "pid": 29213}
+{"t": "2026-10-13T16:41:22+00:00", "event": "allowance_installed", "script": "measure.py", "tokens": ["sealed_candidates_v3"], "pid": 7118}
+{"t": "2026-10-13T16:49:23+00:00", "event": "allowance_installed", "script": "measure.py", "tokens": ["sealed_candidates_v3"], "pid": 11062}

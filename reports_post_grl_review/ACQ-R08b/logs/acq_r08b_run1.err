@@ -1,0 +1,405 @@
+srun: job 47657997 queued and waiting for resources
+srun: job 47657997 has been allocated resources
+
+The following have been reloaded with a version change:
+  1) gcc/14.2.0 => gcc/12.4.0
+
+2026-10-13 08:50:50,947 INFO guard self-test: 222/222 probes blocked
+2026-10-13 08:51:08,193 INFO MGDS:31860: 17 files, 0.040 GB
+2026-10-13 08:51:37,762 INFO MGDS:31675: 25 files, 0.134 GB
+2026-10-13 08:51:49,316 INFO MGDS:31954: 10 files, 0.054 GB
+2026-10-13 08:51:53,681 INFO MGDS:30368: 2 files, 0.102 GB
+2026-10-13 08:52:18,957 INFO MGDS:18210: 17 files, 0.232 GB
+2026-10-13 08:52:31,218 INFO MGDS:31811: 11 files, 0.031 GB
+2026-10-13 08:53:06,555 INFO MGDS:24756: 21 files, 0.444 GB
+2026-10-13 08:53:16,267 INFO MGDS:22436: 7 files, 0.083 GB
+2026-10-13 08:53:39,351 INFO MGDS:21415: 12 files, 0.437 GB
+2026-10-13 08:53:41,898 INFO PANGAEA:958275: every ship partner is restricted (HTTP 401 on the dataset file listing): no accessible independent ship data → grid not downloaded (directive §2)
+2026-10-13 08:53:53,929 INFO SEANOE:55744: 1 files, 0.179 GB
+2026-10-13 08:54:13,094 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_okeanos_explorer_(r337)/EX0904/multibeam/data/version1/MB/ -> HTTP 404
+2026-10-13 08:54:13,626 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_okeanos_explorer_(r337)/EX0904/multibeam/data/ -> HTTP 404
+2026-10-13 08:54:14,158 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer_(r337)/EX0904/multibeam/data/ -> HTTP 404
+2026-10-13 08:54:14,689 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_okeanos_explorer/EX0904/multibeam/data/ -> HTTP 404
+2026-10-13 08:55:02,066 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_okeanos_explorer_(r337)/EX1103/multibeam/data/version1/MB/ -> HTTP 404
+2026-10-13 08:55:02,600 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_okeanos_explorer_(r337)/EX1103/multibeam/data/ -> HTTP 404
+2026-10-13 08:55:03,132 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer_(r337)/EX1103/multibeam/data/ -> HTTP 404
+2026-10-13 08:55:03,664 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_okeanos_explorer/EX1103/multibeam/data/ -> HTTP 404
+2026-10-13 08:55:12,175 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_ronald_h._brown_(r104)/RB1604/multibeam/data/version1/MB/ -> HTTP 404
+2026-10-13 08:55:12,707 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_ronald_h._brown_(r104)/RB1604/multibeam/data/ -> HTTP 404
+2026-10-13 08:55:13,239 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/ronald_h._brown_(r104)/RB1604/multibeam/data/ -> HTTP 404
+2026-10-13 08:55:13,771 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_ronald_h._brown/RB1604/multibeam/data/ -> HTTP 404
+2026-10-13 08:57:32,140 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/thomas_g._thompson/TN338/multibeam/data/version1/MB/em302/generated/ failed: HTTPSConnectionPool(host='data.ngdc.noaa.gov', port=443): Read timed out. (read timeout=60)
+2026-10-13 08:57:44,672 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/grid.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,674 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/grid.grd.gz: No such file or directory'
+2026-10-13 08:57:44,674 WARNING grid.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,675 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry135_1x1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,678 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry135_1x1.grd.gz: No such file or directory'
+2026-10-13 08:57:44,683 WARNING sentry135_1x1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,684 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry135_1x1_v2.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,686 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry135_1x1_v2.grd.gz: No such file or directory'
+2026-10-13 08:57:44,692 WARNING sentry135_1x1_v2.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,693 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry135_equal_1x1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,695 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry135_equal_1x1.grd.gz: No such file or directory'
+2026-10-13 08:57:44,699 WARNING sentry135_equal_1x1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,701 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry135_zoom_p5.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,702 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry135_zoom_p5.grd.gz: No such file or directory'
+2026-10-13 08:57:44,703 WARNING sentry135_zoom_p5.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,704 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_1x1_v2.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,705 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_1x1_v2.grd.gz: No such file or directory'
+2026-10-13 08:57:44,712 WARNING sentry137_1x1_v2.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,713 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_1x1_v3.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,714 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_1x1_v3.grd.gz: No such file or directory'
+2026-10-13 08:57:44,720 WARNING sentry137_1x1_v3.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,721 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_1x1_v4.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,723 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_1x1_v4.grd.gz: No such file or directory'
+2026-10-13 08:57:44,730 WARNING sentry137_1x1_v4.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,731 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_1x1_v5.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,733 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_1x1_v5.grd.gz: No such file or directory'
+2026-10-13 08:57:44,741 WARNING sentry137_1x1_v5.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,742 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_equal_1x1_v3.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,743 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_equal_1x1_v3.grd.gz: No such file or directory'
+2026-10-13 08:57:44,748 WARNING sentry137_equal_1x1_v3.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,749 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_equal_1x1_v4.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,750 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_equal_1x1_v4.grd.gz: No such file or directory'
+2026-10-13 08:57:44,755 WARNING sentry137_equal_1x1_v4.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,756 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_equal_1x1_v5.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,757 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_equal_1x1_v5.grd.gz: No such file or directory'
+2026-10-13 08:57:44,762 WARNING sentry137_equal_1x1_v5.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,763 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_zoom_1x1_v2.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,764 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_zoom_1x1_v2.grd.gz: No such file or directory'
+2026-10-13 08:57:44,766 WARNING sentry137_zoom_1x1_v2.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,767 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_zoom_1x1_v3.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,767 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_zoom_1x1_v3.grd.gz: No such file or directory'
+2026-10-13 08:57:44,769 WARNING sentry137_zoom_1x1_v3.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,770 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_zoom_1x1_v4.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,770 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_zoom_1x1_v4.grd.gz: No such file or directory'
+2026-10-13 08:57:44,772 WARNING sentry137_zoom_1x1_v4.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,773 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_zoom_1x1_v5.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,774 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860/sentry137_zoom_1x1_v5.grd.gz: No such file or directory'
+2026-10-13 08:57:44,775 WARNING sentry137_zoom_1x1_v5.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,776 INFO MGDS:31860: outside range (no readable bathymetry grid) tiles=None cells=None
+2026-10-13 08:57:44,779 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry490_20180823_1510_rnv_tide_1.00x1.00_BV01.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,780 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry490_20180823_1510_rnv_tide_1.00x1.00_BV01.grd.gz: No such file or directory'
+2026-10-13 08:57:44,790 WARNING sentry490_20180823_1510_rnv_tide_1.00x1.00_BV01.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,791 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry490_20180823_1510_rnv_tide_1.00x1.00_BV02.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,793 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry490_20180823_1510_rnv_tide_1.00x1.00_BV02.grd.gz: No such file or directory'
+2026-10-13 08:57:44,802 WARNING sentry490_20180823_1510_rnv_tide_1.00x1.00_BV02.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,808 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry490_20180823_1510_rnv_tide_1.00x1.00_BV03.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,809 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry490_20180823_1510_rnv_tide_1.00x1.00_BV03.grd.gz: No such file or directory'
+2026-10-13 08:57:44,819 WARNING sentry490_20180823_1510_rnv_tide_1.00x1.00_BV03.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,820 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry490_20180823_1510_rnv_tide_equal_1.00x1.00_BV01.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,821 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry490_20180823_1510_rnv_tide_equal_1.00x1.00_BV01.grd.gz: No such file or directory'
+2026-10-13 08:57:44,830 WARNING sentry490_20180823_1510_rnv_tide_equal_1.00x1.00_BV01.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,831 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry490_20180823_1510_rnv_tide_equal_1.00x1.00_BV03.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,832 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry490_20180823_1510_rnv_tide_equal_1.00x1.00_BV03.grd.gz: No such file or directory'
+2026-10-13 08:57:44,842 WARNING sentry490_20180823_1510_rnv_tide_equal_1.00x1.00_BV03.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,843 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry491_20180824_1250_rnv_tide_1.00x1.00_BV01.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,844 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry491_20180824_1250_rnv_tide_1.00x1.00_BV01.grd.gz: No such file or directory'
+2026-10-13 08:57:44,851 WARNING sentry491_20180824_1250_rnv_tide_1.00x1.00_BV01.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,858 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry491_20180824_1250_rnv_tide_1.00x1.00_BV02.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,860 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry491_20180824_1250_rnv_tide_1.00x1.00_BV02.grd.gz: No such file or directory'
+2026-10-13 08:57:44,868 WARNING sentry491_20180824_1250_rnv_tide_1.00x1.00_BV02.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,869 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry491_20180824_1250_rnv_tide_equal_1.00x1.00_BV01.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,870 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry491_20180824_1250_rnv_tide_equal_1.00x1.00_BV01.grd.gz: No such file or directory'
+2026-10-13 08:57:44,876 WARNING sentry491_20180824_1250_rnv_tide_equal_1.00x1.00_BV01.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,877 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry491_20180824_1250_rnv_tide_equal_1.00x1.00_BV02.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,878 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry491_20180824_1250_rnv_tide_equal_1.00x1.00_BV02.grd.gz: No such file or directory'
+2026-10-13 08:57:44,884 WARNING sentry491_20180824_1250_rnv_tide_equal_1.00x1.00_BV02.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,885 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry492_20180825_1029_rnv_tide_1.00x1.00_BV01.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,886 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry492_20180825_1029_rnv_tide_1.00x1.00_BV01.grd.gz: No such file or directory'
+2026-10-13 08:57:44,894 WARNING sentry492_20180825_1029_rnv_tide_1.00x1.00_BV01.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,895 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry492_20180825_1029_rnv_tide_1.00x1.00_BV02.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,896 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry492_20180825_1029_rnv_tide_1.00x1.00_BV02.grd.gz: No such file or directory'
+2026-10-13 08:57:44,904 WARNING sentry492_20180825_1029_rnv_tide_1.00x1.00_BV02.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,905 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry492_20180825_1029_rnv_tide_1.00x1.00_BV03.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,907 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry492_20180825_1029_rnv_tide_1.00x1.00_BV03.grd.gz: No such file or directory'
+2026-10-13 08:57:44,914 WARNING sentry492_20180825_1029_rnv_tide_1.00x1.00_BV03.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,915 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV01.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,916 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV01.grd.gz: No such file or directory'
+2026-10-13 08:57:44,923 WARNING sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV01.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,924 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV02.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,925 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV02.grd.gz: No such file or directory'
+2026-10-13 08:57:44,933 WARNING sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV02.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,934 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV03.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,935 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV03.grd.gz: No such file or directory'
+2026-10-13 08:57:44,942 WARNING sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV03.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,943 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry493_20180826_1037_rnv_tide_1.00x1.00_BV01.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,944 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry493_20180826_1037_rnv_tide_1.00x1.00_BV01.grd.gz: No such file or directory'
+2026-10-13 08:57:44,947 WARNING sentry493_20180826_1037_rnv_tide_1.00x1.00_BV01.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,948 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry493_20180826_1037_rnv_tide_1.00x1.00_BV02.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,949 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry493_20180826_1037_rnv_tide_1.00x1.00_BV02.grd.gz: No such file or directory'
+2026-10-13 08:57:44,952 WARNING sentry493_20180826_1037_rnv_tide_1.00x1.00_BV02.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,953 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry493_20180826_1037_rnv_tide_equal_1.00x1.00_BV01.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,954 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry493_20180826_1037_rnv_tide_equal_1.00x1.00_BV01.grd.gz: No such file or directory'
+2026-10-13 08:57:44,957 WARNING sentry493_20180826_1037_rnv_tide_equal_1.00x1.00_BV01.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,958 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry493_20180826_1037_rnv_tide_equal_1.00x1.00_BV02.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,959 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry493_20180826_1037_rnv_tide_equal_1.00x1.00_BV02.grd.gz: No such file or directory'
+2026-10-13 08:57:44,963 WARNING sentry493_20180826_1037_rnv_tide_equal_1.00x1.00_BV02.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,964 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry494_20180827_1003_rnv_tide_1.00x1.00_BV01.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,966 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry494_20180827_1003_rnv_tide_1.00x1.00_BV01.grd.gz: No such file or directory'
+2026-10-13 08:57:44,975 WARNING sentry494_20180827_1003_rnv_tide_1.00x1.00_BV01.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,977 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry494_20180827_1003_rnv_tide_equal_1.00x1.00_BV01.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,978 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry494_20180827_1003_rnv_tide_equal_1.00x1.00_BV01.grd.gz: No such file or directory'
+2026-10-13 08:57:44,986 WARNING sentry494_20180827_1003_rnv_tide_equal_1.00x1.00_BV01.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,987 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry497_20180830_1148_rnv_tide_1.00x1.00_BV01.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,988 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry497_20180830_1148_rnv_tide_1.00x1.00_BV01.grd.gz: No such file or directory'
+2026-10-13 08:57:44,990 WARNING sentry497_20180830_1148_rnv_tide_1.00x1.00_BV01.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,993 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry497_20180830_1148_rnv_tide_equal_1.00x1.00_BV01.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,994 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry497_20180830_1148_rnv_tide_equal_1.00x1.00_BV01.grd.gz: No such file or directory'
+2026-10-13 08:57:44,996 WARNING sentry497_20180830_1148_rnv_tide_equal_1.00x1.00_BV01.grd.gz: unreadable (OSError)
+2026-10-13 08:57:44,996 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry498_20180831_1202_rnv_tide_1.00x1.00_BV01.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:44,997 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry498_20180831_1202_rnv_tide_1.00x1.00_BV01.grd.gz: No such file or directory'
+2026-10-13 08:57:45,000 WARNING sentry498_20180831_1202_rnv_tide_1.00x1.00_BV01.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,000 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry498_20180831_1202_rnv_tide_equal_1.00x1.00_BV01.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,002 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675/sentry498_20180831_1202_rnv_tide_equal_1.00x1.00_BV01.grd.gz: No such file or directory'
+2026-10-13 08:57:45,004 WARNING sentry498_20180831_1202_rnv_tide_equal_1.00x1.00_BV01.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,004 INFO MGDS:31675: outside range (no readable bathymetry grid) tiles=None cells=None
+2026-10-13 08:57:45,007 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry213_20131209_1539_tide_1x1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,008 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry213_20131209_1539_tide_1x1.grd.gz: No such file or directory'
+2026-10-13 08:57:45,018 WARNING sentry213_20131209_1539_tide_1x1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,019 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry213_20131209_1539_tide_equal_1x1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,020 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry213_20131209_1539_tide_equal_1x1.grd.gz: No such file or directory'
+2026-10-13 08:57:45,030 WARNING sentry213_20131209_1539_tide_equal_1x1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,031 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry215_20131214_1348_tide_1x1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,032 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry215_20131214_1348_tide_1x1.grd.gz: No such file or directory'
+2026-10-13 08:57:45,039 WARNING sentry215_20131214_1348_tide_1x1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,040 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry215_20131214_1348_tide_equal_1x1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,041 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry215_20131214_1348_tide_equal_1x1.grd.gz: No such file or directory'
+2026-10-13 08:57:45,049 WARNING sentry215_20131214_1348_tide_equal_1x1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,050 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry217_20131218_0538_tide_1x1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,051 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry217_20131218_0538_tide_1x1.grd.gz: No such file or directory'
+2026-10-13 08:57:45,054 WARNING sentry217_20131218_0538_tide_1x1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,054 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry217_20131218_0538_tide_equal_1x1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,055 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry217_20131218_0538_tide_equal_1x1.grd.gz: No such file or directory'
+2026-10-13 08:57:45,058 WARNING sentry217_20131218_0538_tide_equal_1x1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,059 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry218_20131219_0420_tide_1x1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,060 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry218_20131219_0420_tide_1x1.grd.gz: No such file or directory'
+2026-10-13 08:57:45,065 WARNING sentry218_20131219_0420_tide_1x1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,066 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry218_20131219_0420_tide_equal_1x1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,067 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry218_20131219_0420_tide_equal_1x1.grd.gz: No such file or directory'
+2026-10-13 08:57:45,073 WARNING sentry218_20131219_0420_tide_equal_1x1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,074 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry219_20131220_1534_tide_1x1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,075 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry219_20131220_1534_tide_1x1.grd.gz: No such file or directory'
+2026-10-13 08:57:45,080 WARNING sentry219_20131220_1534_tide_1x1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,081 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry219_20131220_1534_tide_equal_1x1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,082 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954/sentry219_20131220_1534_tide_equal_1x1.grd.gz: No such file or directory'
+2026-10-13 08:57:45,087 WARNING sentry219_20131220_1534_tide_equal_1x1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,087 INFO MGDS:31954: outside range (no readable bathymetry grid) tiles=None cells=None
+2026-10-13 08:57:45,091 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_30368/MAUV_NESCA_All_Topo_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,092 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_30368/MAUV_NESCA_All_Topo_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,104 WARNING MAUV_NESCA_All_Topo_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,106 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_30368/MAUV_SESCA_All_Topo_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,107 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_30368/MAUV_SESCA_All_Topo_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,117 WARNING MAUV_SESCA_All_Topo_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,117 INFO MGDS:30368: outside range (no readable bathymetry grid) tiles=None cells=None
+2026-10-13 08:57:45,120 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry040ppp_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,121 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry040ppp_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,130 WARNING sentry040ppp_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,132 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry041pp_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,133 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry041pp_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,142 WARNING sentry041pp_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,143 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry042ppp_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,144 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry042ppp_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,153 WARNING sentry042ppp_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,154 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry043ppp_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,155 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry043ppp_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,165 WARNING sentry043ppp_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,166 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry046pp_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,167 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry046pp_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,177 WARNING sentry046pp_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,178 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry047pp_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,186 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry047pp_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,196 WARNING sentry047pp_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,197 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry048pp_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,198 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry048pp_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,208 WARNING sentry048pp_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,210 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry049ppp_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,211 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry049ppp_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,221 WARNING sentry049ppp_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,222 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry050ppp_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,223 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry050ppp_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,232 WARNING sentry050ppp_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,233 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry051ppA_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,235 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry051ppA_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,244 WARNING sentry051ppA_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,246 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry051ppB_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,247 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry051ppB_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,256 WARNING sentry051ppB_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,257 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry055ppA_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,259 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry055ppA_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,268 WARNING sentry055ppA_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,269 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry055ppB_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,271 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry055ppB_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,280 WARNING sentry055ppB_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,281 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry056p_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,282 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry056p_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,293 WARNING sentry056p_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,294 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry057pp_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,295 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry057pp_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,305 WARNING sentry057pp_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,306 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry058pp_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,307 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry058pp_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,317 WARNING sentry058pp_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,318 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry059pp_1m.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,319 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry059pp_1m.grd.gz: No such file or directory'
+2026-10-13 08:57:45,329 WARNING sentry059pp_1m.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,329 INFO MGDS:18210: outside range (no readable bathymetry grid) tiles=None cells=None
+2026-10-13 08:57:45,332 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry039_2x2_post.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,334 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry039_2x2_post.grd.gz: No such file or directory'
+2026-10-13 08:57:45,335 WARNING sentry039_2x2_post.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,337 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry040_2x2_post.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,337 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry040_2x2_post.grd.gz: No such file or directory'
+2026-10-13 08:57:45,340 WARNING sentry040_2x2_post.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,342 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry041_2x2_post.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,343 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry041_2x2_post.grd.gz: No such file or directory'
+2026-10-13 08:57:45,346 WARNING sentry041_2x2_post.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,347 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry042_2x2_post.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,348 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry042_2x2_post.grd.gz: No such file or directory'
+2026-10-13 08:57:45,352 WARNING sentry042_2x2_post.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,353 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry046_2x2_post.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,355 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry046_2x2_post.grd.gz: No such file or directory'
+2026-10-13 08:57:45,360 WARNING sentry046_2x2_post.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,361 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry047_2x2_post.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,362 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry047_2x2_post.grd.gz: No such file or directory'
+2026-10-13 08:57:45,368 WARNING sentry047_2x2_post.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,369 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry048_2x2_post.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,370 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry048_2x2_post.grd.gz: No such file or directory'
+2026-10-13 08:57:45,378 WARNING sentry048_2x2_post.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,379 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry049_2x2_post.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,380 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry049_2x2_post.grd.gz: No such file or directory'
+2026-10-13 08:57:45,386 WARNING sentry049_2x2_post.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,387 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry050_2x2_post.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,388 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry050_2x2_post.grd.gz: No such file or directory'
+2026-10-13 08:57:45,393 WARNING sentry050_2x2_post.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,394 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry051_2x2_post.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,396 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry051_2x2_post.grd.gz: No such file or directory'
+2026-10-13 08:57:45,404 WARNING sentry051_2x2_post.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,405 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry055_2x2_post.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,406 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry055_2x2_post.grd.gz: No such file or directory'
+2026-10-13 08:57:45,415 WARNING sentry055_2x2_post.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,415 INFO MGDS:31811: outside range (no readable bathymetry grid) tiles=None cells=None
+2026-10-13 08:57:45,419 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEDeep_20151105_1106_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,420 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEDeep_20151105_1106_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,432 WARNING Topo1m_CCEDeep_20151105_1106_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,433 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEDeep_20151202_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,434 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEDeep_20151202_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,445 WARNING Topo1m_CCEDeep_20151202_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,446 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEDeep_20160322_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,448 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEDeep_20160322_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,458 WARNING Topo1m_CCEDeep_20160322_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,459 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEDeep_20160418_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,460 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEDeep_20160418_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,470 WARNING Topo1m_CCEDeep_20160418_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,472 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEDeep_20161206_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,474 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEDeep_20161206_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,484 WARNING Topo1m_CCEDeep_20161206_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,485 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEDeep_20170323_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,486 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEDeep_20170323_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,496 WARNING Topo1m_CCEDeep_20170323_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,497 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEShallow_20151104_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,498 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEShallow_20151104_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,508 WARNING Topo1m_CCEShallow_20151104_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,510 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEShallow_20151201_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,511 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEShallow_20151201_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,521 WARNING Topo1m_CCEShallow_20151201_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,523 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEShallow_20160128_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,525 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEShallow_20160128_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,542 WARNING Topo1m_CCEShallow_20160128_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,543 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEShallow_20160321_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,545 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEShallow_20160321_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,555 WARNING Topo1m_CCEShallow_20160321_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,556 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEShallow_20161207_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,557 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEShallow_20161207_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,568 WARNING Topo1m_CCEShallow_20161207_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,569 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEShallow_20170221_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,571 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/Topo1m_CCEShallow_20170221_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,581 WARNING Topo1m_CCEShallow_20170221_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,582 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEDeep_20160322_20151202_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,583 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEDeep_20160322_20151202_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,594 WARNING TopoDiff1m_CCEDeep_20160322_20151202_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,595 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEDeep_20161206_20160418_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,596 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEDeep_20161206_20160418_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,607 WARNING TopoDiff1m_CCEDeep_20161206_20160418_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,609 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEDeep_20170323_20151105_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,610 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEDeep_20170323_20151105_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,621 WARNING TopoDiff1m_CCEDeep_20170323_20151105_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,622 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEShallow_20151201_20151104_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,623 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEShallow_20151201_20151104_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,634 WARNING TopoDiff1m_CCEShallow_20151201_20151104_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,635 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEShallow_20160128_20151201_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,636 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEShallow_20160128_20151201_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,646 WARNING TopoDiff1m_CCEShallow_20160128_20151201_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,647 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEShallow_20160321_20160128_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,648 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEShallow_20160321_20160128_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,659 WARNING TopoDiff1m_CCEShallow_20160321_20160128_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,660 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEShallow_20161207_20160321_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,661 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEShallow_20161207_20160321_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,672 WARNING TopoDiff1m_CCEShallow_20161207_20160321_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,673 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEShallow_20170221_20151104_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,674 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEShallow_20170221_20151104_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,685 WARNING TopoDiff1m_CCEShallow_20170221_20151104_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,686 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEShallow_20170221_20161207_UTM.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,687 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756/TopoDiff1m_CCEShallow_20170221_20161207_UTM.grd.gz: No such file or directory'
+2026-10-13 08:57:45,697 WARNING TopoDiff1m_CCEShallow_20170221_20161207_UTM.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,698 INFO MGDS:24756: outside range (no readable bathymetry grid) tiles=None cells=None
+2026-10-13 08:57:45,700 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436/sentry179_renav_tide.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,701 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436/sentry179_renav_tide.grd.gz: No such file or directory'
+2026-10-13 08:57:45,711 WARNING sentry179_renav_tide.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,712 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436/sentry181_adjusted2_interp.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,713 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436/sentry181_adjusted2_interp.grd.gz: No such file or directory'
+2026-10-13 08:57:45,722 WARNING sentry181_adjusted2_interp.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,723 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436/sentry182_adjusted2.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,725 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436/sentry182_adjusted2.grd.gz: No such file or directory'
+2026-10-13 08:57:45,734 WARNING sentry182_adjusted2.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,735 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436/sentry183_adjusted2.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,736 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436/sentry183_adjusted2.grd.gz: No such file or directory'
+2026-10-13 08:57:45,745 WARNING sentry183_adjusted2.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,746 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436/sentry184_adjusted2.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,747 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436/sentry184_adjusted2.grd.gz: No such file or directory'
+2026-10-13 08:57:45,756 WARNING sentry184_adjusted2.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,757 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436/sentry_area1_v4.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,758 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436/sentry_area1_v4.grd.gz: No such file or directory'
+2026-10-13 08:57:45,769 WARNING sentry_area1_v4.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,770 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436/sentry_area2_v2.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,771 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436/sentry_area2_v2.grd.gz: No such file or directory'
+2026-10-13 08:57:45,782 WARNING sentry_area2_v2.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,782 INFO MGDS:22436: outside range (no readable bathymetry grid) tiles=None cells=None
+2026-10-13 08:57:45,787 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/LaJollaCanyonTopo1m_m2.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,788 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/LaJollaCanyonTopo1m_m2.grd.gz: No such file or directory'
+2026-10-13 08:57:45,800 WARNING LaJollaCanyonTopo1m_m2.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,801 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/LaJollaMBTopo_m1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,803 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/LaJollaMBTopo_m1.grd.gz: No such file or directory'
+2026-10-13 08:57:45,813 WARNING LaJollaMBTopo_m1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,814 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/LaJollaMBTopo_m2.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,815 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/LaJollaMBTopo_m2.grd.gz: No such file or directory'
+2026-10-13 08:57:45,825 WARNING LaJollaMBTopo_m2.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,826 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZAmpC_m1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,828 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZAmpC_m1.grd.gz: No such file or directory'
+2026-10-13 08:57:45,839 WARNING ZAmpC_m1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,840 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZAmpC_m2.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,841 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZAmpC_m2.grd.gz: No such file or directory'
+2026-10-13 08:57:45,852 WARNING ZAmpC_m2.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,853 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZMbssC_m1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,854 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZMbssC_m1.grd.gz: No such file or directory'
+2026-10-13 08:57:45,867 WARNING ZMbssC_m1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,868 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZMbssC_m2.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,869 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZMbssC_m2.grd.gz: No such file or directory'
+2026-10-13 08:57:45,871 WARNING ZMbssC_m2.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,872 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZSsCF_m1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,873 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZSsCF_m1.grd.gz: No such file or directory'
+2026-10-13 08:57:45,885 WARNING ZSsCF_m1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,886 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZTopo1mInt_m1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,887 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZTopo1mInt_m1.grd.gz: No such file or directory'
+2026-10-13 08:57:45,895 WARNING ZTopo1mInt_m1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,896 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZTopo1mInt_m2.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,897 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZTopo1mInt_m2.grd.gz: No such file or directory'
+2026-10-13 08:57:45,911 WARNING ZTopo1mInt_m2.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,912 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZTopo_m1.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,913 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZTopo_m1.grd.gz: No such file or directory'
+2026-10-13 08:57:45,924 WARNING ZTopo_m1.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,925 INFO GDAL signalled an error: err_no=4, msg="`/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZTopo_m2.grd.gz' not recognized as being in a supported file format."
+2026-10-13 08:57:45,926 INFO GDAL signalled an error: err_no=4, msg='NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415/ZTopo_m2.grd.gz: No such file or directory'
+2026-10-13 08:57:45,937 WARNING ZTopo_m2.grd.gz: unreadable (OSError)
+2026-10-13 08:57:45,937 INFO MGDS:21415: outside range (no readable bathymetry grid) tiles=None cells=None
+2026-10-13 08:58:00,301 INFO Created 1 records
+2026-10-13 08:58:04,386 INFO SEANOE:55744: outside range (independent raw swath not downloadable; tiles_est 0 < 300) tiles=0 cells=27.93

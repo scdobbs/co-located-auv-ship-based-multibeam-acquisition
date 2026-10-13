@@ -1,0 +1,31 @@
+{
+ "note": "All steps ran on the dev partition via srun (sbatch/acq_r08b/run.sh); the download step ran once (job 47657997) and its sealed outputs were reused by every measure pass. Measure passes 1-3 were superseded by code fixes found in the runs (gzipped GMT grids not decompressed; PANGAEA ship partner had no coverage source; per-grid tile sums double-counted repeat epochs and grid versions and treated TopoDiff / interpolated / backscatter grids as bathymetry; a size cap in the union tile count returned 0 for the 350-km Galapagos footprint). No output of a superseded pass was kept.",
+ "jobs": [
+  {
+   "job": 47657997,
+   "steps": "download + measure (pass 1)",
+   "outcome": "download complete for 10 candidates (Kolumbo skipped on restricted partners); measure pass 1 superseded"
+  },
+  {
+   "job": 47658820,
+   "steps": "measure (pass 2)",
+   "outcome": "superseded"
+  },
+  {
+   "job": 47661828,
+   "steps": "measure (pass 3)",
+   "outcome": "superseded"
+  },
+  {
+   "job": 47662632,
+   "steps": "measure (pass 4)",
+   "outcome": "superseded (cosmetic: merged-row status text, Marmara sonar label)"
+  },
+  {
+   "job": 47663270,
+   "steps": "measure (pass 5, FINAL)",
+   "outcome": "candidates_measured.json / .csv, footprints/"
+  }
+ ],
+ "report_assembly": "src.acq_r08b.report + src.acq_r08b.finalize_report on the login node (reads the small outputs only; never the sealed root)"
+}

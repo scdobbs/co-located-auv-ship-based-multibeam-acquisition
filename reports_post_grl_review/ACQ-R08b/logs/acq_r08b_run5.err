@@ -1,0 +1,47 @@
+srun: job 47663270 queued and waiting for resources
+srun: job 47663270 has been allocated resources
+2026-10-13 09:49:23,984 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_okeanos_explorer_(r337)/EX0904/multibeam/data/version1/MB/ -> HTTP 404
+2026-10-13 09:49:24,765 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_okeanos_explorer_(r337)/EX0904/multibeam/data/ -> HTTP 404
+2026-10-13 09:49:25,296 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer_(r337)/EX0904/multibeam/data/ -> HTTP 404
+2026-10-13 09:49:25,827 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_okeanos_explorer/EX0904/multibeam/data/ -> HTTP 404
+2026-10-13 09:49:26,485 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_okeanos_explorer_(r337)/EX1103/multibeam/data/version1/MB/ -> HTTP 404
+2026-10-13 09:49:27,016 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_okeanos_explorer_(r337)/EX1103/multibeam/data/ -> HTTP 404
+2026-10-13 09:49:27,547 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/okeanos_explorer_(r337)/EX1103/multibeam/data/ -> HTTP 404
+2026-10-13 09:49:28,077 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_okeanos_explorer/EX1103/multibeam/data/ -> HTTP 404
+2026-10-13 09:49:28,669 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_ronald_h._brown_(r104)/RB1604/multibeam/data/version1/MB/ -> HTTP 404
+2026-10-13 09:49:29,200 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_ronald_h._brown_(r104)/RB1604/multibeam/data/ -> HTTP 404
+2026-10-13 09:49:29,730 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/ronald_h._brown_(r104)/RB1604/multibeam/data/ -> HTTP 404
+2026-10-13 09:49:30,261 WARNING list https://data.ngdc.noaa.gov/platforms/ocean/ships/noaa_ship_ronald_h._brown/RB1604/multibeam/data/ -> HTTP 404
+2026-10-13 09:49:40,285 INFO Created 1 records
+2026-10-13 09:50:28,432 INFO Created 1 records
+2026-10-13 09:50:31,500 INFO MGDS:31860: in range () tiles=450 cells=5.05
+2026-10-13 09:50:34,487 INFO Created 1 records
+2026-10-13 09:50:35,747 INFO Created 1 records
+2026-10-13 09:50:38,882 INFO MGDS:31675: in range () tiles=527 cells=4.58
+2026-10-13 09:50:40,146 INFO Created 1 records
+2026-10-13 09:50:41,935 INFO Created 1 records
+2026-10-13 09:50:44,919 INFO MGDS:31954: in range () tiles=331 cells=4.75
+2026-10-13 09:50:49,973 INFO Created 1 records
+2026-10-13 09:50:55,611 INFO Created 1 records
+2026-10-13 09:50:58,758 INFO MGDS:30368: in range () tiles=3918 cells=5.1
+2026-10-13 09:51:01,713 INFO Created 1 records
+2026-10-13 09:51:50,672 INFO Created 1 records
+2026-10-13 09:51:53,930 INFO MGDS:18210: in range () tiles=3917 cells=8.65
+2026-10-13 09:51:54,622 INFO Created 1 records
+2026-10-13 09:52:21,372 INFO Created 1 records
+2026-10-13 09:52:24,558 INFO MGDS:31811: in range () tiles=797 cells=4.73
+2026-10-13 09:52:33,750 INFO Created 1 records
+2026-10-13 09:52:47,670 INFO Created 1 records
+/home/users/scdobbs/bathy_diffusion_env/lib/python3.12/site-packages/shapely/measurement.py:81: RuntimeWarning: invalid value encountered in distance
+  return lib.distance(a, b, **kwargs)
+2026-10-13 09:52:51,234 INFO MGDS:24756: in range () tiles=1611 cells=10.47
+2026-10-13 09:52:52,990 INFO Created 1 records
+2026-10-13 09:52:55,244 INFO Created 1 records
+2026-10-13 09:52:58,334 INFO MGDS:22436: in range () tiles=1351 cells=4.32
+2026-10-13 09:53:01,800 INFO Created 1 records
+2026-10-13 09:54:12,853 INFO Created 1 records
+/home/users/scdobbs/bathy_diffusion_env/lib/python3.12/site-packages/shapely/measurement.py:81: RuntimeWarning: invalid value encountered in distance
+  return lib.distance(a, b, **kwargs)
+2026-10-13 09:54:15,868 INFO MGDS:21415: in range () tiles=1211 cells=24.47
+2026-10-13 09:54:18,236 INFO Created 1 records
+2026-10-13 09:54:21,605 INFO SEANOE:55744: outside range (tiles_est 0 < 300) tiles=0 cells=18.22

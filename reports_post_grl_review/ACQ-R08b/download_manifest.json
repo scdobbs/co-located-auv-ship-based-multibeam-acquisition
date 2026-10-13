@@ -1,0 +1,1181 @@
+{
+ "generated": "2026-10-13T15:50:51+00:00",
+ "sealed_root": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3",
+ "candidates": {
+  "MGDS:31860": {
+   "hr_id": "MGDS:31860",
+   "source": "MGDS",
+   "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860",
+   "files": [
+    {
+     "data_uid": "3205584",
+     "name": "sentry135_1x1.grd.gz",
+     "bytes": 3095922,
+     "sha256": "f19784da9cfc795892e5fdfbe3ece66ede0b8bb89b910997d60f6ceb5cebb35b",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205584"
+    },
+    {
+     "data_uid": "3205585",
+     "name": "sentry135_equal_1x1.grd.gz",
+     "bytes": 2238498,
+     "sha256": "28a42a3715f9d4a0135b7430cc2732590e865db36eee806cf83a2b5b2781efca",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205585"
+    },
+    {
+     "data_uid": "3205586",
+     "name": "sentry135_zoom_p5.grd.gz",
+     "bytes": 585984,
+     "sha256": "47192182596546ca156afd32562bedaa2461fb2cfe6c9b8d09f762f6760e8a3b",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205586"
+    },
+    {
+     "data_uid": "3205587",
+     "name": "grid.grd.gz",
+     "bytes": 16551,
+     "sha256": "c0dd468ff62f969e7497ff2c62dd819f91ec81d43753b81643593c8275ba9db8",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205587"
+    },
+    {
+     "data_uid": "3205588",
+     "name": "sentry135_1x1.grd.gz",
+     "bytes": 3095922,
+     "sha256": "f19784da9cfc795892e5fdfbe3ece66ede0b8bb89b910997d60f6ceb5cebb35b",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205588"
+    },
+    {
+     "data_uid": "3205589",
+     "name": "sentry135_1x1_v2.grd.gz",
+     "bytes": 3762389,
+     "sha256": "3d00ef43e090271f4fd636905855c4cc77522c4ea906bf615a6325f6535b72ce",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205589"
+    },
+    {
+     "data_uid": "3205590",
+     "name": "sentry137_1x1_v2.grd.gz",
+     "bytes": 3762389,
+     "sha256": "815ab3fa08b3f05bcdbf7a6e7004ea00b79f2b9e6a5acf870af76c6b5917033d",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205590"
+    },
+    {
+     "data_uid": "3205591",
+     "name": "sentry137_1x1_v3.grd.gz",
+     "bytes": 3752824,
+     "sha256": "d94d49a37eaf0a7d46fb1c5e7122791f7198c597f6276ecc71880e216d1eae59",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205591"
+    },
+    {
+     "data_uid": "3205592",
+     "name": "sentry137_1x1_v4.grd.gz",
+     "bytes": 4049550,
+     "sha256": "480a1a6e7aa268f361903004f4618aada22bcedf3c78132e312e0f72a8839b84",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205592"
+    },
+    {
+     "data_uid": "3205593",
+     "name": "sentry137_1x1_v5.grd.gz",
+     "bytes": 4109073,
+     "sha256": "ccc251b77031c821a7ec423b411336163240e271aabe411628ddd57682783246",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205593"
+    },
+    {
+     "data_uid": "3205594",
+     "name": "sentry137_equal_1x1_v3.grd.gz",
+     "bytes": 2664117,
+     "sha256": "a099fa077190b5d9c6b77033ae3e9bb34e755ddb5012f4fe4bf62e73a731ad1b",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205594"
+    },
+    {
+     "data_uid": "3205595",
+     "name": "sentry137_equal_1x1_v4.grd.gz",
+     "bytes": 2869295,
+     "sha256": "6fbe8407b60724378f564d05f0794cf1a4926efbd80bb974d9e184588ebb5281",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205595"
+    },
+    {
+     "data_uid": "3205596",
+     "name": "sentry137_equal_1x1_v5.grd.gz",
+     "bytes": 2910628,
+     "sha256": "d3406e49d0ad834e342456ed5eb271bf767dc724050b8c6f49aadfec3d1d8f12",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205596"
+    },
+    {
+     "data_uid": "3205597",
+     "name": "sentry137_zoom_1x1_v2.grd.gz",
+     "bytes": 712416,
+     "sha256": "d5a9b324e463fc32bd054fe42f6f43f65e5bf456b190ee79d7d557406c53c1bc",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205597"
+    },
+    {
+     "data_uid": "3205598",
+     "name": "sentry137_zoom_1x1_v3.grd.gz",
+     "bytes": 704966,
+     "sha256": "e6afa07efc0959ceab4c475367c94b0a974615295a78e52cb51ea817a80ca222",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205598"
+    },
+    {
+     "data_uid": "3205599",
+     "name": "sentry137_zoom_1x1_v4.grd.gz",
+     "bytes": 809911,
+     "sha256": "da55c61c00deec3f73d86acdc6981bac57a52b5040d196d9988a549a2211393d",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205599"
+    },
+    {
+     "data_uid": "3205600",
+     "name": "sentry137_zoom_1x1_v5.grd.gz",
+     "bytes": 823759,
+     "sha256": "1932ff76217762a70469e57e0752bbd934f559618ab7f485e39171312c83ddcb",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3205600"
+    }
+   ],
+   "access_checks": [
+    {
+     "cruise": "MV1003",
+     "downloadable": true,
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/melville/MV1003/multibeam/data/version1/MB/",
+     "n_swath_files": 905,
+     "swath_gb": 37.44,
+     "n_nav_files": 905,
+     "note": ""
+    }
+   ],
+   "downloaded": true,
+   "skipped_reason": "",
+   "doi": "10.60521/331860",
+   "title": "Processed Gridded Near-Bottom Bathymetry Data acquired during R/V Melville expedition MV1205 (2012)",
+   "catalog_format": "NetCDF Grid",
+   "catalog_crs": "EPSG:4326",
+   "catalog_res_m": 1.0915751445057353,
+   "bytes": 39964194
+  },
+  "MGDS:31675": {
+   "hr_id": "MGDS:31675",
+   "source": "MGDS",
+   "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675",
+   "files": [
+    {
+     "data_uid": "3082965",
+     "name": "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV01.grd.gz",
+     "bytes": 14325031,
+     "sha256": "1a9085b3f1e59fc2bba23a77b8760cf76307aa368e81d7d316a2343192a21cc8",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082965"
+    },
+    {
+     "data_uid": "3082966",
+     "name": "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV02.grd.gz",
+     "bytes": 14288340,
+     "sha256": "ba356b04f065082ac5d3662945554726dc4b77c5fae57427ceb9115149bbc8d0",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082966"
+    },
+    {
+     "data_uid": "3082967",
+     "name": "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV03.grd.gz",
+     "bytes": 14321877,
+     "sha256": "74038dc11147e928d0d82b784e59c623bfdfaaf488863349f143cc084dd77656",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082967"
+    },
+    {
+     "data_uid": "3082968",
+     "name": "sentry490_20180823_1510_rnv_tide_equal_1.00x1.00_BV01.grd.gz",
+     "bytes": 12130710,
+     "sha256": "b8e483c3bdfc236efd056fef0e6e36542ea58e464e181e7bc5858590d8ddcbf5",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082968"
+    },
+    {
+     "data_uid": "3082969",
+     "name": "sentry490_20180823_1510_rnv_tide_equal_1.00x1.00_BV03.grd.gz",
+     "bytes": 12126270,
+     "sha256": "a087d93c7e144ffd608711b764c79b82c96851e2bc8eead1703069693e32589e",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082969"
+    },
+    {
+     "data_uid": "3082970",
+     "name": "sentry491_20180824_1250_rnv_tide_1.00x1.00_BV01.grd.gz",
+     "bytes": 4084843,
+     "sha256": "54e03553b21fe0d2cd01494e4aeda83ea545585c08da27edc7a0febbdc32652b",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082970"
+    },
+    {
+     "data_uid": "3082971",
+     "name": "sentry491_20180824_1250_rnv_tide_1.00x1.00_BV02.grd.gz",
+     "bytes": 4084705,
+     "sha256": "36b18ed6b02bcc35048361b4018674aab33bc5ebddf97a2cd4343dc5cd91e6a5",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082971"
+    },
+    {
+     "data_uid": "3082972",
+     "name": "sentry491_20180824_1250_rnv_tide_equal_1.00x1.00_BV01.grd.gz",
+     "bytes": 3460871,
+     "sha256": "555f97771b435ad1ede7859c84692c32675a8dc38d0484bd716330f451418315",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082972"
+    },
+    {
+     "data_uid": "3082973",
+     "name": "sentry491_20180824_1250_rnv_tide_equal_1.00x1.00_BV02.grd.gz",
+     "bytes": 3461685,
+     "sha256": "5322bd8a73187e10afa1a4757a41b718e1cbe86084cc4a5e211888065ca3385a",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082973"
+    },
+    {
+     "data_uid": "3082974",
+     "name": "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV01.grd.gz",
+     "bytes": 4609375,
+     "sha256": "b4d56f7ce85a07217baf29949fd90fe402ce7ebde4d9224310d99965664ea308",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082974"
+    },
+    {
+     "data_uid": "3082975",
+     "name": "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV02.grd.gz",
+     "bytes": 4607539,
+     "sha256": "6ca0318d8726136947b5d3c1b57929d641ad2528e412c63737d44bdc7235bdf1",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082975"
+    },
+    {
+     "data_uid": "3082976",
+     "name": "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV03.grd.gz",
+     "bytes": 4604123,
+     "sha256": "5749e9db328ab7a4591a872290f81874395da405310ca374600772d2d51338fc",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082976"
+    },
+    {
+     "data_uid": "3082977",
+     "name": "sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV01.grd.gz",
+     "bytes": 3901243,
+     "sha256": "7b7979083a75ea031f4261eb4b42c6a24e489013f98de81e28def6213efd1248",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082977"
+    },
+    {
+     "data_uid": "3082978",
+     "name": "sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV02.grd.gz",
+     "bytes": 3902806,
+     "sha256": "cdd4c1503e87caa51ab184ca87917661b6833cc79a97e8b050deebbf083e83c7",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082978"
+    },
+    {
+     "data_uid": "3082979",
+     "name": "sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV03.grd.gz",
+     "bytes": 3900543,
+     "sha256": "8b9134cb43809be1f0736a6a7d88788630a247ca655de811654c05b555ba19fb",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082979"
+    },
+    {
+     "data_uid": "3082980",
+     "name": "sentry493_20180826_1037_rnv_tide_1.00x1.00_BV01.grd.gz",
+     "bytes": 1932084,
+     "sha256": "7e5b4ad1af621f6a66ca9b17b66a361c04f4745791be3ab64575d8d415032784",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082980"
+    },
+    {
+     "data_uid": "3082981",
+     "name": "sentry493_20180826_1037_rnv_tide_1.00x1.00_BV02.grd.gz",
+     "bytes": 1905532,
+     "sha256": "95349fae4e6f6d60b8d3bf2d4bb266cb8713ee76b1258a4224679b263ec57be2",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082981"
+    },
+    {
+     "data_uid": "3082982",
+     "name": "sentry493_20180826_1037_rnv_tide_equal_1.00x1.00_BV01.grd.gz",
+     "bytes": 1638822,
+     "sha256": "c10cd3ab71e9dde63c144c2b2b0d0f00e4016892376524000cbd079239fc99d3",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082982"
+    },
+    {
+     "data_uid": "3082983",
+     "name": "sentry493_20180826_1037_rnv_tide_equal_1.00x1.00_BV02.grd.gz",
+     "bytes": 1617045,
+     "sha256": "2f8254f041c2b32478156feadec5bdb3afc55a1b8ba34900f57e5f20afa010c9",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082983"
+    },
+    {
+     "data_uid": "3082984",
+     "name": "sentry494_20180827_1003_rnv_tide_1.00x1.00_BV01.grd.gz",
+     "bytes": 7950359,
+     "sha256": "98b9b14b7845867d33a4acc8aa2e34060748fb50fb8d78e1e2dbbcd2c890033f",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082984"
+    },
+    {
+     "data_uid": "3082985",
+     "name": "sentry494_20180827_1003_rnv_tide_equal_1.00x1.00_BV01.grd.gz",
+     "bytes": 6737947,
+     "sha256": "74d698ae0d666147d1b5bfdcaf009b9a458d75a02b05d62f1fcfd7a03c963d33",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082985"
+    },
+    {
+     "data_uid": "3082986",
+     "name": "sentry497_20180830_1148_rnv_tide_1.00x1.00_BV01.grd.gz",
+     "bytes": 968463,
+     "sha256": "31d31881deaa42d669a7ed6f9789017176b01496ed66419d4a966bd8c0183b62",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082986"
+    },
+    {
+     "data_uid": "3082987",
+     "name": "sentry497_20180830_1148_rnv_tide_equal_1.00x1.00_BV01.grd.gz",
+     "bytes": 821416,
+     "sha256": "4f2b1d60a5bb0105d887f11bef45f7f7925e8b3f7fe1e5d960e87d713cd1d5f7",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082987"
+    },
+    {
+     "data_uid": "3082988",
+     "name": "sentry498_20180831_1202_rnv_tide_1.00x1.00_BV01.grd.gz",
+     "bytes": 1403557,
+     "sha256": "015696f16f9dc8190fa514acac3de78d18c28619a869b150332e59454a11915a",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082988"
+    },
+    {
+     "data_uid": "3082989",
+     "name": "sentry498_20180831_1202_rnv_tide_equal_1.00x1.00_BV01.grd.gz",
+     "bytes": 1188794,
+     "sha256": "54cbbaa47c12261743c2a3ae142ccb24a5507d13c568c44d240c19898a7bc180",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3082989"
+    }
+   ],
+   "access_checks": [
+    {
+     "cruise": "KN173L02",
+     "downloadable": true,
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/knorr/KN173L02/multibeam/data/version1/MB/",
+     "n_swath_files": 22,
+     "swath_gb": 0.7,
+     "n_nav_files": 22,
+     "note": ""
+    }
+   ],
+   "downloaded": true,
+   "skipped_reason": "",
+   "doi": "10.60521/331675",
+   "title": "Processed Gridded Near-Bottom AUV Bathymetry Data acquired during R/V Atlantic Explorer expedition AE1823 (2018)",
+   "catalog_format": "NetCDF Grid",
+   "catalog_crs": "EPSG:4326",
+   "catalog_res_m": 0.9991914031958038,
+   "bytes": 133973980
+  },
+  "MGDS:31954": {
+   "hr_id": "MGDS:31954",
+   "source": "MGDS",
+   "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954",
+   "files": [
+    {
+     "data_uid": "3219401",
+     "name": "sentry213_20131209_1539_tide_1x1.grd.gz",
+     "bytes": 15483508,
+     "sha256": "f346b136897787503e3980c95c89922c566e7be4f7d969a01518e460f55116ae",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3219401"
+    },
+    {
+     "data_uid": "3219402",
+     "name": "sentry213_20131209_1539_tide_equal_1x1.grd.gz",
+     "bytes": 15393532,
+     "sha256": "40e33a3b7cf8b7733b5ff3dc1bec228c8c55589f80714689e3eafcc17b1685dc",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3219402"
+    },
+    {
+     "data_uid": "3219403",
+     "name": "sentry215_20131214_1348_tide_1x1.grd.gz",
+     "bytes": 4092003,
+     "sha256": "13852ea3b8259254f31b62429d93210e23569bed14cad36f85b8203f7f4fc663",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3219403"
+    },
+    {
+     "data_uid": "3219404",
+     "name": "sentry215_20131214_1348_tide_equal_1x1.grd.gz",
+     "bytes": 4067368,
+     "sha256": "88963d20823a4188a4b51dc8e4206c6462bbb1d574c2d7565a11648e60759191",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3219404"
+    },
+    {
+     "data_uid": "3219405",
+     "name": "sentry217_20131218_0538_tide_1x1.grd.gz",
+     "bytes": 1474154,
+     "sha256": "0f67c46170f68c9ad1e55bbe4adf52b7e60d43f383acd1867184cafcebde7cc1",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3219405"
+    },
+    {
+     "data_uid": "3219406",
+     "name": "sentry217_20131218_0538_tide_equal_1x1.grd.gz",
+     "bytes": 1467133,
+     "sha256": "dd29bdb38e77864212a328af89616d9f5a090516622e9e5bfdd4f82e776522aa",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3219406"
+    },
+    {
+     "data_uid": "3219407",
+     "name": "sentry218_20131219_0420_tide_1x1.grd.gz",
+     "bytes": 3088272,
+     "sha256": "02ceeb27428db5377fca75df31f66124d74d8bf969e815b0b9278a27fa94402d",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3219407"
+    },
+    {
+     "data_uid": "3219408",
+     "name": "sentry218_20131219_0420_tide_equal_1x1.grd.gz",
+     "bytes": 3073462,
+     "sha256": "3b565e24a8a302cb7b29756f5207f94cb677dcfbc4cc9063b01f72840d7d47c8",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3219408"
+    },
+    {
+     "data_uid": "3219409",
+     "name": "sentry219_20131220_1534_tide_1x1.grd.gz",
+     "bytes": 3013873,
+     "sha256": "0d467fd808f3002ecfddb766ac2ac62b14228c38ff8871e90c962d5faef405b0",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3219409"
+    },
+    {
+     "data_uid": "3219410",
+     "name": "sentry219_20131220_1534_tide_equal_1x1.grd.gz",
+     "bytes": 2998699,
+     "sha256": "618405669a9cf4d0ae20230cd0f43e6ad98e02da4874fa236471bc0bdb0a05a1",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3219410"
+    }
+   ],
+   "access_checks": [
+    {
+     "cruise": "AT26-24",
+     "downloadable": true,
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/atlantis/AT26-24/multibeam/data/version1/MB/",
+     "n_swath_files": 70,
+     "swath_gb": 1.34,
+     "n_nav_files": 70,
+     "note": ""
+    }
+   ],
+   "downloaded": true,
+   "skipped_reason": "",
+   "doi": "10.60521/331954",
+   "title": "Processed Gridded Near-Bottom AUV Bathymetry Data from the Dorado Outcrop, acquired during R/V Atlantis expedition AT26-09 (2013)",
+   "catalog_format": "NetCDF Grid",
+   "catalog_crs": "EPSG:4326",
+   "catalog_res_m": 1.0000769136645946,
+   "bytes": 54152004
+  },
+  "MGDS:30368": {
+   "hr_id": "MGDS:30368",
+   "source": "MGDS",
+   "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_30368",
+   "files": [
+    {
+     "data_uid": "2433133",
+     "name": "MAUV_NESCA_All_Topo_1m.grd.gz",
+     "bytes": 74348680,
+     "sha256": "1a327c56f29bc1a64c223adc9ce55f13247fc9244dd679f8143afb085e9b5045",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=2433133"
+    },
+    {
+     "data_uid": "2433134",
+     "name": "MAUV_SESCA_All_Topo_1m.grd.gz",
+     "bytes": 27455814,
+     "sha256": "6bd254d3027069b35e97593ebbbec3fadeef541de88ed60df4e207f60821662a",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=2433134"
+    }
+   ],
+   "access_checks": [
+    {
+     "cruise": "Escanaba",
+     "downloadable": true,
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/ocean_alert/Escanaba/multibeam/data/version1/MB/",
+     "n_swath_files": 32,
+     "swath_gb": 0.44,
+     "n_nav_files": 32,
+     "note": ""
+    }
+   ],
+   "downloaded": true,
+   "skipped_reason": "",
+   "doi": "10.26022/IEDA/330368",
+   "title": "Escanaba Trough (Gorda Ridge) AUV near-bottom processed swath bathymetry gridded data in GMT-compatible netCDF format (2014, 2016)",
+   "catalog_format": "NetCDF Grid",
+   "catalog_crs": "EPSG:4326",
+   "catalog_res_m": 0.9985685328986866,
+   "bytes": 101804494
+  },
+  "MGDS:18210": {
+   "hr_id": "MGDS:18210",
+   "source": "MGDS",
+   "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210",
+   "files": [
+    {
+     "data_uid": "541911",
+     "name": "sentry040ppp_1m.grd.gz",
+     "bytes": 6619669,
+     "sha256": "3c2533700d0e3661818dc6520b71025b6b8e9e7e104120189af44de759e96aa2",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541911"
+    },
+    {
+     "data_uid": "541912",
+     "name": "sentry041pp_1m.grd.gz",
+     "bytes": 11553952,
+     "sha256": "edc0b402416771145c0fab261d8fddb9f2d9f292731dbedf34a343bd054e09f8",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541912"
+    },
+    {
+     "data_uid": "541913",
+     "name": "sentry042ppp_1m.grd.gz",
+     "bytes": 9313558,
+     "sha256": "b533bda45753b6fce8b11dc8bca29c016db1b677e0ebecd06a251739622d6c9d",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541913"
+    },
+    {
+     "data_uid": "541914",
+     "name": "sentry043ppp_1m.grd.gz",
+     "bytes": 12447400,
+     "sha256": "fe1abb46734ea1eb2d428a75f1732e2730fc0274a93c0a2c8b6eafe8ad5a4a81",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541914"
+    },
+    {
+     "data_uid": "541915",
+     "name": "sentry046pp_1m.grd.gz",
+     "bytes": 11486549,
+     "sha256": "bdd83040547616f915caa35e824b85ce196cd2d6aa37d0062f3edad5bfe5560f",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541915"
+    },
+    {
+     "data_uid": "541916",
+     "name": "sentry047pp_1m.grd.gz",
+     "bytes": 15558242,
+     "sha256": "87a64ac91281e0e5d31572edebc500554a7d5972ae36e03cc7d2c874b5774049",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541916"
+    },
+    {
+     "data_uid": "541917",
+     "name": "sentry048pp_1m.grd.gz",
+     "bytes": 18159399,
+     "sha256": "ecbf660fc366cd58863ed7d92ec69707f7aa779df0e7b0fe9c6fe4734e31afda",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541917"
+    },
+    {
+     "data_uid": "541918",
+     "name": "sentry049ppp_1m.grd.gz",
+     "bytes": 14197815,
+     "sha256": "9f7681d8c949c4147ceaad5144869e762218085604207c19b76ea6c1890248a4",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541918"
+    },
+    {
+     "data_uid": "541919",
+     "name": "sentry050ppp_1m.grd.gz",
+     "bytes": 14901037,
+     "sha256": "9dc3ee93a5ecf04ccfbbde8cc01f81e246740a08d80c52c3ca07f08207f9351b",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541919"
+    },
+    {
+     "data_uid": "541920",
+     "name": "sentry051ppB_1m.grd.gz",
+     "bytes": 9350089,
+     "sha256": "523dd3120d4c63c043790e1f13a15d9beb340fe87e9e6f3e0d5ef482007d5581",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541920"
+    },
+    {
+     "data_uid": "541921",
+     "name": "sentry051ppA_1m.grd.gz",
+     "bytes": 11459162,
+     "sha256": "88ced89817a2b89037a387ef74dc7965bdf9b9ca0463ab0d8f05c594af9bc333",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541921"
+    },
+    {
+     "data_uid": "541922",
+     "name": "sentry055ppA_1m.grd.gz",
+     "bytes": 14204566,
+     "sha256": "dd195101b539886e8a1559111b86fb4817981a85c6aea0b1ac14b33747b273e4",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541922"
+    },
+    {
+     "data_uid": "541923",
+     "name": "sentry055ppB_1m.grd.gz",
+     "bytes": 8561763,
+     "sha256": "7a801f2894520599b355015b5e948645a13a35c0ec3bddec885a14826941e693",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541923"
+    },
+    {
+     "data_uid": "541924",
+     "name": "sentry058pp_1m.grd.gz",
+     "bytes": 17046600,
+     "sha256": "373acf9b91ddbd472d1fcf816234890300a0595dd1ea2beb1ad6eab3c2d09e54",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541924"
+    },
+    {
+     "data_uid": "541925",
+     "name": "sentry056p_1m.grd.gz",
+     "bytes": 24381198,
+     "sha256": "25178ec9b9c58307a795c54b09ecd242abf17eabd9ad06611350a287affd8af4",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541925"
+    },
+    {
+     "data_uid": "541926",
+     "name": "sentry057pp_1m.grd.gz",
+     "bytes": 14327672,
+     "sha256": "793c707503636074bc075c49a8e34c37d2bec2c4384549f0b9edbd17b55dab3f",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541926"
+    },
+    {
+     "data_uid": "541927",
+     "name": "sentry059pp_1m.grd.gz",
+     "bytes": 18614274,
+     "sha256": "fd60938081a509943197b4fe8e32068a215463bd75a8a45af828a507dc2708f3",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=541927"
+    }
+   ],
+   "access_checks": [
+    {
+     "cruise": "TN188",
+     "downloadable": true,
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/thomas_g._thompson/TN188/multibeam/data/version1/MB/",
+     "n_swath_files": 1069,
+     "swath_gb": 3.89,
+     "n_nav_files": 1069,
+     "note": ""
+    }
+   ],
+   "downloaded": true,
+   "skipped_reason": "",
+   "doi": "10.1594/IEDA/318210",
+   "title": "Processed Near-bottom Grids (NetCDF:GMT format) derived from Multibeam Sonar Data acquired along the Galapagos Spreading Center during the Atlantis expedition AT15-63 (2010)",
+   "catalog_format": "NetCDF Grid",
+   "catalog_crs": "EPSG:4326",
+   "catalog_res_m": 0.9991557798352941,
+   "bytes": 232182945
+  },
+  "MGDS:31811": {
+   "hr_id": "MGDS:31811",
+   "source": "MGDS",
+   "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811",
+   "files": [
+    {
+     "data_uid": "3202595",
+     "name": "sentry039_2x2_post.grd.gz",
+     "bytes": 804550,
+     "sha256": "6737c06e2eb661decdfcb4af5086438c824725b169f0901c13eb8d37d0727a95",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3202595"
+    },
+    {
+     "data_uid": "3202596",
+     "name": "sentry040_2x2_post.grd.gz",
+     "bytes": 1454867,
+     "sha256": "2f7190fa318428bbdff01b66a11a9b1561daa1d6504980e3e92b486e1908f173",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3202596"
+    },
+    {
+     "data_uid": "3202597",
+     "name": "sentry041_2x2_post.grd.gz",
+     "bytes": 2030116,
+     "sha256": "6b26c5670d0d660ddb1ef9847c4837bf5f27d72c07150e19b74b37c0ba42c8f6",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3202597"
+    },
+    {
+     "data_uid": "3202598",
+     "name": "sentry042_2x2_post.grd.gz",
+     "bytes": 2362069,
+     "sha256": "a7ba79ee44def6019c8757ee793b16bf68246f9dba65c2f09265f4169cd0fb6f",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3202598"
+    },
+    {
+     "data_uid": "3202599",
+     "name": "sentry046_2x2_post.grd.gz",
+     "bytes": 2931843,
+     "sha256": "661a3a524bf3456a1002221e2c1db35432eb007f5086c04c97f221e775abf1e0",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3202599"
+    },
+    {
+     "data_uid": "3202600",
+     "name": "sentry047_2x2_post.grd.gz",
+     "bytes": 3316759,
+     "sha256": "de5535beee6e1cb69bca86f589a47a48d3078fddc4f231c49d00fad8da6a1b4a",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3202600"
+    },
+    {
+     "data_uid": "3202601",
+     "name": "sentry048_2x2_post.grd.gz",
+     "bytes": 3840121,
+     "sha256": "5f62902e86af5b3c3da832ff246eeef301f13f05782ff84a6024d645798f490c",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3202601"
+    },
+    {
+     "data_uid": "3202602",
+     "name": "sentry049_2x2_post.grd.gz",
+     "bytes": 3003193,
+     "sha256": "aebfbdfa8b1b932dfc7240a9ff2b4de08bcbabacdd1b467727b4c5a3c045f72e",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3202602"
+    },
+    {
+     "data_uid": "3202603",
+     "name": "sentry050_2x2_post.grd.gz",
+     "bytes": 2803749,
+     "sha256": "040a9c6970d12cec59fd7a99ba29b113b250bb5a862f96d88a7e944bb673b192",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3202603"
+    },
+    {
+     "data_uid": "3202604",
+     "name": "sentry051_2x2_post.grd.gz",
+     "bytes": 3879844,
+     "sha256": "02e310f895ad17f8edfa24713c1938e4dca64a55c9e3fe290d5d0040c4d7f9a2",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3202604"
+    },
+    {
+     "data_uid": "3202605",
+     "name": "sentry055_2x2_post.grd.gz",
+     "bytes": 4598736,
+     "sha256": "a51ef2878218772f6d21e69137b47547f85315b82a756496cb00208ed8bf6198",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=3202605"
+    }
+   ],
+   "access_checks": [
+    {
+     "cruise": "EW0004",
+     "downloadable": true,
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/maurice_ewing/EW0004/multibeam/data/version1/MB/",
+     "n_swath_files": 41,
+     "swath_gb": 0.18,
+     "n_nav_files": 41,
+     "note": ""
+    }
+   ],
+   "downloaded": true,
+   "skipped_reason": "",
+   "doi": "10.60521/331811",
+   "title": "Processed Gridded Near-Bottom AUV Bathymetry Data from the Galapagos Spreading Center, acquired during R/V Atlantis expedition AT15-63 (2010)",
+   "catalog_format": "NetCDF Grid",
+   "catalog_crs": "EPSG:4326",
+   "catalog_res_m": 1.999070653630909,
+   "bytes": 31025847
+  },
+  "MGDS:24756": {
+   "hr_id": "MGDS:24756",
+   "source": "MGDS",
+   "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756",
+   "files": [
+    {
+     "data_uid": "1187549",
+     "name": "Topo1m_CCEDeep_20151105_1106_UTM.grd.gz",
+     "bytes": 24866871,
+     "sha256": "d2da1ad0bc1d6f5090e52f71c5fb515130de97bca813a67f2ff14ab4b42c4eee",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187549"
+    },
+    {
+     "data_uid": "1187550",
+     "name": "Topo1m_CCEDeep_20151202_UTM.grd.gz",
+     "bytes": 21417300,
+     "sha256": "6ac87f8da1214fd7c3ddb95d255543afee22a6ab8535915cb148ab5b1978084f",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187550"
+    },
+    {
+     "data_uid": "1187551",
+     "name": "Topo1m_CCEDeep_20160322_UTM.grd.gz",
+     "bytes": 22946019,
+     "sha256": "fb69c44e486304402ec90c16fd429e0b160804c8f0ef181edf5a9ea5cf2b549a",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187551"
+    },
+    {
+     "data_uid": "1187552",
+     "name": "Topo1m_CCEDeep_20160418_UTM.grd.gz",
+     "bytes": 22179202,
+     "sha256": "31ce7277066030acdcaa0fb038430852b44b606bf32ad612cd519553f4184f3f",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187552"
+    },
+    {
+     "data_uid": "1187553",
+     "name": "Topo1m_CCEDeep_20161206_UTM.grd.gz",
+     "bytes": 21891929,
+     "sha256": "ff4c487d2033cf4d18167f626e08f6a874d9ac15a940fde41b7d75aba6e22487",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187553"
+    },
+    {
+     "data_uid": "1187554",
+     "name": "Topo1m_CCEDeep_20170323_UTM.grd.gz",
+     "bytes": 22702889,
+     "sha256": "06df030a1dc1a006cbe1bc6404513b11807a04d598c81ccc9bb0097cc8a24a4c",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187554"
+    },
+    {
+     "data_uid": "1187555",
+     "name": "Topo1m_CCEShallow_20151104_UTM.grd.gz",
+     "bytes": 20335996,
+     "sha256": "9ba1aa55657da01849fa382f291d903d2f177b483b76f04a34ec5441e9e75567",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187555"
+    },
+    {
+     "data_uid": "1187556",
+     "name": "Topo1m_CCEShallow_20151201_UTM.grd.gz",
+     "bytes": 20341463,
+     "sha256": "557dc34bf63c0492d89a77d44c1b0d7b0482ff33ea670186aabf9eeedab33198",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187556"
+    },
+    {
+     "data_uid": "1187557",
+     "name": "Topo1m_CCEShallow_20160128_UTM.grd.gz",
+     "bytes": 18814166,
+     "sha256": "de3096b9966a720afce1812150f904e0ff12b55a263d428daca7fbf661cf794a",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187557"
+    },
+    {
+     "data_uid": "1187558",
+     "name": "Topo1m_CCEShallow_20160321_UTM.grd.gz",
+     "bytes": 22453526,
+     "sha256": "15f2c442ef0c0adb653ca6ca461a9f86a0e817ff9f2948079a31b5dd265dc3bf",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187558"
+    },
+    {
+     "data_uid": "1187559",
+     "name": "Topo1m_CCEShallow_20161207_UTM.grd.gz",
+     "bytes": 22389987,
+     "sha256": "f99f12f9fc5e11ede029d789c9c562d2d4d816ac98fe3bd8dc3a072a2c0d6cce",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187559"
+    },
+    {
+     "data_uid": "1187560",
+     "name": "Topo1m_CCEShallow_20170221_UTM.grd.gz",
+     "bytes": 20074944,
+     "sha256": "40a681f264823dda28cae937320b2e6ab2f9bffcdebac5333a4019c4cabfb7ef",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187560"
+    },
+    {
+     "data_uid": "1187561",
+     "name": "TopoDiff1m_CCEDeep_20160322_20151202_UTM.grd.gz",
+     "bytes": 21502494,
+     "sha256": "3a9fe74ce9e048a868d390c69a5cab436147a2ab61063f53b6952756202edfa9",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187561"
+    },
+    {
+     "data_uid": "1187562",
+     "name": "TopoDiff1m_CCEDeep_20161206_20160418_UTM.grd.gz",
+     "bytes": 22010688,
+     "sha256": "3d189cac3e34fb2344e7fa960b9aab0377b97ddc8caf509b585a552dc779ffb5",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187562"
+    },
+    {
+     "data_uid": "1187563",
+     "name": "TopoDiff1m_CCEDeep_20170323_20151105_UTM.grd.gz",
+     "bytes": 22337357,
+     "sha256": "432b39d9c43e29680218922f7817e875ff45560e4532c6f9df34c77089278d8e",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187563"
+    },
+    {
+     "data_uid": "1187564",
+     "name": "TopoDiff1m_CCEShallow_20151201_20151104_UTM.grd.gz",
+     "bytes": 19715939,
+     "sha256": "315620fb6ba2d39075d180fac1b8c3a8663d37519d0c94191a0df5660581f3fa",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187564"
+    },
+    {
+     "data_uid": "1187565",
+     "name": "TopoDiff1m_CCEShallow_20160128_20151201_UTM.grd.gz",
+     "bytes": 17966353,
+     "sha256": "2762b43f5f73a7f6c8c59d6eb0ae24c576205e663904d7fac07519e31f28205b",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187565"
+    },
+    {
+     "data_uid": "1187566",
+     "name": "TopoDiff1m_CCEShallow_20160321_20160128_UTM.grd.gz",
+     "bytes": 18886595,
+     "sha256": "4c82d671259fdc56defc267cab0de225c13edb9bcfc168aaaa93b98b7ef3c1d9",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187566"
+    },
+    {
+     "data_uid": "1187567",
+     "name": "TopoDiff1m_CCEShallow_20161207_20160321_UTM.grd.gz",
+     "bytes": 22057844,
+     "sha256": "56ff8fbb23e3c809388e11d0f2aa4bc3f29c0712d7df0633088a2f77adb2f4bd",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187567"
+    },
+    {
+     "data_uid": "1187568",
+     "name": "TopoDiff1m_CCEShallow_20170221_20151104_UTM.grd.gz",
+     "bytes": 19483109,
+     "sha256": "25139a13bf42b7a2e037a9f45a48b0bb46e66d5cce5309abb9aa0bd74539dfcd",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187568"
+    },
+    {
+     "data_uid": "1187569",
+     "name": "TopoDiff1m_CCEShallow_20170221_20161207_UTM.grd.gz",
+     "bytes": 20000879,
+     "sha256": "23e738c4f2f8390b71e3b0d9fdffd3ada75e36784a80a60df769343716f5af6e",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=1187569"
+    }
+   ],
+   "access_checks": [
+    {
+     "cruise": "Monterey",
+     "downloadable": true,
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/ocean_alert/Monterey/multibeam/data/version1/MB/",
+     "n_swath_files": 577,
+     "swath_gb": 9.33,
+     "n_nav_files": 577,
+     "note": ""
+    }
+   ],
+   "downloaded": true,
+   "skipped_reason": "",
+   "doi": "10.1594/IEDA/324756",
+   "title": "High-resolution (1m) bathymetric data from Monterey Canyon, offshore California",
+   "catalog_format": "NetCDF Grid",
+   "catalog_crs": "EPSG:32610",
+   "catalog_res_m": 1.0,
+   "bytes": 444375550
+  },
+  "MGDS:22436": {
+   "hr_id": "MGDS:22436",
+   "source": "MGDS",
+   "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436",
+   "files": [
+    {
+     "data_uid": "947029",
+     "name": "sentry179_renav_tide.grd.gz",
+     "bytes": 7102384,
+     "sha256": "700f74af04abdfb69fbfdf690cd1ee6bf34b78b88c1dc061cf6e865b695ec635",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=947029"
+    },
+    {
+     "data_uid": "947030",
+     "name": "sentry181_adjusted2_interp.grd.gz",
+     "bytes": 7228259,
+     "sha256": "83a18a1ef47472b74584028bf1b5ae757c891124b26e059df0bb974dfe0834d1",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=947030"
+    },
+    {
+     "data_uid": "947031",
+     "name": "sentry182_adjusted2.grd.gz",
+     "bytes": 5920209,
+     "sha256": "42a4173a4cf339cfed6803450b3739732a9fd08ce2d22915997ba375349316b9",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=947031"
+    },
+    {
+     "data_uid": "947032",
+     "name": "sentry183_adjusted2.grd.gz",
+     "bytes": 6218414,
+     "sha256": "316523c68f1305f1ea50eef542bc6a5c80bb862ed83a1514c60ee17474ca4db3",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=947032"
+    },
+    {
+     "data_uid": "947033",
+     "name": "sentry184_adjusted2.grd.gz",
+     "bytes": 5957691,
+     "sha256": "0fcbbab80968e8a8e30cbe7c9806533ee913aaf5296206f9b4deda61d2ddb043",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=947033"
+    },
+    {
+     "data_uid": "947035",
+     "name": "sentry_area1_v4.grd.gz",
+     "bytes": 27867470,
+     "sha256": "290061f159b98597c63adcad0a62478815c2256e82d1448dc7a249441554d637",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=947035"
+    },
+    {
+     "data_uid": "947036",
+     "name": "sentry_area2_v2.grd.gz",
+     "bytes": 22971946,
+     "sha256": "69e57b9515db9792291adcecff6888ec7fd00827f834c69c0c1f5654e70c0dc5",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=947036"
+    }
+   ],
+   "access_checks": [
+    {
+     "cruise": "KN161L04",
+     "downloadable": true,
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/knorr/KN161L04/multibeam/data/version1/MB/",
+     "n_swath_files": 627,
+     "swath_gb": 1.24,
+     "n_nav_files": 627,
+     "note": ""
+    }
+   ],
+   "downloaded": true,
+   "skipped_reason": "",
+   "doi": "10.1594/IEDA/322436",
+   "title": "Processed Sentry AUV bathymetry data from the Mid-Atlantic Ridge at 16.5N, Knorr cruise KN210-05 (2013, chief scientist Deborah Smith).",
+   "catalog_format": "NetCDF Grid",
+   "catalog_crs": "EPSG:4326",
+   "catalog_res_m": 1.9997336226821447,
+   "bytes": 83266373
+  },
+  "MGDS:21415": {
+   "hr_id": "MGDS:21415",
+   "source": "MGDS",
+   "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415",
+   "files": [
+    {
+     "data_uid": "821337",
+     "name": "LaJollaMBTopo_m1.grd.gz",
+     "bytes": 16265810,
+     "sha256": "c6a9547fed76fae8f649ef54c1d7e39c7c49f1e06c5307b7864fd3e60f2b1362",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=821337"
+    },
+    {
+     "data_uid": "821338",
+     "name": "ZAmpC_m1.grd.gz",
+     "bytes": 30645861,
+     "sha256": "f0265f804e28592ea2ddb5a563ce56305f0315ff3a2fc9e14650893cb8fb4c70",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=821338"
+    },
+    {
+     "data_uid": "821339",
+     "name": "ZMbssC_m1.grd.gz",
+     "bytes": 30645862,
+     "sha256": "1ecc6c0440a4f394b21565360dddae35f4c8b2052d88ca9bdaee70616414650c",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=821339"
+    },
+    {
+     "data_uid": "821340",
+     "name": "ZSsCF_m1.grd.gz",
+     "bytes": 39956611,
+     "sha256": "b7adbd57420e40cc2e7c6e8bfe2f326e7628f8fe5feee75671ca5582563d2b88",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=821340"
+    },
+    {
+     "data_uid": "821341",
+     "name": "ZTopo1mInt_m1.grd.gz",
+     "bytes": 3863417,
+     "sha256": "e89a21bcae22181c575f11c7c4edcf8e15b81bc02db80f75e2de69e8784a0c06",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=821341"
+    },
+    {
+     "data_uid": "821342",
+     "name": "ZTopo_m1.grd.gz",
+     "bytes": 28945186,
+     "sha256": "f39af31c1a643ecd10c56190a034c672c8e9823c0bd1c12465a11004c2bae465",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=821342"
+    },
+    {
+     "data_uid": "821343",
+     "name": "LaJollaCanyonTopo1m_m2.grd.gz",
+     "bytes": 69023323,
+     "sha256": "02e6aa9ad130beff2cbbb6932e65b12e50488b886f7e4fd81c54b8197d8efc44",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=821343"
+    },
+    {
+     "data_uid": "821344",
+     "name": "LaJollaMBTopo_m2.grd.gz",
+     "bytes": 16265810,
+     "sha256": "70d5bee7d63970cc2dbfede8617769052a3a1daf48f1549d2f6f0e58cc825381",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=821344"
+    },
+    {
+     "data_uid": "821345",
+     "name": "ZAmpC_m2.grd.gz",
+     "bytes": 30640753,
+     "sha256": "d4f54e3acbb48bfe199c52d6c4a542bc0286cc14de8d74a121e87a7dfafc7b25",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=821345"
+    },
+    {
+     "data_uid": "821346",
+     "name": "ZMbssC_m2.grd.gz",
+     "bytes": 1017234,
+     "sha256": "528ef8a9fb5e65ab0c954af1a088f48376cab9ae4c645d105ad6bace2cc16f72",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=821346"
+    },
+    {
+     "data_uid": "821347",
+     "name": "ZTopo1mInt_m2.grd.gz",
+     "bytes": 140022152,
+     "sha256": "ddbd89fc102116abf60648fa012fddd2cc421f1e45fdfe3f73fc79a625e3d68a",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=821347"
+    },
+    {
+     "data_uid": "821348",
+     "name": "ZTopo_m2.grd.gz",
+     "bytes": 29634187,
+     "sha256": "808057f8ede170794d20980c139c0c3a40c40a92cefbad3a544575043d3a379a",
+     "url": "https://api.marine-geo.org/services/download/Document_Accept.php?data_uid=821348"
+    }
+   ],
+   "access_checks": [
+    {
+     "cruise": "MV1209",
+     "downloadable": true,
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/melville/MV1209/multibeam/data/version1/MB/",
+     "n_swath_files": 268,
+     "swath_gb": 6.64,
+     "n_nav_files": 268,
+     "note": ""
+    }
+   ],
+   "downloaded": true,
+   "skipped_reason": "",
+   "doi": "10.1594/IEDA/321415",
+   "title": "Processed Near-bottom Bathymetry, Acoustic Backscatter, and Sidescan Grids (NetCDF:GMT format) derived from Sidescan Sonar and Multibeam Sonar Data from the La Jolla Canyon acquired during the Zephyr expedition ZPR0803 (2008)",
+   "catalog_format": "NetCDF Grid",
+   "catalog_crs": "EPSG:4326",
+   "catalog_res_m": 4.11695117961282,
+   "bytes": 436926206
+  },
+  "PANGAEA:958275": {
+   "hr_id": "PANGAEA:958275",
+   "source": "PANGAEA",
+   "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/PANGAEA_958275",
+   "files": [],
+   "access_checks": [
+    {
+     "pangaea_id": "895437",
+     "status": 401,
+     "restricted": true,
+     "n_swath_urls_listed": 0,
+     "note": " Error 401 To access dataset 895437 you need to be authorized (e.g., by logging in as authorized user). Please contact the principal investigator or authors to "
+    },
+    {
+     "pangaea_id": "895497",
+     "status": 401,
+     "restricted": true,
+     "n_swath_urls_listed": 0,
+     "note": " Error 401 To access dataset 895497 you need to be authorized (e.g., by logging in as authorized user). Please contact the principal investigator or authors to "
+    },
+    {
+     "pangaea_id": "993972",
+     "status": 401,
+     "restricted": true,
+     "n_swath_urls_listed": 0,
+     "note": " Error 401 To access dataset 993972 you need to be authorized (e.g., by logging in as authorized user). Please contact the principal investigator or authors to "
+    },
+    {
+     "pangaea_id": "993973",
+     "status": 401,
+     "restricted": true,
+     "n_swath_urls_listed": 0,
+     "note": " Error 401 To access dataset 993973 you need to be authorized (e.g., by logging in as authorized user). Please contact the principal investigator or authors to "
+    },
+    {
+     "pangaea_id": "981058",
+     "status": 401,
+     "restricted": true,
+     "n_swath_urls_listed": 0,
+     "note": " Error 401 To access dataset 981058 you need to be authorized (e.g., by logging in as authorized user). Please contact the principal investigator or authors to "
+    }
+   ],
+   "downloaded": false,
+   "skipped_reason": "every ship partner is restricted (HTTP 401 on the dataset file listing): no accessible independent ship data \u2192 grid not downloaded (directive \u00a72)"
+  },
+  "SEANOE:55744": {
+   "hr_id": "SEANOE:55744",
+   "source": "SEANOE",
+   "dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/SEANOE_55744",
+   "files": [
+    {
+     "url": "https://www.seanoe.org/data/00446/55744/data/57399.zip",
+     "name": "57399.zip",
+     "bytes": 179145644,
+     "sha256": "ca8a76e727fc2da6ae1939e6c3f3d6b2f674683d0e66de7a98fae4651cf2d1fe"
+    }
+   ],
+   "access_checks": [
+    {
+     "pangaea_id": "975981",
+     "status": 200,
+     "restricted": false,
+     "n_swath_urls_listed": 1,
+     "note": ""
+    },
+    {
+     "pangaea_id": "895437",
+     "status": 401,
+     "restricted": true,
+     "n_swath_urls_listed": 0,
+     "note": " Error 401 To access dataset 895437 you need to be authorized (e.g., by logging in as authorized user). Please contact the principal investigator or authors to "
+    }
+   ],
+   "downloaded": true,
+   "skipped_reason": "",
+   "doi": "10.17882/55744",
+   "landing": "https://www.seanoe.org/data/00446/55744/",
+   "links_listed": [
+    "https://www.seanoe.org/data/00446/55744/data/57399.zip"
+   ],
+   "bytes": 179145644
+  }
+ },
+ "not_processed": {
+  "MGDS:31979": "ROV point file, 0.04 km\u00b2 (directive \u00a72)",
+  "DOI:10.5285/31b8167c-4d8d-07f0-e063-7086abc03df1": "BODC BioCam record: broken footprint, implausible ship match (directive \u00a72)",
+  "DOI:10.5285/31c95277-80ab-34ff-e063-7086abc04e84": "BODC BioCam record: broken footprint, implausible ship match (directive \u00a72)"
+ }
+}

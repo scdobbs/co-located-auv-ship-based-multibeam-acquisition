@@ -118,7 +118,36 @@ def _check_sealed(path):
     for c in SEALED_LR_CRUISES:
         if re.search(r"raw_lr_swath/" + re.escape(c) + r"(/|$)", u):
             raise PermissionError(f"SEALED SWATH GUARD (ACQ-R06 §0.2): refusing to open {s} (raw swath of sealed LR cruise {c})")
+    # ACQ-R08b §1.2: the second-test candidate grids (sealed_candidates_v3/ root and every candidate id) are sealed too.
+    if SEALED_CANDIDATES_V3_DIRNAME in u.split("/"):
+        raise PermissionError(f"SEALED CANDIDATE GUARD (ACQ-R08b §1): refusing to open {s} (under {SEALED_CANDIDATES_V3_DIRNAME}/)")
+    for t in SEALED_CANDIDATE_TOKENS:
+        if t in u:
+            raise PermissionError(f"SEALED CANDIDATE GUARD (ACQ-R08b §1): refusing to open {s} (candidate {t})")
     return path
+
+
+# ACQ-R08b (2026-10-13): candidate high-resolution grids for a possible second blind test live under this scratch root; the
+# directory names are the candidate ids with ':' → '_'.  The §3 measuring scripts (src/acq_r08b/) install a named allowance.
+SEALED_CANDIDATES_V3_DIRNAME = "sealed_candidates_v3"
+SEALED_CANDIDATES_V3 = SCRATCH_DATA / SEALED_CANDIDATES_V3_DIRNAME
+SEALED_CANDIDATE_IDS = ("MGDS:31860", "MGDS:31675", "MGDS:31954", "MGDS:30368", "MGDS:18210", "MGDS:31811", "MGDS:24756",
+                        "MGDS:22436", "MGDS:21415", "PANGAEA:958275", "SEANOE:55744")
+SEALED_CANDIDATE_TOKENS = tuple(i.replace(":", "_") for i in SEALED_CANDIDATE_IDS)      # bare ids as path tokens (dir names)
+_R08B_ALLOW: tuple = ()
+
+
+def install_r08b_allowance(reason: str) -> tuple:
+    """ACQ-R08b §1: admit the sealed candidate paths for the §3 download / measure scripts only.  The reason must say so."""
+    global _R08B_ALLOW
+    if not str(reason).startswith("ACQ-R08b §3 script"):
+        raise PermissionError("ACQ-R08b allowance refused: the reason must state that a §3 script installs it")
+    _R08B_ALLOW = (SEALED_CANDIDATES_V3_DIRNAME,)
+    return _R08B_ALLOW
+
+
+def r08b_allowance() -> tuple:
+    return _R08B_ALLOW
 
 
 def _check(path):
@@ -133,6 +162,8 @@ def _check(path):
         except TypeError:
             s = str(path)
         if _PHASE4_ALLOW and any(t in s for t in _PHASE4_ALLOW):
+            return path
+        if _R08B_ALLOW and any(t in s for t in _R08B_ALLOW):
             return path
         raise
     return path

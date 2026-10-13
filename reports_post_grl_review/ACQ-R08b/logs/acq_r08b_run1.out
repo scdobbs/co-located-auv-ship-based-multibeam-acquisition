@@ -1,0 +1,86 @@
+host=sh04-18n31.int job=47657997 start=2026-10-13T15:50:43Z
+=== download ===
+{
+ "MGDS:31860": {
+  "downloaded": true,
+  "n_files": 17,
+  "gb": 0.04,
+  "skipped": ""
+ },
+ "MGDS:31675": {
+  "downloaded": true,
+  "n_files": 25,
+  "gb": 0.134,
+  "skipped": ""
+ },
+ "MGDS:31954": {
+  "downloaded": true,
+  "n_files": 10,
+  "gb": 0.054,
+  "skipped": ""
+ },
+ "MGDS:30368": {
+  "downloaded": true,
+  "n_files": 2,
+  "gb": 0.102,
+  "skipped": ""
+ },
+ "MGDS:18210": {
+  "downloaded": true,
+  "n_files": 17,
+  "gb": 0.232,
+  "skipped": ""
+ },
+ "MGDS:31811": {
+  "downloaded": true,
+  "n_files": 11,
+  "gb": 0.031,
+  "skipped": ""
+ },
+ "MGDS:24756": {
+  "downloaded": true,
+  "n_files": 21,
+  "gb": 0.444,
+  "skipped": ""
+ },
+ "MGDS:22436": {
+  "downloaded": true,
+  "n_files": 7,
+  "gb": 0.083,
+  "skipped": ""
+ },
+ "MGDS:21415": {
+  "downloaded": true,
+  "n_files": 12,
+  "gb": 0.437,
+  "skipped": ""
+ },
+ "PANGAEA:958275": {
+  "downloaded": false,
+  "n_files": 0,
+  "gb": 0.0,
+  "skipped": "every ship partner is restricted (HTTP 401 on the dataset file listing): no accessible independent ship data \u2192 grid not downloaded (directive \u00a72)"
+ },
+ "SEANOE:55744": {
+  "downloaded": true,
+  "n_files": 1,
+  "gb": 0.179,
+  "skipped": ""
+ }
+}
+download exit=0
+=== measure ===
+             hr_id         status  hr_res_m  depth_median_100m  valid_km2                    lr_cruise  lr_est_m  cells_across_est  tiles_est                                                                                                                                      status_reason
+0       MGDS:31860  outside range       NaN                NaN        NaN                         None       NaN               NaN        NaN                                                                                                                        no readable bathymetry grid
+1       MGDS:31675  outside range       NaN                NaN        NaN                         None       NaN               NaN        NaN                                                                                                                        no readable bathymetry grid
+2       MGDS:31954  outside range       NaN                NaN        NaN                         None       NaN               NaN        NaN                                                                                                                        no readable bathymetry grid
+3       MGDS:30368  outside range       NaN                NaN        NaN                         None       NaN               NaN        NaN                                                                                                                        no readable bathymetry grid
+4       MGDS:18210  outside range       NaN                NaN        NaN                         None       NaN               NaN        NaN                                                                                                                        no readable bathymetry grid
+5       MGDS:31811  outside range       NaN                NaN        NaN                         None       NaN               NaN        NaN                                                                                                                        no readable bathymetry grid
+6       MGDS:24756  outside range       NaN                NaN        NaN                         None       NaN               NaN        NaN                                                                                                                        no readable bathymetry grid
+7       MGDS:22436  outside range       NaN                NaN        NaN                         None       NaN               NaN        NaN                                                                                                                        no readable bathymetry grid
+8       MGDS:21415  outside range       NaN                NaN        NaN                         None       NaN               NaN        NaN                                                                                                                        no readable bathymetry grid
+9   PANGAEA:958275       excluded       NaN                NaN        NaN  PANGAEA:895437 (M143 EM122)       NaN               NaN        NaN  every ship partner is restricted (HTTP 401 on the dataset file listing): no accessible independent ship data → grid not downloaded (directive §2)
+10    SEANOE:55744  outside range       2.0              700.0    191.322       PANGAEA:975981 (M51/4)     18.33             27.93        0.0                                                                                          independent raw swath not downloadable; tiles_est 0 < 300
+measure exit=0
+end=2026-10-13T15:58:04Z exit=0

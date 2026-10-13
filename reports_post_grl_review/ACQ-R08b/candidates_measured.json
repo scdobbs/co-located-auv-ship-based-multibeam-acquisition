@@ -1,0 +1,4131 @@
+{
+ "generated": "2026-10-13T16:54:21+00:00",
+ "elapsed_s": 302,
+ "results": [
+  {
+   "hr_id": "MGDS:31860",
+   "source": "MGDS",
+   "r08_status": "in range",
+   "doi": "10.60521/331860",
+   "title": "Processed Gridded Near-Bottom Bathymetry Data acquired during R/V Melville expedition MV1205 (2012)",
+   "files": [
+    "sentry135_1x1.grd.gz",
+    "sentry135_equal_1x1.grd.gz",
+    "sentry135_zoom_p5.grd.gz",
+    "grid.grd.gz",
+    "sentry135_1x1.grd.gz",
+    "sentry135_1x1_v2.grd.gz",
+    "sentry137_1x1_v2.grd.gz",
+    "sentry137_1x1_v3.grd.gz",
+    "sentry137_1x1_v4.grd.gz",
+    "sentry137_1x1_v5.grd.gz",
+    "sentry137_equal_1x1_v3.grd.gz",
+    "sentry137_equal_1x1_v4.grd.gz",
+    "sentry137_equal_1x1_v5.grd.gz",
+    "sentry137_zoom_1x1_v2.grd.gz",
+    "sentry137_zoom_1x1_v3.grd.gz",
+    "sentry137_zoom_1x1_v4.grd.gz",
+    "sentry137_zoom_1x1_v5.grd.gz"
+   ],
+   "n_files": 17,
+   "size_gb": 0.04,
+   "sha256": [
+    "f19784da9cfc795892e5fdfbe3ece66ede0b8bb89b910997d60f6ceb5cebb35b",
+    "28a42a3715f9d4a0135b7430cc2732590e865db36eee806cf83a2b5b2781efca",
+    "47192182596546ca156afd32562bedaa2461fb2cfe6c9b8d09f762f6760e8a3b",
+    "c0dd468ff62f969e7497ff2c62dd819f91ec81d43753b81643593c8275ba9db8",
+    "f19784da9cfc795892e5fdfbe3ece66ede0b8bb89b910997d60f6ceb5cebb35b",
+    "3d00ef43e090271f4fd636905855c4cc77522c4ea906bf615a6325f6535b72ce",
+    "815ab3fa08b3f05bcdbf7a6e7004ea00b79f2b9e6a5acf870af76c6b5917033d",
+    "d94d49a37eaf0a7d46fb1c5e7122791f7198c597f6276ecc71880e216d1eae59",
+    "480a1a6e7aa268f361903004f4618aada22bcedf3c78132e312e0f72a8839b84",
+    "ccc251b77031c821a7ec423b411336163240e271aabe411628ddd57682783246",
+    "a099fa077190b5d9c6b77033ae3e9bb34e755ddb5012f4fe4bf62e73a731ad1b",
+    "6fbe8407b60724378f564d05f0794cf1a4926efbd80bb974d9e184588ebb5281",
+    "d3406e49d0ad834e342456ed5eb271bf767dc724050b8c6f49aadfec3d1d8f12",
+    "d5a9b324e463fc32bd054fe42f6f43f65e5bf456b190ee79d7d557406c53c1bc",
+    "e6afa07efc0959ceab4c475367c94b0a974615295a78e52cb51ea817a80ca222",
+    "da55c61c00deec3f73d86acdc6981bac57a52b5040d196d9988a549a2211393d",
+    "1932ff76217762a70469e57e0752bbd934f559618ab7f485e39171312c83ddcb"
+   ],
+   "grids": [
+    {
+     "width": 101,
+     "height": 101,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      3.997999999995727e-05,
+      4.8870000000036387e-05
+     ],
+     "res_x_m": 3.0764,
+     "res_y_m": 5.431,
+     "res_m": 4.0875,
+     "extent": [
+      -75.79812799,
+      -46.275000435,
+      -75.79409001,
+      -46.270064565
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "grid.grd.gz"
+    },
+    {
+     "width": 3201,
+     "height": 7581,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.2964698531708593e-05,
+      8.996174647144767e-06
+     ],
+     "res_x_m": 0.998,
+     "res_y_m": 0.9998,
+     "res_m": 0.9989,
+     "extent": [
+      -75.8319,
+      -46.2837,
+      -75.7904,
+      -46.2155
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry135_1x1.grd.gz"
+    },
+    {
+     "width": 1357,
+     "height": 3102,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.2969786293284749e-05,
+      8.99419729206814e-06
+     ],
+     "res_x_m": 0.998,
+     "res_y_m": 0.9995,
+     "res_m": 0.9988,
+     "extent": [
+      -75.8076,
+      -46.2876,
+      -75.79,
+      -46.2597
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry135_1x1_v2.grd.gz"
+    },
+    {
+     "width": 3201,
+     "height": 5260,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.2963726201504043e-05,
+      1.2965312009030373e-05
+     ],
+     "res_x_m": 0.9979,
+     "res_y_m": 1.4409,
+     "res_m": 1.1991,
+     "extent": [
+      -75.8319,
+      -46.2837,
+      -75.79040311242899,
+      -46.2155024588325
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry135_equal_1x1.grd.gz"
+    },
+    {
+     "width": 1457,
+     "height": 2224,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      6.483184625941631e-06,
+      4.496402877696947e-06
+     ],
+     "res_x_m": 0.499,
+     "res_y_m": 0.4997,
+     "res_m": 0.4994,
+     "extent": [
+      -75.809512,
+      -46.26,
+      -75.800066,
+      -46.25
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry135_zoom_p5.grd.gz"
+    },
+    {
+     "width": 1357,
+     "height": 3102,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.2969786293284749e-05,
+      8.99419729206814e-06
+     ],
+     "res_x_m": 0.998,
+     "res_y_m": 0.9995,
+     "res_m": 0.9988,
+     "extent": [
+      -75.8076,
+      -46.2876,
+      -75.79,
+      -46.2597
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry137_1x1_v2.grd.gz"
+    },
+    {
+     "width": 1357,
+     "height": 3102,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.2969786293284749e-05,
+      8.99419729206814e-06
+     ],
+     "res_x_m": 0.998,
+     "res_y_m": 0.9995,
+     "res_m": 0.9988,
+     "extent": [
+      -75.8076,
+      -46.2876,
+      -75.79,
+      -46.2597
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry137_1x1_v3.grd.gz"
+    },
+    {
+     "width": 1334,
+     "height": 3180,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.2968515742133333e-05,
+      8.993710691823049e-06
+     ],
+     "res_x_m": 0.9979,
+     "res_y_m": 0.9995,
+     "res_m": 0.9987,
+     "extent": [
+      -75.807,
+      -46.2879,
+      -75.7897,
+      -46.2593
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry137_1x1_v4.grd.gz"
+    },
+    {
+     "width": 1342,
+     "height": 3124,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.296572280179522e-05,
+      8.994878361073914e-06
+     ],
+     "res_x_m": 0.9977,
+     "res_y_m": 0.9996,
+     "res_m": 0.9986,
+     "extent": [
+      -75.8067,
+      -46.2878,
+      -75.7893,
+      -46.2597
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry137_1x1_v5.grd.gz"
+    },
+    {
+     "width": 1357,
+     "height": 2151,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.2963888350638564e-05,
+      1.29674173833501e-05
+     ],
+     "res_x_m": 0.9975,
+     "res_y_m": 1.4411,
+     "res_m": 1.199,
+     "extent": [
+      -75.8076,
+      -46.2876,
+      -75.79000800350818,
+      -46.25970708520841
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry137_equal_1x1_v3.grd.gz"
+    },
+    {
+     "width": 1334,
+     "height": 2205,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.2963711726839485e-05,
+      1.2967553297068765e-05
+     ],
+     "res_x_m": 0.9975,
+     "res_y_m": 1.4411,
+     "res_m": 1.199,
+     "extent": [
+      -75.807,
+      -46.2879,
+      -75.7897064085564,
+      -46.259306544979964
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry137_equal_1x1_v4.grd.gz"
+    },
+    {
+     "width": 1342,
+     "height": 2166,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.2963805070014922e-05,
+      1.2967482737618296e-05
+     ],
+     "res_x_m": 0.9975,
+     "res_y_m": 1.4411,
+     "res_m": 1.199,
+     "extent": [
+      -75.8067,
+      -46.2878,
+      -75.78930257359605,
+      -46.259712432390316
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry137_equal_1x1_v5.grd.gz"
+    },
+    {
+     "width": 828,
+     "height": 619,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.2969806763286162e-05,
+      8.995153473338751e-06
+     ],
+     "res_x_m": 0.9979,
+     "res_y_m": 0.9996,
+     "res_m": 0.9988,
+     "extent": [
+      -75.801929,
+      -46.282373,
+      -75.79119,
+      -46.276805
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry137_zoom_1x1_v2.grd.gz"
+    },
+    {
+     "width": 828,
+     "height": 619,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.2969806763286162e-05,
+      8.995153473338751e-06
+     ],
+     "res_x_m": 0.9979,
+     "res_y_m": 0.9996,
+     "res_m": 0.9988,
+     "extent": [
+      -75.801929,
+      -46.282373,
+      -75.79119,
+      -46.276805
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry137_zoom_1x1_v3.grd.gz"
+    },
+    {
+     "width": 828,
+     "height": 619,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.2969806763286162e-05,
+      8.995153473338751e-06
+     ],
+     "res_x_m": 0.9979,
+     "res_y_m": 0.9996,
+     "res_m": 0.9988,
+     "extent": [
+      -75.801929,
+      -46.282373,
+      -75.79119,
+      -46.276805
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry137_zoom_1x1_v4.grd.gz"
+    },
+    {
+     "width": 828,
+     "height": 619,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.2969806763286162e-05,
+      8.995153473338751e-06
+     ],
+     "res_x_m": 0.9979,
+     "res_y_m": 0.9996,
+     "res_m": 0.9988,
+     "extent": [
+      -75.801929,
+      -46.282373,
+      -75.79119,
+      -46.276805
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry137_zoom_1x1_v5.grd.gz"
+    }
+   ],
+   "status": "in range",
+   "status_reason": "",
+   "n_raster_files": 16,
+   "n_bathymetry_grids": 16,
+   "companion_files_skipped": [],
+   "resolution_groups": {
+    "4.09": {
+     "n_grids": 1,
+     "valid_km2": 0.15
+    },
+    "1.0": {
+     "n_grids": 10,
+     "valid_km2": 13.105
+    },
+    "1.2": {
+     "n_grids": 4,
+     "valid_km2": 8.648
+    },
+    "0.5": {
+     "n_grids": 1,
+     "valid_km2": 0.267
+    }
+   },
+   "chosen_res_group_m": 1.0,
+   "chosen_grids": [
+    "sentry135_1x1.grd.gz",
+    "sentry135_1x1_v2.grd.gz",
+    "sentry137_1x1_v2.grd.gz",
+    "sentry137_1x1_v3.grd.gz",
+    "sentry137_1x1_v4.grd.gz",
+    "sentry137_1x1_v5.grd.gz",
+    "sentry137_zoom_1x1_v2.grd.gz",
+    "sentry137_zoom_1x1_v3.grd.gz",
+    "sentry137_zoom_1x1_v4.grd.gz",
+    "sentry137_zoom_1x1_v5.grd.gz"
+   ],
+   "hr_res_m": 0.9988,
+   "crs": [
+    "EPSG:4326"
+   ],
+   "extent_4326": [
+    -75.8319,
+    -46.28808,
+    -75.7892,
+    -46.2155
+   ],
+   "valid_km2_sum_of_grids": 13.105,
+   "local_utm": "EPSG:32718",
+   "hr_footprint_km2": 7.149,
+   "valid_km2": 7.149,
+   "depth_median_100m": 2900,
+   "hr_footprint_file": "reports_post_grl_review/ACQ-R08b/footprints/fp_MGDS-31860.geojson",
+   "lr_cruise": "MV1003",
+   "lr_sonar": "Simrad EM122",
+   "lr_year": "2010",
+   "lr_raw_downloadable": true,
+   "lr_swath_gb": 37.44,
+   "lr_n_swath_files": 905,
+   "lr_beamwidth_deg": 1.0,
+   "lr_beamwidth_source": "documented",
+   "lr_est_m": 50.62,
+   "cells_across_est": 5.05,
+   "ratio_est": 50.68,
+   "ship_coverage": {
+    "cruise": "MV1003",
+    "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/melville/MV1003/multibeam/data/version1/MB/",
+    "n_nav_files": 905,
+    "n_nav_fetched": 905,
+    "n_tracks_in_aoi": 212,
+    "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+    "swath_factor": 3.5,
+    "half_swath_m": 5075.0,
+    "depth_used_m": 2900,
+    "coverage_km2": 7.149,
+    "coverage_fraction": 1.0,
+    "tiles_est": 450,
+    "tiles_est_sum_of_grids": 638
+   },
+   "tiles_est": 450,
+   "ship_coverage_file": "reports_post_grl_review/ACQ-R08b/footprints/shipcov_MGDS-31860_MV1003.geojson",
+   "lr_cruises_tried": [
+    {
+     "cruise": "MV1003",
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/melville/MV1003/multibeam/data/version1/MB/",
+     "n_nav_files": 905,
+     "n_nav_fetched": 905,
+     "n_tracks_in_aoi": 212,
+     "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+     "swath_factor": 3.5,
+     "half_swath_m": 5075.0,
+     "depth_used_m": 2900,
+     "coverage_km2": 7.149,
+     "coverage_fraction": 1.0,
+     "tiles_est": 450,
+     "tiles_est_sum_of_grids": 638
+    }
+   ],
+   "nearest_corpus_ref": "discol_so242_1",
+   "nearest_corpus_kind": "manifest_v2_1",
+   "nearest_corpus_km": 4544.1,
+   "releasable": "yes_conditional",
+   "license": "MGDS default CC-BY-NC-SA (ruling R3)",
+   "same_site_as": ""
+  },
+  {
+   "hr_id": "MGDS:31675",
+   "source": "MGDS",
+   "r08_status": "in range",
+   "doi": "10.60521/331675",
+   "title": "Processed Gridded Near-Bottom AUV Bathymetry Data acquired during R/V Atlantic Explorer expedition AE1823 (2018)",
+   "files": [
+    "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV01.grd.gz",
+    "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV02.grd.gz",
+    "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV03.grd.gz",
+    "sentry490_20180823_1510_rnv_tide_equal_1.00x1.00_BV01.grd.gz",
+    "sentry490_20180823_1510_rnv_tide_equal_1.00x1.00_BV03.grd.gz",
+    "sentry491_20180824_1250_rnv_tide_1.00x1.00_BV01.grd.gz",
+    "sentry491_20180824_1250_rnv_tide_1.00x1.00_BV02.grd.gz",
+    "sentry491_20180824_1250_rnv_tide_equal_1.00x1.00_BV01.grd.gz",
+    "sentry491_20180824_1250_rnv_tide_equal_1.00x1.00_BV02.grd.gz",
+    "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV01.grd.gz",
+    "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV02.grd.gz",
+    "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV03.grd.gz",
+    "sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV01.grd.gz",
+    "sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV02.grd.gz",
+    "sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV03.grd.gz",
+    "sentry493_20180826_1037_rnv_tide_1.00x1.00_BV01.grd.gz",
+    "sentry493_20180826_1037_rnv_tide_1.00x1.00_BV02.grd.gz",
+    "sentry493_20180826_1037_rnv_tide_equal_1.00x1.00_BV01.grd.gz",
+    "sentry493_20180826_1037_rnv_tide_equal_1.00x1.00_BV02.grd.gz",
+    "sentry494_20180827_1003_rnv_tide_1.00x1.00_BV01.grd.gz",
+    "sentry494_20180827_1003_rnv_tide_equal_1.00x1.00_BV01.grd.gz",
+    "sentry497_20180830_1148_rnv_tide_1.00x1.00_BV01.grd.gz",
+    "sentry497_20180830_1148_rnv_tide_equal_1.00x1.00_BV01.grd.gz",
+    "sentry498_20180831_1202_rnv_tide_1.00x1.00_BV01.grd.gz",
+    "sentry498_20180831_1202_rnv_tide_equal_1.00x1.00_BV01.grd.gz"
+   ],
+   "n_files": 25,
+   "size_gb": 0.134,
+   "sha256": [
+    "1a9085b3f1e59fc2bba23a77b8760cf76307aa368e81d7d316a2343192a21cc8",
+    "ba356b04f065082ac5d3662945554726dc4b77c5fae57427ceb9115149bbc8d0",
+    "74038dc11147e928d0d82b784e59c623bfdfaaf488863349f143cc084dd77656",
+    "b8e483c3bdfc236efd056fef0e6e36542ea58e464e181e7bc5858590d8ddcbf5",
+    "a087d93c7e144ffd608711b764c79b82c96851e2bc8eead1703069693e32589e",
+    "54e03553b21fe0d2cd01494e4aeda83ea545585c08da27edc7a0febbdc32652b",
+    "36b18ed6b02bcc35048361b4018674aab33bc5ebddf97a2cd4343dc5cd91e6a5",
+    "555f97771b435ad1ede7859c84692c32675a8dc38d0484bd716330f451418315",
+    "5322bd8a73187e10afa1a4757a41b718e1cbe86084cc4a5e211888065ca3385a",
+    "b4d56f7ce85a07217baf29949fd90fe402ce7ebde4d9224310d99965664ea308",
+    "6ca0318d8726136947b5d3c1b57929d641ad2528e412c63737d44bdc7235bdf1",
+    "5749e9db328ab7a4591a872290f81874395da405310ca374600772d2d51338fc",
+    "7b7979083a75ea031f4261eb4b42c6a24e489013f98de81e28def6213efd1248",
+    "cdd4c1503e87caa51ab184ca87917661b6833cc79a97e8b050deebbf083e83c7",
+    "8b9134cb43809be1f0736a6a7d88788630a247ca655de811654c05b555ba19fb",
+    "7e5b4ad1af621f6a66ca9b17b66a361c04f4745791be3ab64575d8d415032784",
+    "95349fae4e6f6d60b8d3bf2d4bb266cb8713ee76b1258a4224679b263ec57be2",
+    "c10cd3ab71e9dde63c144c2b2b0d0f00e4016892376524000cbd079239fc99d3",
+    "2f8254f041c2b32478156feadec5bdb3afc55a1b8ba34900f57e5f20afa010c9",
+    "98b9b14b7845867d33a4acc8aa2e34060748fb50fb8d78e1e2dbbcd2c890033f",
+    "74d698ae0d666147d1b5bfdcaf009b9a458d75a02b05d62f1fcfd7a03c963d33",
+    "31d31881deaa42d669a7ed6f9789017176b01496ed66419d4a966bd8c0183b62",
+    "4f2b1d60a5bb0105d887f11bef45f7f7925e8b3f7fe1e5d960e87d713cd1d5f7",
+    "015696f16f9dc8190fa514acac3de78d18c28619a869b150332e59454a11915a",
+    "54cbbaa47c12261743c2a3ae142ccb24a5507d13c568c44d240c19898a7bc180"
+   ],
+   "grids": [
+    {
+     "width": 3262,
+     "height": 3536,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0665742489273383e-05,
+      9.015839932125209e-06
+     ],
+     "res_x_m": 0.9989,
+     "res_y_m": 1.0019,
+     "res_m": 1.0004,
+     "extent": [
+      -64.588726113,
+      32.705077993,
+      -64.553934461,
+      32.736958003
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV01.grd.gz"
+    },
+    {
+     "width": 3260,
+     "height": 3530,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.066690153374337e-05,
+      9.01687478753718e-06
+     ],
+     "res_x_m": 0.999,
+     "res_y_m": 1.0021,
+     "res_m": 1.0005,
+     "extent": [
+      -64.588708765,
+      32.705077825,
+      -64.553934666,
+      32.736907393
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV02.grd.gz"
+    },
+    {
+     "width": 3262,
+     "height": 3536,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0665742489273383e-05,
+      9.015839932125209e-06
+     ],
+     "res_x_m": 0.9989,
+     "res_y_m": 1.0019,
+     "res_m": 1.0004,
+     "extent": [
+      -64.588726113,
+      32.705077993,
+      -64.553934461,
+      32.736958003
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV03.grd.gz"
+    },
+    {
+     "width": 3262,
+     "height": 2989,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0663830847828611e-05,
+      1.0663532172616102e-05
+     ],
+     "res_x_m": 0.9987,
+     "res_y_m": 1.1851,
+     "res_m": 1.0879,
+     "extent": [
+      -64.588726113,
+      32.705077993,
+      -64.55394069677439,
+      32.73695129066395
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry490_20180823_1510_rnv_tide_equal_1.00x1.00_BV01.grd.gz"
+    },
+    {
+     "width": 3262,
+     "height": 2989,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0663830847828611e-05,
+      1.0663532172616102e-05
+     ],
+     "res_x_m": 0.9987,
+     "res_y_m": 1.1851,
+     "res_m": 1.0879,
+     "extent": [
+      -64.588726113,
+      32.705077993,
+      -64.55394069677439,
+      32.73695129066395
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry490_20180823_1510_rnv_tide_equal_1.00x1.00_BV03.grd.gz"
+    },
+    {
+     "width": 1721,
+     "height": 1728,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0667233004069364e-05,
+      9.013395833335348e-06
+     ],
+     "res_x_m": 0.999,
+     "res_y_m": 1.0017,
+     "res_m": 1.0003,
+     "extent": [
+      -64.581322884,
+      32.714894699,
+      -64.562964576,
+      32.730469847
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry491_20180824_1250_rnv_tide_1.00x1.00_BV01.grd.gz"
+    },
+    {
+     "width": 1721,
+     "height": 1728,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0667233004069364e-05,
+      9.013395833335348e-06
+     ],
+     "res_x_m": 0.999,
+     "res_y_m": 1.0017,
+     "res_m": 1.0003,
+     "extent": [
+      -64.581322884,
+      32.714894699,
+      -64.562964576,
+      32.730469847
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry491_20180824_1250_rnv_tide_1.00x1.00_BV02.grd.gz"
+    },
+    {
+     "width": 1721,
+     "height": 1461,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0661100786651799e-05,
+      1.0659997732751748e-05
+     ],
+     "res_x_m": 0.9984,
+     "res_y_m": 1.1847,
+     "res_m": 1.0876,
+     "extent": [
+      -64.581322884,
+      32.714894699,
+      -64.56297512954617,
+      32.73046895568755
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry491_20180824_1250_rnv_tide_equal_1.00x1.00_BV01.grd.gz"
+    },
+    {
+     "width": 1721,
+     "height": 1461,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0661100786651799e-05,
+      1.0659997732751748e-05
+     ],
+     "res_x_m": 0.9984,
+     "res_y_m": 1.1847,
+     "res_m": 1.0876,
+     "extent": [
+      -64.581322884,
+      32.714894699,
+      -64.56297512954617,
+      32.73046895568755
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry491_20180824_1250_rnv_tide_equal_1.00x1.00_BV02.grd.gz"
+    },
+    {
+     "width": 1936,
+     "height": 1459,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0662098140496773e-05,
+      9.013021932830342e-06
+     ],
+     "res_x_m": 0.9987,
+     "res_y_m": 1.0016,
+     "res_m": 1.0001,
+     "extent": [
+      -64.547078127,
+      32.705085596,
+      -64.526436305,
+      32.718235595
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV01.grd.gz"
+    },
+    {
+     "width": 1939,
+     "height": 1457,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0664619907167382e-05,
+      9.015787234039796e-06
+     ],
+     "res_x_m": 0.9989,
+     "res_y_m": 1.0019,
+     "res_m": 1.0004,
+     "extent": [
+      -64.547092866,
+      32.705088121,
+      -64.526414168,
+      32.718224123
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV02.grd.gz"
+    },
+    {
+     "width": 1938,
+     "height": 1457,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0665925180596451e-05,
+      9.015273164036727e-06
+     ],
+     "res_x_m": 0.999,
+     "res_y_m": 1.0019,
+     "res_m": 1.0005,
+     "extent": [
+      -64.54710555,
+      32.705096192,
+      -64.526434987,
+      32.718231445
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV03.grd.gz"
+    },
+    {
+     "width": 1936,
+     "height": 1233,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.066047791373777e-05,
+      1.0657336768964318e-05
+     ],
+     "res_x_m": 0.9985,
+     "res_y_m": 1.1844,
+     "res_m": 1.0875,
+     "extent": [
+      -64.547078127,
+      32.705085596,
+      -64.52643944175901,
+      32.71822609223614
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV01.grd.gz"
+    },
+    {
+     "width": 1939,
+     "height": 1232,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0660485905600205e-05,
+      1.0657329215609094e-05
+     ],
+     "res_x_m": 0.9985,
+     "res_y_m": 1.1844,
+     "res_m": 1.0875,
+     "extent": [
+      -64.547092866,
+      32.705088121,
+      -64.52642218382904,
+      32.71821795059363
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV02.grd.gz"
+    },
+    {
+     "width": 1938,
+     "height": 1232,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0660483982606856e-05,
+      1.0657330130721237e-05
+     ],
+     "res_x_m": 0.9985,
+     "res_y_m": 1.1844,
+     "res_m": 1.0875,
+     "extent": [
+      -64.54710555,
+      32.705096192,
+      -64.5264455320417,
+      32.71822602272105
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry492_20180825_1029_rnv_tide_equal_1.00x1.00_BV03.grd.gz"
+    },
+    {
+     "width": 1277,
+     "height": 1802,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0666268598280213e-05,
+      9.013935627079883e-06
+     ],
+     "res_x_m": 0.999,
+     "res_y_m": 1.0017,
+     "res_m": 1.0004,
+     "extent": [
+      -64.549939171,
+      32.708588262,
+      -64.536318346,
+      32.724831374
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry493_20180826_1037_rnv_tide_1.00x1.00_BV01.grd.gz"
+    },
+    {
+     "width": 1278,
+     "height": 1802,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0657922535214266e-05,
+      9.013935627079883e-06
+     ],
+     "res_x_m": 0.9982,
+     "res_y_m": 1.0017,
+     "res_m": 1.0,
+     "extent": [
+      -64.549939171,
+      32.708588262,
+      -64.536318346,
+      32.724831374
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry493_20180826_1037_rnv_tide_1.00x1.00_BV02.grd.gz"
+    },
+    {
+     "width": 1277,
+     "height": 1523,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0658235269191177e-05,
+      1.0659584449001278e-05
+     ],
+     "res_x_m": 0.9982,
+     "res_y_m": 1.1846,
+     "res_m": 1.0874,
+     "extent": [
+      -64.549939171,
+      32.708588262,
+      -64.53632860456125,
+      32.72482280911583
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry493_20180826_1037_rnv_tide_equal_1.00x1.00_BV01.grd.gz"
+    },
+    {
+     "width": 1278,
+     "height": 1524,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0658241805071905e-05,
+      1.0659589044584386e-05
+     ],
+     "res_x_m": 0.9982,
+     "res_y_m": 1.1846,
+     "res_m": 1.0874,
+     "extent": [
+      -64.549939171,
+      32.708588262,
+      -64.53631793797312,
+      32.724833475703946
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry493_20180826_1037_rnv_tide_equal_1.00x1.00_BV02.grd.gz"
+    },
+    {
+     "width": 2125,
+     "height": 2817,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0662779764709954e-05,
+      9.014689385869542e-06
+     ],
+     "res_x_m": 0.9987,
+     "res_y_m": 1.0018,
+     "res_m": 1.0003,
+     "extent": [
+      -64.54512814,
+      32.700883158,
+      -64.522469733,
+      32.726277538
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry494_20180827_1003_rnv_tide_1.00x1.00_BV01.grd.gz"
+    },
+    {
+     "width": 2125,
+     "height": 2382,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0661196263145831e-05,
+      1.0661737818424016e-05
+     ],
+     "res_x_m": 0.9986,
+     "res_y_m": 1.1849,
+     "res_m": 1.0877,
+     "extent": [
+      -64.54512814,
+      32.700883158,
+      -64.52247309794082,
+      32.72627941748349
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry494_20180827_1003_rnv_tide_equal_1.00x1.00_BV01.grd.gz"
+    },
+    {
+     "width": 837,
+     "height": 699,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.06544074074044e-05,
+      9.001480686697148e-06
+     ],
+     "res_x_m": 0.998,
+     "res_y_m": 1.0004,
+     "res_m": 0.9992,
+     "extent": [
+      -64.548513281,
+      32.707695834,
+      -64.539595542,
+      32.713987869
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry497_20180830_1148_rnv_tide_1.00x1.00_BV01.grd.gz"
+    },
+    {
+     "width": 837,
+     "height": 591,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0653146780683373e-05,
+      1.064784258840075e-05
+     ],
+     "res_x_m": 0.9978,
+     "res_y_m": 1.1833,
+     "res_m": 1.0866,
+     "extent": [
+      -64.548513281,
+      32.707695834,
+      -64.53959659714457,
+      32.713988708969744
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry497_20180830_1148_rnv_tide_equal_1.00x1.00_BV01.grd.gz"
+    },
+    {
+     "width": 927,
+     "height": 869,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0657326860846767e-05,
+      9.01026582278777e-06
+     ],
+     "res_x_m": 0.9982,
+     "res_y_m": 1.0013,
+     "res_m": 0.9998,
+     "extent": [
+      -64.548604889,
+      32.706215625,
+      -64.538725547,
+      32.714045546
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry498_20180831_1202_rnv_tide_1.00x1.00_BV01.grd.gz"
+    },
+    {
+     "width": 927,
+     "height": 735,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0654299423297403e-05,
+      1.0651293846704334e-05
+     ],
+     "res_x_m": 0.9979,
+     "res_y_m": 1.1837,
+     "res_m": 1.0869,
+     "extent": [
+      -64.548604889,
+      32.706215625,
+      -64.5387283534346,
+      32.714044325977326
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry498_20180831_1202_rnv_tide_equal_1.00x1.00_BV01.grd.gz"
+    }
+   ],
+   "status": "in range",
+   "status_reason": "",
+   "n_raster_files": 25,
+   "n_bathymetry_grids": 25,
+   "companion_files_skipped": [],
+   "resolution_groups": {
+    "1.0": {
+     "n_grids": 13,
+     "valid_km2": 23.576
+    },
+    "1.09": {
+     "n_grids": 12,
+     "valid_km2": 19.295
+    }
+   },
+   "chosen_res_group_m": 1.0,
+   "chosen_grids": [
+    "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV01.grd.gz",
+    "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV02.grd.gz",
+    "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV03.grd.gz",
+    "sentry491_20180824_1250_rnv_tide_1.00x1.00_BV01.grd.gz",
+    "sentry491_20180824_1250_rnv_tide_1.00x1.00_BV02.grd.gz",
+    "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV01.grd.gz",
+    "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV02.grd.gz",
+    "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV03.grd.gz",
+    "sentry493_20180826_1037_rnv_tide_1.00x1.00_BV01.grd.gz",
+    "sentry493_20180826_1037_rnv_tide_1.00x1.00_BV02.grd.gz",
+    "sentry494_20180827_1003_rnv_tide_1.00x1.00_BV01.grd.gz",
+    "sentry497_20180830_1148_rnv_tide_1.00x1.00_BV01.grd.gz",
+    "sentry498_20180831_1202_rnv_tide_1.00x1.00_BV01.grd.gz"
+   ],
+   "hr_res_m": 1.0002,
+   "crs": [
+    "EPSG:4326"
+   ],
+   "extent_4326": [
+    -64.58873,
+    32.70059,
+    -64.5222,
+    32.73696
+   ],
+   "valid_km2_sum_of_grids": 23.576,
+   "local_utm": "EPSG:32620",
+   "hr_footprint_km2": 9.159,
+   "valid_km2": 9.159,
+   "depth_median_100m": 1600,
+   "hr_footprint_file": "reports_post_grl_review/ACQ-R08b/footprints/fp_MGDS-31675.geojson",
+   "lr_cruise": "KN173L02",
+   "lr_sonar": "SeaBeam 2112",
+   "lr_year": "2003",
+   "lr_raw_downloadable": true,
+   "lr_swath_gb": 0.7,
+   "lr_n_swath_files": 22,
+   "lr_beamwidth_deg": 2.0,
+   "lr_beamwidth_source": "documented",
+   "lr_est_m": 55.86,
+   "cells_across_est": 4.58,
+   "ratio_est": 55.85,
+   "ship_coverage": {
+    "cruise": "KN173L02",
+    "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/knorr/KN173L02/multibeam/data/version1/MB/",
+    "n_nav_files": 22,
+    "n_nav_fetched": 22,
+    "n_tracks_in_aoi": 2,
+    "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+    "swath_factor": 3.0,
+    "half_swath_m": 2400.0,
+    "depth_used_m": 1600,
+    "coverage_km2": 8.981,
+    "coverage_fraction": 0.981,
+    "tiles_est": 527,
+    "tiles_est_sum_of_grids": 1389
+   },
+   "tiles_est": 527,
+   "ship_coverage_file": "reports_post_grl_review/ACQ-R08b/footprints/shipcov_MGDS-31675_KN173L02.geojson",
+   "lr_cruises_tried": [
+    {
+     "cruise": "KN173L02",
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/knorr/KN173L02/multibeam/data/version1/MB/",
+     "n_nav_files": 22,
+     "n_nav_fetched": 22,
+     "n_tracks_in_aoi": 2,
+     "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+     "swath_factor": 3.0,
+     "half_swath_m": 2400.0,
+     "depth_used_m": 1600,
+     "coverage_km2": 8.981,
+     "coverage_fraction": 0.981,
+     "tiles_est": 527,
+     "tiles_est_sum_of_grids": 1389
+    }
+   ],
+   "nearest_corpus_ref": "AR26__MGDS_31838",
+   "nearest_corpus_kind": "manifest_v2_1",
+   "nearest_corpus_km": 986.8,
+   "releasable": "yes_conditional",
+   "license": "MGDS default CC-BY-NC-SA (ruling R3)",
+   "same_site_as": ""
+  },
+  {
+   "hr_id": "MGDS:31954",
+   "source": "MGDS",
+   "r08_status": "in range",
+   "doi": "10.60521/331954",
+   "title": "Processed Gridded Near-Bottom AUV Bathymetry Data from the Dorado Outcrop, acquired during R/V Atlantis expedition AT26-09 (2013)",
+   "files": [
+    "sentry213_20131209_1539_tide_1x1.grd.gz",
+    "sentry213_20131209_1539_tide_equal_1x1.grd.gz",
+    "sentry215_20131214_1348_tide_1x1.grd.gz",
+    "sentry215_20131214_1348_tide_equal_1x1.grd.gz",
+    "sentry217_20131218_0538_tide_1x1.grd.gz",
+    "sentry217_20131218_0538_tide_equal_1x1.grd.gz",
+    "sentry218_20131219_0420_tide_1x1.grd.gz",
+    "sentry218_20131219_0420_tide_equal_1x1.grd.gz",
+    "sentry219_20131220_1534_tide_1x1.grd.gz",
+    "sentry219_20131220_1534_tide_equal_1x1.grd.gz"
+   ],
+   "n_files": 10,
+   "size_gb": 0.054,
+   "sha256": [
+    "f346b136897787503e3980c95c89922c566e7be4f7d969a01518e460f55116ae",
+    "40e33a3b7cf8b7733b5ff3dc1bec228c8c55589f80714689e3eafcc17b1685dc",
+    "13852ea3b8259254f31b62429d93210e23569bed14cad36f85b8203f7f4fc663",
+    "88963d20823a4188a4b51dc8e4206c6462bbb1d574c2d7565a11648e60759191",
+    "0f67c46170f68c9ad1e55bbe4adf52b7e60d43f383acd1867184cafcebde7cc1",
+    "dd29bdb38e77864212a328af89616d9f5a090516622e9e5bfdd4f82e776522aa",
+    "02ceeb27428db5377fca75df31f66124d74d8bf969e815b0b9278a27fa94402d",
+    "3b565e24a8a302cb7b29756f5207f94cb677dcfbc4cc9063b01f72840d7d47c8",
+    "0d467fd808f3002ecfddb766ac2ac62b14228c38ff8871e90c962d5faef405b0",
+    "618405669a9cf4d0ae20230cd0f43e6ad98e02da4874fa236471bc0bdb0a05a1"
+   ],
+   "grids": [
+    {
+     "width": 3308,
+     "height": 2787,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      9.095088270858588e-06,
+      9.038710441334399e-06
+     ],
+     "res_x_m": 0.9998,
+     "res_y_m": 1.0045,
+     "res_m": 1.0021,
+     "extent": [
+      -87.112757311,
+      9.070288803,
+      -87.082670759,
+      9.095479689
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry213_20131209_1539_tide_1x1.grd.gz"
+    },
+    {
+     "width": 3308,
+     "height": 2770,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      9.093716855241218e-06,
+      9.093182771028205e-06
+     ],
+     "res_x_m": 0.9996,
+     "res_y_m": 1.0105,
+     "res_m": 1.0051,
+     "extent": [
+      -87.112757311,
+      9.070288803,
+      -87.08267529564286,
+      9.095476919275749
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry213_20131209_1539_tide_equal_1x1.grd.gz"
+    },
+    {
+     "width": 1576,
+     "height": 1766,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      9.09115164974774e-06,
+      9.037117214042888e-06
+     ],
+     "res_x_m": 0.9993,
+     "res_y_m": 1.0043,
+     "res_m": 1.0018,
+     "extent": [
+      -87.104686184,
+      9.07622627,
+      -87.090358529,
+      9.092185819
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry215_20131214_1348_tide_1x1.grd.gz"
+    },
+    {
+     "width": 1576,
+     "height": 1755,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      9.090728135384848e-06,
+      9.09131683536248e-06
+     ],
+     "res_x_m": 0.9993,
+     "res_y_m": 1.0103,
+     "res_m": 1.0048,
+     "extent": [
+      -87.104686184,
+      9.07622627,
+      -87.09035919645864,
+      9.09218153104606
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry215_20131214_1348_tide_equal_1x1.grd.gz"
+    },
+    {
+     "width": 951,
+     "height": 1334,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      9.091788643538524e-06,
+      9.039266116940952e-06
+     ],
+     "res_x_m": 0.9994,
+     "res_y_m": 1.0046,
+     "res_m": 1.002,
+     "extent": [
+      -87.101554711,
+      9.078709022,
+      -87.09290842,
+      9.090767403
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry217_20131218_0538_tide_1x1.grd.gz"
+    },
+    {
+     "width": 951,
+     "height": 1326,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      9.086948238872118e-06,
+      9.089653331825376e-06
+     ],
+     "res_x_m": 0.9989,
+     "res_y_m": 1.0102,
+     "res_m": 1.0045,
+     "extent": [
+      -87.101554711,
+      9.078709022,
+      -87.09291302322484,
+      9.090761902318
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry217_20131218_0538_tide_equal_1x1.grd.gz"
+    },
+    {
+     "width": 1685,
+     "height": 1977,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      9.096196439171027e-06,
+      9.03922458270163e-06
+     ],
+     "res_x_m": 0.9999,
+     "res_y_m": 1.0045,
+     "res_m": 1.0022,
+     "extent": [
+      -87.111473343,
+      9.078453967,
+      -87.096146252,
+      9.096324514
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry218_20131219_0420_tide_1x1.grd.gz"
+    },
+    {
+     "width": 1685,
+     "height": 1965,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      9.091181754750725e-06,
+      9.09195101577645e-06
+     ],
+     "res_x_m": 0.9993,
+     "res_y_m": 1.0104,
+     "res_m": 1.0049,
+     "extent": [
+      -87.111473343,
+      9.078453967,
+      -87.09615470174325,
+      9.096319650746
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry218_20131219_0420_tide_equal_1x1.grd.gz"
+    },
+    {
+     "width": 1499,
+     "height": 1826,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      9.092941961300929e-06,
+      9.041238225630356e-06
+     ],
+     "res_x_m": 0.9995,
+     "res_y_m": 1.0048,
+     "res_m": 1.0021,
+     "extent": [
+      -87.105811275,
+      9.076924549,
+      -87.092180955,
+      9.09343385
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry219_20131220_1534_tide_1x1.grd.gz"
+    },
+    {
+     "width": 1499,
+     "height": 1815,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      9.09045617456178e-06,
+      9.091512710602752e-06
+     ],
+     "res_x_m": 0.9993,
+     "res_y_m": 1.0104,
+     "res_m": 1.0048,
+     "extent": [
+      -87.105811275,
+      9.076924549,
+      -87.09218468119433,
+      9.093425644569743
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry219_20131220_1534_tide_equal_1x1.grd.gz"
+    }
+   ],
+   "status": "in range",
+   "status_reason": "",
+   "n_raster_files": 10,
+   "n_bathymetry_grids": 10,
+   "companion_files_skipped": [],
+   "resolution_groups": {
+    "1.0": {
+     "n_grids": 9,
+     "valid_km2": 12.03
+    },
+    "1.01": {
+     "n_grids": 1,
+     "valid_km2": 4.925
+    }
+   },
+   "chosen_res_group_m": 1.0,
+   "chosen_grids": [
+    "sentry213_20131209_1539_tide_1x1.grd.gz",
+    "sentry215_20131214_1348_tide_1x1.grd.gz",
+    "sentry215_20131214_1348_tide_equal_1x1.grd.gz",
+    "sentry217_20131218_0538_tide_1x1.grd.gz",
+    "sentry217_20131218_0538_tide_equal_1x1.grd.gz",
+    "sentry218_20131219_0420_tide_1x1.grd.gz",
+    "sentry218_20131219_0420_tide_equal_1x1.grd.gz",
+    "sentry219_20131220_1534_tide_1x1.grd.gz",
+    "sentry219_20131220_1534_tide_equal_1x1.grd.gz"
+   ],
+   "hr_res_m": 1.0032,
+   "crs": [
+    "EPSG:4326"
+   ],
+   "extent_4326": [
+    -87.11276,
+    9.07017,
+    -87.08229,
+    9.09632
+   ],
+   "valid_km2_sum_of_grids": 12.03,
+   "local_utm": "EPSG:32616",
+   "hr_footprint_km2": 5.584,
+   "valid_km2": 5.584,
+   "depth_median_100m": 3100,
+   "hr_footprint_file": "reports_post_grl_review/ACQ-R08b/footprints/fp_MGDS-31954.geojson",
+   "lr_cruise": "AT26-24",
+   "lr_sonar": "Kongsberg EM122",
+   "lr_year": "2014",
+   "lr_raw_downloadable": true,
+   "lr_swath_gb": 1.34,
+   "lr_n_swath_files": 70,
+   "lr_beamwidth_deg": 1.0,
+   "lr_beamwidth_source": "documented",
+   "lr_est_m": 54.11,
+   "cells_across_est": 4.75,
+   "ratio_est": 53.94,
+   "ship_coverage": {
+    "cruise": "AT26-24",
+    "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/atlantis/AT26-24/multibeam/data/version1/MB/",
+    "n_nav_files": 70,
+    "n_nav_fetched": 70,
+    "n_tracks_in_aoi": 35,
+    "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+    "swath_factor": 3.5,
+    "half_swath_m": 5425.0,
+    "depth_used_m": 3100,
+    "coverage_km2": 5.584,
+    "coverage_fraction": 1.0,
+    "tiles_est": 331,
+    "tiles_est_sum_of_grids": 700
+   },
+   "tiles_est": 331,
+   "ship_coverage_file": "reports_post_grl_review/ACQ-R08b/footprints/shipcov_MGDS-31954_AT26-24.geojson",
+   "lr_cruises_tried": [
+    {
+     "cruise": "AT26-24",
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/atlantis/AT26-24/multibeam/data/version1/MB/",
+     "n_nav_files": 70,
+     "n_nav_fetched": 70,
+     "n_tracks_in_aoi": 35,
+     "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+     "swath_factor": 3.5,
+     "half_swath_m": 5425.0,
+     "depth_used_m": 3100,
+     "coverage_km2": 5.584,
+     "coverage_fraction": 1.0,
+     "tiles_est": 331,
+     "tiles_est_sum_of_grids": 700
+    }
+   ],
+   "nearest_corpus_ref": "AT37-13__MGDS_31199",
+   "nearest_corpus_kind": "manifest_v2_1",
+   "nearest_corpus_km": 209.2,
+   "releasable": "yes_conditional",
+   "license": "MGDS default CC-BY-NC-SA (ruling R3)",
+   "same_site_as": ""
+  },
+  {
+   "hr_id": "MGDS:30368",
+   "source": "MGDS",
+   "r08_status": "uncertain",
+   "doi": "10.26022/IEDA/330368",
+   "title": "Escanaba Trough (Gorda Ridge) AUV near-bottom processed swath bathymetry gridded data in GMT-compatible netCDF format (2014, 2016)",
+   "files": [
+    "MAUV_NESCA_All_Topo_1m.grd.gz",
+    "MAUV_SESCA_All_Topo_1m.grd.gz"
+   ],
+   "n_files": 2,
+   "size_gb": 0.102,
+   "sha256": [
+    "1a327c56f29bc1a64c223adc9ce55f13247fc9244dd679f8143afb085e9b5045",
+    "6bd254d3027069b35e97593ebbbec3fadeef541de88ed60df4e207f60821662a"
+   ],
+   "grids": [
+    {
+     "width": 6919,
+     "height": 10174,
+     "crs": "OGC:CRS84",
+     "geographic": true,
+     "res_native": [
+      1.1886934546415773e-05,
+      1.1886934546415477e-05
+     ],
+     "res_x_m": 0.9986,
+     "res_y_m": 1.321,
+     "res_m": 1.1485,
+     "extent": [
+      -127.53382077446727,
+      40.94674642153273,
+      -127.45157507434062,
+      41.06768409360796
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "MAUV_NESCA_All_Topo_1m.grd.gz"
+    },
+    {
+     "width": 7479,
+     "height": 19627,
+     "crs": "OGC:CRS84",
+     "geographic": true,
+     "res_native": [
+      1.1851646367278418e-05,
+      1.1851646367278608e-05
+     ],
+     "res_x_m": 0.9986,
+     "res_y_m": 1.3171,
+     "res_m": 1.1468,
+     "extent": [
+      -127.57510506682318,
+      40.69355943617681,
+      -127.48646660364231,
+      40.92617169942739
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "MAUV_SESCA_All_Topo_1m.grd.gz"
+    }
+   ],
+   "status": "in range",
+   "status_reason": "",
+   "n_raster_files": 2,
+   "n_bathymetry_grids": 2,
+   "companion_files_skipped": [],
+   "resolution_groups": {
+    "1.15": {
+     "n_grids": 2,
+     "valid_km2": 79.652
+    }
+   },
+   "chosen_res_group_m": 1.15,
+   "chosen_grids": [
+    "MAUV_NESCA_All_Topo_1m.grd.gz",
+    "MAUV_SESCA_All_Topo_1m.grd.gz"
+   ],
+   "hr_res_m": 1.1477,
+   "crs": [
+    "OGC:CRS84"
+   ],
+   "extent_4326": [
+    -127.57511,
+    40.69307,
+    -127.45118,
+    41.06768
+   ],
+   "valid_km2_sum_of_grids": 79.652,
+   "local_utm": "EPSG:32609",
+   "hr_footprint_km2": 84.435,
+   "valid_km2": 84.435,
+   "depth_median_100m": 3300,
+   "hr_footprint_file": "reports_post_grl_review/ACQ-R08b/footprints/fp_MGDS-30368.geojson",
+   "lr_cruise": "Escanaba",
+   "lr_sonar": "Simrad EM300",
+   "lr_year": "1998",
+   "lr_raw_downloadable": true,
+   "lr_swath_gb": 0.44,
+   "lr_n_swath_files": 32,
+   "lr_beamwidth_deg": 1.0,
+   "lr_beamwidth_source": "documented",
+   "lr_est_m": 57.6,
+   "cells_across_est": 5.1,
+   "ratio_est": 50.19,
+   "ship_coverage": {
+    "cruise": "Escanaba",
+    "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/ocean_alert/Escanaba/multibeam/data/version1/MB/",
+    "n_nav_files": 32,
+    "n_nav_fetched": 32,
+    "n_tracks_in_aoi": 24,
+    "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+    "swath_factor": 3.5,
+    "half_swath_m": 5775.0,
+    "depth_used_m": 3300,
+    "coverage_km2": 84.435,
+    "coverage_fraction": 1.0,
+    "tiles_est": 3918,
+    "tiles_est_sum_of_grids": 3662
+   },
+   "tiles_est": 3918,
+   "ship_coverage_file": "reports_post_grl_review/ACQ-R08b/footprints/shipcov_MGDS-30368_Escanaba.geojson",
+   "lr_cruises_tried": [
+    {
+     "cruise": "Escanaba",
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/ocean_alert/Escanaba/multibeam/data/version1/MB/",
+     "n_nav_files": 32,
+     "n_nav_fetched": 32,
+     "n_tracks_in_aoi": 24,
+     "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+     "swath_factor": 3.5,
+     "half_swath_m": 5775.0,
+     "depth_used_m": 3300,
+     "coverage_km2": 84.435,
+     "coverage_fraction": 1.0,
+     "tiles_est": 3918,
+     "tiles_est_sum_of_grids": 3662
+    }
+   ],
+   "nearest_corpus_ref": "TN299__MGDS_27339",
+   "nearest_corpus_kind": "manifest_v2_1",
+   "nearest_corpus_km": 182.9,
+   "releasable": "yes_conditional",
+   "license": "MGDS default CC-BY-NC-SA (ruling R3)",
+   "same_site_as": ""
+  },
+  {
+   "hr_id": "MGDS:18210",
+   "source": "MGDS",
+   "r08_status": "uncertain",
+   "doi": "10.1594/IEDA/318210",
+   "title": "Processed Near-bottom Grids (NetCDF:GMT format) derived from Multibeam Sonar Data acquired along the Galapagos Spreading Center during the Atlantis expedition AT15-63 (2010)",
+   "files": [
+    "sentry040ppp_1m.grd.gz",
+    "sentry041pp_1m.grd.gz",
+    "sentry042ppp_1m.grd.gz",
+    "sentry043ppp_1m.grd.gz",
+    "sentry046pp_1m.grd.gz",
+    "sentry047pp_1m.grd.gz",
+    "sentry048pp_1m.grd.gz",
+    "sentry049ppp_1m.grd.gz",
+    "sentry050ppp_1m.grd.gz",
+    "sentry051ppB_1m.grd.gz",
+    "sentry051ppA_1m.grd.gz",
+    "sentry055ppA_1m.grd.gz",
+    "sentry055ppB_1m.grd.gz",
+    "sentry058pp_1m.grd.gz",
+    "sentry056p_1m.grd.gz",
+    "sentry057pp_1m.grd.gz",
+    "sentry059pp_1m.grd.gz"
+   ],
+   "n_files": 17,
+   "size_gb": 0.232,
+   "sha256": [
+    "3c2533700d0e3661818dc6520b71025b6b8e9e7e104120189af44de759e96aa2",
+    "edc0b402416771145c0fab261d8fddb9f2d9f292731dbedf34a343bd054e09f8",
+    "b533bda45753b6fce8b11dc8bca29c016db1b677e0ebecd06a251739622d6c9d",
+    "fe1abb46734ea1eb2d428a75f1732e2730fc0274a93c0a2c8b6eafe8ad5a4a81",
+    "bdd83040547616f915caa35e824b85ce196cd2d6aa37d0062f3edad5bfe5560f",
+    "87a64ac91281e0e5d31572edebc500554a7d5972ae36e03cc7d2c874b5774049",
+    "ecbf660fc366cd58863ed7d92ec69707f7aa779df0e7b0fe9c6fe4734e31afda",
+    "9f7681d8c949c4147ceaad5144869e762218085604207c19b76ea6c1890248a4",
+    "9dc3ee93a5ecf04ccfbbde8cc01f81e246740a08d80c52c3ca07f08207f9351b",
+    "523dd3120d4c63c043790e1f13a15d9beb340fe87e9e6f3e0d5ef482007d5581",
+    "88ced89817a2b89037a387ef74dc7965bdf9b9ca0463ab0d8f05c594af9bc333",
+    "dd195101b539886e8a1559111b86fb4817981a85c6aea0b1ac14b33747b273e4",
+    "7a801f2894520599b355015b5e948645a13a35c0ec3bddec885a14826941e693",
+    "373acf9b91ddbd472d1fcf816234890300a0595dd1ea2beb1ad6eab3c2d09e54",
+    "25178ec9b9c58307a795c54b09ecd242abf17eabd9ad06611350a287affd8af4",
+    "793c707503636074bc075c49a8e34c37d2bec2c4384549f0b9edbd17b55dab3f",
+    "fd60938081a509943197b4fe8e32068a215463bd75a8a45af828a507dc2708f3"
+   ],
+   "grids": [
+    {
+     "width": 2247,
+     "height": 1460,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.99245141505784e-06,
+      9.04350575387845e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -94.94590449622571,
+      2.607595478247123,
+      -94.92569845789608,
+      2.620798996647786
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry040ppp_1m.grd.gz"
+    },
+    {
+     "width": 2758,
+     "height": 2068,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.992459602644837e-06,
+      9.043505587765423e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -94.9657044962298,
+      2.605995478247206,
+      -94.94090329264571,
+      2.624697447802705
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry041pp_1m.grd.gz"
+    },
+    {
+     "width": 4304,
+     "height": 1582,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.992496669891385e-06,
+      9.043504835736597e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -94.98540449624834,
+      2.613395478247582,
+      -94.94670079058112,
+      2.6277023028977173
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry042ppp_1m.grd.gz"
+    },
+    {
+     "width": 5038,
+     "height": 1538,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.992439673960039e-06,
+      9.043505992087005e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -94.98870449621982,
+      2.605595478247004,
+      -94.94340058514241,
+      2.6195043904628337
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry043ppp_1m.grd.gz"
+    },
+    {
+     "width": 4071,
+     "height": 2146,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.992529879143233e-06,
+      9.04350416198748e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -95.01310449626493,
+      2.615495478247919,
+      -94.97649590712693,
+      2.6349028381795443
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry046pp_1m.grd.gz"
+    },
+    {
+     "width": 3503,
+     "height": 2400,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.9924460772738e-06,
+      9.0435058621736e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -95.01570449622304,
+      2.6025954782470686,
+      -94.98420395761434,
+      2.6242998923162855
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry047pp_1m.grd.gz"
+    },
+    {
+     "width": 3325,
+     "height": 2676,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.992562789436078e-06,
+      9.043503494311168e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -95.0596044962814,
+      2.617695478248253,
+      -95.02970422500653,
+      2.6418958935990298
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry048pp_1m.grd.gz"
+    },
+    {
+     "width": 3481,
+     "height": 2090,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.992357340470244e-06,
+      9.043507662533201e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -94.83450449617868,
+      2.5914954782461685,
+      -94.80320210027651,
+      2.610396409260863
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry049ppp_1m.grd.gz"
+    },
+    {
+     "width": 3861,
+     "height": 2024,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.989157715922943e-06,
+      9.04357261495178e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -91.94610449457886,
+      2.091795478213693,
+      -91.91139735663768,
+      2.110099669186355
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry050ppp_1m.grd.gz"
+    },
+    {
+     "width": 3772,
+     "height": 1847,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.989134298985303e-06,
+      9.043573090574535e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -91.92070449456715,
+      2.0884954782134546,
+      -91.88679747999137,
+      2.1051989577117456
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry051ppA_1m.grd.gz"
+    },
+    {
+     "width": 2882,
+     "height": 1482,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.989114630007782e-06,
+      9.043573490074819e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -91.89710449455731,
+      2.086695478213255,
+      -91.87119786619363,
+      2.100098054125546
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry051ppB_1m.grd.gz"
+    },
+    {
+     "width": 5173,
+     "height": 1902,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.989092434603003e-06,
+      9.043573940893412e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -91.89240449454621,
+      2.08089547821303,
+      -91.84590391938201,
+      2.098096355848609
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry055ppA_1m.grd.gz"
+    },
+    {
+     "width": 2348,
+     "height": 1891,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.989066025063827e-06,
+      9.043574477311043e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -91.85080449453302,
+      2.0762954782127614,
+      -91.82969816750617,
+      2.0933968775493565
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry055ppB_1m.grd.gz"
+    },
+    {
+     "width": 9534,
+     "height": 2079,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.989221055707522e-06,
+      9.043571328473028e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -92.04670449461052,
+      2.1025954782143352,
+      -91.9610012610654,
+      2.121397063006231
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry056p_1m.grd.gz"
+    },
+    {
+     "width": 8344,
+     "height": 1991,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.98918604867713e-06,
+      9.043572039488957e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -91.94320449459303,
+      2.0968954782139804,
+      -91.86819872620288,
+      2.114901230144603
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry057pp_1m.grd.gz"
+    },
+    {
+     "width": 3037,
+     "height": 2632,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.98919235392171e-06,
+      9.043571911424568e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -91.96660449459618,
+      2.0950954782140445,
+      -91.93930431741732,
+      2.118898159484914
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry058pp_1m.grd.gz"
+    },
+    {
+     "width": 7988,
+     "height": 1958,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      8.989188627695896e-06,
+      9.04357198710704e-06
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.005,
+     "res_m": 1.0025,
+     "extent": [
+      -92.03470449459431,
+      2.0974954782140065,
+      -91.96289885583627,
+      2.1152027921647623
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry059pp_1m.grd.gz"
+    }
+   ],
+   "status": "in range",
+   "status_reason": "",
+   "n_raster_files": 17,
+   "n_bathymetry_grids": 17,
+   "companion_files_skipped": [],
+   "resolution_groups": {
+    "1.0": {
+     "n_grids": 17,
+     "valid_km2": 80.057
+    }
+   },
+   "chosen_res_group_m": 1.0,
+   "chosen_grids": [
+    "sentry040ppp_1m.grd.gz",
+    "sentry041pp_1m.grd.gz",
+    "sentry042ppp_1m.grd.gz",
+    "sentry043ppp_1m.grd.gz",
+    "sentry046pp_1m.grd.gz",
+    "sentry047pp_1m.grd.gz",
+    "sentry048pp_1m.grd.gz",
+    "sentry049ppp_1m.grd.gz",
+    "sentry050ppp_1m.grd.gz",
+    "sentry051ppA_1m.grd.gz",
+    "sentry051ppB_1m.grd.gz",
+    "sentry055ppA_1m.grd.gz",
+    "sentry055ppB_1m.grd.gz",
+    "sentry056p_1m.grd.gz",
+    "sentry057pp_1m.grd.gz",
+    "sentry058pp_1m.grd.gz",
+    "sentry059pp_1m.grd.gz"
+   ],
+   "hr_res_m": 1.0025,
+   "crs": [
+    "EPSG:4326"
+   ],
+   "extent_4326": [
+    -95.0596,
+    2.07621,
+    -91.82968,
+    2.6419
+   ],
+   "valid_km2_sum_of_grids": 80.057,
+   "local_utm": "EPSG:32615",
+   "hr_footprint_km2": 75.786,
+   "valid_km2": 75.786,
+   "depth_median_100m": 1700,
+   "hr_footprint_file": "reports_post_grl_review/ACQ-R08b/footprints/fp_MGDS-18210.geojson",
+   "lr_cruise": "TN188",
+   "lr_sonar": "Simrad EM300",
+   "lr_year": "2005",
+   "lr_raw_downloadable": true,
+   "lr_swath_gb": 3.89,
+   "lr_n_swath_files": 1069,
+   "lr_beamwidth_deg": 1.0,
+   "lr_beamwidth_source": "documented",
+   "lr_est_m": 29.67,
+   "cells_across_est": 8.65,
+   "ratio_est": 29.6,
+   "ship_coverage": {
+    "cruise": "TN188",
+    "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/thomas_g._thompson/TN188/multibeam/data/version1/MB/",
+    "n_nav_files": 1069,
+    "n_nav_fetched": 1069,
+    "n_tracks_in_aoi": 168,
+    "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+    "swath_factor": 3.5,
+    "half_swath_m": 2975.0,
+    "depth_used_m": 1700,
+    "coverage_km2": 64.711,
+    "coverage_fraction": 0.854,
+    "tiles_est": 3917,
+    "tiles_est_sum_of_grids": 4153
+   },
+   "tiles_est": 3917,
+   "ship_coverage_file": "reports_post_grl_review/ACQ-R08b/footprints/shipcov_MGDS-18210_TN188.geojson",
+   "lr_cruises_tried": [
+    {
+     "cruise": "TN188",
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/thomas_g._thompson/TN188/multibeam/data/version1/MB/",
+     "n_nav_files": 1069,
+     "n_nav_fetched": 1069,
+     "n_tracks_in_aoi": 168,
+     "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+     "swath_factor": 3.5,
+     "half_swath_m": 2975.0,
+     "depth_used_m": 1700,
+     "coverage_km2": 64.711,
+     "coverage_fraction": 0.854,
+     "tiles_est": 3917,
+     "tiles_est_sum_of_grids": 4153
+    }
+   ],
+   "nearest_corpus_ref": "AT42-03__MGDS_32007",
+   "nearest_corpus_kind": "lockbox",
+   "nearest_corpus_km": 1028.8,
+   "releasable": "yes_conditional",
+   "license": "MGDS default CC-BY-NC-SA (ruling R3)",
+   "same_site_as": "MGDS:31811"
+  },
+  {
+   "hr_id": "MGDS:31811",
+   "source": "MGDS",
+   "r08_status": "uncertain",
+   "doi": "10.60521/331811",
+   "title": "Processed Gridded Near-Bottom AUV Bathymetry Data from the Galapagos Spreading Center, acquired during R/V Atlantis expedition AT15-63 (2010)",
+   "files": [
+    "sentry039_2x2_post.grd.gz",
+    "sentry040_2x2_post.grd.gz",
+    "sentry041_2x2_post.grd.gz",
+    "sentry042_2x2_post.grd.gz",
+    "sentry046_2x2_post.grd.gz",
+    "sentry047_2x2_post.grd.gz",
+    "sentry048_2x2_post.grd.gz",
+    "sentry049_2x2_post.grd.gz",
+    "sentry050_2x2_post.grd.gz",
+    "sentry051_2x2_post.grd.gz",
+    "sentry055_2x2_post.grd.gz"
+   ],
+   "n_files": 11,
+   "size_gb": 0.031,
+   "sha256": [
+    "6737c06e2eb661decdfcb4af5086438c824725b169f0901c13eb8d37d0727a95",
+    "2f7190fa318428bbdff01b66a11a9b1561daa1d6504980e3e92b486e1908f173",
+    "6b26c5670d0d660ddb1ef9847c4837bf5f27d72c07150e19b74b37c0ba42c8f6",
+    "a7ba79ee44def6019c8757ee793b16bf68246f9dba65c2f09265f4169cd0fb6f",
+    "661a3a524bf3456a1002221e2c1db35432eb007f5086c04c97f221e775abf1e0",
+    "de5535beee6e1cb69bca86f589a47a48d3078fddc4f231c49d00fad8da6a1b4a",
+    "5f62902e86af5b3c3da832ff246eeef301f13f05782ff84a6024d645798f490c",
+    "aebfbdfa8b1b932dfc7240a9ff2b4de08bcbabacdd1b467727b4c5a3c045f72e",
+    "040a9c6970d12cec59fd7a99ba29b113b250bb5a862f96d88a7e944bb673b192",
+    "02e310f895ad17f8edfa24713c1938e4dca64a55c9e3fe290d5d0040c4d7f9a2",
+    "a51ef2878218772f6d21e69137b47547f85315b82a756496cb00208ed8bf6198"
+   ],
+   "grids": [
+    {
+     "width": 1135,
+     "height": 725,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.797356828194652e-05,
+      1.8068965517241533e-05
+     ],
+     "res_x_m": 1.9987,
+     "res_y_m": 2.008,
+     "res_m": 2.0034,
+     "extent": [
+      -94.9457,
+      2.6056,
+      -94.9253,
+      2.6187
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry039_2x2_post.grd.gz"
+    },
+    {
+     "width": 1207,
+     "height": 780,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.7978458989237632e-05,
+      1.807692307692308e-05
+     ],
+     "res_x_m": 1.9993,
+     "res_y_m": 2.0089,
+     "res_m": 2.0041,
+     "extent": [
+      -94.9462,
+      2.6069,
+      -94.9245,
+      2.621
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry040_2x2_post.grd.gz"
+    },
+    {
+     "width": 1463,
+     "height": 1057,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.7976760082017768e-05,
+      1.807000946073784e-05
+     ],
+     "res_x_m": 1.9991,
+     "res_y_m": 2.0082,
+     "res_m": 2.0036,
+     "extent": [
+      -94.9669,
+      2.6058,
+      -94.9406,
+      2.6249
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry041_2x2_post.grd.gz"
+    },
+    {
+     "width": 2247,
+     "height": 830,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.797952825990446e-05,
+      1.8072289156626654e-05
+     ],
+     "res_x_m": 1.9994,
+     "res_y_m": 2.0084,
+     "res_m": 2.0039,
+     "extent": [
+      -94.986,
+      2.613,
+      -94.9456,
+      2.628
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry042_2x2_post.grd.gz"
+    },
+    {
+     "width": 2147,
+     "height": 1167,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.7978574755473876e-05,
+      1.8080548414738748e-05
+     ],
+     "res_x_m": 1.9993,
+     "res_y_m": 2.0093,
+     "res_m": 2.0043,
+     "extent": [
+      -95.0141,
+      2.6146,
+      -94.9755,
+      2.6357
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry046_2x2_post.grd.gz"
+    },
+    {
+     "width": 1846,
+     "height": 1222,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.7984832069343384e-05,
+      1.808510638297873e-05
+     ],
+     "res_x_m": 2.0,
+     "res_y_m": 2.0098,
+     "res_m": 2.0049,
+     "extent": [
+      -95.0168,
+      2.6024,
+      -94.9836,
+      2.6245
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry047_2x2_post.grd.gz"
+    },
+    {
+     "width": 1746,
+     "height": 1366,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.79839633447828e-05,
+      1.8081991215227063e-05
+     ],
+     "res_x_m": 1.9999,
+     "res_y_m": 2.0095,
+     "res_m": 2.0047,
+     "extent": [
+      -95.0606,
+      2.6174,
+      -95.0292,
+      2.6421
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry048_2x2_post.grd.gz"
+    },
+    {
+     "width": 1791,
+     "height": 1079,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.7978782802905145e-05,
+      1.8072289156626366e-05
+     ],
+     "res_x_m": 1.9993,
+     "res_y_m": 2.0084,
+     "res_m": 2.0039,
+     "extent": [
+      -94.8354,
+      2.5912,
+      -94.8032,
+      2.6107
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry049_2x2_post.grd.gz"
+    },
+    {
+     "width": 1986,
+     "height": 1040,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.797583081570564e-05,
+      1.8076923076923222e-05
+     ],
+     "res_x_m": 1.9997,
+     "res_y_m": 2.0089,
+     "res_m": 2.0043,
+     "extent": [
+      -91.9464,
+      2.0915,
+      -91.9107,
+      2.1103
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry050_2x2_post.grd.gz"
+    },
+    {
+     "width": 2793,
+     "height": 1045,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.7973505191551663e-05,
+      1.8086124401913795e-05
+     ],
+     "res_x_m": 1.9995,
+     "res_y_m": 2.0099,
+     "res_m": 2.0047,
+     "extent": [
+      -91.9208,
+      2.0863,
+      -91.8706,
+      2.1052
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry051_2x2_post.grd.gz"
+    },
+    {
+     "width": 3549,
+     "height": 1267,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.7976894899971972e-05,
+      1.8074191002368086e-05
+     ],
+     "res_x_m": 1.9999,
+     "res_y_m": 2.0086,
+     "res_m": 2.0042,
+     "extent": [
+      -91.8925,
+      2.0759,
+      -91.8287,
+      2.0988
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry055_2x2_post.grd.gz"
+    }
+   ],
+   "status": "in range",
+   "status_reason": "",
+   "n_raster_files": 11,
+   "n_bathymetry_grids": 11,
+   "companion_files_skipped": [],
+   "resolution_groups": {
+    "2.0": {
+     "n_grids": 11,
+     "valid_km2": 57.615
+    }
+   },
+   "chosen_res_group_m": 2.0,
+   "chosen_grids": [
+    "sentry039_2x2_post.grd.gz",
+    "sentry040_2x2_post.grd.gz",
+    "sentry041_2x2_post.grd.gz",
+    "sentry042_2x2_post.grd.gz",
+    "sentry046_2x2_post.grd.gz",
+    "sentry047_2x2_post.grd.gz",
+    "sentry048_2x2_post.grd.gz",
+    "sentry049_2x2_post.grd.gz",
+    "sentry050_2x2_post.grd.gz",
+    "sentry051_2x2_post.grd.gz",
+    "sentry055_2x2_post.grd.gz"
+   ],
+   "hr_res_m": 2.0042,
+   "crs": [
+    "EPSG:4326"
+   ],
+   "extent_4326": [
+    -95.0606,
+    2.07576,
+    -91.82913,
+    2.6421
+   ],
+   "valid_km2_sum_of_grids": 57.615,
+   "local_utm": "EPSG:32615",
+   "hr_footprint_km2": 53.798,
+   "valid_km2": 53.798,
+   "depth_median_100m": 2700,
+   "hr_footprint_file": "reports_post_grl_review/ACQ-R08b/footprints/fp_MGDS-31811.geojson",
+   "lr_cruise": "EW0004",
+   "lr_sonar": "Atlas Hydrosweep DS",
+   "lr_year": "2000",
+   "lr_raw_downloadable": true,
+   "lr_swath_gb": 0.18,
+   "lr_n_swath_files": 41,
+   "lr_beamwidth_deg": 2.3,
+   "lr_beamwidth_source": "documented",
+   "lr_est_m": 108.4,
+   "cells_across_est": 4.73,
+   "ratio_est": 54.09,
+   "ship_coverage": {
+    "cruise": "EW0004",
+    "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/maurice_ewing/EW0004/multibeam/data/version1/MB/",
+    "n_nav_files": 41,
+    "n_nav_fetched": 41,
+    "n_tracks_in_aoi": 16,
+    "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+    "swath_factor": 2.0,
+    "half_swath_m": 2700.0,
+    "depth_used_m": 2700,
+    "coverage_km2": 53.798,
+    "coverage_fraction": 1.0,
+    "tiles_est": 797,
+    "tiles_est_sum_of_grids": 794
+   },
+   "tiles_est": 797,
+   "ship_coverage_file": "reports_post_grl_review/ACQ-R08b/footprints/shipcov_MGDS-31811_EW0004.geojson",
+   "lr_cruises_tried": [
+    {
+     "cruise": "EW0004",
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/maurice_ewing/EW0004/multibeam/data/version1/MB/",
+     "n_nav_files": 41,
+     "n_nav_fetched": 41,
+     "n_tracks_in_aoi": 16,
+     "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+     "swath_factor": 2.0,
+     "half_swath_m": 2700.0,
+     "depth_used_m": 2700,
+     "coverage_km2": 53.798,
+     "coverage_fraction": 1.0,
+     "tiles_est": 797,
+     "tiles_est_sum_of_grids": 794
+    }
+   ],
+   "nearest_corpus_ref": "AT42-03__MGDS_32007",
+   "nearest_corpus_kind": "lockbox",
+   "nearest_corpus_km": 1028.7,
+   "releasable": "yes_conditional",
+   "license": "MGDS default CC-BY-NC-SA (ruling R3)",
+   "same_site_as": "MGDS:18210"
+  },
+  {
+   "hr_id": "MGDS:24756",
+   "source": "MGDS",
+   "r08_status": "uncertain",
+   "doi": "10.1594/IEDA/324756",
+   "title": "High-resolution (1m) bathymetric data from Monterey Canyon, offshore California",
+   "files": [
+    "Topo1m_CCEDeep_20151105_1106_UTM.grd.gz",
+    "Topo1m_CCEDeep_20151202_UTM.grd.gz",
+    "Topo1m_CCEDeep_20160322_UTM.grd.gz",
+    "Topo1m_CCEDeep_20160418_UTM.grd.gz",
+    "Topo1m_CCEDeep_20161206_UTM.grd.gz",
+    "Topo1m_CCEDeep_20170323_UTM.grd.gz",
+    "Topo1m_CCEShallow_20151104_UTM.grd.gz",
+    "Topo1m_CCEShallow_20151201_UTM.grd.gz",
+    "Topo1m_CCEShallow_20160128_UTM.grd.gz",
+    "Topo1m_CCEShallow_20160321_UTM.grd.gz",
+    "Topo1m_CCEShallow_20161207_UTM.grd.gz",
+    "Topo1m_CCEShallow_20170221_UTM.grd.gz",
+    "TopoDiff1m_CCEDeep_20160322_20151202_UTM.grd.gz",
+    "TopoDiff1m_CCEDeep_20161206_20160418_UTM.grd.gz",
+    "TopoDiff1m_CCEDeep_20170323_20151105_UTM.grd.gz",
+    "TopoDiff1m_CCEShallow_20151201_20151104_UTM.grd.gz",
+    "TopoDiff1m_CCEShallow_20160128_20151201_UTM.grd.gz",
+    "TopoDiff1m_CCEShallow_20160321_20160128_UTM.grd.gz",
+    "TopoDiff1m_CCEShallow_20161207_20160321_UTM.grd.gz",
+    "TopoDiff1m_CCEShallow_20170221_20151104_UTM.grd.gz",
+    "TopoDiff1m_CCEShallow_20170221_20161207_UTM.grd.gz"
+   ],
+   "n_files": 21,
+   "size_gb": 0.444,
+   "sha256": [
+    "d2da1ad0bc1d6f5090e52f71c5fb515130de97bca813a67f2ff14ab4b42c4eee",
+    "6ac87f8da1214fd7c3ddb95d255543afee22a6ab8535915cb148ab5b1978084f",
+    "fb69c44e486304402ec90c16fd429e0b160804c8f0ef181edf5a9ea5cf2b549a",
+    "31ce7277066030acdcaa0fb038430852b44b606bf32ad612cd519553f4184f3f",
+    "ff4c487d2033cf4d18167f626e08f6a874d9ac15a940fde41b7d75aba6e22487",
+    "06df030a1dc1a006cbe1bc6404513b11807a04d598c81ccc9bb0097cc8a24a4c",
+    "9ba1aa55657da01849fa382f291d903d2f177b483b76f04a34ec5441e9e75567",
+    "557dc34bf63c0492d89a77d44c1b0d7b0482ff33ea670186aabf9eeedab33198",
+    "de3096b9966a720afce1812150f904e0ff12b55a263d428daca7fbf661cf794a",
+    "15f2c442ef0c0adb653ca6ca461a9f86a0e817ff9f2948079a31b5dd265dc3bf",
+    "f99f12f9fc5e11ede029d789c9c562d2d4d816ac98fe3bd8dc3a072a2c0d6cce",
+    "40a681f264823dda28cae937320b2e6ab2f9bffcdebac5333a4019c4cabfb7ef",
+    "3a9fe74ce9e048a868d390c69a5cab436147a2ab61063f53b6952756202edfa9",
+    "3d189cac3e34fb2344e7fa960b9aab0377b97ddc8caf509b585a552dc779ffb5",
+    "432b39d9c43e29680218922f7817e875ff45560e4532c6f9df34c77089278d8e",
+    "315620fb6ba2d39075d180fac1b8c3a8663d37519d0c94191a0df5660581f3fa",
+    "2762b43f5f73a7f6c8c59d6eb0ae24c576205e663904d7fac07519e31f28205b",
+    "4c82d671259fdc56defc267cab0de225c13edb9bcfc168aaaa93b98b7ef3c1d9",
+    "56ff8fbb23e3c809388e11d0f2aa4bc3f29c0712d7df0633088a2f77adb2f4bd",
+    "25139a13bf42b7a2e037a9f45a48b0bb46e66d5cce5309abb9aa0bd74539dfcd",
+    "23e738c4f2f8390b71e3b0d9fdffd3ada75e36784a80a60df769343716f5af6e"
+   ],
+   "grids": [
+    {
+     "width": 8937,
+     "height": 4585,
+     "crs": "EPSG:32610",
+     "geographic": false,
+     "res_native": [
+      1.0,
+      1.0
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.0,
+     "res_m": 1.0,
+     "extent": [
+      579839.9740542828,
+      4060862.5664167223,
+      588776.9740542828,
+      4065447.5664167223
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "Topo1m_CCEDeep_20151105_1106_UTM.grd.gz"
+    },
+    {
+     "width": 8937,
+     "height": 4585,
+     "crs": "EPSG:32610",
+     "geographic": false,
+     "res_native": [
+      1.0,
+      1.0
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.0,
+     "res_m": 1.0,
+     "extent": [
+      579839.9740542828,
+      4060862.5664167223,
+      588776.9740542828,
+      4065447.5664167223
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "Topo1m_CCEDeep_20151202_UTM.grd.gz"
+    },
+    {
+     "width": 8937,
+     "height": 4585,
+     "crs": "EPSG:32610",
+     "geographic": false,
+     "res_native": [
+      1.0,
+      1.0
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.0,
+     "res_m": 1.0,
+     "extent": [
+      579839.9740542828,
+      4060862.5664167223,
+      588776.9740542828,
+      4065447.5664167223
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "Topo1m_CCEDeep_20160322_UTM.grd.gz"
+    },
+    {
+     "width": 8937,
+     "height": 4585,
+     "crs": "EPSG:32610",
+     "geographic": false,
+     "res_native": [
+      1.0,
+      1.0
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.0,
+     "res_m": 1.0,
+     "extent": [
+      579839.9740542828,
+      4060862.5664167223,
+      588776.9740542828,
+      4065447.5664167223
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "Topo1m_CCEDeep_20160418_UTM.grd.gz"
+    },
+    {
+     "width": 8937,
+     "height": 4585,
+     "crs": "EPSG:32610",
+     "geographic": false,
+     "res_native": [
+      1.0,
+      1.0
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.0,
+     "res_m": 1.0,
+     "extent": [
+      579839.9740542828,
+      4060862.5664167223,
+      588776.9740542828,
+      4065447.5664167223
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "Topo1m_CCEDeep_20161206_UTM.grd.gz"
+    },
+    {
+     "width": 8937,
+     "height": 4585,
+     "crs": "EPSG:32610",
+     "geographic": false,
+     "res_native": [
+      1.0,
+      1.0
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.0,
+     "res_m": 1.0,
+     "extent": [
+      579839.9740542828,
+      4060862.5664167223,
+      588776.9740542828,
+      4065447.5664167223
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "Topo1m_CCEDeep_20170323_UTM.grd.gz"
+    },
+    {
+     "width": 8414,
+     "height": 2703,
+     "crs": "EPSG:32610",
+     "geographic": false,
+     "res_native": [
+      1.0,
+      1.0
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.0,
+     "res_m": 1.0,
+     "extent": [
+      597162.4988442904,
+      4071435.1283873213,
+      605576.4988442904,
+      4074138.1283873213
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "Topo1m_CCEShallow_20151104_UTM.grd.gz"
+    },
+    {
+     "width": 8414,
+     "height": 2703,
+     "crs": "EPSG:32610",
+     "geographic": false,
+     "res_native": [
+      1.0,
+      1.0
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.0,
+     "res_m": 1.0,
+     "extent": [
+      597162.4988442904,
+      4071435.1283873213,
+      605576.4988442904,
+      4074138.1283873213
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "Topo1m_CCEShallow_20151201_UTM.grd.gz"
+    },
+    {
+     "width": 8414,
+     "height": 2703,
+     "crs": "EPSG:32610",
+     "geographic": false,
+     "res_native": [
+      1.0,
+      1.0
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.0,
+     "res_m": 1.0,
+     "extent": [
+      597162.4988442904,
+      4071435.1283873213,
+      605576.4988442904,
+      4074138.1283873213
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "Topo1m_CCEShallow_20160128_UTM.grd.gz"
+    },
+    {
+     "width": 8414,
+     "height": 2703,
+     "crs": "EPSG:32610",
+     "geographic": false,
+     "res_native": [
+      1.0,
+      1.0
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.0,
+     "res_m": 1.0,
+     "extent": [
+      597162.4988442904,
+      4071435.1283873213,
+      605576.4988442904,
+      4074138.1283873213
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "Topo1m_CCEShallow_20160321_UTM.grd.gz"
+    },
+    {
+     "width": 8414,
+     "height": 2703,
+     "crs": "EPSG:32610",
+     "geographic": false,
+     "res_native": [
+      1.0,
+      1.0
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.0,
+     "res_m": 1.0,
+     "extent": [
+      597162.4988442904,
+      4071435.1283873213,
+      605576.4988442904,
+      4074138.1283873213
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "Topo1m_CCEShallow_20161207_UTM.grd.gz"
+    },
+    {
+     "width": 8414,
+     "height": 2703,
+     "crs": "EPSG:32610",
+     "geographic": false,
+     "res_native": [
+      1.0,
+      1.0
+     ],
+     "res_x_m": 1.0,
+     "res_y_m": 1.0,
+     "res_m": 1.0,
+     "extent": [
+      597162.4988442904,
+      4071435.1283873213,
+      605576.4988442904,
+      4074138.1283873213
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "Topo1m_CCEShallow_20170221_UTM.grd.gz"
+    }
+   ],
+   "status": "in range",
+   "status_reason": "",
+   "n_raster_files": 21,
+   "n_bathymetry_grids": 12,
+   "companion_files_skipped": [
+    "TopoDiff1m_CCEDeep_20160322_20151202_UTM.grd.gz",
+    "TopoDiff1m_CCEDeep_20161206_20160418_UTM.grd.gz",
+    "TopoDiff1m_CCEDeep_20170323_20151105_UTM.grd.gz",
+    "TopoDiff1m_CCEShallow_20151201_20151104_UTM.grd.gz",
+    "TopoDiff1m_CCEShallow_20160128_20151201_UTM.grd.gz",
+    "TopoDiff1m_CCEShallow_20160321_20160128_UTM.grd.gz",
+    "TopoDiff1m_CCEShallow_20161207_20160321_UTM.grd.gz",
+    "TopoDiff1m_CCEShallow_20170221_20151104_UTM.grd.gz",
+    "TopoDiff1m_CCEShallow_20170221_20161207_UTM.grd.gz"
+   ],
+   "resolution_groups": {
+    "1.0": {
+     "n_grids": 12,
+     "valid_km2": 125.598
+    }
+   },
+   "chosen_res_group_m": 1.0,
+   "chosen_grids": [
+    "Topo1m_CCEDeep_20151105_1106_UTM.grd.gz",
+    "Topo1m_CCEDeep_20151202_UTM.grd.gz",
+    "Topo1m_CCEDeep_20160322_UTM.grd.gz",
+    "Topo1m_CCEDeep_20160418_UTM.grd.gz",
+    "Topo1m_CCEDeep_20161206_UTM.grd.gz",
+    "Topo1m_CCEDeep_20170323_UTM.grd.gz",
+    "Topo1m_CCEShallow_20151104_UTM.grd.gz",
+    "Topo1m_CCEShallow_20151201_UTM.grd.gz",
+    "Topo1m_CCEShallow_20160128_UTM.grd.gz",
+    "Topo1m_CCEShallow_20160321_UTM.grd.gz",
+    "Topo1m_CCEShallow_20161207_UTM.grd.gz",
+    "Topo1m_CCEShallow_20170221_UTM.grd.gz"
+   ],
+   "hr_res_m": 1.0,
+   "crs": [
+    "EPSG:32610"
+   ],
+   "extent_4326": [
+    -122.10612,
+    36.68939,
+    -121.81673,
+    36.80763
+   ],
+   "valid_km2_sum_of_grids": 125.598,
+   "local_utm": "EPSG:32610",
+   "hr_footprint_km2": 27.021,
+   "valid_km2": 27.021,
+   "depth_median_100m": 1400,
+   "hr_footprint_file": "reports_post_grl_review/ACQ-R08b/footprints/fp_MGDS-24756.geojson",
+   "lr_cruise": "Monterey",
+   "lr_sonar": "Simrad EM300",
+   "lr_year": "1998",
+   "lr_raw_downloadable": true,
+   "lr_swath_gb": 9.33,
+   "lr_n_swath_files": 577,
+   "lr_beamwidth_deg": 1.0,
+   "lr_beamwidth_source": "documented",
+   "lr_est_m": 24.44,
+   "cells_across_est": 10.47,
+   "ratio_est": 24.44,
+   "ship_coverage": {
+    "cruise": "Monterey",
+    "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/ocean_alert/Monterey/multibeam/data/version1/MB/",
+    "n_nav_files": 577,
+    "n_nav_fetched": 577,
+    "n_tracks_in_aoi": 238,
+    "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+    "swath_factor": 3.5,
+    "half_swath_m": 2450.0,
+    "depth_used_m": 1400,
+    "coverage_km2": 27.021,
+    "coverage_fraction": 1.0,
+    "tiles_est": 1611,
+    "tiles_est_sum_of_grids": 7645
+   },
+   "tiles_est": 1611,
+   "ship_coverage_file": "reports_post_grl_review/ACQ-R08b/footprints/shipcov_MGDS-24756_Monterey.geojson",
+   "lr_cruises_tried": [
+    {
+     "cruise": "Monterey",
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/ocean_alert/Monterey/multibeam/data/version1/MB/",
+     "n_nav_files": 577,
+     "n_nav_fetched": 577,
+     "n_tracks_in_aoi": 238,
+     "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+     "swath_factor": 3.5,
+     "half_swath_m": 2450.0,
+     "depth_used_m": 1400,
+     "coverage_km2": 27.021,
+     "coverage_fraction": 1.0,
+     "tiles_est": 1611,
+     "tiles_est_sum_of_grids": 7645
+    }
+   ],
+   "nearest_corpus_ref": "cal_dig_morro_bay__201804_LuciaChica2m",
+   "nearest_corpus_kind": "manifest_v2_1",
+   "nearest_corpus_km": 106.1,
+   "releasable": "yes_conditional",
+   "license": "MGDS default CC-BY-NC-SA (ruling R3)",
+   "same_site_as": ""
+  },
+  {
+   "hr_id": "MGDS:22436",
+   "source": "MGDS",
+   "r08_status": "uncertain",
+   "doi": "10.1594/IEDA/322436",
+   "title": "Processed Sentry AUV bathymetry data from the Mid-Atlantic Ridge at 16.5N, Knorr cruise KN210-05 (2013, chief scientist Deborah Smith).",
+   "files": [
+    "sentry179_renav_tide.grd.gz",
+    "sentry181_adjusted2_interp.grd.gz",
+    "sentry182_adjusted2.grd.gz",
+    "sentry183_adjusted2.grd.gz",
+    "sentry184_adjusted2.grd.gz",
+    "sentry_area1_v4.grd.gz",
+    "sentry_area2_v2.grd.gz"
+   ],
+   "n_files": 7,
+   "size_gb": 0.083,
+   "sha256": [
+    "700f74af04abdfb69fbfdf690cd1ee6bf34b78b88c1dc061cf6e865b695ec635",
+    "83a18a1ef47472b74584028bf1b5ae757c891124b26e059df0bb974dfe0834d1",
+    "42a4173a4cf339cfed6803450b3739732a9fd08ce2d22915997ba375349316b9",
+    "316523c68f1305f1ea50eef542bc6a5c80bb862ed83a1514c60ee17474ca4db3",
+    "0fcbbab80968e8a8e30cbe7c9806533ee913aaf5296206f9b4deda61d2ddb043",
+    "290061f159b98597c63adcad0a62478815c2256e82d1448dc7a249441554d637",
+    "69e57b9515db9792291adcecff6888ec7fd00827f834c69c0c1f5654e70c0dc5"
+   ],
+   "grids": [
+    {
+     "width": 2969,
+     "height": 2285,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.8726575951500004e-05,
+      1.8065538730854073e-05
+     ],
+     "res_x_m": 1.9991,
+     "res_y_m": 2.0077,
+     "res_m": 2.0034,
+     "extent": [
+      -46.621823335,
+      16.45194131,
+      -46.566224131,
+      16.493221066
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry179_renav_tide.grd.gz"
+    },
+    {
+     "width": 2240,
+     "height": 1414,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.874143392857075e-05,
+      1.8062343705800238e-05
+     ],
+     "res_x_m": 1.9993,
+     "res_y_m": 2.0073,
+     "res_m": 2.0033,
+     "extent": [
+      -46.721598473,
+      16.593920029,
+      -46.679617661,
+      16.619460183
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry182_adjusted2.grd.gz"
+    },
+    {
+     "width": 2078,
+     "height": 1129,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.872306207892272e-05,
+      1.8062291408325697e-05
+     ],
+     "res_x_m": 1.9986,
+     "res_y_m": 2.0073,
+     "res_m": 2.0029,
+     "extent": [
+      -46.708036666,
+      16.474776071,
+      -46.669130143,
+      16.495168398
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry183_adjusted2.grd.gz"
+    },
+    {
+     "width": 2074,
+     "height": 1014,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.8736240597879793e-05,
+      1.8061758382644944e-05
+     ],
+     "res_x_m": 1.9988,
+     "res_y_m": 2.0072,
+     "res_m": 2.003,
+     "extent": [
+      -46.571338154,
+      16.588818082,
+      -46.532479191,
+      16.607132705
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry184_adjusted2.grd.gz"
+    },
+    {
+     "width": 6393,
+     "height": 3583,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.8721511027687014e-05,
+      1.8070663689645086e-05
+     ],
+     "res_x_m": 1.9992,
+     "res_y_m": 2.0082,
+     "res_m": 2.0037,
+     "extent": [
+      -46.72054562,
+      16.375738364,
+      -46.600859,
+      16.440485552
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry_area1_v4.grd.gz"
+    },
+    {
+     "width": 7245,
+     "height": 1903,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.8751495652174005e-05,
+      1.807100840777767e-05
+     ],
+     "res_x_m": 1.9992,
+     "res_y_m": 2.0083,
+     "res_m": 2.0037,
+     "extent": [
+      -46.583699403,
+      16.700655671,
+      -46.447844817,
+      16.7350448
+     ],
+     "nodata": -9999.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "sentry_area2_v2.grd.gz"
+    }
+   ],
+   "status": "in range",
+   "status_reason": "",
+   "n_raster_files": 7,
+   "n_bathymetry_grids": 6,
+   "companion_files_skipped": [
+    "sentry181_adjusted2_interp.grd.gz"
+   ],
+   "resolution_groups": {
+    "2.0": {
+     "n_grids": 6,
+     "valid_km2": 84.692
+    }
+   },
+   "chosen_res_group_m": 2.0,
+   "chosen_grids": [
+    "sentry179_renav_tide.grd.gz",
+    "sentry182_adjusted2.grd.gz",
+    "sentry183_adjusted2.grd.gz",
+    "sentry184_adjusted2.grd.gz",
+    "sentry_area1_v4.grd.gz",
+    "sentry_area2_v2.grd.gz"
+   ],
+   "hr_res_m": 2.0033,
+   "crs": [
+    "EPSG:4326"
+   ],
+   "extent_4326": [
+    -46.7216,
+    16.37543,
+    -46.44775,
+    16.73504
+   ],
+   "valid_km2_sum_of_grids": 84.692,
+   "local_utm": "EPSG:32623",
+   "hr_footprint_km2": 90.606,
+   "valid_km2": 90.606,
+   "depth_median_100m": 3400,
+   "hr_footprint_file": "reports_post_grl_review/ACQ-R08b/footprints/fp_MGDS-22436.geojson",
+   "lr_cruise": "KN161L04",
+   "lr_sonar": "SeaBeam 2112",
+   "lr_year": "2000",
+   "lr_raw_downloadable": true,
+   "lr_swath_gb": 1.24,
+   "lr_n_swath_files": 627,
+   "lr_beamwidth_deg": 2.0,
+   "lr_beamwidth_source": "documented",
+   "lr_est_m": 118.69,
+   "cells_across_est": 4.32,
+   "ratio_est": 59.25,
+   "ship_coverage": {
+    "cruise": "KN161L04",
+    "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/knorr/KN161L04/multibeam/data/version1/MB/",
+    "n_nav_files": 627,
+    "n_nav_fetched": 627,
+    "n_tracks_in_aoi": 37,
+    "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+    "swath_factor": 3.0,
+    "half_swath_m": 5100.0,
+    "depth_used_m": 3400,
+    "coverage_km2": 90.606,
+    "coverage_fraction": 1.0,
+    "tiles_est": 1351,
+    "tiles_est_sum_of_grids": 1184
+   },
+   "tiles_est": 1351,
+   "ship_coverage_file": "reports_post_grl_review/ACQ-R08b/footprints/shipcov_MGDS-22436_KN161L04.geojson",
+   "lr_cruises_tried": [
+    {
+     "cruise": "KN161L04",
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/knorr/KN161L04/multibeam/data/version1/MB/",
+     "n_nav_files": 627,
+     "n_nav_fetched": 627,
+     "n_tracks_in_aoi": 37,
+     "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+     "swath_factor": 3.0,
+     "half_swath_m": 5100.0,
+     "depth_used_m": 3400,
+     "coverage_km2": 90.606,
+     "coverage_fraction": 1.0,
+     "tiles_est": 1351,
+     "tiles_est_sum_of_grids": 1184
+    }
+   ],
+   "nearest_corpus_ref": "MGDS:30198",
+   "nearest_corpus_kind": "rejected_sept",
+   "nearest_corpus_km": 301.7,
+   "releasable": "yes_conditional",
+   "license": "MGDS default CC-BY-NC-SA (ruling R3)",
+   "same_site_as": ""
+  },
+  {
+   "hr_id": "MGDS:21415",
+   "source": "MGDS",
+   "r08_status": "uncertain",
+   "doi": "10.1594/IEDA/321415",
+   "title": "Processed Near-bottom Bathymetry, Acoustic Backscatter, and Sidescan Grids (NetCDF:GMT format) derived from Sidescan Sonar and Multibeam Sonar Data from the La Jolla Canyon acquired during the Zephyr expedition ZPR0803 (2008)",
+   "files": [
+    "LaJollaMBTopo_m1.grd.gz",
+    "ZAmpC_m1.grd.gz",
+    "ZMbssC_m1.grd.gz",
+    "ZSsCF_m1.grd.gz",
+    "ZTopo1mInt_m1.grd.gz",
+    "ZTopo_m1.grd.gz",
+    "LaJollaCanyonTopo1m_m2.grd.gz",
+    "LaJollaMBTopo_m2.grd.gz",
+    "ZAmpC_m2.grd.gz",
+    "ZMbssC_m2.grd.gz",
+    "ZTopo1mInt_m2.grd.gz",
+    "ZTopo_m2.grd.gz"
+   ],
+   "n_files": 12,
+   "size_gb": 0.437,
+   "sha256": [
+    "c6a9547fed76fae8f649ef54c1d7e39c7c49f1e06c5307b7864fd3e60f2b1362",
+    "f0265f804e28592ea2ddb5a563ce56305f0315ff3a2fc9e14650893cb8fb4c70",
+    "1ecc6c0440a4f394b21565360dddae35f4c8b2052d88ca9bdaee70616414650c",
+    "b7adbd57420e40cc2e7c6e8bfe2f326e7628f8fe5feee75671ca5582563d2b88",
+    "e89a21bcae22181c575f11c7c4edcf8e15b81bc02db80f75e2de69e8784a0c06",
+    "f39af31c1a643ecd10c56190a034c672c8e9823c0bd1c12465a11004c2bae465",
+    "02e6aa9ad130beff2cbbb6932e65b12e50488b886f7e4fd81c54b8197d8efc44",
+    "70d5bee7d63970cc2dbfede8617769052a3a1daf48f1549d2f6f0e58cc825381",
+    "d4f54e3acbb48bfe199c52d6c4a542bc0286cc14de8d74a121e87a7dfafc7b25",
+    "528ef8a9fb5e65ab0c954af1a088f48376cab9ae4c645d105ad6bace2cc16f72",
+    "ddbd89fc102116abf60648fa012fddd2cc421f1e45fdfe3f73fc79a625e3d68a",
+    "808057f8ede170794d20980c139c0c3a40c40a92cefbad3a544575043d3a379a"
+   ],
+   "grids": [
+    {
+     "width": 14901,
+     "height": 8378,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0688352751677467e-05,
+      9.017984242568153e-06
+     ],
+     "res_x_m": 0.999,
+     "res_y_m": 1.0022,
+     "res_m": 1.0006,
+     "extent": [
+      -117.44527075717637,
+      32.85833044200788,
+      -117.28600361282363,
+      32.93388311399212
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "LaJollaCanyonTopo1m_m2.grd.gz"
+    },
+    {
+     "width": 2017,
+     "height": 2411,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      0.0001602336309523811,
+      0.00013531120331950367
+     ],
+     "res_x_m": 14.9923,
+     "res_y_m": 15.0374,
+     "res_m": 15.0148,
+     "extent": [
+      -117.56514611681548,
+      32.64335834439834,
+      -117.24195488318453,
+      32.96959365560166
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "LaJollaMBTopo_m1.grd.gz"
+    },
+    {
+     "width": 2017,
+     "height": 2411,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      0.0001602336309523811,
+      0.00013531120331950367
+     ],
+     "res_x_m": 14.9923,
+     "res_y_m": 15.0374,
+     "res_m": 15.0148,
+     "extent": [
+      -117.56514611681548,
+      32.64335834439834,
+      -117.24195488318453,
+      32.96959365560166
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "LaJollaMBTopo_m2.grd.gz"
+    },
+    {
+     "width": 10132,
+     "height": 7072,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0688032910355088e-05,
+      1.0688032910355222e-05
+     ],
+     "res_x_m": 0.999,
+     "res_y_m": 1.1878,
+     "res_m": 1.0893,
+     "extent": [
+      -117.44525684901646,
+      32.85828359698355,
+      -117.33696569956874,
+      32.93386936572558
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "ZTopo_m1.grd.gz"
+    },
+    {
+     "width": 10863,
+     "height": 4398,
+     "crs": "EPSG:4326",
+     "geographic": true,
+     "res_native": [
+      1.0688586376911345e-05,
+      1.068858637691161e-05
+     ],
+     "res_x_m": 0.999,
+     "res_y_m": 1.1878,
+     "res_m": 1.0893,
+     "extent": [
+      -117.40212035229318,
+      32.87717881070681,
+      -117.2860102384808,
+      32.92418721359247
+     ],
+     "nodata": NaN,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "ZTopo_m2.grd.gz"
+    }
+   ],
+   "status": "in range",
+   "status_reason": "",
+   "n_raster_files": 12,
+   "n_bathymetry_grids": 5,
+   "companion_files_skipped": [
+    "ZAmpC_m1.grd.gz",
+    "ZAmpC_m2.grd.gz",
+    "ZMbssC_m1.grd.gz",
+    "ZMbssC_m2.grd.gz",
+    "ZSsCF_m1.grd.gz",
+    "ZTopo1mInt_m1.grd.gz",
+    "ZTopo1mInt_m2.grd.gz"
+   ],
+   "resolution_groups": {
+    "1.0": {
+     "n_grids": 1,
+     "valid_km2": 22.556
+    },
+    "15.01": {
+     "n_grids": 2,
+     "valid_km2": 2188.503
+    },
+    "1.09": {
+     "n_grids": 2,
+     "valid_km2": 22.698
+    }
+   },
+   "chosen_res_group_m": 1.0,
+   "chosen_grids": [
+    "LaJollaCanyonTopo1m_m2.grd.gz"
+   ],
+   "hr_res_m": 1.0006,
+   "crs": [
+    "EPSG:4326"
+   ],
+   "extent_4326": [
+    -117.44474,
+    32.85813,
+    -117.28548,
+    32.93388
+   ],
+   "valid_km2_sum_of_grids": 22.556,
+   "local_utm": "EPSG:32611",
+   "hr_footprint_km2": 24.373,
+   "valid_km2": 24.373,
+   "depth_median_100m": 600,
+   "hr_footprint_file": "reports_post_grl_review/ACQ-R08b/footprints/fp_MGDS-21415.geojson",
+   "lr_cruise": "MV1209",
+   "lr_sonar": "Kongsberg EM122",
+   "lr_year": "2012",
+   "lr_raw_downloadable": true,
+   "lr_swath_gb": 6.64,
+   "lr_n_swath_files": 268,
+   "lr_beamwidth_deg": 1.0,
+   "lr_beamwidth_source": "documented",
+   "lr_est_m": 10.47,
+   "cells_across_est": 24.47,
+   "ratio_est": 10.46,
+   "ship_coverage": {
+    "cruise": "MV1209",
+    "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/melville/MV1209/multibeam/data/version1/MB/",
+    "n_nav_files": 268,
+    "n_nav_fetched": 268,
+    "n_tracks_in_aoi": 211,
+    "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+    "swath_factor": 3.5,
+    "half_swath_m": 1050.0,
+    "depth_used_m": 600,
+    "coverage_km2": 19.961,
+    "coverage_fraction": 0.819,
+    "tiles_est": 1211,
+    "tiles_est_sum_of_grids": 1122
+   },
+   "tiles_est": 1211,
+   "ship_coverage_file": "reports_post_grl_review/ACQ-R08b/footprints/shipcov_MGDS-21415_MV1209.geojson",
+   "lr_cruises_tried": [
+    {
+     "cruise": "MV1209",
+     "data_url": "https://data.ngdc.noaa.gov/platforms/ocean/ships/melville/MV1209/multibeam/data/version1/MB/",
+     "n_nav_files": 268,
+     "n_nav_fetched": 268,
+     "n_tracks_in_aoi": 211,
+     "method": "NCEI .fnv navigation tracks (per swath file) buffered by half the nominal swath width in local UTM",
+     "swath_factor": 3.5,
+     "half_swath_m": 1050.0,
+     "depth_used_m": 600,
+     "coverage_km2": 19.961,
+     "coverage_fraction": 0.819,
+     "tiles_est": 1211,
+     "tiles_est_sum_of_grids": 1122
+    }
+   ],
+   "nearest_corpus_ref": "NA076__MGDS_32317",
+   "nearest_corpus_kind": "manifest_v2_1",
+   "nearest_corpus_km": 145.6,
+   "releasable": "yes_conditional",
+   "license": "MGDS default CC-BY-NC-SA (ruling R3)",
+   "same_site_as": ""
+  },
+  {
+   "hr_id": "PANGAEA:958275",
+   "source": "PANGAEA",
+   "r08_status": "uncertain",
+   "status": "excluded",
+   "status_reason": "every ship partner is restricted (HTTP 401 on the dataset file listing): no accessible independent ship data \u2192 grid not downloaded (directive \u00a72)",
+   "lr_cruise": "PANGAEA:895437 (M143 EM122)",
+   "access_checks": [
+    {
+     "pangaea_id": "895437",
+     "status": 401,
+     "restricted": true,
+     "n_swath_urls_listed": 0,
+     "note": " Error 401 To access dataset 895437 you need to be authorized (e.g., by logging in as authorized user). Please contact the principal investigator or authors to "
+    },
+    {
+     "pangaea_id": "895497",
+     "status": 401,
+     "restricted": true,
+     "n_swath_urls_listed": 0,
+     "note": " Error 401 To access dataset 895497 you need to be authorized (e.g., by logging in as authorized user). Please contact the principal investigator or authors to "
+    },
+    {
+     "pangaea_id": "993972",
+     "status": 401,
+     "restricted": true,
+     "n_swath_urls_listed": 0,
+     "note": " Error 401 To access dataset 993972 you need to be authorized (e.g., by logging in as authorized user). Please contact the principal investigator or authors to "
+    },
+    {
+     "pangaea_id": "993973",
+     "status": 401,
+     "restricted": true,
+     "n_swath_urls_listed": 0,
+     "note": " Error 401 To access dataset 993973 you need to be authorized (e.g., by logging in as authorized user). Please contact the principal investigator or authors to "
+    },
+    {
+     "pangaea_id": "981058",
+     "status": 401,
+     "restricted": true,
+     "n_swath_urls_listed": 0,
+     "note": " Error 401 To access dataset 981058 you need to be authorized (e.g., by logging in as authorized user). Please contact the principal investigator or authors to "
+    }
+   ]
+  },
+  {
+   "hr_id": "SEANOE:55744",
+   "source": "SEANOE",
+   "r08_status": "uncertain",
+   "doi": "10.17882/55744",
+   "title": "",
+   "files": [
+    "57399.zip"
+   ],
+   "n_files": 1,
+   "size_gb": 0.179,
+   "sha256": [
+    "ca8a76e727fc2da6ae1939e6c3f3d6b2f674683d0e66de7a98fae4651cf2d1fe"
+   ],
+   "grids": [
+    {
+     "width": 6690,
+     "height": 2156,
+     "crs": "PROJCS[\"unnamed\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",40],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+     "geographic": false,
+     "res_native": [
+      2.0,
+      2.0
+     ],
+     "res_x_m": 2.0,
+     "res_y_m": 2.0,
+     "res_m": 2.0,
+     "extent": [
+      2433723.9233,
+      3806224.9054,
+      2447103.9233,
+      3810536.9054
+     ],
+     "nodata": 32767.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "AUV_bathy_Central_High_v1.tif"
+    },
+    {
+     "width": 6595,
+     "height": 2017,
+     "crs": "PROJCS[\"unnamed\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",40],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+     "geographic": false,
+     "res_native": [
+      2.0,
+      2.0
+     ],
+     "res_x_m": 2.0,
+     "res_y_m": 2.0,
+     "res_m": 2.0,
+     "extent": [
+      2433744.1105,
+      3806357.6298,
+      2446934.1105,
+      3810391.6298
+     ],
+     "nodata": 32767.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "AUV_bathy_Central_High_v2.tif"
+    },
+    {
+     "width": 3061,
+     "height": 1877,
+     "crs": "PROJCS[\"unnamed\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",40],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+     "geographic": false,
+     "res_native": [
+      2.0,
+      2.0
+     ],
+     "res_x_m": 2.0,
+     "res_y_m": 2.0,
+     "res_m": 2.0,
+     "extent": [
+      2479622.6453,
+      3797615.2701,
+      2485744.6453,
+      3801369.2701
+     ],
+     "nodata": 32767.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "AUV_bathy_Cinarcik_Basin_N_v1.tif"
+    },
+    {
+     "width": 3061,
+     "height": 1877,
+     "crs": "PROJCS[\"unnamed\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",40],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+     "geographic": false,
+     "res_native": [
+      2.0,
+      2.0
+     ],
+     "res_x_m": 2.0,
+     "res_y_m": 2.0,
+     "res_m": 2.0,
+     "extent": [
+      2479622.6453,
+      3797615.2701,
+      2485744.6453,
+      3801369.2701
+     ],
+     "nodata": 32767.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "AUV_bathy_Cinarcik_Basin_N_v2.tif"
+    },
+    {
+     "width": 2774,
+     "height": 1638,
+     "crs": "PROJCS[\"unnamed\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",40],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+     "geographic": false,
+     "res_native": [
+      2.0,
+      2.0
+     ],
+     "res_x_m": 2.0,
+     "res_y_m": 2.0,
+     "res_m": 2.0,
+     "extent": [
+      2482925.6932,
+      3790290.9381,
+      2488473.6932,
+      3793566.9381
+     ],
+     "nodata": 32767.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "AUV_bathy_Cinarcik_Basin_S_v1.tif"
+    },
+    {
+     "width": 2774,
+     "height": 1638,
+     "crs": "PROJCS[\"unnamed\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",40],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+     "geographic": false,
+     "res_native": [
+      2.0,
+      2.0
+     ],
+     "res_x_m": 2.0,
+     "res_y_m": 2.0,
+     "res_m": 2.0,
+     "extent": [
+      2482925.6932,
+      3790290.9381,
+      2488473.6932,
+      3793566.9381
+     ],
+     "nodata": 32767.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "AUV_bathy_Cinarcik_Basin_S_v2.tif"
+    },
+    {
+     "width": 2552,
+     "height": 2206,
+     "crs": "PROJCS[\"unnamed\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",40],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+     "geographic": false,
+     "res_native": [
+      2.0,
+      2.0
+     ],
+     "res_x_m": 2.0,
+     "res_y_m": 2.0,
+     "res_m": 2.0,
+     "extent": [
+      2350295.867,
+      3806240.871,
+      2355399.867,
+      3810652.871
+     ],
+     "nodata": 32767.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "AUV_bathy_Tekirdag_Basin_NW_v1.tif"
+    },
+    {
+     "width": 2552,
+     "height": 2206,
+     "crs": "PROJCS[\"unnamed\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",40],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+     "geographic": false,
+     "res_native": [
+      2.0,
+      2.0
+     ],
+     "res_x_m": 2.0,
+     "res_y_m": 2.0,
+     "res_m": 2.0,
+     "extent": [
+      2350295.867,
+      3806240.871,
+      2355399.867,
+      3810652.871
+     ],
+     "nodata": 32767.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "AUV_bathy_Tekirdag_Basin_NW_v2.tif"
+    },
+    {
+     "width": 2143,
+     "height": 1695,
+     "crs": "PROJCS[\"unnamed\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",40],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+     "geographic": false,
+     "res_native": [
+      2.0,
+      2.0
+     ],
+     "res_x_m": 2.0,
+     "res_y_m": 2.0,
+     "res_m": 2.0,
+     "extent": [
+      2345669.368,
+      3802413.4292,
+      2349955.368,
+      3805803.4292
+     ],
+     "nodata": 32767.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "AUV_bathy_Tekirdag_Basin_W_v1.tif"
+    },
+    {
+     "width": 2143,
+     "height": 1695,
+     "crs": "PROJCS[\"unnamed\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",40],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+     "geographic": false,
+     "res_native": [
+      2.0,
+      2.0
+     ],
+     "res_x_m": 2.0,
+     "res_y_m": 2.0,
+     "res_m": 2.0,
+     "extent": [
+      2345669.368,
+      3802413.4292,
+      2349955.368,
+      3805803.4292
+     ],
+     "nodata": 32767.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "AUV_bathy_Tekirdag_Basin_W_v2.tif"
+    },
+    {
+     "width": 2690,
+     "height": 1039,
+     "crs": "PROJCS[\"unnamed\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",40],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+     "geographic": false,
+     "res_native": [
+      2.0,
+      2.0
+     ],
+     "res_x_m": 2.0,
+     "res_y_m": 2.0,
+     "res_m": 2.0,
+     "extent": [
+      2381561.3156,
+      3802400.5717,
+      2386941.3156,
+      3804478.5717
+     ],
+     "nodata": 32767.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "AUV_bathy_Western_High_E_v1.tif"
+    },
+    {
+     "width": 2690,
+     "height": 1039,
+     "crs": "PROJCS[\"unnamed\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",40],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+     "geographic": false,
+     "res_native": [
+      2.0,
+      2.0
+     ],
+     "res_x_m": 2.0,
+     "res_y_m": 2.0,
+     "res_m": 2.0,
+     "extent": [
+      2381561.3156,
+      3802400.5717,
+      2386941.3156,
+      3804478.5717
+     ],
+     "nodata": 32767.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "AUV_bathy_Western_High_E_v2.tif"
+    },
+    {
+     "width": 4982,
+     "height": 2061,
+     "crs": "PROJCS[\"unnamed\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",40],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+     "geographic": false,
+     "res_native": [
+      2.0,
+      2.0
+     ],
+     "res_x_m": 2.0,
+     "res_y_m": 2.0,
+     "res_m": 2.0,
+     "extent": [
+      2363985.6068,
+      3800042.6249,
+      2373949.6068,
+      3804164.6249
+     ],
+     "nodata": 32767.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "AUV_bathy_Western_High_v1.tif"
+    },
+    {
+     "width": 4839,
+     "height": 2155,
+     "crs": "PROJCS[\"unnamed\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",40],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+     "geographic": false,
+     "res_native": [
+      2.0,
+      2.0
+     ],
+     "res_x_m": 2.0,
+     "res_y_m": 2.0,
+     "res_m": 2.0,
+     "extent": [
+      2363985.6068,
+      3800042.6249,
+      2373663.6068,
+      3804352.6249
+     ],
+     "nodata": 32767.0,
+     "dtype": "float32",
+     "bands": 1,
+     "file": "AUV_bathy_Western_High_v2.tif"
+    }
+   ],
+   "status": "outside range",
+   "status_reason": "tiles_est 0 < 300",
+   "n_raster_files": 21,
+   "n_bathymetry_grids": 14,
+   "companion_files_skipped": [
+    "AUV_backs_Central_High.tif",
+    "AUV_backs_Cinarcik_Basin_N.tif",
+    "AUV_backs_Tekirdag_Basin_NW.tif",
+    "AUV_backs_Tekirdag_Basin_W.tif",
+    "AUV_backs_Western_High.tif",
+    "AUV_backs_Western_High_E.tif",
+    "AUV_backs_bathy_Cinarcik_Basin_S.tif"
+   ],
+   "resolution_groups": {
+    "2.0": {
+     "n_grids": 14,
+     "valid_km2": 191.322
+    }
+   },
+   "chosen_res_group_m": 2.0,
+   "chosen_grids": [
+    "AUV_bathy_Central_High_v1.tif",
+    "AUV_bathy_Central_High_v2.tif",
+    "AUV_bathy_Cinarcik_Basin_N_v1.tif",
+    "AUV_bathy_Cinarcik_Basin_N_v2.tif",
+    "AUV_bathy_Cinarcik_Basin_S_v1.tif",
+    "AUV_bathy_Cinarcik_Basin_S_v2.tif",
+    "AUV_bathy_Tekirdag_Basin_NW_v1.tif",
+    "AUV_bathy_Tekirdag_Basin_NW_v2.tif",
+    "AUV_bathy_Tekirdag_Basin_W_v1.tif",
+    "AUV_bathy_Tekirdag_Basin_W_v2.tif",
+    "AUV_bathy_Western_High_E_v1.tif",
+    "AUV_bathy_Western_High_E_v2.tif",
+    "AUV_bathy_Western_High_v1.tif",
+    "AUV_bathy_Western_High_v2.tif"
+   ],
+   "hr_res_m": 2.0,
+   "crs": [
+    "PROJCS[\"unnamed\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_2SP\"],PARAMETER[\"standard_parallel_1\",40],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]"
+   ],
+   "extent_4326": [
+    27.46883,
+    40.7046,
+    29.14116,
+    40.88602
+   ],
+   "valid_km2_sum_of_grids": 191.322,
+   "local_utm": "EPSG:32635",
+   "hr_footprint_km2": 98.913,
+   "valid_km2": 98.913,
+   "depth_median_100m": 700,
+   "hr_footprint_file": "reports_post_grl_review/ACQ-R08b/footprints/fp_SEANOE-55744.geojson",
+   "lr_cruise": "PANGAEA:975981 (M51/4 Hydrosweep DS-2)",
+   "lr_sonar": "Hydrosweep DS-2",
+   "lr_year": "",
+   "lr_raw_downloadable": true,
+   "lr_swath_gb": null,
+   "lr_n_swath_files": 1,
+   "lr_beamwidth_deg": 2.3,
+   "lr_beamwidth_source": "documented",
+   "lr_est_m": 28.1,
+   "cells_across_est": 18.22,
+   "ratio_est": 14.05,
+   "ship_coverage": {
+    "cruise": "PANGAEA:975981",
+    "n_nav_files": 52,
+    "n_nav_fetched": 52,
+    "n_tracks_in_aoi": 5,
+    "method": "PANGAEA tab-export per-file start positions joined into track segments (\u2264 20 km), buffered by half the nominal swath width",
+    "swath_factor": 2.0,
+    "half_swath_m": 700.0,
+    "depth_used_m": 700,
+    "coverage_km2": 0.0,
+    "coverage_fraction": 0.0,
+    "tiles_est": 0,
+    "tiles_est_sum_of_grids": 0
+   },
+   "tiles_est": 0,
+   "lr_cruises_tried": [
+    {
+     "cruise": "PANGAEA:975981",
+     "n_nav_files": 52,
+     "n_nav_fetched": 52,
+     "n_tracks_in_aoi": 5,
+     "method": "PANGAEA tab-export per-file start positions joined into track segments (\u2264 20 km), buffered by half the nominal swath width",
+     "swath_factor": 2.0,
+     "half_swath_m": 700.0,
+     "depth_used_m": 700,
+     "coverage_km2": 0.0,
+     "coverage_fraction": 0.0,
+     "tiles_est": 0,
+     "tiles_est_sum_of_grids": 0
+    }
+   ],
+   "nearest_corpus_ref": "PANGAEA:941403",
+   "nearest_corpus_kind": "rejected_sept",
+   "nearest_corpus_km": 1112.9,
+   "releasable": "yes_conditional",
+   "license": "CC-BY-NC-SA 4.0 (DataCite record)",
+   "same_site_as": ""
+  }
+ ],
+ "rulings": [
+  "R1 downloading the candidate high-resolution grids is allowed, provided no output can bias the later test",
+  "R2 Pool B (NOS BAG) is dropped",
+  "R3 MGDS conditional terms (CC-BY-NC-SA) are accepted, as for the development corpus",
+  "R4 Escanaba Trough (MGDS:30368) stays a candidate; only its metadata has been seen",
+  "R5 Steve has not seen any Monterey Canyon AUV data (MGDS:24756); no prior exposure"
+ ],
+ "not_processed": {
+  "MGDS:31979": "ROV point file, 0.04 km\u00b2 (directive \u00a72)",
+  "DOI:10.5285/31b8167c-4d8d-07f0-e063-7086abc03df1": "BODC BioCam record: broken footprint, implausible ship match (directive \u00a72)",
+  "DOI:10.5285/31c95277-80ab-34ff-e063-7086abc04e84": "BODC BioCam record: broken footprint, implausible ship match (directive \u00a72)"
+ }
+}

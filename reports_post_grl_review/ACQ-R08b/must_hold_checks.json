@@ -1,0 +1,143 @@
+{
+ "1_guard": {
+  "selftest_probes": 222,
+  "selftest_blocked": 222,
+  "all_blocked": true,
+  "control_opened": true,
+  "selftest_before_allowance": true,
+  "allowances": [
+   {
+    "t": "2026-10-13T15:50:50+00:00",
+    "event": "allowance_installed",
+    "script": "download.py",
+    "tokens": [
+     "sealed_candidates_v3"
+    ],
+    "pid": 22261
+   },
+   {
+    "t": "2026-10-13T15:53:59+00:00",
+    "event": "allowance_installed",
+    "script": "measure.py",
+    "tokens": [
+     "sealed_candidates_v3"
+    ],
+    "pid": 22825
+   },
+   {
+    "t": "2026-10-13T16:03:25+00:00",
+    "event": "allowance_installed",
+    "script": "measure.py",
+    "tokens": [
+     "sealed_candidates_v3"
+    ],
+    "pid": 24670
+   },
+   {
+    "t": "2026-10-13T16:31:21+00:00",
+    "event": "allowance_installed",
+    "script": "measure.py",
+    "tokens": [
+     "sealed_candidates_v3"
+    ],
+    "pid": 29213
+   },
+   {
+    "t": "2026-10-13T16:41:22+00:00",
+    "event": "allowance_installed",
+    "script": "measure.py",
+    "tokens": [
+     "sealed_candidates_v3"
+    ],
+    "pid": 7118
+   },
+   {
+    "t": "2026-10-13T16:49:23+00:00",
+    "event": "allowance_installed",
+    "script": "measure.py",
+    "tokens": [
+     "sealed_candidates_v3"
+    ],
+    "pid": 11062
+   }
+  ],
+  "guard_log_events": {
+   "selftest": 1,
+   "allowance_installed": 6
+  }
+ },
+ "2_only_depth_median_100m": {
+  "files_scanned": 34,
+  "forbidden_term_hits": [],
+  "n_hits": 0,
+  "depth_numbers_per_candidate": {
+   "MGDS:31860": 2900,
+   "MGDS:31675": 1600,
+   "MGDS:31954": 3100,
+   "MGDS:30368": 3300,
+   "MGDS:18210": 1700,
+   "MGDS:31811": 2700,
+   "MGDS:24756": 1400,
+   "MGDS:22436": 3400,
+   "MGDS:21415": 600,
+   "PANGAEA:958275": null,
+   "SEANOE:55744": 700
+  }
+ },
+ "3_no_images": {
+  "files_under_outputs": 37,
+  "image_or_plot_files": []
+ },
+ "4_status": {
+  "MGDS:31860": [
+   "in range",
+   "all \u00a73 conditions hold"
+  ],
+  "MGDS:31675": [
+   "in range",
+   "all \u00a73 conditions hold"
+  ],
+  "MGDS:31954": [
+   "in range",
+   "all \u00a73 conditions hold"
+  ],
+  "MGDS:30368": [
+   "in range",
+   "all \u00a73 conditions hold"
+  ],
+  "MGDS:18210": [
+   "in range",
+   "all \u00a73 conditions hold"
+  ],
+  "MGDS:31811": [
+   "in range",
+   "all \u00a73 conditions hold"
+  ],
+  "MGDS:24756": [
+   "in range",
+   "all \u00a73 conditions hold"
+  ],
+  "MGDS:22436": [
+   "in range",
+   "all \u00a73 conditions hold"
+  ],
+  "MGDS:21415": [
+   "in range",
+   "all \u00a73 conditions hold"
+  ],
+  "PANGAEA:958275": [
+   "excluded",
+   "every ship partner is restricted (HTTP 401 on the dataset file listing): no accessible independent ship data \u2192 grid not downloaded (directive \u00a72)"
+  ],
+  "SEANOE:55744": [
+   "outside range",
+   "tiles_est 0 < 300"
+  ]
+ },
+ "4_all_have_status": true,
+ "5_no_designation": {
+  "designation_files": [],
+  "seed": null,
+  "split": null
+ }
+}

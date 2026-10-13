@@ -1,0 +1,1129 @@
+{
+ "probes": 222,
+ "blocked": 222,
+ "all_blocked": true,
+ "control_opened": true,
+ "allowance_installed": false,
+ "targets": 37,
+ "readers": [
+  "builtins.open",
+  "rasterio.open",
+  "numpy.load",
+  "geopandas.read_file",
+  "pyogrio.read_dataframe",
+  "pandas.read_parquet"
+ ],
+ "rows": [
+  {
+   "target": "root",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "root",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "root",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "root",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "root",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "root",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "root file",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "root file",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "root file",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "root file",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "root file",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "root file",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31860",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31860",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31860",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31860",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31860",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31860",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31860",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31860",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31860",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31860",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31860",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31860",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31860",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31860",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31860",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31860",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31860",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31860",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31675",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31675",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31675",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31675",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31675",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31675",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31675",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31675",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31675",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31675",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31675",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31675",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31675",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31675",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31675",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31675",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31675",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31675",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31954",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31954",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31954",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31954",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31954",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31954",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31954",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31954",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31954",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31954",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31954",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31954",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31954",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31954",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31954",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31954",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31954",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31954",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:30368",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:30368",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:30368",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:30368",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:30368",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:30368",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:30368",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:30368",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:30368",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:30368",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:30368",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:30368",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:30368",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:30368",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:30368",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:30368",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:30368",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:30368",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:18210",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:18210",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:18210",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:18210",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:18210",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:18210",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:18210",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:18210",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:18210",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:18210",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:18210",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:18210",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:18210",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:18210",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:18210",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:18210",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:18210",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:18210",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31811",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31811",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31811",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31811",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31811",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:31811",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31811",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31811",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31811",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31811",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31811",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:31811",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31811",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31811",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31811",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31811",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31811",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:31811",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:24756",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:24756",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:24756",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:24756",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:24756",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:24756",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:24756",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:24756",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:24756",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:24756",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:24756",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:24756",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:24756",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:24756",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:24756",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:24756",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:24756",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:24756",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:22436",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:22436",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:22436",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:22436",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:22436",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:22436",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:22436",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:22436",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:22436",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:22436",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:22436",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:22436",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:22436",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:22436",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:22436",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:22436",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:22436",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:22436",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:21415",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:21415",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:21415",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:21415",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:21415",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:MGDS:21415",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:21415",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:21415",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:21415",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:21415",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:21415",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "file:MGDS:21415",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:21415",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:21415",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:21415",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:21415",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:21415",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:MGDS:21415",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:PANGAEA:958275",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:PANGAEA:958275",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:PANGAEA:958275",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:PANGAEA:958275",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:PANGAEA:958275",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:PANGAEA:958275",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "file:PANGAEA:958275",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:PANGAEA:958275",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:PANGAEA:958275",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "file:PANGAEA:958275",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "file:PANGAEA:958275",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "file:PANGAEA:958275",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:PANGAEA:958275",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:PANGAEA:958275",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:PANGAEA:958275",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:PANGAEA:958275",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:PANGAEA:958275",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:PANGAEA:958275",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:SEANOE:55744",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:SEANOE:55744",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:SEANOE:55744",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:SEANOE:55744",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:SEANOE:55744",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "dir:SEANOE:55744",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "file:SEANOE:55744",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:SEANOE:55744",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "file:SEANOE:55744",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "file:SEANOE:55744",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "file:SEANOE:55744",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "file:SEANOE:55744",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:SEANOE:55744",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:SEANOE:55744",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:SEANOE:55744",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:SEANOE:55744",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:SEANOE:55744",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "elsewhere:SEANOE:55744",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:AT42-03__MGDS_32007",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:AT42-03__MGDS_32007",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:AT42-03__MGDS_32007",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:AT42-03__MGDS_32007",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:AT42-03__MGDS_32007",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:AT42-03__MGDS_32007",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:TN159__MGDS_21981",
+   "reader": "builtins.open",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:TN159__MGDS_21981",
+   "reader": "rasterio.open",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:TN159__MGDS_21981",
+   "reader": "numpy.load",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:TN159__MGDS_21981",
+   "reader": "geopandas.read_file",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:TN159__MGDS_21981",
+   "reader": "pyogrio.read_dataframe",
+   "result": "blocked"
+  },
+  {
+   "target": "lockbox:TN159__MGDS_21981",
+   "reader": "pandas.read_parquet",
+   "result": "blocked"
+  }
+ ],
+ "at": "2026-10-13T15:50:50+00:00"
+}
