@@ -11,16 +11,17 @@ from pathlib import Path
 from src.acq_r01 import common as C
 from src.phase5 import common_p5 as P
 
-DEST = C.OAK / "acq_archive" / "ACQ-R11b"
+DEST = C.OAK / "acq_archive" / "ACQ-R12"
 
 
 def sources() -> list:
-    s = sorted((P.REPO / "src" / "phase5").glob("*.py")) + [P.SITE_LIST, P.FREEZE_RECORD, P.FREEZE_RECORD_V1, P.R09_DIR / "RECORD_CONTRACT_phase5.md",
+    s = sorted((P.REPO / "src" / "phase5").glob("*.py")) + [P.SITE_LIST, P.FREEZE_RECORD, P.FREEZE_RECORD_V2, P.FREEZE_RECORD_V1, P.R09_DIR / "RECORD_CONTRACT_phase5.md",
                                                             P.R09_DIR / "PHASE5_design_spec_2026-10-13.md", P.REPORT_DIR / "refusal_tests_p5.json"]
     s += sorted(P.REPORT_DIR.glob("*.json")) + sorted(P.REPORT_DIR.glob("*.csv")) + sorted(P.REPORT_DIR.glob("*.md"))
     s += sorted(P.REHEARSAL_DIR.glob("*.json")) + sorted(P.REHEARSAL_DIR.glob("*.csv")) + sorted(P.REHEARSAL_DIR.glob("*.parquet")) + sorted(P.REHEARSAL_DIR.glob("*.md"))
-    s += sorted((P.REPO / "sbatch" / "acq_r09").glob("*.sbatch")) + sorted((P.REPO / "sbatch" / "acq_r11b").glob("*.sbatch"))
-    s += sorted((P.REPO / "src" / "acq_r11").glob("*.py")) + sorted((P.REPO / "src" / "acq_r11b").glob("*.py"))
+    s += sorted(P.REHEARSAL_DIR.glob("*.jsonl.gz")) + sorted(P.MOCK5_RECORD_DIR.glob("*")) + sorted(P.MOCK5_INPUTS.glob("*"))
+    s += sorted((P.REPO / "sbatch" / "acq_r09").glob("*.sbatch")) + sorted((P.REPO / "sbatch" / "acq_r11b").glob("*.sbatch")) + sorted((P.REPO / "sbatch" / "acq_r12").glob("*.sbatch"))
+    s += sorted((P.REPO / "src" / "acq_r11").glob("*.py")) + sorted((P.REPO / "src" / "acq_r11b").glob("*.py")) + sorted((P.REPO / "src" / "acq_r12").glob("*.py"))
     return list(dict.fromkeys(p for p in s if p.exists() and p.name != "preserve_verify.json"))
 
 

@@ -62,12 +62,14 @@ class SiteFail(RuntimeError):
 # --------------------------------------------------------------------------- #
 # ship side: fetch (phase5 mode only) and counts
 # --------------------------------------------------------------------------- #
-def fetch_plan(site: dict, fp_4326, report_dir: Path) -> tuple:
+def fetch_plan(site: dict, fp_4326, site_dir: Path, cache: Path | None = None) -> tuple:
     """src/acq_r01/fetch_plan.plan_ncei, unchanged (whole cruise if < 10 GB, else the navigation subset buffered by
     max(2 x depth, 1 km)); depth = ACQ-R08b's public depth_median_100m (the development planner used a catalog depth).
-    Its listing cache is redirected to a Phase 5 directory.  Writes the per-file plan CSV; returns (csv, summary)."""
+    Its listing cache is redirected to the mode's cache (names carry the cruise, not a candidate token).  Writes the
+    per-file plan CSV into the site's staging directory (ACQ-R12: the record directory is never used for a file whose
+    name carries a candidate token); returns (csv, summary)."""
     old = FP.CACHE
-    FP.CACHE = C.SCRATCH_DATA / "discovery_cache" / "acq_r09_phase5_fetch"
+    FP.CACHE = Path(cache) if cache else P.FETCH_CACHE_PHASE5
     try:
         d = P.depth_hint_m(site["hr_id"]) or 2000.0
         plan, summ = FP.plan_ncei(site["ship_cruise"], [fp_4326], d)
@@ -77,16 +79,17 @@ def fetch_plan(site: dict, fp_4326, report_dir: Path) -> tuple:
     summ["fetch_buffer_basis"] = "ACQ-R08b depth_median_100m (public metadata)"
     if not plan:
         raise SiteFail(f"fetch plan: {summ.get('status')} {summ.get('note', '')}"[:200])
-    csv = Path(report_dir) / f"fetch_plan_{site['pair_id']}.csv"
+    csv = Path(site_dir) / f"fetch_plan_{site['pair_id']}.csv"
     pd.DataFrame(plan).to_csv(csv, index=False)
     return csv, summ
 
 
-def fetch(site: dict, plan_csv: Path, report_dir: Path, workers: int = P.FETCH_WORKERS) -> dict:
-    """src/acq_r01/fetch_swath.main --plan-csv, unchanged, into OAK raw_lr_swath/<cruise> (its log directory
-    redirected to the run's report directory)."""
+def fetch(site: dict, plan_csv: Path, site_dir: Path, workers: int = P.FETCH_WORKERS) -> dict:
+    """src/acq_r01/fetch_swath.main --plan-csv, unchanged, into <swath root>/<cruise> (OAK raw_lr_swath in phase5 mode).
+    Its log directory C.REPORT_DIR is redirected to the site's staging directory (ACQ-R12: its files are named
+    fetch_swath_log_fetch_plan_<pair id>.csv / fetch_swath_summary_fetch_plan_<pair id>.json, i.e. carry the token)."""
     old_rep = C.REPORT_DIR
-    C.REPORT_DIR = Path(report_dir)
+    C.REPORT_DIR = Path(site_dir)
     t0 = time.time()
     try:
         rc = F.main(["--plan-csv", str(plan_csv), "--cruises", site["ship_cruise"], "--workers", str(workers)])
@@ -330,7 +333,9 @@ def products(site: dict, out_dir: Path, cruise_dir: Path, nproc: int, batch_file
     work.mkdir(parents=True, exist_ok=True)
     old = R3.REPORT_DIR
     R3.REPORT_DIR = work                                        # the builder's run summary json (and header_check lookup) stay in the work dir
-    t0 = time.time()
+    old_ls = os.environ.get("L_SCRATCH")
+    os.environ["L_SCRATCH"] = str(work)                         # ACQ-R12: the builder's per-file work dir ($L_SCRATCH/acq_r03/<cruise>/<pair id>,
+    t0 = time.time()                                            # token in the name) goes under the admitted work root; inputs and outputs unchanged
     try:
         V21.build([(pid, out_dir)], site["ship_cruise"], cruise_dir, "ncei_swath", nproc, batch_files)
     except BaseException as e:
@@ -347,6 +352,10 @@ def products(site: dict, out_dir: Path, cruise_dir: Path, nproc: int, batch_file
         return {"available": False, "reason": reason, "rule": "C2 data-tied builder failure", "flags": [], "wall_s": round(time.time() - t0, 1)}
     finally:
         R3.REPORT_DIR = old
+        if old_ls is None:
+            os.environ.pop("L_SCRATCH", None)
+        else:
+            os.environ["L_SCRATCH"] = old_ls
     pj = json.loads((out_dir / V21.OUT_NAME / "products.json").read_text())
     ex = json.loads((out_dir / V21.OUT_NAME / "products_extra.json").read_text())
     per_file = ex.get("per_file", [])

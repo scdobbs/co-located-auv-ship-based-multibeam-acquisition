@@ -13,7 +13,11 @@ plus
 The mock site list (reports_post_grl_review/ACQ-R09/rehearsal/mock_sites.csv) names the four mock sites with their
 development ship cruise (swath read from the development store OAK raw_lr_swath/<cruise>/, no network), sonar string as
 the development grid record and cruise year.  Every copy is sha256-checked against its source.
-Usage: python -m src.phase5.mock_p5
+ACQ-R12 --phase5-mock: the phase5_mock layout (scratch only) for the fetch-on rehearsal of the phase5 branch:
+  MOCK5_ROOT/<token>/ = copies of the development download of MGDS:31289 (NA080, fetched by the run: 51 files, 0.53 GB)
+  and MGDS:31429 (KM0923, its swath pre-seeded in MOCK5_SWATH/KM0923 from OAK so the fetcher finds every file present);
+  MOCK5_SITE_LIST (NA080 first); MOCK5_INPUTS/ a mock pre-registration and a mock sign-off holding its sha256.
+Usage: python -m src.phase5.mock_p5 [--phase5-mock]
 """
 from __future__ import annotations
 
@@ -58,7 +62,70 @@ def crop_asc(text: str, f0: float = 0.15, f1: float = 0.85) -> str:
     return "\n".join(out + [" ".join(r) for r in rows]) + "\n"
 
 
+MOCK5 = [("NA080 development pair posing as a sealed site (fetched)", "MGDS:31289", "NA080", "Kongsberg EM302", 2017),
+         ("KM0923 development pair posing as a sealed site (swath pre-seeded)", "MGDS:31429", "KM0923", "Simrad EM120", 2009)]
+MOCK5_SEED = ["KM0923"]
+
+
+def build_mock5():
+    root = P.MOCK5_ROOT
+    for d in (root, P.MOCK5_SWATH / "NA080"):
+        if d.exists():
+            for q in d.rglob("*"):
+                q.chmod(0o755 if q.is_dir() else 0o644)
+            shutil.rmtree(d)
+    root.mkdir(parents=True)
+    toks = [P.token(r[1]) for r in MOCK5]
+    GP.install_phase5_allowance(toks, root, [], reason="ACQ-R09 rehearsal (mock root, development data): ACQ-R12 phase5_mock layout builder")
+    copies = []
+    try:
+        for name, hid, cruise, sonar, year in MOCK5:
+            src_dir = RAW_HR / hid.replace(":", "_"); dst = root / P.token(hid); dst.mkdir()
+            man = json.loads((src_dir / "download_manifest.json").read_text())
+            for f in man["files"]:
+                s_ = Path(f["path"]); d = dst / s_.name
+                shutil.copyfile(s_, d)
+                if P.sha256_file(s_) != P.sha256_file(d) or (f.get("sha256") and f["sha256"] != P.sha256_file(d)):
+                    raise SystemExit(f"copy mismatch {s_} -> {d}")
+                copies.append({"src": str(s_), "dst": str(d), "sha256": P.sha256_file(d)})
+        for p in root.rglob("*"):
+            if p.is_file():
+                p.chmod(0o440)
+    finally:
+        GP.remove_phase5_allowance()
+    seeded = {}
+    for cr in MOCK5_SEED:                                    # the "no fetch" site: every planned file already present
+        src, dst = C.RAW_SWATH_OAK / cr, P.MOCK5_SWATH / cr
+        dst.mkdir(parents=True, exist_ok=True)
+        n = 0
+        for f in sorted(src.iterdir()):
+            if f.is_file():
+                t = dst / f.name
+                if not t.exists() or t.stat().st_size != f.stat().st_size:
+                    shutil.copyfile(f, t)
+                n += 1
+        seeded[cr] = {"src": str(src), "dst": str(dst), "n_files": n}
+    rows = [dict(zip(("site_name", "hr_id", "ship_cruise", "sonar", "year"), r)) for r in MOCK5]
+    P.MOCK5_SITE_LIST.parent.mkdir(parents=True, exist_ok=True)
+    with open(P.MOCK5_SITE_LIST, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=["site_name", "hr_id", "ship_cruise", "sonar", "year"]); w.writeheader(); w.writerows(rows)
+    P.MOCK5_INPUTS.mkdir(parents=True, exist_ok=True)
+    pre = P.MOCK5_INPUTS / "PREREG_phase5_mock.md"
+    pre.write_text("# Mock pre-registration (ACQ-R12 phase5_mock rehearsal; development data only; not a Phase 5 document)\n")
+    sha = P.sha256_file(pre)
+    (P.MOCK5_INPUTS / "SIGNOFF_phase5_mock.md").write_text(f"# Mock sign-off (ACQ-R12 rehearsal)\n\npre-registration sha256 `{sha}`\n\nSignature: mock\n")
+    rec = {"generated": P.utc_now(), "mock5_root": str(root), "site_list": str(P.MOCK5_SITE_LIST), "site_list_sha256": P.sha256_file(P.MOCK5_SITE_LIST),
+           "copies": copies, "seeded_swath": seeded, "mock_prereg": str(pre), "mock_prereg_sha256": sha, "swath_root": str(P.MOCK5_SWATH)}
+    P.write_json(P.REHEARSAL_DIR / "mock5_layout.json", rec, mode=0o644)
+    print(json.dumps({k: v for k, v in rec.items() if k != "copies"}, indent=1))
+    return 0
+
+
 def main(argv=None):
+    if argv is None:
+        argv = sys.argv[1:]
+    if "--phase5-mock" in argv:
+        return build_mock5()
     root = P.MOCK_ROOT
     if root.exists():
         for p in root.rglob("*"):

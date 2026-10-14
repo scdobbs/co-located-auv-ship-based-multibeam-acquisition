@@ -158,6 +158,54 @@ def check_tests() -> list:
     return out
 
 
+def r12_tests() -> list:
+    """ACQ-R12 §2 / §3: the relocated write paths (string checks on a real site's names; no file is touched) and the leak
+    check's matching rules (no data)."""
+    from src.phase5 import leak_p5 as LK
+    out = []
+    site = P.read_site_list(P.SITE_LIST)[0]; pid, tok = site["pair_id"], site["token"]
+    out_root, work_root = C.OAK / "phase5", Path("/lscratch/x/acq_p5/phase5")
+    stg = out_root / "harmonized" / ".staging" / pid
+    fixed = {"fetch plan csv (staging)": stg / f"fetch_plan_{pid}.csv",
+             "fetch log csv (staging)": stg / f"fetch_swath_log_fetch_plan_{pid}.csv",
+             "fetch summary json (staging)": stg / f"fetch_swath_summary_fetch_plan_{pid}.json",
+             "builder work dir (work root)": work_root / pid / "products" / "acq_r03" / site["ship_cruise"] / pid / "f.mb58",
+             "builder run summary (work root)": work_root / pid / "products" / f"products_v2_1_{site['ship_cruise']}__{pid}.json"}
+    old = P.PHASE5_DIR / f"fetch_plan_{pid}.csv"
+
+    def verdict(p):
+        try:
+            C._check(str(p)); return "admitted"
+        except PermissionError:
+            return "refused"
+    for name, p in fixed.items():
+        out.append({"test": f"F1 before the allowance: {name} refused", "expected": "refused", "got": verdict(p), "path": str(p)})
+    out.append({"test": "F1 before the allowance: old record-dir fetch plan refused", "expected": "refused", "got": verdict(old), "path": str(old)})
+    GP._install([s["token"] for s in P.read_site_list(P.SITE_LIST)], C.SEALED_CANDIDATES_V3, [out_root, work_root], reason="ACQ-R09 guard self-test (ACQ-R12 F2)")
+    try:
+        for name, p in fixed.items():
+            out.append({"test": f"F2 after the allowance: {name} admitted", "expected": "admitted", "got": verdict(p), "path": str(p)})
+        out.append({"test": "F3 after the allowance: the record directory is still refused for a token (guard not widened)", "expected": "refused",
+                    "got": verdict(old), "path": str(old)})
+    finally:
+        GP.remove_phase5_allowance()
+    for r in out:
+        r["passed"] = r["got"] == r["expected"]
+    x = 0.123456789
+    planted = f"log line: G {x:.4g} written by mistake"
+    coord = "transform 526230.1234567 0.0"
+    hits = [f for f in LK.forms(x) if LK._rx(f).search(planted)]
+    false = [f for f in LK.forms(x) if LK._rx(f).search(coord)]
+    out.append({"test": "L1 planted value found as a whole number", "expected": ">= 1 hit", "got": f"{len(hits)} hits", "passed": len(hits) >= 1})
+    out.append({"test": "L2 the same digits inside a longer number are not a hit", "expected": "0 hits", "got": f"{len(false)} hits", "passed": not false})
+    r = LK.run_check([], [], {"run record (pending)": "{}"}, [{"x": {"v95": 1.0}}])
+    out.append({"test": "L3 a forbidden key in a record fails the leak check", "expected": "passed False, 1 key hit", "got": f"passed {r['passed']}, {r['n_key_hits']} key hit",
+                "passed": (not r["passed"]) and r["n_key_hits"] == 1})
+    r = LK.run_check([], [], {"run record (pending)": "{}"}, [{"x": {"ok": True}}])
+    out.append({"test": "L4 a clean record passes", "expected": "passed True", "got": f"passed {r['passed']}", "passed": r["passed"]})
+    return out
+
+
 def main(argv=None):
     real_install = S.GP.install_phase5_allowance
     S.GP.install_phase5_allowance = _no_allowance
@@ -166,7 +214,7 @@ def main(argv=None):
             locks = lock_tests(Path(td))
     finally:
         S.GP.install_phase5_allowance = real_install
-    guards = guard_tests() + check_tests()
+    guards = guard_tests() + check_tests() + r12_tests()
     allp = all(r["passed"] for r in locks + guards)
     rec = {"generated": P.utc_now(), "code_commit": P.git_commit(), "host": P.hostname(), "n_lock_tests": len(locks), "n_guard_tests": len(guards),
            "n_passed": sum(r["passed"] for r in locks + guards), "all_passed": allp, "lock_tests": locks, "guard_tests": guards}

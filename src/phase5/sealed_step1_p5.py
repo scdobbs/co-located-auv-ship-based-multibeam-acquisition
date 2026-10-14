@@ -26,6 +26,14 @@ Modes (differ only in MODES below: site list, sealed root + allow-list, output r
        the eight sites of inputs/phase5_sites.csv; locks 1-4 before the allowance:
        1 sign-off holds the v3 sha256; 2 freeze record matches every file and every loaded module; 3 site list = the
        eight sites exactly (no other site, no other list); 4 no supplement and no complete phase5 run record exist.
+  --mode phase5_mock --signoff <mock> --prereg-sha256 <hex> [--freeze-record <json>] [--scan-logs a,b]
+       ACQ-R12: the phase5 branch (locks 1-4, allowance, fetch on, leak check) with mock inputs only: the mock site list
+       (development pairs posing as sealed sites, their tokens sealed by guard_p5.seal_tokens before the self-test), scratch
+       output / swath / record roots, a mock sign-off.  Same functions as phase5 mode; only MODES differ.
+ACQ-R12: every file whose name carries a candidate token is written under the admitted roots (the site's staging /
+final directory or the node-local work root); the record directory holds only the run record.  The last stage is the
+in-run leak check (leak_p5) under the allowance; a hit stops the run before the supplement is published.  Any other
+exception also writes a "stopped" run record.
 Usage: python -m src.phase5.sealed_step1_p5 --mode rehearsal --run-tag r09
 """
 from __future__ import annotations
@@ -50,16 +58,24 @@ from src.phase5 import common_p5 as P
 from src.phase5 import guard_p5 as GP
 from src.phase5 import hr_select as HS
 from src.phase5 import chain_p5 as CH
+from src.phase5 import leak_p5 as LK
 
 log = logging.getLogger("acq_r09.step1")
-MODE_CHOICES = ("rehearsal", "phase5")
+MODE_CHOICES = ("rehearsal", "phase5", "phase5_mock")
 MODES = {
     "rehearsal": {"site_list": P.MOCK_SITE_LIST, "site_list_fixed": False, "sealed_root": P.MOCK_ROOT, "out_root": P.REHEARSAL_OUT, "fetch": False,
                   "supplement": P.REHEARSAL_DIR / "supplement_rehearsal.parquet", "record_dir": P.REHEARSAL_DIR, "designation": "rehearsal (development data)",
-                  "allow_reason": "ACQ-R09 rehearsal (mock root, development data)"},
+                  "allow_reason": "ACQ-R09 rehearsal (mock root, development data)", "locked": False, "seal_mock": False,
+                  "swath_root": C.RAW_SWATH_OAK, "fetch_cache": None},
     "phase5": {"site_list": P.SITE_LIST, "site_list_fixed": True, "sealed_root": C.SEALED_CANDIDATES_V3, "out_root": C.OAK / "phase5", "fetch": True,
                "supplement": P.SUPPLEMENT_PHASE5, "record_dir": P.PHASE5_DIR, "designation": "phase5_sealed",
-               "allow_reason": "ACQ-R09 phase5 locks passed: sign-off, freeze record, site list, single run"},
+               "allow_reason": "ACQ-R09 phase5 locks passed: sign-off, freeze record, site list, single run", "locked": True, "seal_mock": False,
+               "swath_root": C.RAW_SWATH_OAK, "fetch_cache": P.FETCH_CACHE_PHASE5, "sealed_ids": C.SEALED_CANDIDATE_IDS},
+    # ACQ-R12: the phase5 branch with mock inputs only (development pairs posing as sealed sites; scratch roots; mock sign-off)
+    "phase5_mock": {"site_list": P.MOCK5_SITE_LIST, "site_list_fixed": True, "sealed_root": P.MOCK5_ROOT, "out_root": P.MOCK5_OUT, "fetch": True,
+                    "supplement": P.MOCK5_SUPPLEMENT, "record_dir": P.MOCK5_RECORD_DIR, "designation": "phase5_mock (development data)",
+                    "allow_reason": "ACQ-R12 phase5_mock locks passed: sign-off, freeze record, site list, single run (mock inputs)", "locked": True,
+                    "seal_mock": True, "swath_root": P.MOCK5_SWATH, "fetch_cache": P.FETCH_CACHE_MOCK5, "sealed_ids": None},
 }
 ELIG_COLS = ("coreg_pass", "k_recoverable", "cells_across", "hr_res_in_range", "eligible", "eligibility_reason")
 RECORD_FILES = ("site_record.json", "sweep_record.json", "hr_selection.json", "grid_record.json")
@@ -109,18 +125,21 @@ def lock_freeze_record(freeze_record) -> dict:
     return {"freeze_record": str(p), "freeze_record_sha256": P.sha256_file(p), "n_files": len(files), "n_loaded_checked": len(loaded)}
 
 
-def lock_site_list(a, sites: list, requested: list) -> dict:
-    if a.site_list and Path(a.site_list).resolve() != P.SITE_LIST.resolve():
+def lock_site_list(a, sites: list, requested: list, cfg: dict | None = None) -> dict:
+    cfg = cfg or MODES["phase5"]
+    sl = Path(cfg["site_list"])
+    if a.site_list and Path(a.site_list).resolve() != sl.resolve():
         raise Refusal(f"LOCK 3 site list: phase5 mode reads {P.SITE_LIST_REL} only; got --site-list {a.site_list}")
     ids = [s["hr_id"] for s in sites]
     if sorted(requested) != sorted(ids) or len(requested) != len(ids):
         raise Refusal(f"LOCK 3 site list: the run must cover exactly the {len(ids)} sites of {P.SITE_LIST_REL}; got {sorted(requested)}")
-    not_sealed = [i for i in ids if i not in C.SEALED_CANDIDATE_IDS]
+    sealed_ids = cfg.get("sealed_ids") or ids                  # phase5_mock: the mock ids, sealed by guard_p5.seal_tokens
+    not_sealed = [i for i in ids if i not in sealed_ids]
     if not_sealed:
         raise Refusal(f"LOCK 3 site list: {not_sealed} are not sealed ACQ-R08b candidates")
     if a.run_tag:
         raise Refusal(f"LOCK 3 site list: --run-tag is not accepted in phase5 mode (outputs go to the fixed phase5 root); got {a.run_tag!r}")
-    return {"site_list": str(P.SITE_LIST), "site_list_sha256": P.sha256_file(P.SITE_LIST), "sites": ids}
+    return {"site_list": str(sl), "site_list_sha256": P.sha256_file(sl), "sites": ids}
 
 
 def lock_single_run(cfg) -> dict:
@@ -128,12 +147,12 @@ def lock_single_run(cfg) -> dict:
     if sp.exists():
         raise Refusal(f"LOCK 4 single run: {sp} already exists (sha256 {P.sha256_file(sp)}); there is one completed run")
     done = []
-    for f in sorted(glob.glob(str(Path(cfg["record_dir"]) / "step1_run_phase5_*.json"))):
+    for f in sorted(glob.glob(str(Path(cfg["record_dir"]) / f"step1_run_{cfg.get('mode', 'phase5')}_*.json"))):
         try:
             r = json.loads(Path(f).read_text())
         except Exception:
             continue
-        if r.get("status") == "complete" and r.get("mode") == "phase5":
+        if r.get("status") == "complete" and r.get("mode") == cfg.get("mode", "phase5"):
             done.append(f)
     if done:
         raise Refusal(f"LOCK 4 single run: a complete phase5 run record exists: {done}")
@@ -144,7 +163,7 @@ def enforce_phase5_locks(a, cfg, sites, requested) -> dict:
     """Order: sign-off, freeze record, site list, single run.  Any failure raises Refusal before any sealed read."""
     rec = {"lock1_signoff": lock_signoff(a.signoff, a.prereg_sha256)}
     rec["lock2_freeze_record"] = lock_freeze_record(a.freeze_record or P.FREEZE_RECORD)
-    rec["lock3_site_list"] = lock_site_list(a, sites, requested)
+    rec["lock3_site_list"] = lock_site_list(a, sites, requested, cfg)
     rec["lock4_single_run"] = lock_single_run(cfg)
     return rec
 
@@ -212,9 +231,9 @@ def run_site(site: dict, cfg: dict, out_root: Path, work_root: Path, a, ledger: 
             raise CH.SiteFail("no HR grid kept by the §3.2 rules: " + str(sel["record"]["resolution_group"].get("reason", "")))
         c = sel["footprint"].centroid; rec["footprint_centroid"] = [round(c.x, 4), round(c.y, 4)]
         if cfg["fetch"]:
-            plan_csv, summ = CH.fetch_plan(site, sel["footprint"], cfg["record_dir"])
+            plan_csv, summ = CH.fetch_plan(site, sel["footprint"], staging, cfg.get("fetch_cache"))     # ACQ-R12: staging, not record_dir
             rec["fetch_plan"] = summ
-            rec["fetch"] = CH.fetch(site, plan_csv, cfg["record_dir"])
+            rec["fetch"] = CH.fetch(site, plan_csv, staging)
             ledger.append({"pair_id": pid, "item": "fetch", "status": "complete", "reason": f"{rec['fetch']['n_ok']} of {rec['fetch']['n_planned']} files"})
         rec["swath"] = CH.swath_preflight(site)
         rec["grid"] = CH.grid_ship(site, sel["footprint"], gridded, work / "grid")
@@ -348,6 +367,38 @@ def write_supplement(rows: list, sp: Path) -> dict:
 # --------------------------------------------------------------------------- #
 # main
 # --------------------------------------------------------------------------- #
+def _site_path_probes(sites: list, out_root: Path, work_root: Path, record_dir: Path, sealed_root: Path) -> dict:
+    """ACQ-R12: before the allowance, every path a site's files can take (final, staging incl. the fetch plan / log names,
+    gridded, work, the record directory under the old fetch-plan name, the sealed directory) must be refused."""
+    readers = GP._readers(); rows = []
+    for s in sites:
+        pid, tok = s["pair_id"], s["token"]
+        stg = out_root / "harmonized" / ".staging" / pid
+        for p in (out_root / "harmonized" / pid / "hr.tif", stg / f"fetch_plan_{pid}.csv", stg / f"fetch_swath_log_fetch_plan_{pid}.csv",
+                  out_root / "raw_lr_gridded" / pid / "x.grd", work_root / pid / "tile0.tif", Path(record_dir) / f"fetch_plan_{pid}.csv",
+                  Path(sealed_root) / tok):
+            for rn, fn in readers.items():
+                rows.append({"path": str(p), "reader": rn, "result": GP._probe(fn, p)})
+    return {"n": len(rows), "n_blocked": sum(r["result"] == "blocked" for r in rows), "all_blocked": all(r["result"] == "blocked" for r in rows)}
+
+
+def job_logs() -> list:
+    """The Slurm job's own stdout / stderr files (scanned by the leak check); empty outside a job."""
+    jid = os.environ.get("SLURM_JOB_ID")
+    if not jid:
+        return []
+    import subprocess
+    try:
+        out = subprocess.run(["scontrol", "show", "job", "-o", jid], capture_output=True, text=True, timeout=60).stdout
+    except Exception:
+        return []
+    got = []
+    for tok in out.split():
+        if tok.startswith(("StdOut=", "StdErr=")):
+            got.append(tok.split("=", 1)[1].replace("%j", jid))
+    return list(dict.fromkeys(got))
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--mode", required=True, choices=MODE_CHOICES)
@@ -356,48 +407,64 @@ def main(argv=None):
     ap.add_argument("--run-tag", default="", help="rehearsal: sub-directory of the scratch output root and record tag")
     ap.add_argument("--nproc", type=int, default=6); ap.add_argument("--batch-files", type=int, default=1)
     ap.add_argument("--signoff", default=None); ap.add_argument("--prereg-sha256", default=None); ap.add_argument("--freeze-record", default=None)
+    ap.add_argument("--scan-logs", default="", help="extra log files for the leak check (the job's own logs are found through scontrol)")
     a = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     t_run = time.time()
     cfg = dict(MODES[a.mode]); cfg["mode"] = a.mode
+    locked = cfg["locked"]                                     # phase5 and phase5_mock: the locked branch
     if a.mode == "rehearsal" and not a.run_tag:
         raise Refusal("rehearsal: --run-tag is required")
-    sl = Path(a.site_list) if (a.site_list and a.mode == "rehearsal") else Path(cfg["site_list"])
+    sl = Path(a.site_list) if (a.site_list and not locked) else Path(cfg["site_list"])
     sites = P.read_site_list(sl)
     ids = [s["hr_id"] for s in sites]
     requested = [x.strip() for x in a.sites.split(",") if x.strip()] if a.sites else list(ids)
     bad = [x for x in requested if x not in ids]
     if bad:
         raise Refusal(f"SITE LIST: {bad} not in the site list {sl} ({ids})")
-    out_root = Path(cfg["out_root"]) / a.run_tag if (a.mode == "rehearsal") else Path(cfg["out_root"])
-    work_root = Path(os.environ.get("L_SCRATCH", "/tmp")) / "acq_p5" / (a.run_tag or "phase5")
-    tag = a.run_tag if a.mode == "rehearsal" else time.strftime("%Y%m%dT%H%M%SZ", time.gmtime())
-    run = {"directive": "ACQ-R09 code + ACQ-R11b vertical-datum check (Phase 5 step 1)", "mode": a.mode, "run_tag": tag, "sites": requested, "site_list": {"path": str(sl), "sha256": P.sha256_file(sl)},
+    out_root = Path(cfg["out_root"]) / a.run_tag if not locked else Path(cfg["out_root"])
+    work_root = Path(os.environ.get("L_SCRATCH", "/tmp")) / "acq_p5" / (a.run_tag or a.mode)
+    tag = a.run_tag if not locked else time.strftime("%Y%m%dT%H%M%SZ", time.gmtime())
+    run = {"directive": "ACQ-R09 code + ACQ-R11b vertical-datum check + ACQ-R12 write paths / leak check (Phase 5 step 1)", "mode": a.mode, "run_tag": tag,
+           "sites": requested, "site_list": {"path": str(sl), "sha256": P.sha256_file(sl)},
            "out_root": str(out_root), "work_root": str(work_root), "sealed_root": str(cfg["sealed_root"]), "fetch": cfg["fetch"], "started": P.utc_now(),
            "host": P.hostname(), "cpu_model": P.cpu_model(), "code_commit": P.git_commit(), "nproc": a.nproc, "batch_files": a.batch_files,
-           "mbsystem": C.MBSYSTEM_VERSION, "sandbox": C.SANDBOX, "container_digest": C.CONTAINER_DIGEST, "rulings": ["S1", "S2", "S3", "ACQ-R11b fallback: datum check T_G, line check not applied"]}
+           "mbsystem": C.MBSYSTEM_VERSION, "sandbox": C.SANDBOX, "container_digest": C.CONTAINER_DIGEST,
+           "rulings": ["S1", "S2", "S3", "ACQ-R11b fallback: datum check T_G, line check not applied", "ACQ-R12 write paths + in-run leak check (records-only key scope)"],
+           "swath_root": str(cfg["swath_root"]), "record_dir": str(cfg["record_dir"])}
+    if cfg["seal_mock"]:                                       # phase5_mock: the mock tokens are sealed like real ones, before anything else
+        run["mock_seal"] = GP.seal_tokens([s["token"] for s in sites])
     run["fixed_input_sha256"] = P.check_fixed_inputs()
     # guard self-tests first (Phase 4 reader checks + the Phase 5 admission rules on the real names), before any allowance
     g4 = G4.run(write=False)
     real_tokens = [s["token"] for s in P.read_site_list(P.SITE_LIST)]
-    mock_tokens = [s["token"] for s in sites] if a.mode == "rehearsal" else []
-    g5 = GP.selftest(real_tokens, mock_tokens, out_root, work_root, decoy_mock=P.MOCK_ROOT / "MGDS_99999" / "decoy.grd")
+    mock_tokens = [s["token"] for s in sites] if a.mode != "phase5" else []
+    g5 = GP.selftest(real_tokens, mock_tokens, out_root, work_root, decoy_mock=P.MOCK_ROOT / "MGDS_99999" / "decoy.grd",
+                     mock_root=(cfg["sealed_root"] if a.mode != "phase5" else None))
     run["guard_selftest"] = {"phase4_reader_checks": {"n": g4["reader_checks"]["n"], "n_blocked": g4["reader_checks"]["n_blocked"], "all_passed": g4["all_passed"]},
                              "phase5": {k: v for k, v in g5.items() if k != "reader_checks"} | {"reader_checks": {k: v for k, v in g5["reader_checks"].items() if k != "rows"}}}
-    if not (g4["all_passed"] and g5["all_passed"]):
+    ok = g4["all_passed"] and g5["all_passed"]
+    if locked:
+        run["guard_selftest"]["site_paths"] = _site_path_probes(sites, out_root, work_root, cfg["record_dir"], cfg["sealed_root"])
+        ok = ok and run["guard_selftest"]["site_paths"]["all_blocked"]
+    if not ok:
         raise Refusal("guard self-test failed: " + json.dumps(run["guard_selftest"], default=str)[:400])
     run["locks"] = {}
-    if a.mode == "phase5":                                     # mode branch: the locks, then the allowance
+    if locked:                                                 # mode branch: the locks, then the allowance
         run["locks"] = enforce_phase5_locks(a, cfg, sites, requested)
     elif a.freeze_record:
         run["locks"]["lock2_freeze_record"] = lock_freeze_record(a.freeze_record)
     if "lock2_freeze_record" in run["locks"]:
         run["freeze_record_sha256"] = run["locks"]["lock2_freeze_record"]["freeze_record_sha256"]
     toks = [s["token"] for s in sites if s["hr_id"] in requested]
+    old_swath = C.RAW_SWATH_OAK
+    C.RAW_SWATH_OAK = Path(cfg["swath_root"])                 # unchanged in phase5 / rehearsal; the scratch fetch root in phase5_mock
     run["allowance"] = GP.install_phase5_allowance(toks, cfg["sealed_root"], [out_root, work_root], reason=cfg["allow_reason"])
     recs, rows, per_pair, ledger = {}, [], {}, []
     import pyarrow.parquet as pq
     cols4 = [f.name for f in pq.read_schema(P.SUPPLEMENT_PHASE4)]
+    sp = Path(cfg["supplement"]) if locked else Path(cfg["supplement"]).with_name(f"supplement_rehearsal_{tag}.parquet")
+    pending = work_root / "supplement_pending.parquet"
     try:
         for s in sites:
             if s["hr_id"] not in requested:
@@ -407,28 +474,56 @@ def main(argv=None):
             e = per_pair_entry(rec); e["site_record_sha256"] = P.sha256_file(out_root / "harmonized" / s["pair_id"] / "site_record.json")
             per_pair[s["pair_id"]] = e
             rows.append(supplement_row(rec, cols4))
-    except StopRun as e:
-        run.update({"status": "stopped", "error": str(e), "ledger": ledger, "pairs_done": list(per_pair), "per_pair": per_pair, "wall_s": round(time.time() - t_run, 1)})
-        write_run_record(run, cfg, tag)
-        log.error("STOP: %s", e)
+        run["loaded_repo_files"] = P.loaded_repo_files()
+        if locked or a.freeze_record:
+            run["locks"]["lock2_after_run"] = lock_freeze_record(a.freeze_record or P.FREEZE_RECORD)
+        hits = P.forbidden_keys(per_pair)
+        if hits:
+            raise StopRun(f"forbidden keys in per_pair: {hits[:8]}")
+        pending.parent.mkdir(parents=True, exist_ok=True)
+        sup = write_supplement(rows, pending)                  # written in the work root; published only after the leak check
+        run.update({"pairs_done": list(per_pair), "per_pair": per_pair, "ledger": ledger})
+        # last stage: the in-run leak check, under the locks and the allowance already in place (nothing new installed)
+        logs = [x for x in a.scan_logs.split(",") if x] + job_logs()
+        extra = list(logs)
+        for r in recs.values():
+            cd = (r.get("swath") or {}).get("cruise_dir")
+            if r.get("fetch") and cd:
+                extra += [str(Path(cd) / "fetch_manifest.json"), str(Path(cd) / "SHA256SUMS")]
+        extra += [str(f) for f in Path(cfg["record_dir"]).glob("*") if f.is_file() and f.stat().st_mtime >= t_run]
+        texts = {"supplement (pending)": json.dumps(pq.read_table(pending).to_pylist(), default=repr), "run record (pending)": json.dumps(run, default=str)}
+        leak = LK.run_check([out_root / "harmonized" / pid for pid in per_pair], extra, texts, [run])
+        run["leak_check"] = leak | {"logs_scanned": logs}
+        if not leak["passed"]:
+            raise StopRun(f"leak check: {leak['n_value_hits']} value hit(s) in {leak['n_files_with_value_hits']} file(s), {leak['n_key_hits']} key hit(s); nothing published")
+    except BaseException as e:                                 # every stop writes a "stopped" record (ACQ-R10b left none)
+        if isinstance(e, KeyboardInterrupt):
+            raise
+        run.update({"status": "stopped", "error": f"{type(e).__name__}: {str(e)[:300]}", "ledger": ledger, "pairs_done": list(per_pair), "per_pair": per_pair,
+                    "wall_s": round(time.time() - t_run, 1)})
+        try:
+            write_run_record(run, cfg, tag)
+        finally:
+            log.error("STOP: %s", run["error"])
         raise
     finally:
         GP.remove_phase5_allowance()
-    run["loaded_repo_files"] = P.loaded_repo_files()
-    if a.mode == "phase5" or a.freeze_record:
-        run["locks"]["lock2_after_run"] = lock_freeze_record(a.freeze_record or P.FREEZE_RECORD)
-    sp = Path(cfg["supplement"]) if a.mode == "phase5" else Path(cfg["supplement"]).with_name(f"supplement_rehearsal_{tag}.parquet")
-    sup = write_supplement(rows, sp)
-    hits = P.forbidden_keys(per_pair)
-    if hits:
-        raise StopRun(f"forbidden keys in per_pair: {hits[:8]}")
+        C.RAW_SWATH_OAK = old_swath
+    # publish: the supplement moves from the work root to its path (byte copy, sha256 checked)
+    sp.parent.mkdir(parents=True, exist_ok=True)
+    if sp.exists():
+        raise StopRun(f"{sp} exists; not overwritten")
+    shutil.copyfile(pending, sp); sp.chmod(0o444)
+    if P.sha256_file(sp) != sup["sha256"]:
+        raise StopRun(f"published supplement {sp} differs from the checked one")
+    sup["path"] = str(sp)
     run.update({"status": "complete", "supplement": sup["path"], "supplement_sha256": sup["sha256"], "supplement_schema": sup, "n_rows": sup["n_rows"],
-                "pairs_done": list(per_pair), "per_pair": per_pair, "ledger": ledger, "wall_s": round(time.time() - t_run, 1), "finished": P.utc_now()})
+                "wall_s": round(time.time() - t_run, 1), "finished": P.utc_now()})
     p = write_run_record(run, cfg, tag)
     for pid, e in per_pair.items():
         print(f"{pid:28s} hr {e['hr_native_res_m']} m  lr {e['lr_native_res_m']} m  cells {e['cells_across']}  k {e['max_recoverable_k']}  "
               f"products {e['products']} usable {e['ship_products_usable']}  {e['status']}" + (f" ({e['eligibility_reason']})" if not e["eligible"] else ""))
-    print(f"run record {p} (sha256 {P.sha256_file(p)}); supplement {sp} (sha256 {sup['sha256'][:16]}…); wall {run['wall_s']} s")
+    print(f"run record {p} (sha256 {P.sha256_file(p)}); supplement {sp} (sha256 {sup['sha256'][:16]}…); leak check passed; wall {run['wall_s']} s")
     return 0
 
 

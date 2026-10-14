@@ -17,6 +17,8 @@ a path the guard refuses is admitted only if
 phase5 mode installs it after every lock has passed; rehearsal mode installs it on the mock root and mock ids (no
 sign-off).  `selftest()` checks the reader refusals before any allowance and the admission rules as pure string checks on
 the REAL `sealed_candidates_v3/<hr_id>/` names (no sealed file is touched), then removes the allowance.
+ACQ-R12: `seal_tokens` (phase5_mock rehearsal only) makes the guard refuse the mock tokens exactly as it refuses the real
+candidate ids, before the locks; `admitted` treats them like real tokens.  The record directory is never admitted.
 """
 from __future__ import annotations
 
@@ -28,7 +30,9 @@ from src.acq_r01 import common as C
 
 _ORIG_CHECK = C._check
 _P5 = {"tokens": (), "sealed_root": None, "roots": (), "reason": None}
-REASONS = ("ACQ-R09 phase5 locks passed", "ACQ-R09 rehearsal (mock root, development data)", "ACQ-R09 guard self-test")
+_EXTRA = {"tokens": ()}                       # ACQ-R12 mock seal (phase5_mock rehearsal only)
+REASONS = ("ACQ-R09 phase5 locks passed", "ACQ-R09 rehearsal (mock root, development data)", "ACQ-R09 guard self-test",
+           "ACQ-R12 phase5_mock locks passed")
 _DRIVER_PREFIX = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*:(?=/)")
 
 
@@ -45,6 +49,29 @@ def _norm(path) -> str:
 
 def _tok_in(s: str, tok: str) -> bool:
     return re.search(re.escape(tok) + r"(?![0-9A-Za-z])", s) is not None
+
+
+def _base_check(path):
+    """The acquisition guard, plus the ACQ-R12 mock seal: a path holding a sealed mock token is refused like a real one."""
+    r = _ORIG_CHECK(path)
+    if _EXTRA["tokens"]:
+        s = _norm(path)
+        hit = [t for t in _EXTRA["tokens"] if _tok_in(s, t)]
+        if hit:
+            raise PermissionError(f"SEALED CANDIDATE GUARD (ACQ-R12 mock seal): refusing to open {s} (candidate {hit[0]})")
+    return r
+
+
+def seal_tokens(tokens) -> dict:
+    """phase5_mock only: seal the mock tokens before the guard self-test and the locks (no allowance may be installed)."""
+    if _P5["tokens"]:
+        raise PermissionError("mock seal refused: a Phase 5 allowance is installed")
+    toks = tuple(str(t) for t in tokens)
+    if not toks or any(not re.fullmatch(r"[A-Za-z]+_[0-9A-Za-z]+", t) for t in toks) or any(t in C.SEALED_CANDIDATE_TOKENS for t in toks):
+        raise PermissionError(f"mock seal refused: tokens must be record-id tokens that are not real candidates: {toks}")
+    _EXTRA["tokens"] = toks
+    C._check = _base_check
+    return {"sealed_mock_tokens": list(toks)}
 
 
 def admitted(path) -> tuple:
@@ -64,7 +91,7 @@ def admitted(path) -> tuple:
             return False, f"sealed swath {c}"
     if s.startswith(str(C.OAK / "raw_hr") + "/"):
         return False, "OAK raw_hr (September copies stay sealed)"
-    bad = [t for t in C.SEALED_CANDIDATE_TOKENS if _tok_in(s, t) and t not in toks]
+    bad = [t for t in tuple(C.SEALED_CANDIDATE_TOKENS) + _EXTRA["tokens"] if _tok_in(s, t) and t not in toks]
     if bad:
         return False, f"non-admitted candidate id {bad}"
     if C.SEALED_CANDIDATES_V3_DIRNAME in parts:
@@ -81,7 +108,7 @@ def admitted(path) -> tuple:
 
 def _check_p5(path):
     try:
-        return _ORIG_CHECK(path)
+        return _base_check(path)
     except PermissionError:
         ok, why = admitted(path)
         if ok:
@@ -109,7 +136,7 @@ install_phase5_allowance = _install          # public name (the refusal tests re
 
 def remove_phase5_allowance():
     _P5.update({"tokens": (), "sealed_root": None, "roots": (), "reason": None})
-    C._check = _ORIG_CHECK
+    C._check = _base_check if _EXTRA["tokens"] else _ORIG_CHECK
 
 
 def allowance() -> dict:
@@ -139,7 +166,7 @@ def _probe(fn, p) -> str:
         return f"NOT BLOCKED ({type(e).__name__})"
 
 
-def selftest(site_tokens: list, mock_tokens: list, out_root: Path, work_root: Path, decoy_mock: Path | None = None) -> dict:
+def selftest(site_tokens: list, mock_tokens: list, out_root: Path, work_root: Path, decoy_mock: Path | None = None, mock_root: Path | None = None) -> dict:
     """(1) reader refusals before any allowance: the real sealed root, every real candidate directory and a file in it, the
     mock root, each mock id directory, the lockbox / confirmatory paths; (2) admission rules as string checks on the real
     sealed_candidates_v3/<hr_id>/ names with the site tokens, then (3) on the mock root with the mock tokens; the allowance is
@@ -148,7 +175,7 @@ def selftest(site_tokens: list, mock_tokens: list, out_root: Path, work_root: Pa
         raise RuntimeError("guard self-test must run before any Phase 5 allowance")
     from src.phase5 import common_p5 as P
     readers = _readers()
-    real = C.SEALED_CANDIDATES_V3; mock = P.MOCK_ROOT
+    real = C.SEALED_CANDIDATES_V3; mock = Path(mock_root) if mock_root else P.MOCK_ROOT
     targets = {"real root": str(real), "mock root": str(mock)}
     for i in C.SEALED_CANDIDATE_IDS:
         t = i.replace(":", "_")

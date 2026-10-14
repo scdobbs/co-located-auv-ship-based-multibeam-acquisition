@@ -19,6 +19,12 @@ ACQ-R11b (2026-10-13; Steve's rulings: ACQ-R10 H-1 option (b) with the fallback 
   the vertical-datum check alone (src/phase5/vcheck_p5.py, a byte copy of src/acq_r11/vcheck.py) with T_G below;
   ship line-to-line inconsistency is unchecked.  coreg_pass = qa_pass AND G <= T_G.  New run-time records and
   rehearsal outputs go to ACQ-R11b (the ACQ-R09 records and freeze record stay as they are).
+
+ACQ-R12 (2026-10-13; Steve's rulings: audit and fix every phase5 write path, in-run leak check, fetch-on rehearsal,
+re-freeze v3; leak-check scope "records only" for the forbidden keys): no computation changes.  Files that carry a
+candidate token are written under the admitted roots (the site's staging / final directory in the output root, or the
+node-local work root), never in the record directory; the guard is not widened.  New mode phase5_mock = the phase5
+branch with mock inputs (development data posing as sealed sites).  Run-time records go to ACQ-R12.
 """
 from __future__ import annotations
 
@@ -37,11 +43,12 @@ OAK = C.OAK
 SCR = C.SCRATCH_DATA
 RPG = REPO / "reports_post_grl_review"
 R09_DIR = RPG / "ACQ-R09"                                        # spec and record contract (ACQ-R09; unchanged)
-REPORT_DIR = RPG / "ACQ-R11b"                                    # ACQ-R11b: refusal tests, preservation, freeze candidate
+REPORT_DIR = RPG / "ACQ-R12"                                     # ACQ-R12: refusal tests, preservation, freeze candidate
 REHEARSAL_DIR = REPORT_DIR / "rehearsal"
 PHASE5_DIR = RPG / "PHASE5"                                      # phase5-mode run records and the freeze record
 FREEZE_RECORD_V1 = PHASE5_DIR / "freeze_record_phase5.json"      # ACQ-R09 freeze (superseded, kept)
-FREEZE_RECORD = PHASE5_DIR / "freeze_record_phase5_v2.json"      # ACQ-R11b freeze
+FREEZE_RECORD_V2 = PHASE5_DIR / "freeze_record_phase5_v2.json"   # ACQ-R11b freeze (superseded, kept)
+FREEZE_RECORD = PHASE5_DIR / "freeze_record_phase5_v3.json"      # ACQ-R12 freeze
 SITE_LIST = REPO / "inputs" / "phase5_sites.csv"
 SITE_LIST_REL = "inputs/phase5_sites.csv"
 ENTRY_REL = "src/phase5/sealed_step1_p5.py"
@@ -50,10 +57,26 @@ SUPPLEMENT_PHASE4 = REPO / "manifest" / "pairs_phase4_sealed.parquet"         # 
 SHA_SUPPLEMENT_PHASE4 = "6968e04554ddeef3c335587d602cb5fab2185db32b46cbd152475a919eb59206"
 
 # rehearsal layout (scratch only)
-SCRATCH_ROOT = SCR / "ACQ-R11b"
-MOCK_ROOT = SCRATCH_ROOT / "mock" / C.SEALED_CANDIDATES_V3_DIRNAME           # .../ACQ-R11b/mock/sealed_candidates_v3/<id>/
+SCRATCH_ROOT = SCR / "ACQ-R12"
+MOCK_ROOT = SCRATCH_ROOT / "mock" / C.SEALED_CANDIDATES_V3_DIRNAME           # .../ACQ-R12/mock/sealed_candidates_v3/<id>/
 MOCK_SITE_LIST = REHEARSAL_DIR / "mock_sites.csv"
 REHEARSAL_OUT = SCRATCH_ROOT / "rehearsal"
+# ACQ-R12 phase5_mock rehearsal (the phase5 branch, fetch on, development pairs posing as sealed sites; scratch only)
+MOCK5_ROOT = SCRATCH_ROOT / "mock5" / C.SEALED_CANDIDATES_V3_DIRNAME          # .../ACQ-R12/mock5/sealed_candidates_v3/<token>/
+MOCK5_SITE_LIST = REHEARSAL_DIR / "mock5_sites.csv"
+MOCK5_INPUTS = REHEARSAL_DIR / "phase5_mock_inputs"                          # mock pre-registration + sign-off
+MOCK5_RECORD_DIR = REHEARSAL_DIR / "phase5_mock"                             # plays PHASE5/ (record directory)
+MOCK5_SUPPLEMENT = MOCK5_RECORD_DIR / "pairs_phase5_mock.parquet"            # plays manifest/pairs_phase5_sealed.parquet
+MOCK5_OUT = SCRATCH_ROOT / "phase5_mock"                                     # plays OAK .../phase5
+MOCK5_SWATH = SCRATCH_ROOT / "raw_lr_swath"                                  # plays OAK raw_lr_swath (fetch destination)
+FETCH_CACHE_PHASE5 = SCR / "discovery_cache" / "acq_r09_phase5_fetch"        # NCEI listing cache of the real run (unchanged)
+FETCH_CACHE_MOCK5 = SCRATCH_ROOT / "fetch_cache"
+# in-run leak check (ACQ-R12 §3; ruling "records only"): the G / V95 value search covers every text file, parquet text
+# and log the run wrote; the forbidden-key check covers the records the step writes (not the frozen v2.1 products)
+LEAK_TEXT_SUFFIXES = (".json", ".geojson", ".csv", ".md", ".txt", ".log", ".out", ".err", ".tab")
+LEAK_TEXT_NAMES = ("SHA256SUMS",)
+LEAK_KEY_RECORDS = ("site_record.json", "hr_selection.json", "grid_record.json", "sweep_record.json")
+LEAK_KEY_EXEMPT_DIRS = ("ship_products_v2_1",)                              # frozen contract-v2.1 products (do-not-open)
 
 # fixed inputs (read-only); a differing hash stops the run
 C2C_CALIBRATION = REPO / "reports" / "discovery" / "stage_c2c_calibration.json"
