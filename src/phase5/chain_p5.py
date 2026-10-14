@@ -44,6 +44,7 @@ from src.discovery import stage_c5_spectral        # noqa: F401  (chain)
 from src.phase4 import sealed_step1 as S4            # frozen Phase 4 rules: usable_rule (C1), classify_builder_error (C2), counts
 from src.phase5 import common_p5 as P
 from src.phase5 import vcheck_p5 as VC
+from src.phase5 import localcoreg_p5 as LC
 
 if P.sha256_file(P.REPO / P.VCHECK_REL) != P.VCHECK_SHA:
     raise ImportError(f"{P.VCHECK_REL} is not the byte copy of src/acq_r11/vcheck.py (sha256 {P.VCHECK_SHA})")
@@ -240,17 +241,32 @@ def harmonize(site: dict, kept_raw: list, gridded_dir: Path, out_dir: Path, tmp:
     try:
         hr_da = rioxarray.open_rasterio(str(hr_out), masked=True).squeeze(); lr_da = rioxarray.open_rasterio(str(lr_out), masked=True).squeeze()
         cg = cor.estimate_rigid_xyz(hr_da, lr_da)
-        corrected = cor.apply_xyz(hr_da, cg.dx_m, cg.dy_m, cg.dz_m)
+        # ACQ-R13: local (quadrant) co-registration replaces the 30 m bound; rigid case -> the frozen correction unchanged
+        with rasterio.open(str(hr_out)) as hds0:
+            a0 = hds0.read(1, masked=True).filled(np.nan)
+            pre_valid = np.isfinite(a0) & ~np.isclose(a0, FILL, atol=1e-3) & HN.lr_real_on_hr(lr_out, hds0)
+        del a0
+        with rasterio.open(str(lr_out)) as lds:
+            px_lr = abs(lds.transform.a)
+        est = LC.estimate(hr_da, lr_da, pre_valid, float(abs(hr_da.rio.resolution()[0])), px_lr, cg)
+        del pre_valid
+        corrected = cor.apply_xyz(hr_da, cg.dx_m, cg.dy_m, cg.dz_m) if est["case"] == "rigid" else LC.apply_drift(hr_da, cg, est)
         corrected.rio.write_nodata(np.nan, inplace=True)
         corrected.rio.to_raster(hr_out, compress="DEFLATE", tiled=True, BIGTIFF="IF_SAFER")
         off = float(np.hypot(cg.dx_m, cg.dy_m))
         rec["coreg"] = {"dx_m": round(cg.dx_m, 2), "dy_m": round(cg.dy_m, 2), "dz_m": round(cg.dz_m, 2), "offset_m": round(off, 2), "n": int(cg.n_samples),
-                        "pass": bool(off <= P.USBL_BOUND_M), "estimated": True}
+                        "pass": None, "estimated": True}
     except Exception as e:
-        rec["coreg"] = {"pass": False, "estimated": False, "error": str(e)[:120]}
+        rec["coreg"] = {"pass": False, "estimated": False, "error": str(e)[:120]}; est = None
     with rasterio.open(str(hr_out)) as hds:
         hr_arr = hds.read(1); hr_real = np.isfinite(hr_arr) & ~np.isclose(hr_arr, FILL, atol=1e-3)
         lr_real = HN.lr_real_on_hr(lr_out, hds); joint = hr_real & lr_real
+        hr_px = abs(hds.transform.a)
+        if est is not None:                                    # ACQ-R13: drift case drops lattice tiles crossing a group boundary
+            joint, n_drop, post = LC.finalize(joint, est, hr_px)
+            case_pass = True if est["case"] == "rigid" else all(g["passes_qa"] for g in post)
+            rec["local_coreg"] = LC.record(est, post, n_drop, case_pass)
+            rec["coreg"]["pass"] = bool(case_pass)
         prof = {"driver": "GTiff", "height": hds.height, "width": hds.width, "count": 1, "dtype": "uint8", "crs": hds.crs, "transform": hds.transform, "nodata": 255, "compress": "DEFLATE"}
         tr = hds.transform; hr_res = abs(tr.a)
     del hr_arr
@@ -261,7 +277,7 @@ def harmonize(site: dict, kept_raw: list, gridded_dir: Path, out_dir: Path, tmp:
     n_tiles_ok = sum(1 for r0 in range(0, joint.shape[0] - T + 1, T) for c0 in range(0, joint.shape[1] - T + 1, T) if joint[r0:r0 + T, c0:c0 + T].mean() >= 0.5)
     rec.update({"hr_res_m_unrounded": hr_res, "hr_res_m": round(hr_res, 3), "n_hr_valid": int(hr_real.sum()), "n_lr_valid": int(lr_real.sum()), "n_joint_valid": int(joint.sum()),
                 "joint_area_km2": round(int(joint.sum()) * hr_res * hr_res / 1e6, 3), "n_valid_tiles_256": n_tiles_ok})
-    qa = {"offset_within_30m": bool(rec["coreg"].get("pass")), "overlap_ge_1km2": bool(rec.get("overlap_km2", 0) >= P.MIN_OVERLAP_KM2), "tiles_gt_0": bool(n_tiles_ok > 0),
+    qa = {"coreg_case_pass": bool(rec["coreg"].get("pass")), "overlap_ge_1km2": bool(rec.get("overlap_km2", 0) >= P.MIN_OVERLAP_KM2), "tiles_gt_0": bool(n_tiles_ok > 0),
           "coreg_estimated": bool(rec["coreg"].get("estimated"))}
     rec["qa_components"] = qa
     rec["qa_pass"] = bool(rec["coreg"].get("pass") and rec.get("overlap_km2", 0) >= 1.0 and n_tiles_ok > 0)     # harmonize_new.py line 352
@@ -383,8 +399,8 @@ def eligibility(harm: dict | None, c2a_rec: dict | None, sweep_rec: dict | None,
         q = harm.get("qa_components", {})
         if not q.get("coreg_estimated"):
             reasons.append("co-registration: could not be estimated")
-        elif not q.get("offset_within_30m"):
-            reasons.append("co-registration: offset above the 30 m development bound")
+        elif not q.get("coreg_case_pass", q.get("offset_within_30m")):
+            reasons.append("co-registration: drift case, a quadrant group fails the frozen QA (ACQ-R13)")
         if not q.get("overlap_ge_1km2"):
             reasons.append("co-registration: overlap below 1 km2")
         if not q.get("tiles_gt_0"):
@@ -409,7 +425,7 @@ def eligibility(harm: dict | None, c2a_rec: dict | None, sweep_rec: dict | None,
             "k_recoverable": bool(k_ok), "cells_across": (round(cells, 6) if cells is not None else None), "cells_in_range": bool(cells_ok),
             "hr_res_in_range": bool(hr_ok), "eligible": eligible, "eligibility_reason": "" if eligible else "; ".join(dict.fromkeys(reasons)) or "not testable",
             "status": "eligible (C1 set at step 1)" if eligible else "not testable",
-            "definitions": {"coreg_pass": "harmonize_new qa_pass (offset <= 30 m, overlap >= 1 km2, >= 1 256-px tile with >= 50 % joint-valid cells) "
+            "definitions": {"coreg_pass": "ACQ-R13: rigid case (every quadrant group within one ship cell of the global shift) or drift case with every group passing the frozen QA; overlap >= 1 km2, >= 1 256-px tile with >= 50 % joint-valid cells (the 30 m bound replaced) "
                                           "AND the vertical-datum check (ACQ-R11b: V95_rel <= T_G = 0.200712)",
                             "k_recoverable": "stage_c2c_recalibrate.sweep max_recoverable_k is not None",
                             "cells_across": "256 x |hr.tif pixel| (unrounded) / lr_native_res_m, in [3.88, 51.2]",

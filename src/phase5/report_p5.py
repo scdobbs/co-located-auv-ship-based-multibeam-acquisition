@@ -15,7 +15,7 @@ from pathlib import Path
 
 from src.phase5 import common_p5 as P
 
-FIELDS = ["pair_id", "status", "coreg_pass", "k_recoverable", "cells_across", "hr_res_in_range", "eligible", "eligibility_reason",
+FIELDS = ["pair_id", "status", "coreg_case", "n_quadrant_groups", "n_tiles_dropped_boundary", "coreg_pass", "vertical_datum_ok", "k_recoverable", "cells_across", "hr_res_in_range", "eligible", "eligibility_reason",
           "hr_native_res_m", "lr_native_res_m", "ship_grid_cell_m", "max_recoverable_k", "products", "ship_products_usable",
           "n_hr_files", "n_hr_grids_kept", "n_ship_swath_files", "site_record_sha256"]
 
@@ -24,7 +24,8 @@ def rows(run: dict) -> list:
     out = []
     for pid, e in run["per_pair"].items():
         g = e.get("hr_grids") or {}
-        r = {"pair_id": pid, "status": e["status"], **{k: e[k] for k in ("coreg_pass", "k_recoverable", "cells_across", "hr_res_in_range", "eligible", "eligibility_reason",
+        r = {"pair_id": pid, "status": e["status"], **{k: e.get(k) for k in ("coreg_case", "n_quadrant_groups", "n_tiles_dropped_boundary", "vertical_datum_ok")},
+             **{k: e[k] for k in ("coreg_pass", "k_recoverable", "cells_across", "hr_res_in_range", "eligible", "eligibility_reason",
                                                                           "hr_native_res_m", "lr_native_res_m", "ship_grid_cell_m", "max_recoverable_k", "products",
                                                                           "ship_products_usable", "site_record_sha256")},
              "n_hr_files": g.get("n_files"), "n_hr_grids_kept": len(g.get("kept") or []), "n_ship_swath_files": e.get("ship_swath_files")}

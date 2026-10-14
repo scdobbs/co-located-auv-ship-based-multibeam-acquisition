@@ -1,0 +1,28 @@
+{
+ "directive": "ACQ-R13 \u00a72",
+ "pairs": {
+  "NA080__MGDS_31289": {
+   "case": "rigid",
+   "n_groups": 4,
+   "all_estimated": true,
+   "all_agree_within_one_ship_cell": true,
+   "rigid": true
+  },
+  "KM0923__MGDS_31429": {
+   "case": "rigid",
+   "n_groups": 3,
+   "all_estimated": true,
+   "all_agree_within_one_ship_cell": true,
+   "rigid": true
+  },
+  "FK151121__MGDS_22383": {
+   "case": "rigid",
+   "n_groups": 4,
+   "all_estimated": true,
+   "all_agree_within_one_ship_cell": true,
+   "rigid": true
+  }
+ },
+ "all_rigid": true,
+ "localcoreg_p5_sha256": "14ed39b6b49590734844b4d379a5e8f5a369f29ad1c80655ed4f52c332862cdd"
+}

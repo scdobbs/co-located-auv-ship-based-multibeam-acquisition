@@ -67,7 +67,7 @@ MODES = {
                   "supplement": P.REHEARSAL_DIR / "supplement_rehearsal.parquet", "record_dir": P.REHEARSAL_DIR, "designation": "rehearsal (development data)",
                   "allow_reason": "ACQ-R09 rehearsal (mock root, development data)", "locked": False, "seal_mock": False,
                   "swath_root": C.RAW_SWATH_OAK, "fetch_cache": None},
-    "phase5": {"site_list": P.SITE_LIST, "site_list_fixed": True, "sealed_root": C.SEALED_CANDIDATES_V3, "out_root": C.OAK / "phase5", "fetch": True,
+    "phase5": {"site_list": P.SITE_LIST, "site_list_fixed": True, "sealed_root": C.SEALED_CANDIDATES_V3, "out_root": P.OUT_ROOT_PHASE5, "fetch": True,
                "supplement": P.SUPPLEMENT_PHASE5, "record_dir": P.PHASE5_DIR, "designation": "phase5_sealed",
                "allow_reason": "ACQ-R09 phase5 locks passed: sign-off, freeze record, site list, single run", "locked": True, "seal_mock": False,
                "swath_root": C.RAW_SWATH_OAK, "fetch_cache": P.FETCH_CACHE_PHASE5, "sealed_ids": C.SEALED_CANDIDATE_IDS},
@@ -142,7 +142,8 @@ def lock_site_list(a, sites: list, requested: list, cfg: dict | None = None) -> 
     return {"site_list": str(sl), "site_list_sha256": P.sha256_file(sl), "sites": ids}
 
 
-def lock_single_run(cfg) -> dict:
+def lock_single_run(cfg, freeze_sha: str | None = None) -> dict:
+    """ACQ-R13: one complete run per freeze record (a complete record citing an earlier freeze does not block)."""
     sp = Path(cfg["supplement"])
     if sp.exists():
         raise Refusal(f"LOCK 4 single run: {sp} already exists (sha256 {P.sha256_file(sp)}); there is one completed run")
@@ -152,7 +153,7 @@ def lock_single_run(cfg) -> dict:
             r = json.loads(Path(f).read_text())
         except Exception:
             continue
-        if r.get("status") == "complete" and r.get("mode") == cfg.get("mode", "phase5"):
+        if r.get("status") == "complete" and r.get("mode") == cfg.get("mode", "phase5") and (freeze_sha is None or r.get("freeze_record_sha256") == freeze_sha):
             done.append(f)
     if done:
         raise Refusal(f"LOCK 4 single run: a complete phase5 run record exists: {done}")
@@ -164,7 +165,7 @@ def enforce_phase5_locks(a, cfg, sites, requested) -> dict:
     rec = {"lock1_signoff": lock_signoff(a.signoff, a.prereg_sha256)}
     rec["lock2_freeze_record"] = lock_freeze_record(a.freeze_record or P.FREEZE_RECORD)
     rec["lock3_site_list"] = lock_site_list(a, sites, requested, cfg)
-    rec["lock4_single_run"] = lock_single_run(cfg)
+    rec["lock4_single_run"] = lock_single_run(cfg, rec["lock2_freeze_record"]["freeze_record_sha256"])
     return rec
 
 
@@ -290,6 +291,8 @@ def per_pair_entry(rec: dict) -> dict:
             "products_reason": (pr or {}).get("reason") or (pr or {}).get("unavailable_reason"), "flags": (pr or {}).get("flags"),
             "ship_products_usable": rec["usable"], "usable_reason": rec["usable_reason"],
             "coreg_pass": el["coreg_pass"], "qa_components": h.get("qa_components"), "vertical_datum_ok": el.get("vertical_datum_ok"),
+            "coreg_case": (h.get("local_coreg") or {}).get("case"), "n_quadrant_groups": (h.get("local_coreg") or {}).get("n_groups_used"),
+            "n_tiles_dropped_boundary": (h.get("local_coreg") or {}).get("n_tiles_dropped_boundary"),
             "n_valid_tiles_256": h.get("n_valid_tiles_256"),
             "k_recoverable": el["k_recoverable"], "cells_across": el["cells_across"], "hr_res_in_range": el["hr_res_in_range"],
             "eligible": el["eligible"], "eligibility_reason": el["eligibility_reason"], "status": el["status"],
@@ -430,7 +433,8 @@ def main(argv=None):
            "out_root": str(out_root), "work_root": str(work_root), "sealed_root": str(cfg["sealed_root"]), "fetch": cfg["fetch"], "started": P.utc_now(),
            "host": P.hostname(), "cpu_model": P.cpu_model(), "code_commit": P.git_commit(), "nproc": a.nproc, "batch_files": a.batch_files,
            "mbsystem": C.MBSYSTEM_VERSION, "sandbox": C.SANDBOX, "container_digest": C.CONTAINER_DIGEST,
-           "rulings": ["S1", "S2", "S3", "ACQ-R11b fallback: datum check T_G, line check not applied", "ACQ-R12 write paths + in-run leak check (records-only key scope)"],
+           "rulings": ["S1", "S2", "S3", "ACQ-R11b fallback: datum check T_G, line check not applied", "ACQ-R12 write paths + in-run leak check (records-only key scope)",
+                     "ACQ-R13 local co-registration replaces the 30 m bound"],
            "swath_root": str(cfg["swath_root"]), "record_dir": str(cfg["record_dir"])}
     if cfg["seal_mock"]:                                       # phase5_mock: the mock tokens are sealed like real ones, before anything else
         run["mock_seal"] = GP.seal_tokens([s["token"] for s in sites])
