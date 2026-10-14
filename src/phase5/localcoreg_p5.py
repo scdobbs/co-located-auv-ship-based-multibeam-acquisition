@@ -135,6 +135,7 @@ def apply_drift(hr_da, glob, est):
         out[sel] = shifted[sel] + g["dz_m"]
         g["residual_px"] = [kx, ky]
     corrected = hr_da.copy(data=out.astype(hr_da.dtype) if np.issubdtype(hr_da.dtype, np.floating) else out)
+    corrected.attrs = {}; corrected.encoding = {}            # as apply_xyz's arithmetic: no inherited _FillValue (ACQ-R13 v4.1 fix)
     corrected = corrected.assign_coords(x=hr_da.x + glob.dx_m, y=hr_da.y + glob.dy_m)
     corrected.rio.write_crs(hr_da.rio.crs, inplace=True)
     return corrected

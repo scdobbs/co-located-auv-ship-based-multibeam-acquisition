@@ -56,6 +56,10 @@ class StopRun(RuntimeError):
     """Not a data-tied failure (container start / timeout, network, missing swath, write error): the run stops."""
 
 
+class _NotEstimated(RuntimeError):
+    """The frozen rigid estimator raised (e.g. too few samples): the site's co-registration is "not estimated"."""
+
+
 class SiteFail(RuntimeError):
     """A data-tied failure of a site (unreadable format, no overlap ...): the site is not testable, the run continues."""
 
@@ -240,8 +244,12 @@ def harmonize(site: dict, kept_raw: list, gridded_dir: Path, out_dir: Path, tmp:
     hr_out, lr_out = out_dir / "hr.tif", out_dir / "lr.tif"
     try:
         hr_da = rioxarray.open_rasterio(str(hr_out), masked=True).squeeze(); lr_da = rioxarray.open_rasterio(str(lr_out), masked=True).squeeze()
-        cg = cor.estimate_rigid_xyz(hr_da, lr_da)
-        # ACQ-R13: local (quadrant) co-registration replaces the 30 m bound; rigid case -> the frozen correction unchanged
+        try:
+            cg = cor.estimate_rigid_xyz(hr_da, lr_da)
+        except Exception as e:                                 # the frozen outcome: co-registration could not be estimated
+            raise _NotEstimated(str(e)[:120]) from e
+        # ACQ-R13: local (quadrant) co-registration replaces the 30 m bound; rigid case -> the frozen correction unchanged.
+        # v4.1: an error from here on is a code error and stops the run (no longer read as "not estimated").
         with rasterio.open(str(hr_out)) as hds0:
             a0 = hds0.read(1, masked=True).filled(np.nan)
             pre_valid = np.isfinite(a0) & ~np.isclose(a0, FILL, atol=1e-3) & HN.lr_real_on_hr(lr_out, hds0)
@@ -256,7 +264,7 @@ def harmonize(site: dict, kept_raw: list, gridded_dir: Path, out_dir: Path, tmp:
         off = float(np.hypot(cg.dx_m, cg.dy_m))
         rec["coreg"] = {"dx_m": round(cg.dx_m, 2), "dy_m": round(cg.dy_m, 2), "dz_m": round(cg.dz_m, 2), "offset_m": round(off, 2), "n": int(cg.n_samples),
                         "pass": None, "estimated": True}
-    except Exception as e:
+    except _NotEstimated as e:
         rec["coreg"] = {"pass": False, "estimated": False, "error": str(e)[:120]}; est = None
     with rasterio.open(str(hr_out)) as hds:
         hr_arr = hds.read(1); hr_real = np.isfinite(hr_arr) & ~np.isclose(hr_arr, FILL, atol=1e-3)

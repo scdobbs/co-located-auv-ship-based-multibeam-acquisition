@@ -49,13 +49,15 @@ PHASE5_DIR = RPG / "PHASE5"                                      # phase5-mode r
 FREEZE_RECORD_V1 = PHASE5_DIR / "freeze_record_phase5.json"      # ACQ-R09 freeze (superseded, kept)
 FREEZE_RECORD_V2 = PHASE5_DIR / "freeze_record_phase5_v2.json"   # ACQ-R11b freeze (superseded, kept)
 FREEZE_RECORD_V3 = PHASE5_DIR / "freeze_record_phase5_v3.json"   # ACQ-R12 freeze (superseded, kept; ACQ-R10c ran on it)
-FREEZE_RECORD = PHASE5_DIR / "freeze_record_phase5_v4.json"      # ACQ-R13 freeze (local co-registration)
+FREEZE_RECORD_V4 = PHASE5_DIR / "freeze_record_phase5_v4.json"   # ACQ-R13 freeze (drift-case write bug; superseded, kept)
+FREEZE_RECORD = PHASE5_DIR / "freeze_record_phase5_v4_1.json"    # ACQ-R13 freeze v4.1 (drift-case write fixed)
 SITE_LIST = REPO / "inputs" / "phase5_sites.csv"
 SITE_LIST_REL = "inputs/phase5_sites.csv"
 ENTRY_REL = "src/phase5/sealed_step1_p5.py"
 SUPPLEMENT_PHASE5_V3 = REPO / "manifest" / "pairs_phase5_sealed.parquet"      # ACQ-R10c (freeze v3), kept
-SUPPLEMENT_PHASE5 = REPO / "manifest" / "pairs_phase5_sealed_v4.parquet"      # ACQ-R13 (freeze v4)
-OUT_ROOT_PHASE5 = OAK / "phase5_v4"                                          # ACQ-R13: fresh root (OAK phase5/ holds the ACQ-R10c sites)
+SUPPLEMENT_PHASE5_V4 = REPO / "manifest" / "pairs_phase5_sealed_v4.parquet"   # ACQ-R13 freeze v4 run (superseded, kept)
+SUPPLEMENT_PHASE5 = REPO / "manifest" / "pairs_phase5_sealed_v4_1.parquet"      # ACQ-R13 freeze v4.1
+OUT_ROOT_PHASE5 = OAK / "phase5_v4_1"                                        # ACQ-R13 v4.1: fresh root (phase5/ = ACQ-R10c, phase5_v4/ = v4 run)
 SUPPLEMENT_PHASE4 = REPO / "manifest" / "pairs_phase4_sealed.parquet"         # schema reference only (never parsed for values)
 SHA_SUPPLEMENT_PHASE4 = "6968e04554ddeef3c335587d602cb5fab2185db32b46cbd152475a919eb59206"
 
