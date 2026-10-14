@@ -1,0 +1,112 @@
+{
+ "generated": "2026-10-14T00:17:26+00:00",
+ "cnn_phase4_common": "/home/users/scdobbs/GAN_Bathymetry_Project/grl_reviews-and-prompt-reports/directives_and_reports/phase4/scripts/phase4_common.py",
+ "cnn_phase4_common_sha256": "99407ec6ce43f2f4005130d67c9025f229df4de20c9560ee79b4bf713e805111",
+ "functions_copied": [
+  "load_acq_run_record",
+  "k_source_class",
+  "k_provenance",
+  "row_status",
+  "_isfinite"
+ ],
+ "substitutions": [
+  {
+   "from": "\"step1_run_phase4_*.json\"",
+   "to": "f\"step1_run_{LOCK_MODE}_*.json\""
+  },
+  {
+   "from": "r.get(\"mode\") == \"phase4\"",
+   "to": "r.get(\"mode\") == LOCK_MODE"
+  },
+  {
+   "from": "records_dir=ACQ_RECORDS_DIR, freeze_record=ACQ_FREEZE_RECORD, freeze_sha=ACQ_FREEZE_SHA",
+   "to": "records_dir, freeze_record, freeze_sha"
+  }
+ ],
+ "scratch_copy": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R11b/cnn_lock_copy/phase5_lock_copy.py",
+ "scratch_copy_sha256": "548b62ee372279a70a29a951330d0914c2a03a5da2b826ea7a18b4dc4fbce514",
+ "config": {
+  "mode": "rehearsal",
+  "supplement_sha": "d77a38e57229767a068e0dc0ba259ab602e7d5569dcc35ab494959e4ce390a95",
+  "records_dir": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R11b/rehearsal",
+  "freeze_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/PHASE5/freeze_record_phase5_v2.json",
+  "freeze_sha": "f5a30b87c05a90bb9155f37bbdf61de6d20fa55423d97662e59ff42b02809438",
+  "step1_rel": "src/phase5/sealed_step1_p5.py",
+  "step1_sha": "83af2875e53a28ef9b01c95a7b533ef7befd7a00625dfa6b0fe87178a2accc47",
+  "phase5_dir": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/PHASE5",
+  "supplement": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R11b/rehearsal/supplement_rehearsal_r11b.parquet"
+ },
+ "results": {
+  "accept_rehearsal_record": {
+   "accepted": true,
+   "path": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R11b/rehearsal/step1_run_rehearsal_r11b.json",
+   "status": "complete",
+   "mode": "rehearsal",
+   "per_pair_keys": [
+    "FK151121__MGDS_22383",
+    "KM0923__MGDS_31429",
+    "KM0923__MOCK_R09repeat",
+    "NA080__MGDS_31289",
+    "NR07-1__MGDS_31813"
+   ]
+  },
+  "refuse_wrong_supplement_sha": {
+   "accepted": false,
+   "refusal": "LOCK acquisition run record: no record in /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R11b/rehearsal is complete in phase4 mode, cites freeze record f5a30b87c05a\u2026 and supplement 000000000000\u2026: [{'path': '/home/users/scdobbs/co-located-auv-ship-base"
+  },
+  "refuse_wrong_freeze_sha": {
+   "accepted": false,
+   "refusal": "LOCK acquisition run record: freeze record /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/PHASE5/freeze_record_phase5_v2.json sha256 f5a30b87c05a90bb9155f37bbdf61de6d20fa55423d97662e59ff42b02809438 != 111111111111111111111111111111111111111111111111111111"
+  },
+  "refuse_phase5_dir_no_record": {
+   "accepted": false,
+   "refusal": "LOCK acquisition run record: no step1_run_phase4_*.json in /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/PHASE5"
+  },
+  "k_provenance": {
+   "FK151121__MGDS_22383": {
+    "k": 16,
+    "k_source_class": "sweep",
+    "k_in_acq_record": 16,
+    "k_agrees_with_acq_record": true,
+    "values_source": "C2a rule computed by this step (Phase 5)"
+   },
+   "NA080__MGDS_31289": {
+    "k": 16,
+    "k_source_class": "sweep",
+    "k_in_acq_record": 16,
+    "k_agrees_with_acq_record": true,
+    "values_source": "C2a rule computed by this step (Phase 5)"
+   },
+   "KM0923__MGDS_31429": {
+    "k": 16,
+    "k_source_class": "sweep",
+    "k_in_acq_record": 16,
+    "k_agrees_with_acq_record": true,
+    "values_source": "C2a rule computed by this step (Phase 5)"
+   },
+   "KM0923__MOCK_R09repeat": {
+    "k": 16,
+    "k_source_class": "sweep",
+    "k_in_acq_record": 16,
+    "k_agrees_with_acq_record": true,
+    "values_source": "C2a rule computed by this step (Phase 5)"
+   },
+   "NR07-1__MGDS_31813": {
+    "k": 8,
+    "k_source_class": "sweep",
+    "k_in_acq_record": 8,
+    "k_agrees_with_acq_record": true,
+    "values_source": "C2a rule computed by this step (Phase 5)"
+   }
+  },
+  "row_status": {
+   "FK151121__MGDS_22383": "ok",
+   "NA080__MGDS_31289": "ok",
+   "KM0923__MGDS_31429": "ok",
+   "KM0923__MOCK_R09repeat": "ok",
+   "NR07-1__MGDS_31813": "ok"
+  }
+ },
+ "passed": true,
+ "contract_note": "the copy reads locks.lock2_freeze_record.freeze_record_sha256, status, mode, supplement_sha256, code_commit, per_pair (max_recoverable_k, per_k, k_source, values_source)"
+}

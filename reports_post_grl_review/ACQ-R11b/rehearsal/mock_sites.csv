@@ -1,0 +1,6 @@
+site_name,hr_id,ship_cruise,sonar,year
+FK151121 development pair,MGDS:22383,FK151121,Kongsberg EM302; EM710,2015
+NA080 development pair,MGDS:31289,NA080,Kongsberg EM302,2017
+KM0923 development pair,MGDS:31429,KM0923,Simrad EM120,2009
+Mock repeat survey (KM0923 HR copies),MOCK:R09repeat,KM0923,Simrad EM120,2009
+NR07-1 known-bad positive control,MGDS:31813,NR07-1,Simrad EM120,2007

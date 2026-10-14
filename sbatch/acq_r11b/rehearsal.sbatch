@@ -18,7 +18,7 @@ source sbatch/acq_r04/stage_sandbox.sh
 export L_SCRATCH=${L_SCRATCH_JOB:-$L_SCRATCH}
 PY="/home/users/scdobbs/bathy_diffusion_env/bin/python -B"
 LOGS=logs/acq_r11b_reh_${SLURM_JOB_ID}.out,logs/acq_r11b_reh_${SLURM_JOB_ID}.err
-FR=reports_post_grl_review/PHASE5/freeze_record_phase5_v2.json
+FR=$PWD/reports_post_grl_review/PHASE5/freeze_record_phase5_v2.json   # absolute: the CNN lock copy runs with cwd on scratch (job 47704841 passed a relative path; lock copy re-run by hand)
 echo "host=$(hostname) job=$SLURM_JOB_ID commit=$(git rev-parse --short HEAD) stage=$STAGE tag=$TAG"
 if [ "$STAGE" = pre ]; then
   $PY -m src.phase5.mock_p5 || exit 2
@@ -26,7 +26,7 @@ if [ "$STAGE" = pre ]; then
   $PY -m src.phase5.blind_test_p5 --run-record reports_post_grl_review/ACQ-R11b/rehearsal/step1_run_rehearsal_${TAG}.json --logs $LOGS; echo "blind exit=$?"
 else
   /usr/bin/time -v $PY -m src.phase5.sealed_step1_p5 --mode rehearsal --run-tag "$TAG" --nproc 6 --freeze-record $FR; echo "rehearsal exit=$?"
-  REC=reports_post_grl_review/ACQ-R11b/rehearsal/step1_run_rehearsal_${TAG}.json
+  REC=$PWD/reports_post_grl_review/ACQ-R11b/rehearsal/step1_run_rehearsal_${TAG}.json
   $PY -m src.phase5.harness_fk151121_p5 --run-tag "$TAG" --nproc 6; echo "harness exit=$?"
   $PY -m src.phase5.compare_p5 --run-record $REC; echo "compare exit=$?"
   $PY -m src.phase5.cnn_lock_check_p5 --run-record $REC --freeze-record $FR; echo "cnn lock exit=$?"
