@@ -1,0 +1,1233 @@
+{
+ "directive": "ACQ-R13 (ACQ-R10 \u00a71.3 guard self-test)",
+ "phase4_reader_checks": {
+  "n": 84,
+  "n_blocked": 84
+ },
+ "phase4_all_passed": true,
+ "phase5_reader_checks": {
+  "n": 228,
+  "n_blocked": 228,
+  "all_blocked": true
+ },
+ "phase5_real_name_admission": {
+  "n": 23,
+  "n_passed": 23
+ },
+ "phase5_after_removal": {
+  "n": 38,
+  "all_blocked": true
+ },
+ "phase5_all_passed": true,
+ "output_roots_sealed": {
+  "n": 240,
+  "n_blocked": 240,
+  "all_blocked": true,
+  "rows": [
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/TN188__MGDS_18210/hr.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/TN188__MGDS_18210/hr.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/TN188__MGDS_18210/hr.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/TN188__MGDS_18210/hr.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/TN188__MGDS_18210/hr.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/TN188__MGDS_18210/hr.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/TN188__MGDS_18210/lr.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/TN188__MGDS_18210/lr.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/TN188__MGDS_18210/lr.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/TN188__MGDS_18210/lr.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/TN188__MGDS_18210/lr.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/TN188__MGDS_18210/lr.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/TN188__MGDS_18210/x.grd",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/TN188__MGDS_18210/x.grd",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/TN188__MGDS_18210/x.grd",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/TN188__MGDS_18210/x.grd",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/TN188__MGDS_18210/x.grd",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/TN188__MGDS_18210/x.grd",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/TN188__MGDS_18210/tile0.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/TN188__MGDS_18210/tile0.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/TN188__MGDS_18210/tile0.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/TN188__MGDS_18210/tile0.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/TN188__MGDS_18210/tile0.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/TN188__MGDS_18210/tile0.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/Escanaba__MGDS_30368/hr.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/Escanaba__MGDS_30368/hr.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/Escanaba__MGDS_30368/hr.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/Escanaba__MGDS_30368/hr.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/Escanaba__MGDS_30368/hr.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/Escanaba__MGDS_30368/hr.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/Escanaba__MGDS_30368/lr.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/Escanaba__MGDS_30368/lr.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/Escanaba__MGDS_30368/lr.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/Escanaba__MGDS_30368/lr.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/Escanaba__MGDS_30368/lr.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/Escanaba__MGDS_30368/lr.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/Escanaba__MGDS_30368/x.grd",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/Escanaba__MGDS_30368/x.grd",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/Escanaba__MGDS_30368/x.grd",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/Escanaba__MGDS_30368/x.grd",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/Escanaba__MGDS_30368/x.grd",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/Escanaba__MGDS_30368/x.grd",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/Escanaba__MGDS_30368/tile0.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/Escanaba__MGDS_30368/tile0.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/Escanaba__MGDS_30368/tile0.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/Escanaba__MGDS_30368/tile0.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/Escanaba__MGDS_30368/tile0.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/Escanaba__MGDS_30368/tile0.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_30368",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_30368",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_30368",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_30368",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_30368",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_30368",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/Monterey__MGDS_24756/hr.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/Monterey__MGDS_24756/hr.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/Monterey__MGDS_24756/hr.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/Monterey__MGDS_24756/hr.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/Monterey__MGDS_24756/hr.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/Monterey__MGDS_24756/hr.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/Monterey__MGDS_24756/lr.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/Monterey__MGDS_24756/lr.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/Monterey__MGDS_24756/lr.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/Monterey__MGDS_24756/lr.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/Monterey__MGDS_24756/lr.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/Monterey__MGDS_24756/lr.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/Monterey__MGDS_24756/x.grd",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/Monterey__MGDS_24756/x.grd",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/Monterey__MGDS_24756/x.grd",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/Monterey__MGDS_24756/x.grd",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/Monterey__MGDS_24756/x.grd",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/Monterey__MGDS_24756/x.grd",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/Monterey__MGDS_24756/tile0.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/Monterey__MGDS_24756/tile0.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/Monterey__MGDS_24756/tile0.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/Monterey__MGDS_24756/tile0.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/Monterey__MGDS_24756/tile0.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/Monterey__MGDS_24756/tile0.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/KN161L04__MGDS_22436/hr.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/KN161L04__MGDS_22436/hr.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/KN161L04__MGDS_22436/hr.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/KN161L04__MGDS_22436/hr.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/KN161L04__MGDS_22436/hr.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/KN161L04__MGDS_22436/hr.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/KN161L04__MGDS_22436/lr.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/KN161L04__MGDS_22436/lr.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/KN161L04__MGDS_22436/lr.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/KN161L04__MGDS_22436/lr.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/KN161L04__MGDS_22436/lr.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/KN161L04__MGDS_22436/lr.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/KN161L04__MGDS_22436/x.grd",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/KN161L04__MGDS_22436/x.grd",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/KN161L04__MGDS_22436/x.grd",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/KN161L04__MGDS_22436/x.grd",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/KN161L04__MGDS_22436/x.grd",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/KN161L04__MGDS_22436/x.grd",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/KN161L04__MGDS_22436/tile0.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/KN161L04__MGDS_22436/tile0.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/KN161L04__MGDS_22436/tile0.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/KN161L04__MGDS_22436/tile0.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/KN161L04__MGDS_22436/tile0.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/KN161L04__MGDS_22436/tile0.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/MV1209__MGDS_21415/hr.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/MV1209__MGDS_21415/hr.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/MV1209__MGDS_21415/hr.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/MV1209__MGDS_21415/hr.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/MV1209__MGDS_21415/hr.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/MV1209__MGDS_21415/hr.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/MV1209__MGDS_21415/lr.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/MV1209__MGDS_21415/lr.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/MV1209__MGDS_21415/lr.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/MV1209__MGDS_21415/lr.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/MV1209__MGDS_21415/lr.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/MV1209__MGDS_21415/lr.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/MV1209__MGDS_21415/x.grd",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/MV1209__MGDS_21415/x.grd",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/MV1209__MGDS_21415/x.grd",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/MV1209__MGDS_21415/x.grd",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/MV1209__MGDS_21415/x.grd",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/MV1209__MGDS_21415/x.grd",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/MV1209__MGDS_21415/tile0.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/MV1209__MGDS_21415/tile0.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/MV1209__MGDS_21415/tile0.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/MV1209__MGDS_21415/tile0.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/MV1209__MGDS_21415/tile0.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/MV1209__MGDS_21415/tile0.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/KN173L02__MGDS_31675/hr.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/KN173L02__MGDS_31675/hr.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/KN173L02__MGDS_31675/hr.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/KN173L02__MGDS_31675/hr.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/KN173L02__MGDS_31675/hr.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/KN173L02__MGDS_31675/hr.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/KN173L02__MGDS_31675/lr.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/KN173L02__MGDS_31675/lr.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/KN173L02__MGDS_31675/lr.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/KN173L02__MGDS_31675/lr.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/KN173L02__MGDS_31675/lr.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/KN173L02__MGDS_31675/lr.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/KN173L02__MGDS_31675/x.grd",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/KN173L02__MGDS_31675/x.grd",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/KN173L02__MGDS_31675/x.grd",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/KN173L02__MGDS_31675/x.grd",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/KN173L02__MGDS_31675/x.grd",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/KN173L02__MGDS_31675/x.grd",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/KN173L02__MGDS_31675/tile0.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/KN173L02__MGDS_31675/tile0.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/KN173L02__MGDS_31675/tile0.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/KN173L02__MGDS_31675/tile0.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/KN173L02__MGDS_31675/tile0.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/KN173L02__MGDS_31675/tile0.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/MV1003__MGDS_31860/hr.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/MV1003__MGDS_31860/hr.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/MV1003__MGDS_31860/hr.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/MV1003__MGDS_31860/hr.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/MV1003__MGDS_31860/hr.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/MV1003__MGDS_31860/hr.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/MV1003__MGDS_31860/lr.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/MV1003__MGDS_31860/lr.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/MV1003__MGDS_31860/lr.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/MV1003__MGDS_31860/lr.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/MV1003__MGDS_31860/lr.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/MV1003__MGDS_31860/lr.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/MV1003__MGDS_31860/x.grd",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/MV1003__MGDS_31860/x.grd",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/MV1003__MGDS_31860/x.grd",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/MV1003__MGDS_31860/x.grd",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/MV1003__MGDS_31860/x.grd",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/MV1003__MGDS_31860/x.grd",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/MV1003__MGDS_31860/tile0.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/MV1003__MGDS_31860/tile0.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/MV1003__MGDS_31860/tile0.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/MV1003__MGDS_31860/tile0.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/MV1003__MGDS_31860/tile0.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/MV1003__MGDS_31860/tile0.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/AT26-24__MGDS_31954/hr.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/AT26-24__MGDS_31954/hr.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/AT26-24__MGDS_31954/hr.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/AT26-24__MGDS_31954/hr.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/AT26-24__MGDS_31954/hr.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/AT26-24__MGDS_31954/hr.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/AT26-24__MGDS_31954/lr.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/AT26-24__MGDS_31954/lr.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/AT26-24__MGDS_31954/lr.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/AT26-24__MGDS_31954/lr.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/AT26-24__MGDS_31954/lr.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/.staging/AT26-24__MGDS_31954/lr.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/AT26-24__MGDS_31954/x.grd",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/AT26-24__MGDS_31954/x.grd",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/AT26-24__MGDS_31954/x.grd",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/AT26-24__MGDS_31954/x.grd",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/AT26-24__MGDS_31954/x.grd",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/raw_lr_gridded/AT26-24__MGDS_31954/x.grd",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/AT26-24__MGDS_31954/tile0.tif",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/AT26-24__MGDS_31954/tile0.tif",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/AT26-24__MGDS_31954/tile0.tif",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/AT26-24__MGDS_31954/tile0.tif",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/AT26-24__MGDS_31954/tile0.tif",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/AT26-24__MGDS_31954/tile0.tif",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954",
+    "reader": "builtins.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954",
+    "reader": "rasterio.open",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954",
+    "reader": "numpy.load",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954",
+    "reader": "geopandas.read_file",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954",
+    "reader": "pyogrio.read_dataframe",
+    "result": "blocked"
+   },
+   {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954",
+    "reader": "pandas.read_parquet",
+    "result": "blocked"
+   }
+  ]
+ },
+ "total_probes": 552,
+ "total_blocked_or_passed": 552,
+ "all_passed": true,
+ "guard_file_sha256": "a6c0c39d2f25be799c201be642664cb7f1c6fe336c48c79e53f3761d5fe8c651"
+}

@@ -1,0 +1,1342 @@
+{
+ "directive": "ACQ-R09 code + ACQ-R11b vertical-datum check + ACQ-R12 write paths / leak check (Phase 5 step 1)",
+ "mode": "phase5",
+ "run_tag": "20261014T204117Z",
+ "sites": [
+  "MGDS:18210",
+  "MGDS:30368",
+  "MGDS:24756",
+  "MGDS:22436",
+  "MGDS:21415",
+  "MGDS:31675",
+  "MGDS:31860",
+  "MGDS:31954"
+ ],
+ "site_list": {
+  "path": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/inputs/phase5_sites.csv",
+  "sha256": "138dee8f886344050ce92403853a933cbda23d74c2f17118056ed00a34a87e2b"
+ },
+ "out_root": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1",
+ "work_root": "/lscratch/scdobbs/47819657/acq_p5/phase5",
+ "sealed_root": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3",
+ "fetch": true,
+ "started": "2026-10-14T20:41:17+00:00",
+ "host": "sh03-09n29.int",
+ "cpu_model": "AMD EPYC 7543 32-Core Processor",
+ "code_commit": "98a6e4cc6f3c85fa2d0164be6cc41046ffcb4295",
+ "nproc": 6,
+ "batch_files": 1,
+ "mbsystem": "5.8.2beta06",
+ "sandbox": "/lscratch/scdobbs/47819657/mbsystem_sandbox",
+ "container_digest": "sha256:106f502d9f97ee0e9f5d889726320d1ae73a95fb102069e357a0bb0b35b39668",
+ "rulings": [
+  "S1",
+  "S2",
+  "S3",
+  "ACQ-R11b fallback: datum check T_G, line check not applied",
+  "ACQ-R12 write paths + in-run leak check (records-only key scope)",
+  "ACQ-R13 local co-registration replaces the 30 m bound"
+ ],
+ "swath_root": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath",
+ "record_dir": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/PHASE5",
+ "fixed_input_sha256": {
+  "reports/discovery/stage_c2c_calibration.json": "7e68bdadfcdb5dd1c5ad4040ad6a5edf5226fcd9223e6824ae1c21472c01778a",
+  "reports_post_grl_review/INTERFACE_CONTRACT_v2.1.md": "0b4aadaf61fb04213ae18771d2a58532f39e9d49b5152ab64738d188a7e18fcb",
+  "manifest/pairs_phase4_sealed.parquet": "6968e04554ddeef3c335587d602cb5fab2185db32b46cbd152475a919eb59206",
+  "reports_post_grl_review/ACQ-R08b/candidates_measured.csv": "fbd2e03d9cdbe65420fbd98cb772dd1af5ef855951307e9c5b0d4c98b1607b37",
+  "reports_post_grl_review/ACQ-R11b/vcheck_calibration_v2.csv": "41973318d9ac55cffc7baa3f57a359da2538f2fd0a7a3a952d39770a14b7d8b2"
+ },
+ "guard_selftest": {
+  "phase4_reader_checks": {
+   "n": 84,
+   "n_blocked": 84,
+   "all_passed": true
+  },
+  "phase5": {
+   "real_name_admission": [
+    {
+     "case": "real site file MGDS_18210",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry040ppp_1m.grd.gz",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real site dir MGDS_18210",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real site dir MGDS_30368",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_30368",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real site dir MGDS_24756",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real site dir MGDS_22436",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real site dir MGDS_21415",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real site dir MGDS_31675",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real site dir MGDS_31860",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real site dir MGDS_31954",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real non-admitted id MGDS_31811",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry039_2x2_post.grd.gz",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "non-admitted candidate id ['MGDS_31811']"
+    },
+    {
+     "case": "real non-admitted id PANGAEA_958275",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/PANGAEA_958275/x.tif",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "non-admitted candidate id ['PANGAEA_958275']"
+    },
+    {
+     "case": "real non-admitted id SEANOE_55744",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/SEANOE_55744/57399.zip",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "non-admitted candidate id ['SEANOE_55744']"
+    },
+    {
+     "case": "real root itself",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "the sealed root itself or a non-admitted directory under it"
+    },
+    {
+     "case": "real root file",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/SHA256SUMS",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "the sealed root itself or a non-admitted directory under it"
+    },
+    {
+     "case": "traversal to a non-admitted id",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/../MGDS_31811/x.grd",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "non-admitted candidate id ['MGDS_31811']"
+    },
+    {
+     "case": "OAK raw_hr September copy",
+     "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_30368/MAUV_NESCA_All_Topo_1m.grd",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "OAK raw_hr (September copies stay sealed)"
+    },
+    {
+     "case": "lockbox id with an admitted token",
+     "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/MGDS_18210__AT42-03__MGDS_32007/lr.tif",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "lockbox id AT42-03__MGDS_32007"
+    },
+    {
+     "case": "output root, admitted token",
+     "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/X__MGDS_18210/hr.tif",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "output root, non-admitted token",
+     "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/X__MGDS_31811/hr.tif",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "non-admitted candidate id ['MGDS_31811']"
+    },
+    {
+     "case": "work root, admitted token",
+     "path": "/lscratch/scdobbs/47819657/acq_p5/phase5/X__MGDS_18210/tile0.tif",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "admitted token outside the roots",
+     "path": "/tmp/MGDS_18210/copy.tif",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "outside the admitted roots"
+    },
+    {
+     "case": "mock root under the real allowance",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/x/f.grd",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "sealed root /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3 is not the mode's sealed root /scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3"
+    },
+    {
+     "case": "GDAL driver prefix",
+     "path": "NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry041pp_1m.grd",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    }
+   ],
+   "mock_admission": [],
+   "after_removal": {
+    "n": 38,
+    "all_blocked": true
+   },
+   "decoy": {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_99999/decoy.grd",
+    "before": "blocked"
+   },
+   "allowance_installed_at_end": false,
+   "guard_file_sha256": "a6c0c39d2f25be799c201be642664cb7f1c6fe336c48c79e53f3761d5fe8c651",
+   "all_passed": true,
+   "reader_checks": {
+    "n": 228,
+    "n_blocked": 228,
+    "all_blocked": true
+   }
+  },
+  "site_paths": {
+   "n": 336,
+   "n_blocked": 336,
+   "all_blocked": true
+  }
+ },
+ "locks": {
+  "lock1_signoff": {
+   "signoff": "/home/users/scdobbs/GAN_Bathymetry_Project/grl_reviews-and-prompt-reports/directives_and_reports/R16c/SIGNOFF_phase5_prereg_v3_1.md",
+   "prereg_sha256": "75b72eb6fae3804c7dea61aa4171744a2fcd4fbdb7c3916f3fb98f2c06f2c7b6",
+   "signoff_sha256": "b8ba209c99148472bd7e0ca266cb051fe1d98e0880a08637cc689483543a3a89"
+  },
+  "lock2_freeze_record": {
+   "freeze_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/PHASE5/freeze_record_phase5_v4_2.json",
+   "freeze_record_sha256": "168df0c68cf0e4493b62c78be6da2755020ce3bd53c9bd1f2ed02ad9270eadc3",
+   "n_files": 69,
+   "n_loaded_checked": 57
+  },
+  "lock3_site_list": {
+   "site_list": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/inputs/phase5_sites.csv",
+   "site_list_sha256": "138dee8f886344050ce92403853a933cbda23d74c2f17118056ed00a34a87e2b",
+   "sites": [
+    "MGDS:18210",
+    "MGDS:30368",
+    "MGDS:24756",
+    "MGDS:22436",
+    "MGDS:21415",
+    "MGDS:31675",
+    "MGDS:31860",
+    "MGDS:31954"
+   ]
+  },
+  "lock4_single_run": {
+   "supplement": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_phase5_sealed_v4_1.parquet",
+   "complete_records_found": 0
+  },
+  "lock2_after_run": {
+   "freeze_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/PHASE5/freeze_record_phase5_v4_2.json",
+   "freeze_record_sha256": "168df0c68cf0e4493b62c78be6da2755020ce3bd53c9bd1f2ed02ad9270eadc3",
+   "n_files": 69,
+   "n_loaded_checked": 57
+  }
+ },
+ "freeze_record_sha256": "168df0c68cf0e4493b62c78be6da2755020ce3bd53c9bd1f2ed02ad9270eadc3",
+ "allowance": {
+  "tokens": [
+   "MGDS_18210",
+   "MGDS_30368",
+   "MGDS_24756",
+   "MGDS_22436",
+   "MGDS_21415",
+   "MGDS_31675",
+   "MGDS_31860",
+   "MGDS_31954"
+  ],
+  "sealed_root": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3",
+  "roots": [
+   "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1",
+   "/lscratch/scdobbs/47819657/acq_p5/phase5"
+  ],
+  "reason": "ACQ-R09 phase5 locks passed: sign-off, freeze record, site list, single run"
+ },
+ "loaded_repo_files": {
+  "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/acq_r01/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/acq_r01/build_products.py": "d35a767368b7613ad7b958beaa7feb3d61308821e09a43e81d9d60ad1ee6a215",
+  "src/acq_r01/build_products_v2.py": "6c4de57fa67075d6620c52989ccd5bd717504e722e28a607701b5da813028d09",
+  "src/acq_r01/common.py": "a6c0c39d2f25be799c201be642664cb7f1c6fe336c48c79e53f3761d5fe8c651",
+  "src/acq_r01/discovery_rerun.py": "896a9de17e7b5ec2a1215a9d690d1c94bee72dca3d42d41faf37f16fd15dd550",
+  "src/acq_r01/fetch_plan.py": "1445c4dba2d488e8d43a1773f02f5484bb4cfd0fb345de3d9e5f1c78a3c669b3",
+  "src/acq_r01/fetch_swath.py": "1aed5b4950517f121fb0c4cbe3b550ab26486f454211f2463df5587937f76c80",
+  "src/acq_r01/grid_lr.py": "847e7098049a6a00826e54c8497bd5fe730f969fa943cde263718249cf0603f8",
+  "src/acq_r01/harmonize_new.py": "e881eba2ab0688c00b035f9f836bbaf9fc019d6d1b6912fb000fbf60968bb933",
+  "src/acq_r01/verify_candidates.py": "72394e09c662122e7d31c8c73ef4fc32ba38b37baa149a053b2d637c0438752c",
+  "src/acq_r03/__init__.py": "0a1b9776af437985ebd243540a3d780b52971b71990f0b7d8c6aa14ffe2b070b",
+  "src/acq_r03/build_products_v2_1.py": "295a51ecfb679df0182c6f24149c04b3b657640957f741c8d1c41eda1cf8a861",
+  "src/acq_r03/common.py": "e4c16eb5319d8a72def6a75d1e23c382a4392eab6017554755758e8c92e950ee",
+  "src/acq_r04/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/acq_r04/common.py": "69216c8084bccb648e1a6b8625374d367f9d5eb470cfe9ef2ae4df76a62e6f83",
+  "src/acq_r08b/__init__.py": "2598dae2ae923d58a5e57b66274cc6c06c0cd1bdcd038d4e6dee7b39069a7147",
+  "src/acq_r08b/common.py": "28c93f999966044938c25f148bd9b260354dcaca1d296d65e694a2d4bbdc07c5",
+  "src/acq_r08b/measure.py": "b87ab6a69b196b19e57c283d099339fdc7b399c2e2f5f8c6797a1ae76b0704a4",
+  "src/coregister.py": "46871ad2939bb98777a12fb52fda3fa2873117a6d9ed58d0b5597140818ef383",
+  "src/discovery/__init__.py": "6ed80c07c0341bbc17d50a0fe5aacbac7cfddda32e6c12b2563ac0a5ee0a21b9",
+  "src/discovery/catalog.py": "853ce5e2a95cc2aff1b192020e2bb7a0347768b8d71fd34d63d933141ba07191",
+  "src/discovery/dedupe.py": "3aff33ac06b6610f21f69411d3f25b2ce26880bf121b1aa60db839188e72f9a1",
+  "src/discovery/geoportal.py": "0af43e954ee543e07f12efe5f87cf0d0bb38f3610b28614b584455087cc52e22",
+  "src/discovery/hr_format_gate.py": "bbd2682257ebe8780cd4ed09480bcea7b2b576e6b317528f29d92da7abe055f9",
+  "src/discovery/join.py": "6e171d8bfa075b3736dd77a29faade2508cc0a5994f58d6d99d4a666b2b48e24",
+  "src/discovery/mgds.py": "0bc75cb45402bde524b3611fef87c272c350a08c9155ddb85dbc0a558677b9c7",
+  "src/discovery/ncei.py": "42b2dd7d3000b74c251d4b0eb0863a4800e1f5e6f01c083ef44be8698a7d9278",
+  "src/discovery/platform_filter.py": "0c646198234fc77020d0b472e797421477dc637efe3c281a7afb1e8659528c65",
+  "src/discovery/raw_lr_dryrun.py": "3fba7bcdff7f4a24e7b85f927080dbf70f309270b8c420a4518f13f85ed2a816",
+  "src/discovery/rebuild.py": "fd0bea83c18ed3c809fea3146afc11df75d9997ad4a94db8c3b19fbcf7455bd0",
+  "src/discovery/seeds.py": "5f1410e41ebe9b36881e7faf6cb2099f91cf82d86b346c21f5d349c523e98086",
+  "src/discovery/stage_a.py": "cabfee926e1e6d67f89de562004301b568ca37039a3653016a54d30603248bac",
+  "src/discovery/stage_a5_subset.py": "9e5968e1295a400ac2926669dc969d6f3a9df41e6c5ef9def8500001add0007f",
+  "src/discovery/stage_b.py": "943a80529e56c12c03f3a9700c9f91ce545f5949aab157abfbf3c8d3483558cb",
+  "src/discovery/stage_c2c_recalibrate.py": "ee6f6d7a07e71e7c148e0c60a486c39883388c339bc9bf041b8dbc52c2bb339c",
+  "src/discovery/stage_c5_spectral.py": "b7f6f919e0e9cbc1425bb5bb773333d71fc855ed16b3ad9bc04bf90dca839575",
+  "src/discovery/stage_c5_sweep.py": "8c2769e22d81bb19ef8cbd9cb383f369f6b1aa82ff6308839284212b9ab36bbc",
+  "src/discovery/stage_c_full.py": "3941b335c222fd65a19657ec6afb24a54a9d40ac247abd9f34c9abc1562d4d3c",
+  "src/discovery/stage_c_pilot.py": "1793bea105a0cb0bc29117c03a13f86923e22e0f7ad9bb7075cf09e5bd2b85b9",
+  "src/discovery/validated_anchor.py": "5cc366ada1b9143fa811c7414136efe3dffd12c7b43abfbd62eb9d3e424378a6",
+  "src/gmt_grd.py": "c50c1c4189fddad35e49d5b3c4893ec1e0ccf020a98b768236cc2e07046862fb",
+  "src/harmonize.py": "2cacf9e9c98f586e1736975372ad5da291ee4c62a3ab9294cb9a7e8062f63440",
+  "src/phase4/__init__.py": "7aadba3d6268ce1be6eeb3a1993ae3a2c5e7ae716f3f5bb355e6a04ad4e4e0ce",
+  "src/phase4/common.py": "5c5c887274bf7d0b8ce79134676854850472ad5b1c6da6e6f7aa754440bb9756",
+  "src/phase4/guard_selftest.py": "ad564fd9281ce98f13add1489fcbc89e88c440dcd7e5c490ba7236a3a851d788",
+  "src/phase4/sealed_step1.py": "bd773cb77eaff1786efe48c8d92210d69a90f885545cd00a07af9b35cd8753c1",
+  "src/phase5/__init__.py": "62d4fb93bc0b324edbf7b25d5321763826dfa8847db40d9edd4181152b626796",
+  "src/phase5/chain_p5.py": "6a3762f280d266991d277542369c9ec6ec907c3b2faedfff4c26d66e7dbc7ec8",
+  "src/phase5/common_p5.py": "6d677c31a3fd064b36d5a13575eeb5e1c2a234e0b9997bea5d7f4fe333854af5",
+  "src/phase5/guard_p5.py": "55922d1a16d40f094b5e33e119d2d07aee4389c74a71fab580c4b44dbe8b3c4f",
+  "src/phase5/hr_select.py": "32d9deb222809bf9a6faa12456319395808645330a2fae7178e0a3a4f9683872",
+  "src/phase5/leak_p5.py": "9379dd5456cde76911abea3d910a86ea87656fce569e17b860eb101dd26771a7",
+  "src/phase5/localcoreg_p5.py": "05202a1c4a78e9347c42124038d9d73f2b1168109e4ede8da891100b049ac3cc",
+  "src/phase5/sealed_step1_p5.py": "2c9ea8488e88a411aed3b63319a879fcbfe70e4a6d6ec0c420ccdcc7f05273a7",
+  "src/phase5/vcheck_p5.py": "5a2c65d4e50286945dc04eb66b4f8f965beee93c65a9967c15da017fdaf52a44",
+  "src/raster_io.py": "849c178f84d3429f70c2e6b7d99430d7742ca624fdc40c1d445bca6f89301245"
+ },
+ "pairs_done": [
+  "TN188__MGDS_18210",
+  "Escanaba__MGDS_30368",
+  "Monterey__MGDS_24756",
+  "KN161L04__MGDS_22436",
+  "MV1209__MGDS_21415",
+  "KN173L02__MGDS_31675",
+  "MV1003__MGDS_31860",
+  "AT26-24__MGDS_31954"
+ ],
+ "per_pair": {
+  "TN188__MGDS_18210": {
+   "pair_id": "TN188__MGDS_18210",
+   "site_name": "Gal\u00e1pagos Spreading Center",
+   "hr_id": "MGDS:18210",
+   "lr_cruise": "TN188",
+   "unit": "p5u01",
+   "designation": "phase5_sealed",
+   "path": "harmonized/TN188__MGDS_18210",
+   "out_root": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1",
+   "hr_native_res_m": 1.0,
+   "lr_native_res_m": 29.7,
+   "res_ratio": 29.7,
+   "hr_res_m_unrounded": 0.9997522790508871,
+   "beam_footprint_m": 29.7,
+   "posting_m": 29.59,
+   "ship_grid_cell_m": 29.59,
+   "values_source": "C2a rule computed by this step (Phase 5)",
+   "max_recoverable_k": 8,
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "no_spectrum",
+    "32": "no_spectrum"
+   },
+   "k_sweep_status": "ok",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "products": "built",
+   "products_reason": null,
+   "flags": [],
+   "ship_products_usable": true,
+   "usable_reason": "available, no contract-v2.1 flags (rule C1)",
+   "coreg_pass": false,
+   "qa_components": {
+    "coreg_case_pass": false,
+    "overlap_ge_1km2": true,
+    "tiles_gt_0": true,
+    "coreg_estimated": true
+   },
+   "vertical_datum_ok": true,
+   "coreg_case": "drift",
+   "n_quadrant_groups": 4,
+   "n_tiles_dropped_boundary": 42,
+   "n_valid_tiles_256": 95,
+   "k_recoverable": true,
+   "cells_across": 8.617393,
+   "hr_res_in_range": true,
+   "eligible": false,
+   "eligibility_reason": "co-registration: drift case, a quadrant group fails the frozen QA (ACQ-R13)",
+   "status": "not testable",
+   "hr_grids": {
+    "n_files": 17,
+    "n_grids_read": 17,
+    "group_m": 1.0,
+    "kept": [
+     "sentry056p_1m.grd",
+     "sentry059pp_1m.grd",
+     "sentry048pp_1m.grd",
+     "sentry058pp_1m.grd",
+     "sentry047pp_1m.grd",
+     "sentry050ppp_1m.grd",
+     "sentry049ppp_1m.grd",
+     "sentry057pp_1m.grd",
+     "sentry055ppA_1m.grd",
+     "sentry043ppp_1m.grd",
+     "sentry041pp_1m.grd",
+     "sentry051ppA_1m.grd",
+     "sentry046pp_1m.grd",
+     "sentry051ppB_1m.grd",
+     "sentry042ppp_1m.grd",
+     "sentry055ppB_1m.grd",
+     "sentry040ppp_1m.grd"
+    ],
+    "mosaic": {
+     "kind": "one grid (development mosaic rule)",
+     "grids": [
+      "sentry056p_1m.grd"
+     ]
+    }
+   },
+   "ship_swath_files": 1069,
+   "fetch": {
+    "n_ok": 1069,
+    "n_planned": 1069,
+    "complete": true
+   },
+   "site_record_sha256": "4865ed41ef8854e4dc9f07af399430645fd04d1c8b4fe6260da4e7b1e7b40e35",
+   "reused": false,
+   "wall_s": 386.3
+  },
+  "Escanaba__MGDS_30368": {
+   "pair_id": "Escanaba__MGDS_30368",
+   "site_name": "Escanaba Trough",
+   "hr_id": "MGDS:30368",
+   "lr_cruise": "Escanaba",
+   "unit": "p5u02",
+   "designation": "phase5_sealed",
+   "path": "harmonized/Escanaba__MGDS_30368",
+   "out_root": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1",
+   "hr_native_res_m": 1.28,
+   "lr_native_res_m": 57.29,
+   "res_ratio": 44.76,
+   "hr_res_m_unrounded": 1.2801031619832532,
+   "beam_footprint_m": 57.21,
+   "posting_m": 57.29,
+   "ship_grid_cell_m": 57.42,
+   "values_source": "C2a rule computed by this step (Phase 5)",
+   "max_recoverable_k": 16,
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "recoverable_signal",
+    "32": "no_spectrum"
+   },
+   "k_sweep_status": "ok",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "products": "built",
+   "products_reason": null,
+   "flags": [],
+   "ship_products_usable": true,
+   "usable_reason": "available, no contract-v2.1 flags (rule C1)",
+   "coreg_pass": true,
+   "qa_components": {
+    "coreg_case_pass": true,
+    "overlap_ge_1km2": true,
+    "tiles_gt_0": true,
+    "coreg_estimated": true
+   },
+   "vertical_datum_ok": true,
+   "coreg_case": "drift",
+   "n_quadrant_groups": 3,
+   "n_tiles_dropped_boundary": 21,
+   "n_valid_tiles_256": 178,
+   "k_recoverable": true,
+   "cells_across": 5.720133,
+   "hr_res_in_range": true,
+   "eligible": true,
+   "eligibility_reason": "",
+   "status": "eligible (C1 set at step 1)",
+   "hr_grids": {
+    "n_files": 2,
+    "n_grids_read": 2,
+    "group_m": 1.15,
+    "kept": [
+     "MAUV_NESCA_All_Topo_1m.grd",
+     "MAUV_SESCA_All_Topo_1m.grd"
+    ],
+    "mosaic": {
+     "kind": "one grid (development mosaic rule)",
+     "grids": [
+      "MAUV_SESCA_All_Topo_1m.grd"
+     ]
+    }
+   },
+   "ship_swath_files": 32,
+   "fetch": {
+    "n_ok": 32,
+    "n_planned": 32,
+    "complete": true
+   },
+   "site_record_sha256": "5245abcbdd4e35981106d4ab933148eecf8c9bea4aeb4f2b7d7ac1b99adedf0d",
+   "reused": false,
+   "wall_s": 143.2
+  },
+  "Monterey__MGDS_24756": {
+   "pair_id": "Monterey__MGDS_24756",
+   "site_name": "Monterey Canyon",
+   "hr_id": "MGDS:24756",
+   "lr_cruise": "Monterey",
+   "unit": "p5u03",
+   "designation": "phase5_sealed",
+   "path": "harmonized/Monterey__MGDS_24756",
+   "out_root": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1",
+   "hr_native_res_m": 1.0,
+   "lr_native_res_m": 29.27,
+   "res_ratio": 29.27,
+   "hr_res_m_unrounded": 1.0,
+   "beam_footprint_m": 29.27,
+   "posting_m": 24.34,
+   "ship_grid_cell_m": 24.33,
+   "values_source": "C2a rule computed by this step (Phase 5)",
+   "max_recoverable_k": null,
+   "per_k": null,
+   "k_sweep_status": "no_curve",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "products": "none",
+   "products_reason": null,
+   "flags": null,
+   "ship_products_usable": false,
+   "usable_reason": "no products (no k)",
+   "coreg_pass": true,
+   "qa_components": {
+    "coreg_case_pass": true,
+    "overlap_ge_1km2": true,
+    "tiles_gt_0": true,
+    "coreg_estimated": true
+   },
+   "vertical_datum_ok": true,
+   "coreg_case": "rigid",
+   "n_quadrant_groups": 3,
+   "n_tiles_dropped_boundary": 0,
+   "n_valid_tiles_256": 181,
+   "k_recoverable": false,
+   "cells_across": 8.746156,
+   "hr_res_in_range": true,
+   "eligible": false,
+   "eligibility_reason": "the frozen sweep recovers no k (status no_curve)",
+   "status": "not testable",
+   "hr_grids": {
+    "n_files": 21,
+    "n_grids_read": 12,
+    "group_m": 1.0,
+    "kept": [
+     "Topo1m_CCEDeep_20151105_1106_UTM.grd",
+     "Topo1m_CCEShallow_20151104_UTM.grd"
+    ],
+    "mosaic": {
+     "kind": "one grid (development mosaic rule)",
+     "grids": [
+      "Topo1m_CCEDeep_20151105_1106_UTM.grd"
+     ]
+    }
+   },
+   "ship_swath_files": 577,
+   "fetch": {
+    "n_ok": 577,
+    "n_planned": 577,
+    "complete": true
+   },
+   "site_record_sha256": "86e7517915b87fcf61d0c3645f627cfade3ce0e09c738f2f931c745556db5abf",
+   "reused": false,
+   "wall_s": 391.3
+  },
+  "KN161L04__MGDS_22436": {
+   "pair_id": "KN161L04__MGDS_22436",
+   "site_name": "Mid-Atlantic Ridge 16.5\u00b0N",
+   "hr_id": "MGDS:22436",
+   "lr_cruise": "KN161L04",
+   "unit": "p5u04",
+   "designation": "phase5_sealed",
+   "path": "harmonized/KN161L04__MGDS_22436",
+   "out_root": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1",
+   "hr_native_res_m": 2.027,
+   "lr_native_res_m": 116.92,
+   "res_ratio": 57.68,
+   "hr_res_m_unrounded": 2.0268051322408756,
+   "beam_footprint_m": 116.92,
+   "posting_m": 115.36,
+   "ship_grid_cell_m": 115.49,
+   "values_source": "C2a rule computed by this step (Phase 5)",
+   "max_recoverable_k": 16,
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "recoverable_signal",
+    "32": "no_spectrum"
+   },
+   "k_sweep_status": "ok",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "products": "built",
+   "products_reason": null,
+   "flags": [],
+   "ship_products_usable": true,
+   "usable_reason": "available, no contract-v2.1 flags (rule C1)",
+   "coreg_pass": true,
+   "qa_components": {
+    "coreg_case_pass": true,
+    "overlap_ge_1km2": true,
+    "tiles_gt_0": true,
+    "coreg_estimated": true
+   },
+   "vertical_datum_ok": true,
+   "coreg_case": "rigid",
+   "n_quadrant_groups": 4,
+   "n_tiles_dropped_boundary": 0,
+   "n_valid_tiles_256": 151,
+   "k_recoverable": true,
+   "cells_across": 4.437753,
+   "hr_res_in_range": true,
+   "eligible": true,
+   "eligibility_reason": "",
+   "status": "eligible (C1 set at step 1)",
+   "hr_grids": {
+    "n_files": 7,
+    "n_grids_read": 6,
+    "group_m": 2.0,
+    "kept": [
+     "sentry_area1_v4.grd",
+     "sentry_area2_v2.grd",
+     "sentry179_renav_tide.grd",
+     "sentry182_adjusted2.grd",
+     "sentry184_adjusted2.grd",
+     "sentry183_adjusted2.grd"
+    ],
+    "mosaic": {
+     "kind": "mosaic (rasterio.merge, first wins, native resolution)",
+     "grids": [
+      "sentry_area1_v4.grd",
+      "sentry179_renav_tide.grd",
+      "sentry183_adjusted2.grd"
+     ]
+    }
+   },
+   "ship_swath_files": 627,
+   "fetch": {
+    "n_ok": 627,
+    "n_planned": 627,
+    "complete": true
+   },
+   "site_record_sha256": "5e8b8496d7fee4d8d44b753f9eac83a3eb0223e1245480788ee94ad12774487b",
+   "reused": false,
+   "wall_s": 184.1
+  },
+  "MV1209__MGDS_21415": {
+   "pair_id": "MV1209__MGDS_21415",
+   "site_name": "La Jolla Canyon",
+   "hr_id": "MGDS:21415",
+   "lr_cruise": "MV1209",
+   "unit": "p5u05",
+   "designation": "phase5_sealed",
+   "path": "harmonized/MV1209__MGDS_21415",
+   "out_root": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1",
+   "hr_native_res_m": 1.0,
+   "lr_native_res_m": 8.73,
+   "res_ratio": 8.73,
+   "hr_res_m_unrounded": 0.9996655215965532,
+   "beam_footprint_m": 8.73,
+   "posting_m": 7.14,
+   "ship_grid_cell_m": 7.15,
+   "values_source": "C2a rule computed by this step (Phase 5)",
+   "max_recoverable_k": 2,
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "no_spectrum",
+    "8": "no_spectrum",
+    "16": "no_spectrum",
+    "32": "no_spectrum"
+   },
+   "k_sweep_status": "ok",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "products": "built",
+   "products_reason": null,
+   "flags": [],
+   "ship_products_usable": true,
+   "usable_reason": "available, no contract-v2.1 flags (rule C1)",
+   "coreg_pass": false,
+   "qa_components": {
+    "coreg_case_pass": true,
+    "overlap_ge_1km2": true,
+    "tiles_gt_0": true,
+    "coreg_estimated": true
+   },
+   "vertical_datum_ok": false,
+   "coreg_case": "drift",
+   "n_quadrant_groups": 2,
+   "n_tiles_dropped_boundary": 5,
+   "n_valid_tiles_256": 166,
+   "k_recoverable": true,
+   "cells_across": 29.314361,
+   "hr_res_in_range": true,
+   "eligible": false,
+   "eligibility_reason": "vertical datum: HR-ship vertical consistency above the calibrated bound T_G",
+   "status": "not testable",
+   "hr_grids": {
+    "n_files": 12,
+    "n_grids_read": 5,
+    "group_m": 1.0,
+    "kept": [
+     "LaJollaCanyonTopo1m_m2.grd"
+    ],
+    "mosaic": {
+     "kind": "single grid",
+     "grids": [
+      "LaJollaCanyonTopo1m_m2.grd"
+     ]
+    }
+   },
+   "ship_swath_files": 268,
+   "fetch": {
+    "n_ok": 268,
+    "n_planned": 268,
+    "complete": true
+   },
+   "site_record_sha256": "e9bfe4b235f0081844f1f2b11d26c7ceaccfcd4cd80156796cc5664b85f0f09b",
+   "reused": false,
+   "wall_s": 517.9
+  },
+  "KN173L02__MGDS_31675": {
+   "pair_id": "KN173L02__MGDS_31675",
+   "site_name": "Bermuda",
+   "hr_id": "MGDS:31675",
+   "lr_cruise": "KN173L02",
+   "unit": "p5u06",
+   "designation": "phase5_sealed",
+   "path": "harmonized/KN173L02__MGDS_31675",
+   "out_root": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1",
+   "hr_native_res_m": 1.044,
+   "lr_native_res_m": 56.12,
+   "res_ratio": 53.75,
+   "hr_res_m_unrounded": 1.0435089191519804,
+   "beam_footprint_m": 54.92,
+   "posting_m": 56.12,
+   "ship_grid_cell_m": 56.12,
+   "values_source": "C2a rule computed by this step (Phase 5)",
+   "max_recoverable_k": 16,
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "recoverable_signal",
+    "32": "no_spectrum"
+   },
+   "k_sweep_status": "ok",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "products": "built",
+   "products_reason": null,
+   "flags": [],
+   "ship_products_usable": true,
+   "usable_reason": "available, no contract-v2.1 flags (rule C1)",
+   "coreg_pass": true,
+   "qa_components": {
+    "coreg_case_pass": true,
+    "overlap_ge_1km2": true,
+    "tiles_gt_0": true,
+    "coreg_estimated": true
+   },
+   "vertical_datum_ok": true,
+   "coreg_case": "rigid",
+   "n_quadrant_groups": 3,
+   "n_tiles_dropped_boundary": 0,
+   "n_valid_tiles_256": 103,
+   "k_recoverable": true,
+   "cells_across": 4.760126,
+   "hr_res_in_range": true,
+   "eligible": true,
+   "eligibility_reason": "",
+   "status": "eligible (C1 set at step 1)",
+   "hr_grids": {
+    "n_files": 25,
+    "n_grids_read": 25,
+    "group_m": 1.0,
+    "kept": [
+     "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV02.grd",
+     "sentry494_20180827_1003_rnv_tide_1.00x1.00_BV01.grd",
+     "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV02.grd",
+     "sentry498_20180831_1202_rnv_tide_1.00x1.00_BV01.grd"
+    ],
+    "mosaic": {
+     "kind": "mosaic (rasterio.merge, first wins, native resolution)",
+     "grids": [
+      "sentry490_20180823_1510_rnv_tide_1.00x1.00_BV02.grd",
+      "sentry494_20180827_1003_rnv_tide_1.00x1.00_BV01.grd",
+      "sentry492_20180825_1029_rnv_tide_1.00x1.00_BV02.grd",
+      "sentry498_20180831_1202_rnv_tide_1.00x1.00_BV01.grd"
+     ]
+    }
+   },
+   "ship_swath_files": 22,
+   "fetch": {
+    "n_ok": 22,
+    "n_planned": 22,
+    "complete": true
+   },
+   "site_record_sha256": "9fe094545bd059d47441f786585a7e5050a1bfb37994b5ce906b76f9d466bb7a",
+   "reused": false,
+   "wall_s": 120.1
+  },
+  "MV1003__MGDS_31860": {
+   "pair_id": "MV1003__MGDS_31860",
+   "site_name": "Chile margin",
+   "hr_id": "MGDS:31860",
+   "lr_cruise": "MV1003",
+   "unit": "p5u07",
+   "designation": "phase5_sealed",
+   "path": "harmonized/MV1003__MGDS_31860",
+   "out_root": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1",
+   "hr_native_res_m": 1.341,
+   "lr_native_res_m": 52.59,
+   "res_ratio": 39.22,
+   "hr_res_m_unrounded": 1.3408555231788961,
+   "beam_footprint_m": 52.59,
+   "posting_m": 52.24,
+   "ship_grid_cell_m": 52.38,
+   "values_source": "C2a rule computed by this step (Phase 5)",
+   "max_recoverable_k": 8,
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "marginal",
+    "32": "no_spectrum"
+   },
+   "k_sweep_status": "ok",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "products": "built",
+   "products_reason": null,
+   "flags": [
+    "vertical_offset"
+   ],
+   "ship_products_usable": false,
+   "usable_reason": "flagged: vertical_offset (contract v2.1, rule C1)",
+   "coreg_pass": true,
+   "qa_components": {
+    "coreg_case_pass": true,
+    "overlap_ge_1km2": true,
+    "tiles_gt_0": true,
+    "coreg_estimated": true
+   },
+   "vertical_datum_ok": true,
+   "coreg_case": "drift",
+   "n_quadrant_groups": 2,
+   "n_tiles_dropped_boundary": 5,
+   "n_valid_tiles_256": 24,
+   "k_recoverable": true,
+   "cells_across": 6.527078,
+   "hr_res_in_range": true,
+   "eligible": true,
+   "eligibility_reason": "",
+   "status": "eligible (C1 set at step 1)",
+   "hr_grids": {
+    "n_files": 16,
+    "n_grids_read": 16,
+    "group_m": 1.0,
+    "kept": [
+     "sentry135_1x1.grd",
+     "sentry137_1x1_v5.grd"
+    ],
+    "mosaic": {
+     "kind": "mosaic (rasterio.merge, first wins, native resolution)",
+     "grids": [
+      "sentry135_1x1.grd",
+      "sentry137_1x1_v5.grd"
+     ]
+    }
+   },
+   "ship_swath_files": 187,
+   "fetch": {
+    "n_ok": 187,
+    "n_planned": 187,
+    "complete": true
+   },
+   "site_record_sha256": "b51bdf9a8808cd6375cd01a06f13f22213e3dd2ac1c9d8606e0f2224cafa4439",
+   "reused": false,
+   "wall_s": 272.5
+  },
+  "AT26-24__MGDS_31954": {
+   "pair_id": "AT26-24__MGDS_31954",
+   "site_name": "Dorado Outcrop",
+   "hr_id": "MGDS:31954",
+   "lr_cruise": "AT26-24",
+   "unit": "p5u08",
+   "designation": "phase5_sealed",
+   "path": "harmonized/AT26-24__MGDS_31954",
+   "out_root": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1",
+   "hr_native_res_m": 0.999,
+   "lr_native_res_m": 54.84,
+   "res_ratio": 54.89,
+   "hr_res_m_unrounded": 0.9993881205852732,
+   "beam_footprint_m": 54.84,
+   "posting_m": 54.16,
+   "ship_grid_cell_m": 54.39,
+   "values_source": "C2a rule computed by this step (Phase 5)",
+   "max_recoverable_k": 8,
+   "per_k": {
+    "2": "recoverable_signal",
+    "4": "recoverable_signal",
+    "8": "recoverable_signal",
+    "16": "roughness_only",
+    "32": "no_spectrum"
+   },
+   "k_sweep_status": "ok",
+   "k_source": "stage_c2c_recalibrate.sweep (this run)",
+   "products": "built",
+   "products_reason": null,
+   "flags": [],
+   "ship_products_usable": true,
+   "usable_reason": "available, no contract-v2.1 flags (rule C1)",
+   "coreg_pass": true,
+   "qa_components": {
+    "coreg_case_pass": true,
+    "overlap_ge_1km2": true,
+    "tiles_gt_0": true,
+    "coreg_estimated": true
+   },
+   "vertical_datum_ok": true,
+   "coreg_case": "rigid",
+   "n_quadrant_groups": 3,
+   "n_tiles_dropped_boundary": 0,
+   "n_valid_tiles_256": 74,
+   "k_recoverable": true,
+   "cells_across": 4.665269,
+   "hr_res_in_range": true,
+   "eligible": true,
+   "eligibility_reason": "",
+   "status": "eligible (C1 set at step 1)",
+   "hr_grids": {
+    "n_files": 10,
+    "n_grids_read": 10,
+    "group_m": 1.0,
+    "kept": [
+     "sentry213_20131209_1539_tide_1x1.grd"
+    ],
+    "mosaic": {
+     "kind": "single grid",
+     "grids": [
+      "sentry213_20131209_1539_tide_1x1.grd"
+     ]
+    }
+   },
+   "ship_swath_files": 70,
+   "fetch": {
+    "n_ok": 70,
+    "n_planned": 70,
+    "complete": true
+   },
+   "site_record_sha256": "7308d47fdab624f2a020332463199e1a01e63803de364384a7b0f7494d91adc6",
+   "reused": false,
+   "wall_s": 150.8
+  }
+ },
+ "ledger": [
+  {
+   "pair_id": "TN188__MGDS_18210",
+   "item": "hr_selection",
+   "status": "17 kept",
+   "reason": "group 1.0"
+  },
+  {
+   "pair_id": "TN188__MGDS_18210",
+   "item": "fetch",
+   "status": "complete",
+   "reason": "1069 of 1069 files"
+  },
+  {
+   "pair_id": "TN188__MGDS_18210",
+   "item": "grid",
+   "status": "built",
+   "reason": "cell 29.59 m, patch cluster: 403 of 510 parts within 5 km of the part with"
+  },
+  {
+   "pair_id": "TN188__MGDS_18210",
+   "item": "harmonize",
+   "status": "qa fail",
+   "reason": "{\"coreg_case_pass\": false, \"overlap_ge_1km2\": true, \"tiles_gt_0\": true, \"coreg_estimated\": true}"
+  },
+  {
+   "pair_id": "TN188__MGDS_18210",
+   "item": "sweep",
+   "status": "ok",
+   "reason": "k=8"
+  },
+  {
+   "pair_id": "TN188__MGDS_18210",
+   "item": "products",
+   "status": "built",
+   "reason": "flags []"
+  },
+  {
+   "pair_id": "Escanaba__MGDS_30368",
+   "item": "hr_selection",
+   "status": "2 kept",
+   "reason": "group 1.15"
+  },
+  {
+   "pair_id": "Escanaba__MGDS_30368",
+   "item": "fetch",
+   "status": "complete",
+   "reason": "32 of 32 files"
+  },
+  {
+   "pair_id": "Escanaba__MGDS_30368",
+   "item": "grid",
+   "status": "built",
+   "reason": "cell 57.42 m, patch cluster: 6 of 9 parts within 5 km of the part with the"
+  },
+  {
+   "pair_id": "Escanaba__MGDS_30368",
+   "item": "harmonize",
+   "status": "qa pass",
+   "reason": "{\"coreg_case_pass\": true, \"overlap_ge_1km2\": true, \"tiles_gt_0\": true, \"coreg_estimated\": true}"
+  },
+  {
+   "pair_id": "Escanaba__MGDS_30368",
+   "item": "sweep",
+   "status": "ok",
+   "reason": "k=16"
+  },
+  {
+   "pair_id": "Escanaba__MGDS_30368",
+   "item": "products",
+   "status": "built",
+   "reason": "flags []"
+  },
+  {
+   "pair_id": "Monterey__MGDS_24756",
+   "item": "hr_selection",
+   "status": "2 kept",
+   "reason": "group 1.0"
+  },
+  {
+   "pair_id": "Monterey__MGDS_24756",
+   "item": "fetch",
+   "status": "complete",
+   "reason": "577 of 577 files"
+  },
+  {
+   "pair_id": "Monterey__MGDS_24756",
+   "item": "grid",
+   "status": "built",
+   "reason": "cell 24.33 m, patch cluster: 205 of 368 parts within 5 km of the part with"
+  },
+  {
+   "pair_id": "Monterey__MGDS_24756",
+   "item": "harmonize",
+   "status": "qa pass",
+   "reason": "{\"coreg_case_pass\": true, \"overlap_ge_1km2\": true, \"tiles_gt_0\": true, \"coreg_estimated\": true}"
+  },
+  {
+   "pair_id": "Monterey__MGDS_24756",
+   "item": "sweep",
+   "status": "no_curve",
+   "reason": "k=None"
+  },
+  {
+   "pair_id": "Monterey__MGDS_24756",
+   "item": "products",
+   "status": "not built",
+   "reason": "no k (rule C3)"
+  },
+  {
+   "pair_id": "KN161L04__MGDS_22436",
+   "item": "hr_selection",
+   "status": "6 kept",
+   "reason": "group 2.0"
+  },
+  {
+   "pair_id": "KN161L04__MGDS_22436",
+   "item": "fetch",
+   "status": "complete",
+   "reason": "627 of 627 files"
+  },
+  {
+   "pair_id": "KN161L04__MGDS_22436",
+   "item": "grid",
+   "status": "built",
+   "reason": "cell 115.49 m, patch cluster: 1013 of 1459 parts within 5 km of the part wi"
+  },
+  {
+   "pair_id": "KN161L04__MGDS_22436",
+   "item": "harmonize",
+   "status": "qa pass",
+   "reason": "{\"coreg_case_pass\": true, \"overlap_ge_1km2\": true, \"tiles_gt_0\": true, \"coreg_estimated\": true}"
+  },
+  {
+   "pair_id": "KN161L04__MGDS_22436",
+   "item": "sweep",
+   "status": "ok",
+   "reason": "k=16"
+  },
+  {
+   "pair_id": "KN161L04__MGDS_22436",
+   "item": "products",
+   "status": "built",
+   "reason": "flags []"
+  },
+  {
+   "pair_id": "MV1209__MGDS_21415",
+   "item": "hr_selection",
+   "status": "1 kept",
+   "reason": "group 1.0"
+  },
+  {
+   "pair_id": "MV1209__MGDS_21415",
+   "item": "fetch",
+   "status": "complete",
+   "reason": "268 of 268 files"
+  },
+  {
+   "pair_id": "MV1209__MGDS_21415",
+   "item": "grid",
+   "status": "built",
+   "reason": "cell 7.15 m, patch cluster: 2 of 2 parts within 5 km of the part with the"
+  },
+  {
+   "pair_id": "MV1209__MGDS_21415",
+   "item": "harmonize",
+   "status": "qa pass",
+   "reason": "{\"coreg_case_pass\": true, \"overlap_ge_1km2\": true, \"tiles_gt_0\": true, \"coreg_estimated\": true}"
+  },
+  {
+   "pair_id": "MV1209__MGDS_21415",
+   "item": "sweep",
+   "status": "ok",
+   "reason": "k=2"
+  },
+  {
+   "pair_id": "MV1209__MGDS_21415",
+   "item": "products",
+   "status": "built",
+   "reason": "flags []"
+  },
+  {
+   "pair_id": "KN173L02__MGDS_31675",
+   "item": "hr_selection",
+   "status": "4 kept",
+   "reason": "group 1.0"
+  },
+  {
+   "pair_id": "KN173L02__MGDS_31675",
+   "item": "fetch",
+   "status": "complete",
+   "reason": "22 of 22 files"
+  },
+  {
+   "pair_id": "KN173L02__MGDS_31675",
+   "item": "grid",
+   "status": "built",
+   "reason": "cell 56.12 m, whole footprint (959 parts)"
+  },
+  {
+   "pair_id": "KN173L02__MGDS_31675",
+   "item": "harmonize",
+   "status": "qa pass",
+   "reason": "{\"coreg_case_pass\": true, \"overlap_ge_1km2\": true, \"tiles_gt_0\": true, \"coreg_estimated\": true}"
+  },
+  {
+   "pair_id": "KN173L02__MGDS_31675",
+   "item": "sweep",
+   "status": "ok",
+   "reason": "k=16"
+  },
+  {
+   "pair_id": "KN173L02__MGDS_31675",
+   "item": "products",
+   "status": "built",
+   "reason": "flags []"
+  },
+  {
+   "pair_id": "MV1003__MGDS_31860",
+   "item": "hr_selection",
+   "status": "2 kept",
+   "reason": "group 1.0"
+  },
+  {
+   "pair_id": "MV1003__MGDS_31860",
+   "item": "fetch",
+   "status": "complete",
+   "reason": "187 of 187 files"
+  },
+  {
+   "pair_id": "MV1003__MGDS_31860",
+   "item": "grid",
+   "status": "built",
+   "reason": "cell 52.38 m, patch cluster: 1210 of 1210 parts within 5 km of the part wi"
+  },
+  {
+   "pair_id": "MV1003__MGDS_31860",
+   "item": "harmonize",
+   "status": "qa pass",
+   "reason": "{\"coreg_case_pass\": true, \"overlap_ge_1km2\": true, \"tiles_gt_0\": true, \"coreg_estimated\": true}"
+  },
+  {
+   "pair_id": "MV1003__MGDS_31860",
+   "item": "sweep",
+   "status": "ok",
+   "reason": "k=8"
+  },
+  {
+   "pair_id": "MV1003__MGDS_31860",
+   "item": "products",
+   "status": "built",
+   "reason": "flags ['vertical_offset']"
+  },
+  {
+   "pair_id": "AT26-24__MGDS_31954",
+   "item": "hr_selection",
+   "status": "1 kept",
+   "reason": "group 1.0"
+  },
+  {
+   "pair_id": "AT26-24__MGDS_31954",
+   "item": "fetch",
+   "status": "complete",
+   "reason": "70 of 70 files"
+  },
+  {
+   "pair_id": "AT26-24__MGDS_31954",
+   "item": "grid",
+   "status": "built",
+   "reason": "cell 54.39 m, whole footprint (1326 parts)"
+  },
+  {
+   "pair_id": "AT26-24__MGDS_31954",
+   "item": "harmonize",
+   "status": "qa pass",
+   "reason": "{\"coreg_case_pass\": true, \"overlap_ge_1km2\": true, \"tiles_gt_0\": true, \"coreg_estimated\": true}"
+  },
+  {
+   "pair_id": "AT26-24__MGDS_31954",
+   "item": "sweep",
+   "status": "ok",
+   "reason": "k=8"
+  },
+  {
+   "pair_id": "AT26-24__MGDS_31954",
+   "item": "products",
+   "status": "built",
+   "reason": "flags []"
+  }
+ ],
+ "leak_check": {
+  "passed": true,
+  "n_sites_with_patterns": 8,
+  "n_patterns": 114,
+  "n_files_scanned": 103,
+  "n_texts_scanned": 2,
+  "n_value_hits": 0,
+  "n_files_with_value_hits": 0,
+  "n_key_hits": 0,
+  "key_hit_paths": [],
+  "scope": "values: every text file / parquet text / log of the run; keys: run record + site/hr_selection/grid/sweep records (v2.1 products exempt; ruling 'records only')",
+  "logs_scanned": [
+   "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/logs/acq_r13_p5v42_47819657.err",
+   "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/logs/acq_r13_p5v42_47819657.out"
+  ]
+ },
+ "status": "complete",
+ "supplement": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_phase5_sealed_v4_1.parquet",
+ "supplement_sha256": "6fe0d59057842481b06513fd731951fe9177a6898fc55f8677004800616949f0",
+ "supplement_schema": {
+  "path": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_phase5_sealed_v4_1.parquet",
+  "sha256": "6fe0d59057842481b06513fd731951fe9177a6898fc55f8677004800616949f0",
+  "n_rows": 8,
+  "n_columns": 70,
+  "schema_equal_phase4_first_64": true,
+  "phase4_supplement_sha256": "6968e04554ddeef3c335587d602cb5fab2185db32b46cbd152475a919eb59206",
+  "eligibility_columns": [
+   "coreg_pass",
+   "k_recoverable",
+   "cells_across",
+   "hr_res_in_range",
+   "eligible",
+   "eligibility_reason"
+  ]
+ },
+ "n_rows": 8,
+ "wall_s": 2218.1,
+ "finished": "2026-10-14T21:18:15+00:00"
+}
