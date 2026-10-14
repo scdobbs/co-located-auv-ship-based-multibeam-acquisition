@@ -35,7 +35,7 @@ def main(argv=None):
     tar = C.SCRATCH_DATA / "containers" / "mbsystem_sandbox.tar"
     tar_sha = tar.with_suffix(".tar.sha256").read_text().split()[0] if tar.with_suffix(".tar.sha256").exists() else None
     rec = {"directive": "ACQ-R13 (code ACQ-R09 + ACQ-R11b datum check + ACQ-R12 write paths / leak check + ACQ-R13 local co-registration)",
-           "supersedes": [{"path": str(q.relative_to(P.REPO)), "sha256": P.sha256_file(q)} for q in (P.FREEZE_RECORD_V4, P.FREEZE_RECORD_V3, P.FREEZE_RECORD_V2, P.FREEZE_RECORD_V1)], "generated": P.utc_now(), "status": "candidate (not tagged)" if a.candidate else "frozen",
+           "supersedes": [{"path": str(q.relative_to(P.REPO)), "sha256": P.sha256_file(q)} for q in (P.FREEZE_RECORD_V4_1, P.FREEZE_RECORD_V4, P.FREEZE_RECORD_V3, P.FREEZE_RECORD_V2, P.FREEZE_RECORD_V1)], "generated": P.utc_now(), "status": "candidate (not tagged)" if a.candidate else "frozen",
            "entry_script": P.ENTRY_REL, "site_list": P.SITE_LIST_REL, "files": files, "n_files": len(files), "commit": P.git_commit(),
            "uncommitted_changes_in_listed_files": dirty, "mbsystem": C.MBSYSTEM_VERSION,
            "container": {"image": "docker.io/mbari/mbsystem", "digest": C.CONTAINER_DIGEST, "sandbox_canonical": C.SANDBOX_CANONICAL,
@@ -47,7 +47,8 @@ def main(argv=None):
                                                           "ACQ-R11b: vertical-datum check T_G = 0.200712 (fallback; line check not applied)",
                                                           "ACQ-R12: write paths under the admitted roots; in-run leak check (records-only key scope); no computation change",
                                                           "ACQ-R13: local (quadrant) co-registration replaces the 30 m bound; out root OAK phase5_v4; supplement pairs_phase5_sealed_v4",
-                                                          "ACQ-R13 v4.1: drift-case output written without the inherited _FillValue; local-step errors stop the run; out root phase5_v4_1"],
+                                                          "ACQ-R13 v4.1: drift-case output written without the inherited _FillValue; local-step errors stop the run; out root phase5_v4_1",
+                                                          "ACQ-R13 v4.2: local-coreg record key residual_px renamed pixel_offset_from_global (forbidden-key check)"],
            "calibration_table": {"path": "reports_post_grl_review/ACQ-R11b/vcheck_calibration_v2.csv", "sha256": P.sha256_file(P.VCHECK_CALIBRATION)},
            "python": sys.version.split()[0]}
     out = (P.REPORT_DIR / "freeze_record_phase5_candidate.json") if a.candidate else P.FREEZE_RECORD

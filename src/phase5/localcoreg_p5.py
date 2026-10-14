@@ -133,7 +133,7 @@ def apply_drift(hr_da, glob, est):
             shifted[rs0 + kr:rs1 + kr, cs0 + kx:cs1 + kx] = src[rs0:rs1, cs0:cs1]
         sel = g["mask"]
         out[sel] = shifted[sel] + g["dz_m"]
-        g["residual_px"] = [kx, ky]
+        g["pixel_offset_from_global"] = [kx, ky]               # v4.2: key renamed (a key holding "residual" is forbidden)
     corrected = hr_da.copy(data=out.astype(hr_da.dtype) if np.issubdtype(hr_da.dtype, np.floating) else out)
     corrected.attrs = {}; corrected.encoding = {}            # as apply_xyz's arithmetic: no inherited _FillValue (ACQ-R13 v4.1 fix)
     corrected = corrected.assign_coords(x=hr_da.x + glob.dx_m, y=hr_da.y + glob.dy_m)

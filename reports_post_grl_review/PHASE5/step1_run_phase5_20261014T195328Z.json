@@ -1,0 +1,359 @@
+{
+ "directive": "ACQ-R09 code + ACQ-R11b vertical-datum check + ACQ-R12 write paths / leak check (Phase 5 step 1)",
+ "mode": "phase5",
+ "run_tag": "20261014T195328Z",
+ "sites": [
+  "MGDS:18210",
+  "MGDS:30368",
+  "MGDS:24756",
+  "MGDS:22436",
+  "MGDS:21415",
+  "MGDS:31675",
+  "MGDS:31860",
+  "MGDS:31954"
+ ],
+ "site_list": {
+  "path": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/inputs/phase5_sites.csv",
+  "sha256": "138dee8f886344050ce92403853a933cbda23d74c2f17118056ed00a34a87e2b"
+ },
+ "out_root": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1",
+ "work_root": "/lscratch/scdobbs/47814252/acq_p5/phase5",
+ "sealed_root": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3",
+ "fetch": true,
+ "started": "2026-10-14T19:53:28+00:00",
+ "host": "sh03-08n50.int",
+ "cpu_model": "AMD EPYC 7543 32-Core Processor",
+ "code_commit": "57251d95420875bfe829d62ee16f62203bc937b7",
+ "nproc": 6,
+ "batch_files": 1,
+ "mbsystem": "5.8.2beta06",
+ "sandbox": "/lscratch/scdobbs/47814252/mbsystem_sandbox",
+ "container_digest": "sha256:106f502d9f97ee0e9f5d889726320d1ae73a95fb102069e357a0bb0b35b39668",
+ "rulings": [
+  "S1",
+  "S2",
+  "S3",
+  "ACQ-R11b fallback: datum check T_G, line check not applied",
+  "ACQ-R12 write paths + in-run leak check (records-only key scope)",
+  "ACQ-R13 local co-registration replaces the 30 m bound"
+ ],
+ "swath_root": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath",
+ "record_dir": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/PHASE5",
+ "fixed_input_sha256": {
+  "reports/discovery/stage_c2c_calibration.json": "7e68bdadfcdb5dd1c5ad4040ad6a5edf5226fcd9223e6824ae1c21472c01778a",
+  "reports_post_grl_review/INTERFACE_CONTRACT_v2.1.md": "0b4aadaf61fb04213ae18771d2a58532f39e9d49b5152ab64738d188a7e18fcb",
+  "manifest/pairs_phase4_sealed.parquet": "6968e04554ddeef3c335587d602cb5fab2185db32b46cbd152475a919eb59206",
+  "reports_post_grl_review/ACQ-R08b/candidates_measured.csv": "fbd2e03d9cdbe65420fbd98cb772dd1af5ef855951307e9c5b0d4c98b1607b37",
+  "reports_post_grl_review/ACQ-R11b/vcheck_calibration_v2.csv": "41973318d9ac55cffc7baa3f57a359da2538f2fd0a7a3a952d39770a14b7d8b2"
+ },
+ "guard_selftest": {
+  "phase4_reader_checks": {
+   "n": 84,
+   "n_blocked": 84,
+   "all_passed": true
+  },
+  "phase5": {
+   "real_name_admission": [
+    {
+     "case": "real site file MGDS_18210",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry040ppp_1m.grd.gz",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real site dir MGDS_18210",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real site dir MGDS_30368",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_30368",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real site dir MGDS_24756",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_24756",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real site dir MGDS_22436",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_22436",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real site dir MGDS_21415",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_21415",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real site dir MGDS_31675",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31675",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real site dir MGDS_31860",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31860",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real site dir MGDS_31954",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31954",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "real non-admitted id MGDS_31811",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_31811/sentry039_2x2_post.grd.gz",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "non-admitted candidate id ['MGDS_31811']"
+    },
+    {
+     "case": "real non-admitted id PANGAEA_958275",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/PANGAEA_958275/x.tif",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "non-admitted candidate id ['PANGAEA_958275']"
+    },
+    {
+     "case": "real non-admitted id SEANOE_55744",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/SEANOE_55744/57399.zip",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "non-admitted candidate id ['SEANOE_55744']"
+    },
+    {
+     "case": "real root itself",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "the sealed root itself or a non-admitted directory under it"
+    },
+    {
+     "case": "real root file",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/SHA256SUMS",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "the sealed root itself or a non-admitted directory under it"
+    },
+    {
+     "case": "traversal to a non-admitted id",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/../MGDS_31811/x.grd",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "non-admitted candidate id ['MGDS_31811']"
+    },
+    {
+     "case": "OAK raw_hr September copy",
+     "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_30368/MAUV_NESCA_All_Topo_1m.grd",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "OAK raw_hr (September copies stay sealed)"
+    },
+    {
+     "case": "lockbox id with an admitted token",
+     "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/MGDS_18210__AT42-03__MGDS_32007/lr.tif",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "lockbox id AT42-03__MGDS_32007"
+    },
+    {
+     "case": "output root, admitted token",
+     "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/X__MGDS_18210/hr.tif",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "output root, non-admitted token",
+     "path": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1/harmonized/X__MGDS_31811/hr.tif",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "non-admitted candidate id ['MGDS_31811']"
+    },
+    {
+     "case": "work root, admitted token",
+     "path": "/lscratch/scdobbs/47814252/acq_p5/phase5/X__MGDS_18210/tile0.tif",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    },
+    {
+     "case": "admitted token outside the roots",
+     "path": "/tmp/MGDS_18210/copy.tif",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "outside the admitted roots"
+    },
+    {
+     "case": "mock root under the real allowance",
+     "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/x/f.grd",
+     "expected": "refused",
+     "got": "refused",
+     "passed": true,
+     "why": "sealed root /scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3 is not the mode's sealed root /scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3"
+    },
+    {
+     "case": "GDAL driver prefix",
+     "path": "NETCDF:/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3/MGDS_18210/sentry041pp_1m.grd",
+     "expected": "admitted",
+     "got": "admitted",
+     "passed": true,
+     "why": "admitted"
+    }
+   ],
+   "mock_admission": [],
+   "after_removal": {
+    "n": 38,
+    "all_blocked": true
+   },
+   "decoy": {
+    "path": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_99999/decoy.grd",
+    "before": "blocked"
+   },
+   "allowance_installed_at_end": false,
+   "guard_file_sha256": "a6c0c39d2f25be799c201be642664cb7f1c6fe336c48c79e53f3761d5fe8c651",
+   "all_passed": true,
+   "reader_checks": {
+    "n": 228,
+    "n_blocked": 228,
+    "all_blocked": true
+   }
+  },
+  "site_paths": {
+   "n": 336,
+   "n_blocked": 336,
+   "all_blocked": true
+  }
+ },
+ "locks": {
+  "lock1_signoff": {
+   "signoff": "/home/users/scdobbs/GAN_Bathymetry_Project/grl_reviews-and-prompt-reports/directives_and_reports/R16c/SIGNOFF_phase5_prereg_v3_1.md",
+   "prereg_sha256": "75b72eb6fae3804c7dea61aa4171744a2fcd4fbdb7c3916f3fb98f2c06f2c7b6",
+   "signoff_sha256": "b8ba209c99148472bd7e0ca266cb051fe1d98e0880a08637cc689483543a3a89"
+  },
+  "lock2_freeze_record": {
+   "freeze_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/PHASE5/freeze_record_phase5_v4_1.json",
+   "freeze_record_sha256": "90cca1f236e72d7f21f8ebe9b948cc2b81ef9eb0dbb34800dc41a35f14ab6337",
+   "n_files": 69,
+   "n_loaded_checked": 57
+  },
+  "lock3_site_list": {
+   "site_list": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/inputs/phase5_sites.csv",
+   "site_list_sha256": "138dee8f886344050ce92403853a933cbda23d74c2f17118056ed00a34a87e2b",
+   "sites": [
+    "MGDS:18210",
+    "MGDS:30368",
+    "MGDS:24756",
+    "MGDS:22436",
+    "MGDS:21415",
+    "MGDS:31675",
+    "MGDS:31860",
+    "MGDS:31954"
+   ]
+  },
+  "lock4_single_run": {
+   "supplement": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/manifest/pairs_phase5_sealed_v4_1.parquet",
+   "complete_records_found": 0
+  }
+ },
+ "freeze_record_sha256": "90cca1f236e72d7f21f8ebe9b948cc2b81ef9eb0dbb34800dc41a35f14ab6337",
+ "allowance": {
+  "tokens": [
+   "MGDS_18210",
+   "MGDS_30368",
+   "MGDS_24756",
+   "MGDS_22436",
+   "MGDS_21415",
+   "MGDS_31675",
+   "MGDS_31860",
+   "MGDS_31954"
+  ],
+  "sealed_root": "/scratch/groups/hilley/auv_ship_colocated_bathy/sealed_candidates_v3",
+  "roots": [
+   "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/phase5_v4_1",
+   "/lscratch/scdobbs/47814252/acq_p5/phase5"
+  ],
+  "reason": "ACQ-R09 phase5 locks passed: sign-off, freeze record, site list, single run"
+ },
+ "status": "stopped",
+ "error": "StopRun: TN188__MGDS_18210: forbidden keys in the site record: ['/harmonize/local_coreg/groups[0]/residual_px', '/harmonize/local_coreg/groups[1]/residual_px', '/harmonize/local_coreg/groups[2]/residual_px', '/harmonize/local_coreg/groups[3]/residual_px']",
+ "ledger": [
+  {
+   "pair_id": "TN188__MGDS_18210",
+   "item": "hr_selection",
+   "status": "17 kept",
+   "reason": "group 1.0"
+  },
+  {
+   "pair_id": "TN188__MGDS_18210",
+   "item": "fetch",
+   "status": "complete",
+   "reason": "1069 of 1069 files"
+  },
+  {
+   "pair_id": "TN188__MGDS_18210",
+   "item": "grid",
+   "status": "built",
+   "reason": "cell 29.59 m, patch cluster: 403 of 510 parts within 5 km of the part with"
+  },
+  {
+   "pair_id": "TN188__MGDS_18210",
+   "item": "harmonize",
+   "status": "qa fail",
+   "reason": "{\"coreg_case_pass\": false, \"overlap_ge_1km2\": true, \"tiles_gt_0\": true, \"coreg_estimated\": true}"
+  },
+  {
+   "pair_id": "TN188__MGDS_18210",
+   "item": "sweep",
+   "status": "ok",
+   "reason": "k=8"
+  },
+  {
+   "pair_id": "TN188__MGDS_18210",
+   "item": "products",
+   "status": "built",
+   "reason": "flags []"
+  }
+ ],
+ "pairs_done": [],
+ "per_pair": {},
+ "wall_s": 396.8
+}
