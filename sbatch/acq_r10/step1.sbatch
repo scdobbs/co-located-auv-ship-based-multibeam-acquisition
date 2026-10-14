@@ -6,7 +6,7 @@
 #SBATCH --mem=128G
 #SBATCH --output=/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/logs/acq_r10_p5_%j.out
 #SBATCH --error=/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/logs/acq_r10_p5_%j.err
-# ACQ-R10 §2: the frozen Phase 5 step 1 (src/phase5/sealed_step1_p5.py --mode phase5), run ONCE, unchanged.
+# ACQ-R10 §2 (re-issued by ACQ-R11b §5.4 against PHASE5/freeze_record_phase5_v2.json, tag phase5-acq-freeze-v2): the frozen Phase 5 step 1 (src/phase5/sealed_step1_p5.py --mode phase5), run ONCE, unchanged.
 # Resources from the ACQ-R09 rehearsal (3 pairs, no fetch: 13.5 min, 7.6 GB RSS) scaled for 8 sites with the swath
 # fetch (~61 GB; MV1003 subset ~37 GB, gunzipped to node-local disk by grid_lr.prepare) and the v2.1 product builder.
 # Preconditions 1-4 re-checked here (read only); any failure exits before the step.
@@ -14,23 +14,23 @@ set -uo pipefail
 module load python/3.12.1 openblas/0.3.28
 ACQ=/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition
 CNN=/home/users/scdobbs/GAN_Bathymetry_Project
-R16=grl_reviews-and-prompt-reports/directives_and_reports/R16
-SIGNOFF=$CNN/$R16/SIGNOFF_phase5_prereg_v3.md
-PREREG=3df236e008466919a2b5acf94fb258a6f42abe6235a1ee1b77c0785ca8939d58
-FREEZE_SHA=6769583198da63d874472ea5a2ca62cb26c2f9f55003eb6e97838bfebab1d9d1
+R16=grl_reviews-and-prompt-reports/directives_and_reports/R16c
+SIGNOFF=$CNN/$R16/SIGNOFF_phase5_prereg_v3_1.md
+PREREG=75b72eb6fae3804c7dea61aa4171744a2fcd4fbdb7c3916f3fb98f2c06f2c7b6
+FREEZE_SHA=f5a30b87c05a90bb9155f37bbdf61de6d20fa55423d97662e59ff42b02809438
 PY=/home/users/scdobbs/bathy_diffusion_env/bin/python
 cd $ACQ
-echo "host=$(hostname) job=$SLURM_JOB_ID commit=$(git rev-parse HEAD) freeze_tag=$(git rev-parse phase5-acq-freeze^{commit}) start=$(date -u +%FT%TZ)"
+echo "host=$(hostname) job=$SLURM_JOB_ID commit=$(git rev-parse HEAD) freeze_tag=$(git rev-parse phase5-acq-freeze-v2^{commit}) start=$(date -u +%FT%TZ)"
 grep -m1 "model name" /proc/cpuinfo
-# §1.1 pre-registration = tag copy; sign-off committed and its first sha256 = v3
-[ "$(sha256sum $CNN/$R16/PREREG_phase5_v3.md | cut -d' ' -f1)" = "$PREREG" ] || { echo "PRECONDITION 1 FAILED: PREREG hash"; exit 3; }
-[ "$(cd $CNN && git show phase5-prereg-v3:$R16/PREREG_phase5_v3.md | sha256sum | cut -d' ' -f1)" = "$PREREG" ] || { echo "PRECONDITION 1 FAILED: tag copy"; exit 3; }
-(cd $CNN && git ls-files --error-unmatch $R16/SIGNOFF_phase5_prereg_v3.md >/dev/null 2>&1 && git diff --quiet HEAD -- $R16/SIGNOFF_phase5_prereg_v3.md) || { echo "PRECONDITION 1 FAILED: sign-off not committed"; exit 3; }
+# §1.1 pre-registration = tag copy; sign-off committed and its first sha256 = v3.1
+[ "$(sha256sum $CNN/$R16/PREREG_phase5_v3_1.md | cut -d' ' -f1)" = "$PREREG" ] || { echo "PRECONDITION 1 FAILED: PREREG hash"; exit 3; }
+[ "$(cd $CNN && git show phase5-prereg-v3.1:$R16/PREREG_phase5_v3_1.md | sha256sum | cut -d' ' -f1)" = "$PREREG" ] || { echo "PRECONDITION 1 FAILED: tag copy"; exit 3; }
+(cd $CNN && git ls-files --error-unmatch $R16/SIGNOFF_phase5_prereg_v3_1.md >/dev/null 2>&1 && git diff --quiet HEAD -- $R16/SIGNOFF_phase5_prereg_v3_1.md) || { echo "PRECONDITION 1 FAILED: sign-off not committed"; exit 3; }
 [ "$(grep -o -m1 -E '[0-9a-f]{64}' $SIGNOFF | head -1)" = "$PREREG" ] || { echo "PRECONDITION 1 FAILED: sign-off first sha256"; exit 3; }
-echo "signoff_commit=$(cd $CNN && git log -1 --format=%H -- $R16/SIGNOFF_phase5_prereg_v3.md) signoff_sha256=$(sha256sum $SIGNOFF | cut -d' ' -f1)"
+echo "signoff_commit=$(cd $CNN && git log -1 --format=%H -- $R16/SIGNOFF_phase5_prereg_v3_1.md) signoff_sha256=$(sha256sum $SIGNOFF | cut -d' ' -f1)"
 # §1.2 freeze record hash; src/phase5 clean and equal to the tag (the step's lock 2 checks every listed file)
-[ "$(sha256sum reports_post_grl_review/PHASE5/freeze_record_phase5.json | cut -d' ' -f1)" = "$FREEZE_SHA" ] || { echo "PRECONDITION 2 FAILED: freeze record hash"; exit 3; }
-git diff --quiet phase5-acq-freeze -- src/phase5 && [ -z "$(git status --porcelain src/phase5)" ] || { echo "PRECONDITION 2 FAILED: src/phase5 differs from phase5-acq-freeze"; exit 3; }
+[ "$(sha256sum reports_post_grl_review/PHASE5/freeze_record_phase5_v2.json | cut -d' ' -f1)" = "$FREEZE_SHA" ] || { echo "PRECONDITION 2 FAILED: freeze record hash"; exit 3; }
+git diff --quiet phase5-acq-freeze-v2 -- src/phase5 && [ -z "$(git status --porcelain src/phase5)" ] || { echo "PRECONDITION 2 FAILED: src/phase5 differs from phase5-acq-freeze-v2"; exit 3; }
 # §1.4 no phase5 supplement, no phase5 run record
 [ ! -e manifest/pairs_phase5_sealed.parquet ] && ! ls reports_post_grl_review/PHASE5/step1_run_phase5_*.json >/dev/null 2>&1 || { echo "PRECONDITION 4 FAILED: supplement or phase5 run record exists"; exit 3; }
 source sbatch/acq_r04/stage_sandbox.sh
