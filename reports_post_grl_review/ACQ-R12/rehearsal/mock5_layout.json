@@ -1,0 +1,33 @@
+{
+ "generated": "2026-10-14T13:56:39+00:00",
+ "mock5_root": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock5/sealed_candidates_v3",
+ "site_list": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R12/rehearsal/mock5_sites.csv",
+ "site_list_sha256": "9187f702d306341264d0a7023a3ed7ab0518026515d1e010d9d6208ad03f26f1",
+ "copies": [
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31289/OctopusGarden_MAUV2022_Topo1m_utm.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock5/sealed_candidates_v3/MGDS_31289/OctopusGarden_MAUV2022_Topo1m_utm.grd.gz",
+   "sha256": "5fcb51ad94e3299162ebec11dc5f0ea0cff3a8a2bbe52b9e65e6c6aa80536114"
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31429/sentry_femo2m.asc.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock5/sealed_candidates_v3/MGDS_31429/sentry_femo2m.asc.gz",
+   "sha256": "d56916bf5cfa918868014e34011df08e3f64df9aa4c77e59b321483c05b33652"
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31429/sent_shdeep2m.asc.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock5/sealed_candidates_v3/MGDS_31429/sent_shdeep2m.asc.gz",
+   "sha256": "ef3127b55ce177b9f32c6501dc5fb881a5077b1fec3d5f5826adb1ff107c9d1c"
+  }
+ ],
+ "seeded_swath": {
+  "KM0923": {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/KM0923",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/raw_lr_swath/KM0923",
+   "n_files": 231
+  }
+ },
+ "mock_prereg": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R12/rehearsal/phase5_mock_inputs/PREREG_phase5_mock.md",
+ "mock_prereg_sha256": "08e425f8827fae2065ea33b084528dd8d705a3bc55eb25f344ab68fb879976a3",
+ "swath_root": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/raw_lr_swath"
+}

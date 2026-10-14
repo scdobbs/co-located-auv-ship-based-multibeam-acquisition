@@ -1,0 +1,1158 @@
+{
+ "generated": "2026-10-14T14:21:18+00:00",
+ "run_record": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R12/rehearsal/step1_run_rehearsal_r12_reh.json",
+ "run_record_sha256": "019a94412a2ae692487caff5c5e68050b9f40e1dc7889c3bcf8059d6044200d1",
+ "tolerance_abs": 1e-06,
+ "tolerance_basis": "R10 accepted float tolerance: 1e-6 absolute (R10b ruling H3)",
+ "pairs": {
+  "FK151121__MGDS_22383": {
+   "pair_id": "FK151121__MGDS_22383",
+   "ship_grid": {
+    "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/raw_lr_gridded/FK151121__MGDS_22383/FK151121__union.grd",
+    "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/FK151121__union.grd",
+    "georef": {
+     "crs": true,
+     "transform": false,
+     "shape": false,
+     "nodata": true,
+     "dtype": true
+    },
+    "equal": false,
+    "within_tol": false,
+    "shape": [
+     [
+      114,
+      95
+     ],
+     [
+      6316,
+      1308
+     ]
+    ]
+   },
+   "region_equal_dev": false,
+   "region": {
+    "rehearsal": "144.68249286353088/144.74129171713352/18.163805303743132/18.231191731234127",
+    "dev": "144.07887819014192/144.8898446235211/14.472591741557833/18.231191731234127",
+    "rule": "grid_region",
+    "choice": "patch cluster: 3 of 70 parts within 5 km of the part with the largest LR-footprint intersection (bbox coverage 0.001)"
+   },
+   "cell_m": {
+    "rehearsal": 66.27,
+    "dev": 66.26,
+    "equal": false
+   },
+   "n_swath_files": {
+    "rehearsal": 274,
+    "dev": 274,
+    "equal": true
+   },
+   "rasters": {
+    "hr.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/FK151121__MGDS_22383/hr.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/hr.tif",
+     "georef": {
+      "crs": true,
+      "transform": false,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 12145472,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.058349609375,
+     "equal": false,
+     "within_tol": false,
+     "file_sha256_equal": false
+    },
+    "lr.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/FK151121__MGDS_22383/lr.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/lr.tif",
+     "georef": {
+      "crs": true,
+      "transform": false,
+      "shape": false,
+      "nodata": true,
+      "dtype": true
+     },
+     "equal": false,
+     "within_tol": false,
+     "shape": [
+      [
+       86,
+       68
+      ],
+      [
+       87,
+       67
+      ]
+     ]
+    },
+    "hr_valid.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/FK151121__MGDS_22383/hr_valid.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/hr_valid.tif",
+     "georef": {
+      "crs": true,
+      "transform": false,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 25501021,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": false,
+     "within_tol": false,
+     "file_sha256_equal": false
+    },
+    "lr_valid.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/FK151121__MGDS_22383/lr_valid.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/lr_valid.tif",
+     "georef": {
+      "crs": true,
+      "transform": false,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 25501021,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 1.0,
+     "equal": false,
+     "within_tol": false,
+     "file_sha256_equal": false
+    },
+    "joint_valid.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/FK151121__MGDS_22383/joint_valid.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/joint_valid.tif",
+     "georef": {
+      "crs": true,
+      "transform": false,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 25501021,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 1.0,
+     "equal": false,
+     "within_tol": false,
+     "file_sha256_equal": false
+    },
+    "ship_products_v2_1/ship_beam_angle.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/FK151121__MGDS_22383/ship_products_v2_1/ship_beam_angle.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/ship_products_v2_1/ship_beam_angle.tif",
+     "georef": {
+      "crs": true,
+      "transform": false,
+      "shape": false,
+      "nodata": true,
+      "dtype": true
+     },
+     "equal": false,
+     "within_tol": false,
+     "shape": [
+      [
+       86,
+       68
+      ],
+      [
+       87,
+       67
+      ]
+     ]
+    },
+    "ship_products_v2_1/ship_count.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/FK151121__MGDS_22383/ship_products_v2_1/ship_count.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/ship_products_v2_1/ship_count.tif",
+     "georef": {
+      "crs": true,
+      "transform": false,
+      "shape": false,
+      "nodata": true,
+      "dtype": true
+     },
+     "equal": false,
+     "within_tol": false,
+     "shape": [
+      [
+       86,
+       68
+      ],
+      [
+       87,
+       67
+      ]
+     ]
+    },
+    "ship_products_v2_1/ship_mean_regrid.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/FK151121__MGDS_22383/ship_products_v2_1/ship_mean_regrid.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/ship_products_v2_1/ship_mean_regrid.tif",
+     "georef": {
+      "crs": true,
+      "transform": false,
+      "shape": false,
+      "nodata": true,
+      "dtype": true
+     },
+     "equal": false,
+     "within_tol": false,
+     "shape": [
+      [
+       86,
+       68
+      ],
+      [
+       87,
+       67
+      ]
+     ]
+    },
+    "ship_products_v2_1/ship_median_regrid.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/FK151121__MGDS_22383/ship_products_v2_1/ship_median_regrid.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/ship_products_v2_1/ship_median_regrid.tif",
+     "georef": {
+      "crs": true,
+      "transform": false,
+      "shape": false,
+      "nodata": true,
+      "dtype": true
+     },
+     "equal": false,
+     "within_tol": false,
+     "shape": [
+      [
+       86,
+       68
+      ],
+      [
+       87,
+       67
+      ]
+     ]
+    },
+    "ship_products_v2_1/ship_rsd.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/FK151121__MGDS_22383/ship_products_v2_1/ship_rsd.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/ship_products_v2_1/ship_rsd.tif",
+     "georef": {
+      "crs": true,
+      "transform": false,
+      "shape": false,
+      "nodata": true,
+      "dtype": true
+     },
+     "equal": false,
+     "within_tol": false,
+     "shape": [
+      [
+       86,
+       68
+      ],
+      [
+       87,
+       67
+      ]
+     ]
+    },
+    "ship_products_v2_1/ship_sd.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/FK151121__MGDS_22383/ship_products_v2_1/ship_sd.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/ship_products_v2_1/ship_sd.tif",
+     "georef": {
+      "crs": true,
+      "transform": false,
+      "shape": false,
+      "nodata": true,
+      "dtype": true
+     },
+     "equal": false,
+     "within_tol": false,
+     "shape": [
+      [
+       86,
+       68
+      ],
+      [
+       87,
+       67
+      ]
+     ]
+    },
+    "ship_products_v2_1/ship_xtrack_frac.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/FK151121__MGDS_22383/ship_products_v2_1/ship_xtrack_frac.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/FK151121__MGDS_22383/ship_products_v2_1/ship_xtrack_frac.tif",
+     "georef": {
+      "crs": true,
+      "transform": false,
+      "shape": false,
+      "nodata": true,
+      "dtype": true
+     },
+     "equal": false,
+     "within_tol": false,
+     "shape": [
+      [
+       86,
+       68
+      ],
+      [
+       87,
+       67
+      ]
+     ]
+    }
+   },
+   "values": {
+    "hr_native_res_m": {
+     "rehearsal": 1.0,
+     "dev": 1.0,
+     "equal": true
+    },
+    "lr_native_res_m": {
+     "rehearsal": 66.09,
+     "dev": 65.99,
+     "equal": false
+    },
+    "res_ratio": {
+     "rehearsal": 66.09,
+     "dev": 65.99,
+     "equal": false
+    },
+    "max_recoverable_k": {
+     "rehearsal": 16,
+     "dev": 16,
+     "equal": true
+    },
+    "k_sweep_status": {
+     "rehearsal": "ok",
+     "dev": "ok",
+     "equal": true
+    },
+    "per_k": {
+     "rehearsal": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "recoverable_signal",
+      "16": "recoverable_signal",
+      "32": "no_spectrum"
+     },
+     "dev": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "recoverable_signal",
+      "16": "recoverable_signal",
+      "32": "no_spectrum"
+     },
+     "equal": true
+    },
+    "ship_products_usable": {
+     "rehearsal": true,
+     "dev": true,
+     "equal": true
+    },
+    "flags": {
+     "rehearsal": [],
+     "dev": [],
+     "equal": true
+    },
+    "coreg_dx_dy_dz": {
+     "rehearsal": [
+      -4.99,
+      -5.99,
+      -6.27
+     ],
+     "dev": [
+      -8.99,
+      -0.99,
+      -6.22
+     ],
+     "equal": false
+    },
+    "overlap_km2": {
+     "rehearsal": 25.515,
+     "dev": 25.515,
+     "equal": true
+    },
+    "n_valid_tiles_256": {
+     "rehearsal": 184,
+     "dev": 184,
+     "equal": true
+    },
+    "target_crs": {
+     "rehearsal": "EPSG:32655",
+     "dev": "EPSG:32655",
+     "equal": true
+    }
+   },
+   "all_rasters_equal": false,
+   "all_rasters_within_tol": false,
+   "all_values_equal": false,
+   "ship_grid_equal": false,
+   "eligibility": {
+    "coreg_pass": true,
+    "k_recoverable": true,
+    "cells_across": 3.874566,
+    "hr_res_in_range": true,
+    "eligible": false,
+    "eligibility_reason": "3.8746 ship cells across a 256-px window, outside 3.88-51.2"
+   }
+  },
+  "NA080__MGDS_31289": {
+   "pair_id": "NA080__MGDS_31289",
+   "ship_grid": {
+    "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/raw_lr_gridded/NA080__MGDS_31289/NA080__union.grd",
+    "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/NA080__union.grd",
+    "georef": {
+     "crs": true,
+     "transform": true,
+     "shape": true,
+     "nodata": true,
+     "dtype": true
+    },
+    "nan_pattern_equal": true,
+    "n_valid": 77380,
+    "n_nan_mismatch": 0,
+    "max_abs_diff": 0.0,
+    "equal": true,
+    "within_tol": true,
+    "file_sha256_equal": false
+   },
+   "region_equal_dev": true,
+   "region": {
+    "rehearsal": "-122.72133967410471/-122.57240639051618/35.470925881086174/35.63935189732911",
+    "dev": "-122.72133967410471/-122.57240639051618/35.470925881086174/35.63935189732911",
+    "rule": "grid_region",
+    "choice": "whole footprint (1 parts)"
+   },
+   "cell_m": {
+    "rehearsal": 57.33,
+    "dev": 57.33,
+    "equal": true
+   },
+   "n_swath_files": {
+    "rehearsal": 51,
+    "dev": 51,
+    "equal": true
+   },
+   "rasters": {
+    "hr.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/NA080__MGDS_31289/hr.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/hr.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 53570912,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "lr.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/NA080__MGDS_31289/lr.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/lr.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 16348,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "hr_valid.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/NA080__MGDS_31289/hr_valid.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/hr_valid.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 191669880,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "lr_valid.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/NA080__MGDS_31289/lr_valid.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/lr_valid.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 191669880,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "joint_valid.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/NA080__MGDS_31289/joint_valid.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/joint_valid.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 191669880,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "ship_products_v2_1/ship_beam_angle.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/NA080__MGDS_31289/ship_products_v2_1/ship_beam_angle.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/ship_products_v2_1/ship_beam_angle.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 58491,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "ship_products_v2_1/ship_count.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/NA080__MGDS_31289/ship_products_v2_1/ship_count.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/ship_products_v2_1/ship_count.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 58491,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "ship_products_v2_1/ship_mean_regrid.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/NA080__MGDS_31289/ship_products_v2_1/ship_mean_regrid.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/ship_products_v2_1/ship_mean_regrid.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 58491,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "ship_products_v2_1/ship_median_regrid.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/NA080__MGDS_31289/ship_products_v2_1/ship_median_regrid.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/ship_products_v2_1/ship_median_regrid.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 58491,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "ship_products_v2_1/ship_rsd.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/NA080__MGDS_31289/ship_products_v2_1/ship_rsd.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/ship_products_v2_1/ship_rsd.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 58491,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "ship_products_v2_1/ship_sd.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/NA080__MGDS_31289/ship_products_v2_1/ship_sd.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/ship_products_v2_1/ship_sd.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 58491,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "ship_products_v2_1/ship_xtrack_frac.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/NA080__MGDS_31289/ship_products_v2_1/ship_xtrack_frac.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/NA080__MGDS_31289/ship_products_v2_1/ship_xtrack_frac.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 58491,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    }
+   },
+   "values": {
+    "hr_native_res_m": {
+     "rehearsal": 1.0,
+     "dev": 1.0,
+     "equal": true
+    },
+    "lr_native_res_m": {
+     "rehearsal": 57.87,
+     "dev": 57.87,
+     "equal": true
+    },
+    "res_ratio": {
+     "rehearsal": 57.87,
+     "dev": 57.87,
+     "equal": true
+    },
+    "max_recoverable_k": {
+     "rehearsal": 16,
+     "dev": 16,
+     "equal": true
+    },
+    "k_sweep_status": {
+     "rehearsal": "ok",
+     "dev": "ok",
+     "equal": true
+    },
+    "per_k": {
+     "rehearsal": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "recoverable_signal",
+      "16": "recoverable_signal",
+      "32": "no_spectrum"
+     },
+     "dev": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "recoverable_signal",
+      "16": "recoverable_signal",
+      "32": "no_spectrum"
+     },
+     "equal": true
+    },
+    "ship_products_usable": {
+     "rehearsal": true,
+     "dev": true,
+     "equal": true
+    },
+    "flags": {
+     "rehearsal": [],
+     "dev": [],
+     "equal": true
+    },
+    "coreg_dx_dy_dz": {
+     "rehearsal": [
+      14.0,
+      -8.0,
+      -8.81
+     ],
+     "dev": [
+      14.0,
+      -8.0,
+      -8.81
+     ],
+     "equal": true
+    },
+    "overlap_km2": {
+     "rehearsal": 53.571,
+     "dev": 53.571,
+     "equal": true
+    },
+    "n_valid_tiles_256": {
+     "rehearsal": 807,
+     "dev": 807,
+     "equal": true
+    },
+    "target_crs": {
+     "rehearsal": "EPSG:32610",
+     "dev": "EPSG:32610",
+     "equal": true
+    }
+   },
+   "all_rasters_equal": true,
+   "all_rasters_within_tol": true,
+   "all_values_equal": true,
+   "ship_grid_equal": true,
+   "eligibility": {
+    "coreg_pass": true,
+    "k_recoverable": true,
+    "cells_across": 4.423708,
+    "hr_res_in_range": true,
+    "eligible": true,
+    "eligibility_reason": ""
+   }
+  },
+  "KM0923__MGDS_31429": {
+   "pair_id": "KM0923__MGDS_31429",
+   "ship_grid": {
+    "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/raw_lr_gridded/KM0923__MGDS_31429/KM0923__union.grd",
+    "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_gridded/KM0923__union.grd",
+    "georef": {
+     "crs": true,
+     "transform": true,
+     "shape": true,
+     "nodata": true,
+     "dtype": true
+    },
+    "nan_pattern_equal": true,
+    "n_valid": 13488,
+    "n_nan_mismatch": 0,
+    "max_abs_diff": 0.0,
+    "equal": true,
+    "within_tol": true,
+    "file_sha256_equal": false
+   },
+   "region_equal_dev": true,
+   "region": {
+    "rehearsal": "-155.2004840752964/-155.0956663921059/18.692255050725784/18.80286522389683",
+    "dev": "-155.2004840752964/-155.0956663921059/18.692255050725784/18.80286522389683",
+    "rule": "grid_region",
+    "choice": "patch cluster: 802 of 802 parts within 5 km of the part with the largest LR-footprint intersection (bbox coverage 0.190)"
+   },
+   "cell_m": {
+    "rehearsal": 87.25,
+    "dev": 87.25,
+    "equal": true
+   },
+   "n_swath_files": {
+    "rehearsal": 229,
+    "dev": 229,
+    "equal": true
+   },
+   "rasters": {
+    "hr.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/KM0923__MGDS_31429/hr.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/KM0923__MGDS_31429/hr.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 4182354,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "lr.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/KM0923__MGDS_31429/lr.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/KM0923__MGDS_31429/lr.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 10007,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "hr_valid.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/KM0923__MGDS_31429/hr_valid.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/KM0923__MGDS_31429/hr_valid.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 22732296,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "lr_valid.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/KM0923__MGDS_31429/lr_valid.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/KM0923__MGDS_31429/lr_valid.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 22732296,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "joint_valid.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/KM0923__MGDS_31429/joint_valid.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/KM0923__MGDS_31429/joint_valid.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 22732296,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "ship_products_v2_1/ship_beam_angle.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/KM0923__MGDS_31429/ship_products_v2_1/ship_beam_angle.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/KM0923__MGDS_31429/ship_products_v2_1/ship_beam_angle.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 10353,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "ship_products_v2_1/ship_count.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/KM0923__MGDS_31429/ship_products_v2_1/ship_count.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/KM0923__MGDS_31429/ship_products_v2_1/ship_count.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 10353,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "ship_products_v2_1/ship_mean_regrid.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/KM0923__MGDS_31429/ship_products_v2_1/ship_mean_regrid.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/KM0923__MGDS_31429/ship_products_v2_1/ship_mean_regrid.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 10353,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "ship_products_v2_1/ship_median_regrid.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/KM0923__MGDS_31429/ship_products_v2_1/ship_median_regrid.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/KM0923__MGDS_31429/ship_products_v2_1/ship_median_regrid.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 10353,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "ship_products_v2_1/ship_rsd.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/KM0923__MGDS_31429/ship_products_v2_1/ship_rsd.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/KM0923__MGDS_31429/ship_products_v2_1/ship_rsd.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 4433,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "ship_products_v2_1/ship_sd.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/KM0923__MGDS_31429/ship_products_v2_1/ship_sd.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/KM0923__MGDS_31429/ship_products_v2_1/ship_sd.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 6877,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    },
+    "ship_products_v2_1/ship_xtrack_frac.tif": {
+     "a": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/rehearsal/r12_reh/harmonized/KM0923__MGDS_31429/ship_products_v2_1/ship_xtrack_frac.tif",
+     "b": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/harmonized/KM0923__MGDS_31429/ship_products_v2_1/ship_xtrack_frac.tif",
+     "georef": {
+      "crs": true,
+      "transform": true,
+      "shape": true,
+      "nodata": true,
+      "dtype": true
+     },
+     "nan_pattern_equal": true,
+     "n_valid": 10353,
+     "n_nan_mismatch": 0,
+     "max_abs_diff": 0.0,
+     "equal": true,
+     "within_tol": true,
+     "file_sha256_equal": true
+    }
+   },
+   "values": {
+    "hr_native_res_m": {
+     "rehearsal": 2.054,
+     "dev": 2.054,
+     "equal": true
+    },
+    "lr_native_res_m": {
+     "rehearsal": 86.94,
+     "dev": 86.94,
+     "equal": true
+    },
+    "res_ratio": {
+     "rehearsal": 42.33,
+     "dev": 42.33,
+     "equal": true
+    },
+    "max_recoverable_k": {
+     "rehearsal": 16,
+     "dev": 16,
+     "equal": true
+    },
+    "k_sweep_status": {
+     "rehearsal": "ok",
+     "dev": "ok",
+     "equal": true
+    },
+    "per_k": {
+     "rehearsal": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "recoverable_signal",
+      "16": "recoverable_signal",
+      "32": "no_spectrum"
+     },
+     "dev": {
+      "2": "recoverable_signal",
+      "4": "recoverable_signal",
+      "8": "recoverable_signal",
+      "16": "recoverable_signal",
+      "32": "no_spectrum"
+     },
+     "equal": true
+    },
+    "ship_products_usable": {
+     "rehearsal": true,
+     "dev": true,
+     "equal": true
+    },
+    "flags": {
+     "rehearsal": [],
+     "dev": [],
+     "equal": true
+    },
+    "coreg_dx_dy_dz": {
+     "rehearsal": [
+      -13.57,
+      -3.3,
+      -15.72
+     ],
+     "dev": [
+      -13.57,
+      -3.3,
+      -15.72
+     ],
+     "equal": true
+    },
+    "overlap_km2": {
+     "rehearsal": 95.912,
+     "dev": 95.912,
+     "equal": true
+    },
+    "n_valid_tiles_256": {
+     "rehearsal": 57,
+     "dev": 57,
+     "equal": true
+    },
+    "target_crs": {
+     "rehearsal": "EPSG:32605",
+     "dev": "EPSG:32605",
+     "equal": true
+    }
+   },
+   "all_rasters_equal": true,
+   "all_rasters_within_tol": true,
+   "all_values_equal": true,
+   "ship_grid_equal": true,
+   "eligibility": {
+    "coreg_pass": true,
+    "k_recoverable": true,
+    "cells_across": 6.048337,
+    "hr_res_in_range": true,
+    "eligible": true,
+    "eligibility_reason": ""
+   }
+  }
+ },
+ "repeat_rule": {
+  "pair_id": "KM0923__MOCK_R09repeat",
+  "expected": {
+   "kept": [
+    "mockrepeat_shdeep_20090615_2m_sub.asc"
+   ],
+   "dropped": [
+    "mockrepeat_shdeep_20060615_2m.asc"
+   ]
+  },
+  "kept": [
+   "mockrepeat_shdeep_20090615_2m_sub.asc"
+  ],
+  "dropped": [
+   "mockrepeat_shdeep_20060615_2m.asc"
+  ],
+  "decisions": {
+   "mockrepeat_shdeep_20060615_2m.asc": "repeat survey: overlaps kept mockrepeat_shdeep_20090615_2m_sub.asc by 100% of the smaller grid; acquisition year 2006 farther from the ship year 2009 than mockrepeat_shdeep_20090615_2m_sub.asc (2009)",
+   "mockrepeat_shdeep_20090615_2m_sub.asc": "no overlap >= 50 % with a grid ranked before it"
+  },
+  "passed": true
+ },
+ "supplement_schema": {
+  "phase4_n": 64,
+  "phase5_n": 70,
+  "first_64_equal": true,
+  "extra": [
+   [
+    "coreg_pass",
+    "bool"
+   ],
+   [
+    "k_recoverable",
+    "bool"
+   ],
+   [
+    "cells_across",
+    "double"
+   ],
+   [
+    "hr_res_in_range",
+    "bool"
+   ],
+   [
+    "eligible",
+    "bool"
+   ],
+   [
+    "eligibility_reason",
+    "string"
+   ]
+  ],
+  "passed": true
+ }
+}

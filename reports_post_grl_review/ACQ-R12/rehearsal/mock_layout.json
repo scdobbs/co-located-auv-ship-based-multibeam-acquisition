@@ -1,0 +1,358 @@
+{
+ "generated": "2026-10-14T13:56:29+00:00",
+ "mock_root": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3",
+ "site_list": "/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R12/rehearsal/mock_sites.csv",
+ "site_list_sha256": "948cd6b754dcd99db67f38fe3d2178cdb48388c84d9a2ed2e46ef4ab207d35f9",
+ "copies": [
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_22383/sentry366_20151201_0622_rnv_tide_1.00x1.00_BV01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_22383/sentry366_20151201_0622_rnv_tide_1.00x1.00_BV01.grd.gz",
+   "sha256": "626cb040d67f13a987a7400f469697fb4f6db86c5a3e3385fe16ba3868b4514a",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_22383/sentry367_20151203_1507_rnv_tide_1.00x1.00_BV01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_22383/sentry367_20151203_1507_rnv_tide_1.00x1.00_BV01.grd.gz",
+   "sha256": "b581cf4f98ea60f2e40da1acb4e3011bfd08b5ff363503627101b5a3ec1e8cdc",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_22383/sentry368_20151208_1933_tide_1.00x1.00_BV01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_22383/sentry368_20151208_1933_tide_1.00x1.00_BV01.grd.gz",
+   "sha256": "25d68ba33d244884aab827feba2edece2ed650df116b07b0d93790063c9d3ce3",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_22383/sentry369_20151212_1741_rnv_tide_1.00x1.00_BV01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_22383/sentry369_20151212_1741_rnv_tide_1.00x1.00_BV01.grd.gz",
+   "sha256": "52e53d2c8fd71986db15761df6e62ee83a24ab0a9c188399e67b04ae9343a74b",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_22383/sentry370_20151215_2347_tide_1.00x1.00_BV01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_22383/sentry370_20151215_2347_tide_1.00x1.00_BV01.grd.gz",
+   "sha256": "3390ed77d0ea669056589599942f99ea270f2c1041070213a52ae2da3d59d2c9",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31289/OctopusGarden_MAUV2022_Topo1m_utm.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31289/OctopusGarden_MAUV2022_Topo1m_utm.grd.gz",
+   "sha256": "5fcb51ad94e3299162ebec11dc5f0ea0cff3a8a2bbe52b9e65e6c6aa80536114",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31429/sentry_femo2m.asc.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31429/sentry_femo2m.asc.gz",
+   "sha256": "d56916bf5cfa918868014e34011df08e3f64df9aa4c77e59b321483c05b33652",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31429/sent_shdeep2m.asc.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31429/sent_shdeep2m.asc.gz",
+   "sha256": "ef3127b55ce177b9f32c6501dc5fb881a5077b1fec3d5f5826adb1ff107c9d1c",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry246_20140524_1215_tide_1x1.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry246_20140524_1215_tide_1x1.grd.gz",
+   "sha256": "8d41ac3749126cbc502ea40f6b18444231680da05b75a251549bf6ec6d274530",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry246_20140524_1215_tide_equal_1x1.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry246_20140524_1215_tide_equal_1x1.grd.gz",
+   "sha256": "b66618f88b31522487e1a067afb65a47e2ad7719141f95789af4b3275b449e91",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry247_20140526_1527_tide_5.000000e-01x5.000000e-01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry247_20140526_1527_tide_5.000000e-01x5.000000e-01.grd.gz",
+   "sha256": "190171a4934902cee75dc551c79ca787929e4b13c907c20bb77e15835763aa08",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry247_20140526_1527_tide_equal_5.000000e-01x5.000000e-01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry247_20140526_1527_tide_equal_5.000000e-01x5.000000e-01.grd.gz",
+   "sha256": "b7f8bfe7a60b0eb442e1c7f8ab776120187479b54a39f75e69f8fbd41cfdb0af",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry249_20140528_1701_tide_5.000000e-01x5.000000e-01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry249_20140528_1701_tide_5.000000e-01x5.000000e-01.grd.gz",
+   "sha256": "78952916c0114c6f5e941d8d48b1e698c8e20cacbe61cd68a1c451a1d700f82f",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry249_20140528_1701_tide_equal_5.000000e-01x5.000000e-01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry249_20140528_1701_tide_equal_5.000000e-01x5.000000e-01.grd.gz",
+   "sha256": "d4cfad550374b5e67eb30888f7448e54401e3cc345ef9728481ce00328f27fcd",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry250_20140529_1505_tide_5.000000e-01x5.000000e-01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry250_20140529_1505_tide_5.000000e-01x5.000000e-01.grd.gz",
+   "sha256": "d0dc4cc256b1ce5ca4625d9ec7977849118ae28b4b89b3ec63d246f69fa3415d",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry250_20140529_1505_tide_5.000000e-01x5.000000e-01_autopilot.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry250_20140529_1505_tide_5.000000e-01x5.000000e-01_autopilot.grd.gz",
+   "sha256": "ceb94bff36f26337db09dbd612a3434028f6867703ea33a54c898caf8f63666e",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry250_20140529_1505_tide_5.000000e-01x5.000000e-01_gain40.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry250_20140529_1505_tide_5.000000e-01x5.000000e-01_gain40.grd.gz",
+   "sha256": "6a3b003d28ad7960b50c58f88338eb37306b750c4fd52c3267791445b385e99c",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry250_20140529_1505_tide_5.000000e-01x5.000000e-01_gain50.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry250_20140529_1505_tide_5.000000e-01x5.000000e-01_gain50.grd.gz",
+   "sha256": "acd465c274f0d1527ad361ff5814e1697171e59f92cec5f5cc3c5f5dc25e7f33",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry250_20140529_1505_tide_5.000000e-01x5.000000e-01_gain50_navadjust.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry250_20140529_1505_tide_5.000000e-01x5.000000e-01_gain50_navadjust.grd.gz",
+   "sha256": "4691d7aa12b1ba11c6e136b8480574bea34c546b0204da8f3d5581eb4cff37d0",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry250_20140529_1505_tide_equal_5.000000e-01x5.000000e-01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry250_20140529_1505_tide_equal_5.000000e-01x5.000000e-01.grd.gz",
+   "sha256": "39f060d2c89a55e6800cf8a2f468818e2f477dc2ca2f9b045b670783702a50cc",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry250_20140529_1505_tide_equal_5.000000e-01x5.000000e-01_autopilot.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry250_20140529_1505_tide_equal_5.000000e-01x5.000000e-01_autopilot.grd.gz",
+   "sha256": "9fe003febafb4f1a79a4f565e10e8adfab9b2eb6d5581335744d4e0db64f2bca",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry250_20140529_1505_tide_equal_5.000000e-01x5.000000e-01_gain40.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry250_20140529_1505_tide_equal_5.000000e-01x5.000000e-01_gain40.grd.gz",
+   "sha256": "42f876439b41ff8577bb52c09b0fbf2e442b49cec03097992e6894b18c6bb379",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry250_20140529_1505_tide_equal_5.000000e-01x5.000000e-01_gain50.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry250_20140529_1505_tide_equal_5.000000e-01x5.000000e-01_gain50.grd.gz",
+   "sha256": "73f984fe7d583b23c592400665f22118b43ef35099a583396ecb9c93cf6bd22f",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry250_20140529_1505_tide_equal_5.000000e-01x5.000000e-01_gain50_navadjust.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry250_20140529_1505_tide_equal_5.000000e-01x5.000000e-01_gain50_navadjust.grd.gz",
+   "sha256": "798e71d9b2a8c433f2ad1392ffe82984a58b84cce8246777b4eb862c4e7262dc",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry252_20140531_1142_tide_5.000000e-01x5.000000e-01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry252_20140531_1142_tide_5.000000e-01x5.000000e-01.grd.gz",
+   "sha256": "6dba3e5335161ee5cf2bf38294be4485f570619fca6bc56233b69dd9e3006676",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry252_20140531_1142_tide_5.000000e-01x5.000000e-01_navadjust.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry252_20140531_1142_tide_5.000000e-01x5.000000e-01_navadjust.grd.gz",
+   "sha256": "e68c82a44e38b6d545f128f7f6e99fd74b5edd0eb74c6fa6e91faeec63666659",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry252_20140531_1142_tide_equal_5.000000e-01x5.000000e-01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry252_20140531_1142_tide_equal_5.000000e-01x5.000000e-01.grd.gz",
+   "sha256": "325782b6e3595e0d5776329bd727ace0ec6588e7e4e86c6aab03520e57e45d86",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry252_20140531_1142_tide_equal_5.000000e-01x5.000000e-01_navadjust.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry252_20140531_1142_tide_equal_5.000000e-01x5.000000e-01_navadjust.grd.gz",
+   "sha256": "6c69f1f8daec9d60abc11c2e9c842dcedcaa046f66e656835cfd5c153fab12c3",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry254_20140602_1348_tide_5.000000e-01x5.000000e-01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry254_20140602_1348_tide_5.000000e-01x5.000000e-01.grd.gz",
+   "sha256": "1c66ce1b715d1e1b47b2b5fcfd7e71b975e587f5ccb7cea0f62bd3e8d2eb4dc3",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry254_20140602_1348_tide_5.000000e-01x5.000000e-01_navadjust.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry254_20140602_1348_tide_5.000000e-01x5.000000e-01_navadjust.grd.gz",
+   "sha256": "19dec0f1241f87d46d8daac6c64b701f63942543f04d1ca65f1fe382b222f883",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry254_20140602_1348_tide_equal_5.000000e-01x5.000000e-01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry254_20140602_1348_tide_equal_5.000000e-01x5.000000e-01.grd.gz",
+   "sha256": "f7d0519019ab011c69c9cc595f1e2dd9fe81b273c4a34c390e93572a7c7e2fdd",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry254_20140602_1348_tide_equal_5.000000e-01x5.000000e-01_navadjust.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry254_20140602_1348_tide_equal_5.000000e-01x5.000000e-01_navadjust.grd.gz",
+   "sha256": "c677b36f0c2ccb9a1aaa1507bb44ad4f511f5551774c436a0ebd89e8ac1c9748",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry256_20140604_1438_tide_5.000000e-01x5.000000e-01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry256_20140604_1438_tide_5.000000e-01x5.000000e-01.grd.gz",
+   "sha256": "ffc854dd2281d7a57b884b72fa5c64b924e69f67c5b313e6e02ded69abef41cb",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry256_20140604_1438_tide_5.000000e-01x5.000000e-01_navadjust.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry256_20140604_1438_tide_5.000000e-01x5.000000e-01_navadjust.grd.gz",
+   "sha256": "c4f12bf6c8f69b0fc693282d88c013563c5296cb7eb7e24b7a6a05fc72ced650",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry256_20140604_1438_tide_equal_5.000000e-01x5.000000e-01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry256_20140604_1438_tide_equal_5.000000e-01x5.000000e-01.grd.gz",
+   "sha256": "09cb7f3d1dd123ea73f6589119dffae94d0a700a9620b4faaf6c67f805580e20",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry256_20140604_1438_tide_equal_5.000000e-01x5.000000e-01_navadjust.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry256_20140604_1438_tide_equal_5.000000e-01x5.000000e-01_navadjust.grd.gz",
+   "sha256": "257254c54aaf06c35c37d1ef67bc6c3ce49ffa10df1fe9cf1284a8e4b5c0afe2",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry257_20140607_1229_tide_1.500000e+00x1.500000e+00.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry257_20140607_1229_tide_1.500000e+00x1.500000e+00.grd.gz",
+   "sha256": "405bc2840e8a3b3ee57b65ce4a4c146447011e7da9ca7b130e0d8a54816ef85f",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry257_20140607_1229_tide_5.000000e-01x5.000000e-01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry257_20140607_1229_tide_5.000000e-01x5.000000e-01.grd.gz",
+   "sha256": "b2e4a9d4fd92b4e13d7c4b2b0b70a62316b6bccc45334e7e8f05fefab9875f80",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry257_20140607_1229_tide_equal_1.500000e+00x1.500000e+00.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry257_20140607_1229_tide_equal_1.500000e+00x1.500000e+00.grd.gz",
+   "sha256": "a4d0843ce275c82aa1ad276ac261e15f7f65efab24ec896565b385429e3f6797",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry257_20140607_1229_tide_equal_5.000000e-01x5.000000e-01.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry257_20140607_1229_tide_equal_5.000000e-01x5.000000e-01.grd.gz",
+   "sha256": "3b02ccef9f78dfb9d44eeefe5fe9d452da9c3c6e5aff52c5de0b951f347c7e2d",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry257-258_20140608_1403_tide_1.500000e+00x1.500000e+00.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry257-258_20140608_1403_tide_1.500000e+00x1.500000e+00.grd.gz",
+   "sha256": "c41fc0ba6acfb252d598f8f5f7e9db85ef498e79618c0f39df8c4da4e7b241e3",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry257-258_20140608_1403_tide_equal_1.500000e+00x1.500000e+00.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry257-258_20140608_1403_tide_equal_1.500000e+00x1.500000e+00.grd.gz",
+   "sha256": "2791fbca7c90943996c31adc5e1670a55eec888cd854f18e2a9628f1a6db6ce5",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry258_20140608_1403_tide_1.500000e+00x1.500000e+00.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry258_20140608_1403_tide_1.500000e+00x1.500000e+00.grd.gz",
+   "sha256": "14d208a7e18e1062bbca7e3bb95aa3e9bdb3bf37b1840e4a4993877f6e9b28b6",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry258_20140608_1403_tide_equal_1.500000e+00x1.500000e+00.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry258_20140608_1403_tide_equal_1.500000e+00x1.500000e+00.grd.gz",
+   "sha256": "63f5b1de61005ddc378acc6314950a78877eef1739528acfa483e84246fba544",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry261_20140611_1729_tide_1.500000e+00x1.500000e+00.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry261_20140611_1729_tide_1.500000e+00x1.500000e+00.grd.gz",
+   "sha256": "2fb903597998f9227a685e7cf9890d4c88a3bd3523e918446deae0fa19456dd6",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry261_20140611_1729_tide_equal_1.500000e+00x1.500000e+00.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry261_20140611_1729_tide_equal_1.500000e+00x1.500000e+00.grd.gz",
+   "sha256": "009de0620984db313610d5106a651cf5fb683a4ac805aac7df1f9e404dbb922d",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry262_20140612_1852_tide_1.500000e+00x1.500000e+00.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry262_20140612_1852_tide_1.500000e+00x1.500000e+00.grd.gz",
+   "sha256": "67cc7913cb98ce53493baf29d924e8b88a375aa9e82b77810db26f53a2cde0eb",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry262_20140612_1852_tide_equal_1.500000e+00x1.500000e+00.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry262_20140612_1852_tide_equal_1.500000e+00x1.500000e+00.grd.gz",
+   "sha256": "30ab48f00e8a0c08b1d01dbadbb04453bc338af7402efd3e051fc9ae7f5ff34f",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry-261-262-263_20140613_2005_tide_1.500000e+00x1.500000e+00.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry-261-262-263_20140613_2005_tide_1.500000e+00x1.500000e+00.grd.gz",
+   "sha256": "0082e8880aa85bd69ec602c5a256f72255f065a0bf9b903008026c5d92301190",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry-261-262-263_20140613_2005_tide_equal_1.500000e+00x1.500000e+00.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry-261-262-263_20140613_2005_tide_equal_1.500000e+00x1.500000e+00.grd.gz",
+   "sha256": "1459b88c685bc8519e3c716707c2ce036b0cec15b3ee6d84cde2ec0a0c479ffe",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry263_20140613_1419_tide_1.500000e+00x1.500000e+00.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry263_20140613_1419_tide_1.500000e+00x1.500000e+00.grd.gz",
+   "sha256": "53c4b39f16ede5452eef3c8f1e1d8803eef0e6adb984cf681f3d83c370b36a38",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry263_20140613_1419_tide_equal_1.500000e+00x1.500000e+00.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry263_20140613_1419_tide_equal_1.500000e+00x1.500000e+00.grd.gz",
+   "sha256": "d29de18ab56099f830180da710448c5dbcf084e496800706d2758ceb7b1d3d70",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry263_20140613_2005_tide_1.500000e+00x1.500000e+00.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry263_20140613_2005_tide_1.500000e+00x1.500000e+00.grd.gz",
+   "sha256": "fef740fb92cc66a6f993393eb477711944f564acd8bf6f333b65a0f78530fdc7",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31813/sentry263_20140613_2005_tide_equal_1.500000e+00x1.500000e+00.grd.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_31813/sentry263_20140613_2005_tide_equal_1.500000e+00x1.500000e+00.grd.gz",
+   "sha256": "0b13ef7cb2020d054b55c2e6869b29c8555395562df7199448e203207245bc34",
+   "link": false
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31429/sent_shdeep2m.asc.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MOCK_R09repeat/mockrepeat_shdeep_20060615_2m.asc.gz",
+   "sha256": "ef3127b55ce177b9f32c6501dc5fb881a5077b1fec3d5f5826adb1ff107c9d1c",
+   "link": false,
+   "note": "whole grid, date 2006-06-15 in the name"
+  },
+  {
+   "src": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_hr/MGDS_31429/sent_shdeep2m.asc.gz",
+   "dst": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MOCK_R09repeat/mockrepeat_shdeep_20090615_2m_sub.asc.gz",
+   "sha256": "ee5bb7c1a0714be34948d954614b9ef0298bfa86c68e8cafb46d34800a2d95e8",
+   "link": false,
+   "note": "rows/cols 15-85 % crop, date 2009-06-15 in the name"
+  }
+ ],
+ "n_copies": 56,
+ "any_link": false,
+ "expected_repeat_rule": {
+  "kept": [
+   "mockrepeat_shdeep_20090615_2m_sub.asc"
+  ],
+  "dropped": [
+   "mockrepeat_shdeep_20060615_2m.asc"
+  ]
+ },
+ "decoy": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/mock/sealed_candidates_v3/MGDS_99999",
+ "swath": "development store OAK raw_lr_swath/<cruise>/ (read only; no network)"
+}

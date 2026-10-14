@@ -1,0 +1,12 @@
+{
+ "fetched_dir": "/scratch/groups/hilley/auv_ship_colocated_bathy/ACQ-R12/raw_lr_swath/NA080",
+ "development_dir": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/raw_lr_swath/NA080",
+ "n_fetched": 41,
+ "n_development": 51,
+ "same_names": false,
+ "n_sha_equal": 41,
+ "bytes_ok": 470887101,
+ "n_files_ok": 41,
+ "n_failed": 0,
+ "identical": false
+}
