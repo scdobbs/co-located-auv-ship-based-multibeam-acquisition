@@ -17,7 +17,7 @@ CNN=/home/users/scdobbs/GAN_Bathymetry_Project
 R16=grl_reviews-and-prompt-reports/directives_and_reports/R16c
 SIGNOFF=$CNN/$R16/SIGNOFF_phase5_prereg_v3_1.md
 PREREG=75b72eb6fae3804c7dea61aa4171744a2fcd4fbdb7c3916f3fb98f2c06f2c7b6
-FREEZE_SHA=__V42__
+FREEZE_SHA=168df0c68cf0e4493b62c78be6da2755020ce3bd53c9bd1f2ed02ad9270eadc3
 PY=/home/users/scdobbs/bathy_diffusion_env/bin/python
 cd $ACQ
 echo "host=$(hostname) job=$SLURM_JOB_ID commit=$(git rev-parse HEAD) freeze_tag=$(git rev-parse phase5-acq-freeze-v4.2^{commit}) start=$(date -u +%FT%TZ)"
