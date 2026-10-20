@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-20T18:51:55+00:00",
+ "generated": "2026-10-20T21:36:49+00:00",
  "dest": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/acq_archive/ACQ-R14/package",
- "n_copied": 85,
- "bytes_copied": 1712995218,
+ "n_copied": 62,
+ "bytes_copied": 1700164496,
  "n_in_sha256sums": 84,
  "bad": [],
  "verified": true

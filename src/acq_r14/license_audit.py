@@ -19,6 +19,7 @@ import requests
 from . import common as C
 
 CACHE = C.RPT / "license_cache"
+RECORD_LICENSE = "CC BY-NC-SA 4.0"      # Steve's ruling 2026-10-20 (ACQ-R14 H-1 option b): the whole record
 NCEI_ISO = "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/{cruise}_Multibeam.xml"
 MGDS_PREFIXES = ("10.60521/3{uid}", "10.26022/IEDA/3{uid}", "10.1594/IEDA/3{uid}")
 NS = {"gmd": "http://www.isotc211.org/2005/gmd", "gco": "http://www.isotc211.org/2005/gco"}
@@ -92,6 +93,25 @@ def usgs_fgdc(doi: str) -> dict | None:
         m_use = re.search(r"<useconst>(.*?)</useconst>", r.text, re.S)
         m_acc = re.search(r"<accconst>(.*?)</accconst>", r.text, re.S)
         out.update(found=True, useconst=(m_use.group(1).strip() if m_use else None), accconst=(m_acc.group(1).strip() if m_acc else None))
+    C.jdump(out, key)
+    return out
+
+
+def mgds_landing(uid: str) -> dict:
+    """MGDS data set page (https://www.marine-geo.org/tools/files/<uid>): the embedded schema.org JSON-LD carries `license`."""
+    key = CACHE / f"mgds_{uid}_landing.json"
+    if key.exists():
+        return C.jload(key)
+    url = f"https://www.marine-geo.org/tools/files/{uid}"
+    r = _get(url)
+    out = {"uid": uid, "source": url, "retrieved": C.utcnow(), "license": None, "title": None}
+    if r is not None and r.status_code == 200:
+        (CACHE / f"mgds_{uid}_landing.html").write_bytes(r.content)
+        m = re.search(r'"license"\s*:\s*"([^"]+)"', r.text)
+        t = re.search(r'"name"\s*:\s*"([^"]+)"', r.text)
+        out.update(license=m.group(1) if m else None, title=t.group(1) if t else None, status=200)
+    else:
+        out["status"] = r.status_code if r is not None else None
     C.jdump(out, key)
     return out
 
@@ -197,6 +217,12 @@ def main():
                         rec.update(license="U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
                                    redistribution="yes", evidence=fg["source"], rights=[{"rights": fg["useconst"][:300]}])
                         C.fix("license_audit", r["pair_id"], f"{doi}: DataCite record has no rightsList; license read from the FGDC metadata linked on the CMGDS landing page")
+            elif r["provider"] == "MGDS" and mgds_landing(r["mgds_uid"]).get("license"):
+                lp = mgds_landing(r["mgds_uid"])
+                lic, red = classify([{"rights": lp["license"]}])
+                rec.update(found=True, title=lp.get("title") or rec.get("title"), evidence=lp["source"], rights=[{"rights": lp["license"], "source": "schema.org JSON-LD on the MGDS data set page"}],
+                           license=f"{lp['license']} (stated on the MGDS data set page; no DOI record)", redistribution=red, landing=lp["source"])
+                C.fix("license_audit", r["pair_id"], f"MGDS:{r['mgds_uid']} has no DOI record; license '{lp['license']}' read from the data set page's schema.org metadata (ruling 2026-10-20)")
             else:
                 rec.update(found=False, evidence=rec.get("landing"), rights=[],
                            license="no DOI record found; MGDS default terms (CC BY-NC-SA, per MGDS data policy; ACQ-R08 H-3)" if r["provider"] == "MGDS" else "no DOI record found",
@@ -211,15 +237,19 @@ def main():
         ids = [r["id"] for r in rows if r["pair_id"] == e["pair_id"]]
         reds = [audited[i]["redistribution"] for i in ids]
         lics = [audited[i]["license"] for i in ids]
+        # Ruling 2026-10-20 (H-1 option b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0.
+        # `status` keeps the source audit result; `sources_cc_by_or_public_domain_only` tells users which pairs come only from
+        # CC BY / public-domain sources (and could be reused under those terms directly from the sources).
         if "no" in reds:
-            eff, status = "EXCLUDE (a source forbids redistribution)", "no"
+            status = "no"
         elif "yes_conditional" in reds:
-            eff, status = "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)", "yes_conditional"
+            status = "yes_conditional"
         elif "confirm" in reds:
-            eff, status = "CC BY 4.0 proposed; one source license not stated in a DOI record (confirm)", "confirm"
+            status = "confirm"
         else:
-            eff, status = "CC BY 4.0", "yes"
-        per_pair[e["pair_id"]] = {"sources": ids, "source_licenses": lics, "pair_license": eff, "status": status}
+            status = "yes"
+        per_pair[e["pair_id"]] = {"sources": ids, "source_licenses": lics, "pair_license": RECORD_LICENSE, "status": status,
+                                  "sources_cc_by_or_public_domain_only": status == "yes"}
     out = {"generated": C.utcnow(), "datasets": audited, "per_pair": per_pair, "rows": rows}
     C.jdump(out, C.LICENSE_AUDIT)
     with open(C.RPT / "license_audit.csv", "w", newline="") as f:

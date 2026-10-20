@@ -1,32 +1,32 @@
 {
- "generated": "2026-10-20T18:45:32+00:00",
+ "generated": "2026-10-20T21:29:16+00:00",
  "package": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package",
  "size": {
   "groups": {
    "blind_test_1": {
     "n_pairs": 5,
-    "total_gb": 0.261789658,
+    "total_gb": 0.261790451,
     "largest_zip": "RC2511__MGDS_32239.zip",
-    "largest_gb": 0.195306558
+    "largest_gb": 0.195306677
    },
    "blind_test_2": {
     "n_pairs": 8,
-    "total_gb": 0.272817339,
+    "total_gb": 0.272818438,
     "largest_zip": "MV1209__MGDS_21415.zip",
-    "largest_gb": 0.1123761
+    "largest_gb": 0.112376227
    },
    "development": {
     "n_pairs": 39,
-    "total_gb": 1.165270213,
+    "total_gb": 1.165277158,
     "largest_zip": "TN399__MGDS_30373.zip",
-    "largest_gb": 0.261256713
+    "largest_gb": 0.26125684
    }
   },
   "package": {
    "n_files_on_disk": 85,
-   "total_gb_on_disk": 1.712995218,
+   "total_gb_on_disk": 1.713012368,
    "n_files_zenodo": 66,
-   "total_gb_zenodo": 1.712843429,
+   "total_gb_zenodo": 1.712860579,
    "zenodo_limits_ok": true
   }
  },
@@ -34,18 +34,14 @@
   "n_datasets": 67,
   "by_status": {
    "yes": 42,
-   "yes_conditional": 24,
-   "confirm": 1
+   "yes_conditional": 25
   },
   "pairs_by_status": {
    "yes": 27,
-   "yes_conditional": 24,
-   "confirm": 1
+   "yes_conditional": 25
   },
   "pairs_excluded_on_license": [],
-  "confirm_pairs": [
-   "RC2511__MGDS_32239"
-  ]
+  "confirm_pairs": []
  },
  "reproduction": {
   "required": {
@@ -918,7 +914,7 @@
    "n": 84,
    "bad": [],
    "verified": true,
-   "sha256_of_SHA256SUMS": "6763ecb6e5f12adac88616ac2e0d2a1270093dff8c056afa8a06c4a6ce5f8f76"
+   "sha256_of_SHA256SUMS": "baad6bf1fdec2092d4fb389ca2dec1412de8e364d3940ed231253656eb7b1401"
   },
   "pass": true
  },
@@ -1004,9 +1000,7 @@
   ],
   "n_frozen_doc_mentions": 15,
   "restricted_sources": [],
-  "confirm_sources": [
-   "MGDS:32239"
-  ],
+  "confirm_sources": [],
   "pass": true
  },
  "pass": true

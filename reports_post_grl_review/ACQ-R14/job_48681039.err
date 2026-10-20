@@ -1,0 +1,2 @@
+/home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/src/acq_r14/corpus.py:220: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  n_open = int(inc.sources_cc_by_or_public_domain_only.fillna(False).astype(bool).sum())

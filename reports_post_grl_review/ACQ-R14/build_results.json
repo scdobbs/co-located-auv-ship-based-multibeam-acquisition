@@ -4,8 +4,8 @@
    "pair_id": "discol_so242_1",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/discol_so242_1.zip",
-   "zip_bytes": 8330245,
-   "zip_sha256": "e1726f15f91477d36b709ff2478e7b9de8c2d654e8fb698d40c3544c7e3a0fa9",
+   "zip_bytes": 8330455,
+   "zip_sha256": "60fe3fc2450184e1d4dbcb116dd0a4b4ff7fcc9c9a85e41e07f5610f421b0136",
    "n_files": 6,
    "fixes": [
     "hr.tif pixel 2.1855 m differs from the manifest hr_native_res_m 2.0; hr_res records the as-used pixel"
@@ -14,8 +14,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:31:52+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:37+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "discol_so242_1",
@@ -57,8 +58,10 @@
       "sonar": "Kongsberg EM122",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.1854900000000113,
@@ -69,7 +72,7 @@
      "crs_epsg": 32716,
      "crs": "EPSG:32716",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -421,16 +424,17 @@
    "pair_id": "AT37-13__MGDS_31199",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/AT37-13__MGDS_31199.zip",
-   "zip_bytes": 8257383,
-   "zip_sha256": "21ec6515963f8308db1ebdc1cf00a48af59d37d486d57f9cf790570fa63f30b3",
+   "zip_bytes": 8257510,
+   "zip_sha256": "5dd2a35a693cdf944f501184234cd699c04a4f2079b6cb90887dc511b7b97fd9",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:31:52+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:37+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "AT37-13__MGDS_31199",
@@ -472,8 +476,10 @@
       "sonar": "Kongsberg EM (.all)",
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 1.0018418046337723,
@@ -484,7 +490,7 @@
      "crs_epsg": 32616,
      "crs": "EPSG:32616",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -942,7 +948,7 @@
       "dz_apply_m": -7936.428,
       "repair_mode": "datum_align_to_lr",
       "status": "repaired",
-      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of metres"
+      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of meters"
      }
     },
     "datum_check": {
@@ -1067,16 +1073,17 @@
    "pair_id": "AT42-06__MGDS_5174",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/AT42-06__MGDS_5174.zip",
-   "zip_bytes": 1295982,
-   "zip_sha256": "991d508a688956df97e478fa8c023651fcb188b21ef3f3626a6dc80e8c27db81",
+   "zip_bytes": 1296109,
+   "zip_sha256": "e19ed046159624e2a347849a3280d7e6027fe6bc0238a1f97c02793b075ac9cd",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:31:53+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:37+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "AT42-06__MGDS_5174",
@@ -1118,8 +1125,10 @@
       "sonar": null,
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 4.987352095591033,
@@ -1130,7 +1139,7 @@
      "crs_epsg": 32613,
      "crs": "EPSG:32613",
      "vertical_reference": "as delivered by the sources (sea-surface / MSL referenced depths, negative down); HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -1694,16 +1703,17 @@
    "pair_id": "ccz_so268_1",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/ccz_so268_1.zip",
-   "zip_bytes": 1968449,
-   "zip_sha256": "c79202f933a93cf2501a3a539c80c6fe185d9ee3da89d25e0b648016f1340f6d",
+   "zip_bytes": 1968659,
+   "zip_sha256": "29f62ff778835fbacb95954904eceb12fe60ac5f04e3cb1abc01fca6f31edcc1",
    "n_files": 6,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:31:53+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:37+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "ccz_so268_1",
@@ -1745,8 +1755,10 @@
       "sonar": "Kongsberg EM122",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 3.0,
@@ -1757,7 +1769,7 @@
      "crs_epsg": 32611,
      "crs": "EPSG:32611",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -2103,16 +2115,17 @@
    "pair_id": "TN399__MGDS_33068",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/TN399__MGDS_33068.zip",
-   "zip_bytes": 8393856,
-   "zip_sha256": "0d5d2ddad3a5d3c08c2bb4ec83cf356dd2ba314af18a41b826ee110b53f9b3b9",
+   "zip_bytes": 8394066,
+   "zip_sha256": "10645e71f212375aba6d0d53309492e30a7cf1f08dc911ad39030547b260fdf2",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:31:53+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:37+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "TN399__MGDS_33068",
@@ -2154,8 +2167,10 @@
       "sonar": null,
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 0.9996930271676449,
@@ -2166,7 +2181,7 @@
      "crs_epsg": 32613,
      "crs": "EPSG:32613",
      "vertical_reference": "as delivered by the sources (sea-surface / MSL referenced depths, negative down); HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -2738,16 +2753,17 @@
    "pair_id": "EW9801__MGDS_31425",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/EW9801__MGDS_31425.zip",
-   "zip_bytes": 6973299,
-   "zip_sha256": "34afd3b863a158ee0055fa749cefe04d454ed58cb79480e0ced97086e6a1b69f",
+   "zip_bytes": 6973426,
+   "zip_sha256": "b824bc295240f4013f31f48c85fe46b1c189ef6ef72f1dbb8359408b20af9024",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:31:54+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:37+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "EW9801__MGDS_31425",
@@ -2789,8 +2805,10 @@
       "sonar": "Atlas Hydrosweep DS",
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 2.066556123827675,
@@ -2801,7 +2819,7 @@
      "crs_epsg": 32605,
      "crs": "EPSG:32605",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -3259,7 +3277,7 @@
       "dz_apply_m": 0.0,
       "repair_mode": "fill_clean_only",
       "status": "repaired",
-      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of metres"
+      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of meters"
      }
     },
     "datum_check": {
@@ -3384,16 +3402,17 @@
    "pair_id": "KM0923__MGDS_31429",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/KM0923__MGDS_31429.zip",
-   "zip_bytes": 11641668,
-   "zip_sha256": "c187d55be4086617e27e9c7b4b5fb8300f4ce58a59fe2c0ae719661663ee0e8c",
+   "zip_bytes": 11641795,
+   "zip_sha256": "b8e034a38e33d155d88f29ce43263dc277bdfe28068e8ea0ea9ed53570e76623",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:31:57+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:37+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "KM0923__MGDS_31429",
@@ -3435,8 +3454,10 @@
       "sonar": null,
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 2.0540720189716715,
@@ -3447,7 +3468,7 @@
      "crs_epsg": 32605,
      "crs": "EPSG:32605",
      "vertical_reference": "as delivered by the sources (sea-surface / MSL referenced depths, negative down); HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -4019,8 +4040,8 @@
    "pair_id": "FK181031__MGDS_24618",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/FK181031__MGDS_24618.zip",
-   "zip_bytes": 39042425,
-   "zip_sha256": "63d81d4fca4713b16a910da715b5d15eae7947349592479d819cdc707a678171",
+   "zip_bytes": 39042552,
+   "zip_sha256": "74c8f17eb26c32d0f61e4e1e068e2d615080d18279d5b02315c6669ef5fa86d9",
    "n_files": 16,
    "fixes": [
     "hr.tif pixel 1.0559 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel"
@@ -4029,8 +4050,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:00+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:38+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "FK181031__MGDS_24618",
@@ -4072,8 +4094,10 @@
       "sonar": "Kongsberg EM302",
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 1.0558801403341385,
@@ -4084,7 +4108,7 @@
      "crs_epsg": 32612,
      "crs": "EPSG:32612",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -4657,8 +4681,8 @@
    "pair_id": "tag_m127",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/tag_m127.zip",
-   "zip_bytes": 33463202,
-   "zip_sha256": "6575444beb60ab8489490c856cdcaebf8c6f0c9e103c7907a418f571711d12c9",
+   "zip_bytes": 33463412,
+   "zip_sha256": "71705ac707b6f84d86fda925004408f630f2b23266553fb8f608ef025b9eb793",
    "n_files": 6,
    "fixes": [
     "lr.tif: dtype float64 cast to float32",
@@ -4668,8 +4692,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:00+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:38+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "tag_m127",
@@ -4711,8 +4736,10 @@
       "sonar": "Kongsberg EM122",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 1.8879699693721153,
@@ -4723,7 +4750,7 @@
      "crs_epsg": 32623,
      "crs": "EPSG:32623",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -5080,16 +5107,17 @@
    "pair_id": "RR1506__MGDS_29779",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/RR1506__MGDS_29779.zip",
-   "zip_bytes": 120680696,
-   "zip_sha256": "e3504e420f03dc9b9ee95b438d1ea1ebde03ab1cfe7fc0a8ee2e343a4ceb377c",
+   "zip_bytes": 120680823,
+   "zip_sha256": "40c0c5169a63c39a009702e96d2584a84eab36b3161d8cad90e7cb37196a19be",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:01+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:39+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "RR1506__MGDS_29779",
@@ -5131,8 +5159,10 @@
       "sonar": "Kongsberg EM (.all) / 20150413",
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 1.0001380165858795,
@@ -5143,7 +5173,7 @@
      "crs_epsg": 32701,
      "crs": "EPSG:32701",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -5625,7 +5655,7 @@
       "dz_apply_m": 0.0,
       "repair_mode": "fill_clean_only",
       "status": "repaired",
-      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of metres"
+      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of meters"
      }
     },
     "datum_check": {
@@ -5750,8 +5780,8 @@
    "pair_id": "NA090__MGDS_31212",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/NA090__MGDS_31212.zip",
-   "zip_bytes": 6768051,
-   "zip_sha256": "dd2e1f12a41d7a39373579505f1e4abf66d809ff5f276ce306630ea031420e50",
+   "zip_bytes": 6768178,
+   "zip_sha256": "5fb144f17550554683af822148b5718eab52bf74abfdf4bc43792f2610c2fa6a",
    "n_files": 16,
    "fixes": [
     "hr.tif pixel 1.0538 m differs from the manifest hr_native_res_m 0.992; hr_res records the as-used pixel"
@@ -5760,8 +5790,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:01+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:40+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "NA090__MGDS_31212",
@@ -5803,8 +5834,10 @@
       "sonar": "Kongsberg EM (.all) / 20171021",
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 1.0538165366018608,
@@ -5815,7 +5848,7 @@
      "crs_epsg": 32612,
      "crs": "EPSG:32612",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -6273,7 +6306,7 @@
       "dz_apply_m": 0.0,
       "repair_mode": "fill_clean_only",
       "status": "repaired",
-      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of metres"
+      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of meters"
      }
     },
     "datum_check": {
@@ -6400,16 +6433,17 @@
    "pair_id": "cal_dig_morro_bay__20180427m1_Channel700",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__20180427m1_Channel700.zip",
-   "zip_bytes": 6413286,
-   "zip_sha256": "56a689aa09cca5c41c7d261b37d414d8d52242c2295cbe1f97c17a7fc9b5f9ad",
+   "zip_bytes": 6413496,
+   "zip_sha256": "a1f386e02d304d0c4eeab727e73a3db0e0042c8923d6b7ddbe9a4a6b9b042a9f",
    "n_files": 6,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:02+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:40+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__20180427m1_Channel700",
@@ -6451,8 +6485,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -6463,7 +6499,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -6813,8 +6849,8 @@
    "pair_id": "cal_dig_morro_bay__20180426m2_Channel1000",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__20180426m2_Channel1000.zip",
-   "zip_bytes": 7848321,
-   "zip_sha256": "c6d998b8486f99f35cc77f5420dc0a6c23d3e48eb97fecfb2fddb0cab54f3225",
+   "zip_bytes": 7848531,
+   "zip_sha256": "a88a032d1ac92aef3a02b000a41c98e972f9213b34fa74389d1abb956b66b817",
    "n_files": 6,
    "fixes": [
     "hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel"
@@ -6823,8 +6859,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:02+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:40+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__20180426m2_Channel1000",
@@ -6866,8 +6903,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -6878,7 +6917,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -7232,8 +7271,8 @@
    "pair_id": "NA076__MGDS_32317",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/NA076__MGDS_32317.zip",
-   "zip_bytes": 17794099,
-   "zip_sha256": "ce6c79df82726eac26cabea028d74c3d039e3d85087d8eb17ba23c0c4b34a89e",
+   "zip_bytes": 17794309,
+   "zip_sha256": "bab5288056616e3028c8d7cc46b97298af1b7fcac37db409507165605821f289",
    "n_files": 16,
    "fixes": [
     "hr.tif pixel 1.0572 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel"
@@ -7242,8 +7281,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:02+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:40+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "NA076__MGDS_32317",
@@ -7285,8 +7325,10 @@
       "sonar": "Kongsberg EM302",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 1.0571641690710878,
@@ -7297,7 +7339,7 @@
      "crs_epsg": 32611,
      "crs": "EPSG:32611",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -7866,8 +7908,8 @@
    "pair_id": "cal_dig_morro_bay__20180427m3_PockmarkNorth",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__20180427m3_PockmarkNorth.zip",
-   "zip_bytes": 3752396,
-   "zip_sha256": "42ed3ee64a01f39aaf3b8b79fa4c5b2bc216584aea76a89bd6d119726374e8eb",
+   "zip_bytes": 3752606,
+   "zip_sha256": "77407c095f763f1d990bad9a71d42c2ea73e3428181c97f620d3712046d12d45",
    "n_files": 6,
    "fixes": [
     "hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel"
@@ -7876,8 +7918,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:03+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:40+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__20180427m3_PockmarkNorth",
@@ -7919,8 +7962,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -7931,7 +7976,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -8279,16 +8324,17 @@
    "pair_id": "cal_dig_morro_bay__20190314m4_LuciaChica970m",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__20190314m4_LuciaChica970m.zip",
-   "zip_bytes": 2940746,
-   "zip_sha256": "377ada9c9cd98bb01ab9fef7258fec9ef53df1a2a09e233403f0eda90e9ae711",
+   "zip_bytes": 2940956,
+   "zip_sha256": "8436b4ba89ba1b743a66d7548848341f6d51caa59fca77509e8c96c45e37d12b",
    "n_files": 6,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:04+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:41+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__20190314m4_LuciaChica970m",
@@ -8330,8 +8376,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -8342,7 +8390,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -8688,8 +8736,8 @@
    "pair_id": "cal_dig_morro_bay__20180428m1_Cable",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__20180428m1_Cable.zip",
-   "zip_bytes": 5227388,
-   "zip_sha256": "401821ce6d8abd05ed86f776eb0d977fc26e9194628702be69908449a10785e4",
+   "zip_bytes": 5227598,
+   "zip_sha256": "5be50e932adfd8ca0b0c0701e96a03a2e4d6d17d7a547f0610b9a7a129bffd46",
    "n_files": 6,
    "fixes": [
     "hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel"
@@ -8698,8 +8746,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:04+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:41+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__20180428m1_Cable",
@@ -8741,8 +8790,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -8753,7 +8804,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -9116,8 +9167,8 @@
    "pair_id": "cal_dig_morro_bay__201804_LuciaChica2m",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__201804_LuciaChica2m.zip",
-   "zip_bytes": 8805527,
-   "zip_sha256": "02c29287218e6af650be269032ecab47e188f0c5a5a351039bdf55dd9631b4fd",
+   "zip_bytes": 8805737,
+   "zip_sha256": "38bea7186638ab482fc21fa7944b28de9195425af1318d01498d443a5c76af07",
    "n_files": 6,
    "fixes": [
     "hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel"
@@ -9126,8 +9177,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:04+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:41+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__201804_LuciaChica2m",
@@ -9169,8 +9221,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -9181,7 +9235,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -9535,8 +9589,8 @@
    "pair_id": "cal_dig_morro_bay__20190315m1_HeadlessCanyon",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__20190315m1_HeadlessCanyon.zip",
-   "zip_bytes": 8258647,
-   "zip_sha256": "04a7a92816633c624d4d2f40e5a0b7d9f89f30fb8f307fbb6e9bbf51c0cccdab",
+   "zip_bytes": 8258857,
+   "zip_sha256": "7cd99029f2ff4b8157d8607d9b7fee8c9770376a41f90241f3b572c481f1a088",
    "n_files": 6,
    "fixes": [
     "hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.019320966862077; hr_res records the as-used pixel"
@@ -9545,8 +9599,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:05+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:41+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__20190315m1_HeadlessCanyon",
@@ -9588,8 +9643,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -9600,7 +9657,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -9954,8 +10011,8 @@
    "pair_id": "cal_dig_morro_bay__20190317m1_1000mGully",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__20190317m1_1000mGully.zip",
-   "zip_bytes": 6967222,
-   "zip_sha256": "ea73cd97d79e70d19c58a21ebaddd364910a83f09cf0ba5e55a2058f2cd3cec3",
+   "zip_bytes": 6967432,
+   "zip_sha256": "910e4aced42f53aa3f1754fc21e432b9bb872715c46cb976910810308f808be6",
    "n_files": 6,
    "fixes": [
     "hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel"
@@ -9964,8 +10021,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:05+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:41+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__20190317m1_1000mGully",
@@ -10007,8 +10065,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -10019,7 +10079,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -10373,16 +10433,17 @@
    "pair_id": "cal_dig_morro_bay__20190316m1_BankTop",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__20190316m1_BankTop.zip",
-   "zip_bytes": 9779732,
-   "zip_sha256": "0eea2e05fa1d4e7ff7a58784072405d9e1e7c70304de6b325872199ba5b4061b",
+   "zip_bytes": 9779942,
+   "zip_sha256": "c8c4d6f449b309ddc8fdeff9e4d3609ea967ef31bea83355ac1044d6bcb5fc8e",
    "n_files": 6,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:06+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:41+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__20190316m1_BankTop",
@@ -10424,8 +10485,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -10436,7 +10499,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -10792,8 +10855,8 @@
    "pair_id": "cal_dig_morro_bay__20190510m1_BankFlankHoles",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__20190510m1_BankFlankHoles.zip",
-   "zip_bytes": 7720584,
-   "zip_sha256": "83b341fe165dd13b41d6b5da4a8b6d87a8a82db29ff5addf5e1d6a1930a88344",
+   "zip_bytes": 7720794,
+   "zip_sha256": "0dcb7515f7b67c6d2eb8328dd2d7ed48eec19f74b65380c947debfa648777b95",
    "n_files": 6,
    "fixes": [
     "hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel"
@@ -10802,8 +10865,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:07+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:41+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__20190510m1_BankFlankHoles",
@@ -10845,8 +10909,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -10857,7 +10923,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -11211,16 +11277,17 @@
    "pair_id": "cal_dig_morro_bay__20190510m2_BankFlankIncipCh",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__20190510m2_BankFlankIncipCh.zip",
-   "zip_bytes": 8583995,
-   "zip_sha256": "56ab868857dfa1fd7e099596351d6e79cb6b788d8cf065c17aaac28843665b38",
+   "zip_bytes": 8584205,
+   "zip_sha256": "14929165d04c7a37b2357374ae476daeb203ef061870520f6d1c7bc0a85e2400",
    "n_files": 6,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:08+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:42+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__20190510m2_BankFlankIncipCh",
@@ -11262,8 +11329,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -11274,7 +11343,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -11626,8 +11695,8 @@
    "pair_id": "cal_dig_morro_bay__20190317m2_600mGully",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__20190317m2_600mGully.zip",
-   "zip_bytes": 9279582,
-   "zip_sha256": "de9d75056f0dffef0940cd5c140fcb568598831ebcac609c3193ed1e2526d9cd",
+   "zip_bytes": 9279792,
+   "zip_sha256": "1bf905104ee529331bad94a4402eb3a6e16fa0ba5da1e3b146b3029d419c9c1a",
    "n_files": 6,
    "fixes": [
     "hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel"
@@ -11636,8 +11705,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:08+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:42+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__20190317m2_600mGully",
@@ -11679,8 +11749,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -11691,7 +11763,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -12050,16 +12122,17 @@
    "pair_id": "cal_dig_morro_bay__20190511m2_BankTopEofCanyon3",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__20190511m2_BankTopEofCanyon3.zip",
-   "zip_bytes": 9746764,
-   "zip_sha256": "bc7a49e587a22b8de0cafde7cf40bdb0cbe216f7b36c13867d0c2ff11fc40556",
+   "zip_bytes": 9746974,
+   "zip_sha256": "78ef72f5ce034fb157caedade5cdab86110fcc7ccdb01609be94ac737649c420",
    "n_files": 6,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:10+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:42+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__20190511m2_BankTopEofCanyon3",
@@ -12101,8 +12174,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -12113,7 +12188,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -12469,16 +12544,17 @@
    "pair_id": "cal_dig_morro_bay__20190511m1_6thHeadlessCany",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__20190511m1_6thHeadlessCany.zip",
-   "zip_bytes": 9955688,
-   "zip_sha256": "26b0141a8479614c1289bf9fd70b672c415861c160b3c3f134ecdd2afab6df8f",
+   "zip_bytes": 9955898,
+   "zip_sha256": "d1ea23d76417ca543e2953c96c805df48792cc22ec9a2ec60c20294353570a70",
    "n_files": 6,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:10+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:42+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__20190511m1_6thHeadlessCany",
@@ -12520,8 +12596,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -12532,7 +12610,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -12884,8 +12962,8 @@
    "pair_id": "cal_dig_morro_bay__luciachica_2007",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__luciachica_2007.zip",
-   "zip_bytes": 2300612,
-   "zip_sha256": "ff13c2990e6f8c768cee1b4c63577fca8585ac463b464f43fcb098ea7d62e07a",
+   "zip_bytes": 2300822,
+   "zip_sha256": "bd64c7869409116379320bdfdb453e55686c444675797f07bee16ad0e8a37237",
    "n_files": 6,
    "fixes": [
     "hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel"
@@ -12894,8 +12972,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:10+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:42+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__luciachica_2007",
@@ -12937,8 +13016,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -12949,7 +13030,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -13297,8 +13378,8 @@
    "pair_id": "cal_dig_morro_bay__basin_flank",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__basin_flank.zip",
-   "zip_bytes": 3024583,
-   "zip_sha256": "623d916b03944618e80eb5a830c35363c77832383fb8cd3ee6bf0cce492aed02",
+   "zip_bytes": 3024793,
+   "zip_sha256": "3e9fb6142a436781c10357c526078960da4cfb3715cf497e6bd30054b82a891d",
    "n_files": 6,
    "fixes": [
     "hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel"
@@ -13307,8 +13388,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:11+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:42+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__basin_flank",
@@ -13350,8 +13432,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -13362,7 +13446,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -13714,8 +13798,8 @@
    "pair_id": "cal_dig_morro_bay__pockmark_south",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__pockmark_south.zip",
-   "zip_bytes": 5633653,
-   "zip_sha256": "de50b5765f5d85afba137911fd52254543ff8f772ee52350c9a40525ebf6d33c",
+   "zip_bytes": 5633863,
+   "zip_sha256": "1b77caea6c9983546c29b8d60c0ba217df67c7c8728c8e0ac8fae4f11d8be199",
    "n_files": 6,
    "fixes": [
     "hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel"
@@ -13724,8 +13808,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:11+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:42+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__pockmark_south",
@@ -13767,8 +13852,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -13779,7 +13866,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -14131,8 +14218,8 @@
    "pair_id": "cal_dig_morro_bay__20190318m2_Transect601060m",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/cal_dig_morro_bay__20190318m2_Transect601060m.zip",
-   "zip_bytes": 11476289,
-   "zip_sha256": "9a4749cf85b1f8ac1c7da5d043141c4f9cb38e9c3353cd5a51e05a214c66e35e",
+   "zip_bytes": 11476499,
+   "zip_sha256": "c66382c6fcd896681b5c4dda3eb8b36cb0f4b852e1c99b529fc6ffbe1752ec51",
    "n_files": 6,
    "fixes": [
     "hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0296948797210286; hr_res records the as-used pixel"
@@ -14141,8 +14228,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:14+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:43+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "cal_dig_morro_bay__20190318m2_Transect601060m",
@@ -14184,8 +14272,10 @@
       "sonar": "Simrad EM 700 series",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 2.0,
@@ -14196,7 +14286,7 @@
      "crs_epsg": 26910,
      "crs": "EPSG:26910",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -14560,8 +14650,8 @@
    "pair_id": "AR26__MGDS_31838",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/AR26__MGDS_31838.zip",
-   "zip_bytes": 3762996,
-   "zip_sha256": "84c9af2e950f2ceac7b266b031d7b5b4b8bfc49991760a7bd9f6c127b57a50a5",
+   "zip_bytes": 3763123,
+   "zip_sha256": "628baa3b85eb9cc6cb89ba67c638106c3ee17e21aec77c5022aa6411da152b7b",
    "n_files": 16,
    "fixes": [
     "hr.tif pixel 1.7660 m differs from the manifest hr_native_res_m 0.992; hr_res records the as-used pixel"
@@ -14570,8 +14660,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:15+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:43+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "AR26__MGDS_31838",
@@ -14613,8 +14704,10 @@
       "sonar": "Kongsberg EM (.all) / 20160207",
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 1.7659766063296711,
@@ -14625,7 +14718,7 @@
      "crs_epsg": 32618,
      "crs": "EPSG:32618",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -15083,7 +15176,7 @@
       "dz_apply_m": -8065.885,
       "repair_mode": "datum_align_to_lr",
       "status": "repaired",
-      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of metres"
+      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of meters"
      }
     },
     "datum_check": {
@@ -15210,16 +15303,17 @@
    "pair_id": "TN399__MGDS_30373",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/TN399__MGDS_30373.zip",
-   "zip_bytes": 261256713,
-   "zip_sha256": "c228441ca69bf463ae740a333f1ff86454056e6771e3758139a65d860dc67838",
+   "zip_bytes": 261256840,
+   "zip_sha256": "fd0136a5abfcef43a972fba847514415963cb67ce272d8505b262445fb639089",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:19+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:43+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "TN399__MGDS_30373",
@@ -15261,8 +15355,10 @@
       "sonar": "Kongsberg EM (.all) / 20220129",
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 0.9996415304352251,
@@ -15273,7 +15369,7 @@
      "crs_epsg": 32613,
      "crs": "EPSG:32613",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -15759,7 +15855,7 @@
       "dz_apply_m": 0.0,
       "repair_mode": "fill_clean_only",
       "status": "repaired",
-      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of metres"
+      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of meters"
      }
     },
     "datum_check": {
@@ -15884,16 +15980,17 @@
    "pair_id": "TN299__MGDS_31253",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/TN299__MGDS_31253.zip",
-   "zip_bytes": 14175233,
-   "zip_sha256": "b84b8eb52027913bfd513650741d048f20723d90d8f50b884cacab215b0d434a",
+   "zip_bytes": 14175360,
+   "zip_sha256": "3c77c954bb538f33b7e69e1f8b52fc39f656c4d5f06d41792bda910c156df7ef",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:24+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:45+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "TN299__MGDS_31253",
@@ -15935,8 +16032,10 @@
       "sonar": "Kongsberg EM (.all)",
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 0.9996618924038077,
@@ -15947,7 +16046,7 @@
      "crs_epsg": 32610,
      "crs": "EPSG:32610",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -16514,16 +16613,17 @@
    "pair_id": "FK151121__MGDS_22383",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/FK151121__MGDS_22383.zip",
-   "zip_bytes": 31781949,
-   "zip_sha256": "86ed7b4547203f29fbb3a3acfe610420e530f5809533a409b85c186d3deba9c9",
+   "zip_bytes": 31782076,
+   "zip_sha256": "92b495b9efe7bf1652b5bf3ba4baf069c5151894757d3c1af0d6baa6869dbeac",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:28+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:45+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "FK151121__MGDS_22383",
@@ -16565,8 +16665,10 @@
       "sonar": null,
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 1.00027363181973,
@@ -16577,7 +16679,7 @@
      "crs_epsg": 32655,
      "crs": "EPSG:32655",
      "vertical_reference": "as delivered by the sources (sea-surface / MSL referenced depths, negative down); HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -17149,16 +17251,17 @@
    "pair_id": "EX1402L2__MGDS_31073",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/EX1402L2__MGDS_31073.zip",
-   "zip_bytes": 7421944,
-   "zip_sha256": "82fd73bd5f32a736dc4ce4ae00aea5b401b5f05b99fedda6b6fa1b3b0ba4cccc",
+   "zip_bytes": 7422071,
+   "zip_sha256": "659b011a5e47d4b666b8989db6d9ac916d95c54949ec52dc1053623251acfea7",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:30+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:46+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "EX1402L2__MGDS_31073",
@@ -17200,8 +17303,10 @@
       "sonar": null,
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 0.9997306513067747,
@@ -17212,7 +17317,7 @@
      "crs_epsg": 32615,
      "crs": "EPSG:32615",
      "vertical_reference": "as delivered by the sources (sea-surface / MSL referenced depths, negative down); HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -17780,16 +17885,17 @@
    "pair_id": "TN299__MGDS_27339",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/TN299__MGDS_27339.zip",
-   "zip_bytes": 94155772,
-   "zip_sha256": "8c972fdf509a5cbe81fc0beb885e6cf21910f6077908925d696af4289b74852c",
+   "zip_bytes": 94155899,
+   "zip_sha256": "8e7a2e505fb443c5b7b6bee2c3088e0095238a7ee3229d57930dd1931b9895c9",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:30+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:46+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "TN299__MGDS_27339",
@@ -17831,8 +17937,10 @@
       "sonar": "Kongsberg EM (.all) / 20130709",
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 1.0,
@@ -17843,7 +17951,7 @@
      "crs_epsg": 32609,
      "crs": "EPSG:32609",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -18309,7 +18417,7 @@
       "dz_apply_m": null,
       "repair_mode": null,
       "status": "untouched",
-      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of metres"
+      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of meters"
      }
     },
     "datum_check": {
@@ -18434,16 +18542,17 @@
    "pair_id": "NA080__MGDS_31289",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/NA080__MGDS_31289.zip",
-   "zip_bytes": 111176556,
-   "zip_sha256": "66c0460ab77b5665b328c101d8d277b1db6969bb5e0b122d63be2bd40cd011df",
+   "zip_bytes": 111176683,
+   "zip_sha256": "2974142d4fb84c7b290c9028752ebded621e09c7a739ce3c6aec34ff35a4bc69",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:32+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:47+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "NA080__MGDS_31289",
@@ -18485,8 +18594,10 @@
       "sonar": null,
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 1.0,
@@ -18497,7 +18608,7 @@
      "crs_epsg": 32610,
      "crs": "EPSG:32610",
      "vertical_reference": "as delivered by the sources (sea-surface / MSL referenced depths, negative down); HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -19077,16 +19188,17 @@
    "pair_id": "NA080__MGDS_31290",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/NA080__MGDS_31290.zip",
-   "zip_bytes": 112391095,
-   "zip_sha256": "088889a3b8c1446a3161d5b21d7cfee252c6cad3bd43f8a93a767434fbb45b51",
+   "zip_bytes": 112391222,
+   "zip_sha256": "7c7594be7b1bd5c7391514d02ad520b026a978f692d6e413ac7214a895ec9a49",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:33+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:48+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "NA080__MGDS_31290",
@@ -19128,8 +19240,10 @@
       "sonar": "Kongsberg EM (.all) / 20170512",
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 1.0,
@@ -19140,7 +19254,7 @@
      "crs_epsg": 32610,
      "crs": "EPSG:32610",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": -9999.0,
       "lr": -9999.0,
@@ -19610,7 +19724,7 @@
       "dz_apply_m": null,
       "repair_mode": null,
       "status": "untouched",
-      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of metres"
+      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of meters"
      }
     },
     "datum_check": {
@@ -19735,16 +19849,17 @@
    "pair_id": "KN182L03__MGDS_30193",
    "group": "blind_test_1",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/KN182L03__MGDS_30193.zip",
-   "zip_bytes": 31070078,
-   "zip_sha256": "857f580bc5eed097b301bc7c1dac9420bca9c13ec3329a2f061f7ad8cdff678d",
+   "zip_bytes": 31070205,
+   "zip_sha256": "5cff2835be4d44382f9a846950d2166282f9af268f8c0d2797567269e41e4f86",
    "n_files": 6,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:35+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:49+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "KN182L03__MGDS_30193",
@@ -19786,8 +19901,10 @@
       "sonar": null,
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 0.9995580411708825,
@@ -19798,7 +19915,7 @@
      "crs_epsg": 32623,
      "crs": "EPSG:32623",
      "vertical_reference": "as delivered by the sources (sea-surface / MSL referenced depths, negative down); HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -20169,16 +20286,17 @@
    "pair_id": "AT42-03__MGDS_32007",
    "group": "blind_test_1",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/AT42-03__MGDS_32007.zip",
-   "zip_bytes": 10955368,
-   "zip_sha256": "b1df0b7baf7a7c1ce60067383b0b2728c5c8195323b65e626c15f784b8332cfd",
+   "zip_bytes": 10955578,
+   "zip_sha256": "0955dfcdd0b9aa57d3d7e27e0c46345a1742765bf08551c9f75600c23ffed864",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:37+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:49+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "AT42-03__MGDS_32007",
@@ -20220,8 +20338,10 @@
       "sonar": "Kongsberg EM (.all)",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 1.0000391073442152,
@@ -20232,7 +20352,7 @@
      "crs_epsg": 32616,
      "crs": "EPSG:32616",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -20690,7 +20810,7 @@
       "dz_apply_m": -8498.732,
       "repair_mode": "datum_align_to_lr",
       "status": "repaired",
-      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of metres"
+      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of meters"
      }
     },
     "datum_check": {
@@ -20815,8 +20935,8 @@
    "pair_id": "TN159__MGDS_21981",
    "group": "blind_test_1",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/TN159__MGDS_21981.zip",
-   "zip_bytes": 6589274,
-   "zip_sha256": "3929872ecac835cca973f3e9863523293b8ceb4e3a572cbee225c98f215999a1",
+   "zip_bytes": 6589401,
+   "zip_sha256": "c4a7991f58b49392a7586b7675b9f325ada9c4a4cc6a060fafd8d5fe86a5c2d2",
    "n_files": 16,
    "fixes": [
     "hr.tif pixel 3.2467 m differs from the manifest hr_native_res_m 0.991; hr_res records the as-used pixel"
@@ -20825,8 +20945,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:39+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:49+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "TN159__MGDS_21981",
@@ -20868,8 +20989,10 @@
       "sonar": "Simrad EM (.all) / 20030729",
       "acquisition_date": null
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 3.2467273903505967,
@@ -20880,7 +21003,7 @@
      "crs_epsg": 32609,
      "crs": "EPSG:32609",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -21338,7 +21461,7 @@
       "dz_apply_m": -7654.386,
       "repair_mode": "datum_align_to_lr",
       "status": "repaired",
-      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of metres"
+      "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of meters"
      }
     },
     "datum_check": {
@@ -21465,16 +21588,17 @@
    "pair_id": "TN188__MGDS_18210",
    "group": "blind_test_2",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/TN188__MGDS_18210.zip",
-   "zip_bytes": 23791316,
-   "zip_sha256": "33bd9fa649d68616797b09fd9c494e6fbd93e52f4c727d950a297b3be91a9a31",
+   "zip_bytes": 23791443,
+   "zip_sha256": "cc73bff258ccafd85cabcda87ff9fa2713a9f6e159d2ce345c33a93ee5d04c97",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:44+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:50+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "TN188__MGDS_18210",
@@ -21516,8 +21640,10 @@
       "sonar": "Simrad EM300",
       "acquisition_date": "2005.0"
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 0.9997522790508871,
@@ -21528,7 +21654,7 @@
      "crs_epsg": 32615,
      "crs": "EPSG:32615",
      "vertical_reference": "ship-grid vertical reference (NCEI swath, sound-speed-corrected depth below the transducer/sea surface as delivered); the AUV grid was shifted by the co-registration dz to the ship grid; datum consistency tested by the G statistic",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -22209,16 +22335,17 @@
    "pair_id": "SUM1004__MGDS_33090",
    "group": "blind_test_1",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/SUM1004__MGDS_33090.zip",
-   "zip_bytes": 17868380,
-   "zip_sha256": "cf79d43e257fcf139d9cb6630362d3967c675d5314b1994f513f9c8af1bf5c52",
+   "zip_bytes": 17868590,
+   "zip_sha256": "2887e62be06ab27a4d74dc09be57f2fd8c2301be38c4fc851075059befbe231e",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:48+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:50+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "SUM1004__MGDS_33090",
@@ -22260,8 +22387,10 @@
       "sonar": null,
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 1.0001488632959,
@@ -22272,7 +22401,7 @@
      "crs_epsg": 32655,
      "crs": "EPSG:32655",
      "vertical_reference": "as delivered by the sources (sea-surface / MSL referenced depths, negative down); HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -22862,8 +22991,8 @@
    "pair_id": "EW0207__MGDS_32556",
    "group": "development",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/EW0207__MGDS_32556.zip",
-   "zip_bytes": 136823585,
-   "zip_sha256": "4aa5eda11e10c56f7a3dd81021976df83cfe06d73dba0a6b616623f446ea5d2d",
+   "zip_bytes": 136823795,
+   "zip_sha256": "e337405bf751134b21db3f4513905431070e0489bc8e0c49efa298b477dd433c",
    "n_files": 6,
    "fixes": [
     "hr.tif pixel 1.2303 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel"
@@ -22872,8 +23001,9 @@
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:52+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:50+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "EW0207__MGDS_32556",
@@ -22915,8 +23045,10 @@
       "sonar": "MB-format-183 multibeam",
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 1.2303378630260844,
@@ -22927,7 +23059,7 @@
      "crs_epsg": 32609,
      "crs": "EPSG:32609",
      "vertical_reference": "MSL_negative_down: elevation relative to the source grid's vertical reference (MSL / sea surface as delivered by the provider), negative down; HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -23291,16 +23423,17 @@
    "pair_id": "Monterey__MGDS_24756",
    "group": "blind_test_2",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/Monterey__MGDS_24756.zip",
-   "zip_bytes": 33155615,
-   "zip_sha256": "95cd35181abc13c5be4296bb7b74883eb3f3a2eaff2669a3f5c9974ea507cff3",
+   "zip_bytes": 33155742,
+   "zip_sha256": "023c214b6d640fb6d90964ed12f9fc9071437b95d923275da34c2add8359817b",
    "n_files": 6,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:53+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:51+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "Monterey__MGDS_24756",
@@ -23342,8 +23475,10 @@
       "sonar": "Simrad EM300",
       "acquisition_date": "1998.0"
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 1.0,
@@ -23354,7 +23489,7 @@
      "crs_epsg": 32610,
      "crs": "EPSG:32610",
      "vertical_reference": "ship-grid vertical reference (NCEI swath, sound-speed-corrected depth below the transducer/sea surface as delivered); the AUV grid was shifted by the co-registration dz to the ship grid; datum consistency tested by the G statistic",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -23787,16 +23922,17 @@
    "pair_id": "RC2511__MGDS_32239",
    "group": "blind_test_1",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/RC2511__MGDS_32239.zip",
-   "zip_bytes": 195306558,
-   "zip_sha256": "2f617f9abc7dbc99af883dc0945a82270173a14f45d27016e624def685f01989",
+   "zip_bytes": 195306677,
+   "zip_sha256": "9fd0cdd062c1beda531612404a20ed0463b1da2fc401f58ec431e8b502c87d90",
    "n_files": 6,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:55+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:52+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "RC2511__MGDS_32239",
@@ -23814,9 +23950,9 @@
       "title": "MBARI Mapping AUV near-bottom processed swath bathymetry gridded data (netCDF format) at the Mid-Atlantic Ridge Puy des Folles Seamount, EMARK Massif, Falkor EMARK Vents, and Hydra (Grappe Deux) (2023)",
       "provider": "MGDS",
       "landing_page": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:32239",
-      "license": "no DOI record found; MGDS default terms (CC BY-NC-SA, per MGDS data policy; ACQ-R08 H-3)",
-      "license_evidence": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:32239",
-      "redistribution": "confirm",
+      "license": "CC BY-NC-SA 4.0 (stated on the MGDS data set page; no DOI record)",
+      "license_evidence": "https://www.marine-geo.org/tools/files/32239",
+      "redistribution": "yes_conditional",
       "citation": null,
       "cruise": null,
       "platform": null,
@@ -23838,8 +23974,10 @@
       "sonar": null,
       "acquisition_date": null
      },
-     "pair_license": "CC BY 4.0 proposed; one source license not stated in a DOI record (confirm)",
-     "pair_license_status": "confirm"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 1.036953688864946,
@@ -23850,7 +23988,7 @@
      "crs_epsg": 32623,
      "crs": "EPSG:32623",
      "vertical_reference": "as delivered by the sources (sea-surface / MSL referenced depths, negative down); HR shifted to the ship grid by the co-registration dz",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -24211,16 +24349,17 @@
    "pair_id": "Escanaba__MGDS_30368",
    "group": "blind_test_2",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/Escanaba__MGDS_30368.zip",
-   "zip_bytes": 35501257,
-   "zip_sha256": "0abe64af78f6b8bbe42b63ca6643e62748bd8c92a668cd28992d66bad8fcf900",
+   "zip_bytes": 35501384,
+   "zip_sha256": "da849e960ceab4af51e9b95e33d1a935ee956c81be35dc3954b1fb9d7675886a",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:58+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:53+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "Escanaba__MGDS_30368",
@@ -24262,8 +24401,10 @@
       "sonar": "Simrad EM300",
       "acquisition_date": "1998.0"
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 1.2801031619832532,
@@ -24274,7 +24415,7 @@
      "crs_epsg": 32609,
      "crs": "EPSG:32609",
      "vertical_reference": "ship-grid vertical reference (NCEI swath, sound-speed-corrected depth below the transducer/sea surface as delivered); the AUV grid was shifted by the co-registration dz to the ship grid; datum consistency tested by the G statistic",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -24938,16 +25079,17 @@
    "pair_id": "KN173L02__MGDS_31675",
    "group": "blind_test_2",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/KN173L02__MGDS_31675.zip",
-   "zip_bytes": 17795091,
-   "zip_sha256": "32f4c5427b198909e213730e50154c907a5133e0099a72496c7c1a093fa14dbd",
+   "zip_bytes": 17795218,
+   "zip_sha256": "0c1ec43104f14ecc888b7f2557a46629c0319828f1f3fb9ba07c74a06a7429e1",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:32:59+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:53+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "KN173L02__MGDS_31675",
@@ -24989,8 +25131,10 @@
       "sonar": "SeaBeam 2112",
       "acquisition_date": "2003.0"
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 1.0435089191519804,
@@ -25001,7 +25145,7 @@
      "crs_epsg": 32620,
      "crs": "EPSG:32620",
      "vertical_reference": "ship-grid vertical reference (NCEI swath, sound-speed-corrected depth below the transducer/sea surface as delivered); the AUV grid was shifted by the co-registration dz to the ship grid; datum consistency tested by the G statistic",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -25645,16 +25789,17 @@
    "pair_id": "MV1003__MGDS_31860",
    "group": "blind_test_2",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/MV1003__MGDS_31860.zip",
-   "zip_bytes": 7507315,
-   "zip_sha256": "8b31cb4038ba57b8dd3fd24da3c39dbcd68d38864876022e5f176a9d5b9d1e1d",
+   "zip_bytes": 7507442,
+   "zip_sha256": "851e7498767594d374bd393ded5660ba91c785de4b9bcfa779d425f3b51e5cda",
    "n_files": 6,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:33:00+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:53+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "MV1003__MGDS_31860",
@@ -25696,8 +25841,10 @@
       "sonar": "Simrad EM122",
       "acquisition_date": "2010.0"
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 1.3408555231788961,
@@ -25708,7 +25855,7 @@
      "crs_epsg": 32718,
      "crs": "EPSG:32718",
      "vertical_reference": "ship-grid vertical reference (NCEI swath, sound-speed-corrected depth below the transducer/sea surface as delivered); the AUV grid was shifted by the co-registration dz to the ship grid; datum consistency tested by the G statistic",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -26128,16 +26275,17 @@
    "pair_id": "AT26-24__MGDS_31954",
    "group": "blind_test_2",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/AT26-24__MGDS_31954.zip",
-   "zip_bytes": 11156772,
-   "zip_sha256": "fb453641663dd904b1b4a8bc138fea90f8a8c7e3f1e8cd1ec8f1589ba350cd1d",
+   "zip_bytes": 11156982,
+   "zip_sha256": "1275520bb0af68df8d7e0e312dce1a519bd1743583cfe4803794eaaf272a0207",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:33:01+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:54+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "AT26-24__MGDS_31954",
@@ -26179,8 +26327,10 @@
       "sonar": "Kongsberg EM122",
       "acquisition_date": "2014.0"
      },
-     "pair_license": "CC BY 4.0",
-     "pair_license_status": "yes"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": true
     },
     "grids": {
      "hr_res": 0.9993881205852732,
@@ -26191,7 +26341,7 @@
      "crs_epsg": 32616,
      "crs": "EPSG:32616",
      "vertical_reference": "ship-grid vertical reference (NCEI swath, sound-speed-corrected depth below the transducer/sea surface as delivered); the AUV grid was shifted by the co-registration dz to the ship grid; datum consistency tested by the G statistic",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -26831,16 +26981,17 @@
    "pair_id": "KN161L04__MGDS_22436",
    "group": "blind_test_2",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/KN161L04__MGDS_22436.zip",
-   "zip_bytes": 31533873,
-   "zip_sha256": "26832bf9efb1de18b6d3c92ba36460c83de659853670a06566e1aa8a89ae472d",
+   "zip_bytes": 31534000,
+   "zip_sha256": "025cb1bce60c02d0250598e9e86fdbee8c2c538981989f9ab7843a3c5cedf5d5",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:33:01+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:54+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "KN161L04__MGDS_22436",
@@ -26882,8 +27033,10 @@
       "sonar": "SeaBeam 2112",
       "acquisition_date": "2000.0"
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 2.0268051322408756,
@@ -26894,7 +27047,7 @@
      "crs_epsg": 32623,
      "crs": "EPSG:32623",
      "vertical_reference": "ship-grid vertical reference (NCEI swath, sound-speed-corrected depth below the transducer/sea surface as delivered); the AUV grid was shifted by the co-registration dz to the ship grid; datum consistency tested by the G statistic",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -27555,16 +27708,17 @@
    "pair_id": "MV1209__MGDS_21415",
    "group": "blind_test_2",
    "zip": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package/MV1209__MGDS_21415.zip",
-   "zip_bytes": 112376100,
-   "zip_sha256": "726cf568a52a25339031f7c9411fd6bc4a1ac65a29312c72b826a86a760946ef",
+   "zip_bytes": 112376227,
+   "zip_sha256": "ad042e964d775e4db05abd179d61cd3ccbc7f1aba68b93d303671ed33559c8f1",
    "n_files": 16,
    "fixes": [],
    "pair_json": {
     "release": {
      "version": "1.0.0",
      "directive": "ACQ-R14",
-     "generated": "2026-10-20T18:33:05+00:00",
-     "paper": "2026GL125574"
+     "generated": "2026-10-20T21:28:54+00:00",
+     "paper": "2026GL125574",
+     "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0"
     },
     "identifiers": {
      "pair_id": "MV1209__MGDS_21415",
@@ -27606,8 +27760,10 @@
       "sonar": "Kongsberg EM122",
       "acquisition_date": "2012.0"
      },
-     "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-     "pair_license_status": "yes_conditional"
+     "pair_license": "CC BY-NC-SA 4.0",
+     "pair_license_status": "yes_conditional",
+     "record_license": "CC BY-NC-SA 4.0",
+     "sources_cc_by_or_public_domain_only": false
     },
     "grids": {
      "hr_res": 0.9996655215965532,
@@ -27618,7 +27774,7 @@
      "crs_epsg": 32611,
      "crs": "EPSG:32611",
      "vertical_reference": "ship-grid vertical reference (NCEI swath, sound-speed-corrected depth below the transducer/sea surface as delivered); the AUV grid was shifted by the co-registration dz to the ship grid; datum consistency tested by the G statistic",
-     "elevation_units": "metres, positive up (seafloor depths are negative)",
+     "elevation_units": "meters, positive up (seafloor depths are negative)",
      "nodata": {
       "hr": "nan",
       "lr": -9999.0,
@@ -28286,5 +28442,10 @@
    }
   }
  },
- "generated": "2026-10-20T18:33:06+00:00"
+ "generated": "2026-10-20T18:33:06+00:00",
+ "relicensed": {
+  "ruling": "2026-10-20 H-1 option (b): the whole record, every pair and the corpus-level files are CC BY-NC-SA 4.0",
+  "time": "2026-10-20T21:28:55+00:00",
+  "n": 52
+ }
 }

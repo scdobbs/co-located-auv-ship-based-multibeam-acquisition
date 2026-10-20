@@ -50,11 +50,12 @@ def main():
              f"overviews, EPSG UTM, explicit nodata; values unchanged). {it['n_rasters']} rasters in {len(it['zips'])} zips; tiles table {int(pd.read_csv(C.OAK_DEST / 'package' / 'tiles.csv', usecols=['tile_id']).shape[0]) if (C.OAK_DEST / 'package' / 'tiles.csv').exists() else '—'} rows "
              f"(26,154 development incl. EW0207, 3,812 blind test 1, 2,088 blind test 2; the 22 R17 Escanaba tiles carry `excluded_r17`). "
              f"Zenodo-flat file count {sz['package']['n_files_zenodo']} (limit 100), {sz['package']['total_gb_zenodo']:.2f} GB (limit 50): within limits.")
-    L.append(f"2. **License audit (table below): no source forbids redistribution, so no stop; but the record cannot be uniformly CC BY 4.0 (HOLD H-1).** "
-             f"{n_ncsa} of {len(inc)} pairs contain an MGDS AUV grid published under CC BY-NC-SA (3.0 US or 4.0); those pairs are packaged with `pair_license` = CC BY-NC-SA 4.0 "
-             f"(non-commercial, share-alike), the rest and all corpus-level files as CC BY 4.0. {len(conf)} pair(s) have a source with no license in any DOI record: {', '.join(conf) or 'none'} "
-             f"(MGDS:32239, RC2511's HR; no DOI exists for that data set; MGDS default terms are CC BY-NC-SA) — `pair_license_status` = confirm. "
-             "Steve decides: (a) publish as a mixed-license record (README and pairs.csv already state the per-pair license), (b) publish the record as CC BY-NC-SA 4.0 overall, or (c) drop the NC-SA pairs (which would remove most of the corpus, including every blind-test site but SUM1004, AT42-03, AT26-24 and the development pairs from PANGAEA, USGS, MGDS CC BY).")
+    n_open = int(inc.sources_cc_by_or_public_domain_only.fillna(False).astype(bool).sum()) if "sources_cc_by_or_public_domain_only" in inc else None
+    L.append(f"2. **License audit (table below): no source forbids redistribution, so no stop. Ruling 2026-10-20 (H-1 option b) applied: the whole record is CC BY-NC-SA 4.0.** "
+             f"{n_ncsa} of {len(inc)} pairs contain an MGDS AUV grid published under CC BY-NC-SA (3.0 US or 4.0); every pair now carries `pair_license` = CC BY-NC-SA 4.0, LICENSE is the CC BY-NC-SA 4.0 text, "
+             f"CITATION.cff and the Zenodo metadata say cc-by-nc-sa-4.0, and the README lists each pair's source licenses: {n_open} pairs come only from CC BY / public-domain sources (`sources_cc_by_or_public_domain_only`). "
+             f"RC2511 stays: its HR grid MGDS:32239 has no DOI record, but the MGDS data set page (https://www.marine-geo.org/tools/files/32239) states \"License CC BY-NC-SA 4.0\" in its schema.org metadata and page text, "
+             f"so the confirm flag was dropped ({len(conf)} pair(s) remain at confirm: {', '.join(conf) or 'none'}).")
     L.append(f"3. **Reproduction from the packaged files only: {'PASS' if rp['pass'] else 'FAIL'}.** `examples/load_pair.py` ({sum(1 for _ in open(C.PKG / 'examples' / 'load_pair.py')) if (C.PKG / 'examples' / 'load_pair.py').exists() else '<60'} lines) "
              f"reproduced the frozen s_lr rho to 3 decimals on the five required pairs ({rp['n_required_pass']}/5: RR1506 interior, AR26 fallback, discol, RC2511, Escanaba with its 22 exclusions) "
              f"and on every scored pair of the corpus ({rp['n_all_pass']}/{rp['n_all']}). The rule is the frozen scorer's (interior view if >= 10 tiles in >= bmin blocks, else fallback on A_fine_int).")
@@ -70,7 +71,7 @@ def main():
              f"the archive-level `{C.OAK_DEST}/SHA256SUMS` and its sha256 are recorded in `preserve_verify.json` and in the `CHANGE_LEDGER.md` row. "
              f"Zenodo draft: {a.zenodo_url or 'not created (no token was provided; `zenodo_metadata.json` holds the suggested metadata)'}. "
              "Zenodo flattens folders: upload the pair zips, the top-level files, `blind_tests.zip` (built from `blind_tests/`) and `examples/load_pair.py` as `load_pair.py`.")
-    L.append(f"8. **Suggested Zenodo metadata (section 6.6; `zenodo_metadata.json`).** Title: *{zen['title']}*. Keywords: {', '.join(zen['keywords'])}. "
+    L.append(f"8. **Suggested Zenodo metadata (section 6.6; `zenodo_metadata.json`; license {zen.get('license')}; sole author; {zen.get('files_to_upload', {}).get('count')} files to upload).** Title: *{zen['title']}*. Keywords: {', '.join(zen['keywords'])}. "
              f"Related identifiers: GRL {C.PAPER_ID} (isSupplementTo; replace by the paper DOI), {C.CODE_RECORDS['ml_code']} and {C.CODE_RECORDS['acquisition_code']} (isSupplementTo, software). "
              f"Description ({zen['n_words_description']} words): {zen['description']}")
     # ---- size table
@@ -93,10 +94,28 @@ def main():
     L += ["", "## Plumbing fixes (one line each)", ""]
     for f in fixes:
         L.append(f"- [{f['stage']}] {f['pair'] or '—'}: {f['fix']}")
-    L += ["", "## HOLDs for Steve", "",
-          "- **H-1 (license of the record):** decide (a) mixed-license record as packaged, (b) CC BY-NC-SA 4.0 overall, or (c) drop the NC-SA pairs; and whether RC2511 (MGDS:32239, no DOI, license unstated) stays.",
-          "- **H-2 (Zenodo):** no token was provided, so no draft exists; with a token, `src/acq_r14/zenodo_upload.py` is not written — the upload is 70 files by the Zenodo deposition API; say whether to add that script.",
-          "- **H-3 (authors):** CITATION.cff and zenodo_metadata.json name one author; add co-authors before publishing.", ""]
+    # ---- ruling section (2026-10-20)
+    dev = inc[inc.group == "development"]
+    ten = dev[dev.unit_class == "ten"].groupby("unit").size()
+    six = dev[dev.unit_class == "six"].groupby("unit").size()
+    nsi = dev[(dev.unit_class == "ten") & (dev.view != "interior")][["pair_id", "unit", "view", "n_scored", "scoring_status"]]
+    L += ["", "## Ruling 2026-10-20 (Steve) applied: H-1 option (b)", "",
+          f"- Record license CC BY-NC-SA 4.0 for every pair and the corpus-level files; README source-license table added; RC2511 kept (MGDS data set page states CC BY-NC-SA 4.0; confirm flag dropped).",
+          f"- zenodo_metadata.json: purpose phrase replaced, 'super-resolution' dropped and 'seafloor roughness' added to the keywords, 'meters', sole author (no co-author placeholder), license cc-by-nc-sa-4.0, files to upload = {zen.get('files_to_upload', {}).get('count')} (no upload script, per ruling).",
+          f"- **Resolution ranges as written (measured from pairs.csv, not the ruling's numbers):** AUV grids {zen.get('resolution_ranges_m', {}).get('auv_hr_res', [None, None])[0]:.2f}-{zen.get('resolution_ranges_m', {}).get('auv_hr_res', [None, None])[1]:.2f} m "
+          f"and ship grids {zen.get('resolution_ranges_m', {}).get('ship_lr_native', [None, None])[0]:.2f}-{zen.get('resolution_ranges_m', {}).get('ship_lr_native', [None, None])[1]:.2f} m. "
+          "The ruling said 1-3.25 m and 10-151 m; AT42-06__MGDS_5174 (ABE grid, lu05) has a 4.99 m HR pixel and MV1209__MGDS_21415 an 8.73 m ship native cell, so those bounds would be wrong for one pair each. "
+          "The description states the measured ranges; say the word if the ruling's numbers are to be used verbatim.",
+          "- Every pair.json and zip was rewritten from the unchanged staged COGs (`relicense.py`), the corpus-level files regenerated, SHA256SUMS rebuilt, all checks re-run and the OAK copy re-verified (job in the header).",
+          "", "### Pairs per unit (from pairs.csv)", "", "| class | unit | pairs |", "|---|---|---|"]
+    L += [f"| ten (real-relief) | {u} | {n} |" for u, n in ten.items()] + [f"| **ten total** | 10 units | {int(ten.sum())} |"]
+    L += [f"| six (artifact-affected) | {u} | {n} |" for u, n in six.items()] + [f"| **six total** | 6 units | {int(six.sum())} |"]
+    L += ["", "### Real-relief pairs not scored on interior tiles", "", "| pair | unit | view | n_scored | status |", "|---|---|---|---|---|"]
+    L += [f"| {r.pair_id} | {r.unit} | {r.view} | {int(r.n_scored) if pd.notna(r.n_scored) else '—'} | {r.scoring_status} |" for r in nsi.itertuples()]
+    L += ["", "The real-relief pair that is **not scorable** is AT42-06__MGDS_5174 (lu05): too few tiles / blocks for either view. TN399__MGDS_33068 and AR26__MGDS_31838 are scored on the fallback view (A_fine_int), not on interior tiles.", "",
+          "## HOLDs for Steve", "",
+          "- **H-2 (Zenodo):** no token was provided, so no draft exists; no upload script (ruling). `zenodo_metadata.json` holds the metadata and the file rule.",
+          "- **H-4 (resolution ranges):** confirm the measured ranges in the description (see the ruling section) or instruct that 1-3.25 m / 10-151 m be written verbatim.", ""]
     out = C.RPT / f"REPORT_{C.DIRECTIVE_ID}_{DATE}.md"
     out.write_text("\n".join(L))
     C.log(f"report -> {out}")

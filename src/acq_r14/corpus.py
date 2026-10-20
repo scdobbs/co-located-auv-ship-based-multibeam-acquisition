@@ -54,15 +54,16 @@ PAIR_COLS = {  # pairs table: column -> (description, units)
     "hr_cruise": ("HR acquisition cruise", ""), "hr_platform": ("HR platform (AUV)", ""), "hr_sonar": ("HR sonar", ""), "hr_license": ("HR source license (landing-page metadata)", ""),
     "lr_dataset_id": ("LR source (NCEI:<survey> or DOI)", ""), "lr_doi": ("LR DOI (provider grids only)", ""), "lr_cruise": ("ship cruise / NCEI survey", ""),
     "lr_platform": ("ship platform", ""), "lr_sonar": ("ship sonar", ""), "lr_license": ("LR source license", ""),
-    "pair_license": ("license of the released pair (CC BY 4.0, or CC BY-NC-SA 4.0 where the HR source is CC BY-NC-SA)", ""),
-    "pair_license_status": ("yes | yes_conditional | confirm (redistribution audit)", ""),
+    "pair_license": ("license of the released pair: CC BY-NC-SA 4.0 for every pair (the whole record is CC BY-NC-SA 4.0)", ""),
+    "pair_license_status": ("source audit: yes (all sources CC BY / public domain) | yes_conditional (a source is CC BY-NC-SA) | confirm", ""),
+    "sources_cc_by_or_public_domain_only": ("True if every source data set of the pair is CC BY, CC0 or public domain (reusable under those terms from the sources)", ""),
     "hr_res": ("HR pixel of hr.tif as used", "m"), "hr_native_res_m": ("HR native resolution from the manifest", "m"),
     "lr_native": ("ship native cell by the C2a rule, max(beam footprint, posting)", "m"), "lr_pixel_m": ("pixel of lr.tif", "m"),
     "res_ratio": ("lr_native / hr_res", ""), "crs_epsg": ("projected CRS of all rasters of the pair", "EPSG code"),
     "vertical_reference": ("vertical reference statement", ""),
     "k": ("max recoverable super-resolution factor (2..32), empty if none", ""), "k_status": ("k sweep status", ""),
     "coreg_case": ("rigid | drift (blind test 2 local co-registration)", ""), "coreg_dx_m": ("HR -> ship shift, easting", "m"), "coreg_dy_m": ("HR -> ship shift, northing", "m"),
-    "coreg_dz_m": ("HR -> ship vertical shift (includes the datum alignment where |dz| is thousands of metres)", "m"), "coreg_offset_m": ("horizontal shift magnitude", "m"),
+    "coreg_dz_m": ("HR -> ship vertical shift (includes the datum alignment where |dz| is thousands of meters)", "m"), "coreg_offset_m": ("horizontal shift magnitude", "m"),
     "coreg_pass": ("co-registration accepted (True), or empty where only a status string was recorded", ""), "coreg_status": ("recorded co-registration status", ""),
     "coreg_n_quadrant_groups": ("blind test 2: quadrant groups used", ""), "coreg_tiles_dropped_boundary": ("blind test 2 drift case: lattice tiles zeroed at group boundaries", ""),
     "datum_G": ("G = V95_rel datum statistic (development pairs)", ""), "datum_pass": ("G <= T_G (0.200712), or the recorded boolean (blind test 2)", ""),
@@ -100,7 +101,7 @@ def _pair_row(pj: dict, br: dict) -> dict:
             "site_name": idn.get("site_name"), "region": idn.get("region"), "terrain_class": idn.get("terrain_class"),
             "hr_dataset_id": s["hr"]["dataset_id"], "hr_doi": s["hr"]["doi"], "hr_title": s["hr"]["title"], "hr_cruise": s["hr"]["cruise"], "hr_platform": s["hr"]["platform"], "hr_sonar": s["hr"]["sonar"], "hr_license": s["hr"]["license"],
             "lr_dataset_id": s["lr"]["dataset_id"], "lr_doi": s["lr"]["doi"], "lr_cruise": s["lr"]["cruise"], "lr_platform": s["lr"]["platform"], "lr_sonar": s["lr"]["sonar"], "lr_license": s["lr"]["license"],
-            "pair_license": s["pair_license"], "pair_license_status": s["pair_license_status"],
+            "pair_license": s["pair_license"], "pair_license_status": s["pair_license_status"], "sources_cc_by_or_public_domain_only": s.get("sources_cc_by_or_public_domain_only"),
             "hr_res": g["hr_res"], "hr_native_res_m": g["hr_native_res_m"], "lr_native": g["lr_native"], "lr_pixel_m": g["lr_pixel_m"], "res_ratio": g["res_ratio"], "crs_epsg": g["crs_epsg"], "vertical_reference": g["vertical_reference"],
             "k": k["max_recoverable_k"], "k_status": k["status"],
             "coreg_case": cr["case"], "coreg_dx_m": cr["dx_m"], "coreg_dy_m": cr["dy_m"], "coreg_dz_m": cr["dz_m"], "coreg_offset_m": cr["offset_m"], "coreg_pass": cr["pass"], "coreg_status": cr["status_recorded"],
@@ -216,8 +217,22 @@ def write_docs(inv, pairs: pd.DataFrame, n_tiles: int, n_excl: int, lic: dict):
     n_dev, n_b1, n_b2 = (inc.group == "development").sum(), (inc.group == "blind_test_1").sum(), (inc.group == "blind_test_2").sum()
     n_ncsa = (inc.pair_license_status == "yes_conditional").sum()
     n_conf = (inc.pair_license_status == "confirm").sum()
+    n_open = int(inc.sources_cc_by_or_public_domain_only.fillna(False).astype(bool).sum())
     tot_gb = inc.zip_bytes.sum() / 1e9
     conf_pairs = ", ".join(inc[inc.pair_license_status == "confirm"].pair_id)
+    short = {}
+    for k, d in lic["datasets"].items():
+        l = d["license"].lower()
+        short[k] = ("CC BY-NC-SA" if "noncommercial" in l.replace(" ", "").replace("-", "") or "by-nc-sa" in l else "CC0 / public domain" if ("public domain" in l or "cc0" in l)
+                    else "CC BY" if "attribution" in l else d["license"][:40])
+    src_rows = []
+    for e in inv["entries"]:
+        if not e["in_corpus"]:
+            continue
+        ids = {r["side"]: r["id"] for r in lic["rows"] if r["pair_id"] == e["pair_id"]}
+        src_rows.append((e["pair_id"], e["group"], ids.get("hr"), short.get(ids.get("hr"), "?"), ids.get("lr"), short.get(ids.get("lr"), "?"),
+                         "yes" if lic["per_pair"][e["pair_id"]]["sources_cc_by_or_public_domain_only"] else "no"))
+    src_table = "\n".join(f"| {p} | {g} | {hid} | {hl} | {lid} | {ll} | {o} |" for p, g, hid, hl, lid, ll, o in src_rows)
     n_hr_mismatch = int(((inc.hr_res - inc.hr_native_res_m).abs() > 0.05 * inc.hr_native_res_m.clip(lower=1e-6)).sum())
     readme = f"""# Co-located ship and AUV multibeam bathymetry corpus (processed grids, masks, co-registration and tile tables)
 
@@ -275,7 +290,7 @@ CITATION.cff, LICENSE, SHA256SUMS
 ```
 
 All rasters: Cloud-Optimized GeoTIFF, DEFLATE with predictor, internal overviews, the pair's projected CRS as an EPSG code
-(local UTM), explicit nodata (NaN or -9999 for grids, as used; 255 for masks). Elevations are in metres, positive up (seafloor
+(local UTM), explicit nodata (NaN or -9999 for grids, as used; 255 for masks). Elevations are in meters, positive up (seafloor
 depths are negative); the vertical reference is stated per pair in `pair.json` (`grids.vertical_reference`). The masks are on the
 HR grid; `lr_valid` is the ship grid's validity resampled (nearest) to the HR lattice.
 
@@ -287,10 +302,15 @@ Cite this record (CITATION.cff) **and** each source data set you use: every pair
 
 ## License
 
-The corpus-level files (tables, documentation, scripts) and the pairs whose sources are public domain or CC BY are released
-under CC BY 4.0 (LICENSE). {n_ncsa} pairs contain an AUV grid published by MGDS under CC BY-NC-SA; those pairs are redistributed
-under **CC BY-NC-SA 4.0** (non-commercial, share-alike) as `pair_license` states in `pairs.csv` and `pair.json`. {n_conf} pair(s) have a
-source without a license statement in its DOI record ({conf_pairs}); `pair_license_status` = confirm.
+The whole record, every pair and the corpus-level files (tables, documentation, scripts) are released under
+**CC BY-NC-SA 4.0** (LICENSE): {n_ncsa} pairs contain an AUV grid published by MGDS under CC BY-NC-SA, whose share-alike
+condition applies to the derived grids, and the record takes that license as a whole. The table below lists each pair's
+source licenses; {n_open} pairs come only from CC BY, CC0 or public-domain sources (`sources_cc_by_or_public_domain_only` in
+`pairs.csv`), and those sources can be reused under their own terms directly from the providers.{(' ' + str(n_conf) + ' pair(s) have a source without a stated license (' + conf_pairs + ').') if n_conf else ''}
+
+| pair | group | HR source | HR license | LR source | LR license | CC BY / public-domain sources only |
+|---|---|---|---|---|---|---|
+{src_table}
 
 ## Known limitations
 
@@ -351,7 +371,7 @@ title: "Co-located ship and AUV multibeam bathymetry corpus: processed grids, ma
 version: "{C.RELEASE_VERSION}"
 date-released: "2026-10-20"
 type: dataset
-license: CC-BY-4.0
+license: CC-BY-NC-SA-4.0
 authors:
   - family-names: Dobbs
     given-names: Stephen Cole
@@ -371,28 +391,35 @@ related-identifiers:
   - type: doi
     value: "{C.CODE_RECORDS['acquisition_code']}"
     relation: isSupplementTo
-notes: "Companion data release of GRL manuscript {C.PAPER_ID}. {n_ncsa} pairs are CC BY-NC-SA 4.0 (see pairs.csv pair_license)."
+notes: "Companion data release of GRL manuscript {C.PAPER_ID}. The whole record is CC BY-NC-SA 4.0; {n_ncsa} pairs contain a CC BY-NC-SA source grid, {n_open} pairs come only from CC BY / public-domain sources (see pairs.csv)."
 """
     (C.PKG / "CITATION.cff").write_text(cff)
-    shutil.copyfile(HERE / "LICENSE_CC_BY_4.0.txt", C.PKG / "LICENSE")
+    shutil.copyfile(HERE / "LICENSE_CC_BY_NC_SA_4.0.txt", C.PKG / "LICENSE")
     (C.PKG / "examples").mkdir(exist_ok=True)
     shutil.copyfile(HERE / "load_pair.py", C.PKG / "examples" / "load_pair.py")
     shutil.copyfile(C.RPT / "license_audit.csv", C.PKG / "SOURCE_LICENSES.csv")
     # ---- suggested Zenodo metadata (directive section 6.6)
-    desc = (f"Processed co-located seafloor bathymetry pairs for validating super-resolution of ship multibeam: {len(inc)} pairs, each a near-bottom AUV "
-            f"multibeam grid (1-2 m) and the independent hull-mounted ship multibeam grid (10-150 m native cells) of the same footprint, harmonized to a common UTM "
+    hr_lo, hr_hi = inc.hr_res.min(), inc.hr_res.max()
+    lr_lo, lr_hi = inc.lr_native.min(), inc.lr_native.max()
+    hr_range = f"{hr_lo:.0f}-{hr_hi:.2f} m" if hr_hi < 3.5 else f"{hr_lo:.0f}-{hr_hi:.0f} m"
+    lr_range = f"{lr_lo:.0f}-{lr_hi:.0f} m"
+    desc = (f"Processed co-located seafloor bathymetry pairs for testing whether ship multibeam ranks unresolved meter-scale seafloor relief: {len(inc)} pairs, each a near-bottom AUV "
+            f"multibeam grid ({hr_range}) and the independent hull-mounted ship multibeam grid ({lr_range} native cells) of the same footprint, harmonized to a common UTM "
             f"grid and co-registered, with validity masks, per-sounding ship product rasters, co-registration parameters, the datum statistic, and the frozen tile "
             f"tables (s_lr, A_fine, held-out GBT_ship and P-V1 predictions) that reproduce every score in the paper. Groups: development ({n_dev} pairs, 16 units + EW0207), "
             f"blind test 1 ({n_b1} pairs) and blind test 2 ({n_b2} sites), plus a manifest of excluded pairs. Both pre-registrations, the committed blind calls, deviation "
-            f"notes and scoring outputs are included. Cloud-Optimized GeoTIFF, metres positive up, EPSG UTM codes. Sources: MGDS/IEDA, NOAA NCEI, PANGAEA, USGS; "
-            f"each source data set must be cited. {n_ncsa} pairs inherit CC BY-NC-SA from their AUV grid.")
+            f"notes and scoring outputs are included. Cloud-Optimized GeoTIFF, meters positive up, EPSG UTM codes. Sources: MGDS/IEDA, NOAA NCEI, PANGAEA, USGS; "
+            f"each source data set must be cited. The record is CC BY-NC-SA 4.0; {n_open} pairs come only from CC BY / public-domain sources.")
+    n_zen = len([p for p in C.PKG.iterdir() if p.is_file() and p.name != "SHA256SUMS"]) + 2   # top-level files + SHA256SUMS + examples/load_pair.py
     zen = {"title": "Co-located ship and AUV multibeam bathymetry corpus: processed grids, masks, co-registration and tile tables (companion data of GRL 2026GL125574)",
-           "upload_type": "dataset", "description": desc, "n_words_description": len(desc.split()), "license": "cc-by-4.0 (record); per-pair CC BY-NC-SA 4.0 where inherited, see pairs.csv",
-           "keywords": ["bathymetry", "multibeam", "AUV", "seafloor", "super-resolution", "co-located surveys", "NCEI", "MGDS", "PANGAEA", "USGS", "Cloud-Optimized GeoTIFF"],
+           "upload_type": "dataset", "description": desc, "n_words_description": len(desc.split()), "license": "cc-by-nc-sa-4.0",
+           "keywords": ["bathymetry", "multibeam", "AUV", "seafloor", "seafloor roughness", "co-located surveys", "NCEI", "MGDS", "PANGAEA", "USGS", "Cloud-Optimized GeoTIFF"],
            "related_identifiers": [{"identifier": "GRL 2026GL125574", "relation": "isSupplementTo", "note": "replace by the paper DOI when assigned"},
                                    {"identifier": C.CODE_RECORDS["ml_code"], "relation": "isSupplementTo", "resource_type": "software"},
                                    {"identifier": C.CODE_RECORDS["acquisition_code"], "relation": "isSupplementTo", "resource_type": "software"}],
-           "creators": [{"name": "Dobbs, Stephen Cole", "affiliation": "Stanford University"}], "version": C.RELEASE_VERSION, "publication_date": "2026-10-20"}
+           "creators": [{"name": "Dobbs, Stephen Cole", "affiliation": "Stanford University"}], "sole_author": True, "version": C.RELEASE_VERSION, "publication_date": "2026-10-20",
+           "files_to_upload": {"count": n_zen, "rule": "all top-level files (pair zips, tables, docs, blind_tests.zip, SHA256SUMS) plus examples/load_pair.py uploaded as load_pair.py; the blind_tests/ folder is uploaded as blind_tests.zip"},
+           "resolution_ranges_m": {"auv_hr_res": [float(hr_lo), float(hr_hi)], "ship_lr_native": [float(lr_lo), float(lr_hi)]}}
     C.jdump(zen, C.PKG / "zenodo_metadata.json")
     C.jdump(zen, C.RPT / "zenodo_metadata.json")
 

@@ -139,7 +139,7 @@ def _coreg(e: dict) -> dict:
                        "joint_valid_area_km2": R["stage_f5"].get("joint_valid_area_km2"), "n_valid_tiles": R["stage_f5"].get("n_valid_tiles"), "bucket": R["stage_f5"].get("bucket")},
                    initial_estimate={"dx_m": f.get("coreg_dx"), "dy_m": f.get("coreg_dy"), "dz_m": f.get("coreg_dz"), "offset_m": f.get("horiz_offset_m"), "psr": f.get("psr"), "source": "stage_f_results.json (first pass, superseded by the F5 re-co-registration)"} if f else None,
                    datum_repair={"dz_apply_m": rep.get("dz_apply"), "repair_mode": rep.get("repair_mode"), "status": rep.get("status"),
-                                 "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of metres"} if rep else None,
+                                 "note": "June stage F repair: the HR grid was shifted vertically onto the ship datum; dz_m above includes that datum alignment where |dz| is thousands of meters"} if rep else None,
                    method="June stage F5 re-co-registration on the masked overlap: horizontal cross-correlation peak (PSR / eigen-ratio QA) and vertical median alignment to the ship grid; QGIS review R3 approved",
                    source="reports/discovery/stage_f5_results.json recoreg (+ stage_f_repair_results.json)")
         st = str(m.get("coreg_status") or "")
@@ -311,7 +311,7 @@ def build_pair(args) -> dict:
         "grids": {"hr_res": hr_px, "hr_native_res_m": hr_native, "lr_native": C.nan_to_none(m.get("lr_native_res_m")), "lr_pixel_m": lr_px,
                   "res_ratio": (C.nan_to_none(m.get("lr_native_res_m")) / hr_px) if C.nan_to_none(m.get("lr_native_res_m")) else None,
                   "crs_epsg": headers["hr"]["cog"]["crs_epsg"], "crs": f"EPSG:{headers['hr']['cog']['crs_epsg']}",
-                  "vertical_reference": _vertical_reference(e), "elevation_units": "metres, positive up (seafloor depths are negative)",
+                  "vertical_reference": _vertical_reference(e), "elevation_units": "meters, positive up (seafloor depths are negative)",
                   "nodata": {k: headers[k]["cog"]["nodata"] for k in GRIDS + MASKS}, "mask_grid": "all three masks are on the HR grid (lr_valid = isfinite(lr) resampled nearest to the HR lattice)",
                   "headers": {k: headers[k]["cog"] for k in headers}, "stats": {k: headers[k]["stats"] for k in GRIDS},
                   "source_headers": {k: headers[k]["source"] for k in GRIDS + MASKS}},

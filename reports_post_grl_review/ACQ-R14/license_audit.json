@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T18:20:13+00:00",
+ "generated": "2026-10-20T21:25:05+00:00",
  "datasets": {
   "MGDS:29779": {
    "id": "MGDS:29779",
@@ -1063,13 +1063,18 @@
    "id": "MGDS:32239",
    "provider": "MGDS",
    "doi": null,
-   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:32239",
+   "landing": "https://www.marine-geo.org/tools/files/32239",
    "title": "MBARI Mapping AUV near-bottom processed swath bathymetry gridded data (netCDF format) at the Mid-Atlantic Ridge Puy des Folles Seamount, EMARK Massif, Falkor EMARK Vents, and Hydra (Grappe Deux) (2023)",
-   "found": false,
-   "evidence": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:32239",
-   "rights": [],
-   "license": "no DOI record found; MGDS default terms (CC BY-NC-SA, per MGDS data policy; ACQ-R08 H-3)",
-   "redistribution": "confirm"
+   "found": true,
+   "evidence": "https://www.marine-geo.org/tools/files/32239",
+   "rights": [
+    {
+     "rights": "CC BY-NC-SA 4.0",
+     "source": "schema.org JSON-LD on the MGDS data set page"
+    }
+   ],
+   "license": "CC BY-NC-SA 4.0 (stated on the MGDS data set page; no DOI record)",
+   "redistribution": "yes_conditional"
   },
   "NCEI:RC2511": {
    "id": "NCEI:RC2511",
@@ -1634,8 +1639,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "discol_so242_1": {
    "sources": [
@@ -1646,8 +1652,9 @@
     "Creative Commons Attribution 4.0 International",
     "Creative Commons Attribution 4.0 International"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "AT37-13__MGDS_31199": {
    "sources": [
@@ -1658,8 +1665,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "TN399__MGDS_30373": {
    "sources": [
@@ -1670,8 +1678,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "TN399__MGDS_33068": {
    "sources": [
@@ -1682,8 +1691,9 @@
     "Creative Commons Attribution 4.0 International",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "AT42-06__MGDS_5174": {
    "sources": [
@@ -1694,8 +1704,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "ccz_so268_1": {
    "sources": [
@@ -1706,8 +1717,9 @@
     "Creative Commons Attribution 4.0 International",
     "Creative Commons Attribution 4.0 International"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "EW9801__MGDS_31425": {
    "sources": [
@@ -1718,8 +1730,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "KM0923__MGDS_31429": {
    "sources": [
@@ -1730,8 +1743,9 @@
     "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "FK181031__MGDS_24618": {
    "sources": [
@@ -1742,8 +1756,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "tag_m127": {
    "sources": [
@@ -1754,8 +1769,9 @@
     "Creative Commons Attribution 4.0 International",
     "Creative Commons Attribution 4.0 International"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "NA090__MGDS_31212": {
    "sources": [
@@ -1766,8 +1782,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "NA076__MGDS_32317": {
    "sources": [
@@ -1778,8 +1795,9 @@
     "Creative Commons Attribution 4.0 International",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__20180426m2_Channel1000": {
    "sources": [
@@ -1790,8 +1808,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__20180427m1_Channel700": {
    "sources": [
@@ -1802,8 +1821,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__20180427m3_PockmarkNorth": {
    "sources": [
@@ -1814,8 +1834,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__20180428m1_Cable": {
    "sources": [
@@ -1826,8 +1847,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__201804_LuciaChica2m": {
    "sources": [
@@ -1838,8 +1860,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__20190314m4_LuciaChica970m": {
    "sources": [
@@ -1850,8 +1873,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__20190315m1_HeadlessCanyon": {
    "sources": [
@@ -1862,8 +1886,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__20190316m1_BankTop": {
    "sources": [
@@ -1874,8 +1899,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__20190317m1_1000mGully": {
    "sources": [
@@ -1886,8 +1912,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__20190317m2_600mGully": {
    "sources": [
@@ -1898,8 +1925,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__20190318m2_Transect601060m": {
    "sources": [
@@ -1910,8 +1938,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__20190510m1_BankFlankHoles": {
    "sources": [
@@ -1922,8 +1951,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__20190510m2_BankFlankIncipCh": {
    "sources": [
@@ -1934,8 +1964,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__20190511m1_6thHeadlessCany": {
    "sources": [
@@ -1946,8 +1977,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__20190511m2_BankTopEofCanyon3": {
    "sources": [
@@ -1958,8 +1990,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__basin_flank": {
    "sources": [
@@ -1970,8 +2003,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__luciachica_2007": {
    "sources": [
@@ -1982,8 +2016,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "cal_dig_morro_bay__pockmark_south": {
    "sources": [
@@ -1994,8 +2029,9 @@
     "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
     "CC0 1.0 / public domain"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "NA080__MGDS_31290": {
    "sources": [
@@ -2006,8 +2042,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "NA080__MGDS_31289": {
    "sources": [
@@ -2018,8 +2055,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "AR26__MGDS_31838": {
    "sources": [
@@ -2030,8 +2068,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "TN299__MGDS_27339": {
    "sources": [
@@ -2042,8 +2081,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "TN299__MGDS_31253": {
    "sources": [
@@ -2054,8 +2094,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "FK151121__MGDS_22383": {
    "sources": [
@@ -2066,8 +2107,9 @@
     "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "EX1402L2__MGDS_31073": {
    "sources": [
@@ -2078,8 +2120,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "EW0207__MGDS_32556": {
    "sources": [
@@ -2090,8 +2133,9 @@
     "Creative Commons Attribution 4.0 International",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "KN182L03__MGDS_30193": {
    "sources": [
@@ -2102,8 +2146,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "RC2511__MGDS_32239": {
    "sources": [
@@ -2111,11 +2156,12 @@
     "NCEI:RC2511"
    ],
    "source_licenses": [
-    "no DOI record found; MGDS default terms (CC BY-NC-SA, per MGDS data policy; ACQ-R08 H-3)",
+    "CC BY-NC-SA 4.0 (stated on the MGDS data set page; no DOI record)",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY 4.0 proposed; one source license not stated in a DOI record (confirm)",
-   "status": "confirm"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "SUM1004__MGDS_33090": {
    "sources": [
@@ -2126,8 +2172,9 @@
     "Creative Commons Attribution 4.0 International",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "AT42-03__MGDS_32007": {
    "sources": [
@@ -2138,8 +2185,9 @@
     "Creative Commons Attribution 4.0 International",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   },
   "TN159__MGDS_21981": {
    "sources": [
@@ -2150,8 +2198,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "TN188__MGDS_18210": {
    "sources": [
@@ -2162,8 +2211,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "Escanaba__MGDS_30368": {
    "sources": [
@@ -2174,8 +2224,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "Monterey__MGDS_24756": {
    "sources": [
@@ -2186,8 +2237,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "KN161L04__MGDS_22436": {
    "sources": [
@@ -2198,8 +2250,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "MV1209__MGDS_21415": {
    "sources": [
@@ -2210,8 +2263,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "KN173L02__MGDS_31675": {
    "sources": [
@@ -2222,8 +2276,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "MV1003__MGDS_31860": {
    "sources": [
@@ -2234,8 +2289,9 @@
     "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
-   "status": "yes_conditional"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes_conditional",
+   "sources_cc_by_or_public_domain_only": false
   },
   "AT26-24__MGDS_31954": {
    "sources": [
@@ -2246,8 +2302,9 @@
     "Creative Commons Attribution 4.0 International",
     "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
    ],
-   "pair_license": "CC BY 4.0",
-   "status": "yes"
+   "pair_license": "CC BY-NC-SA 4.0",
+   "status": "yes",
+   "sources_cc_by_or_public_domain_only": true
   }
  },
  "rows": [

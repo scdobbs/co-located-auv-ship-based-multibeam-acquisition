@@ -1,0 +1,614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>FKt230303 Data - Marine Geoscience Data System</title>
+	<meta name="Description" content="MBARI Mapping AUV near-bottom processed swath bathymetry gridded data (netCDF format) at the Mid-Atlantic Ridge Puy des Folles Seamount, EMARK Massif, Falkor EMARK Vents, and Hydra (Grappe Deux) (2023)" />
+	<meta name="Keywords" content="Antartic, Bathymetry, MARGINS, Ridge 2000, Seismic Reflection, GeoMapApp, The Marine Geoscience Data System, MGDS, provides access to data portals for the NSF-supported, Ridge 2000 and MARGINS programs, the Antarctic and Southern Ocean Data Synthesis,  the Global Multi-Resolution Topography Synthesis, and Seismic Reflection Field Data Portal. These portals were developed and are maintained as a single integrated system, providing free public access to a wide variety of primarily marine geoscience data collected during expeditions throughout the global oceans.  In addition to these Data Portals, MGDS also is host to the US Antarctic Program Data Coordination Center (USAP-DCC) which provides tools to help  scientists find Antarctic data of interest and satisfy their obligation to share data under the NSF Office of Polar Programs (OPP) data policy.  The MGDS expedition catalog and data repository is powered by a relational database, which can be queried through web-based keyword and map searches, and is accessible through web services that follow the specifications of the Open Geospatial Consortium (OGC)." />
+    <link rel="stylesheet" type="text/css" href="/css/tabbedcontent.css?a=20200614"/>
+    <link rel="stylesheet" type="text/css" href="/tools/search/css/expansion.css?a=20200721"/>
+    <link rel="stylesheet" type="text/css" href="/tools/search/css/filespage.css?a=20200721"/>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<meta name="Copyright" content="Copyright (c) 2026 Marine Geoscience Data System" />
+	<meta name="Author" content="Design by J. Morton, V. Ferrini, and S. O'Hara" />
+
+	<link rel="stylesheet" type="text/css" href="/css/main.css?q=20261020" media="all" />
+	<link rel="stylesheet" type="text/css" href="/css/mapv3.css?q=20261020&amp;b=3" media="all" />
+	<link rel="stylesheet" type="text/css" href="/css/icons.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="/inc/jquery-ui-1.10.2.custom/css/smoothness/jquery-ui-1.10.2.custom.min.css" media="all" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" integrity="sha512-jGR1T3dQerLCSm/IGEGbndPwzszJBlKQ5Br9vuB0Pw2iyxOy+7AK+lJcCC8eaXyz/9du+bkCy4HXxByhxkHf+w==" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/inc/jquery-ui-1.10.2.custom.min.js"></script>
+	<script type="text/javascript" src="/inc/general.js?q=20261020"></script>
+	<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e568be608ebfd12"></script>
+	<script type="text/javascript">
+    	var addthis_config = {"data_track_clickback":true};
+	</script>
+    <script type="text/javascript" src="/tools/search/jquery.tinysort.min.js"></script>
+    <script type="text/javascript">
+        var tab = window.location.hash;
+        var internal = false;
+        var is_released = true;
+        var by_request_only = false;
+        var data_set_uid = 32239;
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.11.0/underscore-min.js" integrity="sha512-wBiNJt1JXeA/ra9F8K2jyO4Bnxr0dRPsy7JaMqSlxqTjUGHe1Z+Fm5HMjCWqkIYvp/oCbdJEivZ5pLvAtK0csQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js" integrity="sha512-9EgQDzuYx8wJBppM4hcxK8iXc5a1rFLp/Chug4kIcSWRDEgjMiClF8Y3Ja9/0t8RDDg19IfY5rs6zaPS9eaEBw==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/tools/search/js/common.js?a=20200721"></script>
+    <script type="text/javascript" src="/tools/search/js/filesmodel.js?a=20200721"></script>
+    <script type="text/javascript" src="/tools/search/js/filespage.js?a=20200721"></script>
+
+</head>
+<body class="newtext">
+	<div id="wrapper">
+        <!-- mgds-header start -->
+<div id="mgds-header">
+	<a href="/index.php">
+		<img src="/images/mgdslogofull.png" alt="Marine Geoscience Data System" title="Marine Geoscience Data System">
+	</a>
+</div>
+
+
+<div id="menu-wrap">
+         <ul id="menu">
+             <!--<li><a href="/"><img src="/imgs/menu_home.gif" alt="Home Icon"/> Home</a></li>-->
+                <li><a href="#">About</a>
+                        <ul id="menu_about">
+                            <li><a href="/about/overview.php">MGDS Overview</a></li>
+                            <li><a href="/about/news.php">News</a></li>
+                            <li><a href="/about/citations.php">System Citations</a></li>
+                            <li><a href="/about/statistics_holdings.php">Statistics &amp; Holdings</a></li>
+                            <li><a href="/about/contact.php">Contact Us</a></li>
+                            <li><a href="/about/terms_of_use.php">Terms of Use</a></li>
+                        </ul>
+                </li>
+                <li><a class="cur" href="#">Tools</a>
+                        <ul id="menu_tools">
+                            <li><a href="/submit">Contribute Data</a></li>
+                            <li><a href="/tools/search/">Search for Data</a></li>
+                            <li><a href="/tools/kmls.php">Google Earth KMLs</a></li>
+                            <li><a href="/tools/search/cruise_explorer.php">Marine-Geo Explorer</a></li>
+                            <li><a href="/references/">Reference Search</a></li>
+                            <li><a href="/tools/web_services.php">Web Services</a></li>
+               </ul>
+                </li>
+                <li><a  href="/collections/">Data Collections</a>
+                        <ul id="menu_portals">
+                                <li><a href="/collections/#!/collection/Seismic">Academic Seismic Portal</a></li>
+                                <li><a href="/collections/#!/collection/USAP">Antarctic &amp; Southern Ocean</a></li>
+                                <li><a href="/collections/#!/collection/GeoPRISMS">GeoPRISMS</a></li>
+                                <li><a href="/collections/#!/collection/MARGINS">MARGINS</a></li>
+                                <li><a href="/collections/#!/collection/Ridge2000">Ridge 2000</a></li>
+                                <li><a href="/collections/#!/collection/LIS">Long Island Sound</a></li>
+                        </ul>
+                </li>
+
+                <li><a href="#">Resources</a>
+                   <ul id="menu_ieda">
+                       <li><a href="/about/publication.php">Data Publication</a></li>
+                       <!--<li><a href="http://www.iedadata.org/compliance/report">Data Compliance Reports</a></li>-->
+                       <li><a href="https://ezdmp.org/">Data Management Plan</a></li>
+                       <!--<li><a href="/education/modules.php">Education Modules</a></li>-->
+                       <li><a href="/help/index.php">Help &amp; Tutorials</a></li>
+					   <li><a href="/resources/related_links.php">Related Links</a></li>
+                   </ul>
+                </li>
+                <li style="float:right;"><a href="/tools/search/" style="background:none;"><div id="menu_search_button"> Search Data &raquo;</div></a></li>
+         </ul>
+
+</div>
+<script type="text/javascript">
+		$document = $(document);
+		$document.ready(function(){
+				$document.scroll(function() {
+					$('#menu-wrap').toggleClass('fixedtotop', $document.scrollTop() >= 73);
+					$('#content').toggleClass('fixedtotop', $document.scrollTop() >= 73);
+				});
+		});
+
+</script>
+
+<div style="clear:both"></div>
+<div id="browser_warning"></div>
+<div style="clear:both"></div>
+<div id="container" class="addthis_toolbox addthis_default_style" style="min-height:24px;">
+    <a class="addthis_button_email"></a>
+    <a class="addthis_button_google"></a>
+    <a class="addthis_button_facebook"></a>
+    <a href="https://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4e568be608ebfd12" class="addthis_button_compact"></a>
+</div>
+<div style="clear:both" ></div>
+		<div id="content">
+            <script type="application/ld+json">
+			{
+                "@context": "https://schema.org/",
+                "@type":"Dataset",
+                "name":"MBARI Mapping AUV near-bottom processed swath bathymetry gridded data (netCDF format) at the Mid-Atlantic Ridge Puy des Folles Seamount, EMARK Massif, Falkor EMARK Vents, and Hydra (Grappe Deux) (2023)",
+                "description":"This processed swath bathymetry data set was collected by MBARI Mapping AUVs and consists of grids compiled for the four sites: the summit of Puy des Folles Seamount from missions 20230310m1, 20230310m2, and 20230402m1; the EMARK Massif from missions 20230314m1, 20230314m2, 20230315m1, 20230316m1, 20230317m1, 20230317m2, 20230318m1, 20230319m1, 20230319m2; the Falkor EMARK Vents from missions 20230321m1, 20230321m2, and 20230323m1; and Hydra (Grappe Deux) from missions 20230325m1, 20230326m1, 20230328m1, and 20230329m1 (investigators David Caress, Jeffrey Beeson, Jennifer Paduan, Sharon Walker, David Butterfield). The data were collected with a Reson SeaBat T50-S 400 kHz multibeam sonar system flown at 50-m altitude. The data files are in GMT-compatible netCDF grid format and contain processed swath bathymetry data gridded at 1-m resolution, plus data gridded at 50-cm resolution over three chimney fields at Puy des Folles where the vehicle flew closer to the seafloor, at 25-m altitude, on mission 20230402m1. The AUV survey missions were conducted during the 2023 R/V Falkor (too) cruise FKt230303 (chief scientist David Butterfield) to the Mid-Atlantic Ridge. Funding was provided by the Schmidt Ocean Institute and a grant from the David and Lucile Packard Foundation to MBARI.",
+                "url":"https://www.marine-geo.org/tools/files/32239",
+                
+                "keywords" : [
+                    "FKt230303",
+        "Falkor (too)",
+        "Dr. David Butterfield",
+                    "Bathymetry"
+                ],
+                "creator":{
+                 "@type":"Organization",
+                 "url": "http://www.marine-geo.org/",
+                 "name":"MGDS > Marine Geoscience Data System",
+                 "contactPoint":{
+                    "@type":"ContactPoint",
+                    "contactType": "customer service",
+                    "telephone":"+1-845-365-8895",
+                    "email":"info@marine-geo.org"
+                 }
+                },
+                "spatialCoverage":{
+                    "@type":"Place",
+                        "geo":{
+                        "@type":"GeoShape",
+                        "box":"20.461717 -45.661432 24.977269 -44.962845"
+                    }
+                },
+				"license":"CC BY-NC-SA 4.0"
+            	
+			}
+</script><div itemscope="itemscope" itemtype="http://schema.org/Dataset">
+<meta itemprop="distribution" content="https://api.marine-geo.org/services/download/download.php?data_set_uid=32239">
+<div style="clear:both"></div>
+<div style="float:left;max-width:700px;margin-top:-10px;"><div id="mainbox" style="margin-top:10px;"><div id="maintitle" style="text-align:left;">
+<div itemscope="itemscope" itemtype="http://schema.org/DataCatalog" itemprop="catalog">
+<meta itemprop="url" content="http://www.marine-geo.org/tools/search/entry.php?id=FKt230303">
+<meta itemprop="name" content="FKt230303">
+</div>
+<a href="/tools/search/entry.php?id=FKt230303">FKt230303</a> Bathymetry</div></div></div>
+<div id="mapreport" style="width:250px;">
+<div id="mapviewbutton" style="float:right;"><a href="/tools/search/mapview_files.php?filespage=1&amp;data_set_uids=32239" style="text-decoration:none;border:none;" onclick="return popup(this, 'mapview');" title="View Cruise in Map"><img src="/imgs/mapclient_activate.gif" alt="Activate Map Client" style="height:25px;border:2px solid gray;vertical-align:middle;"> Map View
+                </a></div>
+<div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+<div style="clear:both"></div>
+<div style="background-color: rgb(238, 238, 248); width: 939px; border-radius: 8px; margin-top: 5px; padding: 8px;">
+<div style="font: 400 1.25em/1em Helvetica,Arial,sans-serif;" itemprop="name">MBARI Mapping AUV near-bottom processed swath bathymetry gridded data (netCDF format) at the Mid-Atlantic Ridge Puy des Folles Seamount, EMARK Massif, Falkor EMARK Vents, and Hydra (Grappe Deux) (2023)</div>
+<div style="margin-left:5px;margin-top:5px;line-height:1.2em" itemprop="description">This processed swath bathymetry data set was collected by MBARI Mapping AUVs and consists of grids compiled for the four sites: the summit of Puy des Folles Seamount from missions 20230310m1, 20230310m2, and 20230402m1; the EMARK Massif from missions 20230314m1, 20230314m2, 20230315m1, 20230316m1, 20230317m1, 20230317m2, 20230318m1, 20230319m1, 20230319m2; the Falkor EMARK Vents from missions 20230321m1, 20230321m2, and 20230323m1; and Hydra (Grappe Deux) from missions 20230325m1, 20230326m1, 20230328m1, and 20230329m1 (investigators David Caress, Jeffrey Beeson, Jennifer Paduan, Sharon Walker, David Butterfield). The data were collected with a Reson SeaBat T50-S 400 kHz multibeam sonar system flown at 50-m altitude. The data files are in GMT-compatible netCDF grid format and contain processed swath bathymetry data gridded at 1-m resolution, plus data gridded at 50-cm resolution over three chimney fields at Puy des Folles where the vehicle flew closer to the seafloor, at 25-m altitude, on mission 20230402m1. The AUV survey missions were conducted during the 2023 R/V Falkor (too) cruise FKt230303 (chief scientist David Butterfield) to the Mid-Atlantic Ridge. Funding was provided by the Schmidt Ocean Institute and a grant from the David and Lucile Packard Foundation to MBARI.</div>
+</div>
+<div class="pagedivision"></div>
+<div class="triptych expansion collapsed" id="investigatorlist">
+<div class="row">
+<div class="persondiv">
+<div class="personname">Caress, David</div>
+<div class="subtext">Investigator</div>
+</div>
+<div class="personinstitution">MBARI</div>
+</div>
+<div class="row">
+<div class="persondiv">
+<div class="personname">Beeson, Jeffrey</div>
+<div class="subtext">Investigator</div>
+</div>
+<div class="personinstitution">NOAA:PMEL</div>
+</div>
+<div class="row">
+<div class="persondiv">
+<div class="personname">Paduan, Jennifer</div>
+<div class="subtext">Investigator</div>
+</div>
+<div class="personinstitution">MBARI</div>
+</div>
+<div class="row">
+<div class="persondiv">
+<div class="personname">Walker, Sharon</div>
+<div class="subtext">Investigator</div>
+</div>
+<div class="personinstitution">NOAA:PMEL</div>
+</div>
+<div class="row">
+<div class="persondiv">
+<div class="personname">Butterfield, David</div>
+<div class="subtext">Investigator</div>
+</div>
+<div class="personinstitution">NOAA:PMEL</div>
+</div>
+</div>
+<div class="triptych">
+<div class="row">
+<div class="legend">Device Info</div>
+<div class="lcontent">
+<div class="text">Sonar:<wbr></wbr>Multibeam</div>
+<div class="subtext">Reson:SeaBat T50-S</div>
+</div>
+</div>
+<div class="row">
+<div class="legend">Platform</div>
+<div class="lcontent">
+<div class="text">MBARI Mapping AUV (AUV)</div>
+<div class="subtext">MBARI</div>
+</div>
+</div>
+</div>
+<div class="triptych">
+<div class="row">
+<div class="legend">Quality</div>
+<div class="lcontent">
+<div class="text"><span class="quality">2</span></div>
+<div class="subtext">The data have been processed/modified to a level beyond that of basic quality control (e.g. final processed sonar data, photo-mosaics).</div>
+</div>
+</div>
+<div class="row">
+<div class="legend">License</div>
+<div class="lcontent"><div class="text"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="external" onmouseover='Tip("Attribution-NonCommercial-ShareAlike 4.0 International")' onmouseout="
+							UnTip()
+						"><span>CC BY-NC-SA 4.0</span></a></div></div>
+</div>
+</div>
+<div class="pagedivision"></div>
+<div id="authorization"></div>
+<div style="text-align:right;margin-right:10px; padding:3px;" class="subtext"><a href="mailto:info@marine-geo.org?subject=Incorrect%20Information%20on%20Files.php%3Fdata_set_uid%3D32239"><i class="fa fa-comment-o"></i>
+            Report Incorrect Information</a></div>
+<div class="buttonwrapper" style="display:none"><form id="downloadform" method="get">
+<div class="left">
+<input type="checkbox" id="selectall"> Select All <span id="selectedfilenum"></span>
+</div>
+<div class="right">
+<a id="requestselected" href="/" style="font-size:smaller;margin-right:10px;" title="Request a DVD or and FTP session containing the selected files.">Request Selected File(s)</a><button type="button" id="downselected">Download Selected File(s)</button>
+</div>
+<input type="hidden" id="data_uids" name="data_uids" value=""><input type="hidden" id="data_set_uid" name="data_set_uid" value="32239">
+</form></div>
+<div class="pagedivisionflat"></div>
+<div class="tabwrapper">
+<div id="sidetabs">
+<hr>
+<div class="tabtitle selected" id="datasets">Data Files</div>
+<hr>
+<div class="tabtitle" id="acqinfo">Acquisition Information</div>
+<hr>
+<div class="tabtitle" id="documents">Documents</div>
+<hr>
+<div class="tabtitle" id="relateddatasets">Related Data Sets</div>
+<hr>
+<div class="tabtitle" id="dlmdinfo">ISO/XML Metadata</div>
+<hr>
+</div>
+<div id="sidetabcontent">
+<div class="stwindow datasets"><form id="fileform"></form></div>
+<div class="stwindow referencesinfo hidden"></div>
+<div class="stwindow dlmdinfo hidden">
+<div class="setstitle">Download Data Set Metadata Report</div>
+<hr>
+<div class="row">
+<div class="legend" style="width:100px;">XML</div>
+<div class="lcontent" style="width:400px;">
+<div class="text"><button type="button" style="                         margin: 5px;                         padding: 3px 6px;                         border: 1px solid #002288;                         background-color: #eeeeee;                         border-radius: 4px;                         font-weight: 600;                         color: #002288;                         cursor:pointer;                     " onclick="window.open('/services/xml/datafileservice.php?data_set_uid=32239');">Download</button></div>
+<div class="subtext" style="                     margin-left: 5px;                 "><div>MGDS formatted data set xml report containing verbose file and data set level metadata</div></div>
+</div>
+</div>
+<div class="row">
+<div class="legend" style="width:100px;">ISO XML</div>
+<div class="lcontent" style="width:400px;">
+<div class="text"><button type="button" style="                         margin: 5px;                         padding: 3px 6px;                         border: 1px solid #002288;                         background-color: #eeeeee;                         border-radius: 4px;                         font-weight: 600;                         color: #002288;                         cursor:pointer;                     " onclick="window.open('/services/xml/datasetisoservice.php?data_set_uid=32239');">Download</button></div>
+<div class="subtext" style="                     margin-left: 5px;                 "><div>ISO 19115-compliant xml report containing general data set level metadata</div></div>
+</div>
+</div>
+</div>
+<div class="stwindow acqinfo hidden">
+<div class="setstitle">Related Acquisition Information</div>
+<hr>
+<div class="row">
+<div class="legend">
+<a href="/tools/search/entry.php?id=FKt230303">FKt230303</a> </div>
+<div class="lcontent"><div class="text"><a href="https://www.marine-geo.org/tools/events/4542"><span>Dive Log</span></a></div></div>
+</div>
+<div></div>
+</div>
+<div class="stwindow hidden documents">
+<hr>
+<div class="setstitle">Data Set Documents</div>
+<hr>
+<div class="row">
+<div class="persondiv">
+<div class="personname"><a href="https://api.marine-geo.org/services/download/Document_Accept.php?client=DataLink&amp;doc_uid=5133"><span>Technical Report</span></a></div>
+<div class="subtext">Commands Script to Generate Compiled Figures</div>
+</div>
+<div class="personinstitution" style="font-size:1em;">
+<a href="https://api.marine-geo.org/services/download/Document_Accept.php?client=DataLink&amp;doc_uid=5133"><span>FKt230303_compiled_bathymetry_Figures.cmd</span></a> (7.0kB)<div class="subtext"><small>ASCII</small></div>
+</div>
+</div>
+<hr>
+<hr>
+<div class="setstitle">FKt230303 Documents</div>
+<hr>
+<div class="row">
+<div class="persondiv">
+<div class="personname"><a href="https://api.marine-geo.org/services/download/Document_Accept.php?client=DataLink&amp;doc_uid=5133&amp;entry_id=FKt230303"><span>Technical Report</span></a></div>
+<div class="subtext">Commands Script to Generate Compiled Figures</div>
+</div>
+<div class="personinstitution" style="font-size:1em;">
+<a href="https://api.marine-geo.org/services/download/Document_Accept.php?client=DataLink&amp;doc_uid=5133&amp;entry_id=FKt230303"><span>FKt230303_compiled_bathymetry_Figures.cmd</span></a> (7.0kB)<div class="subtext"><small>ASCII</small></div>
+</div>
+</div>
+<hr>
+</div>
+<div class="stwindow datacitation hidden"></div>
+<div class="stwindow relateddatasets hidden">
+<div class="listheader">
+<div class="setstitle">Related Data Sets</div>
+<div class="sortlistdiv">Sort by: <select class="sortlist" listid="related_data"><option value="data_type">Data Type</option>
+<option value="file_format">File Format</option>
+<option value="quality">Quality</option>
+<option value="investigator">Primary Investigator</option>
+<option value="platform">Platform</option></select><div style="clear:both"></div>
+</div>
+</div>
+<hr>
+<div class="listcontent" id="related_data">
+<div class="filerow clickable">
+<div class="left">
+<div class="datasettitle"><a href="https://www.marine-geo.org/tools/files/32230"><img src="/images/downloadbuttonblue.png" style="width:18px;vertical-align:text-bottom;margin-right:5px;"><span class="entry_id"></span> <span class="data_type">Backscatter:Acoustic, Bathymetry:Swath, Sidescan</span></a></div>
+<div title="This processed swath bathymetry and acoustic backscatter data set was collected by MBARI Mapping AUVs at four Mid-Atlantic Ridge sites: the summit of Puy des Folles Seamount from missions 20230310m1, 20230310m2, and 20230402m1; the EMARK Massif from missions 20230314m1, 20230314m2, 20230315m1, 20230316m1, 20230317m1, 20230317m2, 20230318m1, 20230319m1, 20230319m2; the Falkor EMARK Vents from missions 20230321m1, 20230321m2, and 20230323m1; and Hydra (Grappe Deux) from missions 20230325m1, 20230326m1, 20230328m1, and 20230329m1 (investigators David Caress, Jeffrey Beeson, Jennifer Paduan, Sharon Walker, David Butterfield). The data were collected with a Reson SeaBat T50-S 400 kHz multibeam sonar system flown at 50-m altitude on all missions with data also collected at 25-m altitude on MBARI Mapping AUV mission 20230402m1. The data files are in MB-System-compatible format (mbio format 89) and contain processed swath bathymetry and acoustic backscatter data. The AUV survey missions were conducted during the 2023 R/V Falkor (too) cruise FKt230303 (chief scientist David Butterfield) to the Mid-Atlantic Ridge. Funding was provided by the Schmidt Ocean Institute and a grant from the David and Lucile Packard Foundation to MBARI.">MBARI Mapping AUV near-bottom processed swath bathymetry and acoustic backscatter data (p.mb89 format) at the Mid-Atlantic Ridge Puy des Folles Seamount, EMARK Massif, Falkor EMARK Vents, and Hydra (Grappe Deux) (2023)</div>
+<div class="diptych">
+<div class="row">
+<div class="legend">Platform Info</div>
+<div class="lcontent">
+<div class="text">AUV:<span class="platform">MBARI Mapping AUV</span>
+</div>
+<div class="subtext">MBARI</div>
+</div>
+</div>
+<div class="row">
+<div class="legend">Device Info</div>
+<div class="lcontent">
+<div class="text">Sonar:<wbr></wbr>Multibeam</div>
+<div class="subtext">Reson:SeaBat T50-S</div>
+</div>
+</div>
+<div class="row">
+<div class="legend">Events</div>
+<div class="lcontent"><div class="text"><div><a href="https://www.marine-geo.org/tools/events/4542"><span>Dive Log</span></a></div></div></div>
+</div>
+</div>
+<div class="diptych">
+<div class="row">
+<div class="legend">Locale</div>
+<div class="lcontent">
+<div class="text"><span class="geog_feature">MAR</span></div>
+<div class="subtext">SpreadingCenter</div>
+</div>
+</div>
+<div class="row">
+<div class="legend">File Format</div>
+<div class="lcontent"><div class="text"><span title="Multibeam data formats from various manufacturers that can be read with the open source MBSystem package"><span class="file_format">MBSystem</span></span></div></div>
+</div>
+<div class="row">
+<div class="legend">Quality</div>
+<div class="lcontent"><div class="text"><span class="
+								quality
+							" title="The data have been processed/modified to a level beyond that of basic quality control (e.g. final processed sonar data, photo-mosaics).">2</span></div></div>
+</div>
+</div>
+</div>
+<div class="right">
+<div class="row">
+<div class="persondiv"><div class="personname"><span class="investigator">Caress, David</span></div></div>
+<div class="personinstitution">MBARI</div>
+</div>
+<div class="row">
+<div class="persondiv"><div class="personname"><span class="investigator">Beeson, Jeffrey</span></div></div>
+<div class="personinstitution">NOAA:PMEL</div>
+</div>
+<div class="row">
+<div class="persondiv"><div class="personname"><span class="investigator">Paduan, Jennifer</span></div></div>
+<div class="personinstitution">MBARI</div>
+</div>
+<div class="row">
+<div class="persondiv"><div class="personname"><span class="investigator">Walker, Sharon</span></div></div>
+<div class="personinstitution">NOAA:PMEL</div>
+</div>
+<div class="row">
+<div class="persondiv"><div class="personname"><span class="investigator">Butterfield, David</span></div></div>
+<div class="personinstitution">NOAA:PMEL</div>
+</div>
+</div>
+<div style="clear:both"></div>
+</div>
+<div class="filerow clickable">
+<div class="left">
+<div class="datasettitle"><a href="https://www.marine-geo.org/tools/files/32240"><img src="/images/downloadbuttonblue.png" style="width:18px;vertical-align:text-bottom;margin-right:5px;"><span class="entry_id"></span> <span class="data_type">Bathymetry</span></a></div>
+<div title="This processed swath bathymetry data set was collected by MBARI Mapping AUVs and consists of grids compiled for the four sites: the summit of Puy des Folles Seamount from missions 20230310m1, 20230310m2, and 20230402m1; the EMARK Massif from missions 20230314m1, 20230314m2, 20230315m1, 20230316m1, 20230317m1, 20230317m2, 20230318m1, 20230319m1, 20230319m2; the Falkor EMARK Vents from missions 20230321m1, 20230321m2, and 20230323m1; and Hydra (Grappe Deux) from missions 20230325m1, 20230326m1, 20230328m1, and 20230329m1 (investigators David Caress, Jeffrey Beeson, Jennifer Paduan, Sharon Walker, David Butterfield). The data were collected with a Reson SeaBat T50-S 400 kHz multibeam sonar system flown at 50-m altitude. The data files are in ESRI ASCII raster grid format and contain processed swath bathymetry data gridded at 1-m resolution, plus data gridded at 50-cm resolution over three chimney fields at Puy des Folles where the vehicle flew closer to the seafloor, at 25-m altitude, on mission 20230402m1. The AUV survey missions were conducted during the 2023 R/V Falkor (too) cruise FKt230303 (chief scientist David Butterfield) to the Mid-Atlantic Ridge. Funding was provided by the Schmidt Ocean Institute and a grant from the David and Lucile Packard Foundation to MBARI.">MBARI Mapping AUV near-bottom processed swath bathymetry gridded data (ESRI ASCII format) at the Mid-Atlantic Ridge Puy des Folles Seamount, EMARK Massif, Falkor EMARK Vents, and Hydra (Grappe Deux) (2023)</div>
+<div class="diptych">
+<div class="row">
+<div class="legend">Platform Info</div>
+<div class="lcontent">
+<div class="text">AUV:<span class="platform">MBARI Mapping AUV</span>
+</div>
+<div class="subtext">MBARI</div>
+</div>
+</div>
+<div class="row">
+<div class="legend">Device Info</div>
+<div class="lcontent">
+<div class="text">Sonar:<wbr></wbr>Multibeam</div>
+<div class="subtext">Reson:SeaBat T50-S</div>
+</div>
+</div>
+<div class="row">
+<div class="legend">Events</div>
+<div class="lcontent"><div class="text"><div><a href="https://www.marine-geo.org/tools/events/4542"><span>Dive Log</span></a></div></div></div>
+</div>
+</div>
+<div class="diptych">
+<div class="row">
+<div class="legend">Locale</div>
+<div class="lcontent">
+<div class="text"><span class="geog_feature">MAR</span></div>
+<div class="subtext">SpreadingCenter</div>
+</div>
+</div>
+<div class="row">
+<div class="legend">File Format</div>
+<div class="lcontent"><div class="text"><span title="ESRI ASCII grid format. The first six lines indicate georeferencing information for the grid, followed by the values listed in the order they would naturally appear (left-right, top-down)."><span class="file_format">ASCII:ESRI</span></span></div></div>
+</div>
+<div class="row">
+<div class="legend">Quality</div>
+<div class="lcontent"><div class="text"><span class="
+								quality
+							" title="The data have been processed/modified to a level beyond that of basic quality control (e.g. final processed sonar data, photo-mosaics).">2</span></div></div>
+</div>
+</div>
+</div>
+<div class="right">
+<div class="row">
+<div class="persondiv"><div class="personname"><span class="investigator">Caress, David</span></div></div>
+<div class="personinstitution">MBARI</div>
+</div>
+<div class="row">
+<div class="persondiv"><div class="personname"><span class="investigator">Beeson, Jeffrey</span></div></div>
+<div class="personinstitution">NOAA:PMEL</div>
+</div>
+<div class="row">
+<div class="persondiv"><div class="personname"><span class="investigator">Paduan, Jennifer</span></div></div>
+<div class="personinstitution">MBARI</div>
+</div>
+<div class="row">
+<div class="persondiv"><div class="personname"><span class="investigator">Walker, Sharon</span></div></div>
+<div class="personinstitution">NOAA:PMEL</div>
+</div>
+<div class="row">
+<div class="persondiv"><div class="personname"><span class="investigator">Butterfield, David</span></div></div>
+<div class="personinstitution">NOAA:PMEL</div>
+</div>
+</div>
+<div style="clear:both"></div>
+</div>
+<div class="filerow clickable">
+<div class="left">
+<div class="datasettitle"><a href="https://www.marine-geo.org/tools/files/32241"><img src="/images/downloadbuttonblue.png" style="width:18px;vertical-align:text-bottom;margin-right:5px;"><span class="entry_id"></span> <span class="data_type">Bathymetry</span></a></div>
+<div title="This processed swath bathymetry data set was collected by MBARI Mapping AUVs and consists of grids compiled for the four sites: the summit of Puy des Folles Seamount from missions 20230310m1, 20230310m2, and 20230402m1; the EMARK Massif from missions 20230314m1, 20230314m2, 20230315m1, 20230316m1, 20230317m1, 20230317m2, 20230318m1, 20230319m1, 20230319m2; the Falkor EMARK Vents from missions 20230321m1, 20230321m2, and 20230323m1; and Hydra (Grappe Deux) from missions 20230325m1, 20230326m1, 20230328m1, and 20230329m1 (investigators David Caress, Jeffrey Beeson, Jennifer Paduan, Sharon Walker, David Butterfield). The data were collected with a Reson SeaBat T50-S 400 kHz multibeam sonar system flown at 50-m altitude. The data files are in GeoTIFF image format and contain processed swath bathymetry data gridded at 1-m resolution, plus data gridded at 50-cm resolution over three chimney fields at Puy des Folles where the vehicle flew closer to the seafloor, at 25-m altitude, on mission 20230402m1. The AUV survey missions were conducted during the 2023 R/V Falkor (too) cruise FKt230303 (chief scientist David Butterfield) to the Mid-Atlantic Ridge. Funding was provided by the Schmidt Ocean Institute and a grant from the David and Lucile Packard Foundation to MBARI.">MBARI Mapping AUV near-bottom processed swath bathymetry gridded data (GeoTIFF image format) at the Mid-Atlantic Ridge Puy des Folles Seamount, EMARK Massif, Falkor EMARK Vents, and Hydra (Grappe Deux) (2023)</div>
+<div class="diptych">
+<div class="row">
+<div class="legend">Platform Info</div>
+<div class="lcontent">
+<div class="text">AUV:<span class="platform">MBARI Mapping AUV</span>
+</div>
+<div class="subtext">MBARI</div>
+</div>
+</div>
+<div class="row">
+<div class="legend">Device Info</div>
+<div class="lcontent">
+<div class="text">Sonar:<wbr></wbr>Multibeam</div>
+<div class="subtext">Reson:SeaBat T50-S</div>
+</div>
+</div>
+<div class="row">
+<div class="legend">Events</div>
+<div class="lcontent"><div class="text"><div><a href="https://www.marine-geo.org/tools/events/4542"><span>Dive Log</span></a></div></div></div>
+</div>
+</div>
+<div class="diptych">
+<div class="row">
+<div class="legend">Locale</div>
+<div class="lcontent">
+<div class="text"><span class="geog_feature">MAR</span></div>
+<div class="subtext">SpreadingCenter</div>
+</div>
+</div>
+<div class="row">
+<div class="legend">File Format</div>
+<div class="lcontent"><div class="text"><span title="A TIFF based interchange format for georeferenced raster imagery. "><span class="file_format">GEOTIFF</span></span></div></div>
+</div>
+<div class="row">
+<div class="legend">Quality</div>
+<div class="lcontent"><div class="text"><span class="
+								quality
+							" title="The data have been processed/modified to a level beyond that of basic quality control (e.g. final processed sonar data, photo-mosaics).">2</span></div></div>
+</div>
+</div>
+</div>
+<div class="right">
+<div class="row">
+<div class="persondiv"><div class="personname"><span class="investigator">Caress, David</span></div></div>
+<div class="personinstitution">MBARI</div>
+</div>
+<div class="row">
+<div class="persondiv"><div class="personname"><span class="investigator">Beeson, Jeffrey</span></div></div>
+<div class="personinstitution">NOAA:PMEL</div>
+</div>
+<div class="row">
+<div class="persondiv"><div class="personname"><span class="investigator">Paduan, Jennifer</span></div></div>
+<div class="personinstitution">MBARI</div>
+</div>
+<div class="row">
+<div class="persondiv"><div class="personname"><span class="investigator">Walker, Sharon</span></div></div>
+<div class="personinstitution">NOAA:PMEL</div>
+</div>
+<div class="row">
+<div class="persondiv"><div class="personname"><span class="investigator">Butterfield, David</span></div></div>
+<div class="personinstitution">NOAA:PMEL</div>
+</div>
+</div>
+<div style="clear:both"></div>
+</div>
+</div>
+</div>
+</div>
+<div style="float:right;cursor:pointer;" id="expandcontract">Expand</div>
+</div>
+</div>
+			<div id="dialog" title="File Download"></div>
+        </div>
+	</div>
+    <div class="modalbackground">
+        <div class="modalcontainer">
+            <div class="modalscroll">
+                <div class="imgcontainer"></div>
+                <div id="modalfilerow" class="filerow clickable">
+                </div>
+            </div>
+            <div class="exit"><i class="fa fa-times"></i></div>
+            <div class="right_arrow"><i class="fa fa-chevron-circle-right"></i></div>
+            <div class="left_arrow"><i class="fa fa-chevron-circle-left"></i></div>
+        </div>
+    </div>
+    <div id="footer" style="display:none">
+    <div style="width:955px; padding:5px 10px; margin:0 auto; border: none;display:flex;align-items:center;">
+        <div style="width:75%;line-height:1.3em;">
+            <div>
+                Hosted at <a href="http://www.ldeo.columbia.edu">Lamont-Doherty Earth Observatory</a>
+                of <a href="http://www.columbia.edu">Columbia University</a>.
+            </div>
+            <div>
+                Site licensed under <a href="/about/legal.php#copyright">Creative Commons Attribution-Noncommercial-Share Alike 3.0</a>
+            </div>
+            <div>
+                <a href="/about/legal.php#credits">Acknowledgments</a> |
+                <a class="noline" href="/about/privacy.php">Privacy</a> |
+                <a class="noline" href="/about/contact.php">Contact</a>
+            </div>
+        </div>
+        <div style="width:60px;"><a  href="http://www.nsf.gov" style="background-color:transparent !important;"><img id="nsf_logo" src="/imgs/nsf1.gif" height="60"></a></div>
+        <div style="flex:1;padding-left:5px;line-height:1.3em;">Funded by the <a href="http://www.nsf.gov">US National Science Foundation (NSF)</a></div>
+    </div>
+    <div style="clear:both"></div>
+</div>
+<script type="text/javascript" src="/js/fix_footer.js"></script>
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-15964490-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+</script>
+    <iframe name="filetargetframe" style="display:none"></iframe>
+</body>
+</html>
