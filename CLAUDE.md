@@ -1,3 +1,9 @@
+> **Superseded 2026-10; see README.md.** This is the original June 2026 acquisition directive, written when the
+> project was framed as the data side of a super-resolution model trained on a synthetic-LR regime. That framing and the
+> submitted heteroscedastic CNN are superseded by the GRL revision (2026GL125574); the acquisition rules below (real ship
+> grids only, never a downsampled AUV grid; APIs, checksums, provenance) still describe how the corpus was built. The
+> milestones, tiers and config fields are historical. Kept for the record (directive ACQ-R15, 2026-10-20).
+
 # Acquisition Directive v1.0 — Co-located AUV / Ship-Multibeam Bathymetry Pairs
 
 **Repo:** `auv_ship_colocated_bathy/` (new, standalone)

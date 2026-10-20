@@ -1,0 +1,16 @@
+{
+  "title": "Co-located ship and AUV multibeam bathymetry: acquisition and harmonization code (GRL revision of 2026GL125574)",
+  "upload_type": "software",
+  "description": "Acquisition, gridding, harmonization, co-registration and packaging code for the co-located ship and AUV multibeam bathymetry corpus behind the paper \"Ship Multibeam Roughness Ranks Unresolved Seafloor Relief at Unseen Sites: A Pre-Registered Blind Test\" (Geophysical Research Letters, 2026GL125574, in revision). The chain discovers pairs in MGDS, NCEI, PANGAEA and USGS catalogs, fetches raw ship swath and AUV grids, grids the swath with MB-System 5.8.2beta06, harmonizes each pair to a common UTM grid, co-registers the AUV grid to the ship grid (rigid shift; local quadrant test for the second blind test), tests the vertical datum, sweeps the recoverable fine-band factor k, builds per-sounding ship product rasters, decides eligibility under the sealed blind-test protocol, and packages the processed grids, masks and tile tables as Cloud-Optimized GeoTIFFs. Every reported result traces to a frozen tag and a freeze record of the sealed chain. The processed data are the companion record 10.5281/zenodo.23515276; the scoring and predictor code is the companion record 10.5281/zenodo.21300922. Runs on CPU under Slurm; Python 3.12 with pinned requirements.",
+  "creators": [
+    {"name": "Dobbs, Stephen Cole", "affiliation": "Stanford University"}
+  ],
+  "keywords": ["bathymetry", "multibeam", "AUV", "seafloor roughness", "co-located surveys", "MB-System", "Cloud-Optimized GeoTIFF", "NCEI", "MGDS", "PANGAEA"],
+  "license": "MIT",
+  "version": "2.0",
+  "access_right": "open",
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.23515276", "relation": "isSupplementedBy", "resource_type": "dataset", "scheme": "doi"},
+    {"identifier": "10.5281/zenodo.21300922", "relation": "isRelatedTo", "resource_type": "software", "scheme": "doi"}
+  ]
+}

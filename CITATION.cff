@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper (preferred-citation) and the data record it accompanies."
+type: software
+title: "Co-located ship and AUV multibeam bathymetry: acquisition and harmonization code"
+version: "2.0"
+date-released: "2026-10-20"
+license: MIT
+repository-code: "https://github.com/scdobbs/co-located-auv-ship-based-multibeam-acquisition"
+doi: 10.5281/zenodo.21300925
+authors:
+  - family-names: Dobbs
+    given-names: Stephen Cole
+    affiliation: "Department of Earth and Planetary Sciences, Stanford University"
+keywords:
+  - bathymetry
+  - multibeam
+  - AUV
+  - seafloor roughness
+  - co-located surveys
+  - MB-System
+preferred-citation:
+  type: article
+  title: "Ship Multibeam Roughness Ranks Unresolved Seafloor Relief at Unseen Sites: A Pre-Registered Blind Test"
+  authors:
+    - family-names: Dobbs
+      given-names: Stephen Cole
+  journal: "Geophysical Research Letters"
+  year: 2026
+  notes: "Manuscript 2026GL125574, in revision"
+references:
+  - type: data
+    title: "Co-located ship and AUV multibeam bathymetry corpus: processed grids, masks, co-registration and tile tables"
+    authors:
+      - family-names: Dobbs
+        given-names: Stephen Cole
+    doi: 10.5281/zenodo.23515276
+    year: 2026
+    license: CC-BY-NC-SA-4.0
+  - type: software
+    title: "Ship-multibeam roughness analysis, predictors and blind-test scoring code (companion repository)"
+    authors:
+      - family-names: Dobbs
+        given-names: Stephen Cole
+    doi: 10.5281/zenodo.21300922
+    year: 2026

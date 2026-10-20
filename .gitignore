@@ -26,6 +26,37 @@ __pycache__/
 *.pyc
 *.pyo
 .ipynb_checkpoints/
+venv/
+.venv/
+
+# Secrets (ACQ-R15): tokens and keys never enter the repo; the Zenodo token lives in ~/.zenodo_token
+.zenodo_token
+*.token
+*_token
+*.pem
+*.key
+.env
+.netrc
+
+# Local data, containers, checkpoints, scratch outputs
+*.sif
+*.parquet.tmp
+*.zip
+*.tar
+*.tar.gz
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.zarr/
+scratch/
+tmp/
+.claude/
+*.tmp
+*.err.bak
 
 # Reports folder excluded from git (kept on disk; lives with bulk artifacts)
 reports/
