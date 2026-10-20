@@ -1,0 +1,1013 @@
+{
+ "generated": "2026-10-20T18:45:32+00:00",
+ "package": "/scratch/groups/hilley/auv_ship_colocated_bathy/release_acq_r14/package",
+ "size": {
+  "groups": {
+   "blind_test_1": {
+    "n_pairs": 5,
+    "total_gb": 0.261789658,
+    "largest_zip": "RC2511__MGDS_32239.zip",
+    "largest_gb": 0.195306558
+   },
+   "blind_test_2": {
+    "n_pairs": 8,
+    "total_gb": 0.272817339,
+    "largest_zip": "MV1209__MGDS_21415.zip",
+    "largest_gb": 0.1123761
+   },
+   "development": {
+    "n_pairs": 39,
+    "total_gb": 1.165270213,
+    "largest_zip": "TN399__MGDS_30373.zip",
+    "largest_gb": 0.261256713
+   }
+  },
+  "package": {
+   "n_files_on_disk": 85,
+   "total_gb_on_disk": 1.712995218,
+   "n_files_zenodo": 66,
+   "total_gb_zenodo": 1.712843429,
+   "zenodo_limits_ok": true
+  }
+ },
+ "license": {
+  "n_datasets": 67,
+  "by_status": {
+   "yes": 42,
+   "yes_conditional": 24,
+   "confirm": 1
+  },
+  "pairs_by_status": {
+   "yes": 27,
+   "yes_conditional": 24,
+   "confirm": 1
+  },
+  "pairs_excluded_on_license": [],
+  "confirm_pairs": [
+   "RC2511__MGDS_32239"
+  ]
+ },
+ "reproduction": {
+  "required": {
+   "RR1506__MGDS_29779": {
+    "pair": "RR1506__MGDS_29779",
+    "view": "interior",
+    "n_scored": 2157,
+    "rho_s_lr": 0.5064537749802951,
+    "frozen": 0.5064537749802951,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "AR26__MGDS_31838": {
+    "pair": "AR26__MGDS_31838",
+    "view": "fallback",
+    "n_scored": 48,
+    "rho_s_lr": 0.8153495440729482,
+    "frozen": 0.8153495440729482,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "discol_so242_1": {
+    "pair": "discol_so242_1",
+    "view": "interior",
+    "n_scored": 214,
+    "rho_s_lr": 0.5938457959231153,
+    "frozen": 0.5938457959231153,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "RC2511__MGDS_32239": {
+    "pair": "RC2511__MGDS_32239",
+    "view": "interior",
+    "n_scored": 1771,
+    "rho_s_lr": -0.08385783618079665,
+    "frozen": -0.0838578361807966,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "Escanaba__MGDS_30368": {
+    "pair": "Escanaba__MGDS_30368",
+    "view": "interior",
+    "n_scored": 248,
+    "rho_s_lr": 0.5167486060859418,
+    "frozen": 0.5167486060859418,
+    "match_3dp": true,
+    "returncode": 0
+   }
+  },
+  "all": {
+   "AT37-13__MGDS_31199": {
+    "pair": "AT37-13__MGDS_31199",
+    "view": "interior",
+    "n_scored": 86,
+    "rho_s_lr": 0.38406528609840085,
+    "frozen": 0.3840652860984008,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "TN399__MGDS_30373": {
+    "pair": "TN399__MGDS_30373",
+    "view": "interior",
+    "n_scored": 5019,
+    "rho_s_lr": 0.1835576868327044,
+    "frozen": 0.1835576868327044,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "TN399__MGDS_33068": {
+    "pair": "TN399__MGDS_33068",
+    "view": "fallback",
+    "n_scored": 167,
+    "rho_s_lr": 0.18493353637073862,
+    "frozen": 0.1849335363707386,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "AT42-06__MGDS_5174": {
+    "pair": "AT42-06__MGDS_5174",
+    "view": "not_scorable",
+    "n_scored": 16,
+    "rho_s_lr": -0.08529411764705883,
+    "frozen": -0.0852941176470588,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "ccz_so268_1": {
+    "pair": "ccz_so268_1",
+    "view": "fallback",
+    "n_scored": 69,
+    "rho_s_lr": 0.3253562294483011,
+    "frozen": 0.3253562294483011,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "EW9801__MGDS_31425": {
+    "pair": "EW9801__MGDS_31425",
+    "view": "interior",
+    "n_scored": 55,
+    "rho_s_lr": 0.545815295815296,
+    "frozen": 0.545815295815296,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "KM0923__MGDS_31429": {
+    "pair": "KM0923__MGDS_31429",
+    "view": "interior",
+    "n_scored": 24,
+    "rho_s_lr": 0.43043478260869555,
+    "frozen": 0.4304347826086955,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "FK181031__MGDS_24618": {
+    "pair": "FK181031__MGDS_24618",
+    "view": "interior",
+    "n_scored": 969,
+    "rho_s_lr": 0.6306358710931969,
+    "frozen": 0.6306358710931969,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "tag_m127": {
+    "pair": "tag_m127",
+    "view": "interior",
+    "n_scored": 631,
+    "rho_s_lr": -0.08502162244263389,
+    "frozen": -0.0850216224426338,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "NA090__MGDS_31212": {
+    "pair": "NA090__MGDS_31212",
+    "view": "interior",
+    "n_scored": 119,
+    "rho_s_lr": 0.34293547927645635,
+    "frozen": 0.3429354792764563,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "NA076__MGDS_32317": {
+    "pair": "NA076__MGDS_32317",
+    "view": "interior",
+    "n_scored": 118,
+    "rho_s_lr": -0.013151023121112854,
+    "frozen": -0.0131510231211128,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__20180426m2_Channel1000": {
+    "pair": "cal_dig_morro_bay__20180426m2_Channel1000",
+    "view": "interior",
+    "n_scored": 162,
+    "rho_s_lr": 0.5670069337714042,
+    "frozen": 0.5670069337714042,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__20180427m1_Channel700": {
+    "pair": "cal_dig_morro_bay__20180427m1_Channel700",
+    "view": "interior",
+    "n_scored": 110,
+    "rho_s_lr": 0.7572211076798233,
+    "frozen": 0.7572211076798233,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__20180427m3_PockmarkNorth": {
+    "pair": "cal_dig_morro_bay__20180427m3_PockmarkNorth",
+    "view": "interior",
+    "n_scored": 66,
+    "rho_s_lr": 0.06777998121281704,
+    "frozen": 0.067779981212817,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__20180428m1_Cable": {
+    "pair": "cal_dig_morro_bay__20180428m1_Cable",
+    "view": "interior",
+    "n_scored": 36,
+    "rho_s_lr": 0.2782496782496783,
+    "frozen": 0.2782496782496783,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__201804_LuciaChica2m": {
+    "pair": "cal_dig_morro_bay__201804_LuciaChica2m",
+    "view": "interior",
+    "n_scored": 146,
+    "rho_s_lr": 0.5972583459458418,
+    "frozen": 0.5972583459458418,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__20190314m4_LuciaChica970m": {
+    "pair": "cal_dig_morro_bay__20190314m4_LuciaChica970m",
+    "view": "fallback",
+    "n_scored": 68,
+    "rho_s_lr": 0.8202847654311561,
+    "frozen": 0.8202847654311561,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__20190315m1_HeadlessCanyon": {
+    "pair": "cal_dig_morro_bay__20190315m1_HeadlessCanyon",
+    "view": "interior",
+    "n_scored": 61,
+    "rho_s_lr": 0.5493389740877841,
+    "frozen": 0.5493389740877841,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__20190316m1_BankTop": {
+    "pair": "cal_dig_morro_bay__20190316m1_BankTop",
+    "view": "interior",
+    "n_scored": 179,
+    "rho_s_lr": 0.6273073462640972,
+    "frozen": 0.6273073462640972,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__20190317m1_1000mGully": {
+    "pair": "cal_dig_morro_bay__20190317m1_1000mGully",
+    "view": "interior",
+    "n_scored": 84,
+    "rho_s_lr": 0.14411258479295333,
+    "frozen": 0.1441125847929533,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__20190317m2_600mGully": {
+    "pair": "cal_dig_morro_bay__20190317m2_600mGully",
+    "view": "interior",
+    "n_scored": 90,
+    "rho_s_lr": 0.4281269292505248,
+    "frozen": 0.4281269292505248,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__20190318m2_Transect601060m": {
+    "pair": "cal_dig_morro_bay__20190318m2_Transect601060m",
+    "view": "interior",
+    "n_scored": 54,
+    "rho_s_lr": -0.3244139508290452,
+    "frozen": -0.3244139508290452,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__20190510m1_BankFlankHoles": {
+    "pair": "cal_dig_morro_bay__20190510m1_BankFlankHoles",
+    "view": "interior",
+    "n_scored": 164,
+    "rho_s_lr": 0.3111857766653517,
+    "frozen": 0.3111857766653517,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__20190510m2_BankFlankIncipCh": {
+    "pair": "cal_dig_morro_bay__20190510m2_BankFlankIncipCh",
+    "view": "interior",
+    "n_scored": 150,
+    "rho_s_lr": 0.8956966976310058,
+    "frozen": 0.8956966976310058,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__20190511m1_6thHeadlessCany": {
+    "pair": "cal_dig_morro_bay__20190511m1_6thHeadlessCany",
+    "view": "interior",
+    "n_scored": 174,
+    "rho_s_lr": 0.807873800506848,
+    "frozen": 0.807873800506848,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__20190511m2_BankTopEofCanyon3": {
+    "pair": "cal_dig_morro_bay__20190511m2_BankTopEofCanyon3",
+    "view": "interior",
+    "n_scored": 183,
+    "rho_s_lr": 0.7909914390669915,
+    "frozen": 0.7909914390669915,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__basin_flank": {
+    "pair": "cal_dig_morro_bay__basin_flank",
+    "view": "fallback",
+    "n_scored": 57,
+    "rho_s_lr": 0.37535649468498833,
+    "frozen": 0.3753564946849883,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__luciachica_2007": {
+    "pair": "cal_dig_morro_bay__luciachica_2007",
+    "view": "not_scorable",
+    "n_scored": 43,
+    "rho_s_lr": 0.6842343702808819,
+    "frozen": 0.6842343702808819,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "cal_dig_morro_bay__pockmark_south": {
+    "pair": "cal_dig_morro_bay__pockmark_south",
+    "view": "interior",
+    "n_scored": 111,
+    "rho_s_lr": -0.04592839592839592,
+    "frozen": -0.0459283959283959,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "NA080__MGDS_31290": {
+    "pair": "NA080__MGDS_31290",
+    "view": "interior",
+    "n_scored": 2430,
+    "rho_s_lr": 0.5863417389777791,
+    "frozen": 0.5863417389777791,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "NA080__MGDS_31289": {
+    "pair": "NA080__MGDS_31289",
+    "view": "interior",
+    "n_scored": 2414,
+    "rho_s_lr": 0.5889843073883962,
+    "frozen": 0.5889843073883962,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "TN299__MGDS_27339": {
+    "pair": "TN299__MGDS_27339",
+    "view": "interior",
+    "n_scored": 391,
+    "rho_s_lr": 0.1856897943123738,
+    "frozen": 0.1856897943123738,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "TN299__MGDS_31253": {
+    "pair": "TN299__MGDS_31253",
+    "view": "interior",
+    "n_scored": 279,
+    "rho_s_lr": 0.14481428681939243,
+    "frozen": 0.1448142868193924,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "FK151121__MGDS_22383": {
+    "pair": "FK151121__MGDS_22383",
+    "view": "interior",
+    "n_scored": 523,
+    "rho_s_lr": 0.39024224113185335,
+    "frozen": 0.3902422411318533,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "EX1402L2__MGDS_31073": {
+    "pair": "EX1402L2__MGDS_31073",
+    "view": "interior",
+    "n_scored": 57,
+    "rho_s_lr": 0.6541353383458647,
+    "frozen": 0.6541353383458647,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "EW0207__MGDS_32556": {
+    "pair": "EW0207__MGDS_32556",
+    "view": "interior",
+    "n_scored": 1621,
+    "rho_s_lr": 0.5106066465789334,
+    "frozen": 0.5106066465789334,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "SUM1004__MGDS_33090": {
+    "pair": "SUM1004__MGDS_33090",
+    "view": "fallback",
+    "n_scored": 42,
+    "rho_s_lr": -0.32329150637640935,
+    "frozen": -0.3232915063764093,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "AT42-03__MGDS_32007": {
+    "pair": "AT42-03__MGDS_32007",
+    "view": "fallback",
+    "n_scored": 70,
+    "rho_s_lr": 0.36072084682005073,
+    "frozen": 0.3607208468200507,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "TN159__MGDS_21981": {
+    "pair": "TN159__MGDS_21981",
+    "view": "fallback",
+    "n_scored": 103,
+    "rho_s_lr": 0.043151166366471906,
+    "frozen": 0.0431511663664719,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "KN161L04__MGDS_22436": {
+    "pair": "KN161L04__MGDS_22436",
+    "view": "interior",
+    "n_scored": 298,
+    "rho_s_lr": -0.2982982390627561,
+    "frozen": -0.2982982390627561,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "KN173L02__MGDS_31675": {
+    "pair": "KN173L02__MGDS_31675",
+    "view": "interior",
+    "n_scored": 11,
+    "rho_s_lr": 0.7090909090909092,
+    "frozen": 0.7090909090909092,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "MV1003__MGDS_31860": {
+    "pair": "MV1003__MGDS_31860",
+    "view": "fallback",
+    "n_scored": 55,
+    "rho_s_lr": 0.4633477633477635,
+    "frozen": 0.4633477633477635,
+    "match_3dp": true,
+    "returncode": 0
+   },
+   "AT26-24__MGDS_31954": {
+    "pair": "AT26-24__MGDS_31954",
+    "view": "fallback",
+    "n_scored": 191,
+    "rho_s_lr": 0.7675926563791677,
+    "frozen": 0.7675926563791677,
+    "match_3dp": true,
+    "returncode": 0
+   }
+  },
+  "n_required_pass": 5,
+  "n_all_pass": 48,
+  "n_all": 48,
+  "pass": true
+ },
+ "integrity": {
+  "zips": {
+   "AR26__MGDS_31838.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "AT26-24__MGDS_31954.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "AT37-13__MGDS_31199.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "AT42-03__MGDS_32007.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "AT42-06__MGDS_5174.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "EW0207__MGDS_32556.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "EW9801__MGDS_31425.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "EX1402L2__MGDS_31073.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "Escanaba__MGDS_30368.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "FK151121__MGDS_22383.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "FK181031__MGDS_24618.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "KM0923__MGDS_31429.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "KN161L04__MGDS_22436.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "KN173L02__MGDS_31675.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "KN182L03__MGDS_30193.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "MV1003__MGDS_31860.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "MV1209__MGDS_21415.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "Monterey__MGDS_24756.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "NA076__MGDS_32317.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "NA080__MGDS_31289.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "NA080__MGDS_31290.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "NA090__MGDS_31212.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "RC2511__MGDS_32239.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "RR1506__MGDS_29779.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "SUM1004__MGDS_33090.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "TN159__MGDS_21981.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "TN188__MGDS_18210.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "TN299__MGDS_27339.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "TN299__MGDS_31253.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "TN399__MGDS_30373.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "TN399__MGDS_33068.zip": {
+    "rasters": 12,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__20180426m2_Channel1000.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__20180427m1_Channel700.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__20180427m3_PockmarkNorth.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__20180428m1_Cable.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__201804_LuciaChica2m.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__20190314m4_LuciaChica970m.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__20190315m1_HeadlessCanyon.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__20190316m1_BankTop.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__20190317m1_1000mGully.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__20190317m2_600mGully.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__20190318m2_Transect601060m.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__20190510m1_BankFlankHoles.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__20190510m2_BankFlankIncipCh.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__20190511m1_6thHeadlessCany.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__20190511m2_BankTopEofCanyon3.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__basin_flank.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__luciachica_2007.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "cal_dig_morro_bay__pockmark_south.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "ccz_so268_1.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "discol_so242_1.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   },
+   "tag_m127.zip": {
+    "rasters": 5,
+    "cog_invalid": [],
+    "crs_mismatch": [],
+    "nodata_missing": [],
+    "sha_mismatch": [],
+    "warnings": 0
+   }
+  },
+  "n_rasters": 442,
+  "n_cog_invalid": 0,
+  "n_crs_mismatch": 0,
+  "n_nodata_missing": 0,
+  "n_sha_mismatch": 0,
+  "problems": [],
+  "sha256sums": {
+   "n": 84,
+   "bad": [],
+   "verified": true,
+   "sha256_of_SHA256SUMS": "6763ecb6e5f12adac88616ac2e0d2a1270093dff8c056afa8a06c4a6ce5f8f76"
+  },
+  "pass": true
+ },
+ "blindness": {
+  "sealed_hits": [],
+  "n_sealed_hits": 0,
+  "frozen_doc_mentions": [
+   {
+    "file": "blind_tests/phase4_PREREG_v2_1.md",
+    "pattern": "/oak/stanford/groups/hilley",
+    "context": "om every train / held set of the expanded retrain. Source: `/oak/stanford/groups/hilley/auv_ship_colocated_bathy/analysis_archive_2026-09-28/dir55/"
+   },
+   {
+    "file": "blind_tests/phase4_results_D1.json",
+    "pattern": "/oak/stanford/groups/hilley",
+    "context": "\"P-V1\"  ],  \"dev_min_cells\": 3.880437183601317,  \"inputs\": \"/oak/stanford/groups/hilley/auv_ship_colocated_bathy/grl_review_archive/phase4/score_in"
+   },
+   {
+    "file": "blind_tests/phase4_results_D1.json",
+    "pattern": "/oak/stanford/groups/hilley",
+    "context": "a6fd1bde631ad70786539228284582f66dba44e32ce380\",  \"calls\": \"/oak/stanford/groups/hilley/auv_ship_colocated_bathy/grl_review_archive/phase4/score_in"
+   },
+   {
+    "file": "blind_tests/phase5_DEVIATIONS.md",
+    "pattern": "do[- ]not[- ]open",
+    "context": "lds by design; they are still value-searched and are on the do-not-open list.    - Step 1 ran once under v3 (ACQ-R10c, job 47786827"
+   },
+   {
+    "file": "blind_tests/phase5_PREREG_v3_1.md",
+    "pattern": "sealed_candidates_v3",
+    "context": "702 of 702 probes. - The Phase 5 extension seals the roots `sealed_candidates_v3` and `auv_ship_colocated_bathy/phase5`, every site's pair i"
+   },
+   {
+    "file": "blind_tests/phase5_exclusions_r17.json",
+    "pattern": "/oak/stanford/groups/hilley",
+    "context": "he figures and from every R18 row\",  \"source\": {   \"root\": \"/oak/stanford/groups/hilley/auv_ship_colocated_bathy/grl_review_archive/phase5\",   \"acq"
+   },
+   {
+    "file": "blind_tests/phase5_results_D1.json",
+    "pattern": "/oak/stanford/groups/hilley",
+    "context": "\"P-V1\"  ],  \"dev_min_cells\": 3.880437183601317,  \"inputs\": \"/oak/stanford/groups/hilley/auv_ship_colocated_bathy/grl_review_archive/phase5/scores/i"
+   },
+   {
+    "file": "blind_tests/phase5_results_D1.json",
+    "pattern": "/oak/stanford/groups/hilley",
+    "context": "1.parquet\",  \"inputs_assembly\": {   \"inputs\": {    \"path\": \"/oak/stanford/groups/hilley/auv_ship_colocated_bathy/grl_review_archive/phase5/scores/i"
+   },
+   {
+    "file": "blind_tests/phase5_results_D1.json",
+    "pattern": "/oak/stanford/groups/hilley",
+    "context": "T26-24__MGDS_31954\": 293    }   },   \"stats\": {    \"path\": \"/oak/stanford/groups/hilley/auv_ship_colocated_bathy/grl_review_archive/phase5/scores/s"
+   },
+   {
+    "file": "blind_tests/phase5_results_D1.json",
+    "pattern": "/oak/stanford/groups/hilley",
+    "context": "17c66cb9e93bd875af8b78e871824fef1947186003\",     \"record\": \"/oak/stanford/groups/hilley/auv_ship_colocated_bathy/grl_review_archive/phase5/predicti"
+   },
+   {
+    "file": "blind_tests/phase5_results_D1.json",
+    "pattern": "/oak/stanford/groups/hilley",
+    "context": "7f9307a7f05999d8ff987a9c6614e9c83066bed357\",     \"record\": \"/oak/stanford/groups/hilley/auv_ship_colocated_bathy/grl_review_archive/phase5/predicti"
+   },
+   {
+    "file": "blind_tests/phase5_results_D1.json",
+    "pattern": "/oak/stanford/groups/hilley",
+    "context": "68b0fed4be9e2feca82a84cee1a02c16fcd3c817f7\",     \"record\": \"/oak/stanford/groups/hilley/auv_ship_colocated_bathy/grl_review_archive/phase5/predicti"
+   },
+   {
+    "file": "blind_tests/phase5_results_D1.json",
+    "pattern": "/oak/stanford/groups/hilley",
+    "context": "32786ea01122baf8b44842a388e8ded2dee1b30ca5\",     \"record\": \"/oak/stanford/groups/hilley/auv_ship_colocated_bathy/grl_review_archive/phase5/predicti"
+   },
+   {
+    "file": "blind_tests/phase5_results_D1.json",
+    "pattern": "/oak/stanford/groups/hilley",
+    "context": "b5434bbc35e8d06427bc76587257ad5932941827b6\",     \"record\": \"/oak/stanford/groups/hilley/auv_ship_colocated_bathy/grl_review_archive/phase5/predicti"
+   },
+   {
+    "file": "blind_tests/phase5_results_D1.json",
+    "pattern": "/oak/stanford/groups/hilley",
+    "context": "1675\",    \"Q05\": \"Escanaba__MGDS_30368\"   },   \"key_path\": \"/oak/stanford/groups/hilley/auv_ship_colocated_bathy/grl_review_archive/phase5/figures/"
+   }
+  ],
+  "n_frozen_doc_mentions": 15,
+  "restricted_sources": [],
+  "confirm_sources": [
+   "MGDS:32239"
+  ],
+  "pass": true
+ },
+ "pass": true
+}

@@ -1,0 +1,14 @@
+host sh02-01n06.int job 48662278 start 2026-10-20T18:41:35Z
+[11:41:43] size: {"groups": {"blind_test_1": {"n_pairs": 5, "total_gb": 0.261789658, "largest_zip": "RC2511__MGDS_32239.zip", "largest_gb": 0.195306558}, "blind_test_2": {"n_pairs": 8, "total_gb": 0.272817339, "largest_zip": "MV1209__MGDS_21415.zip", "largest_gb": 0.1123761}, "development": {"n_pairs": 39, "total_gb": 1.165270213, "largest_zip": "TN399__MGDS_30373.zip", "largest_gb": 0.261256713}}, "package": {"n_files_on_disk": 85, "total_gb_on_disk": 1.712995021, "n_files_zenodo": 66, "total_gb_zenodo": 1.712843232, "zenodo_limits_ok": true}}
+[11:41:53]   repro RR1506__MGDS_29779                               view=interior rho=0.5064537749802951 frozen=0.5064537749802951 match=True
+[11:42:00]   repro AR26__MGDS_31838                                 view=fallback rho=0.8153495440729482 frozen=0.8153495440729482 match=True
+[11:42:08]   repro discol_so242_1                                   view=interior rho=0.5938457959231153 frozen=0.5938457959231153 match=True
+[11:42:15]   repro RC2511__MGDS_32239                               view=interior rho=-0.08385783618079665 frozen=-0.0838578361807966 match=True
+[11:42:23]   repro Escanaba__MGDS_30368                             view=interior rho=0.5167486060859418 frozen=0.5167486060859418 match=True
+[11:42:31]   repro AT37-13__MGDS_31199                              view=interior rho=0.38406528609840085 frozen=0.3840652860984008 match=True
+[11:42:38]   repro TN399__MGDS_30373                                view=interior rho=0.1835576868327044 frozen=0.1835576868327044 match=True
+[11:42:45]   repro TN399__MGDS_33068                                view=fallback rho=0.18493353637073862 frozen=0.1849335363707386 match=True
+[11:42:52]   repro AT42-06__MGDS_5174                               view=not_scorable rho=-0.08529411764705883 frozen=-0.0852941176470588 match=True
+[11:42:59]   repro ccz_so268_1                                      view=fallback rho=0.3253562294483011 frozen=0.3253562294483011 match=True
+[11:43:06]   repro EW9801__MGDS_31425                               view=interior rho=0.545815295815296 frozen=0.545815295815296 match=True
+[11:43:14]   repro KM0923__MGDS_31429                               view=interior rho=0.43043478260869555 frozen=0.4304347826086955 match=True

@@ -1,0 +1,20 @@
+{
+ "doi": "10.1594/IEDA/100021",
+ "found": true,
+ "status": 200,
+ "title": "AUV ABE near-bottom scanning sonar bathymetry grids from East Pacific Rise (EPR) 9\u00b0N",
+ "creators": [
+  "Fornari, Daniel"
+ ],
+ "publisher": "Marine Geoscience Data System (MGDS)",
+ "publicationYear": 2006,
+ "url": "https://www.marine-geo.org/doi/10.1594/IEDA/100021",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+  }
+ ],
+ "retrieved": "2026-10-20T18:16:59+00:00",
+ "source": "https://api.datacite.org/dois/10.1594/IEDA/100021"
+}

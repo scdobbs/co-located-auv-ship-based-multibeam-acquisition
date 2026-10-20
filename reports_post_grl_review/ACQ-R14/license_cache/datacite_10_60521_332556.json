@@ -1,0 +1,25 @@
+{
+ "doi": "10.60521/332556",
+ "found": true,
+ "status": 200,
+ "title": "Gridded near-bottom bathymetry data (netCDF format, 1-m resolution) for the distal rift zones of Axial Seamount, version: December, 2025",
+ "creators": [
+  "Caress, David",
+  "Clague, David",
+  "Paduan, Jennifer"
+ ],
+ "publisher": "Marine Geoscience Data System (MGDS)",
+ "publicationYear": 2025,
+ "url": "https://www.marine-geo.org/doi/10.60521/332556",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "retrieved": "2026-10-20T18:17:34+00:00",
+ "source": "https://api.datacite.org/dois/10.60521/332556"
+}

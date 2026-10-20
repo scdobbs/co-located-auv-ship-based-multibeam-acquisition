@@ -1,0 +1,20 @@
+{
+ "doi": "10.1594/IEDA/322436",
+ "found": true,
+ "status": 200,
+ "title": "Processed Sentry AUV bathymetry data from the Mid-Atlantic Ridge at 16.5N, Knorr cruise KN210-05 (2013, chief scientist Deborah Smith).",
+ "creators": [
+  "Smith, Deborah"
+ ],
+ "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+ "publicationYear": 2016,
+ "url": "https://www.marine-geo.org/doi/10.1594/IEDA/322436",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us"
+  }
+ ],
+ "retrieved": "2026-10-20T18:17:58+00:00",
+ "source": "https://api.datacite.org/dois/10.1594/IEDA/322436"
+}

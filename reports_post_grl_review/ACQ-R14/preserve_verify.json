@@ -1,0 +1,9 @@
+{
+ "generated": "2026-10-20T18:55:35+00:00",
+ "dest": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/acq_archive/ACQ-R14",
+ "n_files": 112,
+ "sha256sums_sha256": "ca5cb80ad734a0a0c58fa5f94d778e6d91dacf846fe223d298f832017810f3a0",
+ "verified": true,
+ "bad": [],
+ "package_sha256sums_sha256": "6763ecb6e5f12adac88616ac2e0d2a1270093dff8c056afa8a06c4a6ce5f8f76"
+}

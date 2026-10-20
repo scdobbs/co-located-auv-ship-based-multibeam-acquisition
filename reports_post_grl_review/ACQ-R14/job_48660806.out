@@ -1,0 +1,182 @@
+host sh03-08n40.int job 48660806 start 2026-10-20T18:31:44Z
+[11:31:46] build: 52 pairs to build with 4 workers (already done: 0)
+[fix] build discol_so242_1: hr.tif pixel 2.1855 m differs from the manifest hr_native_res_m 2.0; hr_res records the as-used pixel
+[11:31:52]   discol_so242_1                                        8.3 MB  6 files
+[11:31:52]   AT37-13__MGDS_31199                                   8.3 MB  16 files
+[11:31:53]   AT42-06__MGDS_5174                                    1.3 MB  16 files
+[11:31:53]   ccz_so268_1                                           2.0 MB  6 files
+[11:31:53]   TN399__MGDS_33068                                     8.4 MB  16 files
+[11:31:54]   EW9801__MGDS_31425                                    7.0 MB  16 files
+[11:31:57]   KM0923__MGDS_31429                                   11.6 MB  16 files
+[fix] build FK181031__MGDS_24618: hr.tif pixel 1.0559 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel
+[11:32:00]   FK181031__MGDS_24618                                 39.0 MB  16 files
+[fix] build tag_m127: lr.tif: dtype float64 cast to float32
+[fix] build tag_m127: hr.tif pixel 1.8880 m differs from the manifest hr_native_res_m 2.0; hr_res records the as-used pixel
+[11:32:00]   tag_m127                                             33.5 MB  6 files
+[11:32:01]   RR1506__MGDS_29779                                  120.7 MB  16 files
+[fix] build NA090__MGDS_31212: hr.tif pixel 1.0538 m differs from the manifest hr_native_res_m 0.992; hr_res records the as-used pixel
+[11:32:01]   NA090__MGDS_31212                                     6.8 MB  16 files
+[11:32:02]   cal_dig_morro_bay__20180427m1_Channel700              6.4 MB  6 files
+[fix] build cal_dig_morro_bay__20180426m2_Channel1000: hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel
+[11:32:02]   cal_dig_morro_bay__20180426m2_Channel1000             7.8 MB  6 files
+[fix] build NA076__MGDS_32317: hr.tif pixel 1.0572 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel
+[11:32:02]   NA076__MGDS_32317                                    17.8 MB  16 files
+[fix] build cal_dig_morro_bay__20180427m3_PockmarkNorth: hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel
+[11:32:03]   cal_dig_morro_bay__20180427m3_PockmarkNorth           3.8 MB  6 files
+[11:32:04]   cal_dig_morro_bay__20190314m4_LuciaChica970m          2.9 MB  6 files
+[fix] build cal_dig_morro_bay__20180428m1_Cable: hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel
+[11:32:04]   cal_dig_morro_bay__20180428m1_Cable                   5.2 MB  6 files
+[fix] build cal_dig_morro_bay__201804_LuciaChica2m: hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel
+[11:32:04]   cal_dig_morro_bay__201804_LuciaChica2m                8.8 MB  6 files
+[fix] build cal_dig_morro_bay__20190315m1_HeadlessCanyon: hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.019320966862077; hr_res records the as-used pixel
+[11:32:05]   cal_dig_morro_bay__20190315m1_HeadlessCanyon          8.3 MB  6 files
+[fix] build cal_dig_morro_bay__20190317m1_1000mGully: hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel
+[11:32:06]   cal_dig_morro_bay__20190317m1_1000mGully              7.0 MB  6 files
+[11:32:06]   cal_dig_morro_bay__20190316m1_BankTop                 9.8 MB  6 files
+[fix] build cal_dig_morro_bay__20190510m1_BankFlankHoles: hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel
+[11:32:07]   cal_dig_morro_bay__20190510m1_BankFlankHoles          7.7 MB  6 files
+[11:32:08]   cal_dig_morro_bay__20190510m2_BankFlankIncipCh        8.6 MB  6 files
+[fix] build cal_dig_morro_bay__20190317m2_600mGully: hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel
+[11:32:08]   cal_dig_morro_bay__20190317m2_600mGully               9.3 MB  6 files
+[11:32:10]   cal_dig_morro_bay__20190511m2_BankTopEofCanyon3       9.7 MB  6 files
+[11:32:10]   cal_dig_morro_bay__20190511m1_6thHeadlessCany        10.0 MB  6 files
+[fix] build cal_dig_morro_bay__luciachica_2007: hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel
+[11:32:10]   cal_dig_morro_bay__luciachica_2007                    2.3 MB  6 files
+[fix] build cal_dig_morro_bay__basin_flank: hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel
+[11:32:11]   cal_dig_morro_bay__basin_flank                        3.0 MB  6 files
+[fix] build cal_dig_morro_bay__pockmark_south: hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel
+[11:32:11]   cal_dig_morro_bay__pockmark_south                     5.6 MB  6 files
+[fix] build cal_dig_morro_bay__20190318m2_Transect601060m: hr.tif pixel 2.0000 m differs from the manifest hr_native_res_m 1.0296948797210286; hr_res records the as-used pixel
+[11:32:14]   cal_dig_morro_bay__20190318m2_Transect601060m        11.5 MB  6 files
+[fix] build AR26__MGDS_31838: hr.tif pixel 1.7660 m differs from the manifest hr_native_res_m 0.992; hr_res records the as-used pixel
+[11:32:15]   AR26__MGDS_31838                                      3.8 MB  16 files
+[11:32:20]   TN399__MGDS_30373                                   261.3 MB  16 files
+[11:32:24]   TN299__MGDS_31253                                    14.2 MB  16 files
+[11:32:28]   FK151121__MGDS_22383                                 31.8 MB  16 files
+[11:32:30]   EX1402L2__MGDS_31073                                  7.4 MB  16 files
+[11:32:30]   TN299__MGDS_27339                                    94.2 MB  16 files
+[11:32:32]   NA080__MGDS_31289                                   111.2 MB  16 files
+[11:32:34]   NA080__MGDS_31290                                   112.4 MB  16 files
+[11:32:35]   KN182L03__MGDS_30193                                 31.1 MB  6 files
+[11:32:37]   AT42-03__MGDS_32007                                  11.0 MB  16 files
+[fix] build TN159__MGDS_21981: hr.tif pixel 3.2467 m differs from the manifest hr_native_res_m 0.991; hr_res records the as-used pixel
+[11:32:39]   TN159__MGDS_21981                                     6.6 MB  16 files
+[11:32:44]   TN188__MGDS_18210                                    23.8 MB  16 files
+[11:32:48]   SUM1004__MGDS_33090                                  17.9 MB  16 files
+[fix] build EW0207__MGDS_32556: hr.tif pixel 1.2303 m differs from the manifest hr_native_res_m 1.0; hr_res records the as-used pixel
+[11:32:52]   EW0207__MGDS_32556                                  136.8 MB  6 files
+[11:32:53]   Monterey__MGDS_24756                                 33.2 MB  6 files
+[11:32:55]   RC2511__MGDS_32239                                  195.3 MB  6 files
+[11:32:58]   Escanaba__MGDS_30368                                 35.5 MB  16 files
+[11:32:59]   KN173L02__MGDS_31675                                 17.8 MB  16 files
+[11:33:00]   MV1003__MGDS_31860                                    7.5 MB  6 files
+[11:33:01]   AT26-24__MGDS_31954                                  11.2 MB  16 files
+[11:33:02]   KN161L04__MGDS_22436                                 31.5 MB  16 files
+[11:33:06]   MV1209__MGDS_21415                                  112.4 MB  16 files
+[11:33:06] build: 52 zips, 1.70 GB; errors: {}
+[11:33:11] pairs table: 69 rows (52 with rasters)
+[11:33:12] tiles table: 32054 rows; excluded_r17 22 (list has 22); groups {'development': 26154, 'blind_test_1': 3812, 'blind_test_2': 2088}
+[11:33:12] blind_tests: 18 files + INDEX.md; blind_tests.zip
+[11:33:14] SHA256SUMS: 84 files
+[11:33:18] size: {"groups": {"blind_test_1": {"n_pairs": 5, "total_gb": 0.261789658, "largest_zip": "RC2511__MGDS_32239.zip", "largest_gb": 0.195306558}, "blind_test_2": {"n_pairs": 8, "total_gb": 0.272817339, "largest_zip": "MV1209__MGDS_21415.zip", "largest_gb": 0.1123761}, "development": {"n_pairs": 39, "total_gb": 1.165270213, "largest_zip": "TN399__MGDS_30373.zip", "largest_gb": 0.261256713}}, "package": {"n_files_on_disk": 85, "total_gb_on_disk": 1.712995021, "n_files_zenodo": 66, "total_gb_zenodo": 1.712843232, "zenodo_limits_ok": true}}
+[11:33:25]   repro RR1506__MGDS_29779                               view=interior rho=0.5064537749802951 frozen=0.5064537749802951 match=True
+[11:33:30]   repro AR26__MGDS_31838                                 view=fallback rho=0.8153495440729482 frozen=0.8153495440729482 match=True
+[11:33:35]   repro discol_so242_1                                   view=interior rho=0.5938457959231153 frozen=0.5938457959231153 match=True
+[11:33:40]   repro RC2511__MGDS_32239                               view=interior rho=-0.08385783618079665 frozen=-0.0838578361807966 match=True
+[11:33:44]   repro Escanaba__MGDS_30368                             view=interior rho=0.5167486060859418 frozen=0.5167486060859418 match=True
+[11:33:49]   repro AT37-13__MGDS_31199                              view=interior rho=0.38406528609840085 frozen=0.3840652860984008 match=True
+[11:33:54]   repro TN399__MGDS_30373                                view=interior rho=0.1835576868327044 frozen=0.1835576868327044 match=True
+[11:33:59]   repro TN399__MGDS_33068                                view=fallback rho=0.18493353637073862 frozen=0.1849335363707386 match=True
+[11:34:04]   repro AT42-06__MGDS_5174                               view=not_scorable rho=-0.08529411764705883 frozen=-0.0852941176470588 match=True
+[11:34:09]   repro ccz_so268_1                                      view=fallback rho=0.3253562294483011 frozen=0.3253562294483011 match=True
+[11:34:15]   repro EW9801__MGDS_31425                               view=interior rho=0.545815295815296 frozen=0.545815295815296 match=True
+[11:34:20]   repro KM0923__MGDS_31429                               view=interior rho=0.43043478260869555 frozen=0.4304347826086955 match=True
+[11:34:25]   repro FK181031__MGDS_24618                             view=interior rho=0.6306358710931969 frozen=0.6306358710931969 match=True
+[11:34:32]   repro tag_m127                                         view=interior rho=-0.08502162244263389 frozen=-0.0850216224426338 match=True
+[11:34:38]   repro NA090__MGDS_31212                                view=interior rho=0.34293547927645635 frozen=0.3429354792764563 match=True
+[11:34:44]   repro NA076__MGDS_32317                                view=interior rho=-0.013151023121112854 frozen=-0.0131510231211128 match=True
+[11:34:49]   repro cal_dig_morro_bay__20180426m2_Channel1000        view=interior rho=0.5670069337714042 frozen=0.5670069337714042 match=True
+[11:34:54]   repro cal_dig_morro_bay__20180427m1_Channel700         view=interior rho=0.7572211076798233 frozen=0.7572211076798233 match=True
+[11:35:00]   repro cal_dig_morro_bay__20180427m3_PockmarkNorth      view=interior rho=0.06777998121281704 frozen=0.067779981212817 match=True
+[11:35:05]   repro cal_dig_morro_bay__20180428m1_Cable              view=interior rho=0.2782496782496783 frozen=0.2782496782496783 match=True
+[11:35:11]   repro cal_dig_morro_bay__201804_LuciaChica2m           view=interior rho=0.5972583459458418 frozen=0.5972583459458418 match=True
+[11:35:16]   repro cal_dig_morro_bay__20190314m4_LuciaChica970m     view=fallback rho=0.8202847654311561 frozen=0.8202847654311561 match=True
+[11:35:22]   repro cal_dig_morro_bay__20190315m1_HeadlessCanyon     view=interior rho=0.5493389740877841 frozen=0.5493389740877841 match=True
+[11:35:27]   repro cal_dig_morro_bay__20190316m1_BankTop            view=interior rho=0.6273073462640972 frozen=0.6273073462640972 match=True
+[11:35:35]   repro cal_dig_morro_bay__20190317m1_1000mGully         view=interior rho=0.14411258479295333 frozen=0.1441125847929533 match=True
+[11:35:41]   repro cal_dig_morro_bay__20190317m2_600mGully          view=interior rho=0.4281269292505248 frozen=0.4281269292505248 match=True
+[11:35:47]   repro cal_dig_morro_bay__20190318m2_Transect601060m    view=interior rho=-0.3244139508290452 frozen=-0.3244139508290452 match=True
+[11:35:52]   repro cal_dig_morro_bay__20190510m1_BankFlankHoles     view=interior rho=0.3111857766653517 frozen=0.3111857766653517 match=True
+[11:35:57]   repro cal_dig_morro_bay__20190510m2_BankFlankIncipCh   view=interior rho=0.8956966976310058 frozen=0.8956966976310058 match=True
+[11:36:03]   repro cal_dig_morro_bay__20190511m1_6thHeadlessCany    view=interior rho=0.807873800506848 frozen=0.807873800506848 match=True
+[11:36:08]   repro cal_dig_morro_bay__20190511m2_BankTopEofCanyon3  view=interior rho=0.7909914390669915 frozen=0.7909914390669915 match=True
+[11:36:13]   repro cal_dig_morro_bay__basin_flank                   view=fallback rho=0.37535649468498833 frozen=0.3753564946849883 match=True
+[11:36:19]   repro cal_dig_morro_bay__luciachica_2007               view=not_scorable rho=0.6842343702808819 frozen=0.6842343702808819 match=True
+[11:36:25]   repro cal_dig_morro_bay__pockmark_south                view=interior rho=-0.04592839592839592 frozen=-0.0459283959283959 match=True
+[11:36:32]   repro NA080__MGDS_31290                                view=interior rho=0.5863417389777791 frozen=0.5863417389777791 match=True
+[11:36:37]   repro NA080__MGDS_31289                                view=interior rho=0.5889843073883962 frozen=0.5889843073883962 match=True
+[11:36:41]   repro TN299__MGDS_27339                                view=interior rho=0.1856897943123738 frozen=0.1856897943123738 match=True
+[11:36:46]   repro TN299__MGDS_31253                                view=interior rho=0.14481428681939243 frozen=0.1448142868193924 match=True
+[11:36:51]   repro FK151121__MGDS_22383                             view=interior rho=0.39024224113185335 frozen=0.3902422411318533 match=True
+[11:36:56]   repro EX1402L2__MGDS_31073                             view=interior rho=0.6541353383458647 frozen=0.6541353383458647 match=True
+[11:37:01]   repro EW0207__MGDS_32556                               view=interior rho=0.5106066465789334 frozen=0.5106066465789334 match=True
+[11:37:05]   repro SUM1004__MGDS_33090                              view=fallback rho=-0.32329150637640935 frozen=-0.3232915063764093 match=True
+[11:37:10]   repro AT42-03__MGDS_32007                              view=fallback rho=0.36072084682005073 frozen=0.3607208468200507 match=True
+[11:37:15]   repro TN159__MGDS_21981                                view=fallback rho=0.043151166366471906 frozen=0.0431511663664719 match=True
+[11:37:20]   repro KN161L04__MGDS_22436                             view=interior rho=-0.2982982390627561 frozen=-0.2982982390627561 match=True
+[11:37:25]   repro KN173L02__MGDS_31675                             view=interior rho=0.7090909090909092 frozen=0.7090909090909092 match=True
+[11:37:32]   repro MV1003__MGDS_31860                               view=fallback rho=0.4633477633477635 frozen=0.4633477633477635 match=True
+[11:37:37]   repro AT26-24__MGDS_31954                              view=fallback rho=0.7675926563791677 frozen=0.7675926563791677 match=True
+[11:37:37]   integrity AR26__MGDS_31838.zip                                 rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:37]   integrity AT26-24__MGDS_31954.zip                              rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:37]   integrity AT37-13__MGDS_31199.zip                              rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:37]   integrity AT42-03__MGDS_32007.zip                              rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:37]   integrity AT42-06__MGDS_5174.zip                               rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:37]   integrity EW0207__MGDS_32556.zip                               rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:37]   integrity EW9801__MGDS_31425.zip                               rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:37]   integrity EX1402L2__MGDS_31073.zip                             rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:38]   integrity Escanaba__MGDS_30368.zip                             rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:38]   integrity FK151121__MGDS_22383.zip                             rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:38]   integrity FK181031__MGDS_24618.zip                             rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:38]   integrity KM0923__MGDS_31429.zip                               rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:38]   integrity KN161L04__MGDS_22436.zip                             rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:38]   integrity KN173L02__MGDS_31675.zip                             rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:38]   integrity KN182L03__MGDS_30193.zip                             rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:38]   integrity MV1003__MGDS_31860.zip                               rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:39]   integrity MV1209__MGDS_21415.zip                               rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:39]   integrity Monterey__MGDS_24756.zip                             rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:39]   integrity NA076__MGDS_32317.zip                                rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:39]   integrity NA080__MGDS_31289.zip                                rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:39]   integrity NA080__MGDS_31290.zip                                rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:39]   integrity NA090__MGDS_31212.zip                                rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:40]   integrity RC2511__MGDS_32239.zip                               rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:40]   integrity RR1506__MGDS_29779.zip                               rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:40]   integrity SUM1004__MGDS_33090.zip                              rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:40]   integrity TN159__MGDS_21981.zip                                rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:40]   integrity TN188__MGDS_18210.zip                                rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:41]   integrity TN299__MGDS_27339.zip                                rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:41]   integrity TN299__MGDS_31253.zip                                rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:41]   integrity TN399__MGDS_30373.zip                                rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:41]   integrity TN399__MGDS_33068.zip                                rasters=12 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:41]   integrity cal_dig_morro_bay__20180426m2_Channel1000.zip        rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:41]   integrity cal_dig_morro_bay__20180427m1_Channel700.zip         rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity cal_dig_morro_bay__20180427m3_PockmarkNorth.zip      rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity cal_dig_morro_bay__20180428m1_Cable.zip              rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity cal_dig_morro_bay__201804_LuciaChica2m.zip           rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity cal_dig_morro_bay__20190314m4_LuciaChica970m.zip     rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity cal_dig_morro_bay__20190315m1_HeadlessCanyon.zip     rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity cal_dig_morro_bay__20190316m1_BankTop.zip            rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity cal_dig_morro_bay__20190317m1_1000mGully.zip         rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity cal_dig_morro_bay__20190317m2_600mGully.zip          rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity cal_dig_morro_bay__20190318m2_Transect601060m.zip    rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity cal_dig_morro_bay__20190510m1_BankFlankHoles.zip     rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity cal_dig_morro_bay__20190510m2_BankFlankIncipCh.zip   rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity cal_dig_morro_bay__20190511m1_6thHeadlessCany.zip    rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity cal_dig_morro_bay__20190511m2_BankTopEofCanyon3.zip  rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity cal_dig_morro_bay__basin_flank.zip                   rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity cal_dig_morro_bay__luciachica_2007.zip               rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity cal_dig_morro_bay__pockmark_south.zip                rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity ccz_so268_1.zip                                      rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity discol_so242_1.zip                                   rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:42]   integrity tag_m127.zip                                         rasters= 5 cog_invalid=0 crs=0 nodata=0 sha=0
+[11:37:44] check: reproduction True (5/5 required, 48/48 all); integrity True (442 rasters); blindness False; limits True -> PASS=False

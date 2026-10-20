@@ -1,0 +1,23 @@
+{
+ "doi": "10.60521/333090",
+ "found": true,
+ "status": 200,
+ "title": "Processed Gridded Near-Bottom AUV Bathymetry Data (EM2040) from the Mariana Islands, acquired during E/V Nautilus expedition NA179 (2026)",
+ "creators": [
+  "Soule, Adam"
+ ],
+ "publisher": "Marine Geoscience Data System (MGDS)",
+ "publicationYear": 2026,
+ "url": "https://www.marine-geo.org/doi/10.60521/333090",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "retrieved": "2026-10-20T18:17:44+00:00",
+ "source": "https://api.datacite.org/dois/10.60521/333090"
+}

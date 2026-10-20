@@ -1,0 +1,26 @@
+{
+ "doi": "10.60521/332317",
+ "found": true,
+ "status": 200,
+ "title": "Santa Monica 800 m Mound MBARI Mapping AUV near-bottom processed swath bathymetry gridded data (netCDF format) at 1 m resolution (2006-2018)",
+ "creators": [
+  "Caress, David",
+  "Paull, Charles",
+  "Lundsten, Eve",
+  "Paduan, Jennifer"
+ ],
+ "publisher": "Marine Geoscience Data System (MGDS)",
+ "publicationYear": 2025,
+ "url": "https://www.marine-geo.org/doi/10.60521/332317",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "retrieved": "2026-10-20T18:17:16+00:00",
+ "source": "https://api.datacite.org/dois/10.60521/332317"
+}

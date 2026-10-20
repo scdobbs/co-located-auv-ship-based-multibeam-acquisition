@@ -1,0 +1,27 @@
+{
+ "doi": "10.26022/IEDA/331429",
+ "found": true,
+ "status": 200,
+ "title": "Loihi Seamount (Hawaii), Shinkai Deep and FeMO hydrothermal sites, Sentry AUV near-bottom processed bathymetry data, ESRI ASCII grid format (2013, 2014)",
+ "creators": [
+  "Glazer, Brian",
+  "Yoerger, Dana",
+  "Clague, David",
+  "Caress, David",
+  "Paduan, Jennifer"
+ ],
+ "publisher": "Marine Geoscience Data System (MGDS)",
+ "publicationYear": 2023,
+ "url": "https://www.marine-geo.org/doi/10.26022/IEDA/331429",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-nc-sa-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "retrieved": "2026-10-20T18:17:07+00:00",
+ "source": "https://api.datacite.org/dois/10.26022/IEDA/331429"
+}

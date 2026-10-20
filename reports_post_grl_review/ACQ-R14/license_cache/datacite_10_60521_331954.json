@@ -1,0 +1,23 @@
+{
+ "doi": "10.60521/331954",
+ "found": true,
+ "status": 200,
+ "title": "Processed Gridded Near-Bottom AUV Bathymetry Data from the Dorado Outcrop, acquired during R/V Atlantis expedition AT26-09 (2013)",
+ "creators": [
+  "Wheat, Geoffrey"
+ ],
+ "publisher": "Marine Geoscience Data System (MGDS)",
+ "publicationYear": 2024,
+ "url": "https://www.marine-geo.org/doi/10.60521/331954",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "retrieved": "2026-10-20T18:18:09+00:00",
+ "source": "https://api.datacite.org/dois/10.60521/331954"
+}

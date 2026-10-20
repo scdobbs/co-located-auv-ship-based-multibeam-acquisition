@@ -1,0 +1,3253 @@
+{
+ "generated": "2026-10-20T18:20:13+00:00",
+ "datasets": {
+  "MGDS:29779": {
+   "id": "MGDS:29779",
+   "provider": "MGDS",
+   "doi": "10.26022/IEDA/329779",
+   "landing": "https://www.marine-geo.org/doi/10.26022/IEDA/329779",
+   "title": "AUV Sentry near-bottom bathymetry data at the Havre Volcano Caldera in the Kermadec Arc (RR1506, 2015)",
+   "found": true,
+   "creators": [
+    "Soule, S.",
+    "Carey, Rebecca"
+   ],
+   "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+   "year": 2020,
+   "evidence": "https://api.datacite.org/dois/10.26022/IEDA/329779",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:RR1506": {
+   "id": "NCEI:RR1506",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/RR1506_Multibeam.xml",
+   "title": "Multibeam collection for RR1506: Multibeam data collected aboard Roger Revelle from 27-Mar-15 to 17-Apr-15, Auckland, New Zealand to Auckland, New Zealand",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/RR1506_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "10.1594/PANGAEA.905580": {
+   "id": "10.1594/PANGAEA.905580",
+   "provider": "PANGAEA",
+   "doi": "10.1594/PANGAEA.905580",
+   "landing": "https://doi.pangaea.de/10.1594/PANGAEA.905580",
+   "title": "Merged and geo-referenced bathymetric raster from AUV MBES surveys during SONNE cruise SO242/1",
+   "found": true,
+   "creators": [
+    "Gausepohl, Florian",
+    "Hennke, Anne",
+    "Schoening, Timm",
+    "K\u00f6ser, Kevin",
+    "Greinert, Jens",
+    "Steinf\u00fchrer, Anja"
+   ],
+   "publisher": "PANGAEA",
+   "year": 2019,
+   "evidence": "https://api.datacite.org/dois/10.1594/PANGAEA.905580",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution 4.0 International",
+     "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+     "schemeUri": "https://spdx.org/licenses/",
+     "rightsIdentifier": "cc-by-4.0",
+     "rightsIdentifierScheme": "SPDX"
+    }
+   ],
+   "license": "Creative Commons Attribution 4.0 International",
+   "redistribution": "yes"
+  },
+  "10.1594/PANGAEA.905579": {
+   "id": "10.1594/PANGAEA.905579",
+   "provider": "PANGAEA",
+   "doi": "10.1594/PANGAEA.905579",
+   "landing": "https://doi.pangaea.de/10.1594/PANGAEA.905579",
+   "title": "Bathymetric grid from the DISCOL working area of SONNE cruise SO242/1 in the Peru-basin",
+   "found": true,
+   "creators": [
+    "Gausepohl, Florian",
+    "Hennke, Anne",
+    "Schoening, Timm",
+    "K\u00f6ser, Kevin",
+    "Greinert, Jens"
+   ],
+   "publisher": "PANGAEA",
+   "year": 2019,
+   "evidence": "https://api.datacite.org/dois/10.1594/PANGAEA.905579",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution 4.0 International",
+     "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+     "schemeUri": "https://spdx.org/licenses/",
+     "rightsIdentifier": "cc-by-4.0",
+     "rightsIdentifierScheme": "SPDX"
+    }
+   ],
+   "license": "Creative Commons Attribution 4.0 International",
+   "redistribution": "yes"
+  },
+  "MGDS:31199": {
+   "id": "MGDS:31199",
+   "provider": "MGDS",
+   "doi": "10.60521/331199",
+   "landing": "https://www.marine-geo.org/doi/10.60521/331199",
+   "title": "Processed Gridded Near-Bottom AUV Bathymetry Data from the Costa Rica Rift Spreading Center, acquired during R/V Atlantis expedition AT37-13 (2017)",
+   "found": true,
+   "creators": [
+    "Cordes, Erik"
+   ],
+   "publisher": "Marine Geoscience Data System (MGDS)",
+   "year": 2022,
+   "evidence": "https://api.datacite.org/dois/10.60521/331199",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:AT37-13": {
+   "id": "NCEI:AT37-13",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/AT37-13_Multibeam.xml",
+   "title": "Multibeam collection for AT37-13: Multibeam data collected aboard Atlantis from 20-May-17 to 11-Jun-17, Puntarenas, Costa Rica to Puntarenas",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/AT37-13_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:30373": {
+   "id": "MGDS:30373",
+   "provider": "MGDS",
+   "doi": "10.26022/IEDA/330373",
+   "landing": "https://www.marine-geo.org/doi/10.26022/IEDA/330373",
+   "title": "Processed bathymetric data (netCDF grid) from 9\u00b050'N, East Pacific Rise, acquired in 2018, 2019 and 2021 during AUV Sentry near-bottom dives",
+   "found": true,
+   "creators": [
+    "Parnell-Turner, Ross",
+    "Fornari, Daniel",
+    "McDermott, Jill",
+    "Barreyre, Thibaut",
+    "Wu, Jyun-Nai"
+   ],
+   "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+   "year": 2022,
+   "evidence": "https://api.datacite.org/dois/10.26022/IEDA/330373",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:TN399": {
+   "id": "NCEI:TN399",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/TN399_Multibeam.xml",
+   "title": "Multibeam collection for TN399: Multibeam data collected aboard Thomas G. Thompson from 14-Jan-22 to 02-Mar-22, San Diego, California to San Diego, California",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/TN399_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:33068": {
+   "id": "MGDS:33068",
+   "provider": "MGDS",
+   "doi": "10.60521/333068",
+   "landing": "https://www.marine-geo.org/doi/10.60521/333068",
+   "title": "Processed Gridded Near-Bottom AUV Bathymetry Data (EM2040) from the East Pacific Rise at 9N Spreading Center Segment, acquired during R/V Atlantis expedition AT50-21 (2024)",
+   "found": true,
+   "creators": [
+    "McDermott, Jill",
+    "Fornari, Daniel"
+   ],
+   "publisher": "Marine Geoscience Data System (MGDS)",
+   "year": 2026,
+   "evidence": "https://api.datacite.org/dois/10.60521/333068",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution 4.0 International",
+     "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+     "schemeUri": "https://spdx.org/licenses/",
+     "rightsIdentifier": "cc-by-4.0",
+     "rightsIdentifierScheme": "SPDX"
+    }
+   ],
+   "license": "Creative Commons Attribution 4.0 International",
+   "redistribution": "yes"
+  },
+  "MGDS:5174": {
+   "id": "MGDS:5174",
+   "provider": "MGDS",
+   "doi": "10.1594/IEDA/100021",
+   "landing": "https://www.marine-geo.org/doi/10.1594/IEDA/100021",
+   "title": "AUV ABE near-bottom scanning sonar bathymetry grids from East Pacific Rise (EPR) 9\u00b0N",
+   "found": true,
+   "creators": [
+    "Fornari, Daniel"
+   ],
+   "publisher": "Marine Geoscience Data System (MGDS)",
+   "year": 2006,
+   "evidence": "https://api.datacite.org/dois/10.1594/IEDA/100021",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:AT42-06": {
+   "id": "NCEI:AT42-06",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/AT42-06_Multibeam.xml",
+   "title": "Multibeam collection for AT42-06: Multibeam data collected aboard Atlantis from 03-Dec-18 to 20-Dec-18, Manzanillo, Mexico to San Diego, California",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/AT42-06_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "10.1594/PANGAEA.915765": {
+   "id": "10.1594/PANGAEA.915765",
+   "provider": "PANGAEA",
+   "doi": "10.1594/PANGAEA.915765",
+   "landing": "https://doi.pangaea.de/10.1594/PANGAEA.915765",
+   "title": "Processed AUV multibeam swath bathymetry collected during SONNE cruise SO268/1 inside the German License Area in Clarion Clipperton Zone, Pacific",
+   "found": true,
+   "creators": [
+    "Gazis, Iason-Zois"
+   ],
+   "publisher": "PANGAEA",
+   "year": 2020,
+   "evidence": "https://api.datacite.org/dois/10.1594/PANGAEA.915765",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution 4.0 International",
+     "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+     "schemeUri": "https://spdx.org/licenses/",
+     "rightsIdentifier": "cc-by-4.0",
+     "rightsIdentifierScheme": "SPDX"
+    }
+   ],
+   "license": "Creative Commons Attribution 4.0 International",
+   "redistribution": "yes"
+  },
+  "10.1594/PANGAEA.915764": {
+   "id": "10.1594/PANGAEA.915764",
+   "provider": "PANGAEA",
+   "doi": "10.1594/PANGAEA.915764",
+   "landing": "https://doi.pangaea.de/10.1594/PANGAEA.915764",
+   "title": "Processed EM122 multibeam swath bathymetry collected during SONNE cruise SO268/1 inside the German License Area in Clarion Clipperton Zone, Pacific",
+   "found": true,
+   "creators": [
+    "Gazis, Iason-Zois"
+   ],
+   "publisher": "PANGAEA",
+   "year": 2020,
+   "evidence": "https://api.datacite.org/dois/10.1594/PANGAEA.915764",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution 4.0 International",
+     "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+     "schemeUri": "https://spdx.org/licenses/",
+     "rightsIdentifier": "cc-by-4.0",
+     "rightsIdentifierScheme": "SPDX"
+    }
+   ],
+   "license": "Creative Commons Attribution 4.0 International",
+   "redistribution": "yes"
+  },
+  "MGDS:31425": {
+   "id": "MGDS:31425",
+   "provider": "MGDS",
+   "doi": "10.26022/IEDA/331425",
+   "landing": "https://www.marine-geo.org/doi/10.26022/IEDA/331425",
+   "title": "Loihi Seamount (Hawaii), summit and Pele's Pit, Sentry AUV near-bottom processed bathymetry data, netCDF grid format (2013)",
+   "found": true,
+   "creators": [
+    "Moyer, Craig",
+    "Yoerger, Dana",
+    "Clague, David",
+    "Caress, David",
+    "Paduan, Jennifer"
+   ],
+   "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+   "year": 2023,
+   "evidence": "https://api.datacite.org/dois/10.26022/IEDA/331425",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:EW9801": {
+   "id": "NCEI:EW9801",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/EW9801_Multibeam.xml",
+   "title": "Multibeam collection for EW9801: Multibeam data collected aboard Maurice Ewing from 15-Jan-98 to 12-Feb-98, Honolulu, Hawaii to Honolulu, Hawaii",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/EW9801_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:31429": {
+   "id": "MGDS:31429",
+   "provider": "MGDS",
+   "doi": "10.26022/IEDA/331429",
+   "landing": "https://www.marine-geo.org/doi/10.26022/IEDA/331429",
+   "title": "Loihi Seamount (Hawaii), Shinkai Deep and FeMO hydrothermal sites, Sentry AUV near-bottom processed bathymetry data, ESRI ASCII grid format (2013, 2014)",
+   "found": true,
+   "creators": [
+    "Glazer, Brian",
+    "Yoerger, Dana",
+    "Clague, David",
+    "Caress, David",
+    "Paduan, Jennifer"
+   ],
+   "publisher": "Marine Geoscience Data System (MGDS)",
+   "year": 2023,
+   "evidence": "https://api.datacite.org/dois/10.26022/IEDA/331429",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+     "rightsUri": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+     "schemeUri": "https://spdx.org/licenses/",
+     "rightsIdentifier": "cc-by-nc-sa-4.0",
+     "rightsIdentifierScheme": "SPDX"
+    }
+   ],
+   "license": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:KM0923": {
+   "id": "NCEI:KM0923",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/KM0923_Multibeam.xml",
+   "title": "Multibeam collection for KM0923: Multibeam data collected aboard Kilo Moana from 01-Oct-09 to 17-Oct-09, Honolulu, Hawaii to Honolulu, Hawaii",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/KM0923_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:24618": {
+   "id": "MGDS:24618",
+   "provider": "MGDS",
+   "doi": "10.1594/IEDA/324618",
+   "landing": "https://www.marine-geo.org/doi/10.1594/IEDA/324618",
+   "title": "Near-Bottom Bathymetry Data (grid in netCDF format) from the Pescadero Basin, southern Gulf of California",
+   "found": true,
+   "creators": [
+    "Caress, David",
+    "Clague, David",
+    "Paduan, Jennifer",
+    "Spelz-Madero, Ronald"
+   ],
+   "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+   "year": 2018,
+   "evidence": "https://api.datacite.org/dois/10.1594/IEDA/324618",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:FK181031": {
+   "id": "NCEI:FK181031",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/FK181031_Multibeam.xml",
+   "title": "Multibeam collection for FK181031: Multibeam data collected aboard Falkor from 31-Oct-18 to 23-Nov-18, San Diego, California to Manzanillo, Mexico",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/FK181031_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "10.1594/PANGAEA.899415": {
+   "id": "10.1594/PANGAEA.899415",
+   "provider": "PANGAEA",
+   "doi": "10.1594/PANGAEA.899415",
+   "landing": "https://doi.pangaea.de/10.1594/PANGAEA.899415",
+   "title": "Bathymetric data products from AUV dives during METEOR cruise M127 (TAG Hydrothermal Field, Atlantic)",
+   "found": true,
+   "creators": [
+    "Petersen, Sven"
+   ],
+   "publisher": "PANGAEA",
+   "year": 2019,
+   "evidence": "https://api.datacite.org/dois/10.1594/PANGAEA.899415",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution 4.0 International",
+     "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+     "schemeUri": "https://spdx.org/licenses/",
+     "rightsIdentifier": "cc-by-4.0",
+     "rightsIdentifierScheme": "SPDX"
+    }
+   ],
+   "license": "Creative Commons Attribution 4.0 International",
+   "redistribution": "yes"
+  },
+  "10.1594/PANGAEA.899408": {
+   "id": "10.1594/PANGAEA.899408",
+   "provider": "PANGAEA",
+   "doi": "10.1594/PANGAEA.899408",
+   "landing": "https://doi.pangaea.de/10.1594/PANGAEA.899408",
+   "title": "Raw multibeam EM122 data and data products: METEOR cruise M127 (TAG Hydrothermal Field, Atlantic)",
+   "found": true,
+   "creators": [
+    "Petersen, Sven"
+   ],
+   "publisher": "PANGAEA",
+   "year": 2019,
+   "evidence": "https://api.datacite.org/dois/10.1594/PANGAEA.899408",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution 4.0 International",
+     "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+     "schemeUri": "https://spdx.org/licenses/",
+     "rightsIdentifier": "cc-by-4.0",
+     "rightsIdentifierScheme": "SPDX"
+    }
+   ],
+   "license": "Creative Commons Attribution 4.0 International",
+   "redistribution": "yes"
+  },
+  "MGDS:31212": {
+   "id": "MGDS:31212",
+   "provider": "MGDS",
+   "doi": "10.60521/331212",
+   "landing": "https://www.marine-geo.org/doi/10.60521/331212",
+   "title": "Processed Gridded Near-Bottom Bathymetry Data (EM2040) acquired during R/V Roger Revelle expedition RR2107 (2021)",
+   "found": true,
+   "creators": [
+    "Michel, Anna"
+   ],
+   "publisher": "Marine Geoscience Data System (MGDS)",
+   "year": 2022,
+   "evidence": "https://api.datacite.org/dois/10.60521/331212",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:NA090": {
+   "id": "NCEI:NA090",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/NA090_Multibeam.xml",
+   "title": "Multibeam collection for NA090: Multibeam data collected aboard Nautilus from 20-Oct-17 to 29-Oct-17, Pichilingue Harbor, Mexico to Pichilingue Harbor, Mexico",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/NA090_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:32317": {
+   "id": "MGDS:32317",
+   "provider": "MGDS",
+   "doi": "10.60521/332317",
+   "landing": "https://www.marine-geo.org/doi/10.60521/332317",
+   "title": "Santa Monica 800 m Mound MBARI Mapping AUV near-bottom processed swath bathymetry gridded data (netCDF format) at 1 m resolution (2006-2018)",
+   "found": true,
+   "creators": [
+    "Caress, David",
+    "Paull, Charles",
+    "Lundsten, Eve",
+    "Paduan, Jennifer"
+   ],
+   "publisher": "Marine Geoscience Data System (MGDS)",
+   "year": 2025,
+   "evidence": "https://api.datacite.org/dois/10.60521/332317",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution 4.0 International",
+     "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+     "schemeUri": "https://spdx.org/licenses/",
+     "rightsIdentifier": "cc-by-4.0",
+     "rightsIdentifierScheme": "SPDX"
+    }
+   ],
+   "license": "Creative Commons Attribution 4.0 International",
+   "redistribution": "yes"
+  },
+  "NCEI:NA076": {
+   "id": "NCEI:NA076",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/NA076_Multibeam.xml",
+   "title": "Multibeam collection for NA076: Multibeam data collected aboard Nautilus from 15-Aug-16 to 18-Aug-16, Los Angeles, California to San Francisco, California",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/NA076_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "10.5066/P97QM7NF": {
+   "id": "10.5066/P97QM7NF",
+   "provider": "USGS",
+   "doi": "10.5066/P97QM7NF",
+   "landing": "https://cmgds.marine.usgs.gov/data-releases/datarelease/10.5066-P97QM7NF/",
+   "title": "Donated AUV bathymetry and Chirp seismic-reflection data collected during Monterey Bay Aquarium Research Institute cruises in 2018-2019 offshore of south-central California",
+   "found": true,
+   "creators": [
+    "Kennedy, Daniel J.",
+    "Walton, Maureen A.",
+    "Cochrane, Guy R.",
+    "Paull, Charlie",
+    "Caress, Dave",
+    "Anderson, Krystle",
+    "Lundsten, Eve"
+   ],
+   "publisher": "U.S. Geological Survey",
+   "year": 2021,
+   "evidence": "https://cmgds.marine.usgs.gov/data-releases/media/2021/10.5066-P97QM7NF/73ebf318e0cf4599a8fc28dacf25dd51/2021-603-DD_bathy_201804_metadata.xml",
+   "rights": [
+    {
+     "rights": "USGS-authored or produced data and information are in the public domain from the U.S. Government and are freely redistributable with proper metadata and source attribution. Please recognize and acknowledge the U.S. Geological Survey and Monterey Bay Aquarium Research Institute (MBARI) as the origina"
+    }
+   ],
+   "license": "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+   "redistribution": "yes"
+  },
+  "10.5066/P9QQZ27U": {
+   "id": "10.5066/P9QQZ27U",
+   "provider": "USGS",
+   "doi": "10.5066/P9QQZ27U",
+   "landing": "https://cmgds.marine.usgs.gov/data-releases/datarelease/10.5066-P9QQZ27U/",
+   "title": "Multibeam echosounder, video observation, and derived benthic habitat data offshore of south-central California in support of the Bureau of Ocean Energy Management Cal DIG I, offshore alternative energy project (ver. 2.0, August 2026)",
+   "found": true,
+   "creators": [
+    "Guy R Cochrane",
+    "Linda A. Kuhnz",
+    "Lisa Gilbane"
+   ],
+   "publisher": "U.S. Geological Survey",
+   "year": 2022,
+   "evidence": "https://api.datacite.org/dois/10.5066/P9QQZ27U",
+   "rights": [
+    {
+     "rights": "Creative Commons Zero v1.0 Universal",
+     "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+     "schemeUri": "https://spdx.org/licenses/",
+     "rightsIdentifier": "cc0-1.0",
+     "rightsIdentifierScheme": "SPDX"
+    }
+   ],
+   "license": "CC0 1.0 / public domain",
+   "redistribution": "yes"
+  },
+  "MGDS:31290": {
+   "id": "MGDS:31290",
+   "provider": "MGDS",
+   "doi": "10.26022/IEDA/331290",
+   "landing": "https://www.marine-geo.org/doi/10.26022/IEDA/331290",
+   "title": "Near-bottom AUV multibeam bathymetry grid (ESRI ASCII format) from the Octopus Garden hydrothermal spring site",
+   "found": true,
+   "creators": [
+    "Caress, David",
+    "Paduan, Jennifer"
+   ],
+   "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+   "year": 2023,
+   "evidence": "https://api.datacite.org/dois/10.26022/IEDA/331290",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:NA080": {
+   "id": "NCEI:NA080",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/NA080_Multibeam.xml",
+   "title": "Multibeam collection for NA080: Multibeam data collected aboard Nautilus from 08-May-17 to 04-Jun-17, Los Angeles, California to Victoria, Canada",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/NA080_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:31289": {
+   "id": "MGDS:31289",
+   "provider": "MGDS",
+   "doi": "10.26022/IEDA/331289",
+   "landing": "https://www.marine-geo.org/doi/10.26022/IEDA/331289",
+   "title": "Near-bottom AUV multibeam bathymetry grid (netCDF format) from the Octopus Garden hydrothermal spring site",
+   "found": true,
+   "creators": [
+    "Caress, David",
+    "Paduan, Jennifer"
+   ],
+   "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+   "year": 2023,
+   "evidence": "https://api.datacite.org/dois/10.26022/IEDA/331289",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "MGDS:31838": {
+   "id": "MGDS:31838",
+   "provider": "MGDS",
+   "doi": "10.60521/331838",
+   "landing": "https://www.marine-geo.org/doi/10.60521/331838",
+   "title": "Processed Gridded Near-Bottom Bathymetry Data acquired during R/V Pisces expedition PC1704 (2017)",
+   "found": true,
+   "creators": [
+    "Nizinski, Martha"
+   ],
+   "publisher": "Marine Geoscience Data System (MGDS)",
+   "year": 2024,
+   "evidence": "https://api.datacite.org/dois/10.60521/331838",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:AR26": {
+   "id": "NCEI:AR26",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/AR26_Multibeam.xml",
+   "title": "Multibeam collection for AR26: Multibeam data collected aboard Neil Armstrong from 08-Jan-18 to 21-Jan-18, Woods Hole, Massachusetts to Woods Hole, Massachusetts",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/AR26_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:27339": {
+   "id": "MGDS:27339",
+   "provider": "MGDS",
+   "doi": "10.1594/IEDA/327339",
+   "landing": "https://www.marine-geo.org/doi/10.1594/IEDA/327339",
+   "title": "North Gorda near-bottom processed swath bathymetry gridded data in ESRI ASCII format (2009-2016)",
+   "found": true,
+   "creators": [
+    "Caress, David",
+    "Clague, David",
+    "Paduan, Jennifer"
+   ],
+   "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+   "year": 2020,
+   "evidence": "https://api.datacite.org/dois/10.1594/IEDA/327339",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:TN299": {
+   "id": "NCEI:TN299",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/TN299_Multibeam.xml",
+   "title": "Multibeam collection for TN299: Multibeam data collected aboard Thomas G. Thompson from 30-Jun-13 to 23-Aug-13, Seattle, Washington to Seattle, Washington",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/TN299_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:31253": {
+   "id": "MGDS:31253",
+   "provider": "MGDS",
+   "doi": "10.26022/IEDA/331253",
+   "landing": "https://www.marine-geo.org/doi/10.26022/IEDA/331253",
+   "title": "Near-bottom AUV Sentry processed bathymetry grids (netCDF format) from the Pythia's Oasis methane seep site",
+   "found": true,
+   "creators": [
+    "Kelley, Deborah"
+   ],
+   "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+   "year": 2023,
+   "evidence": "https://api.datacite.org/dois/10.26022/IEDA/331253",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "MGDS:22383": {
+   "id": "MGDS:22383",
+   "provider": "MGDS",
+   "doi": "10.1594/IEDA/322383",
+   "landing": "https://www.marine-geo.org/doi/10.1594/IEDA/322383",
+   "title": "Processed Gridded Near-Bottom AUV Sentry Bathymetric Sonar Data from the Izu-Bonin-Mariana Volcanic Arc acquired during the Falkor expedition FK151121 (2015)",
+   "found": true,
+   "creators": [
+    "Resing, Joseph"
+   ],
+   "publisher": "Marine Geoscience Data System (MGDS)",
+   "year": 2016,
+   "evidence": "https://api.datacite.org/dois/10.1594/IEDA/322383",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+     "rightsUri": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+     "schemeUri": "https://spdx.org/licenses/",
+     "rightsIdentifier": "cc-by-nc-sa-4.0",
+     "rightsIdentifierScheme": "SPDX"
+    }
+   ],
+   "license": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:FK151121": {
+   "id": "NCEI:FK151121",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/FK151121_Multibeam.xml",
+   "title": "Multibeam collection for FK151121: Multibeam data collected aboard Falkor from 21-Nov-15 to 17-Dec-15, Apra, Guam to Apra, Guam",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/FK151121_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:31073": {
+   "id": "MGDS:31073",
+   "provider": "MGDS",
+   "doi": "10.60521/331073",
+   "landing": "https://www.marine-geo.org/doi/10.60521/331073",
+   "title": "Processed Gridded Near-Bottom Bathymetry Data acquired during R/V Atlantis expedition AT26-14 (2014)",
+   "found": true,
+   "creators": [
+    "Cordes, Erik"
+   ],
+   "publisher": "Marine Geoscience Data System (MGDS)",
+   "year": 2022,
+   "evidence": "https://api.datacite.org/dois/10.60521/331073",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:EX1402L2": {
+   "id": "NCEI:EX1402L2",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/EX1402L2_Multibeam.xml",
+   "title": "Multibeam collection for EX1402L2: Multibeam data collected aboard NOAA Ship OKEANOS EXPLORER (R337) from 19-Mar-14 to 04-Apr-14, Galveston, Texas to Pascagoula, Mississippi",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/EX1402L2_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:32556": {
+   "id": "MGDS:32556",
+   "provider": "MGDS",
+   "doi": "10.60521/332556",
+   "landing": "https://www.marine-geo.org/doi/10.60521/332556",
+   "title": "Gridded near-bottom bathymetry data (netCDF format, 1-m resolution) for the distal rift zones of Axial Seamount, version: December, 2025",
+   "found": true,
+   "creators": [
+    "Caress, David",
+    "Clague, David",
+    "Paduan, Jennifer"
+   ],
+   "publisher": "Marine Geoscience Data System (MGDS)",
+   "year": 2025,
+   "evidence": "https://api.datacite.org/dois/10.60521/332556",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution 4.0 International",
+     "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+     "schemeUri": "https://spdx.org/licenses/",
+     "rightsIdentifier": "cc-by-4.0",
+     "rightsIdentifierScheme": "SPDX"
+    }
+   ],
+   "license": "Creative Commons Attribution 4.0 International",
+   "redistribution": "yes"
+  },
+  "NCEI:EW0207": {
+   "id": "NCEI:EW0207",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/EW0207_Multibeam.xml",
+   "title": "Multibeam collection for EW0207: Multibeam data collected aboard Maurice Ewing from 08-Jul-02 to 07-Aug-02, Astoria, Oregon to Newport, Oregon",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/EW0207_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:30193": {
+   "id": "MGDS:30193",
+   "provider": "MGDS",
+   "doi": "10.26022/IEDA/330193",
+   "landing": "https://www.marine-geo.org/doi/10.26022/IEDA/330193",
+   "title": "Processed near-bottom Sentry AUV bathymetry data (netCDF grids) at the Mid-Atlantic Ridge (AT40-02, 2018)",
+   "found": true,
+   "creators": [
+    "Kurz, Mark",
+    "Mittelstaedt, Eric",
+    "Wanless, Dorsey"
+   ],
+   "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+   "year": 2021,
+   "evidence": "https://api.datacite.org/dois/10.26022/IEDA/330193",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:KN182L03": {
+   "id": "NCEI:KN182L03",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/KN182L03_Multibeam.xml",
+   "title": "Multibeam collection for KN182L03: Multibeam data collected aboard Knorr from 29-May-05 to 02-Jul-05, Miami, Florida to Miami, Florida",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/KN182L03_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:32239": {
+   "id": "MGDS:32239",
+   "provider": "MGDS",
+   "doi": null,
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:32239",
+   "title": "MBARI Mapping AUV near-bottom processed swath bathymetry gridded data (netCDF format) at the Mid-Atlantic Ridge Puy des Folles Seamount, EMARK Massif, Falkor EMARK Vents, and Hydra (Grappe Deux) (2023)",
+   "found": false,
+   "evidence": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:32239",
+   "rights": [],
+   "license": "no DOI record found; MGDS default terms (CC BY-NC-SA, per MGDS data policy; ACQ-R08 H-3)",
+   "redistribution": "confirm"
+  },
+  "NCEI:RC2511": {
+   "id": "NCEI:RC2511",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/RC2511_Multibeam.xml",
+   "title": "Multibeam collection for RC2511: Multibeam data collected aboard Robert D. Conrad from 13-Sep-84 to 14-Oct-84, Bermuda to Bermuda",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/RC2511_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:33090": {
+   "id": "MGDS:33090",
+   "provider": "MGDS",
+   "doi": "10.60521/333090",
+   "landing": "https://www.marine-geo.org/doi/10.60521/333090",
+   "title": "Processed Gridded Near-Bottom AUV Bathymetry Data (EM2040) from the Mariana Islands, acquired during E/V Nautilus expedition NA179 (2026)",
+   "found": true,
+   "creators": [
+    "Soule, Adam"
+   ],
+   "publisher": "Marine Geoscience Data System (MGDS)",
+   "year": 2026,
+   "evidence": "https://api.datacite.org/dois/10.60521/333090",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution 4.0 International",
+     "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+     "schemeUri": "https://spdx.org/licenses/",
+     "rightsIdentifier": "cc-by-4.0",
+     "rightsIdentifierScheme": "SPDX"
+    }
+   ],
+   "license": "Creative Commons Attribution 4.0 International",
+   "redistribution": "yes"
+  },
+  "NCEI:SUM1004": {
+   "id": "NCEI:SUM1004",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/SUM1004_Multibeam.xml",
+   "title": "Multibeam collection for SUM1004: Multibeam data collected aboard Sumner from 07-Aug-10 to 04-Sep-10, Unknown to Unknown",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/SUM1004_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:32007": {
+   "id": "MGDS:32007",
+   "provider": "MGDS",
+   "doi": "10.60521/332007",
+   "landing": "https://www.marine-geo.org/doi/10.60521/332007",
+   "title": "Processed Gridded Near-Bottom AUV Bathymetry Data from the Central America Subduction Zone, acquired during R/V Atlantis expedition AT42-03 (2018)",
+   "found": true,
+   "creators": [
+    "Cordes, Erik"
+   ],
+   "publisher": "Marine Geoscience Data System (MGDS)",
+   "year": 2024,
+   "evidence": "https://api.datacite.org/dois/10.60521/332007",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution 4.0 International",
+     "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+     "schemeUri": "https://spdx.org/licenses/",
+     "rightsIdentifier": "cc-by-4.0",
+     "rightsIdentifierScheme": "SPDX"
+    }
+   ],
+   "license": "Creative Commons Attribution 4.0 International",
+   "redistribution": "yes"
+  },
+  "NCEI:AT42-03": {
+   "id": "NCEI:AT42-03",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/AT42-03_Multibeam.xml",
+   "title": "Multibeam collection for AT42-03: Multibeam data collected aboard Atlantis from 16-Oct-18 to 06-Nov-18, Puntarenas, Costa Rica to Puntarenas, Costa Rica",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/AT42-03_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:21981": {
+   "id": "MGDS:21981",
+   "provider": "MGDS",
+   "doi": "10.1594/IEDA/321981",
+   "landing": "https://www.marine-geo.org/doi/10.1594/IEDA/321981",
+   "title": "Processed Near-bottom Multibeam Sonar Bathymetry Grids from the Juan de Fuca Spreading Center - Endeavour Segment acquired during Atlantis expedition AT15-36 (2008)",
+   "found": true,
+   "creators": [
+    "Clague, David",
+    "Caress, David"
+   ],
+   "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+   "year": 2015,
+   "evidence": "https://api.datacite.org/dois/10.1594/IEDA/321981",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:TN159": {
+   "id": "NCEI:TN159",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/TN159_Multibeam.xml",
+   "title": "Multibeam collection for TN159: Multibeam data collected aboard Thomas G. Thompson from 28-Jul-03 to 20-Aug-03, Victoria, Canada to Astoria, Oregon",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/TN159_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:18210": {
+   "id": "MGDS:18210",
+   "provider": "MGDS",
+   "doi": "10.1594/IEDA/318210",
+   "landing": "https://www.marine-geo.org/doi/10.1594/IEDA/318210",
+   "title": "Processed Near-bottom Grids (NetCDF:GMT format) derived from Multibeam Sonar Data acquired along the Galapagos Spreading Center during the Atlantis expedition AT15-63 (2010)",
+   "found": true,
+   "creators": [
+    "White, Scott",
+    "Sinton, John"
+   ],
+   "publisher": "Marine Geoscience Data System (MGDS)",
+   "year": 2012,
+   "evidence": "https://api.datacite.org/dois/10.1594/IEDA/318210",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:TN188": {
+   "id": "NCEI:TN188",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/TN188_Multibeam.xml",
+   "title": "Multibeam collection for TN188: Multibeam data collected aboard Thomas G. Thompson from 28-Nov-05 to 29-Nov-05, San Diego, California to Puerto Ayora, Ecuador",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/TN188_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:30368": {
+   "id": "MGDS:30368",
+   "provider": "MGDS",
+   "doi": "10.26022/IEDA/330368",
+   "landing": "https://www.marine-geo.org/doi/10.26022/IEDA/330368",
+   "title": "Escanaba Trough (Gorda Ridge) AUV near-bottom processed swath bathymetry gridded data in GMT-compatible netCDF format (2014, 2016)",
+   "found": true,
+   "creators": [
+    "Clague, David",
+    "Caress, David",
+    "Paduan, Jennifer"
+   ],
+   "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+   "year": 2022,
+   "evidence": "https://api.datacite.org/dois/10.26022/IEDA/330368",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:Escanaba": {
+   "id": "NCEI:Escanaba",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/Escanaba_Multibeam.xml",
+   "title": "Multibeam collection for Escanaba: Multibeam data collected aboard Ocean Alert from 08-May-98 to 10-May-98, None to None",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/Escanaba_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:24756": {
+   "id": "MGDS:24756",
+   "provider": "MGDS",
+   "doi": "10.1594/IEDA/324756",
+   "landing": "https://www.marine-geo.org/doi/10.1594/IEDA/324756",
+   "title": "High-resolution (1m) bathymetric data from Monterey Canyon, offshore California",
+   "found": true,
+   "creators": [
+    "Paull, Charles",
+    "Caress, David"
+   ],
+   "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+   "year": 2019,
+   "evidence": "https://api.datacite.org/dois/10.1594/IEDA/324756",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:Monterey": {
+   "id": "NCEI:Monterey",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/Monterey_Multibeam.xml",
+   "title": "Multibeam collection for Monterey: Multibeam data collected aboard Ocean Alert from 03-Jun-98 to 27-Jun-98, None to None",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/Monterey_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:22436": {
+   "id": "MGDS:22436",
+   "provider": "MGDS",
+   "doi": "10.1594/IEDA/322436",
+   "landing": "https://www.marine-geo.org/doi/10.1594/IEDA/322436",
+   "title": "Processed Sentry AUV bathymetry data from the Mid-Atlantic Ridge at 16.5N, Knorr cruise KN210-05 (2013, chief scientist Deborah Smith).",
+   "found": true,
+   "creators": [
+    "Smith, Deborah"
+   ],
+   "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+   "year": 2016,
+   "evidence": "https://api.datacite.org/dois/10.1594/IEDA/322436",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:KN161L04": {
+   "id": "NCEI:KN161L04",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/KN161L04_Multibeam.xml",
+   "title": "Multibeam collection for KN161L04: Multibeam data collected aboard Knorr from 23-Feb-00 to 19-Mar-00, Barbados to Ponta Delgada, Azores",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/KN161L04_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:21415": {
+   "id": "MGDS:21415",
+   "provider": "MGDS",
+   "doi": "10.1594/IEDA/321415",
+   "landing": "https://www.marine-geo.org/doi/10.1594/IEDA/321415",
+   "title": "Processed Near-bottom Bathymetry, Acoustic Backscatter, and Sidescan Grids (NetCDF:GMT format) derived from Sidescan Sonar and Multibeam Sonar Data from the La Jolla Canyon acquired during the Zephyr expedition ZPR0803 (2008)",
+   "found": true,
+   "creators": [
+    "Paull, Charles",
+    "Caress, David",
+    "Lundsten, Eve",
+    "Gwiazda, Roberto",
+    "Anderson, Krystle",
+    "McGann, Mary",
+    "Conrad, James",
+    "Edwards, Brian",
+    "Sumner, Esther"
+   ],
+   "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+   "year": 2014,
+   "evidence": "https://api.datacite.org/dois/10.1594/IEDA/321415",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:MV1209": {
+   "id": "NCEI:MV1209",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/MV1209_Multibeam.xml",
+   "title": "Multibeam collection for MV1209: Multibeam data collected aboard Melville from 30-Jun-12 to 10-Jul-12, San Diego, California to San Diego, California",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/MV1209_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:31675": {
+   "id": "MGDS:31675",
+   "provider": "MGDS",
+   "doi": "10.60521/331675",
+   "landing": "https://www.marine-geo.org/doi/10.60521/331675",
+   "title": "Processed Gridded Near-Bottom AUV Bathymetry Data acquired during R/V Atlantic Explorer expedition AE1823 (2018)",
+   "found": true,
+   "creators": [
+    "Kinsey, James"
+   ],
+   "publisher": "Marine Geoscience Data System (MGDS)",
+   "year": 2024,
+   "evidence": "https://api.datacite.org/dois/10.60521/331675",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:KN173L02": {
+   "id": "NCEI:KN173L02",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/KN173L02_Multibeam.xml",
+   "title": "Multibeam collection for KN173L02: Multibeam data collected aboard Knorr from 23-Oct-03 to 14-Nov-03, Port of Spain, Trinidad and Tobago to Woods Hole, Massachusetts",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/KN173L02_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:31860": {
+   "id": "MGDS:31860",
+   "provider": "MGDS",
+   "doi": "10.60521/331860",
+   "landing": "https://www.marine-geo.org/doi/10.60521/331860",
+   "title": "Processed Gridded Near-Bottom Bathymetry Data acquired during R/V Melville expedition MV1205 (2012)",
+   "found": true,
+   "creators": [
+    "Blackman, Donna"
+   ],
+   "publisher": "Marine Geoscience Data System (MGDS)",
+   "year": 2024,
+   "evidence": "https://api.datacite.org/dois/10.60521/331860",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+     "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+    }
+   ],
+   "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "redistribution": "yes_conditional"
+  },
+  "NCEI:MV1003": {
+   "id": "NCEI:MV1003",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/MV1003_Multibeam.xml",
+   "title": "Multibeam collection for MV1003: Multibeam data collected aboard Melville from 24-Feb-10 to 17-Mar-10, Port Of Puerto Montt, Chile to Valparaiso, Chile",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/MV1003_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  },
+  "MGDS:31954": {
+   "id": "MGDS:31954",
+   "provider": "MGDS",
+   "doi": "10.60521/331954",
+   "landing": "https://www.marine-geo.org/doi/10.60521/331954",
+   "title": "Processed Gridded Near-Bottom AUV Bathymetry Data from the Dorado Outcrop, acquired during R/V Atlantis expedition AT26-09 (2013)",
+   "found": true,
+   "creators": [
+    "Wheat, Geoffrey"
+   ],
+   "publisher": "Marine Geoscience Data System (MGDS)",
+   "year": 2024,
+   "evidence": "https://api.datacite.org/dois/10.60521/331954",
+   "rights": [
+    {
+     "rights": "Creative Commons Attribution 4.0 International",
+     "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+     "schemeUri": "https://spdx.org/licenses/",
+     "rightsIdentifier": "cc-by-4.0",
+     "rightsIdentifierScheme": "SPDX"
+    }
+   ],
+   "license": "Creative Commons Attribution 4.0 International",
+   "redistribution": "yes"
+  },
+  "NCEI:AT26-24": {
+   "id": "NCEI:AT26-24",
+   "provider": "NCEI",
+   "doi": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/AT26-24_Multibeam.xml",
+   "title": "Multibeam collection for AT26-24: Multibeam data collected aboard Atlantis from 30-Nov-14 to 12-Dec-14, Puntarenas, Costa Rica to Puntarenas, Costa Rica",
+   "found": true,
+   "evidence": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/AT26-24_Multibeam.xml",
+   "license": "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers",
+   "redistribution": "yes",
+   "restriction_codes": [
+    "otherRestrictions"
+   ],
+   "constraint_texts": [
+    "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+    "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+    "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+    "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+    "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+    "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+    "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+   ]
+  }
+ },
+ "per_pair": {
+  "RR1506__MGDS_29779": {
+   "sources": [
+    "MGDS:29779",
+    "NCEI:RR1506"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "discol_so242_1": {
+   "sources": [
+    "10.1594/PANGAEA.905580",
+    "10.1594/PANGAEA.905579"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution 4.0 International",
+    "Creative Commons Attribution 4.0 International"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "AT37-13__MGDS_31199": {
+   "sources": [
+    "MGDS:31199",
+    "NCEI:AT37-13"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "TN399__MGDS_30373": {
+   "sources": [
+    "MGDS:30373",
+    "NCEI:TN399"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "TN399__MGDS_33068": {
+   "sources": [
+    "MGDS:33068",
+    "NCEI:TN399"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution 4.0 International",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "AT42-06__MGDS_5174": {
+   "sources": [
+    "MGDS:5174",
+    "NCEI:AT42-06"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "ccz_so268_1": {
+   "sources": [
+    "10.1594/PANGAEA.915765",
+    "10.1594/PANGAEA.915764"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution 4.0 International",
+    "Creative Commons Attribution 4.0 International"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "EW9801__MGDS_31425": {
+   "sources": [
+    "MGDS:31425",
+    "NCEI:EW9801"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "KM0923__MGDS_31429": {
+   "sources": [
+    "MGDS:31429",
+    "NCEI:KM0923"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "FK181031__MGDS_24618": {
+   "sources": [
+    "MGDS:24618",
+    "NCEI:FK181031"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "tag_m127": {
+   "sources": [
+    "10.1594/PANGAEA.899415",
+    "10.1594/PANGAEA.899408"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution 4.0 International",
+    "Creative Commons Attribution 4.0 International"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "NA090__MGDS_31212": {
+   "sources": [
+    "MGDS:31212",
+    "NCEI:NA090"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "NA076__MGDS_32317": {
+   "sources": [
+    "MGDS:32317",
+    "NCEI:NA076"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution 4.0 International",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__20180426m2_Channel1000": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__20180427m1_Channel700": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__20180427m3_PockmarkNorth": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__20180428m1_Cable": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__201804_LuciaChica2m": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__20190314m4_LuciaChica970m": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__20190315m1_HeadlessCanyon": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__20190316m1_BankTop": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__20190317m1_1000mGully": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__20190317m2_600mGully": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__20190318m2_Transect601060m": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__20190510m1_BankFlankHoles": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__20190510m2_BankFlankIncipCh": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__20190511m1_6thHeadlessCany": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__20190511m2_BankTopEofCanyon3": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__basin_flank": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__luciachica_2007": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "cal_dig_morro_bay__pockmark_south": {
+   "sources": [
+    "10.5066/P97QM7NF",
+    "10.5066/P9QQZ27U"
+   ],
+   "source_licenses": [
+    "U.S. Government work, public domain (USGS data release; FGDC use constraints: freely redistributable with attribution to USGS and MBARI; not for navigation)",
+    "CC0 1.0 / public domain"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "NA080__MGDS_31290": {
+   "sources": [
+    "MGDS:31290",
+    "NCEI:NA080"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "NA080__MGDS_31289": {
+   "sources": [
+    "MGDS:31289",
+    "NCEI:NA080"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "AR26__MGDS_31838": {
+   "sources": [
+    "MGDS:31838",
+    "NCEI:AR26"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "TN299__MGDS_27339": {
+   "sources": [
+    "MGDS:27339",
+    "NCEI:TN299"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "TN299__MGDS_31253": {
+   "sources": [
+    "MGDS:31253",
+    "NCEI:TN299"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "FK151121__MGDS_22383": {
+   "sources": [
+    "MGDS:22383",
+    "NCEI:FK151121"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "EX1402L2__MGDS_31073": {
+   "sources": [
+    "MGDS:31073",
+    "NCEI:EX1402L2"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "EW0207__MGDS_32556": {
+   "sources": [
+    "MGDS:32556",
+    "NCEI:EW0207"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution 4.0 International",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "KN182L03__MGDS_30193": {
+   "sources": [
+    "MGDS:30193",
+    "NCEI:KN182L03"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "RC2511__MGDS_32239": {
+   "sources": [
+    "MGDS:32239",
+    "NCEI:RC2511"
+   ],
+   "source_licenses": [
+    "no DOI record found; MGDS default terms (CC BY-NC-SA, per MGDS data policy; ACQ-R08 H-3)",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY 4.0 proposed; one source license not stated in a DOI record (confirm)",
+   "status": "confirm"
+  },
+  "SUM1004__MGDS_33090": {
+   "sources": [
+    "MGDS:33090",
+    "NCEI:SUM1004"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution 4.0 International",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "AT42-03__MGDS_32007": {
+   "sources": [
+    "MGDS:32007",
+    "NCEI:AT42-03"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution 4.0 International",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  },
+  "TN159__MGDS_21981": {
+   "sources": [
+    "MGDS:21981",
+    "NCEI:TN159"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "TN188__MGDS_18210": {
+   "sources": [
+    "MGDS:18210",
+    "NCEI:TN188"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "Escanaba__MGDS_30368": {
+   "sources": [
+    "MGDS:30368",
+    "NCEI:Escanaba"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "Monterey__MGDS_24756": {
+   "sources": [
+    "MGDS:24756",
+    "NCEI:Monterey"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "KN161L04__MGDS_22436": {
+   "sources": [
+    "MGDS:22436",
+    "NCEI:KN161L04"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "MV1209__MGDS_21415": {
+   "sources": [
+    "MGDS:21415",
+    "NCEI:MV1209"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "KN173L02__MGDS_31675": {
+   "sources": [
+    "MGDS:31675",
+    "NCEI:KN173L02"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "MV1003__MGDS_31860": {
+   "sources": [
+    "MGDS:31860",
+    "NCEI:MV1003"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY-NC-SA 4.0 (inherited from a source grid under CC BY-NC-SA; non-commercial, share-alike)",
+   "status": "yes_conditional"
+  },
+  "AT26-24__MGDS_31954": {
+   "sources": [
+    "MGDS:31954",
+    "NCEI:AT26-24"
+   ],
+   "source_licenses": [
+    "Creative Commons Attribution 4.0 International",
+    "U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Database); NCEI constraints are liability and not-for-navigation disclaimers"
+   ],
+   "pair_license": "CC BY 4.0",
+   "status": "yes"
+  }
+ },
+ "rows": [
+  {
+   "pair_id": "RR1506__MGDS_29779",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:29779",
+   "doi": "10.26022/IEDA/329779",
+   "mgds_uid": "29779",
+   "title": "AUV Sentry near-bottom bathymetry data at the Havre Volcano Caldera in the Kermadec Arc (RR1506, 2015)",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:29779"
+  },
+  {
+   "pair_id": "RR1506__MGDS_29779",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:RR1506",
+   "doi": null,
+   "cruise": "RR1506",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/RR1506_Multibeam.xml"
+  },
+  {
+   "pair_id": "discol_so242_1",
+   "side": "hr",
+   "provider": "PANGAEA",
+   "id": "10.1594/PANGAEA.905580",
+   "doi": "10.1594/PANGAEA.905580",
+   "title": null,
+   "landing": "https://doi.org/10.1594/PANGAEA.905580"
+  },
+  {
+   "pair_id": "discol_so242_1",
+   "side": "lr",
+   "provider": "PANGAEA",
+   "id": "10.1594/PANGAEA.905579",
+   "doi": "10.1594/PANGAEA.905579",
+   "title": null,
+   "landing": "https://doi.org/10.1594/PANGAEA.905579"
+  },
+  {
+   "pair_id": "AT37-13__MGDS_31199",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:31199",
+   "doi": "10.60521/331199",
+   "mgds_uid": "31199",
+   "title": "Processed Gridded Near-Bottom AUV Bathymetry Data from the Costa Rica Rift Spreading Center, acquired during R/V Atlantis expedition AT37-13 (2017)",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:31199"
+  },
+  {
+   "pair_id": "AT37-13__MGDS_31199",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:AT37-13",
+   "doi": null,
+   "cruise": "AT37-13",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/AT37-13_Multibeam.xml"
+  },
+  {
+   "pair_id": "TN399__MGDS_30373",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:30373",
+   "doi": "10.26022/IEDA/330373",
+   "mgds_uid": "30373",
+   "title": "Processed bathymetric data (netCDF grid) from 9\u00b050'N, East Pacific Rise, acquired in 2018, 2019 and 2021 during AUV Sentry near-bottom dives",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:30373"
+  },
+  {
+   "pair_id": "TN399__MGDS_30373",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:TN399",
+   "doi": null,
+   "cruise": "TN399",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/TN399_Multibeam.xml"
+  },
+  {
+   "pair_id": "TN399__MGDS_33068",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:33068",
+   "doi": "10.60521/333068",
+   "mgds_uid": "33068",
+   "title": "Processed Gridded Near-Bottom AUV Bathymetry Data (EM2040) from the East Pacific Rise at 9N Spreading Center Segment, acquired during R/V Atlantis expedition AT50-21 (2024)",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:33068"
+  },
+  {
+   "pair_id": "TN399__MGDS_33068",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:TN399",
+   "doi": null,
+   "cruise": "TN399",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/TN399_Multibeam.xml"
+  },
+  {
+   "pair_id": "AT42-06__MGDS_5174",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:5174",
+   "doi": "10.1594/IEDA/100021",
+   "mgds_uid": "5174",
+   "title": "AUV ABE near-bottom scanning sonar bathymetry grids from East Pacific Rise (EPR) 9&deg;N",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:5174"
+  },
+  {
+   "pair_id": "AT42-06__MGDS_5174",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:AT42-06",
+   "doi": null,
+   "cruise": "AT42-06",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/AT42-06_Multibeam.xml"
+  },
+  {
+   "pair_id": "ccz_so268_1",
+   "side": "hr",
+   "provider": "PANGAEA",
+   "id": "10.1594/PANGAEA.915765",
+   "doi": "10.1594/PANGAEA.915765",
+   "title": null,
+   "landing": "https://doi.org/10.1594/PANGAEA.915765"
+  },
+  {
+   "pair_id": "ccz_so268_1",
+   "side": "lr",
+   "provider": "PANGAEA",
+   "id": "10.1594/PANGAEA.915764",
+   "doi": "10.1594/PANGAEA.915764",
+   "title": null,
+   "landing": "https://doi.org/10.1594/PANGAEA.915764"
+  },
+  {
+   "pair_id": "EW9801__MGDS_31425",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:31425",
+   "doi": "10.26022/IEDA/331425",
+   "mgds_uid": "31425",
+   "title": "Loihi Seamount (Hawaii), summit and Pele's Pit, Sentry AUV near-bottom processed bathymetry data, netCDF grid format (2013)",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:31425"
+  },
+  {
+   "pair_id": "EW9801__MGDS_31425",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:EW9801",
+   "doi": null,
+   "cruise": "EW9801",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/EW9801_Multibeam.xml"
+  },
+  {
+   "pair_id": "KM0923__MGDS_31429",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:31429",
+   "doi": null,
+   "mgds_uid": "31429",
+   "title": null,
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:31429"
+  },
+  {
+   "pair_id": "KM0923__MGDS_31429",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:KM0923",
+   "doi": null,
+   "cruise": "KM0923",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/KM0923_Multibeam.xml"
+  },
+  {
+   "pair_id": "FK181031__MGDS_24618",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:24618",
+   "doi": "10.1594/IEDA/324618",
+   "mgds_uid": "24618",
+   "title": null,
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:24618"
+  },
+  {
+   "pair_id": "FK181031__MGDS_24618",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:FK181031",
+   "doi": null,
+   "cruise": "FK181031",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/FK181031_Multibeam.xml"
+  },
+  {
+   "pair_id": "tag_m127",
+   "side": "hr",
+   "provider": "PANGAEA",
+   "id": "10.1594/PANGAEA.899415",
+   "doi": "10.1594/PANGAEA.899415",
+   "title": null,
+   "landing": "https://doi.org/10.1594/PANGAEA.899415"
+  },
+  {
+   "pair_id": "tag_m127",
+   "side": "lr",
+   "provider": "PANGAEA",
+   "id": "10.1594/PANGAEA.899408",
+   "doi": "10.1594/PANGAEA.899408",
+   "title": null,
+   "landing": "https://doi.org/10.1594/PANGAEA.899408"
+  },
+  {
+   "pair_id": "NA090__MGDS_31212",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:31212",
+   "doi": "10.60521/331212",
+   "mgds_uid": "31212",
+   "title": null,
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:31212"
+  },
+  {
+   "pair_id": "NA090__MGDS_31212",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:NA090",
+   "doi": null,
+   "cruise": "NA090",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/NA090_Multibeam.xml"
+  },
+  {
+   "pair_id": "NA076__MGDS_32317",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:32317",
+   "doi": "10.60521/332317",
+   "mgds_uid": "32317",
+   "title": null,
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:32317"
+  },
+  {
+   "pair_id": "NA076__MGDS_32317",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:NA076",
+   "doi": null,
+   "cruise": "NA076",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/NA076_Multibeam.xml"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20180426m2_Channel1000",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20180426m2_Channel1000",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20180427m1_Channel700",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20180427m1_Channel700",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20180427m3_PockmarkNorth",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20180427m3_PockmarkNorth",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20180428m1_Cable",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20180428m1_Cable",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__201804_LuciaChica2m",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__201804_LuciaChica2m",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190314m4_LuciaChica970m",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190314m4_LuciaChica970m",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190315m1_HeadlessCanyon",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190315m1_HeadlessCanyon",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190316m1_BankTop",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190316m1_BankTop",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190317m1_1000mGully",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190317m1_1000mGully",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190317m2_600mGully",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190317m2_600mGully",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190318m2_Transect601060m",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190318m2_Transect601060m",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190510m1_BankFlankHoles",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190510m1_BankFlankHoles",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190510m2_BankFlankIncipCh",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190510m2_BankFlankIncipCh",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190511m1_6thHeadlessCany",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190511m1_6thHeadlessCany",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190511m2_BankTopEofCanyon3",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__20190511m2_BankTopEofCanyon3",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__basin_flank",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__basin_flank",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__luciachica_2007",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__luciachica_2007",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__pockmark_south",
+   "side": "hr",
+   "provider": "USGS",
+   "id": "10.5066/P97QM7NF",
+   "doi": "10.5066/P97QM7NF",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P97QM7NF"
+  },
+  {
+   "pair_id": "cal_dig_morro_bay__pockmark_south",
+   "side": "lr",
+   "provider": "USGS",
+   "id": "10.5066/P9QQZ27U",
+   "doi": "10.5066/P9QQZ27U",
+   "title": null,
+   "landing": "https://doi.org/10.5066/P9QQZ27U"
+  },
+  {
+   "pair_id": "NA080__MGDS_31290",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:31290",
+   "doi": "10.26022/IEDA/331290",
+   "mgds_uid": "31290",
+   "title": null,
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:31290"
+  },
+  {
+   "pair_id": "NA080__MGDS_31290",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:NA080",
+   "doi": null,
+   "cruise": "NA080",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/NA080_Multibeam.xml"
+  },
+  {
+   "pair_id": "NA080__MGDS_31289",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:31289",
+   "doi": "10.26022/IEDA/331289",
+   "mgds_uid": "31289",
+   "title": "Near-bottom AUV multibeam bathymetry grid (netCDF format) from the Octopus Garden hydrothermal spring site",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:31289"
+  },
+  {
+   "pair_id": "NA080__MGDS_31289",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:NA080",
+   "doi": null,
+   "cruise": "NA080",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/NA080_Multibeam.xml"
+  },
+  {
+   "pair_id": "AR26__MGDS_31838",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:31838",
+   "doi": "10.60521/331838",
+   "mgds_uid": "31838",
+   "title": "Processed Gridded Near-Bottom Bathymetry Data acquired during R/V Pisces expedition PC1704 (2017)",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:31838"
+  },
+  {
+   "pair_id": "AR26__MGDS_31838",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:AR26",
+   "doi": null,
+   "cruise": "AR26",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/AR26_Multibeam.xml"
+  },
+  {
+   "pair_id": "TN299__MGDS_27339",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:27339",
+   "doi": "10.1594/IEDA/327339",
+   "mgds_uid": "27339",
+   "title": "North Gorda near-bottom processed swath bathymetry gridded data in ESRI ASCII format (2009-2016)",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:27339"
+  },
+  {
+   "pair_id": "TN299__MGDS_27339",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:TN299",
+   "doi": null,
+   "cruise": "TN299",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/TN299_Multibeam.xml"
+  },
+  {
+   "pair_id": "TN299__MGDS_31253",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:31253",
+   "doi": "10.26022/IEDA/331253",
+   "mgds_uid": "31253",
+   "title": "Near-bottom AUV Sentry processed bathymetry grids (netCDF format) from the Pythia's Oasis methane seep site",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:31253"
+  },
+  {
+   "pair_id": "TN299__MGDS_31253",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:TN299",
+   "doi": null,
+   "cruise": "TN299",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/TN299_Multibeam.xml"
+  },
+  {
+   "pair_id": "FK151121__MGDS_22383",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:22383",
+   "doi": "10.1594/IEDA/322383",
+   "mgds_uid": "22383",
+   "title": "Processed Gridded Near-Bottom AUV Sentry Bathymetric Sonar Data from the Izu-Bonin-Mariana Volcanic Arc acquired during the Falkor expedition FK151121 (2015)",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:22383"
+  },
+  {
+   "pair_id": "FK151121__MGDS_22383",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:FK151121",
+   "doi": null,
+   "cruise": "FK151121",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/FK151121_Multibeam.xml"
+  },
+  {
+   "pair_id": "EX1402L2__MGDS_31073",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:31073",
+   "doi": "10.60521/331073",
+   "mgds_uid": "31073",
+   "title": "Processed Gridded Near-Bottom Bathymetry Data acquired during R/V Atlantis expedition AT26-14 (2014)",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:31073"
+  },
+  {
+   "pair_id": "EX1402L2__MGDS_31073",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:EX1402L2",
+   "doi": null,
+   "cruise": "EX1402L2",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/EX1402L2_Multibeam.xml"
+  },
+  {
+   "pair_id": "EW0207__MGDS_32556",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:32556",
+   "doi": "10.60521/332556",
+   "mgds_uid": "32556",
+   "title": "Gridded near-bottom bathymetry data (netCDF format, 1-m resolution) for the distal rift zones of Axial Seamount, version: December, 2025",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:32556"
+  },
+  {
+   "pair_id": "EW0207__MGDS_32556",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:EW0207",
+   "doi": null,
+   "cruise": "EW0207",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/EW0207_Multibeam.xml"
+  },
+  {
+   "pair_id": "KN182L03__MGDS_30193",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:30193",
+   "doi": null,
+   "mgds_uid": "30193",
+   "title": null,
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:30193"
+  },
+  {
+   "pair_id": "KN182L03__MGDS_30193",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:KN182L03",
+   "doi": null,
+   "cruise": "KN182L03",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/KN182L03_Multibeam.xml"
+  },
+  {
+   "pair_id": "RC2511__MGDS_32239",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:32239",
+   "doi": null,
+   "mgds_uid": "32239",
+   "title": "MBARI Mapping AUV near-bottom processed swath bathymetry gridded data (netCDF format) at the Mid-Atlantic Ridge Puy des Folles Seamount, EMARK Massif, Falkor EMARK Vents, and Hydra (Grappe Deux) (2023)",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:32239"
+  },
+  {
+   "pair_id": "RC2511__MGDS_32239",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:RC2511",
+   "doi": null,
+   "cruise": "RC2511",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/RC2511_Multibeam.xml"
+  },
+  {
+   "pair_id": "SUM1004__MGDS_33090",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:33090",
+   "doi": "10.60521/333090",
+   "mgds_uid": "33090",
+   "title": "Processed Gridded Near-Bottom AUV Bathymetry Data (EM2040) from the Mariana Islands, acquired during E/V Nautilus expedition NA179 (2026)",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:33090"
+  },
+  {
+   "pair_id": "SUM1004__MGDS_33090",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:SUM1004",
+   "doi": null,
+   "cruise": "SUM1004",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/SUM1004_Multibeam.xml"
+  },
+  {
+   "pair_id": "AT42-03__MGDS_32007",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:32007",
+   "doi": "10.60521/332007",
+   "mgds_uid": "32007",
+   "title": null,
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:32007"
+  },
+  {
+   "pair_id": "AT42-03__MGDS_32007",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:AT42-03",
+   "doi": null,
+   "cruise": "AT42-03",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/AT42-03_Multibeam.xml"
+  },
+  {
+   "pair_id": "TN159__MGDS_21981",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:21981",
+   "doi": "10.1594/IEDA/321981",
+   "mgds_uid": "21981",
+   "title": "Processed Near-bottom Multibeam Sonar Bathymetry Grids from the Juan de Fuca Spreading Center - Endeavour Segment acquired during Atlantis expedition AT15-36 (2008)",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:21981"
+  },
+  {
+   "pair_id": "TN159__MGDS_21981",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:TN159",
+   "doi": null,
+   "cruise": "TN159",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/TN159_Multibeam.xml"
+  },
+  {
+   "pair_id": "TN188__MGDS_18210",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:18210",
+   "doi": "10.1594/IEDA/318210",
+   "mgds_uid": "18210",
+   "title": "Processed Near-bottom Grids (NetCDF:GMT format) derived from Multibeam Sonar Data acquired along the Galapagos Spreading Center during the Atlantis expedition AT15-63 (2010)",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:18210"
+  },
+  {
+   "pair_id": "TN188__MGDS_18210",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:TN188",
+   "doi": null,
+   "cruise": "TN188",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/TN188_Multibeam.xml"
+  },
+  {
+   "pair_id": "Escanaba__MGDS_30368",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:30368",
+   "doi": "10.26022/IEDA/330368",
+   "mgds_uid": "30368",
+   "title": "Escanaba Trough (Gorda Ridge) AUV near-bottom processed swath bathymetry gridded data in GMT-compatible netCDF format (2014, 2016)",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:30368"
+  },
+  {
+   "pair_id": "Escanaba__MGDS_30368",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:Escanaba",
+   "doi": null,
+   "cruise": "Escanaba",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/Escanaba_Multibeam.xml"
+  },
+  {
+   "pair_id": "Monterey__MGDS_24756",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:24756",
+   "doi": "10.1594/IEDA/324756",
+   "mgds_uid": "24756",
+   "title": "High-resolution (1m) bathymetric data from Monterey Canyon, offshore California",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:24756"
+  },
+  {
+   "pair_id": "Monterey__MGDS_24756",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:Monterey",
+   "doi": null,
+   "cruise": "Monterey",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/Monterey_Multibeam.xml"
+  },
+  {
+   "pair_id": "KN161L04__MGDS_22436",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:22436",
+   "doi": "10.1594/IEDA/322436",
+   "mgds_uid": "22436",
+   "title": "Processed Sentry AUV bathymetry data from the Mid-Atlantic Ridge at 16.5N, Knorr cruise KN210-05 (2013, chief scientist Deborah Smith).",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:22436"
+  },
+  {
+   "pair_id": "KN161L04__MGDS_22436",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:KN161L04",
+   "doi": null,
+   "cruise": "KN161L04",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/KN161L04_Multibeam.xml"
+  },
+  {
+   "pair_id": "MV1209__MGDS_21415",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:21415",
+   "doi": null,
+   "mgds_uid": "21415",
+   "title": null,
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:21415"
+  },
+  {
+   "pair_id": "MV1209__MGDS_21415",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:MV1209",
+   "doi": null,
+   "cruise": "MV1209",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/MV1209_Multibeam.xml"
+  },
+  {
+   "pair_id": "KN173L02__MGDS_31675",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:31675",
+   "doi": "10.60521/331675",
+   "mgds_uid": "31675",
+   "title": "Processed Gridded Near-Bottom AUV Bathymetry Data acquired during R/V Atlantic Explorer expedition AE1823 (2018)",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:31675"
+  },
+  {
+   "pair_id": "KN173L02__MGDS_31675",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:KN173L02",
+   "doi": null,
+   "cruise": "KN173L02",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/KN173L02_Multibeam.xml"
+  },
+  {
+   "pair_id": "MV1003__MGDS_31860",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:31860",
+   "doi": "10.60521/331860",
+   "mgds_uid": "31860",
+   "title": "Processed Gridded Near-Bottom Bathymetry Data acquired during R/V Melville expedition MV1205 (2012)",
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:31860"
+  },
+  {
+   "pair_id": "MV1003__MGDS_31860",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:MV1003",
+   "doi": null,
+   "cruise": "MV1003",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/MV1003_Multibeam.xml"
+  },
+  {
+   "pair_id": "AT26-24__MGDS_31954",
+   "side": "hr",
+   "provider": "MGDS",
+   "id": "MGDS:31954",
+   "doi": null,
+   "mgds_uid": "31954",
+   "title": null,
+   "landing": "https://www.marine-geo.org/tools/search/entry.php?id=MGDS:31954"
+  },
+  {
+   "pair_id": "AT26-24__MGDS_31954",
+   "side": "lr",
+   "provider": "NCEI",
+   "id": "NCEI:AT26-24",
+   "doi": null,
+   "cruise": "AT26-24",
+   "title": null,
+   "landing": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/AT26-24_Multibeam.xml"
+  }
+ ]
+}

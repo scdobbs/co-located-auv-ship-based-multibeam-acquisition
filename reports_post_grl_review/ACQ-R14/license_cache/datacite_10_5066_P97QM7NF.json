@@ -1,0 +1,21 @@
+{
+ "doi": "10.5066/P97QM7NF",
+ "found": true,
+ "status": 200,
+ "title": "Donated AUV bathymetry and Chirp seismic-reflection data collected during Monterey Bay Aquarium Research Institute cruises in 2018-2019 offshore of south-central California",
+ "creators": [
+  "Kennedy, Daniel J.",
+  "Walton, Maureen A.",
+  "Cochrane, Guy R.",
+  "Paull, Charlie",
+  "Caress, Dave",
+  "Anderson, Krystle",
+  "Lundsten, Eve"
+ ],
+ "publisher": "U.S. Geological Survey",
+ "publicationYear": 2021,
+ "url": "https://cmgds.marine.usgs.gov/data-releases/datarelease/10.5066-P97QM7NF/",
+ "rightsList": [],
+ "retrieved": "2026-10-20T18:17:18+00:00",
+ "source": "https://api.datacite.org/dois/10.5066/P97QM7NF"
+}

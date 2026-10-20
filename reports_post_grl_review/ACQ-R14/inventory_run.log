@@ -1,0 +1,53 @@
+[11:25:15] inventory: {'development': 39, 'blind_test_1': 5, 'blind_test_2': 8, 'excluded': 17} ; raster bytes (5 grids per pair, before COG) = 1.81 GB -> /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R14/inventory.json
+  development   RR1506__MGDS_29779                               unit=lu00   products=Y records=['footprint', 'stage_f', 'stage_f5', 'stage_f_repair'] scoring=Y
+  development   discol_so242_1                                   unit=lu02   products=n records=['footprint'] scoring=Y
+  development   AT37-13__MGDS_31199                              unit=lu04   products=Y records=['footprint', 'stage_f', 'stage_f5', 'stage_f_repair'] scoring=Y
+  development   TN399__MGDS_30373                                unit=lu05   products=Y records=['footprint', 'stage_f', 'stage_f5', 'stage_f_repair'] scoring=Y
+  development   TN399__MGDS_33068                                unit=lu05   products=Y records=['acq_r02', 'footprint'] scoring=Y
+  development   AT42-06__MGDS_5174                               unit=lu05   products=Y records=['acq_r02', 'footprint'] scoring=Y
+  development   ccz_so268_1                                      unit=lu06   products=n records=['footprint', 'notes_coreg'] scoring=Y
+  development   EW9801__MGDS_31425                               unit=lu07   products=Y records=['footprint', 'stage_f', 'stage_f5', 'stage_f_repair'] scoring=Y
+  development   KM0923__MGDS_31429                               unit=lu07   products=Y records=['acq_r02', 'footprint'] scoring=Y
+  development   FK181031__MGDS_24618                             unit=lu08   products=Y records=['footprint', 'stage_c1'] scoring=Y
+  development   tag_m127                                         unit=lu09   products=n records=['footprint', 'notes_coreg'] scoring=Y
+  development   NA090__MGDS_31212                                unit=lu10   products=Y records=['footprint', 'stage_f', 'stage_f5', 'stage_f_repair'] scoring=Y
+  development   NA076__MGDS_32317                                unit=lu11   products=Y records=['footprint', 'stage_c1'] scoring=Y
+  development   cal_dig_morro_bay__20180426m2_Channel1000        unit=lu12   products=n records=['footprint', 'notes_coreg'] scoring=Y
+  development   cal_dig_morro_bay__20180427m1_Channel700         unit=lu12   products=n records=['footprint'] scoring=Y
+  development   cal_dig_morro_bay__20180427m3_PockmarkNorth      unit=lu12   products=n records=['footprint'] scoring=Y
+  development   cal_dig_morro_bay__20180428m1_Cable              unit=lu12   products=n records=['footprint'] scoring=Y
+  development   cal_dig_morro_bay__201804_LuciaChica2m           unit=lu12   products=n records=['footprint'] scoring=Y
+  development   cal_dig_morro_bay__20190314m4_LuciaChica970m     unit=lu12   products=n records=['footprint', 'notes_coreg'] scoring=Y
+  development   cal_dig_morro_bay__20190315m1_HeadlessCanyon     unit=lu12   products=n records=['footprint'] scoring=Y
+  development   cal_dig_morro_bay__20190316m1_BankTop            unit=lu12   products=n records=['footprint', 'notes_coreg'] scoring=Y
+  development   cal_dig_morro_bay__20190317m1_1000mGully         unit=lu12   products=n records=['footprint'] scoring=Y
+  development   cal_dig_morro_bay__20190317m2_600mGully          unit=lu12   products=n records=['footprint', 'notes_coreg'] scoring=Y
+  development   cal_dig_morro_bay__20190318m2_Transect601060m    unit=lu12   products=n records=['footprint', 'notes_coreg'] scoring=Y
+  development   cal_dig_morro_bay__20190510m1_BankFlankHoles     unit=lu12   products=n records=['footprint'] scoring=Y
+  development   cal_dig_morro_bay__20190510m2_BankFlankIncipCh   unit=lu12   products=n records=['footprint'] scoring=Y
+  development   cal_dig_morro_bay__20190511m1_6thHeadlessCany    unit=lu12   products=n records=['footprint'] scoring=Y
+  development   cal_dig_morro_bay__20190511m2_BankTopEofCanyon3  unit=lu12   products=n records=['footprint'] scoring=Y
+  development   cal_dig_morro_bay__basin_flank                   unit=lu12   products=n records=['footprint'] scoring=Y
+  development   cal_dig_morro_bay__luciachica_2007               unit=lu12   products=n records=['footprint'] scoring=Y
+  development   cal_dig_morro_bay__pockmark_south                unit=lu12   products=n records=['footprint'] scoring=Y
+  development   NA080__MGDS_31290                                unit=lu13   products=Y records=['footprint', 'stage_f', 'stage_f5', 'stage_f_repair'] scoring=Y
+  development   NA080__MGDS_31289                                unit=lu13   products=Y records=['acq_r02', 'footprint'] scoring=Y
+  development   AR26__MGDS_31838                                 unit=lu14   products=Y records=['footprint', 'stage_f', 'stage_f5', 'stage_f_repair'] scoring=Y
+  development   TN299__MGDS_27339                                unit=lu15   products=Y records=['footprint', 'stage_f', 'stage_f5', 'stage_f_repair'] scoring=Y
+  development   TN299__MGDS_31253                                unit=lu15   products=Y records=['footprint', 'stage_c1'] scoring=Y
+  development   FK151121__MGDS_22383                             unit=nu00   products=Y records=['acq_r02', 'footprint'] scoring=Y
+  development   EX1402L2__MGDS_31073                             unit=vu02   products=Y records=['acq_r02', 'footprint'] scoring=Y
+  development   EW0207__MGDS_32556                               unit=lu16   products=n records=['footprint'] scoring=Y
+  blind_test_1  KN182L03__MGDS_30193                             unit=nu01a  products=n records=['acq_r02', 'footprint', 'shift_vector', 'step1_record', 'sweep_record'] scoring=Y
+  blind_test_1  RC2511__MGDS_32239                               unit=nu01b  products=n records=['acq_r02', 'footprint', 'step1_record', 'sweep_record'] scoring=Y
+  blind_test_1  SUM1004__MGDS_33090                              unit=nu03   products=Y records=['acq_r02', 'footprint', 'shift_vector', 'step1_record', 'sweep_record'] scoring=Y
+  blind_test_1  AT42-03__MGDS_32007                              unit=lu03   products=Y records=['footprint', 'stage_f', 'stage_f5', 'stage_f_repair', 'step1_record', 'sweep_record'] scoring=Y
+  blind_test_1  TN159__MGDS_21981                                unit=lu17   products=Y records=['footprint', 'stage_f', 'stage_f5', 'stage_f_repair', 'step1_record', 'sweep_record'] scoring=Y
+  blind_test_2  TN188__MGDS_18210                                unit=p5u01  products=Y records=['footprint', 'grid_record', 'hr_selection', 'site_record', 'sweep_record'] scoring=Y
+  blind_test_2  Escanaba__MGDS_30368                             unit=p5u02  products=Y records=['footprint', 'grid_record', 'hr_selection', 'site_record', 'sweep_record'] scoring=Y
+  blind_test_2  Monterey__MGDS_24756                             unit=p5u03  products=n records=['footprint', 'grid_record', 'hr_selection', 'site_record', 'sweep_record'] scoring=Y
+  blind_test_2  KN161L04__MGDS_22436                             unit=p5u04  products=Y records=['footprint', 'grid_record', 'hr_selection', 'site_record', 'sweep_record'] scoring=Y
+  blind_test_2  MV1209__MGDS_21415                               unit=p5u05  products=Y records=['footprint', 'grid_record', 'hr_selection', 'site_record', 'sweep_record'] scoring=Y
+  blind_test_2  KN173L02__MGDS_31675                             unit=p5u06  products=Y records=['footprint', 'grid_record', 'hr_selection', 'site_record', 'sweep_record'] scoring=Y
+  blind_test_2  MV1003__MGDS_31860                               unit=p5u07  products=n records=['footprint', 'grid_record', 'hr_selection', 'site_record', 'sweep_record'] scoring=Y
+  blind_test_2  AT26-24__MGDS_31954                              unit=p5u08  products=Y records=['footprint', 'grid_record', 'hr_selection', 'site_record', 'sweep_record'] scoring=Y

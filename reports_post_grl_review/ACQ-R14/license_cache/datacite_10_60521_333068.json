@@ -1,0 +1,24 @@
+{
+ "doi": "10.60521/333068",
+ "found": true,
+ "status": 200,
+ "title": "Processed Gridded Near-Bottom AUV Bathymetry Data (EM2040) from the East Pacific Rise at 9N Spreading Center Segment, acquired during R/V Atlantis expedition AT50-21 (2024)",
+ "creators": [
+  "McDermott, Jill",
+  "Fornari, Daniel"
+ ],
+ "publisher": "Marine Geoscience Data System (MGDS)",
+ "publicationYear": 2026,
+ "url": "https://www.marine-geo.org/doi/10.60521/333068",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "retrieved": "2026-10-20T18:16:58+00:00",
+ "source": "https://api.datacite.org/dois/10.60521/333068"
+}

@@ -1,0 +1,4 @@
+[11:23:40] build: 1 pairs to build with 1 workers (already done: 0)
+[fix] build AR26__MGDS_31838: hr.tif pixel 1.7660 m differs from the manifest hr_native_res_m 0.992; hr_res records the as-used pixel
+[11:23:43]   AR26__MGDS_31838                                      3.8 MB  16 files
+[11:23:43] build: 1 zips, 0.00 GB; errors: {}

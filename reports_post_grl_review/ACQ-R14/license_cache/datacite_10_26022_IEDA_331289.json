@@ -1,0 +1,21 @@
+{
+ "doi": "10.26022/IEDA/331289",
+ "found": true,
+ "status": 200,
+ "title": "Near-bottom AUV multibeam bathymetry grid (netCDF format) from the Octopus Garden hydrothermal spring site",
+ "creators": [
+  "Caress, David",
+  "Paduan, Jennifer"
+ ],
+ "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+ "publicationYear": 2023,
+ "url": "https://www.marine-geo.org/doi/10.26022/IEDA/331289",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+  }
+ ],
+ "retrieved": "2026-10-20T18:17:23+00:00",
+ "source": "https://api.datacite.org/dois/10.26022/IEDA/331289"
+}

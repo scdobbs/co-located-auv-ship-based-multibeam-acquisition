@@ -1,0 +1,73 @@
+[11:19:41]   MGDS:29779                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:19:42]   NCEI:RR1506                      NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:19:42]   10.1594/PANGAEA.905580           PANGAEA  yes              Creative Commons Attribution 4.0 International
+[11:19:42]   10.1594/PANGAEA.905579           PANGAEA  yes              Creative Commons Attribution 4.0 International
+[11:19:42]   MGDS:31199                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:19:43]   NCEI:AT37-13                     NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:19:43]   MGDS:30373                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:19:44]   NCEI:TN399                       NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:19:44]   MGDS:33068                       MGDS     yes              Creative Commons Attribution 4.0 International
+[11:19:44]   MGDS:5174                        MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:19:45]   NCEI:AT42-06                     NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:19:45]   10.1594/PANGAEA.915765           PANGAEA  yes              Creative Commons Attribution 4.0 International
+[11:19:45]   10.1594/PANGAEA.915764           PANGAEA  yes              Creative Commons Attribution 4.0 International
+[11:19:45]   MGDS:31425                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:19:46]   NCEI:EW9801                      NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[fix] license_audit KM0923__MGDS_31429: MGDS:31429 had no DOI in the manifest/harvest; resolved 10.26022/IEDA/331429 on DataCite
+[11:19:46]   MGDS:31429                       MGDS     yes_conditional  Creative Commons Attribution Non Commercial Share Alike 4.0 Internatio
+[11:19:47]   NCEI:KM0923                      NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:19:47]   MGDS:24618                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:19:48]   NCEI:FK181031                    NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:19:48]   10.1594/PANGAEA.899415           PANGAEA  yes              Creative Commons Attribution 4.0 International
+[11:19:48]   10.1594/PANGAEA.899408           PANGAEA  yes              Creative Commons Attribution 4.0 International
+[11:19:48]   MGDS:31212                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:19:50]   NCEI:NA090                       NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:19:50]   MGDS:32317                       MGDS     yes              Creative Commons Attribution 4.0 International
+[11:19:51]   NCEI:NA076                       NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[fix] license_audit cal_dig_morro_bay__20180426m2_Channel1000: 10.5066/P97QM7NF: DataCite record has no rightsList; license read from the FGDC metadata linked on the CMGDS landing page
+[11:19:52]   10.5066/P97QM7NF                 USGS     yes              U.S. Government work, public domain (USGS data release; FGDC use const
+[11:19:52]   10.5066/P9QQZ27U                 USGS     yes              CC0 1.0 / public domain
+[11:19:52]   MGDS:31290                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:19:53]   NCEI:NA080                       NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:19:53]   MGDS:31289                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:19:53]   MGDS:31838                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:19:54]   NCEI:AR26                        NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:19:54]   MGDS:27339                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:19:55]   NCEI:TN299                       NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:19:55]   MGDS:31253                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:19:55]   MGDS:22383                       MGDS     yes_conditional  Creative Commons Attribution Non Commercial Share Alike 4.0 Internatio
+[11:19:56]   NCEI:FK151121                    NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:19:56]   MGDS:31073                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:19:57]   NCEI:EX1402L2                    NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:19:57]   MGDS:32556                       MGDS     yes              Creative Commons Attribution 4.0 International
+[11:19:58]   NCEI:EW0207                      NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[fix] license_audit KN182L03__MGDS_30193: MGDS:30193 had no DOI in the manifest/harvest; resolved 10.26022/IEDA/330193 on DataCite
+[11:19:58]   MGDS:30193                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:19:59]   NCEI:KN182L03                    NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:19:59]   MGDS:32239                       MGDS     confirm          no DOI record found; MGDS default terms (CC BY-NC-SA, per MGDS data po
+[11:20:01]   NCEI:RC2511                      NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:20:01]   MGDS:33090                       MGDS     yes              Creative Commons Attribution 4.0 International
+[11:20:02]   NCEI:SUM1004                     NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:20:02]   MGDS:32007                       MGDS     yes              Creative Commons Attribution 4.0 International
+[11:20:03]   NCEI:AT42-03                     NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:20:03]   MGDS:21981                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:20:04]   NCEI:TN159                       NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:20:04]   MGDS:18210                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:20:05]   NCEI:TN188                       NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:20:05]   MGDS:30368                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:20:06]   NCEI:Escanaba                    NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:20:06]   MGDS:24756                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:20:07]   NCEI:Monterey                    NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:20:07]   MGDS:22436                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:20:08]   NCEI:KN161L04                    NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[fix] license_audit MV1209__MGDS_21415: MGDS:21415 had no DOI in the manifest/harvest; resolved 10.1594/IEDA/321415 on DataCite
+[11:20:08]   MGDS:21415                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:20:09]   NCEI:MV1209                      NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:20:09]   MGDS:31675                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:20:10]   NCEI:KN173L02                    NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:20:10]   MGDS:31860                       MGDS     yes_conditional  Creative Commons Attribution-NonCommercial-Share Alike 3.0 United Stat
+[11:20:11]   NCEI:MV1003                      NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[fix] license_audit AT26-24__MGDS_31954: MGDS:31954 had no DOI in the manifest/harvest; resolved 10.60521/331954 on DataCite
+[11:20:11]   MGDS:31954                       MGDS     yes              Creative Commons Attribution 4.0 International
+[11:20:12]   NCEI:AT26-24                     NCEI     yes              U.S. Government work, public domain (NOAA NCEI Multibeam Bathymetry Da
+[11:20:13] license audit: 67 datasets; redistribution {'yes_conditional': 24, 'yes': 42, 'confirm': 1}; pairs {'yes_conditional': 24, 'yes': 27, 'confirm': 1} -> /home/users/scdobbs/co-located-auv-ship-based-multibeam-acquisition/reports_post_grl_review/ACQ-R14/license_audit.json

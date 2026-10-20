@@ -1,0 +1,20 @@
+{
+ "doi": "10.60521/331073",
+ "found": true,
+ "status": 200,
+ "title": "Processed Gridded Near-Bottom Bathymetry Data acquired during R/V Atlantis expedition AT26-14 (2014)",
+ "creators": [
+  "Cordes, Erik"
+ ],
+ "publisher": "Marine Geoscience Data System (MGDS)",
+ "publicationYear": 2022,
+ "url": "https://www.marine-geo.org/doi/10.60521/331073",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+  }
+ ],
+ "retrieved": "2026-10-20T18:17:32+00:00",
+ "source": "https://api.datacite.org/dois/10.60521/331073"
+}

@@ -1,0 +1,28 @@
+{
+ "doi": "10.1594/IEDA/321415",
+ "found": true,
+ "status": 200,
+ "title": "Processed Near-bottom Bathymetry, Acoustic Backscatter, and Sidescan Grids (NetCDF:GMT format) derived from Sidescan Sonar and Multibeam Sonar Data from the La Jolla Canyon acquired during the Zephyr expedition ZPR0803 (2008)",
+ "creators": [
+  "Paull, Charles",
+  "Caress, David",
+  "Lundsten, Eve",
+  "Gwiazda, Roberto",
+  "Anderson, Krystle",
+  "McGann, Mary",
+  "Conrad, James",
+  "Edwards, Brian",
+  "Sumner, Esther"
+ ],
+ "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+ "publicationYear": 2014,
+ "url": "https://www.marine-geo.org/doi/10.1594/IEDA/321415",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us"
+  }
+ ],
+ "retrieved": "2026-10-20T18:18:03+00:00",
+ "source": "https://api.datacite.org/dois/10.1594/IEDA/321415"
+}

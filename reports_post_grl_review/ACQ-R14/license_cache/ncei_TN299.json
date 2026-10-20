@@ -1,0 +1,20 @@
+{
+ "cruise": "TN299",
+ "source": "https://www.ngdc.noaa.gov/metadata/published/NOAA/NESDIS/NGDC/MGG/Multibeam/iso/xml/TN299_Multibeam.xml",
+ "retrieved": "2026-10-20T18:19:55+00:00",
+ "found": true,
+ "title": "Multibeam collection for TN299: Multibeam data collected aboard Thomas G. Thompson from 30-Jun-13 to 23-Aug-13, Seattle, Washington to Seattle, Washington",
+ "restriction_codes": [
+  "otherRestrictions"
+ ],
+ "constraint_texts": [
+  "Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certi",
+  "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS Receivers",
+  "Earth Remote Sensing Instruments > Passive Remote Sensing > Positioning/Navigation > GPS > GPS/IMU > Global Positioning System/Inertial Measurement Unit",
+  "In Situ/Laboratory Instruments > Profilers/Sounders > Acoustic Sounders > SONAR > Sound Navigation and Ranging",
+  "Not to be used for navigation. Although these data are of high quality and useful for planning and modeling purposes, they are not suitable for navigation. For navigation, please refer to the NOS nautical chart series.",
+  "The intent of these data is to make high-resolution bathymetry available to the public for a wide variety of uses such as research and Earth Science analysis. These data are not intended to be used for navigation. Nautical charts produced and certified by NOAA should be used for navigational purpose",
+  "These data are considered raw and have not been subjected to the NOAA's quality control or quality assurance procedures. They are released for limited public use as preliminary data to be used only with appropriate caution. NOAA cannot assume liability for any damages caused by any errors or omissio",
+  "Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpo"
+ ]
+}

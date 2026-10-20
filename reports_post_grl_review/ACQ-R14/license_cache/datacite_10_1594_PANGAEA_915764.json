@@ -1,0 +1,23 @@
+{
+ "doi": "10.1594/PANGAEA.915764",
+ "found": true,
+ "status": 200,
+ "title": "Processed EM122 multibeam swath bathymetry collected during SONNE cruise SO268/1 inside the German License Area in Clarion Clipperton Zone, Pacific",
+ "creators": [
+  "Gazis, Iason-Zois"
+ ],
+ "publisher": "PANGAEA",
+ "publicationYear": 2020,
+ "url": "https://doi.pangaea.de/10.1594/PANGAEA.915764",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "retrieved": "2026-10-20T18:17:02+00:00",
+ "source": "https://api.datacite.org/dois/10.1594/PANGAEA.915764"
+}

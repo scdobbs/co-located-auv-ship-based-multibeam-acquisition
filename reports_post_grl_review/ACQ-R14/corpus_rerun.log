@@ -1,0 +1,4 @@
+[11:44:09] pairs table: 69 rows (52 with rasters)
+[11:44:11] tiles table: 32054 rows; excluded_r17 22 (list has 22); groups {'development': 26154, 'blind_test_1': 3812, 'blind_test_2': 2088}
+[11:44:11] blind_tests: 18 files + INDEX.md; blind_tests.zip
+[11:44:13] SHA256SUMS: 84 files

@@ -1,0 +1,28 @@
+{
+ "doi": "10.1594/PANGAEA.905580",
+ "found": true,
+ "status": 200,
+ "title": "Merged and geo-referenced bathymetric raster from AUV MBES surveys during SONNE cruise SO242/1",
+ "creators": [
+  "Gausepohl, Florian",
+  "Hennke, Anne",
+  "Schoening, Timm",
+  "K\u00f6ser, Kevin",
+  "Greinert, Jens",
+  "Steinf\u00fchrer, Anja"
+ ],
+ "publisher": "PANGAEA",
+ "publicationYear": 2019,
+ "url": "https://doi.pangaea.de/10.1594/PANGAEA.905580",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "retrieved": "2026-10-20T18:16:51+00:00",
+ "source": "https://api.datacite.org/dois/10.1594/PANGAEA.905580"
+}

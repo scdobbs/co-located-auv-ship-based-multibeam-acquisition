@@ -1,0 +1,21 @@
+{
+ "doi": "10.26022/IEDA/329779",
+ "found": true,
+ "status": 200,
+ "title": "AUV Sentry near-bottom bathymetry data at the Havre Volcano Caldera in the Kermadec Arc (RR1506, 2015)",
+ "creators": [
+  "Soule, S.",
+  "Carey, Rebecca"
+ ],
+ "publisher": "Interdisciplinary Earth Data Alliance (IEDA)",
+ "publicationYear": 2020,
+ "url": "https://www.marine-geo.org/doi/10.26022/IEDA/329779",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+   "rightsUri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+  }
+ ],
+ "retrieved": "2026-10-20T18:16:48+00:00",
+ "source": "https://api.datacite.org/dois/10.26022/IEDA/329779"
+}

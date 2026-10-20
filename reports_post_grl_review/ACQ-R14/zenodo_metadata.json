@@ -1,0 +1,45 @@
+{
+ "title": "Co-located ship and AUV multibeam bathymetry corpus: processed grids, masks, co-registration and tile tables (companion data of GRL 2026GL125574)",
+ "upload_type": "dataset",
+ "description": "Processed co-located seafloor bathymetry pairs for validating super-resolution of ship multibeam: 52 pairs, each a near-bottom AUV multibeam grid (1-2 m) and the independent hull-mounted ship multibeam grid (10-150 m native cells) of the same footprint, harmonized to a common UTM grid and co-registered, with validity masks, per-sounding ship product rasters, co-registration parameters, the datum statistic, and the frozen tile tables (s_lr, A_fine, held-out GBT_ship and P-V1 predictions) that reproduce every score in the paper. Groups: development (39 pairs, 16 units + EW0207), blind test 1 (5 pairs) and blind test 2 (8 sites), plus a manifest of excluded pairs. Both pre-registrations, the committed blind calls, deviation notes and scoring outputs are included. Cloud-Optimized GeoTIFF, metres positive up, EPSG UTM codes. Sources: MGDS/IEDA, NOAA NCEI, PANGAEA, USGS; each source data set must be cited. 24 pairs inherit CC BY-NC-SA from their AUV grid.",
+ "n_words_description": 143,
+ "license": "cc-by-4.0 (record); per-pair CC BY-NC-SA 4.0 where inherited, see pairs.csv",
+ "keywords": [
+  "bathymetry",
+  "multibeam",
+  "AUV",
+  "seafloor",
+  "super-resolution",
+  "co-located surveys",
+  "NCEI",
+  "MGDS",
+  "PANGAEA",
+  "USGS",
+  "Cloud-Optimized GeoTIFF"
+ ],
+ "related_identifiers": [
+  {
+   "identifier": "GRL 2026GL125574",
+   "relation": "isSupplementTo",
+   "note": "replace by the paper DOI when assigned"
+  },
+  {
+   "identifier": "10.5281/zenodo.21300922",
+   "relation": "isSupplementTo",
+   "resource_type": "software"
+  },
+  {
+   "identifier": "10.5281/zenodo.21300925",
+   "relation": "isSupplementTo",
+   "resource_type": "software"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Dobbs, Stephen Cole",
+   "affiliation": "Stanford University"
+  }
+ ],
+ "version": "1.0.0",
+ "publication_date": "2026-10-20"
+}

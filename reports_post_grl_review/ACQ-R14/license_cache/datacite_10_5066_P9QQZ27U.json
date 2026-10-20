@@ -1,0 +1,25 @@
+{
+ "doi": "10.5066/P9QQZ27U",
+ "found": true,
+ "status": 200,
+ "title": "Multibeam echosounder, video observation, and derived benthic habitat data offshore of south-central California in support of the Bureau of Ocean Energy Management Cal DIG I, offshore alternative energy project (ver. 2.0, August 2026)",
+ "creators": [
+  "Guy R Cochrane",
+  "Linda A. Kuhnz",
+  "Lisa Gilbane"
+ ],
+ "publisher": "U.S. Geological Survey",
+ "publicationYear": 2022,
+ "url": "https://cmgds.marine.usgs.gov/data-releases/datarelease/10.5066-P9QQZ27U/",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Zero v1.0 Universal",
+   "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc0-1.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "retrieved": "2026-10-20T18:17:19+00:00",
+ "source": "https://api.datacite.org/dois/10.5066/P9QQZ27U"
+}
