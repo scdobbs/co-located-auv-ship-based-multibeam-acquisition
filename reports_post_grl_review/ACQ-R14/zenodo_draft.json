@@ -1,0 +1,503 @@
+{
+ "id": 23515276,
+ "created": "2026-10-20T21:59:26+00:00",
+ "html": "https://zenodo.org/deposit/23515276",
+ "bucket": "https://zenodo.org/api/files/b72fdd4c-40e3-4489-acf7-57119a450862",
+ "metadata_attempts": [
+  {
+   "status": 400,
+   "errors": [
+    {
+     "field": "metadata.related_identifiers.scheme",
+     "messages": [
+      "No valid scheme recognized for identifier."
+     ]
+    }
+   ]
+  },
+  {
+   "status": 200,
+   "errors": null,
+   "dropped": [
+    "related_identifiers"
+   ]
+  }
+ ],
+ "metadata_changed_by_zenodo": {},
+ "prereserve_doi": {
+  "doi": "10.5281/zenodo.23515276",
+  "recid": 23515276
+ },
+ "files": {
+  "AR26__MGDS_31838.zip": {
+   "bytes": 3763123,
+   "md5": "57691d2c419d8def361c10282c3e2cba",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "AT26-24__MGDS_31954.zip": {
+   "bytes": 11156982,
+   "md5": "62222fbfb8c6e2d3a1b4d8f2802c8243",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "AT37-13__MGDS_31199.zip": {
+   "bytes": 8257510,
+   "md5": "4cc1a15e5d8f0b8130b6a543375f850e",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "AT42-03__MGDS_32007.zip": {
+   "bytes": 10955578,
+   "md5": "762af6ab415ddf836c28d8f62c0d71c2",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "AT42-06__MGDS_5174.zip": {
+   "bytes": 1296109,
+   "md5": "76ddc9b6c59b2ef1aefdba689218edbf",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "CITATION.cff": {
+   "bytes": 1040,
+   "md5": "5e2901f75959fea32785cdb2488c4008",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "DATA_DICTIONARY.md": {
+   "bytes": 10678,
+   "md5": "831c4f8ce2dfdbb5a9fd664a237a2b00",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "EW0207__MGDS_32556.zip": {
+   "bytes": 136823795,
+   "md5": "aa10b3c629e948a59f61fd3f6a53284d",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "EW9801__MGDS_31425.zip": {
+   "bytes": 6973426,
+   "md5": "4fa25e50e629c2457fd645f574c3e932",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "EX1402L2__MGDS_31073.zip": {
+   "bytes": 7422071,
+   "md5": "5105e72cb077cfdfafb9b6fb6ac5b8d7",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "Escanaba__MGDS_30368.zip": {
+   "bytes": 35501384,
+   "md5": "046e1ca0caa45cd1f892167979070143",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "FK151121__MGDS_22383.zip": {
+   "bytes": 31782076,
+   "md5": "f7b45dedd0d5e2bfdfb32b19b378d037",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "FK181031__MGDS_24618.zip": {
+   "bytes": 39042552,
+   "md5": "0039bc62d90bde516ca0d88eb90ecaf2",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "KM0923__MGDS_31429.zip": {
+   "bytes": 11641795,
+   "md5": "68ad3476572cdd0efcd4b009a26c2f46",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "KN161L04__MGDS_22436.zip": {
+   "bytes": 31534000,
+   "md5": "f21681b4633205113beaec2b0fcbc2b2",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "KN173L02__MGDS_31675.zip": {
+   "bytes": 17795218,
+   "md5": "b8c452106ccf047af6edf585fa918fcd",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "KN182L03__MGDS_30193.zip": {
+   "bytes": 31070205,
+   "md5": "1d7f28649cd848ff1dec89c2b87baa80",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "LICENSE": {
+   "bytes": 20850,
+   "md5": "136c671dba2d2f644b882e31c3e289e8",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "MV1003__MGDS_31860.zip": {
+   "bytes": 7507442,
+   "md5": "7ab6b7eb45a868d74add4bea23c3c0dd",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "MV1209__MGDS_21415.zip": {
+   "bytes": 112376227,
+   "md5": "f35c39d779deaebcb93014706bbfdb29",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "Monterey__MGDS_24756.zip": {
+   "bytes": 33155742,
+   "md5": "88b1115e0d9a5f9d0f301491a083a19a",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "NA076__MGDS_32317.zip": {
+   "bytes": 17794309,
+   "md5": "1972c66dacd74a5771b3f2db56331cf7",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "NA080__MGDS_31289.zip": {
+   "bytes": 111176683,
+   "md5": "2e4c610cd14342b7b49117f9a0973c68",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "NA080__MGDS_31290.zip": {
+   "bytes": 112391222,
+   "md5": "c15acb8378495ee53bee506da2651837",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "NA090__MGDS_31212.zip": {
+   "bytes": 6768178,
+   "md5": "2bf0097c72fa6fc5db208c0eb7b0d012",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "RC2511__MGDS_32239.zip": {
+   "bytes": 195306677,
+   "md5": "ed52d3eaf04cee49cc3a5e0a9ce01def",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "README.md": {
+   "bytes": 13254,
+   "md5": "bc59d9ef4c2e92b328588845251e9141",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "RR1506__MGDS_29779.zip": {
+   "bytes": 120680823,
+   "md5": "3a0add9678861ead40302d49efa80334",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "SHA256SUMS": {
+   "bytes": 7991,
+   "md5": "fadc450856b32cdcda79a933b4fd6445",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "SOURCE_LICENSES.csv": {
+   "bytes": 23548,
+   "md5": "869c1289cfd86846a946798342173026",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "SUM1004__MGDS_33090.zip": {
+   "bytes": 17868590,
+   "md5": "8ab3dc931d6bb0550356276656ba8f53",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "TN159__MGDS_21981.zip": {
+   "bytes": 6589401,
+   "md5": "5e7fae4ff748a4cbb0816e87447f1f20",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "TN188__MGDS_18210.zip": {
+   "bytes": 23791443,
+   "md5": "72412ff05406ab3233fc1b08094f5da4",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "TN299__MGDS_27339.zip": {
+   "bytes": 94155899,
+   "md5": "96e0ee8dff6fa9eba436a73f110e6c2b",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "TN299__MGDS_31253.zip": {
+   "bytes": 14175360,
+   "md5": "ee8eee7752128c407fde78c836fbde92",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "TN399__MGDS_30373.zip": {
+   "bytes": 261256840,
+   "md5": "c163c8b77fcd6247a47e393e0d835de1",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "TN399__MGDS_33068.zip": {
+   "bytes": 8394066,
+   "md5": "7c9b89b3926c8b4de0480300cdf6f4c5",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "blind_tests.zip": {
+   "bytes": 54678,
+   "md5": "87044dd0ffc7f8efcab6af8d9454313e",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__20180426m2_Channel1000.zip": {
+   "bytes": 7848531,
+   "md5": "85c1295bd5011c638605a31f75947cdf",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__20180427m1_Channel700.zip": {
+   "bytes": 6413496,
+   "md5": "0d74cd2b691bd77bce76ca6982a1029d",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__20180427m3_PockmarkNorth.zip": {
+   "bytes": 3752606,
+   "md5": "a40fb4dcefe392392865b340d27fc0e0",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__20180428m1_Cable.zip": {
+   "bytes": 5227598,
+   "md5": "fe3462f2554b62809e0bb165bb89ca48",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__201804_LuciaChica2m.zip": {
+   "bytes": 8805737,
+   "md5": "5b0f94b0b433b396c1781b1165f41edf",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__20190314m4_LuciaChica970m.zip": {
+   "bytes": 2940956,
+   "md5": "e19b867f68f7d9c9c7ef21d3a14c54ac",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__20190315m1_HeadlessCanyon.zip": {
+   "bytes": 8258857,
+   "md5": "4dff7f1db99dc21f2c717ab7f8bfa38f",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__20190316m1_BankTop.zip": {
+   "bytes": 9779942,
+   "md5": "d1802eaabc91c5337f9cd1411a8f21c4",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__20190317m1_1000mGully.zip": {
+   "bytes": 6967432,
+   "md5": "68a263a722c4e35140910e7af454192c",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__20190317m2_600mGully.zip": {
+   "bytes": 9279792,
+   "md5": "0d83c2295bd5c71ce849f9214cf93e6a",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__20190318m2_Transect601060m.zip": {
+   "bytes": 11476499,
+   "md5": "efceab6ae734de290ecf5f6fa169021d",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__20190510m1_BankFlankHoles.zip": {
+   "bytes": 7720794,
+   "md5": "0d05c52bca738895b00b8781e108b75e",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__20190510m2_BankFlankIncipCh.zip": {
+   "bytes": 8584205,
+   "md5": "4452fd9bb34303acf9890a3bf7e5b3d6",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__20190511m1_6thHeadlessCany.zip": {
+   "bytes": 9955898,
+   "md5": "6eba43b10276efa151df6fbdabe6632e",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__20190511m2_BankTopEofCanyon3.zip": {
+   "bytes": 9746974,
+   "md5": "c63e75385f57718e9c12645a77f5054a",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__basin_flank.zip": {
+   "bytes": 3024793,
+   "md5": "1b94087547fc43a458e2fc7cd0e2ca62",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__luciachica_2007.zip": {
+   "bytes": 2300822,
+   "md5": "dc03be73e9f92b2f42adfa6b59957b0a",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "cal_dig_morro_bay__pockmark_south.zip": {
+   "bytes": 5633863,
+   "md5": "4196b440f3340e34a6d4a17a1d4b2ddf",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "ccz_so268_1.zip": {
+   "bytes": 1968659,
+   "md5": "a0c028137740348595462662d4c391ad",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "development_scores_per_pair_D1.csv": {
+   "bytes": 19895,
+   "md5": "c3846163b117a3b073454c2933ecbfd7",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "discol_so242_1.zip": {
+   "bytes": 8330455,
+   "md5": "584cce2c137c6042f97db27a478d7fe2",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "pairs.csv": {
+   "bytes": 76104,
+   "md5": "d862ebdf2dee41507366306a5389fcfd",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "pairs.parquet": {
+   "bytes": 67867,
+   "md5": "181b87775ae9971e84b4495c90948926",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "tag_m127.zip": {
+   "bytes": 33463412,
+   "md5": "18f11aa28e58b866e8cba21384b12c4e",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "tiles.csv": {
+   "bytes": 10860979,
+   "md5": "f7a7dc2cbed5aa9a00f005d9cb138c2a",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "tiles.parquet": {
+   "bytes": 1812597,
+   "md5": "6351dd1da9c1da8aece29f9ed5612784",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "zenodo_metadata.json": {
+   "bytes": 2439,
+   "md5": "b79e5ee362c198397d6562b4dd98f997",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  },
+  "load_pair.py": {
+   "bytes": 2612,
+   "md5": "cc5b34d9f9bca3a3c6b3aadbeb874e4f",
+   "status": "verified",
+   "attempts": 1,
+   "last": "HTTP 201 md5 match"
+  }
+ },
+ "finished": "2026-10-20T22:13:16+00:00",
+ "n_files_local": 66,
+ "n_files_zenodo": 66,
+ "bytes_zenodo": 1712860579.0,
+ "n_verified": 66,
+ "n_failed": 0,
+ "submitted": false,
+ "remote_checksums_match": true
+}

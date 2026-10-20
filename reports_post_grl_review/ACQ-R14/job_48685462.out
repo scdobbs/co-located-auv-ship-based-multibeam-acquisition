@@ -1,0 +1,4 @@
+host sh04-01n25.int job 48685462 start 2026-10-20T21:59:22Z
+[14:59:25] 66 files, 1.713 GB, package /oak/stanford/groups/hilley/auv_ship_colocated_bathy/acq_archive/ACQ-R14/package
+[14:59:26] created draft 23515276 https://zenodo.org/deposit/23515276
+[14:59:26] metadata rejected on ['metadata']: {"status": 400, "message": "A validation error occurred.", "errors": [{"field": "metadata.related_identifiers.scheme", "messages": ["No valid scheme recognized for identifier."]}]}

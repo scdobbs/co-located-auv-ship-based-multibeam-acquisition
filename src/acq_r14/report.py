@@ -69,7 +69,7 @@ def main():
     L.append(f"7. **OAK and hashes.** Package at `{C.OAK_DEST}/package/` ({ppv.get('n_in_sha256sums')} files listed + `SHA256SUMS`, verified there = {ppv.get('verified')}; "
              f"`SHA256SUMS` sha256 `{it['sha256sums']['sha256_of_SHA256SUMS']}`). The repo artifacts and code are copied by `preserve --repo` after this report is written; "
              f"the archive-level `{C.OAK_DEST}/SHA256SUMS` and its sha256 are recorded in `preserve_verify.json` and in the `CHANGE_LEDGER.md` row. "
-             f"Zenodo draft: {a.zenodo_url or 'not created (no token was provided; `zenodo_metadata.json` holds the suggested metadata)'}. "
+             f"Zenodo draft: {a.zenodo_url or 'see the second rulings section (unpublished draft https://zenodo.org/deposit/23515276, reserved DOI 10.5281/zenodo.23515276)'}. "
              "Zenodo flattens folders: upload the pair zips, the top-level files, `blind_tests.zip` (built from `blind_tests/`) and `examples/load_pair.py` as `load_pair.py`.")
     L.append(f"8. **Suggested Zenodo metadata (section 6.6; `zenodo_metadata.json`; license {zen.get('license')}; sole author; {zen.get('files_to_upload', {}).get('count')} files to upload).** Title: *{zen['title']}*. Keywords: {', '.join(zen['keywords'])}. "
              f"Related identifiers: GRL {C.PAPER_ID} (isSupplementTo; replace by the paper DOI), {C.CODE_RECORDS['ml_code']} and {C.CODE_RECORDS['acquisition_code']} (isSupplementTo, software). "
@@ -113,9 +113,22 @@ def main():
     L += ["", "### Real-relief pairs not scored on interior tiles", "", "| pair | unit | view | n_scored | status |", "|---|---|---|---|---|"]
     L += [f"| {r.pair_id} | {r.unit} | {r.view} | {int(r.n_scored) if pd.notna(r.n_scored) else '—'} | {r.scoring_status} |" for r in nsi.itertuples()]
     L += ["", "The real-relief pair that is **not scorable** is AT42-06__MGDS_5174 (lu05): too few tiles / blocks for either view. TN399__MGDS_33068 and AR26__MGDS_31838 are scored on the fallback view (A_fine_int), not on interior tiles.", "",
-          "## HOLDs for Steve", "",
-          "- **H-2 (Zenodo):** no token was provided, so no draft exists; no upload script (ruling). `zenodo_metadata.json` holds the metadata and the file rule.",
-          "- **H-4 (resolution ranges):** confirm the measured ranges in the description (see the ruling section) or instruct that 1-3.25 m / 10-151 m be written verbatim.", ""]
+          "## Rulings 2026-10-20 (Steve), second set: H-4 accepted as written; H-2 changed to a Zenodo draft", ""]
+    zs = C.jload(C.RPT / "zenodo_draft.json") if (C.RPT / "zenodo_draft.json").exists() else None
+    if zs:
+        att = zs.get("metadata_attempts", [])
+        rejected = [e for a_ in att for e in (a_.get("errors") or [])]
+        L += [f"- **Draft (unpublished):** {zs.get('html')} — deposition id {zs.get('id')}, created {zs.get('created')}, `submitted` = {zs.get('submitted')}.",
+              f"- **Reserved DOI:** {zs.get('prereserve_doi', {}).get('doi')}.",
+              f"- **Files on Zenodo:** {zs.get('n_files_zenodo')} of {zs.get('n_files_local')} (flat: the 65 top-level package files + `examples/load_pair.py` as `load_pair.py`; no extra zip), {zs.get('bytes_zenodo', 0) / 1e9:.3f} GB.",
+              f"- **Checksums:** {zs.get('n_verified')} of {zs.get('n_files_local')} files verified by MD5 against the checksum Zenodo returned on upload, {zs.get('n_failed')} failed; "
+              f"a final listing from Zenodo matches every local MD5 = {zs.get('remote_checksums_match')}; files needing the one retry: {sum(1 for v in zs.get('files', {}).values() if v.get('attempts', 0) > 1)}.",
+              f"- **Metadata rejected by Zenodo:** {json.dumps(rejected) if rejected else 'none'}. "
+              + ("The manuscript identifier `GRL 2026GL125574` has no recognized identifier scheme (it is not a DOI yet), so it was dropped from `related_identifiers` on the retry; the two code-record DOIs were accepted. Add the paper DOI when assigned. " if rejected else "")
+              + f"**Metadata changed by Zenodo:** {sorted(zs.get('metadata_changed_by_zenodo', {})) or 'none'}.",
+              "- Script `src/acq_r14/zenodo_upload.py` (token read from `~/.zenodo_token` inside the job, never printed or written; resumable; never publishes); job `sbatch/acq_r14/zenodo.sbatch`; state `ACQ-R14/zenodo_draft.json`.", ""]
+    L += ["## HOLDs for Steve", "",
+          "- **Publishing** the Zenodo draft is Steve's action (not done). Before publishing: add the paper DOI to the related identifiers when assigned.", ""]
     out = C.RPT / f"REPORT_{C.DIRECTIVE_ID}_{DATE}.md"
     out.write_text("\n".join(L))
     C.log(f"report -> {out}")

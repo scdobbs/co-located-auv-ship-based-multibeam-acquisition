@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-20T21:39:55+00:00",
+ "generated": "2026-10-20T22:17:31+00:00",
  "dest": "/oak/stanford/groups/hilley/auv_ship_colocated_bathy/acq_archive/ACQ-R14",
- "n_files": 117,
- "sha256sums_sha256": "014fdceb33e73fe1f485148cfd65fc2c25b125653a9c3250138a6cc0f944e72a",
+ "n_files": 120,
+ "sha256sums_sha256": "f8644f5a14f51ceb5b8a26096a703cd6866a1b4409116165de94b8cad4862153",
  "verified": true,
  "bad": [],
  "package_sha256sums_sha256": "baad6bf1fdec2092d4fb389ca2dec1412de8e364d3940ed231253656eb7b1401"
