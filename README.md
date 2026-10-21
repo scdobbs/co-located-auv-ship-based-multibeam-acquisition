@@ -160,7 +160,7 @@ Code: MIT (`LICENSE`). Cite the paper, the data record and this code record:
   Blind Test. *Geophysical Research Letters*, 2026GL125574.
 - Dobbs, S. C. (2026). Co-located ship and AUV multibeam bathymetry corpus: processed grids, masks, co-registration and
   tile tables (version 1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23515276 (CC BY-NC-SA 4.0).
-- Dobbs, S. C. (2026). Co-located ship and AUV multibeam bathymetry: acquisition and harmonization code (version 2.0)
+- Dobbs, S. C. (2026). Co-located ship and AUV multibeam bathymetry: acquisition and harmonization code (version 2.0.1)
   [Software]. Zenodo. https://doi.org/10.5281/zenodo.21300925 (this repository; see `CITATION.cff`).
 
 Each source data set must also be cited (see the data record's `SOURCE_LICENSES.csv`).

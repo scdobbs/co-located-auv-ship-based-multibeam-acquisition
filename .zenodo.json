@@ -7,10 +7,10 @@
   ],
   "keywords": ["bathymetry", "multibeam", "AUV", "seafloor roughness", "co-located surveys", "MB-System", "Cloud-Optimized GeoTIFF", "NCEI", "MGDS", "PANGAEA"],
   "license": "MIT",
-  "version": "2.0",
+  "version": "2.0.1",
   "access_right": "open",
   "related_identifiers": [
     {"identifier": "10.5281/zenodo.23515276", "relation": "isSupplementedBy", "resource_type": "dataset", "scheme": "doi"},
-    {"identifier": "10.5281/zenodo.21300922", "relation": "isRelatedTo", "resource_type": "software", "scheme": "doi"}
+    {"identifier": "10.5281/zenodo.21300922", "relation": "references", "resource_type": "software", "scheme": "doi"}
   ]
 }
